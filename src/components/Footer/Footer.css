@@ -1,0 +1,9 @@
+.btn-link.btn-floating.btn-lg.text-dark:hover {
+    background-color: #fe504f;
+  }
+  .footer-background{
+    background-color: rgb(243, 240, 240);
+    border-radius: 25px;
+    margin: 10px;
+  }
+  

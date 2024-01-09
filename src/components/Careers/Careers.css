@@ -1,0 +1,25 @@
+.story{
+    font-size: 50px;
+    font-weight: bold;
+}
+.start{
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.working{
+    font-size: 50px;
+    font-weight: bold;
+}
+.explorbtn{
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration:none;
+        margin-right: 15px;
+    color: black;
+}
+.route-text{
+    font-size: 20px;
+    color: grey;
+    text-decoration:none
+}

@@ -1,0 +1,56 @@
+.header {
+    background-color: #fe504f;
+    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.1);
+    /* padding: 10px 0;  */
+    
+  }
+  
+  .logo-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 5%;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-left: 50px;
+    font-size: 20px;
+
+  }
+  .nav-link:hover {
+    /* color: #000; */
+    color: #fe504f;
+  }
+
+  .contact{
+    margin-left: 15px;
+  }
+  /* Cursor Animation */
+  #cursor {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    /* background-color: #000; */
+    background-color: orange;
+
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 9999;
+    transition: width 0.3s, height 0.3s, background-color 0.3s;
+    transform: translate(-50%, -50%); /* Center the cursor */
+    top: 0;
+    left: 0;
+  }
+  .navbar-toggler{
+    background-color: #fe504f;
+    
+  }
+  
+  /* Add your custom styles and animations here */
+  
