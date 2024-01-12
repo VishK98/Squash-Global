@@ -28,7 +28,7 @@ export default function NavBar() {
       const cursor = cursorRef.current;
       cursor.style.width = "40px";
       cursor.style.height = "40px";
-      cursor.style.backgroundColor = "#fe504f";
+      cursor.style.backgroundColor = "#fff";
       e.target.style.color = "#000";
     };
 

@@ -48,21 +48,19 @@ function Philosophy() {
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <div
+                {/* <div
                   className="section_img service-video hidden position-relative mt-lg-4 video-btn"
                   data-toggle="modal"
                   data-src="https://www.youtube.com/embed/yAoLSRbwxL8"
                   data-target="#video_pop"
-                >
-                  <div className="imagereveal">
+                > */}
                     <img
                       src={philosophy}
                       alt="Tonic Digital Agency Philosophy"
                       className="w-100"
                     />
-                  </div>
                 </div>
-              </div>
+              {/* </div> */}
               <div
                 className="col-lg-9 mt-4 pl-phi-quote pl-5"
                 style={{ margin: "auto" }}
@@ -136,7 +134,7 @@ function Philosophy() {
             </div>
             <div className="col-lg-6 col-12">
               <div className="hidden">
-                <div className="imagereveal round_corner_img">
+                <div className=" round_corner_img">
                   <img src={partyScene} alt="Tonic party" className="w-100" />
                 </div>
               </div>

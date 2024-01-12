@@ -1,5 +1,5 @@
 .header {
-    background-color: #fe504f;
+    background-color: #fff;
     box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.1);
     /* padding: 10px 0;  */
     
@@ -23,8 +23,7 @@
 
   }
   .nav-link:hover {
-    /* color: #000; */
-    color: #fe504f;
+    color: #000;
   }
 
   .contact{
@@ -36,8 +35,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    /* background-color: #000; */
-    background-color: orange;
+    background-color: #000;
 
     mix-blend-mode: difference;
     pointer-events: none;
@@ -48,7 +46,7 @@
     left: 0;
   }
   .navbar-toggler{
-    background-color: #fe504f;
+    background-color: #fff;
     
   }
   

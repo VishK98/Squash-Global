@@ -1,0 +1,169 @@
+h1.stroke,
+h2.stroke {
+  color: #fff;
+  -webkit-text-stroke: 1px #666;
+  -webkit-text-fill-color: #fff;
+  font-size: 150px;
+}
+.bannertitle h1,
+.bannertitle h2 {
+  font-size: 150px;
+  line-height: 195px;
+  font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
+  font-display: swap;
+}
+.agency-text {
+  font-weight: bold;
+}
+
+@media (max-width: 767.98px) {
+  .mobile_down_arrow {
+    display: none;
+  }
+
+  .h1.stroke,
+  h2.stroke,
+  .bannertitle h1,
+  .bannertitle h2 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .but-text {
+    font-size: 30px;
+  }
+}
+
+.but-text {
+  font-family: RedHatDisplayBold;
+  color: #000;
+  font-size: 80px;
+  font-weight: bold;
+}
+.discover-text {
+  font-family: RedHatDisplayBold;
+  color: #000;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+.custom-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.custom-tabs .nav-link {
+  background-color: #f8f9fa;
+  border: none;
+  color: grey;
+  font-weight: 500;
+}
+
+.custom-tabs .nav-link.active {
+  background-color: #fe504f;
+  color: #000;
+  border: none;
+}
+.creating-text {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Animation starts from here */
+
+.mobile_down_arrow {
+  position: absolute;
+  margin-top: 20px;
+  transform: translateX(-50%);
+  animation: moveUpDown 1s infinite alternate;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.zoom-overlay {
+  position: absolute;
+  top: 10%;
+  left: 82%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fe504f;
+  opacity: 0.6;
+  animation: zoomAnimation 2s infinite alternate;
+}
+
+.zooming-image {
+  transition: transform 0.3s ease-in-out;
+}
+/* ImageSlider.css */
+
+.image-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100vw; /* Adjust the width as per your layout */
+  height: 150px; /* Adjust the height as per your layout */
+}
+
+.image-slider img {
+  display: block;
+  width: auto; /* Set the width of the image */
+  height: 100%; /* Set the height of the image */
+  transition: transform 0.5s ease; /* Add a smooth transition effect */
+}
+.grid-view {
+  background-color: #e3e0e0;
+  border-radius: 7px;
+  font-size: 15px;
+  transition: background-color 0.3s ease; /* Add transition for smooth effect */
+}
+
+.grid-view:hover {
+  background-color: #fe504f;
+  opacity: 0.6;}
+
+
+
+@keyframes zoomAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+.imagereveal img {
+  opacity: 0; /* Initially hide the image */
+  transition: opacity 0.5s ease-in-out; /* Add a smooth transition for opacity */
+}
+
+.slide-in {
+  animation: none; /* Initially no animation */
+}
+
+.slide-in-animation {
+  animation: slideIn 3s forwards; /* Apply the slide-in animation */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%); /* Start off-screen to the right */
+    opacity: 0; /* Initially hidden */
+  }
+  to {
+    transform: translateX(0); /* Slide in to the left */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+/* Animation ends  here */

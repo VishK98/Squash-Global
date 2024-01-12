@@ -83,18 +83,19 @@
     height: 150px;
     width: 150px;
     border-radius: 50%; 
-    background-color: white;
     background: url(../../assets/images/arrow-more2.webp) 50% 50px no-repeat #fff;
     transition: background-color 0.3s ease, box-shadow 0.5s ease, transform 0.3s ease; 
     border: 1px solid #ccc;
     box-sizing: border-box; 
     cursor: pointer;
-    overflow: hidden; 
+    overflow: hidden;
+    padding-top: 18px;
   }
+  
 
   .submit:hover {
-    background-color: #ff953d;
-    box-shadow: 0 0 10px 5px #ff953d;
+    background-color: #fe504f;
+    opacity: 0.7;
     transform: scale(1.1); 
     border: 0.5px;
   }
