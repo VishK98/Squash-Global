@@ -34,25 +34,18 @@ function Contact() {
         <div className="container mt-3 p-lg-0 mb-5 pb-5">
           <div className="row align-items-center">
             <div className="col-lg-12">
-              <div
-                className="inner_section_img position-relative hidden"
-                style={{ opacity: 1, transform: "translate(0px, 0px)" }}
-              >
+              <div className="inner_section_img position-relative hidden">
                 <img
                   src={contact}
                   alt="Contact Digital Marketing Agency"
                   className="w-100"
-                  style={{ transform: "translate(0px, 0px)" }}
                 />
               </div>
             </div>
           </div>
           <div className="row mt-5 pb-5">
             <div className="col-lg-5 pt-lg-5">
-              <div
-                className="mt-4 mt-lg-0 address-info topslide"
-                style={{ transform: "translate(0px, 0px)", opacity: 1 }}
-              >
+              <div className="mt-4 mt-lg-0 address-info topslide">
                 <div className="hidden">
                   <img src={india} className="head-icon" alt="india" />
                   <h2 className="india-text"> India</h2>
@@ -75,14 +68,28 @@ function Contact() {
                 <p className="phone mt-3">
                   <img src={message} alt="message icon" />
                   <span style={{ marginLeft: "15px" }}>
-                    <a href="tel:+9102233540123">Tel: +91 022 33540123</a> /{" "}
-                    <a href="tel:+919833973364">+91 9833973364</a>
+                    <a
+                      style={{ textDecoration: "none", color: "#000" }}
+                      href="tel:+9102233540123"
+                    >
+                      Tel: +91 022 33540123
+                    </a>{" "}
+                    /{" "}
+                    <a
+                      style={{ textDecoration: "none", color: "#000" }}
+                      href="tel:+919833973364"
+                    >
+                      +91 9833973364
+                    </a>
                   </span>
                 </p>
                 <p className="email mt-3">
                   <img src={email} alt="email icon" />
                   <span style={{ marginLeft: "10px" }}>
-                    <a href="mailto:india@tonicworldwide.com">
+                    <a
+                      style={{ textDecoration: "none", color: "#000" }}
+                      href="mailto:india@tonicworldwide.com"
+                    >
                       India@tonicworldwide.com
                     </a>
                   </span>
@@ -109,14 +116,14 @@ function Contact() {
                 <p className="phone mt-3">
                   <img src={message} alt="message icon" />
                   <span style={{ marginLeft: "15px" }}>
-                    <a href="tel:+9102233540123">Tel: +91 022 33540123</a> /{" "}
-                    <a href="tel:+919833973364">+91 9833973364</a>
+                    <a style={{textDecoration: "none", color: "#000"}}  href="tel:+9102233540123">Tel: +91 022 33540123</a> /{" "}
+                    <a style={{textDecoration: "none", color: "#000"}}  href="tel:+919833973364">+91 9833973364</a>
                   </span>
                 </p>
                 <p className="email mt-3">
                   <img src={email} alt="email icon" />
                   <span style={{ marginLeft: "10px" }}>
-                    <a href="mailto:india@tonicworldwide.com">
+                    <a style={{textDecoration: "none", color: "#000"}}  href="mailto:india@tonicworldwide.com">
                       dubai@tonicworldwide.com
                     </a>
                   </span>
@@ -217,8 +224,11 @@ function Contact() {
                       autoComplete="off"
                       className="name-field mb-5"
                     />
-                    <div id="contactSubmitBtn"className="d-flex justify-content-center" >
-                      <input 
+                    <div
+                      id="contactSubmitBtn"
+                      className="d-flex justify-content-center"
+                    >
+                      <input
                         type="submit"
                         name="submit"
                         value="Send it"

@@ -17,6 +17,8 @@ import grid2 from "../../assets/images/grid-2.png";
 import grid2Logo from "../../assets/images/twip-logo.png";
 import grid3 from "../../assets/images/grid-3.png";
 import grid3Logo from "../../assets/images/tonic-amplifiy.svg";
+import circularText from "../../assets/images/circular-text.png";
+
 
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
@@ -809,6 +811,27 @@ function Home() {
             </div>
           </div>
         </div>
+        <div className="container">
+      <div className="row">
+        <div className="col-12">
+          <div id="homeSectionEightOne" className="circle_rotation">
+            <div className="section_title position-relative">
+              <div>
+                <div>
+                  <h2 className="mb-lg-4 pb-lg-3 stroke title" style={{ transform: "translate(0px, 0px)", opacity: 1 }}>What</h2>
+                </div>
+                <div className="second_line_title bannertitle">
+                  <h2 className="text-lg-center title" style={{ transform: "translate(0px, 0px)", opacity: 1 }}>We Do</h2>
+                </div>
+              </div>
+              <div className="circle_text_1">
+                <img src={circularText} alt="Digital Marketing Agency" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
       </section>
     </>
   );

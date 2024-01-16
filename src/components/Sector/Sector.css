@@ -1,0 +1,73 @@
+.industries-page-title {
+    font-weight: bold;
+    font-size: 75px;
+}
+.boxes {
+    height: 220px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid rgb(222, 221, 221);
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+    transition: background-color 0.3s ease,
+  }
+  .boxes:hover {
+    background-color: #fe504f;
+  }
+  
+  .box-img {
+    height: 70px;
+    width: 70px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .box-title{
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .overlap-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    color: #fff;
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+  .button{
+    height: 45px;
+    width: 170px;
+    border: #fff solid;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: background-color 0.3s ease,
+  }
+  .button:hover{
+    background-color: #fe504f;
+    border: #fe504f;
+  }
+  
+
+@media only screen and (max-width: 600px) {
+    .industries-page-title {
+        font-size: 35px;
+       }
+       .boxes {
+        width: 105%;
+       }
+       .box-title{
+        font-size: 23px;
+       }
+       .overlap-text{
+        margin-top: 0px;
+        margin-left: 0;
+        position: none;
+        color: #fff;
+        font-size: 10px;
+      }
+}

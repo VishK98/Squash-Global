@@ -75,7 +75,6 @@ function Blog() {
       description:
         "It’s not surprising to learn that website performance is directly correlated to the sizes of images that you put out there",
     },
-    
   ];
   return (
     <>
