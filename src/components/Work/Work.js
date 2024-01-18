@@ -19,6 +19,7 @@ function Work() {
   const workImageData = [
     {
       url: work1,
+      title: "How a winning Content strategy helped the region's largest HR solutions specialist"
     },
     {
       url: work2,
@@ -92,7 +93,7 @@ function Work() {
             className="row"
             style={{ justifyContent: "space-between", marginRight: "5px" }}
           >
-            {workImageData.map((image, index) => (
+            {/* {workImageData.map((image, index) => (
               <div
                 className="col-lg-5 col-md-6 col-12 mt-3 mb-4"
                 key={index}
@@ -111,7 +112,38 @@ function Work() {
                   alt="join us"
                 />
               </div>
-            ))}
+            ))} */}
+            {workImageData.map((image, index) => {
+              // Generate random values for positioning
+              const randomLeft = `${Math.floor(Math.random() * 50)}px`;
+              const randomRight = `${Math.floor(Math.random() * 50)}px`;
+              return (
+                <div
+                  className="col-lg-5 col-md-6 col-12 mt-3 mb-4"
+                  key={index}
+                  style={{ position: "relative" }}
+                >
+                  <img style={{
+                    marginLeft: randomLeft,
+                    // marginRight: randomRight,
+                    height: "500px",
+                    width: "100%",
+                    borderRadius: "10px"
+                  }} className="work-box-img" src={image.url} alt="FMGC" />
+                  <img
+                    style={{
+                      position: "absolute",
+                      bottom: 0,
+                      right: 0,
+                      marginBottom: "-25px",
+                      marginRight: "30px",
+                    }}
+                    src={downArrow}
+                    alt="join us"
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

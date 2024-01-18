@@ -38,7 +38,7 @@ function Contact() {
                 <img
                   src={contact}
                   alt="Contact Digital Marketing Agency"
-                  className="w-100"
+                  className="w-100 "
                 />
               </div>
             </div>
