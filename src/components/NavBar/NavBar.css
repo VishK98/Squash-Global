@@ -1,8 +1,6 @@
 .header {
     background-color: #fff;
-    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.1);
-    /* padding: 10px 0;  */
-    
+    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.1);    
   }
   
   .logo-img {
@@ -48,6 +46,14 @@
   .navbar-toggler{
     background-color: #fff;
     
+  }
+  mobile-margin{
+      margin-left: 100px;
+  }
+  @media only screen and (max-width: 525px) {
+    mobile-margin{
+      margin-left: 0px;
+    }
   }
   
   /* Add your custom styles and animations here */

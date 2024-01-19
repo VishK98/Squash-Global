@@ -289,7 +289,6 @@ function Careers() {
         </div>
       </div>
       <img className="mt-4" style={{ width: "100%" }} src={teamBreak}></img>
-      {/* ... (other JSX code) */}
       <div className="container">
         <h1 className="mt-3">Latest Openings</h1>
 
@@ -297,9 +296,8 @@ function Careers() {
           {jobData.map((job, index) => (
             <div className="col-xs-12 col-sm-6 col-md-4 mt-4" key={index}>
               <div
-                className={`card ${
-                  selectedJobIndex === index ? "flipped" : ""
-                }`}
+                className={`card ${selectedJobIndex === index ? "flipped" : ""
+                  }`}
               >
                 <div className="front">
                   <div className="card-body text-center">
@@ -402,7 +400,6 @@ function Careers() {
           ))}
         </div>
       </div>
-      {/* ... (other JSX code) */}
       <div className="container mt-5" ref={formRef}>
         <div className="row">
           <div
@@ -420,115 +417,43 @@ function Careers() {
           </div>
 
           <div
-            className="col-lg-8 col-md-8 col-sm-12 col-12 form-mobile"
-            style={{ marginLeft: "20px", marginRight: "20px" }}
+            className="col-lg-7 col-md-8 col-sm-12 col-12 form-mobile"
+            style={{ marginLeft: "20px"}}
           >
             <div id="contactForm" >
               <form>
-                <div>
-                  <label>
-                    Full Name
-                    <sup
-                      style={{
-                        color: "red",
-                        marginLeft: "5px",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      *
-                    </sup>
-                  </label>{" "}
-                  <br />
-                  <input
-                    type="text"
-                    name="name"
-                    // value={this.state.name}
-                    // onChange={this.handleChange}
-                    placeholder="Type here"
-                    autoComplete="off"
-                    className="name-field mb-3"
-                  />
-                  <div
-                    id={`applyNowButton`}
+                <label>
+                  Full Name
+                  <sup
                     style={{
-                      display: "flex",
-                      marginBottom: "1rem",
+                      color: "red",
+                      marginLeft: "5px",
+                      fontWeight: "bold",
                     }}
                   >
-                    <div style={{ flex: 1, marginRight: "1rem" }}>
-                      <label>
-                        Email
-                        <sup
-                          style={{
-                            color: "red",
-                            marginLeft: "5px",
-                            fontWeight: "bold",
-                          }}
-                        >
-                          *
-                        </sup>
-                      </label>{" "}
-                      <br />
-                      <input
-                        type="text"
-                        name="email"
-                        // value={this.state.email}
-                        // onChange={this.handleChange}
-                        placeholder="Type here"
-                        autoComplete="off"
-                        className="name-field mb-3"
-                      />
-                    </div>
-                    <div style={{ flex: 1 }}>
-                      <label>
-                        State
-                        <sup
-                          style={{
-                            color: "red",
-                            marginLeft: "5px",
-                            fontWeight: "bold",
-                          }}
-                        >
-                          *
-                        </sup>
-                      </label>{" "}
-                      <br />
-                      <input
-                        type="text"
-                        name="state"
-                        // value={this.state.country}
-                        // onChange={this.handleChange}
-                        placeholder="Type here"
-                        autoComplete="off"
-                        className="name-field mb-3"
-                      />
-                    </div>
-                  </div>
-                  <label>
-                    Contact number
-                    <sup
-                      style={{
-                        color: "red",
-                        marginLeft: "5px",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      *
-                    </sup>
-                  </label>{" "}
-                  <br />
-                  <input
-                    type="text"
-                    name="name"
-                    // value={this.state.name}
-                    // onChange={this.handleChange}
-                    placeholder="+91 7352690391"
-                    autoComplete="off"
-                    className="name-field mb-3"
-                  />
-                  <div>
+                    *
+                  </sup>
+                </label>{" "}
+                <br />
+                <input
+                  type="text"
+                  name="name"
+                  // value={this.state.name}
+                  // onChange={this.handleChange}
+                  placeholder="Type here"
+                  autoComplete="off"
+                  className="name-field mb-3"
+                />
+                <div
+                  id={`applyNowButton`}
+                  style={{
+                    display: "flex",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  <div style={{ flex: 1, marginRight: "1rem" }}>
                     <label>
-                      Role applying for
+                      Email
                       <sup
                         style={{
                           color: "red",
@@ -540,44 +465,66 @@ function Careers() {
                       </sup>
                     </label>{" "}
                     <br />
-                    <select
-                      name="service"
-                      id="service"
-                      className="custom-select"
-                      value={selectedService}
-                      onChange={handleServiceChange}
-                    >
-                      <option value="selected">Select role</option>
-                      <option value="Jr. Project Manager">
-                        Jr. Project Manager
-                      </option>
-                      <option value="Account Management">
-                        Account Management
-                      </option>
-                      <option value="Associate Creative Director">
-                        Associate Creative Director
-                      </option>
-                      <option value="Creative Supervisor">
-                        Creative Supervisor
-                      </option>
-                      <option value="Scriptwriter">Scriptwriter</option>
-                      <option value="SEO Technical Lead">
-                        SEO Technical Lead
-                      </option>
-                    </select>
+                    <input
+                      type="text"
+                      name="email"
+                      // value={this.state.email}
+                      // onChange={this.handleChange}
+                      placeholder="Type here"
+                      autoComplete="off"
+                      className="name-field mb-3"
+                    />
                   </div>
-                  <label>Write something about yourself</label> <br />
-                  <input
-                    type="text"
-                    name="name"
-                    // value={this.state.name}
-                    // onChange={this.handleChange}
-                    placeholder="Type here"
-                    autoComplete="off"
-                    className="name-field mb-5"
-                  />
+                  <div style={{ flex: 1 }}>
+                    <label>
+                      State
+                      <sup
+                        style={{
+                          color: "red",
+                          marginLeft: "5px",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        *
+                      </sup>
+                    </label>{" "}
+                    <br />
+                    <input
+                      type="text"
+                      name="state"
+                      // value={this.state.country}
+                      // onChange={this.handleChange}
+                      placeholder="Type here"
+                      autoComplete="off"
+                      className="name-field mb-3"
+                    />
+                  </div>
+                </div>
+                <label>
+                  Contact number
+                  <sup
+                    style={{
+                      color: "red",
+                      marginLeft: "5px",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    *
+                  </sup>
+                </label>{" "}
+                <br />
+                <input
+                  type="text"
+                  name="name"
+                  // value={this.state.name}
+                  // onChange={this.handleChange}
+                  placeholder="+91 7352690391"
+                  autoComplete="off"
+                  className="name-field mb-3"
+                />
+                <div>
                   <label>
-                    Attach your resume here
+                    Role applying for
                     <sup
                       style={{
                         color: "red",
@@ -589,49 +536,97 @@ function Careers() {
                     </sup>
                   </label>{" "}
                   <br />
-                  <input
-                    id="file-upload"
-                    type="file"
-                    name="file"
-                    // value={this.state.file}
-                    // onChange={this.handleFileChange}
-                    className="name-field"
-                    style={{ display: "none" }}
-                    accept="image/*" // Specify accepted file types, e.g., images
-                    onChange={(e) => {
-                      const fileName = e.target.files[0].name;
-                      document.getElementById("file-upload-label").textContent =
-                        fileName;
+                  <select
+                    name="service"
+                    id="service"
+                    className="custom-select"
+                    value={selectedService}
+                    onChange={handleServiceChange}
+                  >
+                    <option value="selected">Select role</option>
+                    <option value="Jr. Project Manager">
+                      Jr. Project Manager
+                    </option>
+                    <option value="Account Management">
+                      Account Management
+                    </option>
+                    <option value="Associate Creative Director">
+                      Associate Creative Director
+                    </option>
+                    <option value="Creative Supervisor">
+                      Creative Supervisor
+                    </option>
+                    <option value="Scriptwriter">Scriptwriter</option>
+                    <option value="SEO Technical Lead">
+                      SEO Technical Lead
+                    </option>
+                  </select>
+                </div>
+                <label>Write something about yourself</label> <br />
+                <input
+                  type="text"
+                  name="name"
+                  // value={this.state.name}
+                  // onChange={this.handleChange}
+                  placeholder="Type here"
+                  autoComplete="off"
+                  className="name-field mb-5"
+                />
+                <label>
+                  Attach your resume here
+                  <sup
+                    style={{
+                      color: "red",
+                      marginLeft: "5px",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    *
+                  </sup>
+                </label>{" "}
+                <br />
+                <input
+                  id="file-upload"
+                  type="file"
+                  name="file"
+                  // value={this.state.file}
+                  // onChange={this.handleFileChange}
+                  className="name-field"
+                  style={{ display: "none" }}
+                  accept="image/*" // Specify accepted file types, e.g., images
+                  onChange={(e) => {
+                    const fileName = e.target.files[0].name;
+                    document.getElementById("file-upload-label").textContent =
+                      fileName;
+                    document.getElementById(
+                      "file-upload-close"
+                    ).style.display = "inline"; // Show the close icon
+                  }}
+                />
+                <div style={{ display: "flex" }}>
+                  <label
+                    htmlFor="file-upload"
+                    className="custom-file-upload"
+                    style={{ color: "grey", marginRight: "5px" }} // Add margin for spacing
+                    id="file-upload-label"
+                  >
+                    No file chosen
+                  </label>
+                  <span
+                    id="file-upload-close"
+                    onClick={() => {
+                      document.getElementById("file-upload").value = ""; // Reset the file input
+                      document.getElementById(
+                        "file-upload-label"
+                      ).textContent = "No file chosen"; // Reset the label text
                       document.getElementById(
                         "file-upload-close"
-                      ).style.display = "inline"; // Show the close icon
+                      ).style.display = "none"; // Hide the close icon
                     }}
-                  />
-                  <div style={{ display: "flex" }}>
-                    <label
-                      htmlFor="file-upload"
-                      className="custom-file-upload"
-                      style={{ color: "grey", marginRight: "5px" }} // Add margin for spacing
-                      id="file-upload-label"
-                    >
-                      No file chosen
-                    </label>
-                    <span
-                      id="file-upload-close"
-                      onClick={() => {
-                        document.getElementById("file-upload").value = ""; // Reset the file input
-                        document.getElementById(
-                          "file-upload-label"
-                        ).textContent = "No file chosen"; // Reset the label text
-                        document.getElementById(
-                          "file-upload-close"
-                        ).style.display = "none"; // Hide the close icon
-                      }}
-                      style={{ display: "none", cursor: "pointer" }}
-                    >
-                      &#x2715; {/* Close icon (×) */}
-                    </span>
-                  </div>
+                    style={{ display: "none", cursor: "pointer" }}
+                  >
+                    &#x2715; {/* Close icon (×) */}
+                  </span>
                 </div>
                 <div className="d-flex justify-content-center mt-4 mb-3">
                   <input

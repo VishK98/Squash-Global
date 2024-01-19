@@ -86,10 +86,10 @@ export default function NavBar() {
   }, [isMobileNavOpen]);
 
   return (
-    <div className="container-fluid header-wrapper animated none-fix header_reveal header-scrolled slideInDown">
+    <div className="container">
       <header className="header nav-wrapper">
         <nav className="navbar navbar-expand-lg navbar-light" aria-label="Main navigation">
-          <div className="container-fluid max_container">
+          <div className="container">
             <Link to="/" onClick={handleToggleClick}>
               <img src={logo} alt="BigCo Inc. logo" className="logo-img" />
             </Link>
@@ -109,7 +109,7 @@ export default function NavBar() {
               id="navbarsExampleDefault"
             >
              <div className="w-100">
-                <ul className="navbar-nav ml-auto mb-2 mb-lg-0 main-menu" style={{marginLeft: "300px"}}>
+                <ul className="navbar-nav mobile-margin">
                   <li className="nav-item">
                     <Link className="nav-link active" aria-current="page" to="/">
                       Home
