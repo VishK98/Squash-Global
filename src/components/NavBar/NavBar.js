@@ -103,12 +103,11 @@ export default function NavBar() {
               <span className={`navbar-toggler-icon ${isMobileNavOpen ? "open" : ""}`}></span>
             </button>
             <div
-              className={`collapse navbar-collapse offcanvas-collapse ${
-                isMobileNavOpen ? "show" : ""
-              }`}
+              className={`collapse navbar-collapse offcanvas-collapse ${isMobileNavOpen ? "show" : ""
+                }`}
               id="navbarsExampleDefault"
             >
-             <div className="w-100">
+              <div className="w-100">
                 <ul className="navbar-nav mobile-margin">
                   <li className="nav-item">
                     <Link className="nav-link active" aria-current="page" to="/">
