@@ -18,31 +18,11 @@ import grid2Logo from "../../assets/images/twip-logo.png";
 import grid3 from "../../assets/images/grid-3.png";
 import grid3Logo from "../../assets/images/tonic-amplifiy.svg";
 import circularText from "../../assets/images/circular-text.png";
-
-
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
+import VideoBanner from "./VideoBanner";
 
 function Home() {
-  // const indiaTabImage = [
-  //   {
-  //     url: onHerLip,
-  //     title: "What’s on her Lip",
-  //   },
-  //   {
-  //     url: tastiest,
-  //     title: "The tastiest emoji ever",
-  //   },
-  //   {
-  //     url: smile,
-  //     title: "Smiles that break records",
-  //   },
-  //   {
-  //     url: gluconD,
-  //     title: "Look! My mom is on the Glucon-D pack",
-  //   },
-  // ];
-
   useEffect(() => {
     function handleScroll() {
       const image = document.querySelector(".slide-in");
@@ -66,11 +46,12 @@ function Home() {
   }, []);
   return (
     <>
+      <VideoBanner />
       <section id="homeSectionOne" className="position-relative section">
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div className="section_title">
+              {/* <div className="section_title"> */}
                 <div className="bannertitle">
                   <h1 className="text-lg-center not_an stroke">Not an</h1>
                 </div>
@@ -80,7 +61,7 @@ function Home() {
                 <div class="mobile_down_arrow new-big-down-arrow1">
                   <img src={bigCircle} alt="Big Circle Down Arrow" />
                 </div>
-              </div>
+              {/* </div> */}
             </div>
           </div>
           <div className="row ">
@@ -649,12 +630,12 @@ function Home() {
               </div>
               <div className="col-lg-6"></div>
             </div>
-            <div className="row mt-4">
+            <div className="row">
               <div className="col-12">
                 <div className="specialist_divisions_slider">
                   <div id="specialistDivisionsSlider" className="row">
                     <div className="col-md-4 col-12">
-                      <div className="grid-view">
+                      <div className="grid-view mt-4">
                         <a style={{ textDecoration: "none" }} title="">
                           <h3
                             className="dot text-center"
@@ -704,7 +685,7 @@ function Home() {
                       </div>
                     </div>
                     <div className="col-md-4 col-12">
-                      <div className="grid-view">
+                      <div className="grid-view mt-4">
                         <a style={{ textDecoration: "none" }} title="">
                           <h3
                             className="dot text-center"
@@ -754,7 +735,7 @@ function Home() {
                       </div>
                     </div>
                     <div className="col-md-4 col-12">
-                      <div className="grid-view">
+                      <div className="grid-view mt-4">
                         <a style={{ textDecoration: "none" }} title="">
                           <h3
                             className="dot text-center"
@@ -812,26 +793,26 @@ function Home() {
           </div>
         </div>
         <div className="container">
-      <div className="row">
-        <div className="col-12">
-          <div id="homeSectionEightOne" className="circle_rotation">
-            <div className="section_title position-relative">
-              <div>
-                <div>
-                  <h2 className="mb-lg-4 pb-lg-3 stroke title" style={{ transform: "translate(0px, 0px)", opacity: 1 }}>What</h2>
+          <div className="row">
+            <div className="col-12">
+              <div id="homeSectionEightOne" className="circle_rotation">
+                <div className="section_title position-relative">
+                  <div>
+                    <div>
+                      <h2 className="mb-lg-4 pb-lg-3 stroke title" style={{ transform: "translate(0px, 0px)", opacity: 1 }}>What</h2>
+                    </div>
+                    <div className="second_line_title bannertitle">
+                      <h2 className="text-lg-center title" style={{ transform: "translate(0px, 0px)", opacity: 1 }}>We Do</h2>
+                    </div>
+                  </div>
+                  <div className="circle_text_1">
+                    <img src={circularText} alt="Digital Marketing Agency" />
+                  </div>
                 </div>
-                <div className="second_line_title bannertitle">
-                  <h2 className="text-lg-center title" style={{ transform: "translate(0px, 0px)", opacity: 1 }}>We Do</h2>
-                </div>
-              </div>
-              <div className="circle_text_1">
-                <img src={circularText} alt="Digital Marketing Agency" />
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
       </section>
     </>
   );
