@@ -9,100 +9,89 @@ import partyScene from "../../assets/images/party-scene.png";
 function Philosophy() {
   return (
     <>
-      <section id="">
-        <div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="route-text">
-                  <ol class="breadcrumb bg-transparent px-0 route-text mt-4">
-                    <li class="breadcrumb-item">
-                      <a
-                        href="/"
-                        style={{ color: "grey", textDecoration: "none" }}
-                      >
-                        Home / 
-                      </a>
-                    </li>
-                    <li class="breadcrumb-item active" aria-current="page" style={{marginLeft: "8px", color: "grey"}}>
-                      Philosophy
-                    </li>
-                  </ol>
-                </div>
-                <div class="inner_title mb-4 pb-1">
-                  <div class="topslide">
-                    <h1 class="philosophys-h2">
-                      Built on what we all are made of!
-                      <br />
-                      True human potential
-                    </h1>
-                  </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+          <div class="route-text">
+              <ol class="breadcrumb bg-transparent px-0 route-text mt-4">
+                <li>
+                  <a
+                    href="/"
+                    style={{ color: "grey", textDecoration: "none" }}
+                  >
+                    Home /
+                  </a>
+                </li>
+                <li
+                  class="breadcrumb-item active"
+                  aria-current="page"
+                  style={{ marginLeft: "8px", color: "grey" }}
+                >
+                  Philosophy
+                </li>
+              </ol>
+            </div>
+            <div class="inner_title mb-4 pb-1">
+              <div class="topslide">
+                <h1 class="philosophys-h2">
+                  Built on what we all are made of!
+                  <br />
+                  True human potential
+                </h1>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section id="" className="pt-0 service-video-section">
-        <div>
-          <div className="container">
-            <div className="row">
-              <div className="col-12">
-                {/* <div
-                  className="section_img service-video hidden position-relative mt-lg-4 video-btn"
-                  data-toggle="modal"
-                  data-src="https://www.youtube.com/embed/yAoLSRbwxL8"
-                  data-target="#video_pop"
-                > */}
-                    <img
-                      src={philosophy}
-                      alt="Tonic Digital Agency Philosophy"
-                      className="w-100"
-                    />
-                </div>
-              {/* </div> */}
-              <div
-                className="col-lg-9 mt-4 pl-phi-quote pl-5"
-                style={{ margin: "auto" }}
-              >
-                <div className="mt-md-4 ">
-                  <span className="outline_btn explorbtn sow-btn hidden zoomAnimation mt-4">
-                    <img
-                      src={quotation}
-                      alt="Quotation Mark"
-                      className="quote-apos"
-                      style={{ float: "left" }}
-                    />
-                    <h2
-                      className="ml-4 quote pt-4"
-                      style={{ opacity: 1, fontWeight: "bold" }}
-                    >
-                      Some
-                      <mark className="text-highlight">
-                        {" "}
-                        painters transform{" "}
-                      </mark>{" "}
-                      the sun into a yellow spot, others
-                      <mark className="text-highlight">
-                        {" "}
-                        transform a yellow <br />
-                        spot into the sun.
-                      </mark>
-                    </h2>
-                    <span className="quote-writer-name-icon">
-                      <img src={yellowCircle} alt="yellow circle" />
-                    </span>
-                    {/* <i className="quote-writer-name">Pablo Picasso</i> */}
-                    <i className="quote-writer-name">Kumar Vishesh & Vishal Upadhyay 😃</i>
-
+      </div>
+        <div className="container pt-3">
+          <div className="row">
+            <div className="col-12">
+              <img
+                src={philosophy}
+                alt="Tonic Digital Agency Philosophy"
+                className="w-100"
+              />
+            </div>
+            {/* </div> */}
+            <div
+              className="col-lg-9 mt-4 pl-phi-quote pl-5"
+              style={{ margin: "auto" }}
+            >
+              <div className="mt-md-4 ">
+                <span className="outline_btn explorbtn sow-btn hidden zoomAnimation mt-4">
+                  <img
+                    src={quotation}
+                    alt="Quotation Mark"
+                    className="quote-apos"
+                    style={{ float: "left" }}
+                  />
+                  <h2
+                    className="ml-4 quote pt-4"
+                    style={{ opacity: 1, fontWeight: "bold" }}
+                  >
+                    Some
+                    <mark className="text-highlight">
+                      {" "}
+                      painters transform{" "}
+                    </mark>{" "}
+                    the sun into a yellow spot, others
+                    <mark className="text-highlight">
+                      {" "}
+                      transform a yellow <br />
+                      spot into the sun.
+                    </mark>
+                  </h2>
+                  <span className="quote-writer-name-icon">
+                    <img src={yellowCircle} alt="yellow circle" />
                   </span>
-                </div>
+                  {/* <i className="quote-writer-name">Pablo Picasso</i> */}
+                  <i className="quote-writer-name">Kumar Vishesh & Vishal Upadhyay 😃</i>
+
+                </span>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section id="" className="mt-lg-5 mt-4">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
@@ -151,7 +140,7 @@ function Philosophy() {
                 everything.
               </p>
               <p className="topslide mt-lg-4">
-                This is Tonic 2.0 - Where, like a shot of yellow in a ray of
+                This is Squash Global - Where, like a shot of yellow in a ray of
                 light, we see things anew.
               </p>
               <h3 className="topslide mt-lg-4">People make us what we are.</h3>
@@ -164,9 +153,9 @@ function Philosophy() {
             </div>
           </div>
         </div>
-      </section>
-      <section id="" className="mt-lg-4 mt-4 pt-lg-0 pt-0">
-        <div className="container pb-5">
+     
+      <section id="" className="mt-lg-3 mt-3 pt-lg-0 pt-0">
+        <div className="container">
           <div className="position-relative phi-bottom-banner topslide">
             <div className="row p-5">
               <div className="col-md-7"></div>
@@ -180,11 +169,7 @@ function Philosophy() {
             </div>
           </div>
         </div>
-        <div className="container">
-          <div className="row">
-            
-          </div>
-        </div>
+   
       </section>
     </>
   );

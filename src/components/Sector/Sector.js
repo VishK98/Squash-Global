@@ -18,8 +18,8 @@ import { Link } from "react-router-dom";
 
 function Sector() {
   return (
-    <section id="industriesSectionOne">
-      <div>
+    
+      <>
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
@@ -269,8 +269,8 @@ function Sector() {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </>
+    
   );
 }
 

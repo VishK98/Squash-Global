@@ -11,6 +11,7 @@ import blogImage8 from "../../assets/images/blog-image (8).jpg";
 import blogImage9 from "../../assets/images/blog-image (9).jpg";
 import blogImage10 from "../../assets/images/blog-image (10).jpg";
 
+
 function Blog() {
   const imagesData = [
     {
@@ -78,7 +79,7 @@ function Blog() {
   ];
   return (
     <>
-      <div className="blog-container mt-4">
+      <div className="container mt-4">
         <div class="route-text">
           <ol class="breadcrumb bg-transparent px-0 route-text mt-4">
             <li class="breadcrumb-item">
@@ -121,7 +122,7 @@ function Blog() {
           </span>
         </p>
       </div>
-
+      <div className="container">
       <div className="image-gallery blog-container ">
         {imagesData.map((image, index) => (
           <div key={index} className="image-item">
@@ -130,6 +131,8 @@ function Blog() {
             <h6 className="description">{image.description}</h6>
           </div>
         ))}
+      </div>
+
       </div>
     </>
   );

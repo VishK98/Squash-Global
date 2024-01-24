@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Careers.css";
-import "./Cards.css";
 import image from "../../assets/images/career-in-tonic.jpg";
 import downArrow from "../../assets/images/small-circle-down-arrow.png";
 import team from "../../assets/images/team-image.webp";
@@ -169,8 +168,11 @@ function Careers() {
           <div className="col-lg-12">
             <div class="route-text">
               <ol class="breadcrumb bg-transparent px-0 route-text mt-4">
-                <li class="breadcrumb-item">
-                  <a href="/" style={{ color: "grey", textDecoration: "none" }}>
+                <li>
+                  <a
+                    href="/"
+                    style={{ color: "grey", textDecoration: "none" }}
+                  >
                     Home /
                   </a>
                 </li>
@@ -183,39 +185,24 @@ function Careers() {
                 </li>
               </ol>
             </div>
-            <div className="inner_title hidden d-flex align-items-center justify-content-between flex-wrap careers-sec">
-              <h1 className="pr-lg-4 topslide story">
-                Your Story
-                <h1 className="d-md-inline-block d-inline-block start">
-                  Starts here
-                </h1>
-              </h1>
-            </div>
+            <h1 style={{ fontSize: "50px", fontWeight: "bold" }}>
+              Your Story Starts here
+            </h1>
           </div>
         </div>
       </div>
-      <div className="container-fluid ">
-        <div className="row align-items-center pt-md-4">
-          <div className="col-lg-7">
-            <div className="inner_section_img position-relative hidden round_corner_img">
-              <div>
-                <img
-                  style={{ width: "100%" }}
-                  src={image}
-                  alt="Career at Digital Marketing Agency"
-                />
-              </div>
-            </div>
+      <div className="container ">
+        <div className="row pt-md-3">
+          <div className="col-lg-8">
+            <img
+              style={{ width: "100%" }}
+              src={image}
+              alt="Career at Digital Marketing Agency"
+            />
           </div>
-          <div className="col-lg-5 topslide">
-            <div className="section_text mt-4 mt-lg-0 pl-lg-4 pl-0">
-              <h2 className="working">
-                <br />
-                Work with the biggest brand & brightest
-                <br />
-                minds
-              </h2>
-              <a href="#latestOpeningSection" className="explorbtn mt-lg-4">
+          <div className="col-lg-4 mt-2">
+            <h2 style={{fontSize: "50px",fontWeight: "bold"}}>Work with the biggest brand & brightest minds</h2>
+            <a href="#latestOpeningSection" className="explorbtn mt-lg-4">
                 <i className="joinUs">Join Us</i>
                 <span>
                   <img
@@ -226,12 +213,11 @@ function Careers() {
                   />
                 </span>
               </a>
-            </div>
           </div>
         </div>
       </div>
       <div className="container mt-3">
-        <h1 style={{ fontWeight: "bold" }}>Why Join Squash Global?</h1>
+        <h1 style={{ fontWeight: "bold"}}>Why Join Squash Global?</h1>
         <p className="mt-4" style={{ fontSize: "20px" }}>
           <span style={{ fontWeight: "600" }}>
             We believe in growing together, with you.
@@ -294,60 +280,56 @@ function Careers() {
 
         <div className="row" ref={closeRef}>
           {jobData.map((job, index) => (
-            <div className="col-xs-12 col-sm-6 col-md-4 mt-4" key={index}>
+            <div className="col-xs-12 col-sm-6 col-md-4 mt-4 col-lg-4" key={index}>
               <div
                 className={`card ${selectedJobIndex === index ? "flipped" : ""
                   }`}
               >
-                <div className="front">
-                  <div className="card-body text-center">
-                    <img
-                      className="img-fluid animated-image"
-                      src={job.url}
-                      alt="card image"
-                    />
-                    <h4 className="card-title mt-3">{job.title}</h4>
-                    <div className="row mt-3">
-                      {/* ... (other front card content) */}
-                      <div className="row mt-3">
-                        <div className="col">
-                          <p style={{ fontWeight: "500" }}>
-                            Location: {job.location}
-                          </p>
-                        </div>
-                        <div className="col">
-                          <p style={{ fontWeight: "500" }}>
-                            Experience: {job.experience}
-                          </p>
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="col">
-                          <p
-                            style={{
-                              fontWeight: "500",
-                              marginRight: "30px",
-                            }}
-                          >
-                            Salary: 4-6 LPA{" "}
-                          </p>
-                        </div>
-                        <div className="col">
-                          <p style={{ fontWeight: "500" }}>
-                            Posted on: 10-01-2024
-                          </p>
-                        </div>
-                      </div>
+                <div className="text-center mb-2" >
+                  <img
+                    className="img-fluid animated-image"
+                    src={job.url}
+                    alt="card image"
+                  />
+                  <h4 className="card-title mt-3">{job.title}</h4>
+                  <div className="row mt-1">
+                    <div className="col">
+                      <p style={{ fontWeight: "500" }}>
+                        Location: {job.location}
+                      </p>
                     </div>
-                    <div>
-                      <button
-                        ref={applyNowRef}
-                        className="apply-now-btn mt-3"
-                        onClick={() => handleDetailsClick(index)}
+                    <div className="col">
+                      <p style={{ fontWeight: "500" }}>
+                        Experience: {job.experience}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col">
+                      <p
+                        style={{
+                          fontWeight: "500",
+                          marginRight: "30px",
+                        }}
                       >
-                        {selectedJobIndex === index ? "Close" : "Details"}
-                      </button>
+                        Salary: 4-6 LPA{" "}
+                      </p>
                     </div>
+                    <div className="col">
+                      <p style={{ fontWeight: "500" }}>
+                        Posted on: 10-01-2024
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <button
+                      ref={applyNowRef}
+                      className="apply-now-btn mt-3"
+                      onClick={() => handleDetailsClick(index)}
+                    >
+                      {selectedJobIndex === index ? "Close" : "Details"}
+                    </button>
                   </div>
                 </div>
                 <div
@@ -418,7 +400,7 @@ function Careers() {
 
           <div
             className="col-lg-7 col-md-8 col-sm-12 col-12 form-mobile"
-            style={{ marginLeft: "20px"}}
+            style={{ marginLeft: "20px" }}
           >
             <div id="contactForm" >
               <form>

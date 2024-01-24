@@ -13,7 +13,7 @@ function Footer() {
   return (
     <>
       <footer className="text-center text-white footer-background ">
-        <div className="container pt-4 ">
+        <div className="container pt-2 mt-2">
           <section >
             <a
               className="btn btn-link btn-floating btn-lg text-dark m-1"
@@ -23,7 +23,6 @@ function Footer() {
             >
               <FaFacebookF />
             </a>
-
             <a
               className="btn btn-link btn-floating btn-lg text-dark m-1"
               href="#!"

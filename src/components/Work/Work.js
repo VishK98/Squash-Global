@@ -56,44 +56,42 @@ function Work() {
     },
   ];
   return (
-    <section id="industriesSectionOne">
-      <div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="route-text">
-                <ol class="breadcrumb bg-transparent px-0 route-text mt-4">
-                  <li>
-                    <a
-                      href="/"
-                      style={{ color: "grey", textDecoration: "none" }}
-                    >
-                      Home /
-                    </a>
-                  </li>
-                  <li
-                    class="breadcrumb-item active"
-                    aria-current="page"
-                    style={{ marginLeft: "8px", color: "grey" }}
+    <>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="route-text">
+              <ol class="breadcrumb bg-transparent px-0 route-text mt-4">
+                <li>
+                  <a
+                    href="/"
+                    style={{ color: "grey", textDecoration: "none" }}
                   >
-                    Work
-                  </li>
-                </ol>
-              </div>
+                    Home /
+                  </a>
+                </li>
+                <li
+                  class="breadcrumb-item active"
+                  aria-current="page"
+                  style={{ marginLeft: "8px", color: "grey" }}
+                >
+                  Work
+                </li>
+              </ol>
             </div>
           </div>
         </div>
-
-        <div className="container">
-          <h4 className="box-title">
-            Guided by our craft and steered by insight-driven strategy, we offer
-            integrated solutions that delight and disrupt in equal parts.
-          </h4>
-          <div
-            className="row"
-            style={{ justifyContent: "space-between", marginRight: "5px" }}
-          >
-            {/* {workImageData.map((image, index) => (
+      </div>
+      <div className="container">
+        <h4 className="box-title">
+          Guided by our craft and steered by insight-driven strategy, we offer
+          integrated solutions that delight and disrupt in equal parts.
+        </h4>
+        <div
+          className="row"
+          style={{ justifyContent: "space-between", marginRight: "5px" }}
+        >
+          {/* {workImageData.map((image, index) => (
               <div
                 className="col-lg-5 col-md-6 col-12 mt-3 mb-4"
                 key={index}
@@ -113,41 +111,41 @@ function Work() {
                 />
               </div>
             ))} */}
-            {workImageData.map((image, index) => {
-              // Generate random values for positioning
-              const randomLeft = `${Math.floor(Math.random() * 50)}px`;
-              const randomRight = `${Math.floor(Math.random() * 50)}px`;
-              return (
-                <div
-                  className="col-lg-5 col-md-6 col-12 mt-3 mb-4"
-                  key={index}
-                  style={{ position: "relative" }}
-                >
-                  <img style={{
-                    marginLeft: randomLeft,
-                    // marginRight: randomRight,
-                    height: "500px",
-                    width: "100%",
-                    borderRadius: "10px"
-                  }} className="work-box-img" src={image.url} alt="FMGC" />
-                  <img
-                    style={{
-                      position: "absolute",
-                      bottom: 0,
-                      right: 0,
-                      marginBottom: "-25px",
-                      marginRight: "30px",
-                    }}
-                    src={downArrow}
-                    alt="join us"
-                  />
-                </div>
-              );
-            })}
-          </div>
+          {workImageData.map((image, index) => {
+            // Generate random values for positioning
+            const randomLeft = `${Math.floor(Math.random() * 50)}px`;
+            const randomRight = `${Math.floor(Math.random() * 50)}px`;
+            return (
+              <div
+                className="col-lg-5 col-md-6 col-12 mt-3 mb-4"
+                key={index}
+                style={{ position: "relative" }}
+              >
+                <img style={{
+                  marginLeft: randomLeft,
+                  // marginRight: randomRight,
+                  height: "500px",
+                  width: "100%",
+                  borderRadius: "10px"
+                }} className="work-box-img" src={image.url} alt="FMGC" />
+                <img
+                  style={{
+                    position: "absolute",
+                    bottom: 0,
+                    right: 0,
+                    marginBottom: "-25px",
+                    marginRight: "30px",
+                  }}
+                  src={downArrow}
+                  alt="join us"
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
-    </section>
+
+    </>
   );
 }
 

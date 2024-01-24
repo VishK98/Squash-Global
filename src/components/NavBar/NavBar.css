@@ -1,13 +1,10 @@
 .header {
-    background-color: #fff;
-  }
-  
+  width: 100%;
+}
   .logo-img {
     height: 43px;
     width: 100px;
     border-radius: 5%;
-    margin-left: 10px;
-    margin-top: 5px;
   }
   
   .nav-link {
@@ -23,37 +20,42 @@
     color: #000;
   }
 
-  .contact{
-    margin-left: 15px;
-  }
   /* Cursor Animation */
   #cursor {
     position: absolute;
-    width: 10px;
-    height: 10px;
     border-radius: 50%;
     background-color: #000;
-
     mix-blend-mode: difference;
     pointer-events: none;
-    z-index: 9999;
     transition: width 0.3s, height 0.3s, background-color 0.3s;
-    transform: translate(-50%, -50%); /* Center the cursor */
-    top: 0;
+    transform: translate(-50%, -50%);
     left: 0;
   }
   .navbar-toggler{
     background-color: #fff;
     
   }
-  mobile-margin{
-      margin-left: 100px;
-  }
   @media only screen and (max-width: 525px) {
     mobile-margin{
       margin-left: 0px;
     }
+    .video-banner video {
+      display: none; 
+    }
   }
   
-  /* Add your custom styles and animations here */
+  
+  .video-banner {
+    width: 100%;
+  }
+  
+  video {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0; 
+  }
+  
+     
+    
   

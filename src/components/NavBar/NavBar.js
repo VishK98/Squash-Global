@@ -1,11 +1,14 @@
 import React, { useEffect, useState, useRef } from "react";
 import logo from "../../assets/images/logo.png";
+// import logo from "../../assets/images/logo-squash.png";
 import "./NavBar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import squashVideo from "../../assets/squash.mp4";
 
 export default function NavBar() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const cursorRef = useRef(null);
+  const location = useLocation();
 
   const toggleMobileNav = () => {
     setIsMobileNavOpen((prevState) => !prevState);
@@ -15,6 +18,10 @@ export default function NavBar() {
     if (isMobileNavOpen) {
       setIsMobileNavOpen(false);
     }
+  };
+
+  const updateVideoHeight = () => {
+    setVideoHeight(location.pathname === "/" ? "100%" : "0%");
   };
 
   useEffect(() => {
@@ -85,72 +92,92 @@ export default function NavBar() {
     };
   }, [isMobileNavOpen]);
 
+  const [videoHeight, setVideoHeight] = useState("100%");
+
+  useEffect(() => {
+    updateVideoHeight();
+    console.log(videoHeight);
+  }, [location.pathname]);
+
+  // Conditionally render the video only when screen width is greater than 768 pixels
+  const shouldRenderVideo = window.innerWidth > 768;
+
   return (
-    <div className="container">
-      <header className="header nav-wrapper">
-        <nav className="navbar navbar-expand-lg navbar-light" aria-label="Main navigation">
-          <div className="container">
-            <Link to="/" onClick={handleToggleClick}>
+    <>
+      {shouldRenderVideo && (
+        <div>
+          <video autoPlay loop muted playsInline style={{ height: videoHeight }}>
+            <source src={squashVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      )}
+       <header className="header nav-wrapper">
+        <nav className="navbar navbar-expand-lg" aria-label="Main navigation">
+          <div className="container" style={{ marginLeft: "25px" }}>
+            <Link to="/" onClick={handleToggleClick} className="mt-2">
               <img src={logo} alt="BigCo Inc. logo" className="logo-img" />
             </Link>
 
             <button
-              className="navbar-toggler"
+              className="navbar-toggler mt-2 "
               type="button"
               onClick={toggleMobileNav}
               aria-label="Toggle navigation"
             >
-              <span className={`navbar-toggler-icon ${isMobileNavOpen ? "open" : ""}`}></span>
+              <span
+                className={`navbar-toggler-icon ${isMobileNavOpen ? "open" : ""}`}
+              ></span>
             </button>
+
             <div
-              className={`collapse navbar-collapse offcanvas-collapse ${isMobileNavOpen ? "show" : ""
-                }`}
+              className={`collapse navbar-collapse offcanvas-collapse ${
+                isMobileNavOpen ? "show" : ""
+              }`}
               id="navbarsExampleDefault"
             >
-              <div className="w-100">
-                <ul className="navbar-nav mobile-margin">
-                  <li className="nav-item">
-                    <Link className="nav-link active" aria-current="page" to="/">
-                      Home
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" to="/philosophy">
-                      Philosophy
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" to="/work">
-                      Working
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" to="/sector">
-                      Sector
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" to="/blog">
-                      Blog
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" to="/careers">
-                      Careers
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" to="/contact">
-                      Contact
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+            <ul className="navbar-nav ml-auto mt-2" style={{marginLeft: "130px"}}>
+                <li className="nav-item">
+                  <Link className="nav-link active" aria-current="page" to="/">
+                    Home
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/philosophy">
+                    Philosophy
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/work">
+                    Working
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/sector">
+                    Sector
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/blog">
+                    Blog
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/careers">
+                    Careers
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/contact">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </nav>
       </header>
       <div id="cursor" className="cursor" ref={cursorRef}></div>
-    </div>
+    </>
   );
 }

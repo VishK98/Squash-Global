@@ -1,4 +1,5 @@
 import "./App.css";
+import './setup';
 import { BrowserRouter as Router, Routes, Route,  } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import Philosophy from "./components/Philosophy/Philosophy";

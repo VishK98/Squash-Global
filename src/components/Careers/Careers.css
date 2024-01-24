@@ -1,16 +1,4 @@
-.story {
-  font-size: 50px;
-  font-weight: bold;
-}
-.start {
-  font-size: 50px;
-  font-weight: bold;
-  margin-left: 15px;
-}
-.working {
-  font-size: 50px;
-  font-weight: bold;
-}
+
 .explorbtn {
   font-size: 35px;
   font-weight: bold;
@@ -23,43 +11,7 @@
   color: grey;
   text-decoration: none;
 }
-
-.job-opening-box {
-  position: relative;
-  height: 300px;
-  width: 90%;
-  border: 1px solid grey;
-  border-radius: 10px;
-  margin: 10px;
-  transition: border-color 0.2s, box-shadow 0.5s;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.job-opening-box:hover {
-  border-color: #fe504f;
-  box-shadow: 5px 5px 10px #f48c8c;
-}
-
-.job-opening-box:hover .digital-text {
-  background-color: #fe504f;
-  color: white;
-}
-
 .digital-text {
-  position: absolute;
-  height: 40px;
-  width: 115px;
-  left: 0;
-  margin-top: 70px;
-  margin-left: 90px;
-  border-radius: 5px;
-  background-color: #d2d1d1;
-  text-align: center;
-  line-height: 40px;
-  font-size: 19px;
-  transition: background-color 0.1s;
-}
-.location-text {
   position: absolute;
   height: 40px;
   width: 115px;
