@@ -577,9 +577,9 @@ function Home() {
         <div className="row align-items-center">
           <div className="col-lg-10 col-md-12">
             <div>
-              <h2 className="stroke title">What</h2>
+              <h2 className="stroke title">What We</h2>
               <div className="second_line_title bannertitle">
-                <h2 className="text-lg-center title m-lg-auto">We Do</h2>
+                <h2 className="text-lg-center title m-lg-auto">Specialize In</h2>
               </div>
             </div>
           </div>
