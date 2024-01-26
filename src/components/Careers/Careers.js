@@ -424,7 +424,7 @@ function Careers() {
                   // onChange={this.handleChange}
                   placeholder="Type here"
                   autoComplete="off"
-                  className="name-field mb-3"
+                  className="form-field mb-3"
                 />
                 <div
                   id={`applyNowButton`}
@@ -454,7 +454,7 @@ function Careers() {
                       // onChange={this.handleChange}
                       placeholder="Type here"
                       autoComplete="off"
-                      className="name-field mb-3"
+                      className="form-field mb-3"
                     />
                   </div>
                   <div style={{ flex: 1 }}>
@@ -478,7 +478,7 @@ function Careers() {
                       // onChange={this.handleChange}
                       placeholder="Type here"
                       autoComplete="off"
-                      className="name-field mb-3"
+                      className="form-field mb-3"
                     />
                   </div>
                 </div>
@@ -502,7 +502,7 @@ function Careers() {
                   // onChange={this.handleChange}
                   placeholder="+91 7352690391"
                   autoComplete="off"
-                  className="name-field mb-3"
+                  className="form-field mb-3"
                 />
                 <div>
                   <label>
@@ -552,7 +552,7 @@ function Careers() {
                   // onChange={this.handleChange}
                   placeholder="Type here"
                   autoComplete="off"
-                  className="name-field mb-5"
+                  className="form-field mb-5"
                 />
                 <label>
                   Attach your resume here
@@ -573,7 +573,7 @@ function Careers() {
                   name="file"
                   // value={this.state.file}
                   // onChange={this.handleFileChange}
-                  className="name-field"
+                  className="form-field"
                   style={{ display: "none" }}
                   accept="image/*" // Specify accepted file types, e.g., images
                   onChange={(e) => {

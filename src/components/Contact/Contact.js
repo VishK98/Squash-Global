@@ -171,7 +171,7 @@ function Contact() {
                     // onChange={this.handleChange}
                     placeholder="Type here"
                     autoComplete="off"
-                    className="name-field mb-3"
+                    className="form-field mb-3"
                   />
                   <label>Email</label> <br></br>
                   <input
@@ -181,7 +181,7 @@ function Contact() {
                     // onChange={this.handleChange}
                     placeholder="Type here"
                     autoComplete="off"
-                    className="name-field mb-3"
+                    className="form-field mb-3"
                   />
                   <label>Country</label> <br></br>
                   <input
@@ -191,7 +191,7 @@ function Contact() {
                     // onChange={this.handleChange}
                     placeholder="Type here"
                     autoComplete="off"
-                    className="name-field mb-3"
+                    className="form-field mb-3"
                   />
                   <label>Contact number</label> <br></br>
                   <input
@@ -201,7 +201,7 @@ function Contact() {
                     // onChange={this.handleChange}
                     placeholder="+91 7352690391"
                     autoComplete="off"
-                    className="name-field mb-3"
+                    className="form-field mb-3"
                   />
                   <div>
                     <label htmlFor="service">Choose a service:</label>
@@ -242,13 +242,13 @@ function Contact() {
                     // onChange={this.handleChange}
                     placeholder="Type here"
                     autoComplete="off"
-                    className="name-field mb-5"
+                    className="form-field mb-5"
                   />
                   <div
                     id="contactSubmitBtn"
                     className="d-flex justify-content-center"
                   >
-                    <input
+                    <input style={{fontSize: "20px", fontWeight: "bold"}}
                       type="submit"
                       name="submit"
                       value="Send it"

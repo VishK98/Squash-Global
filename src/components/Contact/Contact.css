@@ -16,29 +16,17 @@
     align-items: center;
     text-decoration:none
 }
-.phone{
-    font-size: 20px;
-    font-weight: bold;
-    color: #000;
-    display: flex;
-    align-items: center;
-    text-decoration:none
-}
-.email{
-    font-size: 20px;
-    font-weight: bold;
-    color: #000;
-    display: flex;
-    align-items: center;
-    text-decoration:none
-}
 
-.name-field {
-    height: 50px;
-    width: 100%;
-    background: #fff;
-    border: none;
-    border-bottom: 1px solid #000;
+.form-field {
+  height: 50px;
+  width: 100%;
+  background: #fff;
+  border: none;
+  border: none; 
+  border-radius: 0; 
+  outline: none; 
+  box-shadow: none; 
+  border-bottom: 1px solid #000; 
 }
 .custom-select {
     position: relative;
@@ -84,8 +72,10 @@
     width: 150px;
     border-radius: 50%; 
     background: url(../../assets/images/arrow-more2.webp) 50% 50px no-repeat #fff;
+    /* background: url(../../assets/images/arrow.png) 50% 50px no-repeat #fff; */
+
     transition: background-color 0.3s ease, box-shadow 0.5s ease, transform 0.3s ease; 
-    border: 2px solid #ccc;
+    border: 2px solid #000;
     box-sizing: border-box; 
     cursor: pointer;
     overflow: hidden;

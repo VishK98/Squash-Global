@@ -1,12 +1,10 @@
 import "./Home.css";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import bigCircle from "../../assets/images/big-circle-down-arrow.png";
 import gispiImage from "../../assets/images/gipsi-report.jpg";
 import arrowMore from "../../assets/images/arrow-more.png";
 import tasc from "../../assets/images/TASC.png";
 import onHerLip from "../../assets/images/Whats-on-her-lip.jpg";
-import smile from "../../assets/images/smile.jpg";
-import Wellbene from "../../assets/images/Wellbene Big.png";
 import worldwideOffice from "../../assets/images/tonic-worldwide-office.jpg";
 import grid1 from "../../assets/images/grid-1.png";
 import grid1Logo from "../../assets/images/gipsi-logo.png";
@@ -15,12 +13,19 @@ import grid2Logo from "../../assets/images/twip-logo.png";
 import grid3 from "../../assets/images/grid-3.png";
 import grid3Logo from "../../assets/images/tonic-amplifiy.svg";
 import circularText from "../../assets/images/circular-text.png";
-import Tabs from "react-bootstrap/Tabs";
-import Tab from "react-bootstrap/Tab";
 import IndiaClients from "../../assets/images/IndiaClients-bw-new.jpg";
 import brandIcon from "../../assets/images/brand-icon.png";
+import "./BlogSlider";
+import BlogSlider from "./BlogSlider";
 
 function Home() {
+  // Create a state to manage the selected value
+  const [selectedService, setSelectedService] = useState("selected");
+
+  // Handle changes to the selected value
+  const handleServiceChange = (event) => {
+    setSelectedService(event.target.value);
+  };
   useEffect(() => {
     function handleScroll() {
       const image = document.querySelector(".slide-in");
@@ -132,7 +137,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section id="homeSectionThree" class="position-relative section">
+      <section id="homeSectionThree" >
         <div className="container">
           <div className="row">
             <div className="col-12 d-flex align-items-center ">
@@ -160,312 +165,130 @@ function Home() {
           </div>
         </div>
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-12">
-              <Tabs id="work-tabs" className="custom-tabs">
-                <Tab eventKey="india-work" title="India">
-                  {/* Content for India tab */}
-                  <div className="tab-content">
-                    <div className="col-lg-12 col-12">
-                      <div className="row mt-4 mb-4">
-                        <div className="col-md-7">
-                          <div>
-                            <a href="work/smile-train-redefines-inclusivity-national-lipstick-day">
-                              <div className="work_list_img round_img">
-                                <img
-                                  style={{ height: "100%", width: "100%" }}
-                                  src={onHerLip}
-                                  alt="What’s on her Lip"
-                                />
-                              </div>
-                              <div className="work_list_caption">
-                                <div className="d-flex align-items-start justify-content-between">
-                                  <div>
-                                    {/* <h6>Social Media Strategy</h6> */}
-                                  </div>
-                                  <div>
-                                    {/* <img src="default.jpg" alt="" /> */}
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                        <div className="col-md-4 offset-md-1">
-                          <div className="section_para pr-lg-5 pr-0 h-100 d-flex align-items-center">
-                            <div>
-                              <a
-                                style={{ textDecoration: "none" }}
-                                href="work/smile-train-redefines-inclusivity-national-lipstick-day"
-                              >
-                                <h3
-                                  style={{
-                                    color: "black",
-                                    marginLeft: "100px",
-                                  }}
-                                >
-                                  <span className="d-block">
-                                    What’s on her Lip
-                                  </span>{" "}
-                                  <span className="d-block"></span>
-                                </h3>
-                              </a>
-                              <a
-                                // href="pdf/Indian-Festive-Gifters-2023-GIPSI-TWW.pdf"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="outline_btn explorbtn mt-4 position-relative"
-                              >
-                                <i
-                                  style={{
-                                    marginRight: "50px",
-                                    marginLeft: "100px",
-                                  }}
-                                >
-                                  Explore
-                                </i>
-                                <span className="zoom-icon">
-                                  <img
-                                    src={arrowMore}
-                                    alt=""
-                                    className="zooming-image"
-                                  />
-                                </span>
-                                <div className="zoom-overlay"></div>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+          <div className="col-lg-12 col-12">
+            <div className="row mt-4 mb-5">
+              <div className="col-md-7">
+                <div>
+                  <a href="#">
+                    <div className="work_list_img round_img">
+                      <img
+                        style={{ height: "100%", width: "100%" }}
+                        src={onHerLip}
+                        alt="What’s on her Lip"
+                      />
                     </div>
+                  </a>
+                </div>
+              </div>
+              <div className="col-md-4 offset-md-1">
+                <div className="section_para pr-lg-5 pr-0 h-100 d-flex align-items-center">
+                  <div>
+                    <a
+                      style={{ textDecoration: "none" }}
+                      href="work/smile-train-redefines-inclusivity-national-lipstick-day"
+                    >
+                      <h3
+                        style={{
+                          color: "black",
+                          marginLeft: "100px",
+                        }}
+                      >
+                        <span className="d-block">
+                          What’s on her Lip
+                        </span>{" "}
+                        <span className="d-block"></span>
+                      </h3>
+                    </a>
+                    <a
+                      // href="pdf/Indian-Festive-Gifters-2023-GIPSI-TWW.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="outline_btn explorbtn mt-4 position-relative"
+                    >
+                      <i
+                        style={{
+                          marginRight: "50px",
+                          marginLeft: "100px",
+                        }}
+                      >
+                        Explore
+                      </i>
+                      <span className="zoom-icon">
+                        <img
+                          src={arrowMore}
+                          alt=""
+                          className="zooming-image"
+                        />
+                      </span>
+                      <div className="zoom-overlay"></div>
+                    </a>
                   </div>
-                  <div className="tab-content">
-                    <div className="col-lg-12 col-12">
-                      <div className="row mt-4 mb-4">
-                        <div className="col-md-4 offset-md-1">
-                          <div className="section_para pr-lg-5 pr-0 h-100 d-flex align-items-center">
-                            <div>
-                              <a
-                                style={{ textDecoration: "none" }}
-                                href="work/smile-train-redefines-inclusivity-national-lipstick-day"
-                              >
-                                <h3
-                                  style={{
-                                    color: "black",
-                                    marginLeft: "100px",
-                                  }}
-                                >
-                                  <span className="d-block">
-                                    Smiles that break records
-                                  </span>{" "}
-                                  <span className="d-block"></span>
-                                </h3>
-                              </a>
-                              <a
-                                // href="pdf/Indian-Festive-Gifters-2023-GIPSI-TWW.pdf"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="outline_btn explorbtn mt-4 position-relative"
-                              >
-                                <i
-                                  style={{
-                                    marginRight: "50px",
-                                    marginLeft: "100px",
-                                  }}
-                                >
-                                  Explore
-                                </i>
-                                <span className="zoom-icon">
-                                  <img
-                                    src={arrowMore}
-                                    alt=""
-                                    className="zooming-image"
-                                  />
-                                </span>
-                                <div className="zoom-overlay"></div>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-md-7">
-                          <div>
-                            <a href="work/smile-train-redefines-inclusivity-national-lipstick-day">
-                              <div className="work_list_img round_img">
-                                <img
-                                  style={{ height: "100%", width: "100%" }}
-                                  src={smile}
-                                  alt="Smiles that break records"
-                                />
-                              </div>
-                              <div className="work_list_caption">
-                                <div className="d-flex align-items-start justify-content-between">
-                                  <div>
-                                    {/* <h6>Social Media Strategy</h6> */}
-                                  </div>
-                                  <div>
-                                    {/* <img src="default.jpg" alt="" /> */}
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="col-lg-12 col-12">
+            <div className="row mt-4 mb-5">
+              <div className="col-md-4 offset-md-1">
+                <div className="section_para pr-lg-5 pr-0 h-100 d-flex align-items-center">
+                  <div>
+                    <a
+                      style={{ textDecoration: "none" }}
+                      href="work/smile-train-redefines-inclusivity-national-lipstick-day"
+                    >
+                      <h3
+                        style={{
+                          color: "black",
+                          marginLeft: "100px",
+                        }}
+                      >
+                        <span className="d-block">
+                          What’s on the TASC
+                        </span>{" "}
+                        <span className="d-block"></span>
+                      </h3>
+                    </a>
+                    <a
+                      // href="pdf/Indian-Festive-Gifters-2023-GIPSI-TWW.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="outline_btn explorbtn mt-4 position-relative"
+                    >
+                      <i
+                        style={{
+                          marginRight: "50px",
+                          marginLeft: "100px",
+                        }}
+                      >
+                        Explore
+                      </i>
+                      <span className="zoom-icon">
+                        <img
+                          src={arrowMore}
+                          alt=""
+                          className="zooming-image"
+                        />
+                      </span>
+                      <div className="zoom-overlay"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-7">
+                <div>
+                  <a href="#">
+                    <div className="work_list_img round_img">
+                      <img
+                        style={{ height: "100%", width: "100%" }}
+                        src={tasc}
+                        alt="What’s on her Lip"
+                      />
                     </div>
-                  </div>
-                </Tab>
-                <Tab eventKey="uae-work" title="Global">
-                  {/* Content for Global tab */}
-                  <div className="tab-content">
-                    <div className="col-lg-12 col-12">
-                      <div className="row mt-4 mb-4">
-                        <div className="col-md-7">
-                          <div>
-                            <a href="work/smile-train-redefines-inclusivity-national-lipstick-day">
-                              <div className="work_list_img round_img">
-                                <img
-                                  style={{ height: "100%", width: "100%" }}
-                                  src={tasc}
-                                  alt="What’s on her Lip"
-                                />
-                              </div>
-                              <div className="work_list_caption">
-                                <div className="d-flex align-items-start justify-content-between">
-                                  <div>
-                                    {/* <h6>Social Media Strategy</h6> */}
-                                  </div>
-                                  <div>
-                                    {/* <img src="default.jpg" alt="" /> */}
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                        <div className="col-md-4 offset-md-1">
-                          <div className="section_para pr-lg-5 pr-0 h-100 d-flex align-items-center">
-                            <div>
-                              <a
-                                style={{ textDecoration: "none" }}
-                                href="work/smile-train-redefines-inclusivity-national-lipstick-day"
-                              >
-                                <h3
-                                  style={{
-                                    color: "black",
-                                    marginLeft: "100px",
-                                  }}
-                                >
-                                  <span className="d-block">
-                                    #AShotOfTonic for Expo 2020, Dubai!
-                                  </span>{" "}
-                                  <span className="d-block"></span>
-                                </h3>
-                              </a>
-                              <a
-                                // href="pdf/Indian-Festive-Gifters-2023-GIPSI-TWW.pdf"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="outline_btn explorbtn mt-4 position-relative"
-                              >
-                                <i
-                                  style={{
-                                    marginRight: "50px",
-                                    marginLeft: "100px",
-                                  }}
-                                >
-                                  Explore
-                                </i>
-                                <span className="zoom-icon">
-                                  <img
-                                    src={arrowMore}
-                                    alt=""
-                                    className="zooming-image"
-                                  />
-                                </span>
-                                <div className="zoom-overlay"></div>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="tab-content">
-                    <div className="col-lg-12 col-12">
-                      <div className="row mt-4 mb-4">
-                        <div className="col-md-4 offset-md-1">
-                          <div className="section_para pr-lg-5 pr-0 h-100 d-flex align-items-center">
-                            <div>
-                              <a
-                                style={{ textDecoration: "none" }}
-                                href="work/smile-train-redefines-inclusivity-national-lipstick-day"
-                              >
-                                <h3
-                                  style={{
-                                    color: "black",
-                                    marginLeft: "100px",
-                                  }}
-                                >
-                                  <span className="d-block">
-                                    Where You Don't Compromise Your Wellbene
-                                  </span>{" "}
-                                  <span className="d-block"></span>
-                                </h3>
-                              </a>
-                              <a
-                                // href="pdf/Indian-Festive-Gifters-2023-GIPSI-TWW.pdf"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="outline_btn explorbtn mt-4 position-relative"
-                              >
-                                <i
-                                  style={{
-                                    marginRight: "50px",
-                                    marginLeft: "100px",
-                                  }}
-                                >
-                                  Explore
-                                </i>
-                                <span className="zoom-icon">
-                                  <img
-                                    src={arrowMore}
-                                    alt=""
-                                    className="zooming-image"
-                                  />
-                                </span>
-                                <div className="zoom-overlay"></div>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-md-7">
-                          <div>
-                            <a href="work/smile-train-redefines-inclusivity-national-lipstick-day">
-                              <div className="work_list_img round_img">
-                                <img
-                                  style={{ height: "100%", width: "100%" }}
-                                  src={Wellbene}
-                                  alt="Smiles that break records"
-                                />
-                              </div>
-                              <div className="work_list_caption">
-                                <div className="d-flex align-items-start justify-content-between">
-                                  <div>
-                                    {/* <h6>Social Media Strategy</h6> */}
-                                  </div>
-                                  <div>
-                                    {/* <img src="default.jpg" alt="" /> */}
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Tab>
-              </Tabs>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -530,7 +353,7 @@ function Home() {
       </section>
       <section
         id="homeSectionFour"
-        className="mt-lg-5 mt-3 pt-4 pt-lg-0 section"
+        className="mt-lg-5 mt-3 "
       >
         <div className="container">
           <div className="row">
@@ -545,7 +368,7 @@ function Home() {
                     </h3>
                   </div>
                 </div>
-                <div className="section_para mt-lg-4 mt-0">
+                <div className=" mt-lg-4 mt-2">
                   <div className="topslide">
                     <p style={{ fontSize: "20px" }}>
                       In this age of automated conversations, we noticed that
@@ -576,37 +399,26 @@ function Home() {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="section_title">
-              <h2
-                className="pb-lg-3 text-lg-center stroke title"
-              >
-                Specialist
-              </h2>
-              <div className="second_line_title bannertitle">
-                <h2 className="title">Divisions</h2>
-              </div>
+            <h2
+              className="text-lg-center stroke title"
+            >
+              Specialist
+            </h2>
+            <div className="second_line_title bannertitle">
+              <h2 className="title">Divisions</h2>
             </div>
+
           </div>
         </div>
-        <div className="row">
-          <div className="col-lg-6">
-            <div className="section_para">
-              <div className="topslide">
-                <p>
-                  A new age{" "}
-                  <mark className="text-highlight">marketing suite</mark>{" "}
-                  for modern-day experiences.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6"></div>
-        </div>
+        <p>
+          A new age{" "}
+          <mark className="text-highlight">marketing suite</mark>{" "}
+          for modern-day experiences.
+        </p>
         <div className="row">
           <div className="col-12">
-            <div className="specialist_divisions_slider">
               <div id="specialistDivisionsSlider" className="row">
-                <div className="col-md-4 col-12">
+                <div className="col-md-4">
                   <div className="grid-view mt-4">
                     <a style={{ textDecoration: "none" }} title="">
                       <h3
@@ -643,7 +455,7 @@ function Home() {
                         combination of AI + HI to understand consumers
                         better
                       </p>
-                      <div className="d-flex align-items-center justify-content-center mt-4">
+                      <div className="d-flex align-items-center justify-content-center">
                         <img src={grid1Logo} alt="Gipsi Logo" />
                       </div>
                       <div className="SD_slider_img">
@@ -656,7 +468,7 @@ function Home() {
                     </a>
                   </div>
                 </div>
-                <div className="col-md-4 col-12">
+                <div className="col-md-4">
                   <div className="grid-view mt-4">
                     <a style={{ textDecoration: "none" }} title="">
                       <h3
@@ -706,7 +518,7 @@ function Home() {
                     </a>
                   </div>
                 </div>
-                <div className="col-md-4 col-12">
+                <div className="col-md-4">
                   <div className="grid-view mt-4">
                     <a style={{ textDecoration: "none" }} title="">
                       <h3
@@ -743,7 +555,6 @@ function Home() {
                         outreach and stronger customer connections.
                       </p>
                       <div
-                        style={{ marginTop: "33px" }}
                         className="d-flex align-items-center justify-content-center"
                       >
                         <img src={grid3Logo} alt="Gipsi Logo" />
@@ -759,13 +570,12 @@ function Home() {
                   </div>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </div>
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-lg-9 col-md-12">
+          <div className="col-lg-10 col-md-12">
             <div>
               <h2 className="stroke title">What</h2>
               <div className="second_line_title bannertitle">
@@ -774,8 +584,8 @@ function Home() {
             </div>
           </div>
           <div className="col-lg-2 col-md-12">
-            <div className="circle_text_1 text-center">
-              <img src={circularText} alt="Digital Marketing Agency" />
+            <div className="rotating-image text-center">
+              <img  src={circularText} alt="Digital Marketing Agency" />
             </div>
           </div>
         </div>
@@ -846,18 +656,136 @@ function Home() {
         </div>
       </div>
       <div className="container">
+        <div className="col-12">
+          <div className="title">
+            <h2 className="stroke">Fresh From</h2>
+          </div>
+          <div className="second_line_title bannertitle">
+            <h2 className="title">Our Blogs</h2>
+          </div>
+        </div>
+      </div>
+      <BlogSlider></BlogSlider>
+      <div className="container">
         <div className="row">
-          <div className="col-12">
-            <div className="title">
-              <h2 className="stroke">Fresh From</h2>
+          <div className="col-lg-10 col-md-12">
+            <div>
+              <h2 className="stroke">Narrate your story the way</h2>
+              <div className="second_line_title bannertitle">
+                <h2 className="text-lg-center title m-lg-auto">you want to!</h2>
+              </div>
             </div>
-            <div className="second_line_title bannertitle">
-              <h2 className="title">Our Blogs</h2>
+          </div>
+          <div className="col-lg-2 col-md-12">
+            <div className="rotating-image text-center">
+              <img  src={circularText} alt="Digital Marketing Agency" />
             </div>
           </div>
         </div>
       </div>
-     
+      <div className="container mt-4" id="contactForm">
+        <form>
+          <div className="row" >
+            <div className="col-lg-6 col-md-6 col-12">
+              <label>Full Name</label> <br></br>
+              <input
+                type="text"
+                name="name"
+                // value={this.state.name}
+                // onChange={this.handleChange}
+                placeholder="Type here"
+                autoComplete="off"
+                className="form-field mb-5 form-field"
+              />
+              <label>State</label> <br></br>
+              <input
+                type="text"
+                name="name"
+                // value={this.state.name}
+                // onChange={this.handleChange}
+                placeholder="Type here"
+                autoComplete="off"
+                className="form-field mb-5"
+              />
+              <div>
+                <label htmlFor="service">Choose a service:</label>
+                <select
+                  name="service"
+                  id="service"
+                  class="custom-select"
+                  value={selectedService}
+                  onChange={handleServiceChange}
+                >
+                  <option value="selected">Select</option>
+                  <option value="Brand Discovery and Strategy">
+                    Brand Discovery and Strategy
+                  </option>
+                  <option value="Social Media Strategy">
+                    Social Media Strategy
+                  </option>
+                  <option value="Data and Insights">
+                    Data and Insights
+                  </option>
+                  <option value="Creative and Content">
+                    Creative and Content
+                  </option>
+                  <option value="Design and Development">
+                    Design and Development
+                  </option>
+                  <option value="Organic and Paid Marketing">
+                    Organic and Paid Marketing
+                  </option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-6 col-12">
+              <label>Email</label> <br></br>
+              <input
+                type="text"
+                name="name"
+                // value={this.state.name}
+                // onChange={this.handleChange}
+                placeholder="Type here"
+                autoComplete="off"
+                className="form-field mb-5"
+              />
+              <label>Contact number</label> <br></br>
+              <input
+                type="text"
+                name="name"
+                // value={this.state.name}
+                // onChange={this.handleChange}
+                placeholder="+91 7352690391"
+                autoComplete="off"
+                className="form-field mb-5"
+              />
+              <label>Here's something more to add</label> <br></br>
+              <input
+                type="text"
+                name="name"
+                // value={this.state.name}
+                // onChange={this.handleChange}
+                placeholder="Type here"
+                autoComplete="off"
+                className="form-field mb-5"
+              />
+            </div>
+          </div>
+          <div
+            id="contactSubmitBtn"
+            className="d-flex justify-content-center mb-5"
+          >
+            <input
+              type="submit"
+              name="submit"
+              value="Send it"
+              class="submit"
+            />
+          </div>
+        </form>
+      </div>
+
     </>
   );
 }
