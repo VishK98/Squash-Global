@@ -94,7 +94,7 @@ function Home() {
         <div>
           <div className="container-fluid mt-5">
             <div className="row">
-              <div className="col-lg-4">
+              <div className="col-lg-5">
                 <div className="container">
                   <div className="row align-items-center">
                     <h2 className="topslide">Latest at Squash Global</h2>
@@ -121,7 +121,7 @@ function Home() {
                   </a>
                 </div>
               </div>
-              <div className="col-lg-8 col-sm-12">
+              <div className="col-lg-7 col-sm-12">
                 <a target="_blank" rel="noopener noreferrer">
                   <div className="imagereveal">
                     <img
@@ -148,11 +148,11 @@ function Home() {
                 <div className="title bannertitle">
                   <h2 style={{ fontWeight: "bold" }}>experiences</h2>
                 </div>
-                <div className="section_para">
-                  <p style={{ fontSize: "20px", fontWeight: "400" }}>
-                    that move brands closer to their vision.
-                  </p>
-                </div>
+                <p>
+                that move {" "}
+                  <mark className="text-highlight">brands closer to</mark>{" "}
+                  their vision.
+                </p>
               </div>
               <div className="mobile_down_arrow new-big-down-arrow2">
                 <img
@@ -417,159 +417,159 @@ function Home() {
         </p>
         <div className="row">
           <div className="col-12">
-              <div id="specialistDivisionsSlider" className="row">
-                <div className="col-md-4">
-                  <div className="grid-view mt-4">
-                    <a style={{ textDecoration: "none" }} title="">
-                      <h3
-                        className="dot text-center"
+            <div id="specialistDivisionsSlider" className="row">
+              <div className="col-md-4">
+                <div className="grid-view mt-4">
+                  <a style={{ textDecoration: "none" }} title="">
+                    <h3
+                      className="dot text-center"
+                      style={{
+                        position: "relative",
+                        paddingLeft: "20px",
+                        marginBottom: "10px",
+                      }}
+                    >
+                      <span
                         style={{
-                          position: "relative",
-                          paddingLeft: "20px",
-                          marginBottom: "10px",
+                          position: "absolute",
+                          left: "40%",
+                          top: "50%",
+                          transform: "translateY(-50%)",
+                          color: "black",
                         }}
+                        className="dot"
                       >
-                        <span
-                          style={{
-                            position: "absolute",
-                            left: "40%",
-                            top: "50%",
-                            transform: "translateY(-50%)",
-                            color: "black",
-                          }}
-                          className="dot"
-                        >
-                          •
-                        </span>
-                        Gipsi
-                      </h3>
-                      <p
-                        className="text"
-                        style={{
-                          padding: "13px",
-                          fontSize: "17px",
-                          fontWeight: "400",
-                        }}
-                      >
-                        Unique insight mining practice that uses a
-                        combination of AI + HI to understand consumers
-                        better
-                      </p>
-                      <div className="d-flex align-items-center justify-content-center">
-                        <img src={grid1Logo} alt="Gipsi Logo" />
-                      </div>
-                      <div className="SD_slider_img">
-                        <img
-                          src={grid1}
-                          alt="Gipsi AI For Consumers Analysis"
-                          className="w-100"
-                        />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="grid-view mt-4">
-                    <a style={{ textDecoration: "none" }} title="">
-                      <h3
-                        className="dot text-center"
-                        style={{
-                          position: "relative",
-                          paddingLeft: "20px",
-                          marginBottom: "10px",
-                        }}
-                      >
-                        <span
-                          style={{
-                            position: "absolute",
-                            left: "40%",
-                            top: "50%",
-                            transform: "translateY(-50%)",
-                            color: "black",
-                          }}
-                          className="dot"
-                        >
-                          •
-                        </span>
-                        Twip
-                      </h3>
-                      <p
-                        className="text"
-                        style={{
-                          padding: "13px",
-                          fontSize: "17px",
-                          fontWeight: "400",
-                        }}
-                      >
-                        Narrate impactful brand stories with
-                        hyper-personalised, data driven videos for
-                        engagement at scale.
-                      </p>
-                      <div className="d-flex align-items-center justify-content-center mt-4">
-                        <img src={grid2Logo} alt="Gipsi Logo" />
-                      </div>
-                      <div className="SD_slider_img">
-                        <img
-                          src={grid2}
-                          alt="Gipsi AI For Consumers Analysis"
-                          className="w-100"
-                        />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="grid-view mt-4">
-                    <a style={{ textDecoration: "none" }} title="">
-                      <h3
-                        className="dot text-center"
-                        style={{
-                          position: "relative",
-                          paddingLeft: "20px",
-                          marginBottom: "10px",
-                        }}
-                      >
-                        <span
-                          style={{
-                            position: "absolute",
-                            left: "35%",
-                            top: "50%",
-                            transform: "translateY(-50%)",
-                            color: "black",
-                          }}
-                          className="dot"
-                        >
-                          •
-                        </span>
-                        Amplify
-                      </h3>
-                      <p
-                        style={{
-                          padding: "13px",
-                          fontSize: "17px",
-                          fontWeight: "400",
-                        }}
-                      >
-                        In partnership with <strong>SEW</strong>, the
-                        specialised practice empowers utilities for enhanced
-                        outreach and stronger customer connections.
-                      </p>
-                      <div
-                        className="d-flex align-items-center justify-content-center"
-                      >
-                        <img src={grid3Logo} alt="Gipsi Logo" />
-                      </div>
-                      <div className="SD_slider_img">
-                        <img
-                          src={grid3}
-                          alt="Gipsi AI For Consumers Analysis"
-                          className="w-100"
-                        />
-                      </div>
-                    </a>
-                  </div>
+                        •
+                      </span>
+                      Gipsi
+                    </h3>
+                    <p
+                      className="text"
+                      style={{
+                        padding: "13px",
+                        fontSize: "17px",
+                        fontWeight: "400",
+                      }}
+                    >
+                      Unique insight mining practice that uses a
+                      combination of AI + HI to understand consumers
+                      better
+                    </p>
+                    <div className="d-flex align-items-center justify-content-center">
+                      <img src={grid1Logo} alt="Gipsi Logo" />
+                    </div>
+                    <div className="SD_slider_img">
+                      <img
+                        src={grid1}
+                        alt="Gipsi AI For Consumers Analysis"
+                        className="w-100"
+                      />
+                    </div>
+                  </a>
                 </div>
               </div>
+              <div className="col-md-4">
+                <div className="grid-view mt-4">
+                  <a style={{ textDecoration: "none" }} title="">
+                    <h3
+                      className="dot text-center"
+                      style={{
+                        position: "relative",
+                        paddingLeft: "20px",
+                        marginBottom: "10px",
+                      }}
+                    >
+                      <span
+                        style={{
+                          position: "absolute",
+                          left: "40%",
+                          top: "50%",
+                          transform: "translateY(-50%)",
+                          color: "black",
+                        }}
+                        className="dot"
+                      >
+                        •
+                      </span>
+                      Twip
+                    </h3>
+                    <p
+                      className="text"
+                      style={{
+                        padding: "13px",
+                        fontSize: "17px",
+                        fontWeight: "400",
+                      }}
+                    >
+                      Narrate impactful brand stories with
+                      hyper-personalised, data driven videos for
+                      engagement at scale.
+                    </p>
+                    <div className="d-flex align-items-center justify-content-center mt-4">
+                      <img src={grid2Logo} alt="Gipsi Logo" />
+                    </div>
+                    <div className="SD_slider_img">
+                      <img
+                        src={grid2}
+                        alt="Gipsi AI For Consumers Analysis"
+                        className="w-100"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="grid-view mt-4">
+                  <a style={{ textDecoration: "none" }} title="">
+                    <h3
+                      className="dot text-center"
+                      style={{
+                        position: "relative",
+                        paddingLeft: "20px",
+                        marginBottom: "10px",
+                      }}
+                    >
+                      <span
+                        style={{
+                          position: "absolute",
+                          left: "35%",
+                          top: "50%",
+                          transform: "translateY(-50%)",
+                          color: "black",
+                        }}
+                        className="dot"
+                      >
+                        •
+                      </span>
+                      Amplify
+                    </h3>
+                    <p
+                      style={{
+                        padding: "13px",
+                        fontSize: "17px",
+                        fontWeight: "400",
+                      }}
+                    >
+                      In partnership with <strong>SEW</strong>, the
+                      specialised practice empowers utilities for enhanced
+                      outreach and stronger customer connections.
+                    </p>
+                    <div
+                      className="d-flex align-items-center justify-content-center"
+                    >
+                      <img src={grid3Logo} alt="Gipsi Logo" />
+                    </div>
+                    <div className="SD_slider_img">
+                      <img
+                        src={grid3}
+                        alt="Gipsi AI For Consumers Analysis"
+                        className="w-100"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -585,29 +585,28 @@ function Home() {
           </div>
           <div className="col-lg-2 col-md-12">
             <div className="rotating-image text-center">
-              <img  src={circularText} alt="Digital Marketing Agency" />
+              <img src={circularText} alt="Digital Marketing Agency" />
             </div>
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container" >
         <div className="row mt-5 ">
           <div className="col-lg-6 col-md-12 col-12">
             <div>
               <img src={brandIcon} alt="Brand Discovery and Strategy" />
               <a >
-                <h3 >Brand Discovery <br />and Strategy</h3>
+                <h3>Brand Discovery <br />and Strategy</h3>
               </a>
+              <div>
+                <ul className="custom-arrow-bullet-point">
+                  <li>Strategy and Positioning</li>
+                  <li>Brand Identity and Collaterals</li>
+                  <li>Brand Architecture</li>
+                  <li>Trends and Insights</li>
+                </ul>
+              </div>
             </div>
-            <div>
-              <ul className="custom-arrow-bullet-point ">
-                <li>Strategy and Positioning</li>
-                <li>Brand Identity and Collaterals</li>
-                <li>Brand Architecture</li>
-                <li>Trends and Insights</li>
-              </ul>
-            </div>
-
             <div style={{ paddingLeft: "80px", paddingTop: "20px" }}>
               <img src={brandIcon} alt="Brand Discovery and Strategy" />
               <a >
@@ -623,7 +622,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 col-md-12 col-12 bullet-random">
+          <div className="col-lg-6 col-md-12 col-12 ">
             <div >
               <img src={brandIcon} alt="Brand Discovery and Strategy" />
               <a >
@@ -666,7 +665,7 @@ function Home() {
         </div>
       </div>
       <BlogSlider></BlogSlider>
-      <div className="container">
+      <div className="container mt-4">
         <div className="row">
           <div className="col-lg-10 col-md-12">
             <div>
@@ -678,7 +677,7 @@ function Home() {
           </div>
           <div className="col-lg-2 col-md-12">
             <div className="rotating-image text-center">
-              <img  src={circularText} alt="Digital Marketing Agency" />
+              <img src={circularText} alt="Digital Marketing Agency" />
             </div>
           </div>
         </div>

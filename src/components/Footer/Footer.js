@@ -13,7 +13,7 @@ function Footer() {
   return (
     <>
       <footer className="text-center text-white footer-background ">
-        <div className="container pt-2 mt-2">
+        <div className="container pt-3 mt-4">
           <section >
             <a
               className="btn btn-link btn-floating btn-lg text-dark m-1"
@@ -50,7 +50,6 @@ function Footer() {
             >
               <FaInstagram />
             </a>
-
             <a
               className="btn btn-link btn-floating btn-lg text-dark m-1"
               href="#!"
