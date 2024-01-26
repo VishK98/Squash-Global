@@ -1,13 +1,13 @@
 // Contact.js
 
 import React, { useState } from "react";
+import ScrollToTopButton from '../TopButton/TopButton';
 import contact from "../../assets/images/contact-img-2.webp";
 import india from "../../assets/images/tonic-india-hq.webp";
 import mapIcon from "../../assets/images/viewmap-icon.webp";
 import message from "../../assets/images/message-icon.png";
 import email from "../../assets/images/email-icon1.png";
 import uae from "../../assets/images/uae-hq-icon.png";
-import banner from "../../assets/images/sq-banner.jpeg";
 
 
 import "./Contact.css";
@@ -56,7 +56,7 @@ function Contact() {
           <div className="col-lg-12">
             <div className="inner_section_img position-relative hidden">
               <img
-                src={banner}
+                src={contact}
                 alt="Contact Digital Marketing Agency"
                 className="w-100 "
               />
@@ -77,7 +77,7 @@ function Contact() {
                 </p>
               </div>
               <a
-                href="https://g.page/tonicworldwide?share"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="view-map-text"
@@ -261,6 +261,7 @@ function Contact() {
           </div>
         </div>
       </div>
+      <ScrollToTopButton />
     </>
   );
 }

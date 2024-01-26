@@ -1,5 +1,6 @@
 import React from "react";
 import "./Philosophy.css";
+import ScrollToTopButton from '../TopButton/TopButton';
 import philosophy from "../../assets/images/tonic-worldwide-philosophy.jpg";
 import quotation from "../../assets/images/quotation-marks-svgrepo.png";
 import yellowCircle from "../../assets/images/empty-yellow-circle.png";
@@ -169,8 +170,8 @@ function Philosophy() {
             </div>
           </div>
         </div>
-   
       </section>
+      <ScrollToTopButton />
     </>
   );
 }

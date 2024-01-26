@@ -1,5 +1,6 @@
 import "./Home.css";
 import React, { useEffect, useState } from "react";
+import ScrollToTopButton from '../TopButton/TopButton';
 import bigCircle from "../../assets/images/big-circle-down-arrow.png";
 import gispiImage from "../../assets/images/gipsi-report.jpg";
 import arrowMore from "../../assets/images/arrow-more.png";
@@ -784,7 +785,7 @@ function Home() {
           </div>
         </form>
       </div>
-
+      <ScrollToTopButton />
     </>
   );
 }

@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Blog.css";
+import ScrollToTopButton from '../TopButton/TopButton';
 import blogImage1 from "../../assets/images/blog-image (1).jpg";
 import blogImage2 from "../../assets/images/blog-image (2).jpg";
 import blogImage3 from "../../assets/images/blog-image (3).jpg";
@@ -126,17 +128,24 @@ function Blog() {
         </p>
       </div>
       <div className="container">
-        <div className="image-gallery blog-container ">
+        <div className="row">
           {imagesData.map((image, index) => (
-            <div key={index} className="image-item">
-              <img src={image.url} alt={image.title} />
-              <h1 className="title">{image.title}</h1>
-              <h6 className="description">{image.description}</h6>
+            <div key={index} className="col-md-6 mb-4">
+              <div className="box">
+                  <img src={image.url} alt={image.title} />
+                <div className="box-content">
+                  <div className="inner-content">
+                    <h6 className="title">{image.title}</h6>
+                    <Link to="/blogDetails" style={{ textDecoration: "none" }} class="btn-flip mt-4" data-back="😊" data-front="Read more"></Link>
+                  </div>
+                </div>
+              </div>
+              <h6 style={{textAlign: "center", padding: "10px"}}>{image.description}</h6>
             </div>
           ))}
         </div>
-
       </div>
+      <ScrollToTopButton />
     </>
   );
 }

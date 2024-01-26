@@ -1,5 +1,6 @@
 import React from "react";
 import "./Sector.css";
+import ScrollToTopButton from '../TopButton/TopButton';
 import industriesBanner from "../../assets/images/industries-banner.webp";
 import energy from "../../assets/images/energy-and-utilities.svg";
 import FMCG from "../../assets/images/sector-img (8).svg";
@@ -269,8 +270,8 @@ function Sector() {
             </div>
           </div>
         </div>
-      </>
-    
+        <ScrollToTopButton />
+      </> 
   );
 }
 

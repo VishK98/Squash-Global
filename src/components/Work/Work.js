@@ -1,5 +1,6 @@
 import React from "react";
 import "./Work.css";
+import ScrollToTopButton from '../TopButton/TopButton';
 import work1 from "../../assets/images/work1.png";
 import work2 from "../../assets/images/work2.png";
 import work3 from "../../assets/images/work3.png";
@@ -12,7 +13,6 @@ import work9 from "../../assets/images/work9.png";
 import work10 from "../../assets/images/work10.png";
 import work11 from "../../assets/images/work11.png";
 import work12 from "../../assets/images/work12.png";
-
 import downArrow from "../../assets/images/small-circle-more-arrow.png";
 
 function Work() {
@@ -144,7 +144,7 @@ function Work() {
           })}
         </div>
       </div>
-
+      <ScrollToTopButton />
     </>
   );
 }

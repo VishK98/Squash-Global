@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Careers.css";
+import ScrollToTopButton from '../TopButton/TopButton';
 import image from "../../assets/images/career-in-tonic.jpg";
 import downArrow from "../../assets/images/small-circle-down-arrow.png";
 import team from "../../assets/images/team-image.webp";
@@ -623,6 +624,7 @@ function Careers() {
           </div>
         </div>
       </div>
+      <ScrollToTopButton />
     </>
   );
 }
