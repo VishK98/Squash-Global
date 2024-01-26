@@ -82,8 +82,11 @@ function Blog() {
       <div className="container mt-4">
         <div class="route-text">
           <ol class="breadcrumb bg-transparent px-0 route-text mt-4">
-            <li class="breadcrumb-item">
-              <a href="/" style={{ color: "grey", textDecoration: "none" }}>
+            <li>
+              <a
+                href="/"
+                style={{ color: "grey", textDecoration: "none" }}
+              >
                 Home /
               </a>
             </li>
@@ -123,15 +126,15 @@ function Blog() {
         </p>
       </div>
       <div className="container">
-      <div className="image-gallery blog-container ">
-        {imagesData.map((image, index) => (
-          <div key={index} className="image-item">
-            <img src={image.url} alt={image.title} />
-            <h1 className="title">{image.title}</h1>
-            <h6 className="description">{image.description}</h6>
-          </div>
-        ))}
-      </div>
+        <div className="image-gallery blog-container ">
+          {imagesData.map((image, index) => (
+            <div key={index} className="image-item">
+              <img src={image.url} alt={image.title} />
+              <h1 className="title">{image.title}</h1>
+              <h6 className="description">{image.description}</h6>
+            </div>
+          ))}
+        </div>
 
       </div>
     </>
