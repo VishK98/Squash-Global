@@ -136,7 +136,7 @@ function Blog() {
                 <div className="box-content">
                   <div className="inner-content">
                     <h6 className="title d-none d-md-block">{image.title}</h6>
-                    <Link to="/blogDetails" style={{ textDecoration: "none" }} class="btn-flip mt-4" data-back="😊" data-front="Read more"></Link>
+                    <Link to="/blogDetails" style={{ textDecoration: "none" }} class="btn-flip " data-back="😊" data-front="Read more"></Link>
                   </div>
                 </div>
               </div>
