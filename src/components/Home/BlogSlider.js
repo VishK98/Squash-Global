@@ -28,7 +28,7 @@ const BlogSlider = () => {
         <div className="col-lg-12">
           <Slider {...sliderSettings}>
             {/* Slide 1 */}
-            <div className="slide-item">
+            <div className="slide-item col-12">
               <div className="slide-content justify-content-between">
                 <div className="col-lg-6 col-md-6 col-12">
                   <div className="box">
