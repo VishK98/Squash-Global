@@ -28,8 +28,8 @@ const BlogSlider = () => {
         <div className="col-lg-12">
           <Slider {...sliderSettings}>
             {/* Slide 1 */}
-            <div className="slide-item col-12">
-              <div className="slide-content justify-content-between">
+            <div className="slide-item ">
+              <div className="slide-content ">
                 <div className="col-lg-6 col-md-6 col-12">
                   <div className="box">
                     <img src={blogImage4} alt={blogImage4} />
@@ -43,7 +43,7 @@ const BlogSlider = () => {
                   </p>
                   <Link to="/blogDetails" style={{ textDecoration: "none" }}>
                     <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "60px", width: "60px", borderRadius: "50px", backgroundColor: "#fe504f" }}>
-                      <h4 style={{ fontSize: "35px", color: "black" }}>➟</h4>
+                      <h4 className='read-more' >➟</h4>
                     </div>
                   </Link>
 

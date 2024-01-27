@@ -7,7 +7,22 @@
   .slide-content {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+  }
+  .read-more{
+    text-align: start;
+    font-size: 35;
+    color: black;
+  }
+  
+  @media (max-width: 767px) {
+   
+    .slide-content {
+      display: block; 
+    }
+    .read-more{
+      text-align: center;
+    }
   }
   
   .image-container img {
