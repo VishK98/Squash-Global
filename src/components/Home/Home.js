@@ -59,7 +59,7 @@ function Home() {
                 <h1 className="text-lg-center not_an stroke">Not an</h1>
               </div>
               <div className="bannertitle">
-                <h2 className="agency-text">Agency.</h2>
+                <h2 className="agency-text">Shivam.</h2>
               </div>
               <div class="mobile_down_arrow new-big-down-arrow1">
                 <img src={bigCircle} alt="Big Circle Down Arrow" />

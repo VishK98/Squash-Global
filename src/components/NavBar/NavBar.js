@@ -144,17 +144,17 @@ export default function NavBar() {
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/philosophy">
-                    Philosophy
+                    About
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/work">
-                    Working
+                    Clients
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/sector">
-                    Sector
+                    Services
                   </Link>
                 </li>
                 <li className="nav-item">
