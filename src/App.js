@@ -18,9 +18,6 @@ import React, { useState } from 'react';
 function App() {
   const [modalVisible, setModalVisible] = useState(true);
 
-  const closeModal = () => {
-    setModalVisible(false);
-  };
   return (
     <>
       <Router>
@@ -38,8 +35,7 @@ function App() {
             <Route path="/popup" element={<PopupModal />} />
           </Routes>
           {/* <PopupModal></PopupModal> */}
-          {modalVisible && <PopupModal onClose={closeModal} />}
-
+          {modalVisible && <PopupModal  />}
         </div>
         <Footer></Footer>
       </Router>
