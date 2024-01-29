@@ -138,41 +138,7 @@ function Contact() {
                     India@tonicworldwide.com
                   </a>
                 </span>
-              </p>
-              <div className="hidden">
-                <img src={uae} className="head-icon" alt="india" />
-                <h2 className="india-text"> Middle East</h2>
-              </div>
-              <div className="address">
-                <p>
-                  ASPIN COMMERCIAL TOWER 704-F, Sheikh Zayed Road, Dubai,
-                  United Arab Emirates, 122703
-                </p>
-              </div>
-              <a
-                href="https://g.page/tonicworldwide?share"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="view-map-text"
-              >
-                <img src={mapIcon} alt="map pin" />
-                <span style={{ marginLeft: "15px" }}>View map</span>
-              </a>{" "}
-              <p className="phone mt-3">
-                <img src={message} alt="message icon" />
-                <span style={{ marginLeft: "15px" }}>
-                  <a style={{ textDecoration: "none", color: "#000" }} href="tel:+9102233540123">Tel: +91 022 33540123</a> /{" "}
-                  <a style={{ textDecoration: "none", color: "#000" }} href="tel:+919833973364">+91 9833973364</a>
-                </span>
-              </p>
-              <p className="email mt-3">
-                <img src={email} alt="email icon" />
-                <span style={{ marginLeft: "10px" }}>
-                  <a style={{ textDecoration: "none", color: "#000" }} href="mailto:india@tonicworldwide.com">
-                    dubai@tonicworldwide.com
-                  </a>
-                </span>
-              </p>
+              </p>  
             </div>
             {/* ... (other code) */}
           </div>

@@ -501,7 +501,7 @@ function Careers() {
                   name="name"
                   // value={this.state.name}
                   // onChange={this.handleChange}
-                  placeholder="+91 7352690391"
+                  placeholder="+91 9000000000"
                   autoComplete="off"
                   className="form-field mb-3"
                 />
