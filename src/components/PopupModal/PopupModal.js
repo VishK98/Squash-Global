@@ -25,7 +25,7 @@ function PopupModal(onClose) {
         // Set a timer to show the modal after 10 seconds
         const timer = setTimeout(() => {
             handleShow();
-        }, 10000); // 10 seconds in milliseconds
+        }, 20000); // 20 seconds in milliseconds
 
         return () => {
             // Clear the timer if the component is unmounted before the 10 seconds
