@@ -7,6 +7,24 @@ import squashVideo from "../../assets/squash.mp4";
 
 export default function NavBar() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const cursorRef = useRef(null);
   const location = useLocation();
 
@@ -105,16 +123,17 @@ export default function NavBar() {
   return (
     <>
       {shouldRenderVideo && (
-        <div>
+        <div >
           <video autoPlay loop muted playsInline style={{ height: videoHeight }}>
             <source src={squashVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
       )}
+       <div className={`header ${scrolled ? 'scrolled' : ''}`}>
        <header className="header nav-wrapper">
         <nav className="navbar navbar-expand-lg" aria-label="Main navigation">
-          <div className="container" style={{ marginLeft: "25px" }}>
+          <div className="container-fluid" style={{ marginLeft: "25px" }}>
             <Link to="/" onClick={handleToggleClick} className="mt-2">
               <img src={logo} alt="BigCo Inc. logo" className="logo-img" />
             </Link>
@@ -134,9 +153,8 @@ export default function NavBar() {
               className={`collapse navbar-collapse offcanvas-collapse ${
                 isMobileNavOpen ? "show" : ""
               }`}
-              id="navbarsExampleDefault"
             >
-            <ul className="navbar-nav ml-auto mt-2" style={{marginLeft: "130px"}}>
+            <ul className="navbar-nav  mt-2" style={{marginLeft: "auto"}} >
                 <li className="nav-item">
                   <Link className="nav-link active" aria-current="page" to="/">
                     Home
@@ -144,7 +162,7 @@ export default function NavBar() {
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/philosophy">
-                    About
+                    About Us
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -177,6 +195,7 @@ export default function NavBar() {
           </div>
         </nav>
       </header>
+       </div>
       <div id="cursor" className="cursor" ref={cursorRef}></div>
     </>
   );
