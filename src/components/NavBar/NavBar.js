@@ -186,12 +186,12 @@ export default function NavBar() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  {/* <Link className="nav-link" to="/contact">
+                  <Link className="nav-link" to="/contact">
                     Contact
-                  </Link> */}
-                   <Link className="nav-link" to="/popup">
-                    Popup
                   </Link>
+                   {/* <Link className="nav-link" to="/popup">
+                    Popup
+                  </Link> */}
                 </li>
               </ul>
             </div>
