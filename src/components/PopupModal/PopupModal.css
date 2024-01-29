@@ -1,0 +1,104 @@
+/* PopupModal.css */
+.modal-content {
+    background-color: #605f5f; /* Set the background color */
+    border-radius: 10px; /* Add some border-radius for rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow for depth */
+  }
+
+/* Style all input fields inside the modal */
+.modal-body input.form-field {
+    background-color: #605f5f;
+    color: #fe504f; 
+    border: none; 
+    border-bottom: 1px solid #424242;
+    transition: border-color 0.3s; 
+  }
+  
+ 
+  .modal-body input.form-field:focus {
+    outline: none;
+    border-color: #fe504f; 
+  }
+  
+/* Add animation to the modal title */
+.modal-title {
+    margin-left: 30px;
+    font-size: 1.5rem;
+    color: #fe504f;
+    background: linear-gradient(45deg, #fe504f, #7e7e7e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Add hover effect to the modal title */
+  .modal-title:hover {
+    transform: scale(1.1); /* Scale the title on hover */
+  }
+  
+  /* Add animation keyframes for the modal title */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Apply animation to the modal title */
+  .animated-title {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; /* Make the animation repeat infinitely */
+  }
+  
+
+button.depth {
+    background: #444;
+    border: none;
+    border-radius: 80px;
+    color: #303030;
+    cursor: pointer;
+    font: bold 20px/15px sans-serif;
+    height: 40px;
+    padding: 0;
+    text-shadow: 0 1px 1px hsla(0, 0%, 100%, .25),
+        0 -1px 1px hsla(0, 0%, 0%, .75);
+    width: 40px;
+}
+
+button.depth:hover,
+button.depth:focus {
+    color: #fa0606;
+    text-shadow: 0 0 20px hsla(240, 75%, 75%, .5),
+        0 1px 1px hsla(0, 0%, 100%, .25),
+        0 -1px 1px hsla(0, 0%, 0%, .75);
+}
+
+/* Submit-Button */
+button.submit-depth {
+    background: #444;
+    border: none;
+    border-radius: 10px;
+    color: #303030;
+    cursor: pointer;
+    font: bold 20px/15px sans-serif;
+    height: 35px;
+    padding: 0;
+    text-shadow: 0 1px 1px hsla(0, 0%, 100%, .25),
+        0 -1px 1px hsla(0, 0%, 0%, .75);
+    width: 100px;
+}
+
+button.submit-depth:hover,
+button.submit-depth:focus {
+    color: #fa0606;
+    text-shadow: 0 0 20px hsla(240, 75%, 75%, .5),
+        0 1px 1px hsla(0, 0%, 100%, .25),
+        0 -1px 1px hsla(0, 0%, 0%, .75);
+}
