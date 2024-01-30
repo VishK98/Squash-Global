@@ -1,5 +1,6 @@
 import "./Home.css";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import ScrollToTopButton from '../TopButton/TopButton';
 import bigCircle from "../../assets/images/big-circle-down-arrow.png";
 import gispiImage from "../../assets/images/gipsi-report.png";
@@ -20,12 +21,44 @@ import "./BlogSlider";
 import BlogSlider from "./BlogSlider";
 
 function Home() {
-  // Create a state to manage the selected value
   const [selectedService, setSelectedService] = useState("selected");
-
-  // Handle changes to the selected value
   const handleServiceChange = (event) => {
     setSelectedService(event.target.value);
+  };
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    state: "",
+    contactNumber: "",
+    about: "",
+  });
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (validateForm()) {
+      console.log("Form data:", formData);
+    } else {
+      console.log("Form is not valid");
+    }
+  };
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+  const validateForm = () => {
+    return (
+      formData.name.trim() !== "" &&
+      formData.email.trim() !== "" &&
+      formData.state.trim() !== "" &&
+      formData.contactNumber.trim() !== "" &&
+      formData.about.trim() !== "" &&
+      formData.service.trim() !== ""
+    );
   };
   useEffect(() => {
     function handleScroll() {
@@ -150,7 +183,7 @@ function Home() {
                   <h2 style={{ fontWeight: "bold" }}>experiences</h2>
                 </div>
                 <p>
-                that move {" "}
+                  that move {" "}
                   <mark className="text-highlight">brands closer to</mark>{" "}
                   their vision.
                 </p>
@@ -166,128 +199,63 @@ function Home() {
           </div>
         </div>
         <div className="container">
-          <div className="col-lg-12 col-12">
-            <div className="row mt-4 mb-5">
-              <div className="col-md-7">
-                <div>
-                  <a href="#">
-                    <div className="work_list_img round_img">
-                      <img
-                        style={{ height: "100%", width: "100%" }}
-                        src={onHerLip}
-                        alt="What’s on her Lip"
-                      />
+          <div className="row">
+            <div className="work_list_img round_img col-lg-7 col-md-7 col-sm-12 col-12">
+              <img
+                style={{ height: "100%", width: "100%" }}
+                src={onHerLip}
+                alt="What’s on her Lip"
+              />
+            </div>
+            <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex flex-column align-items-center responsive-text">
+              <h3 style={{ fontWeight: "bold" }}>What's on the Lips</h3>
+              <div className="row">
+                <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex align-items-center">
+                  <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>Explore </h2>
+                  <Link to="/blogDetails" style={{ textDecoration: "none" }}>
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "60px", width: "60px", borderRadius: "50px", backgroundColor: "#fe504f" }}>
+                      <h4 className='read-more' >➟</h4>
                     </div>
-                  </a>
-                </div>
-              </div>
-              <div className="col-md-4 offset-md-1">
-                <div className="section_para pr-lg-5 pr-0 h-100 d-flex align-items-center">
-                  <div>
-                    <a
-                      style={{ textDecoration: "none" }}
-                      href="work/smile-train-redefines-inclusivity-national-lipstick-day"
-                    >
-                      <h3
-                        style={{
-                          color: "black",
-                          marginLeft: "100px",
-                        }}
-                      >
-                        <span className="d-block">
-                          What’s on her Lip
-                        </span>{" "}
-                        <span className="d-block"></span>
-                      </h3>
-                    </a>
-                    <a
-                      // href="pdf/Indian-Festive-Gifters-2023-GIPSI-TWW.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="outline_btn explorbtn mt-4 position-relative"
-                    >
-                      <i
-                        style={{
-                          marginRight: "50px",
-                          marginLeft: "100px",
-                        }}
-                      >
-                        Explore
-                      </i>
-                      <span className="zoom-icon">
-                        <img
-                          src={arrowMore}
-                          alt=""
-                          className="zooming-image"
-                        />
-                      </span>
-                      <div className="zoom-overlay"></div>
-                    </a>
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="container">
-          <div className="col-lg-12 col-12">
-            <div className="row mt-4 mb-5">
-              <div className="col-md-4 offset-md-1">
-                <div className="section_para pr-lg-5 pr-0 h-100 d-flex align-items-center">
-                  <div>
-                    <a
-                      style={{ textDecoration: "none" }}
-                      href="work/smile-train-redefines-inclusivity-national-lipstick-day"
-                    >
-                      <h3
-                        style={{
-                          color: "black",
-                          marginLeft: "100px",
-                        }}
-                      >
-                        <span className="d-block">
-                          What’s on the TASC
-                        </span>{" "}
-                        <span className="d-block"></span>
-                      </h3>
-                    </a>
-                    <a
-                      // href="pdf/Indian-Festive-Gifters-2023-GIPSI-TWW.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="outline_btn explorbtn mt-4 position-relative"
-                    >
-                      <i
-                        style={{
-                          marginRight: "50px",
-                          marginLeft: "100px",
-                        }}
-                      >
-                        Explore
-                      </i>
-                      <span className="zoom-icon">
-                        <img
-                          src={arrowMore}
-                          alt=""
-                          className="zooming-image"
-                        />
-                      </span>
-                      <div className="zoom-overlay"></div>
-                    </a>
+        <div className="container mt-lg-5 mb-lg-4 mt-3">
+          <div className="row">
+            <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-none d-md-block" style={{ marginTop: "150px" }}>
+              <h3 style={{ fontWeight: "bold" }}>What's on the TASC</h3>
+              <div className="row" style={{ display: "flex", alignItems: "center" }}>
+                <div className="row">
+                  <div className="col-lg-5 col-md-5 col-sm-12 col-12  d-flex align-items-center">
+                    <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>Explore </h2>
+                    <Link to="/blogDetails" style={{ textDecoration: "none" }}>
+                      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "60px", width: "60px", borderRadius: "50px", backgroundColor: "#fe504f" }}>
+                        <h4 className='read-more' >➟</h4>
+                      </div>
+                    </Link>
                   </div>
                 </div>
               </div>
-              <div className="col-md-7">
-                <div>
-                  <a href="#">
-                    <div className="work_list_img round_img">
-                      <img
-                        style={{ height: "100%", width: "100%" }}
-                        src={tasc}
-                        alt="What’s on her Lip"
-                      />
+            </div>
+            <div className="work_list_img round_img col-lg-7 col-md-7 col-sm-12 col-12">
+              <img
+                style={{ height: "100%", width: "100%" }}
+                src={tasc}
+                alt="What’s on the TASC"
+              />
+            </div>
+            <div className="col-lg-5 col-md-5 col-sm-12 col-12 mt-3 d-flex flex-column align-items-center d-md-none">
+              <h3 style={{ fontWeight: "bold" }}>What's on the TASC</h3>
+              <div className="row">
+                <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex align-items-center">
+                  <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>Explore </h2>
+                  <Link to="/blogDetails" style={{ textDecoration: "none" }}>
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "60px", width: "60px", borderRadius: "50px", backgroundColor: "#fe504f" }}>
+                      <h4 className='read-more' >➟</h4>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -319,7 +287,7 @@ function Home() {
               <div className="section_title">
                 <h2 className="mb-lg-4 stroke title">We're</h2>
                 <div className="second_line_title bannertitle">
-                  <h2 className="title">Squash</h2>
+                  <h2 className="title bannertitle">Squash</h2>
                 </div>
               </div>
             </div>
@@ -684,37 +652,50 @@ function Home() {
         </div>
       </div>
       <div className="container mt-4" id="contactForm">
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="row" >
             <div className="col-lg-6 col-md-6 col-12">
-              <label>Full Name</label> <br></br>
+              <label>
+                Full Name
+                <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
+              </label>{" "}
+              <br />
               <input
                 type="text"
                 name="name"
-                // value={this.state.name}
-                // onChange={this.handleChange}
+                value={formData.name}
+                onChange={handleChange}
                 placeholder="Type here"
                 autoComplete="off"
-                className="form-field mb-5 form-field"
+                className="form-field mb-lg-5"
+                required
               />
-              <label>State</label> <br></br>
+              <label>
+                State
+                <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
+              </label>{" "}
+              <br />
               <input
                 type="text"
-                name="name"
-                // value={this.state.name}
-                // onChange={this.handleChange}
+                name="state"
+                value={formData.state}
+                onChange={handleChange}
                 placeholder="Type here"
                 autoComplete="off"
-                className="form-field mb-5"
+                className="form-field mb-lg-5"
+                required
               />
               <div>
                 <label htmlFor="service">Choose a service:</label>
                 <select
+                  type="dropdown"
                   name="service"
-                  id="service"
-                  class="custom-select"
-                  value={selectedService}
-                  onChange={handleServiceChange}
+                  value={formData.service}
+                  onChange={handleChange}
+                  placeholder="Type here"
+                  autoComplete="off"
+                  className="form-field"
+                  required
                 >
                   <option value="selected">Select</option>
                   <option value="Brand Discovery and Strategy">
@@ -740,41 +721,54 @@ function Home() {
               </div>
             </div>
             <div className="col-lg-6 col-md-6 col-12">
-              <label>Email</label> <br></br>
+              <label>
+                Email
+                <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
+              </label>{" "}
+              <br />
               <input
-                type="text"
-                name="name"
-                // value={this.state.name}
-                // onChange={this.handleChange}
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 placeholder="Type here"
                 autoComplete="off"
-                className="form-field mb-5"
+                className="form-field mb-lg-5"
+                required
               />
-              <label>Contact number</label> <br></br>
+              <label>
+                Contact number
+                <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
+              </label>{" "}
+              <br />
               <input
-                type="text"
-                name="name"
-                // value={this.state.name}
-                // onChange={this.handleChange}
-                placeholder="+91 7352690391"
+                type="tel"
+                name="contactNumber"
+                value={formData.contactNumber}
+                onChange={handleChange}
+                placeholder="+91 9900000088"
                 autoComplete="off"
                 className="form-field mb-5"
+                pattern="[0-9]{10}"
+                required
               />
-              <label>Here's something more to add</label> <br></br>
+              <label>Here's something more to add <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
+              </label> <br></br>
               <input
                 type="text"
-                name="name"
-                // value={this.state.name}
-                // onChange={this.handleChange}
+                name="about"
+                value={formData.about}
+                onChange={handleChange}
                 placeholder="Type here"
                 autoComplete="off"
-                className="form-field mb-5"
+                className="form-field"
+                required
               />
             </div>
           </div>
           <div
             id="contactSubmitBtn"
-            className="d-flex justify-content-center mb-5"
+            className="d-flex justify-content-center mt-lg-5"
           >
             <input
               type="submit"

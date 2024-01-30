@@ -10,12 +10,15 @@ h2.stroke {
 .bannertitle h1,
 .bannertitle h2 {
   font-size: 110px;
-  /* line-height: 195px; */
   font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
   font-display: swap;
 }
 .agency-text {
   font-weight: bold;
+}
+
+.responsive-text{
+  margin-top: 150px;
 }
 
 @media (max-width: 767.98px) {
@@ -33,6 +36,9 @@ h2.stroke {
   .but-text {
     font-size: 25px;
   }
+  .responsive-text{
+    margin-top: 5px;
+  }
 }
 
 .but-text {
@@ -48,25 +54,7 @@ h2.stroke {
   font-weight: bold;
   text-decoration: none !important;
 }
-.custom-tabs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid #dee2e6;
-}
 
-.custom-tabs .nav-link {
-  background-color: #f8f9fa;
-  border: none;
-  color: grey;
-  font-weight: 500;
-}
-
-.custom-tabs .nav-link.active {
-  background-color: #fe504f;
-  color: #000;
-  border: none;
-}
 .creating-text {
   font-size: 35px;
   font-weight: bold;
@@ -120,12 +108,7 @@ h2.stroke {
   animation: zoomAnimation 2s infinite alternate;
 }
 
-.zooming-image {
-  transition: transform 0.3s ease-in-out;
-}
-
 /* ImageSlider.css */
-
 .image-slider {
   overflow: hidden;
   position: relative;

@@ -126,6 +126,60 @@ function Careers() {
   const handleServiceChange = (event) => {
     setSelectedService(event.target.value);
   };
+  const handleFileChange = (e) => {
+    const fileName = e.target.files[0].name;
+    document.getElementById("file-upload-label").textContent = fileName;
+    document.getElementById("file-upload-close").style.display = "inline";
+    handleChange(e); // Call the handleChange function to update the state
+  };
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    state: "",
+    contactNumber: "",
+    about: "",
+    service: "",
+    resume: null,
+  });
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (validateForm()) {
+      console.log("Form data:", formData);
+    } else {
+      console.log("Form is not valid");
+    }
+  };
+
+
+  const handleChange = (e) => {
+    if (e.target.name === "resume") {
+      // If the change is for the resume field
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.files[0], // Update resume with the selected file
+      });
+    } else {
+      // For other fields, update as usual
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value,
+      });
+    }
+  };
+  const validateForm = () => {
+    return (
+      formData.name.trim() !== "" &&
+      formData.email.trim() !== "" &&
+      formData.state.trim() !== "" &&
+      formData.contactNumber.trim() !== "" &&
+      formData.about.trim() !== "" &&
+      formData.service.trim() !== ""  &&
+      formData.resume !== null
+
+    );
+  };
 
   const [selectedJobIndex, setSelectedJobIndex] = useState(false);
   const applyNowRef = useRef(null);
@@ -202,23 +256,23 @@ function Careers() {
             />
           </div>
           <div className="col-lg-4 mt-2">
-            <h2 style={{fontSize: "50px",fontWeight: "bold"}}>Work with the biggest brand & brightest minds</h2>
+            <h2 style={{ fontSize: "50px", fontWeight: "bold" }}>Work with the biggest brand & brightest minds</h2>
             <a href="#latestOpeningSection" className="explorbtn mt-lg-4">
-                <i className="joinUs">Join Us</i>
-                <span>
-                  <img
-                    className="animated-arrow-btn"
-                    style={{ marginLeft: "15px" }}
-                    src={downArrow}
-                    alt="join us"
-                  />
-                </span>
-              </a>
+              <i className="joinUs">Join Us</i>
+              <span>
+                <img
+                  className="animated-arrow-btn"
+                  style={{ marginLeft: "15px" }}
+                  src={downArrow}
+                  alt="join us"
+                />
+              </span>
+            </a>
           </div>
         </div>
       </div>
       <div className="container mt-3">
-        <h1 style={{ fontWeight: "bold"}}>Why Join Squash Global?</h1>
+        <h1 style={{ fontWeight: "bold" }}>Why Join Squash Global?</h1>
         <p className="mt-4" style={{ fontSize: "20px" }}>
           <span style={{ fontWeight: "600" }}>
             We believe in growing together, with you.
@@ -404,7 +458,7 @@ function Careers() {
             style={{ marginLeft: "20px" }}
           >
             <div id="contactForm" >
-              <form>
+              <form onSubmit={handleSubmit}>
                 <label>
                   Full Name
                   <sup
@@ -421,11 +475,12 @@ function Careers() {
                 <input
                   type="text"
                   name="name"
-                  // value={this.state.name}
-                  // onChange={this.handleChange}
+                  value={formData.name}
+                  onChange={handleChange}
                   placeholder="Type here"
                   autoComplete="off"
-                  className="form-field mb-3"
+                  className="form-field mb-lg-3"
+                  required
                 />
                 <div
                   id={`applyNowButton`}
@@ -449,13 +504,14 @@ function Careers() {
                     </label>{" "}
                     <br />
                     <input
-                      type="text"
+                      type="email"
                       name="email"
-                      // value={this.state.email}
-                      // onChange={this.handleChange}
+                      value={formData.email}
+                      onChange={handleChange}
                       placeholder="Type here"
                       autoComplete="off"
-                      className="form-field mb-3"
+                      className="form-field mb-lg-3"
+                      required
                     />
                   </div>
                   <div style={{ flex: 1 }}>
@@ -475,11 +531,12 @@ function Careers() {
                     <input
                       type="text"
                       name="state"
-                      // value={this.state.country}
-                      // onChange={this.handleChange}
+                      value={formData.state}
+                      onChange={handleChange}
                       placeholder="Type here"
                       autoComplete="off"
-                      className="form-field mb-3"
+                      className="form-field mb-lg-3"
+                      required
                     />
                   </div>
                 </div>
@@ -497,13 +554,15 @@ function Careers() {
                 </label>{" "}
                 <br />
                 <input
-                  type="text"
-                  name="name"
-                  // value={this.state.name}
-                  // onChange={this.handleChange}
-                  placeholder="+91 9000000000"
+                  type="tel"
+                  name="contactNumber"
+                  value={formData.contactNumber}
+                  onChange={handleChange}
+                  placeholder="+91 9900000088"
                   autoComplete="off"
-                  className="form-field mb-3"
+                  className="form-field mb-lg-3"
+                  pattern="[0-9]{10}"
+                  required
                 />
                 <div>
                   <label>
@@ -520,11 +579,14 @@ function Careers() {
                   </label>{" "}
                   <br />
                   <select
+                    type="dropdown"
                     name="service"
-                    id="service"
-                    className="custom-select"
-                    value={selectedService}
-                    onChange={handleServiceChange}
+                    value={formData.service}
+                    onChange={handleChange}
+                    placeholder="Type here"
+                    autoComplete="off"
+                    className="form-field mb-lg-3"
+                    required
                   >
                     <option value="selected">Select role</option>
                     <option value="Jr. Project Manager">
@@ -545,15 +607,16 @@ function Careers() {
                     </option>
                   </select>
                 </div>
-                <label>Write something about yourself</label> <br />
+                <label>Write something about yourself<sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup></label> <br />
                 <input
                   type="text"
-                  name="name"
-                  // value={this.state.name}
-                  // onChange={this.handleChange}
+                  name="about"
+                  value={formData.about}
+                  onChange={handleChange}
                   placeholder="Type here"
                   autoComplete="off"
-                  className="form-field mb-5"
+                  className="form-field mb-lg-3"
+                  required
                 />
                 <label>
                   Attach your resume here
@@ -570,21 +633,26 @@ function Careers() {
                 <br />
                 <input
                   id="file-upload"
+                  // type="file"
+                  // name="file"
+                  // value={formData.about}
+                  // className="form-field"
+                  // style={{ display: "none" }}
+                  // accept="image/*" // Specify accepted file types, e.g., images
+                  // onChange={(e) => {
+                  //   const fileName = e.target.files[0].name;
+                  //   document.getElementById("file-upload-label").textContent =
+                  //     fileName;
+                  //   document.getElementById(
+                  //     "file-upload-close"
+                  //   ).style.display = "inline"; // Show the close icon
+                  // }}
                   type="file"
-                  name="file"
-                  // value={this.state.file}
-                  // onChange={this.handleFileChange}
-                  className="form-field"
+                  name="resume"
+                  onChange={handleFileChange}
+                  accept=".pdf,.doc,.docx"
                   style={{ display: "none" }}
-                  accept="image/*" // Specify accepted file types, e.g., images
-                  onChange={(e) => {
-                    const fileName = e.target.files[0].name;
-                    document.getElementById("file-upload-label").textContent =
-                      fileName;
-                    document.getElementById(
-                      "file-upload-close"
-                    ).style.display = "inline"; // Show the close icon
-                  }}
+                  className="form-field"
                 />
                 <div style={{ display: "flex" }}>
                   <label
