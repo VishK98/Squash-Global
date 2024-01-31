@@ -19,7 +19,6 @@ function Contact() {
     initialValues: {
       name: '',
       email: '',
-      state: '',
       contactNumber: '',
       selectedService: 'selected',
       additionalInfo: '',
@@ -27,7 +26,6 @@ function Contact() {
     validationSchema: Yup.object({
       name: Yup.string().required('Name is required'),
       email: Yup.string().required('Invalid email format').required('Email is required'),
-      state: Yup.string().required('Invalid state format').required('State is required'),
       contactNumber: Yup.string().required('Invalid contactNumber format').required('Contact is required'),
       service: Yup.string().required('Invalid contactNumber format').required('Service is required'),
       // additionalInfo: Yup.string().required('Invalid additionalInfo format').required('Additional info is required'),
@@ -186,16 +184,6 @@ function Contact() {
                     </div>
                   </div>
                 )}
-                <label>State<sup style={{color: "red", marginLeft: "5px", fontSize: "12px"}}>*</sup></label> <br></br>
-                <input
-                  type="text"
-                  name="state"
-                  value={formik.values.state}
-                  onChange={formik.handleChange}
-                  placeholder="Type here"
-                  autoComplete="off"
-                  className="form-field mb-3"
-                />
                 {formik.errors.state && (
                   <div className="error-container position-relative">
                     <div className="error-tooltip">
