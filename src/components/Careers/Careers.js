@@ -516,7 +516,7 @@ function Careers() {
                   </div>
                   <div style={{ flex: 1 }}>
                     <label>
-                      State
+
                       <sup
                         style={{
                           color: "red",
@@ -524,20 +524,11 @@ function Careers() {
                           fontWeight: "bold",
                         }}
                       >
-                        *
+                        
                       </sup>
                     </label>{" "}
                     <br />
-                    <input
-                      type="text"
-                      name="state"
-                      value={formData.state}
-                      onChange={handleChange}
-                      placeholder="Type here"
-                      autoComplete="off"
-                      className="form-field mb-lg-3"
-                      required
-                    />
+                    
                   </div>
                 </div>
                 <label>
