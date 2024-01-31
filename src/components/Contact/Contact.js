@@ -97,8 +97,7 @@ function Contact() {
               </div>
               <div className="address">
                 <p>
-                  904/905, Eureka Towers Wing-B, Mindspace, Chincholi Bunder
-                  Road, Malad (w), Mumbai, 400064
+                791/5, Udyog Vihar, Phase-V, Sector-19, Gurgaon, Haryana, 122016
                 </p>
               </div>
               <a
@@ -115,16 +114,16 @@ function Contact() {
                 <span style={{ marginLeft: "15px" }}>
                   <a
                     style={{ textDecoration: "none", color: "#000" }}
-                    href="tel:+9102233540123"
+                   
                   >
-                    Tel: +91 022 33540123
+                   
                   </a>{" "}
-                  /{" "}
+                  {" "}
                   <a
                     style={{ textDecoration: "none", color: "#000" }}
-                    href="tel:+919833973364"
+                    href="tel:+917827058243"
                   >
-                    +91 9833973364
+                    +91 7827058243
                   </a>
                 </span>
               </p>
@@ -133,7 +132,7 @@ function Contact() {
                 <span style={{ marginLeft: "10px" }}>
                   <a
                     style={{ textDecoration: "none", color: "#000" }}
-                    href="mailto:india@tonicworldwide.com"
+                    href="mailto:contact@squashglobal.com"
                   >
                     India@tonicworldwide.com
                   </a>
