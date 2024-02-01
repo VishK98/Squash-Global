@@ -17,7 +17,7 @@ function Footer() {
           <section >
             <a
               className="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
+              href="https://www.facebook.com/profile.php?id=100091281026430&mibextid=ZbWKwL"
               role="button"
               data-mdb-ripple-color="dark"
             >
@@ -25,13 +25,13 @@ function Footer() {
             </a>
             <a
               className="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
+              href="https://twitter.com/global_squash"
               role="button"
               data-mdb-ripple-color="dark"
             >
               <FaTwitter />
             </a>
-
+{/* 
             <a
               className="btn btn-link btn-floating btn-lg text-dark m-1"
               href="#!"
@@ -39,12 +39,12 @@ function Footer() {
               data-mdb-ripple-color="dark"
             >
               <FaGoogle />
-            </a>
+            </a> */}
 
             {/* Instagram */}
             <a
               className="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
+              href="https://www.instagram.com/global_squash/"
               role="button"
               data-mdb-ripple-color="dark"
             >
@@ -52,7 +52,7 @@ function Footer() {
             </a>
             <a
               className="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
+              href="https://www.linkedin.com/company/squash-global/"
               role="button"
               data-mdb-ripple-color="dark"
             >

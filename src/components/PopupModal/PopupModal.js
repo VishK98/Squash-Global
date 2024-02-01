@@ -1,23 +1,34 @@
 // PopupModal.js
 import React, { useState, useEffect } from "react";
 import Modal from "react-bootstrap/Modal";
+import axios from 'axios';
 import "./PopupModal.css";
 
 function PopupModal(onClose) {
   const [formData, setFormData] = useState({
-    name: "",
+    fullName: "",
     email: "",
     state: "",
     contactNumber: "",
     about: ""
   });
 
-  const handleSubmit = (event) => {
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   if (validateForm()) {
+  //     console.log("Form data:", formData);
+  //   } else {
+  //     console.log("Form is not valid");
+  //   }
+  // };
+  const handleSubmit = async event => {
     event.preventDefault();
-    if (validateForm()) {
-      console.log("Form data:", formData);
-    } else {
-      console.log("Form is not valid");
+    console.log('First', formData);
+    try {
+      const response = await axios.post('http://localhost:8000/api/contactUs', formData);
+      console.log('Response from server:', response.data);
+    } catch (error) {
+      console.error('Error submitting form:', error);
     }
   };
 
@@ -31,7 +42,7 @@ function PopupModal(onClose) {
 
   const validateForm = () => {
     return (
-      formData.name.trim() !== "" &&
+      formData.fullName.trim() !== "" &&
       formData.email.trim() !== "" &&
       formData.state.trim() !== "" &&
       formData.contactNumber.trim() !== "" &&
@@ -93,8 +104,8 @@ function PopupModal(onClose) {
               <br />
               <input
                 type="text"
-                name="name"
-                value={formData.name}
+                name="fullName"
+                value={formData.fullName}
                 onChange={handleChange}
                 placeholder="Type here"
                 autoComplete="off"

@@ -88,7 +88,7 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className="row mt-5 ">
+        <div className="row">
           <div className="col-lg-5 pt-lg-5">
             <div className="mt-4 mt-lg-0 address-info topslide">
               <div className="hidden">
@@ -96,16 +96,15 @@ function Contact() {
                 <h2 className="india-text"> India</h2>
               </div>
               <div className="address">
-                <p>
-                  904/905, Eureka Towers Wing-B, Mindspace, Chincholi Bunder
-                  Road, Malad (w), Mumbai, 400064
-                </p>
+                <h6>
+                791/5, Udyog Vihar, Phase-V, Sector-19,<br/> Gurgaon, Haryana, 122016
+                </h6>
               </div>
               <a
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="view-map-text"
+                className="view-map-text mt-3"
               >
                 <img src={mapIcon} alt="map pin" />
                 <span style={{ marginLeft: "15px" }}>View map</span>
@@ -115,16 +114,9 @@ function Contact() {
                 <span style={{ marginLeft: "15px" }}>
                   <a
                     style={{ textDecoration: "none", color: "#000" }}
-                    href="tel:+9102233540123"
+                    href="tel:+91 7827058243"
                   >
-                    Tel: +91 022 33540123
-                  </a>{" "}
-                  /{" "}
-                  <a
-                    style={{ textDecoration: "none", color: "#000" }}
-                    href="tel:+919833973364"
-                  >
-                    +91 9833973364
+                    Mobile: +91 7827058243
                   </a>
                 </span>
               </p>
@@ -133,9 +125,9 @@ function Contact() {
                 <span style={{ marginLeft: "10px" }}>
                   <a
                     style={{ textDecoration: "none", color: "#000" }}
-                    href="mailto:india@tonicworldwide.com"
+                    href="mailto:contact@squashglobal.com"
                   >
-                    India@tonicworldwide.com
+                    contact@squashglobal.com
                   </a>
                 </span>
               </p>  
@@ -272,16 +264,8 @@ function Contact() {
                   onChange={formik.handleChange}
                   placeholder="Type here"
                   autoComplete="off"
-                  className="form-field mb-3"
+                  className="form-field mb-4"
                 />
-                {/* {formik.errors.additionalInfo && (
-                  <div className="error-container position-relative">
-                    <div className="error-tooltip">
-                      {formik.errors.additionalInfo}
-                      <div className="arrow"></div>
-                    </div>
-                  </div>
-                )} */}
                 <div className="d-flex justify-content-center text-center"
                 >
                   <input style={{ fontSize: "20px", fontWeight: "bold" }}
@@ -292,7 +276,6 @@ function Contact() {
                   />
                 </div>
               </form>
-
             </div>
           </div>
         </div>

@@ -633,20 +633,6 @@ function Careers() {
                 <br />
                 <input
                   id="file-upload"
-                  // type="file"
-                  // name="file"
-                  // value={formData.about}
-                  // className="form-field"
-                  // style={{ display: "none" }}
-                  // accept="image/*" // Specify accepted file types, e.g., images
-                  // onChange={(e) => {
-                  //   const fileName = e.target.files[0].name;
-                  //   document.getElementById("file-upload-label").textContent =
-                  //     fileName;
-                  //   document.getElementById(
-                  //     "file-upload-close"
-                  //   ).style.display = "inline"; // Show the close icon
-                  // }}
                   type="file"
                   name="resume"
                   onChange={handleFileChange}

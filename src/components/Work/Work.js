@@ -1,60 +1,29 @@
 import React from "react";
 import "./Work.css";
 import ScrollToTopButton from '../TopButton/TopButton';
-import work1 from "../../assets/images/work1.png";
-import work2 from "../../assets/images/work2.png";
-import work3 from "../../assets/images/work3.png";
-import work4 from "../../assets/images/work4.png";
-import work5 from "../../assets/images/work5.png";
-import work6 from "../../assets/images/work6.png";
-import work7 from "../../assets/images/work7.png";
-import work8 from "../../assets/images/work8.png";
-import work9 from "../../assets/images/work9.png";
-import work10 from "../../assets/images/work10.png";
-import work11 from "../../assets/images/work11.png";
-import work12 from "../../assets/images/work12.png";
-import downArrow from "../../assets/images/small-circle-more-arrow.png";
+import client1 from "../../assets/images/clients/client-1.png";
+import client2 from "../../assets/images/clients/client-2.png";
+import client3 from "../../assets/images/clients/client-3.png";
+import client4 from "../../assets/images/clients/client-4.png";
+import client5 from "../../assets/images/clients/client-5.png";
+import client6 from "../../assets/images/clients/client-6.png";
+import client7 from "../../assets/images/clients/client-7.png";
+import client8 from "../../assets/images/clients/client-8.png";
+import ourClients from "../../assets/images/our-clients.png";
+
+
+
+
 
 function Work() {
-  const workImageData = [
-    {
-      url: work1,
-      title: "How a winning Content strategy helped the region's largest HR solutions specialist"
-    },
-    {
-      url: work2,
-    },
-    {
-      url: work3,
-    },
-    {
-      url: work4,
-    },
-    {
-      url: work5,
-    },
-    {
-      url: work6,
-    },
-    {
-      url: work7,
-    },
-    {
-      url: work8,
-    },
-    {
-      url: work9,
-    },
-    {
-      url: work10,
-    },
-    {
-      url: work11,
-    },
-    {
-      url: work12,
-    },
-  ];
+  // const workImageData = [
+  //   {
+  //     url: client1,
+  //     title : "Free photo business partners handshake international business concept"
+  //   },
+  // ];
+  
+  const clientImage = [client1,client2,client3,client4,client5,client6,client7,client8,client2,client3,client4,client5,client6,client7,client1,client3];
   return (
     <>
       <div class="container">
@@ -75,7 +44,7 @@ function Work() {
                   aria-current="page"
                   style={{ marginLeft: "8px", color: "grey" }}
                 >
-                  Work
+                  Clients
                 </li>
               </ol>
             </div>
@@ -83,62 +52,28 @@ function Work() {
         </div>
       </div>
       <div className="container">
-        <h4 className="box-title">
-          Guided by our craft and steered by insight-driven strategy, we offer
-          integrated solutions that delight and disrupt in equal parts.
+        <h4 className="guest-text mb-4">
+          Guests are always welcome at our establishment, and we aim to provide them with a memorable experience.
         </h4>
+          <div className="col-lg-12">
+              <img
+                src={ourClients}
+                alt="ourClients"
+                className="w-100 img-fluid"
+              />
+        
+          </div>
+          <h1 className="text-center partnership-text mt-3 mt-lg-4">Building Strong Relationships with Our Valued Clients</h1>
         <div
-          className="row"
+          className="row mt-3 mt-lg-5"
           style={{ justifyContent: "space-between", marginRight: "5px" }}
         >
-          {/* {workImageData.map((image, index) => (
-              <div
-                className="col-lg-5 col-md-6 col-12 mt-3 mb-4"
-                key={index}
-                style={{ position: "relative" }}
-              >
-                <img className="work-box-img" src={image.url} alt="FMGC" />
-                <img
-                  style={{
-                    position: "absolute",
-                    bottom: "0",
-                    right: "0",
-                    marginBottom: "-25px", 
-                    marginRight: "30px"
-                  }}
-                  src={downArrow}
-                  alt="join us"
-                />
-              </div>
-            ))} */}
-          {workImageData.map((image, index) => {
-            // Generate random values for positioning
-            const randomLeft = `${Math.floor(Math.random() * 50)}px`;
-            const randomRight = `${Math.floor(Math.random() * 50)}px`;
+          {clientImage.map((image, index) => {
             return (
-              <div
-                className="col-lg-5 col-md-6 col-12 mt-3 mb-4"
-                key={index}
-                style={{ position: "relative" }}
-              >
-                <img style={{
-                  marginLeft: randomLeft,
-                  // marginRight: randomRight,
-                  height: "500px",
-                  width: "100%",
-                  borderRadius: "10px"
-                }} className="work-box-img" src={image.url} alt="FMGC" />
-                <img
-                  style={{
-                    position: "absolute",
-                    bottom: 0,
-                    right: 0,
-                    marginBottom: "-25px",
-                    marginRight: "30px",
-                  }}
-                  src={downArrow}
-                  alt="join us"
-                />
+              <div className="col-lg-3 col-md-3 col-xl-3 col-6 mb-4" key={index}>
+                <div className="work-box">
+                  <img className="work-box-img" src={image}></img>
+                </div>
               </div>
             );
           })}
