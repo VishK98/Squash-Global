@@ -9,42 +9,53 @@
     justify-content: center;
     text-align: center;
     position: relative;
-    transition: background-color 0.3s ease, border-color 0.3s ease; 
-  }
-  
-  .work-box:hover {
-    border-color: #fe504f; 
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.work-box:hover {
+    border-color: #fe504f;
     border-width: 1.5px;
-  }
-  
-  .work-box-img {
+}
+
+.work-box-img {
     height: 150px;
     width: 150px;
     padding: 10px;
     filter: grayscale(100%);
     transition: filter 0.3s ease;
-  }
-  
-  .work-box:hover .work-box-img {
+}
+
+.work-box:hover .work-box-img {
     filter: grayscale(0%);
-  }
-  .guest-text{
+}
+
+.guest-text {
     font-size: 45px;
     font-weight: bold;
-  }
-  .partnership-text {
+}
+
+.partnership-text {
     font-weight: bold;
     font-size: 2em;
     background: linear-gradient(90deg, #000, #fe504f, #fe504f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-  }
+}
 
-  @media only screen and (max-width: 600px) {
-    .guest-text{
-        font-size: 15px;
-        font-weight: 500;
-      }
+@media only screen and (max-width: 600px) {
+    .guest-text {
+        font-size: 28px;
+        font-weight: bold;
+    }
+}
+
+.video-box {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 20px; /* Adjust the height as needed */
+    background-color: #f2f2f2; /* Set a background color for better visibility */
+    z-index: 999; /* Ensure the video box appears above other elements */
+ 
   }
-  

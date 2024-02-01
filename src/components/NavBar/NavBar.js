@@ -5,6 +5,7 @@ import "./NavBar.css";
 import { Link, useLocation } from "react-router-dom";
 import squashVideo from "../../assets/squash.mp4";
 
+
 export default function NavBar() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
