@@ -1,64 +1,31 @@
 import React from "react";
 import "./Footer.css";
+import instagram from "../../assets/images/socialMedia/instagram.png";
+import facebook from "../../assets/images/socialMedia/facebook.png";
+import linkdin from "../../assets/images/socialMedia/linkedin.png";
+import twitter from "../../assets/images/socialMedia/twitter.png";
 
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaGoogle,
-  FaInstagram,
-  FaLinkedin,
-} from "react-icons/fa";
+
+
+
 
 function Footer() {
   return (
     <>
-      <footer className="text-center text-white footer-background ">
-        <div className="container pt-3 mt-4">
-          <section >
-            <a
-              className="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="https://www.facebook.com/profile.php?id=100091281026430&mibextid=ZbWKwL"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <FaFacebookF />
-            </a>
-            <a
-              className="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="https://twitter.com/global_squash"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <FaTwitter />
-            </a>
-{/* 
-            <a
-              className="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <FaGoogle />
-            </a> */}
-
-            {/* Instagram */}
-            <a
-              className="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="https://www.instagram.com/global_squash/"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <FaInstagram />
-            </a>
-            <a
-              className="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="https://www.linkedin.com/company/squash-global/"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <FaLinkedin />
-            </a>
-          </section>
+      <footer>
+        <div className="socialMedia text-center">
+          <a href="https://www.facebook.com/profile.php?id=100091281026430&mibextid=ZbWKwL" target="_blank">
+            <img className="socialMedia social-media-icon" src={facebook} alt="Facebook"></img>
+          </a>
+          <a href="https://www.instagram.com/global_squash/" target="_blank">
+            <img className="socialMedia social-media-icon" src={instagram} alt="Instagram"></img>
+          </a>
+          <a href="https://twitter.com/global_squash" target="_blank">
+            <img className="socialMedia social-media-icon" src={twitter} alt="Twitter"></img>
+          </a>
+          <a href="https://www.linkedin.com/company/squash-global/" target="_blank">
+            <img className="socialMedia social-media-icon" src={linkdin} alt="Linkdin"></img>
+          </a>
         </div>
         <div className="text-center text-dark p-3">
           © 2024 Squash Global. All Rights Reserved.

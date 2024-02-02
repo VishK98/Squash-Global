@@ -1,7 +1,32 @@
-.btn-link.btn-floating.btn-lg.text-dark:hover {
-    background-color: #fe504f;
+
+   .socialMedia {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
   }
-  .footer-background{
+  
+  footer {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(243, 240, 240);
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    margin-top: 20px;
+  
   }
+  .social-media-icon {
+    padding: 5px;
+    margin-left: 10px;
+    filter: grayscale(100%);
+    transition: filter 0.3s, transform 0.5s; 
+  }
+  
+  .social-media-icon:hover {
+    filter: grayscale(0%);
+    transform: scale(1.2) ; 
+  }
+  
   
