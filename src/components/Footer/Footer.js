@@ -5,10 +5,6 @@ import facebook from "../../assets/images/socialMedia/facebook.png";
 import linkdin from "../../assets/images/socialMedia/linkedin.png";
 import twitter from "../../assets/images/socialMedia/twitter.png";
 
-
-
-
-
 function Footer() {
   return (
     <>

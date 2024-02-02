@@ -1,6 +1,6 @@
-// ScrollToTopButton.js
 import React, { useState, useEffect } from 'react';
 import './TopButton.css';
+import topButton from "../../assets/images/arrow (1).png";
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -20,6 +20,10 @@ const ScrollToTopButton = () => {
     });
   };
 
+  const handleClick = () => {
+    scrollToTop();
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', toggleVisibility);
 
@@ -29,12 +33,9 @@ const ScrollToTopButton = () => {
   }, []);
 
   return (
-    <button
-      className={`scrollToTop ${isVisible ? 'active' : ''}`}
-      onClick={scrollToTop}
-    >
-   <h1>🔺</h1>
-    </button>
+    <div className={`scrollToTop ${isVisible ? 'active' : ''}` } onClick={handleClick}>
+      <img className='top-image' src={topButton} alt="Button" />
+    </div>
   );
 };
 

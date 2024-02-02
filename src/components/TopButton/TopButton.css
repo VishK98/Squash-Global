@@ -1,31 +1,18 @@
-/* ScrollToTopButton.css */
 .scrollToTop {
-    background-color: transparent;
     position: fixed;
     bottom: 1rem;
     right: 1rem;
-    border-radius: 30%;
-    border: #eb2f06 solid 2px;
-    width: 55px;
-    height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity 0.2s;
   }
-  
+  .top-image{
+    height: 50px;
+    width: 50px;
+  }
   .scrollToTop.active {
     opacity: 1;
   }
-  
-  .scrollToTop:hover {
-    animation: rotate 2s infinite linear;
-  }
-  
-  @keyframes rotate {
-    to {
-      transform: rotate(360deg);
-    }
-  }
+
   
