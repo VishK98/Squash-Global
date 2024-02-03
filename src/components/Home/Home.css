@@ -20,7 +20,12 @@ h2.stroke {
 .responsive-text{
   margin-top: 150px;
 }
-
+.but-text {
+  font-family: RedHatDisplayBold;
+  color: #000;
+  font-size: 65px;
+  font-weight: bold;
+}
 @media (max-width: 767.98px) {
   .mobile_down_arrow {
     display: none;
@@ -34,19 +39,14 @@ h2.stroke {
     line-height: 60px;
   }
   .but-text {
-    font-size: 25px;
+    font-size: 20px;
   }
   .responsive-text{
     margin-top: 5px;
   }
 }
 
-.but-text {
-  font-family: RedHatDisplayBold;
-  color: #000;
-  font-size: 65px;
-  font-weight: bold;
-}
+
 .discover-text {
   font-family: RedHatDisplayBold;
   color: #000;
