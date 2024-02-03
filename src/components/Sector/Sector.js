@@ -20,32 +20,52 @@ import { Link } from "react-router-dom";
 function Sector() {
   const box =[
     {
-      title : "Vishal",
+      title : "Energy and Utilities",
       url: energy
     },
     {
-      title : "Vishesh",
+      title : "FMCG",
       url: FMCG
     },
     {
-      title : "Abhishek",
+      title : "Consumer Goods",
       url: Consumer
     },
     {
-      title : "Aditya",
+      title : "BFSI",
       url: BFSI
     },
     {
-      title : "Shubasdf",
-      url: BFSI
+      title : "Automotive",
+      url: Automotive
     },
     {
-      title : "Shubasdf",
-      url: BFSI
+      title : "Retails",
+      url: Retails
     },
     {
-      title : "Shubasdf",
-      url: BFSI
+      title : "Food and Beverages",
+      url: foods
+    },
+    {
+      title : "Tourism and Hospitality",
+      url: Hospitality
+    },
+    {
+      title : "Media and Entertainment",
+      url: Media
+    },
+    {
+      title : "Pharmaceutical",
+      url: Pharmaceutical
+    },
+    {
+      title : "Telecom",
+      url: Telecom
+    },
+    {
+      title : "Fashion And Lifestyle",
+      url: Fashion
     },
   ];
   return (
