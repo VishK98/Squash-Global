@@ -49,7 +49,7 @@ function PartnerSlider() {
                 settings: {
                     slidesToShow: 1,
                     centerMode: true,
-                    centerPadding: '75px', // Adjust as needed
+                    centerPadding: '105px', // Adjust as needed
                 }
             }
         ]
@@ -58,7 +58,7 @@ function PartnerSlider() {
     const images = [GAP, Aditya, Ashirwaad, Asianpaint, CEAT, Dolby, Playstation, Hira, Kotak, Loreal, Paypal, Yes];
 
     return (
-        <div className='container-fluid'>
+        // <div className='container-fluid'>
             <Slider {...settings}>
                 {images.map((image, index) => (
                     <div key={index}>
@@ -66,7 +66,7 @@ function PartnerSlider() {
                     </div>
                 ))}
             </Slider>
-        </div>
+        // </div>
     )
 }
 
