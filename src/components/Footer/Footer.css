@@ -29,4 +29,9 @@
     transform: scale(1.2) ; 
   }
   
+  @media only screen and (max-width: 625px) {
+    .social-media-icon{
+      filter: grayscale(0%);
+    }
+}
   
