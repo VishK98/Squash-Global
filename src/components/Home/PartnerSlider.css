@@ -2,10 +2,11 @@
     height: 120px;
     width: 200px;
     border-radius: 10px;
-    filter: grayscale(100%);
+    filter: grayscale(80%);
     transition: filter 0.3s;
     cursor: pointer;
     transition: all .3s;
+    mix-blend-mode: multiply;
 }
 
 .slide-image:hover {
