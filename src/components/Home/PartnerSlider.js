@@ -49,7 +49,7 @@ function PartnerSlider() {
                 settings: {
                     slidesToShow: 1,
                     centerMode: true,
-                    centerPadding: '70px', // Adjust as needed
+                    centerPadding: '75px', // Adjust as needed
                 }
             }
         ]
