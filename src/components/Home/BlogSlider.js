@@ -46,7 +46,6 @@ const BlogSlider = () => {
                       <h4 className='read-more' >➟</h4>
                     </div>
                   </Link>
-
                 </div>
               </div>
             </div>
@@ -55,7 +54,7 @@ const BlogSlider = () => {
               <div className="slide-content justify-content-between">
                 <div className="col-lg-6 col-md-6 col-12">
                   <div className="box">
-                    <img src={blogImage4} alt={blogImage4} />
+                    <img src={blogImage9} alt={blogImage9} />
                     <div className="box-content">
                     </div>
                   </div>
@@ -78,7 +77,7 @@ const BlogSlider = () => {
               <div className="slide-content justify-content-between">
                 <div className="col-lg-6 col-md-6 col-12">
                   <div className="box">
-                    <img src={blogImage4} alt={blogImage4} />
+                    <img src={blogImage10} alt={blogImage10} />
                     <div className="box-content">
                     </div>
                   </div>

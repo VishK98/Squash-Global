@@ -19,6 +19,7 @@ import IndiaClients from "../../assets/images/IndiaClients-bw-new.jpg";
 import brandIcon from "../../assets/images/brand-icon.png";
 import "./BlogSlider";
 import BlogSlider from "./BlogSlider";
+import PartnerSlider from "./PartnerSlider";
 
 function Home() {
   const [selectedService, setSelectedService] = useState("selected");
@@ -279,8 +280,8 @@ function Home() {
           Creating value, relevance and connections.<br></br>Some things that
           really matter to people and brands.
         </h3>
-        <img className="w-100 mt-5" style={{ paddingLeft: "25px", height: "120px" }} src={IndiaClients} alt="Slider Image" />
-        {/* <img src={IndiaClientsHover} alt="Slider Image on Hover" className="hover-image" /> */}
+        <br/>
+        <PartnerSlider/>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
