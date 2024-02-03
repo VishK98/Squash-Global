@@ -18,8 +18,37 @@ import Expert from "../../assets/images/connect-with-our-experts.png";
 import { Link } from "react-router-dom";
 
 function Sector() {
+  const box =[
+    {
+      title : "Vishal",
+      url: energy
+    },
+    {
+      title : "Vishesh",
+      url: FMCG
+    },
+    {
+      title : "Abhishek",
+      url: Consumer
+    },
+    {
+      title : "Aditya",
+      url: BFSI
+    },
+    {
+      title : "Shubasdf",
+      url: BFSI
+    },
+    {
+      title : "Shubasdf",
+      url: BFSI
+    },
+    {
+      title : "Shubasdf",
+      url: BFSI
+    },
+  ];
   return (
-    
       <>
         <div class="container">
           <div class="row">
@@ -87,7 +116,20 @@ function Sector() {
             className="row"
             style={{ justifyContent: "space-between", marginRight: "5px" }}
           >
-            <div className="col-lg-2 col-md-6 col-6 mt-3">
+            {box.map((image, index) => (
+              // console.log('data', image)
+              <div className="col-lg-2 col-md-6 col-6 mt-3">
+              <div className="boxes">
+                <div className="col">
+                  <div className="industries-four-boxes h-100">
+                    <img className="box-img" src={image.url} alt="FMGC" />
+                    <p className="mt-2 box-text">{image.title}</p>
+                  </div>
+                </div>
+              </div>
+            </div>       
+          ))}
+            {/* <div className="col-lg-2 col-md-6 col-6 mt-3">
               <div className="boxes">
                 <div className="col">
                   <div className="industries-four-boxes h-100">
@@ -96,7 +138,7 @@ function Sector() {
                       src={energy}
                       alt="Energy and Utilities"
                     />
-                    <p>
+                    <p className="box-text">
                       Energy and
                       <br />
                       Utilities
@@ -110,7 +152,7 @@ function Sector() {
                 <div className="col">
                   <div className="industries-four-boxes h-100">
                     <img className="box-img" src={FMCG} alt="FMGC" />
-                    <p className="mt-2">FMGC</p>
+                    <p className="mt-2 box-text">FMGC</p>
                   </div>
                 </div>
               </div>
@@ -120,7 +162,7 @@ function Sector() {
                 <div className="col">
                   <div className="industries-four-boxes h-100">
                     <img className="box-img" src={Consumer} alt="Consumer" />
-                    <p className="mt-2">
+                    <p className="mt-2 box-text">
                       Consumer
                       <br />
                       Goods
@@ -134,7 +176,7 @@ function Sector() {
                 <div className="col">
                   <div className="industries-four-boxes h-100">
                     <img className="box-img" src={BFSI} alt="Consumer" />
-                    <p className="mt-2">BFSI</p>
+                    <p className="mt-2 box-img">BFSI</p>
                   </div>
                 </div>
               </div>
@@ -148,7 +190,7 @@ function Sector() {
                       src={Automotive}
                       alt="Automotive"
                     />
-                    <p className="mt-2">Automotive</p>
+                    <p className="mt-2 box-img">Automotive</p>
                   </div>
                 </div>
               </div>
@@ -158,7 +200,7 @@ function Sector() {
                 <div className="col">
                   <div className="industries-four-boxes h-100">
                     <img className="box-img" src={Retails} alt="Retails" />
-                    <p className="mt-2">Retails</p>
+                    <p className="mt-2 box-img">Retails</p>
                   </div>
                 </div>
               </div>
@@ -168,7 +210,7 @@ function Sector() {
                 <div className="col">
                   <div className="industries-four-boxes h-100">
                     <img className="box-img" src={foods} alt="foods" />
-                    <p>
+                    <p className="box-img">
                       Food and
                       <br /> Beverages
                     </p>
@@ -185,7 +227,7 @@ function Sector() {
                       src={Hospitality}
                       alt="Hospitality"
                     />
-                    <p>
+                    <p className="box-img">
                       Tourism and
                       <br /> Hospitality
                     </p>
@@ -198,7 +240,7 @@ function Sector() {
                 <div className="col">
                   <div className="industries-four-boxes h-100">
                     <img className="box-img" src={Media} alt="Media" />
-                    <p>
+                    <p className="box-img">
                       Media and <br />
                       Entertainment
                     </p>
@@ -215,7 +257,7 @@ function Sector() {
                       src={Pharmaceutical}
                       alt="Pharmaceutical"
                     />
-                    <p>Pharmaceutical</p>
+                    <p className="box-img">Pharmaceutical</p>
                   </div>
                 </div>
               </div>
@@ -225,7 +267,7 @@ function Sector() {
                 <div className="col">
                   <div className="industries-four-boxes h-100 ">
                     <img className="box-img" src={Telecom} alt="Telecom" />
-                    <p>Telecom</p>
+                    <p className="box-img">Telecom</p>
                   </div>
                 </div>
               </div>
@@ -235,14 +277,14 @@ function Sector() {
                 <div className="col">
                   <div className="industries-four-boxes h-100 ">
                     <img className="box-img" src={Fashion} alt="Fashion" />
-                    <p>
+                    <p className="box-img">
                       Fashion and
                       <br /> Lifestyle
                     </p>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="mt-4" style={{ position: "relative", width: "100%", height: "100%" }}>
