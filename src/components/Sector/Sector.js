@@ -17,6 +17,7 @@ import Fashion from "../../assets/images/sector-img (10).png";
 import Expert from "../../assets/images/connect-with-our-experts.png";
 import { Link } from "react-router-dom";
 
+
 function Sector() {
   const box = [
     {
@@ -151,28 +152,6 @@ function Sector() {
           ))}
         </div>
       </div>
-
-
-      {/* <div className="container-fluid position-relative">
-        <img
-          src={Expert}
-          className="img-fluid mt-lg-4 mt-3"
-          width="100%"
-          alt="Ready to Solve Something Together"
-          style={{ width: "100%", height: "auto" }}
-        />
-        <div className="position-absolute top-50 start-50 ">
-          <div className="container" style={{marginLeft: "30px"}}>
-          <h3 style={{color: "white"}}>Ready to Solve Something Together?</h3>
-          <p style={{color: "white"}} >
-            If you're looking to enhance your SEO, PPC, and broader digital
-            marketing strategies, our team is excited to engage with you.
-            Let's start a conversation!
-          </p>
-          <a href="#" className="btn-5">Request a call back </a>
-          </div>
-        </div>
-      </div> */}
       <div className="position-relative">
         <img
           src={Expert}
@@ -189,26 +168,26 @@ function Sector() {
               marketing strategies, our team is excited to engage with you. Let's
               start a conversation!
             </p>
-            {/* <a href="#" className="btn-5">
-              Request a call back
-            </a> */}
-            <div>
-              <button class="req-btn"><i class="animation"></i>Request a call back<i class="animation"></i>
-              </button>
-            </div>
+            <Link to="/contact" class="btn-flip mt-4" >
+          <button class="req-btn"><i class="animation"></i>Request a call back<i class="animation"></i>
+          </button>
+        </Link>
           </div>
         </div>
       </div>
-        <div className="hide-web mt-3 " >
-          <h3 style={{ color: "black" }}>Ready to Solve Something Together?</h3>
-          <p style={{ color: "black" }}>
-            If you're looking to enhance your SEO, PPC, and broader digital
-            marketing strategies, our team is excited to engage with you. Let's
-            start a conversation!
-          </p>
+      <div className="hide-web mt-3 " >
+        <h3 style={{ color: "black" }}>Ready to Solve Something Together?</h3>
+        <p style={{ color: "black" }}>
+          If you're looking to enhance your SEO, PPC, and broader digital
+          marketing strategies, our team is excited to engage with you. Let's
+          start a conversation!
+        </p>
+        <Link to="/contact" class="btn-flip mt-4" >
           <button class="req-btn"><i class="animation"></i>Request a call back<i class="animation"></i>
-              </button>
-        </div>
+          </button>
+        </Link>
+
+      </div>
       <ScrollToTopButton />
     </>
   );
