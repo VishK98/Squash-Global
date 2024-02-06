@@ -1,13 +1,11 @@
-// Contact.js
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ScrollToTopButton from '../TopButton/TopButton';
 import contact from "../../assets/images/contact-img-2.webp";
 import india from "../../assets/images/tonic-india-hq.webp";
 import mapIcon from "../../assets/images/viewmap-icon.webp";
 import message from "../../assets/images/message-icon.png";
 import email from "../../assets/images/email-icon1.png";
-import uae from "../../assets/images/uae-hq-icon.png";
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
@@ -15,6 +13,26 @@ import * as Yup from 'yup';
 import "./Contact.css";
 
 function Contact() {
+  useEffect(() => {
+    function handleScroll() {
+      const image = document.querySelector(".slide-in");
+      const imagePosition = image.getBoundingClientRect().top;
+      const screenHeight = window.innerHeight;
+
+      if (imagePosition < screenHeight / 2) {
+        image.classList.add("slide-in-animation");
+      } else {
+        image.classList.remove("slide-in-animation");
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
   const formik = useFormik({
     initialValues: {
       name: '',
@@ -79,13 +97,21 @@ function Contact() {
       <div className="container mt-3 mb-5">
         <div className="row align-items-center">
           <div className="col-lg-12">
-            <div className="inner_section_img position-relative hidden">
+            {/* <div className="inner_section_img position-relative hidden">
               <img
                 src={contact}
                 alt="Contact Digital Marketing Agency"
                 className="w-100 "
               />
-            </div>
+            </div> */}
+            {/* <div className="imagereveal"> */}
+              <img
+                // style={{ height: "100%", width: "100%" }}
+                src={contact}
+                alt="Gipsi Analytics Reports"
+                className="slide-in w-100"
+              />
+            {/* </div> */}
           </div>
         </div>
         <div className="row">
@@ -97,7 +123,7 @@ function Contact() {
               </div>
               <div className="address">
                 <h6>
-                791/5, Udyog Vihar, Phase-V, Sector-19,<br/> Gurgaon, Haryana, 122016
+                  791/5, Udyog Vihar, Phase-V, Sector-19,<br /> Gurgaon, Haryana, 122016
                 </h6>
               </div>
               <a
@@ -130,7 +156,7 @@ function Contact() {
                     contact@squashglobal.com
                   </a>
                 </span>
-              </p>  
+              </p>
             </div>
             {/* ... (other code) */}
           </div>
@@ -143,7 +169,7 @@ function Contact() {
               </h1>
 
               <form className="mt-5" onSubmit={formik.handleSubmit}>
-                <label>Full Name<sup style={{color: "red", marginLeft: "5px", fontSize: "12px"}}>*</sup></label> <br></br>
+                <label>Full Name<sup style={{ color: "red", marginLeft: "5px", fontSize: "12px" }}>*</sup></label> <br></br>
                 <input
                   type="text"
                   name="name"
@@ -161,7 +187,7 @@ function Contact() {
                     </div>
                   </div>
                 )}
-                <label>Email<sup style={{color: "red", marginLeft: "5px", fontSize: "12px"}}>*</sup></label> <br></br>
+                <label>Email<sup style={{ color: "red", marginLeft: "5px", fontSize: "12px" }}>*</sup></label> <br></br>
                 <input
                   type="text"
                   name="email"
@@ -179,7 +205,7 @@ function Contact() {
                     </div>
                   </div>
                 )}
-                <label>State<sup style={{color: "red", marginLeft: "5px", fontSize: "12px"}}>*</sup></label> <br></br>
+                <label>State<sup style={{ color: "red", marginLeft: "5px", fontSize: "12px" }}>*</sup></label> <br></br>
                 <input
                   type="text"
                   name="state"
@@ -197,7 +223,7 @@ function Contact() {
                     </div>
                   </div>
                 )}
-                <label>Contact Number<sup style={{color: "red", marginLeft: "5px", fontSize: "12px"}}>*</sup></label> <br></br>
+                <label>Contact Number<sup style={{ color: "red", marginLeft: "5px", fontSize: "12px" }}>*</sup></label> <br></br>
                 <input
                   type="text"
                   name="contactNumber"
@@ -216,7 +242,7 @@ function Contact() {
                   </div>
                 )}
                 <div>
-                  <label htmlFor="service">Choose a service <sup style={{color: "red", marginLeft: "5px", fontSize: "12px"}}>*</sup></label>
+                  <label htmlFor="service">Choose a service <sup style={{ color: "red", marginLeft: "5px", fontSize: "12px" }}>*</sup></label>
                   <select
                     type="text"
                     name="service"

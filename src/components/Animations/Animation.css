@@ -1,0 +1,126 @@
+/* Image animation from left to right */
+
+@keyframes slideLeftToRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.image-animation.slide-left-to-right {
+  animation-name: slideLeftToRight;
+  animation-duration: 3s; 
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+/* Image animation from right to left */
+
+.slide-in-animation {
+  animation: slideIn 3s forwards; /* Apply the slide-in animation */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%); /* Start off-screen to the right */
+    opacity: 0; /* Initially hidden */
+  }
+  to {
+    transform: translateX(0); /* Slide in to the left */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+/* Text animation starts (Right to Left)*/
+
+@keyframes slideRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.text-animation.slide-right {
+  animation-name: slideRight;
+  animation-duration: 3s; 
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+/* Text animation ends (Right to Left) */
+
+/* Text animation ends (Left to Right) */
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.text-animation.slide-left {
+  animation-name: slideLeft;
+  animation-duration: 3s; 
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+
+/* Text animation ends (Left to Right) */
+
+/* Text animation starts (Bottom to Top) */
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.text-animation.slide-up {
+  animation-name: slideUp;
+  animation-duration: 3s; 
+  animation-fill-mode: both;
+  animation-timing-function: ease; 
+}
+
+/* Text animation ends (Bottom to Top) */
+
+/* Text animation starts (Top to Bottom) */
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.text-animation.slide-down {
+  animation-name: slideDown;
+  animation-duration: 3s; 
+  animation-fill-mode: both;
+  animation-timing-function: ease; 
+}
+
+/* Text animation ends (Top to Bottom) */
+
