@@ -175,10 +175,10 @@ function Home() {
       <div>
 <h3>What’s Brewing at Squash Global? </h3>
 <h4>Framing People-Centric Experiences </h4>
-<h5>Our marketing strategies go beyond driving campaigns for brands. 
+Our marketing strategies go beyond driving campaigns for brands. 
 With deep understanding of human behavior, we forge connection 
 that helps Brands to speak to their audience individually.
-</h5>
+
       </div>
       <section id="homeSectionThree" >
         <div className="container">
@@ -233,7 +233,7 @@ that helps Brands to speak to their audience individually.
         </div>
         <div>
           <h3>Pixels to People</h3>
-<h5>Having Technology as an ally, we design digital experiences that move brands closer to their vision.</h5>
+Having Technology as an ally, we design digital experiences that move brands closer to their vision.
 </div>
         <div className="container mt-lg-5 mb-lg-4 mt-3">
           <div className="row">
@@ -296,7 +296,7 @@ that helps Brands to speak to their audience individually.
         <PartnerSlider/>
         <div>
           <h3>Weaving Narratives, Experiences and Connection.</h3>
-<h5>In a world saturated with information, we understand that your brand isn't just a product or service—it's a story waiting to be told.</h5>
+In a world saturated with information, we understand that your brand isn't just a product or service—it's a story waiting to be told.
 </div>
         <div className="container">
           <div className="row align-items-center">
@@ -313,8 +313,7 @@ that helps Brands to speak to their audience individually.
                 <div className="topslide">
                   <p>
                   <h3>We’re Squash</h3> 
-<h5>Squash Global is more than just a marketing agency. We are the architects of brand experiences, designing stories that resonate with the brand’s audience. At Squash, we provide customize solutions and expertise to unique business needs making us the right choice for start-ups and small to medium companies. With us, you can build future ready brand, through an integration of content, technology and media, using data backed tools and practices.</h5>
-
+Squash Global is more than just a marketing agency. We are the architects of brand experiences, designing stories that resonate with the brand’s audience. At Squash, we provide customize solutions and expertise to unique business needs making us the right choice for start-ups and small to medium companies. With us, you can build future ready brand, through an integration of content, technology and media, using data backed tools and practices.
                   </p>
                 </div>
               </div>
@@ -365,6 +364,10 @@ that helps Brands to speak to their audience individually.
                       <mark className="text-highlight">
                         the human condition.
                       </mark>
+                      <section>
+                        <h3>Redefining Communication for Brands to Create More Approachable Framework</h3>
+                        We believe every brand carries a story and looking for the optimum communication strategy to interact with their audience. In the era of technology and artificial intelligence, we design campaigns with human touch that leaves a lasting impression. With Squash, you can amplify your brand’s communication making it more interactive and people centric. This will not only generate leads but also make your brand more relatable and problem solving to your consumers. Join us on a journey where marketing transcends the ordinary and becomes a catalyst for connection, creativity, and growth.
+                      </section>
                     </p>
                   </div>
                 </div>
@@ -567,6 +570,7 @@ that helps Brands to speak to their audience individually.
           </div>
         </div>
       </div>
+      <div>Where Our Specialty Lies / Our Cup of Tea</div>
       <div className="container" >
         <div className="row mt-5 ">
           <div className="col-lg-6 col-md-12 col-12">
