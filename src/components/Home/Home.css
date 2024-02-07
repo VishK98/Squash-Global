@@ -215,3 +215,34 @@ h2.stroke {
 }
 
 /* Animation ends  here */
+
+.video-display {
+  height: 560px;
+}
+
+@media only screen and (max-width: 625px) {
+  .video-display {
+    height: 560px;
+  }
+}
+
+/* For screen sizes up to 625px (mobile devices) */
+@media only screen and (max-width: 625px) {
+  .video-display {
+    height: 560px;
+  }
+}
+
+/* For screen sizes from 626px to 1024px (laptops) */
+@media only screen and(max-width: 1024px) {
+  .video-display {
+    height: 610px;
+  }
+}
+
+/* For screen sizes above 1024px (desktops) */
+@media only screen and (max-width: 1025px) {
+  .video-display {
+    height: 600px;
+  }
+}

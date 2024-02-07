@@ -87,7 +87,7 @@ function Home() {
   return (
     <>
       <section id="homeSectionOne" className="position-relative section">
-        <div className="container" style={{width: "100%",height: "560px", }}>
+        <div className="container video-display">
           <div className="row">
             <div className="col-12">
               <div className="bannertitle">
@@ -152,10 +152,11 @@ function Home() {
           </div>
         </div>
       </div>
+
       <section id="homeSectionThree " >
         <div className="container">
           <div className="row">
-            <div className="col-12 d-flex align-items-center ">
+            <div className="col-12 d-flex align-items-center">
               <div>
                 <div className="title">
                   <h2 className="stroke">Human centric</h2>
@@ -301,6 +302,7 @@ function Home() {
           style={{ width: "100%" }}
         ></img>
       </section>
+
       <section
         id="homeSectionFour"
         className="mt-lg-5 mt-3 "
@@ -346,6 +348,7 @@ function Home() {
           </div>
         </div>
       </section>
+
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -523,6 +526,7 @@ function Home() {
           </div>
         </div>
       </div>
+
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-10 col-md-12">
@@ -540,6 +544,7 @@ function Home() {
           </div>
         </div>
       </div>
+
       <div className="container" >
         <div className="row mt-5 ">
           <div className="col-lg-6 col-md-12 col-12">
@@ -604,6 +609,7 @@ function Home() {
           </div>
         </div>
       </div>
+
       <div className="container">
         <div className="col-12">
           <div className="title">
@@ -614,6 +620,7 @@ function Home() {
           </div>
         </div>
       </div>
+
       <BlogSlider></BlogSlider>
       <div className="container mt-4">
         <div className="row">
