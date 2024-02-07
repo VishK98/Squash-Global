@@ -1,6 +1,5 @@
 import "./Home.css";
 import "../Animations/Animation.css";
-import AnimatedImage from '../Animations/ImageAnimation';
 import AnimatedFadeImage from '../Animations/ImageAnimationFade';
 import AnimatedUnfoldImage from '../Animations/ImageAnimationUnfold';
 import AnimatedText from '../Animations/TextAnimation';
@@ -66,6 +65,8 @@ function Home() {
 
   return (
     <>
+          <div style={{marginTop: "530px"}}></div>
+{/* 
       <section id="homeSectionOne" className="position-relative section">
         <div className="container video-display">
           <div className="row">
@@ -102,7 +103,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <div className="container-fluid p-4">
         <div className="row">
@@ -527,11 +528,8 @@ function Home() {
           <div className="col-lg-10 col-md-12">
             <div>
               <AnimatedText text={<h2 className="specialty-text text-lg-center">Where Our</h2>} animation='slide-left' />
-              <AnimatedText text={<h2 className="specialty-text">Specialty </h2>
-              } animation='fade-in' />
-              <AnimatedText text={<h2 className="text-lg-center specialty-title">
-                Lies / Our Cup of Tea
-              </h2>} animation='slide-right' />
+              <AnimatedText text={<h2 className="specialty-text">Specialty Lies</h2>
+              } animation='slide-right' />
             </div>
           </div>
           <div className="col-lg-2 col-md-12">

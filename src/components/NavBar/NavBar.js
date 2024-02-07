@@ -40,7 +40,7 @@ export default function NavBar() {
   };
 
   const updateVideoHeight = () => {
-    setVideoHeight(location.pathname === "/" ? "100%" : "0%");
+    setVideoHeight(location.pathname === "/" ? "600px" : "0%");
   };
 
   useEffect(() => {
@@ -111,7 +111,7 @@ export default function NavBar() {
     };
   }, [isMobileNavOpen]);
 
-  const [videoHeight, setVideoHeight] = useState("100%");
+  const [videoHeight, setVideoHeight] = useState("600px");
 
   useEffect(() => {
     updateVideoHeight();
@@ -134,7 +134,7 @@ export default function NavBar() {
        <div className={`header ${scrolled ? 'scrolled' : ''}`}>
        <header className="header nav-wrapper">
         <nav className="navbar navbar-expand-lg" aria-label="Main navigation">
-          <div className="container-fluid" style={{ marginLeft: "25px" }}>
+          <div className="container-fluid" style={{ marginLeft: "25px" }} >
             <Link to="/" onClick={handleToggleClick} className="mt-2">
               <img src={logo} alt="BigCo Inc. logo" className="logo-img" />
             </Link>
