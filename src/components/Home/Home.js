@@ -1,7 +1,7 @@
 import "./Home.css";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import ScrollToTopButton from '../TopButton/TopButton';
+import ScrollToTopButton from "../TopButton/TopButton";
 import bigCircle from "../../assets/images/big-circle-down-arrow.png";
 import gispiImage from "../../assets/images/gipsi-report.png";
 import arrowMore from "../../assets/images/arrow-more.png";
@@ -48,7 +48,7 @@ function Home() {
     const { name, value } = event.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -128,13 +128,22 @@ function Home() {
         <div className="row">
           <div className="col-lg-5">
             <h2 className="topslide">What’s Brewing at Squash Global?</h2>
-            <h1 className="discover-text">Framing People Centric Experiences</h1>
-            <p className="brew-text">Our marketing strategies go beyond <span className="text-highlight">With deep understanding of human behavior, we forge connection that helps</span>  Brands to speak to their audience individually.</p>
+            <h1 className="discover-text">
+              Framing People Centric Experiences
+            </h1>
+            <p className="brew-text">
+              Our marketing strategies go beyond{" "}
+              <span className="text-highlight">
+                With deep understanding of human behavior, we forge connection
+                that helps
+              </span>{" "}
+              Brands to speak to their audience individually.
+            </p>
             <a
               target="_blank"
               rel="noopener noreferrer"
               className="outline_btn explorbtn position-relative"
-              style={{marginTop:'30px'}}
+              style={{ marginTop: "30px" }}
             >
               <i style={{ marginRight: "50px" }}>Explore</i>
               <span className="zoom-icon">
@@ -153,21 +162,23 @@ function Home() {
         </div>
       </div>
 
-      <section id="homeSectionThree " >
+      <section id="homeSectionThree ">
         <div className="container">
           <div className="row">
             <div className="col-12 d-flex align-items-center">
               <div>
                 <div className="title">
-                  <h2 className="stroke">Human centric</h2>
+                  <h2 className="stroke">Pixels to </h2>
                 </div>
                 <div className="title bannertitle">
-                  <h2 style={{ fontWeight: "bold" }}>experiences</h2>
+                  <h2 style={{ fontWeight: "bold" }}>People</h2>
                 </div>
-                <p>
-                  that move {" "}
-                  <mark className="text-highlight">brands closer to</mark>{" "}
-                  their vision.
+                <p className="brew-text">
+                  Having Technology as an ally,{" "}
+                  <mark className="text-highlight">
+                    we design digital experiences that
+                  </mark>{" "}
+                  move brands closer to their vision.
                 </p>
               </div>
               <div className="mobile_down_arrow new-big-down-arrow2">
@@ -193,10 +204,22 @@ function Home() {
               <h3 style={{ fontWeight: "bold" }}>What's on the Lips</h3>
               <div className="row">
                 <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex align-items-center">
-                  <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>Explore </h2>
+                  <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>
+                    Explore{" "}
+                  </h2>
                   <Link to="/blogDetails" style={{ textDecoration: "none" }}>
-                    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "60px", width: "60px", borderRadius: "50px", backgroundColor: "#fe504f" }}>
-                      <h4 className='read-more' >➟</h4>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        height: "60px",
+                        width: "60px",
+                        borderRadius: "50px",
+                        backgroundColor: "#fe504f",
+                      }}
+                    >
+                      <h4 className="read-more">➟</h4>
                     </div>
                   </Link>
                 </div>
@@ -206,15 +229,33 @@ function Home() {
         </div>
         <div className="container mt-lg-5 mb-lg-4 mt-3">
           <div className="row">
-            <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-none d-md-block" style={{ marginTop: "150px" }}>
+            <div
+              className="col-lg-5 col-md-5 col-sm-12 col-12 d-none d-md-block"
+              style={{ marginTop: "150px" }}
+            >
               <h3 style={{ fontWeight: "bold" }}>What's on the TASC</h3>
-              <div className="row" style={{ display: "flex", alignItems: "center" }}>
+              <div
+                className="row"
+                style={{ display: "flex", alignItems: "center" }}
+              >
                 <div className="row">
                   <div className="col-lg-5 col-md-5 col-sm-12 col-12  d-flex align-items-center">
-                    <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>Explore </h2>
+                    <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>
+                      Explore{" "}
+                    </h2>
                     <Link to="/blogDetails" style={{ textDecoration: "none" }}>
-                      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "60px", width: "60px", borderRadius: "50px", backgroundColor: "#fe504f" }}>
-                        <h4 className='read-more' >➟</h4>
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          height: "60px",
+                          width: "60px",
+                          borderRadius: "50px",
+                          backgroundColor: "#fe504f",
+                        }}
+                      >
+                        <h4 className="read-more">➟</h4>
                       </div>
                     </Link>
                   </div>
@@ -232,10 +273,22 @@ function Home() {
               <h3 style={{ fontWeight: "bold" }}>What's on the TASC</h3>
               <div className="row">
                 <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex align-items-center">
-                  <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>Explore </h2>
+                  <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>
+                    Explore{" "}
+                  </h2>
                   <Link to="/blogDetails" style={{ textDecoration: "none" }}>
-                    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "60px", width: "60px", borderRadius: "50px", backgroundColor: "#fe504f" }}>
-                      <h4 className='read-more' >➟</h4>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        height: "60px",
+                        width: "60px",
+                        borderRadius: "50px",
+                        backgroundColor: "#fe504f",
+                      }}
+                    >
+                      <h4 className="read-more">➟</h4>
                     </div>
                   </Link>
                 </div>
@@ -258,9 +311,12 @@ function Home() {
           />
         </div>
         <h3 className="creating-text">
-          Creating value, relevance and connections.<br></br>Some things that
-          really matter to people and brands.
+          Weaving Narratives, Experiences and Connection.
         </h3>
+        <h4 className="text-center">
+          In a world saturated with information, we understand that your brand
+          isn't just a product or service—it's a story waiting to be told.
+        </h4>
         <br />
         <PartnerSlider />
         <div className="container">
@@ -276,19 +332,21 @@ function Home() {
             <div className="col-lg-6">
               <div className="section_para p-lg-5 pl-0">
                 <div className="topslide">
-                  <p>
-                    Squash Global is a{" "}
-                    <mark className="text-highlight">multi-award</mark> winning{" "}
-                    <mark className="text-highlight">
-                      digital, creative, content
-                    </mark>{" "}
-                    and performance marketing partner to some of the{" "}
-                    <mark className="text-highlight">leading brands</mark> of
-                    the region.
-                  </p>
-                  <p>
-                    Bringing together creative,{" "}
-                    <mark className="text-highlight">data and technology.</mark>
+                  <p className="brew-text">
+                    Squash Global is more than{" "}
+                    <span className="text-highlight">
+                      just a marketing agency.
+                    </span>{" "}
+                    We are the architects of brand experiences, designing
+                    stories that resonate with the brand’s audience. At Squash,
+                    we provide customize solutions and{" "}
+                    <span className="text-highlight">
+                      expertise to unique business needs making us the right
+                      choice for start-ups and small to medium companies.
+                    </span>{" "}
+                    With us, you can build future ready brand, through an
+                    integration of content, technology and media, using data
+                    backed tools and practices.
                   </p>
                 </div>
               </div>
@@ -303,44 +361,34 @@ function Home() {
         ></img>
       </section>
 
-      <section
-        id="homeSectionFour"
-        className="mt-lg-5 mt-3 "
-      >
+      <section id="homeSectionFour" className="mt-lg-5 mt-3 ">
         <div className="container">
           <div className="row">
             <div className="col-12">
               <div className="position-relative">
                 <div>
-                  <div
-                    className="topslide"
-                  >
-                    <h3 className="mb-0" style={{ fontSize: "50px" }}>
-                      Reimagining stories for the connected world!
+                  <div className="topslide">
+                    <h3 style={{ fontSize: "45px", textAlign: "center" }}>
+                      Redefining Communication for Brands to Create More
+                      Approachable Framework{" "}
                     </h3>
                   </div>
                 </div>
                 <div className=" mt-lg-4 mt-2">
-                  <div className="topslide">
-                    <p style={{ fontSize: "20px" }}>
-                      In this age of automated conversations, we noticed that
-                      the <mark className="text-highlight">'human touch'</mark>{" "}
-                      had sneaked out while no one was looking. We believe that
-                      life unfolds every day. So should{" "}
-                      <mark className="text-highlight">communication</mark>. It
-                      should be designed for{" "}
-                      <mark className="text-highlight">people</mark>. Not
-                      consumers,{" "}
-                      <mark className="text-highlight">leads or data sets</mark>
-                      . It should enhance{" "}
-                      <mark className="text-highlight">
-                        people's experiences and interactions
-                      </mark>
-                      , in turn,{" "}
-                      <mark className="text-highlight">
-                        the human condition.
-                      </mark>
-                    </p>
+                  <div className="brew-text">
+                    We believe every brand carries a story and looking for the
+                    optimum communication strategy to interact with their
+                    audience. <span className="text-highlight">In the era of technology and artificial
+                      intelligence, we design campaigns with human touch that
+                      leaves a lasting impression.</span> With Squash, you can amplify
+                    your brand’s communication making it more interactive and
+                    people centric. This will not only generate leads but also
+                    make your brand more relatable and problem solving to your
+                    consumers. <span className="text-highlight">
+                      Join us on a journey where marketing transcends
+                      the ordinary and becomes a catalyst for connection,
+                      creativity, and growth.
+                    </span>
                   </div>
                 </div>
               </div>
@@ -352,21 +400,15 @@ function Home() {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h2
-              className="text-lg-center stroke title"
-            >
-              Specialist
-            </h2>
+            <h2 className="text-lg-center stroke title">Specialist</h2>
             <div className="second_line_title bannertitle">
               <h2 className="title">Divisions</h2>
             </div>
-
           </div>
         </div>
         <p>
-          A new age{" "}
-          <mark className="text-highlight">marketing suite</mark>{" "}
-          for modern-day experiences.
+          A new age <mark className="text-highlight">marketing suite</mark> for
+          modern-day experiences.
         </p>
         <div className="row">
           <div className="col-12">
@@ -404,9 +446,8 @@ function Home() {
                         fontWeight: "400",
                       }}
                     >
-                      Unique insight mining practice that uses a
-                      combination of AI + HI to understand consumers
-                      better
+                      Unique insight mining practice that uses a combination of
+                      AI + HI to understand consumers better
                     </p>
                     <div className="d-flex align-items-center justify-content-center">
                       <img src={grid1Logo} alt="Gipsi Logo" />
@@ -454,9 +495,8 @@ function Home() {
                         fontWeight: "400",
                       }}
                     >
-                      Narrate impactful brand stories with
-                      hyper-personalised, data driven videos for
-                      engagement at scale.
+                      Narrate impactful brand stories with hyper-personalised,
+                      data driven videos for engagement at scale.
                     </p>
                     <div className="d-flex align-items-center justify-content-center mt-4">
                       <img src={grid2Logo} alt="Gipsi Logo" />
@@ -503,13 +543,11 @@ function Home() {
                         fontWeight: "400",
                       }}
                     >
-                      In partnership with <strong>SEW</strong>, the
-                      specialised practice empowers utilities for enhanced
-                      outreach and stronger customer connections.
+                      In partnership with <strong>SEW</strong>, the specialised
+                      practice empowers utilities for enhanced outreach and
+                      stronger customer connections.
                     </p>
-                    <div
-                      className="d-flex align-items-center justify-content-center"
-                    >
+                    <div className="d-flex align-items-center justify-content-center">
                       <img src={grid3Logo} alt="Gipsi Logo" />
                     </div>
                     <div className="SD_slider_img">
@@ -531,10 +569,11 @@ function Home() {
         <div className="row align-items-center">
           <div className="col-lg-10 col-md-12">
             <div>
-              <h2 className="stroke title">What We</h2>
-              <div className="second_line_title bannertitle">
-                <h2 className="text-lg-center title m-lg-auto">Specialize In</h2>
-              </div>
+            <h2 className="specialty-text text-lg-center">Where Our </h2>
+              <h2 className="specialty-text">Specialty </h2>
+                <h2 className="text-lg-center specialty-title">
+                Lies / Our Cup of Tea
+                </h2>
             </div>
           </div>
           <div className="col-lg-2 col-md-12">
@@ -545,13 +584,16 @@ function Home() {
         </div>
       </div>
 
-      <div className="container" >
+      <div className="container">
         <div className="row mt-5 ">
           <div className="col-lg-6 col-md-12 col-12">
             <div>
               <img src={brandIcon} alt="Brand Discovery and Strategy" />
-              <a >
-                <h3>Brand Discovery <br />and Strategy</h3>
+              <a>
+                <h3>
+                  Brand Discovery <br />
+                  and Strategy
+                </h3>
               </a>
               <div>
                 <ul className="custom-arrow-bullet-point">
@@ -564,8 +606,11 @@ function Home() {
             </div>
             <div style={{ paddingLeft: "80px", paddingTop: "20px" }}>
               <img src={brandIcon} alt="Brand Discovery and Strategy" />
-              <a >
-                <h3>Brand Discovery <br />and Strategy</h3>
+              <a>
+                <h3>
+                  Brand Discovery <br />
+                  and Strategy
+                </h3>
               </a>
               <div>
                 <ul className="custom-arrow-bullet-point">
@@ -578,10 +623,13 @@ function Home() {
             </div>
           </div>
           <div className="col-lg-6 col-md-12 col-12 ">
-            <div >
+            <div>
               <img src={brandIcon} alt="Brand Discovery and Strategy" />
-              <a >
-                <h3 >Brand Discovery <br />and Strategy</h3>
+              <a>
+                <h3>
+                  Brand Discovery <br />
+                  and Strategy
+                </h3>
               </a>
             </div>
             <div>
@@ -594,8 +642,11 @@ function Home() {
             </div>
             <div style={{ paddingLeft: "100px", paddingTop: "20px" }}>
               <img src={brandIcon} alt="Brand Discovery and Strategy" />
-              <a >
-                <h3>Brand Discovery <br />and Strategy</h3>
+              <a>
+                <h3>
+                  Brand Discovery <br />
+                  and Strategy
+                </h3>
               </a>
               <div>
                 <ul className="custom-arrow-bullet-point">
@@ -641,11 +692,19 @@ function Home() {
       </div>
       <div className="container mt-4" id="contactForm">
         <form onSubmit={handleSubmit}>
-          <div className="row" >
+          <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
               <label>
                 Full Name
-                <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
+                <sup
+                  style={{
+                    color: "red",
+                    marginLeft: "5px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  *
+                </sup>
               </label>{" "}
               <br />
               <input
@@ -660,7 +719,15 @@ function Home() {
               />
               <label>
                 State
-                <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
+                <sup
+                  style={{
+                    color: "red",
+                    marginLeft: "5px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  *
+                </sup>
               </label>{" "}
               <br />
               <input
@@ -692,9 +759,7 @@ function Home() {
                   <option value="Social Media Strategy">
                     Social Media Strategy
                   </option>
-                  <option value="Data and Insights">
-                    Data and Insights
-                  </option>
+                  <option value="Data and Insights">Data and Insights</option>
                   <option value="Creative and Content">
                     Creative and Content
                   </option>
@@ -711,7 +776,15 @@ function Home() {
             <div className="col-lg-6 col-md-6 col-12">
               <label>
                 Email
-                <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
+                <sup
+                  style={{
+                    color: "red",
+                    marginLeft: "5px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  *
+                </sup>
               </label>{" "}
               <br />
               <input
@@ -726,7 +799,15 @@ function Home() {
               />
               <label>
                 Contact number
-                <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
+                <sup
+                  style={{
+                    color: "red",
+                    marginLeft: "5px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  *
+                </sup>
               </label>{" "}
               <br />
               <input
@@ -740,8 +821,19 @@ function Home() {
                 pattern="[0-9]{10}"
                 required
               />
-              <label>Here's something more to add <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
-              </label> <br></br>
+              <label>
+                Here's something more to add{" "}
+                <sup
+                  style={{
+                    color: "red",
+                    marginLeft: "5px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  *
+                </sup>
+              </label>{" "}
+              <br></br>
               <input
                 type="text"
                 name="about"
@@ -758,12 +850,7 @@ function Home() {
             id="contactSubmitBtn"
             className="d-flex justify-content-center mt-lg-5"
           >
-            <input
-              type="submit"
-              name="submit"
-              value="Send it"
-              class="submit"
-            />
+            <input type="submit" name="submit" value="Send it" class="submit" />
           </div>
         </form>
       </div>

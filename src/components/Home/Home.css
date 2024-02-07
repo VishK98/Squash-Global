@@ -7,6 +7,16 @@ h2.stroke {
 
   font-size: 150px;
 }
+.specialty-text{
+  -webkit-text-stroke: 1px #000;
+  -webkit-text-fill-color: transparent;
+  font-size: 110px;
+}
+.specialty-title {
+  font-size: 90px;
+  font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
+  font-display: swap;
+}
 
 .bannertitle h1,
 .bannertitle h2 {
