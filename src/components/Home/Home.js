@@ -86,8 +86,8 @@ function Home() {
 
   return (
     <>
-      {/* <section id="homeSectionOne" className="position-relative section"> */}
-        <div className="container">
+      <section id="homeSectionOne" className="position-relative section">
+        <div className="container" style={{width: "100%",height: "560px", }}>
           <div className="row">
             <div className="col-12">
               <div className="bannertitle">
@@ -122,11 +122,11 @@ function Home() {
             </div>
           </div>
         </div>
-      {/* </section> */}
+      </section>
 
-      <div className="container">
-        <div className="row mt-lg-5 mt-xl-5 mt-xxl-5">
-          <div className="col-lg-5 mt-3 mt-lg-5 mt-xl-5 mt-xxl-5">
+      <div className="container-fluid p-4">
+        <div className="row">
+          <div className="col-lg-5">
             <h2 className="topslide">What’s Brewing at Squash Global?</h2>
             <h1 className="discover-text">Framing People Centric Experiences</h1>
             <p className="brew-text">Our marketing strategies go beyond <span className="text-highlight">With deep understanding of human behavior, we forge connection that helps</span>  Brands to speak to their audience individually.</p>
@@ -143,7 +143,7 @@ function Home() {
               <div className="zoom-overlay"></div>
             </a>
           </div>
-          <div className="col-lg-7 mt-lg-5 mt-xl-5 mt-xxl-5 mt-sm-4">
+          <div className="col-lg-7">
             <img
               style={{ width: "100%" }}
               src={gispiImage}
