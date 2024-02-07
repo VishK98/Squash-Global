@@ -318,7 +318,10 @@ function Home() {
           isn't just a product or service—it's a story waiting to be told.
         </h4>
         <br />
-        <PartnerSlider />
+        <PartnerSlider rtl={true} />
+        <div className="mt-3 mt-lg-5">
+        <PartnerSlider rtl={false} />
+        </div>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -569,11 +572,11 @@ function Home() {
         <div className="row align-items-center">
           <div className="col-lg-10 col-md-12">
             <div>
-            <h2 className="specialty-text text-lg-center">Where Our </h2>
+              <h2 className="specialty-text text-lg-center">Where Our </h2>
               <h2 className="specialty-text">Specialty </h2>
-                <h2 className="text-lg-center specialty-title">
+              <h2 className="text-lg-center specialty-title">
                 Lies / Our Cup of Tea
-                </h2>
+              </h2>
             </div>
           </div>
           <div className="col-lg-2 col-md-12">
@@ -664,10 +667,10 @@ function Home() {
       <div className="container">
         <div className="col-12">
           <div className="title">
-            <h2 className="stroke">Fresh From</h2>
+            <h2 className="stroke">What’s the </h2>
           </div>
           <div className="second_line_title bannertitle">
-            <h2 className="title">Our Blogs</h2>
+            <h2 className="title">Buzz?</h2>
           </div>
         </div>
       </div>
@@ -677,9 +680,9 @@ function Home() {
         <div className="row">
           <div className="col-lg-10 col-md-12">
             <div>
-              <h2 className="stroke">Narrate your story the way</h2>
+              <h2 className="stroke">Ready to redefine your </h2>
               <div className="second_line_title bannertitle">
-                <h2 className="text-lg-center title m-lg-auto">you want to!</h2>
+                <h2 className="text-lg-center title m-lg-auto">brand experience?</h2>
               </div>
             </div>
           </div>

@@ -1,21 +1,21 @@
 h1.stroke,
 h2.stroke {
-  /* color: #fff; */
   -webkit-text-stroke: 1px #000;
-  /* -webkit-text-fill-color: #fff; */
   -webkit-text-fill-color: transparent;
-
   font-size: 150px;
 }
-.specialty-text{
+
+.specialty-text {
   -webkit-text-stroke: 1px #000;
   -webkit-text-fill-color: transparent;
   font-size: 110px;
 }
+
 .specialty-title {
   font-size: 80px;
   font-display: swap;
   font-weight: 600;
+  margin-left: 160px;
 }
 
 .bannertitle h1,
@@ -40,7 +40,7 @@ h2.stroke {
   font-weight: bold;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 625px) {
   .mobile_down_arrow {
     display: none;
   }
@@ -59,6 +59,10 @@ h2.stroke {
 
   .responsive-text {
     margin-top: 5px;
+  }
+
+  .specialty-title {
+    margin-left: 0px;
   }
 }
 
