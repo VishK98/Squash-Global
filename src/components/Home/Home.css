@@ -138,26 +138,6 @@ h2.stroke {
   animation: zoomAnimation 2s infinite alternate;
 }
 
-/* ImageSlider.css */
-.image-slider {
-  overflow: hidden;
-  position: relative;
-  width: 100vw;
-  /* Adjust the width as per your layout */
-  height: 150px;
-  /* Adjust the height as per your layout */
-}
-
-.image-slider img {
-  display: block;
-  width: auto;
-  /* Set the width of the image */
-  height: 100%;
-  /* Set the height of the image */
-  transition: transform 0.5s ease;
-  /* Add a smooth transition effect */
-}
-
 .grid-view {
   background-color: #e3e0e0;
   border-radius: 10px;
@@ -177,54 +157,6 @@ h2.stroke {
 
   to {
     transform: scale(1.5);
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.rotating-image {
-  animation: rotate 5s linear infinite;
-  /* Adjust duration and timing function as needed */
-}
-
-.imagereveal img {
-  opacity: 0;
-  /* Initially hide the image */
-  transition: opacity 0.5s ease-in-out;
-  /* Add a smooth transition for opacity */
-}
-
-.slide-in {
-  animation: none;
-  /* Initially no animation */
-}
-
-.slide-in-animation {
-  animation: slideIn 3s forwards;
-  /* Apply the slide-in animation */
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(100%);
-    /* Start off-screen to the right */
-    opacity: 0;
-    /* Initially hidden */
-  }
-
-  to {
-    transform: translateX(0);
-    /* Slide in to the left */
-    opacity: 1;
-    /* Fully visible */
   }
 }
 

@@ -1,5 +1,10 @@
 import "./Home.css";
-import React, { useEffect, useState } from "react";
+import "../Animations/Animation.css";
+import AnimatedImage from '../Animations/ImageAnimation';
+import AnimatedFadeImage from '../Animations/ImageAnimationFade';
+import AnimatedUnfoldImage from '../Animations/ImageAnimationUnfold';
+import AnimatedText from '../Animations/TextAnimation';
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ScrollToTopButton from "../TopButton/TopButton";
 import bigCircle from "../../assets/images/big-circle-down-arrow.png";
@@ -15,18 +20,13 @@ import grid2Logo from "../../assets/images/twip-logo.png";
 import grid3 from "../../assets/images/grid-3.png";
 import grid3Logo from "../../assets/images/tonic-amplifiy.svg";
 import circularText from "../../assets/images/circular-text.png";
-import IndiaClients from "../../assets/images/IndiaClients-bw-new.jpg";
 import brandIcon from "../../assets/images/brand-icon.png";
-import downArrow from "../../assets/images/small-circle-down-arrow.png";
 import "./BlogSlider";
 import BlogSlider from "./BlogSlider";
 import PartnerSlider from "./PartnerSlider";
 
 function Home() {
-  const [selectedService, setSelectedService] = useState("selected");
-  const handleServiceChange = (event) => {
-    setSelectedService(event.target.value);
-  };
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -62,27 +62,7 @@ function Home() {
       formData.service.trim() !== ""
     );
   };
-  useEffect(() => {
-    function handleScroll() {
-      const image = document.querySelector(".slide-in");
-      const imagePosition = image.getBoundingClientRect().top;
-      const screenHeight = window.innerHeight;
 
-      if (imagePosition < screenHeight / 2) {
-        image.classList.add("slide-in-animation");
-        window.removeEventListener("scroll", handleScroll); // Remove the event listener after the animation has been triggered
-        setTimeout(() => {
-          window.addEventListener("scroll", handleScroll); // Reapply the event listener after a short delay to allow for further scrolling
-        }, 1000); // Adjust the delay as needed
-      }
-    }
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <>
@@ -127,18 +107,20 @@ function Home() {
       <div className="container-fluid p-4">
         <div className="row">
           <div className="col-lg-5">
-            <h2 className="topslide">What’s Brewing at Squash Global?</h2>
-            <h1 className="discover-text">
+            <AnimatedText text={<h2 >
+              What’s Brewing at Squash Global?
+            </h2>} animation="slide-left" />
+            <AnimatedText text={<h1 >
               Framing People Centric Experiences
-            </h1>
-            <p className="brew-text">
+            </h1>} animation="slide-left" />
+            <AnimatedText text={<p className="brew-text">
               Our marketing strategies go beyond{" "}
               <span className="text-highlight">
                 With deep understanding of human behavior, we forge connection
                 that helps
               </span>{" "}
               Brands to speak to their audience individually.
-            </p>
+            </p>} animation="slide-left" />
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -153,11 +135,7 @@ function Home() {
             </a>
           </div>
           <div className="col-lg-7">
-            <img
-              style={{ width: "100%" }}
-              src={gispiImage}
-              alt="Career at Digital Marketing Agency"
-            />
+            <AnimatedFadeImage src={gispiImage} alt="Image not found" />
           </div>
         </div>
       </div>
@@ -168,25 +146,23 @@ function Home() {
             <div className="col-12 d-flex align-items-center">
               <div>
                 <div className="title">
-                  <h2 className="stroke">Pixels to </h2>
+                  <AnimatedText text={<h2 className="stroke">Pixels to </h2>} animation="slide-up" />
                 </div>
                 <div className="title bannertitle">
-                  <h2 style={{ fontWeight: "bold" }}>People</h2>
+                  <AnimatedText text={<h2 style={{ fontWeight: "bold" }}>People</h2>} animation="slide-up" />
                 </div>
-                <p className="brew-text">
+                <AnimatedText text={<p className="brew-text">
                   Having Technology as an ally,{" "}
                   <mark className="text-highlight">
                     we design digital experiences that
                   </mark>{" "}
                   move brands closer to their vision.
-                </p>
+                </p>} animation="slide-up" />
               </div>
               <div className="mobile_down_arrow new-big-down-arrow2">
-                <img
-                  style={{ marginLeft: "900px", marginTop: "50px" }}
-                  src={bigCircle}
-                  alt=""
-                />
+                <div style={{ marginLeft: "900px" }}>
+                  <AnimatedFadeImage src={bigCircle} alt="Image not found" />
+                </div>
               </div>
             </div>
           </div>
@@ -194,11 +170,7 @@ function Home() {
         <div className="container">
           <div className="row">
             <div className="work_list_img round_img col-lg-7 col-md-7 col-sm-12 col-12">
-              <img
-                style={{ height: "100%", width: "100%" }}
-                src={onHerLip}
-                alt="What’s on her Lip"
-              />
+              <AnimatedFadeImage src={onHerLip} alt="Image not found" />
             </div>
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex flex-column align-items-center responsive-text">
               <h3 style={{ fontWeight: "bold" }}>What's on the Lips</h3>
@@ -263,11 +235,7 @@ function Home() {
               </div>
             </div>
             <div className="work_list_img round_img col-lg-7 col-md-7 col-sm-12 col-12">
-              <img
-                style={{ height: "100%", width: "100%" }}
-                src={tasc}
-                alt="What’s on the TASC"
-              />
+              <AnimatedFadeImage src={tasc} alt="Image not found" />
             </div>
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 mt-3 d-flex flex-column align-items-center d-md-none">
               <h3 style={{ fontWeight: "bold" }}>What's on the TASC</h3>
@@ -310,32 +278,33 @@ function Home() {
             class="submit"
           />
         </div>
-        <h3 className="creating-text">
+        <AnimatedText text={<h3 className="creating-text">
           Weaving Narratives, Experiences and Connection.
-        </h3>
-        <h4 className="text-center">
+        </h3>} animation="slide-down" />
+        <AnimatedText text={<h4 className="text-center">
           In a world saturated with information, we understand that your brand
           isn't just a product or service—it's a story waiting to be told.
-        </h4>
+        </h4>} animation="slide-up" />
+
         <br />
         <PartnerSlider rtl={true} />
         <div className="mt-3 mt-lg-5">
-        <PartnerSlider rtl={false} />
+          <PartnerSlider rtl={false} />
         </div>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="section_title">
-                <h2 className="mb-lg-4 stroke title">We're</h2>
+                <AnimatedText text={<h2 className="mb-lg-4 stroke title">We're</h2>} animation="slide-right" />
                 <div className="second_line_title bannertitle">
-                  <h2 className="title bannertitle">Squash</h2>
+                  <AnimatedText text={<h2 className="title bannertitle">Squash</h2>} animation="slide-left" />
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
               <div className="section_para p-lg-5 pl-0">
                 <div className="topslide">
-                  <p className="brew-text">
+                  <AnimatedText text={<p className="brew-text">
                     Squash Global is more than{" "}
                     <span className="text-highlight">
                       just a marketing agency.
@@ -350,20 +319,15 @@ function Home() {
                     With us, you can build future ready brand, through an
                     integration of content, technology and media, using data
                     backed tools and practices.
-                  </p>
+                  </p>} animation='fade-in' />
+
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <img
-          src={worldwideOffice}
-          class="img-fluid d-none d-md-block slide-in"
-          alt="Tonic Worldwide Office"
-          style={{ width: "100%" }}
-        ></img>
+        <AnimatedUnfoldImage src={worldwideOffice} alt="Image not found" />
       </section>
-
       <section id="homeSectionFour" className="mt-lg-5 mt-3 ">
         <div className="container">
           <div className="row">
@@ -371,14 +335,14 @@ function Home() {
               <div className="position-relative">
                 <div>
                   <div className="topslide">
-                    <h3 style={{ fontSize: "45px", textAlign: "center" }}>
+                    <AnimatedText text={<h3 style={{ fontSize: "45px", textAlign: "center" }}>
                       Redefining Communication for Brands to Create More
                       Approachable Framework{" "}
-                    </h3>
+                    </h3>} animation='slide-down' />
                   </div>
                 </div>
                 <div className=" mt-lg-4 mt-2">
-                  <div className="brew-text">
+                  <AnimatedText text={<div className="brew-text">
                     We believe every brand carries a story and looking for the
                     optimum communication strategy to interact with their
                     audience. <span className="text-highlight">In the era of technology and artificial
@@ -392,7 +356,7 @@ function Home() {
                       the ordinary and becomes a catalyst for connection,
                       creativity, and growth.
                     </span>
-                  </div>
+                  </div>} animation='slide-up' />
                 </div>
               </div>
             </div>
