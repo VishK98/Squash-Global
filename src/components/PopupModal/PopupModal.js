@@ -4,7 +4,7 @@ import Modal from "react-bootstrap/Modal";
 import axios from 'axios';
 import "./PopupModal.css";
 
-function PopupModal(onClose) {
+function PopupModal() {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -13,14 +13,6 @@ function PopupModal(onClose) {
     about: ""
   });
 
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   if (validateForm()) {
-  //     console.log("Form data:", formData);
-  //   } else {
-  //     console.log("Form is not valid");
-  //   }
-  // };
   const handleSubmit = async event => {
     event.preventDefault();
     console.log('First', formData);
@@ -40,28 +32,12 @@ function PopupModal(onClose) {
     }));
   };
 
-  const validateForm = () => {
-    return (
-      formData.fullName.trim() !== "" &&
-      formData.email.trim() !== "" &&
-      formData.state.trim() !== "" &&
-      formData.contactNumber.trim() !== "" &&
-      formData.about.trim() !== ""
-    );
-  };
-
   const [showModal, setShowModal] = useState(true);
 
   useEffect(() => {
     // Update the state to show the modal when the component mounts
     setShowModal(true);
   }, []);
-
-  const closeModal = () => {
-    // Function to close the modal
-    setShowModal(false);
-    onClose(); // Call the onClose prop when the modal is closed
-  };
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
