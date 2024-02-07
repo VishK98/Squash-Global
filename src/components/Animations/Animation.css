@@ -195,9 +195,17 @@
     transform-origin: right;
     opacity: 0;
   }
+  25% {
+    transform: scaleX(0.75);
+    opacity: 0.25;
+  }
   50% {
-    transform: scaleX(1.5);
+    transform: scaleX(1.25);
     opacity: 0.5;
+  }
+  75% {
+    transform: scaleX(1.1);
+    opacity: 0.75;
   }
   100% {
     transform: scaleX(1);
@@ -206,7 +214,7 @@
 }
 
 .unfold-animation {
-  animation: unfoldMat 2.5s ease-in-out;
+  animation: unfoldMat 3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* unfold image animation starts */

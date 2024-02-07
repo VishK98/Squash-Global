@@ -77,7 +77,7 @@ function Home() {
                 <h2 className="agency-text">Agency.</h2>
               </div>
               <div class="mobile_down_arrow new-big-down-arrow1">
-                <img src={bigCircle} alt="Big Circle Down Arrow" />
+              <AnimatedFadeImage src={bigCircle} alt="Image not found" />
               </div>
             </div>
           </div>
@@ -367,23 +367,25 @@ function Home() {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h2 className="text-lg-center stroke title">Specialist</h2>
+            <AnimatedText text={<h2 className="text-lg-center stroke title">Specialist</h2>
+            } animation='slide-left' />
             <div className="second_line_title bannertitle">
-              <h2 className="title">Divisions</h2>
+              <AnimatedText text={<h2 className="title">Divisions</h2>
+              } animation='slide-right' />
             </div>
           </div>
         </div>
-        <p>
+        <AnimatedText text={<p>
           A new age <mark className="text-highlight">marketing suite</mark> for
           modern-day experiences.
-        </p>
+        </p>} animation='slide-left' />
         <div className="row">
           <div className="col-12">
             <div id="specialistDivisionsSlider" className="row">
               <div className="col-md-4">
                 <div className="grid-view mt-4">
                   <a style={{ textDecoration: "none" }} title="">
-                    <h3
+                    <AnimatedText text={<h3
                       className="dot text-center"
                       style={{
                         position: "relative",
@@ -404,8 +406,8 @@ function Home() {
                         •
                       </span>
                       Gipsi
-                    </h3>
-                    <p
+                    </h3>} animation='slide-up' />
+                    <AnimatedText text={<p
                       className="text"
                       style={{
                         padding: "13px",
@@ -415,16 +417,12 @@ function Home() {
                     >
                       Unique insight mining practice that uses a combination of
                       AI + HI to understand consumers better
-                    </p>
+                    </p>} animation='slide-up' />
                     <div className="d-flex align-items-center justify-content-center">
                       <img src={grid1Logo} alt="Gipsi Logo" />
                     </div>
                     <div className="SD_slider_img">
-                      <img
-                        src={grid1}
-                        alt="Gipsi AI For Consumers Analysis"
-                        className="w-100"
-                      />
+                      <AnimatedFadeImage src={grid1} alt="Image not found" />
                     </div>
                   </a>
                 </div>
@@ -432,7 +430,7 @@ function Home() {
               <div className="col-md-4">
                 <div className="grid-view mt-4">
                   <a style={{ textDecoration: "none" }} title="">
-                    <h3
+                    <AnimatedText text={<h3
                       className="dot text-center"
                       style={{
                         position: "relative",
@@ -453,8 +451,8 @@ function Home() {
                         •
                       </span>
                       Twip
-                    </h3>
-                    <p
+                    </h3>} animation='slide-up' />
+                    <AnimatedText text={<p
                       className="text"
                       style={{
                         padding: "13px",
@@ -464,16 +462,12 @@ function Home() {
                     >
                       Narrate impactful brand stories with hyper-personalised,
                       data driven videos for engagement at scale.
-                    </p>
+                    </p>} animation='slide-up' />
                     <div className="d-flex align-items-center justify-content-center mt-4">
                       <img src={grid2Logo} alt="Gipsi Logo" />
                     </div>
                     <div className="SD_slider_img">
-                      <img
-                        src={grid2}
-                        alt="Gipsi AI For Consumers Analysis"
-                        className="w-100"
-                      />
+                      <AnimatedFadeImage src={grid2} alt="Image not found" />
                     </div>
                   </a>
                 </div>
@@ -481,7 +475,7 @@ function Home() {
               <div className="col-md-4">
                 <div className="grid-view mt-4">
                   <a style={{ textDecoration: "none" }} title="">
-                    <h3
+                    <AnimatedText text={<h3
                       className="dot text-center"
                       style={{
                         position: "relative",
@@ -502,8 +496,8 @@ function Home() {
                         •
                       </span>
                       Amplify
-                    </h3>
-                    <p
+                    </h3>} animation='slide-up' />
+                    <AnimatedText text={<p
                       style={{
                         padding: "13px",
                         fontSize: "17px",
@@ -513,16 +507,12 @@ function Home() {
                       In partnership with <strong>SEW</strong>, the specialised
                       practice empowers utilities for enhanced outreach and
                       stronger customer connections.
-                    </p>
+                    </p>} animation='slide-up' />
                     <div className="d-flex align-items-center justify-content-center">
                       <img src={grid3Logo} alt="Gipsi Logo" />
                     </div>
                     <div className="SD_slider_img">
-                      <img
-                        src={grid3}
-                        alt="Gipsi AI For Consumers Analysis"
-                        className="w-100"
-                      />
+                      <AnimatedFadeImage src={grid3} alt="Image not found" />
                     </div>
                   </a>
                 </div>
@@ -536,16 +526,17 @@ function Home() {
         <div className="row align-items-center">
           <div className="col-lg-10 col-md-12">
             <div>
-              <h2 className="specialty-text text-lg-center">Where Our </h2>
-              <h2 className="specialty-text">Specialty </h2>
-              <h2 className="text-lg-center specialty-title">
+              <AnimatedText text={<h2 className="specialty-text text-lg-center">Where Our</h2>} animation='slide-left' />
+              <AnimatedText text={<h2 className="specialty-text">Specialty </h2>
+              } animation='fade-in' />
+              <AnimatedText text={<h2 className="text-lg-center specialty-title">
                 Lies / Our Cup of Tea
-              </h2>
+              </h2>} animation='slide-right' />
             </div>
           </div>
           <div className="col-lg-2 col-md-12">
             <div className="rotating-image text-center">
-              <img src={circularText} alt="Digital Marketing Agency" />
+              <AnimatedFadeImage src={circularText} alt="Image not found" />
             </div>
           </div>
         </div>
@@ -557,71 +548,71 @@ function Home() {
             <div>
               <img src={brandIcon} alt="Brand Discovery and Strategy" />
               <a>
-                <h3>
+                <AnimatedText text={<h3>
                   Brand Discovery <br />
                   and Strategy
-                </h3>
+                </h3>} animation='slide-left' />
               </a>
               <div>
-                <ul className="custom-arrow-bullet-point">
+                <AnimatedText text={<ul className="custom-arrow-bullet-point">
                   <li>Strategy and Positioning</li>
                   <li>Brand Identity and Collaterals</li>
                   <li>Brand Architecture</li>
                   <li>Trends and Insights</li>
-                </ul>
+                </ul>} animation='slide-left' />
               </div>
             </div>
             <div style={{ paddingLeft: "80px", paddingTop: "20px" }}>
               <img src={brandIcon} alt="Brand Discovery and Strategy" />
               <a>
-                <h3>
+                <AnimatedText text={<h3>
                   Brand Discovery <br />
                   and Strategy
-                </h3>
+                </h3>} animation='slide-left' />
               </a>
               <div>
-                <ul className="custom-arrow-bullet-point">
+                <AnimatedText text={<ul className="custom-arrow-bullet-point">
                   <li>Strategy and Positioning</li>
                   <li>Brand Identity and Collaterals</li>
                   <li>Brand Architecture</li>
                   <li>Trends and Insights</li>
-                </ul>
+                </ul>} animation='slide-left' />
               </div>
             </div>
           </div>
-          <div className="col-lg-6 col-md-12 col-12 ">
+          <div className="col-lg-6 col-md-12 col-12">
             <div>
               <img src={brandIcon} alt="Brand Discovery and Strategy" />
               <a>
-                <h3>
+                <AnimatedText text={<h3>
                   Brand Discovery <br />
                   and Strategy
-                </h3>
+                </h3>} animation='slide-right' />
               </a>
-            </div>
-            <div>
-              <ul className="custom-arrow-bullet-point  ">
-                <li>Strategy and Positioning</li>
-                <li>Brand Identity and Collaterals</li>
-                <li>Brand Architecture</li>
-                <li>Trends and Insights</li>
-              </ul>
+              <div>
+                <AnimatedText text={<ul className="custom-arrow-bullet-point">
+                  <li>Strategy and Positioning</li>
+                  <li>Brand Identity and Collaterals</li>
+                  <li>Brand Architecture</li>
+                  <li>Trends and Insights</li>
+                </ul>} animation='slide-right' />
+              </div>
             </div>
             <div style={{ paddingLeft: "100px", paddingTop: "20px" }}>
               <img src={brandIcon} alt="Brand Discovery and Strategy" />
               <a>
-                <h3>
+                <AnimatedText text={<h3>
                   Brand Discovery <br />
                   and Strategy
-                </h3>
+                </h3>} animation='slide-right' />
               </a>
               <div>
-                <ul className="custom-arrow-bullet-point">
+                <AnimatedText text={<ul className="custom-arrow-bullet-point">
                   <li>Strategy and Positioning</li>
                   <li>Brand Identity and Collaterals</li>
                   <li>Brand Architecture</li>
                   <li>Trends and Insights</li>
-                </ul>
+                </ul>} animation='slide-right' />
               </div>
             </div>
           </div>
@@ -631,10 +622,12 @@ function Home() {
       <div className="container">
         <div className="col-12">
           <div className="title">
-            <h2 className="stroke">What’s the </h2>
+            <AnimatedText text={<h2 className="stroke">What’s the </h2>
+            } animation='slide-left' />
           </div>
           <div className="second_line_title bannertitle">
-            <h2 className="title">Buzz?</h2>
+            <AnimatedText text={<h2 className="title">Buzz?</h2>
+            } animation='slide-right' />
           </div>
         </div>
       </div>
@@ -644,15 +637,17 @@ function Home() {
         <div className="row">
           <div className="col-lg-10 col-md-12">
             <div>
-              <h2 className="stroke">Ready to redefine your </h2>
+              <AnimatedText text={<h2 className="stroke">Ready to redefine your </h2>
+              } animation='slide-left' />
               <div className="second_line_title bannertitle">
-                <h2 className="text-lg-center title m-lg-auto">brand experience?</h2>
+                <AnimatedText text={<h2 className="text-lg-center title ">brand experience?</h2>
+                } animation='slide-right' />
               </div>
             </div>
           </div>
           <div className="col-lg-2 col-md-12">
             <div className="rotating-image text-center">
-              <img src={circularText} alt="Digital Marketing Agency" />
+              <AnimatedFadeImage src={circularText} alt="Image not found" />
             </div>
           </div>
         </div>
