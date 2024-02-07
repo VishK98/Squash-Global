@@ -220,12 +220,6 @@ h2.stroke {
   height: 560px;
 }
 
-@media only screen and (max-width: 625px) {
-  .video-display {
-    height: 560px;
-  }
-}
-
 /* For screen sizes up to 625px (mobile devices) */
 @media only screen and (max-width: 625px) {
   .video-display {
@@ -233,16 +227,24 @@ h2.stroke {
   }
 }
 
-/* For screen sizes from 626px to 1024px (laptops) */
-@media only screen and(max-width: 1024px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
   .video-display {
     height: 610px;
   }
 }
 
-/* For screen sizes above 1024px (desktops) */
-@media only screen and (max-width: 1025px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
   .video-display {
-    height: 600px;
+    height: 660px;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .video-display {
+    height: 710px;
   }
 }
