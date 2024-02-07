@@ -7,25 +7,29 @@ h2.stroke {
 
   font-size: 150px;
 }
+
 .bannertitle h1,
 .bannertitle h2 {
   font-size: 110px;
   font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
   font-display: swap;
 }
+
 .agency-text {
   font-weight: bold;
 }
 
-.responsive-text{
+.responsive-text {
   margin-top: 150px;
 }
+
 .but-text {
   font-family: RedHatDisplayBold;
   color: #000;
   font-size: 65px;
   font-weight: bold;
 }
+
 @media (max-width: 767.98px) {
   .mobile_down_arrow {
     display: none;
@@ -38,12 +42,22 @@ h2.stroke {
     font-size: 50px;
     line-height: 60px;
   }
+
   .but-text {
     font-size: 35px;
   }
-  .responsive-text{
+
+  .responsive-text {
     margin-top: 5px;
   }
+}
+
+.brew-text {
+  font-family: neue_haas_grotesk_displa95Blk;
+  font-weight: 500;
+  font-size: 20px;
+  color: #58595b;
+  /* color: #000; */
 }
 
 
@@ -60,21 +74,22 @@ h2.stroke {
   font-weight: bold;
   text-align: center;
 }
-.bullet-random{
+
+.bullet-random {
   margin-top: 100px;
   padding-left: 100px;
 }
 
 .custom-arrow-bullet-point {
-  list-style-type: none; 
-  padding: 0; 
+  list-style-type: none;
+  padding: 0;
 }
 
 .custom-arrow-bullet-point li::before {
-  content: '➟'; 
-  color: #000; 
-  font-size: 1.5em; 
-  margin-right: 0.5em; 
+  content: '➟';
+  color: #000;
+  font-size: 1.5em;
+  margin-right: 0.5em;
 }
 
 /* Animation starts from here */
@@ -90,6 +105,7 @@ h2.stroke {
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-20px);
   }
@@ -112,69 +128,89 @@ h2.stroke {
 .image-slider {
   overflow: hidden;
   position: relative;
-  width: 100vw; /* Adjust the width as per your layout */
-  height: 150px; /* Adjust the height as per your layout */
+  width: 100vw;
+  /* Adjust the width as per your layout */
+  height: 150px;
+  /* Adjust the height as per your layout */
 }
 
 .image-slider img {
   display: block;
-  width: auto; /* Set the width of the image */
-  height: 100%; /* Set the height of the image */
-  transition: transform 0.5s ease; /* Add a smooth transition effect */
+  width: auto;
+  /* Set the width of the image */
+  height: 100%;
+  /* Set the height of the image */
+  transition: transform 0.5s ease;
+  /* Add a smooth transition effect */
 }
+
 .grid-view {
   background-color: #e3e0e0;
   border-radius: 10px;
   font-size: 15px;
-  transition: background-color 0.3s ease; /* Add transition for smooth effect */
+  transition: background-color 0.3s ease;
+  /* Add transition for smooth effect */
 }
 
 .grid-view:hover {
   background-color: #fe504f;
-  }
+}
 
 @keyframes zoomAnimation {
   from {
     transform: scale(1);
   }
+
   to {
     transform: scale(1.5);
   }
 }
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
 .rotating-image {
-  animation: rotate 5s linear infinite; /* Adjust duration and timing function as needed */
+  animation: rotate 5s linear infinite;
+  /* Adjust duration and timing function as needed */
 }
 
 .imagereveal img {
-  opacity: 0; /* Initially hide the image */
-  transition: opacity 0.5s ease-in-out; /* Add a smooth transition for opacity */
+  opacity: 0;
+  /* Initially hide the image */
+  transition: opacity 0.5s ease-in-out;
+  /* Add a smooth transition for opacity */
 }
 
 .slide-in {
-  animation: none; /* Initially no animation */
+  animation: none;
+  /* Initially no animation */
 }
 
 .slide-in-animation {
-  animation: slideIn 3s forwards; /* Apply the slide-in animation */
+  animation: slideIn 3s forwards;
+  /* Apply the slide-in animation */
 }
 
 @keyframes slideIn {
   from {
-    transform: translateX(100%); /* Start off-screen to the right */
-    opacity: 0; /* Initially hidden */
+    transform: translateX(100%);
+    /* Start off-screen to the right */
+    opacity: 0;
+    /* Initially hidden */
   }
+
   to {
-    transform: translateX(0); /* Slide in to the left */
-    opacity: 1; /* Fully visible */
+    transform: translateX(0);
+    /* Slide in to the left */
+    opacity: 1;
+    /* Fully visible */
   }
 }
 

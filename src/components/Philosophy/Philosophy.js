@@ -81,7 +81,7 @@ function Philosophy() {
         <div className="row">
           <div className="col-lg-6">
             <AnimatedText text={<h3>In this age of automated conversations, we noticed that the ‘<span className="text-highlight">human touch </span>’ had
-              sneaked out while no one was looking.</h3>} animation="slide-down" />
+              sneaked out while no one was looking.</h3>} animation="slide-left" />
             <AnimatedText text={<p className=" mt-lg-4">
               Everyone has the Siris, Bots and the AI. What they don’t have
               is a naturally intuitive and personal connection with their

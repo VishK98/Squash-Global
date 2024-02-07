@@ -17,6 +17,7 @@ import grid3Logo from "../../assets/images/tonic-amplifiy.svg";
 import circularText from "../../assets/images/circular-text.png";
 import IndiaClients from "../../assets/images/IndiaClients-bw-new.jpg";
 import brandIcon from "../../assets/images/brand-icon.png";
+import downArrow from "../../assets/images/small-circle-down-arrow.png";
 import "./BlogSlider";
 import BlogSlider from "./BlogSlider";
 import PartnerSlider from "./PartnerSlider";
@@ -122,56 +123,34 @@ function Home() {
           </div>
         </div>
       </section>
-      <section
-        id="homeSectionTwo"
-        className="mt-lg-5 pt-lg-4 position-relative section"
-      >
-        <div>
-          <div className="container-fluid mt-5">
-            <div className="row">
-              <div className="col-lg-5">
-                <div className="container">
-                  <div className="row align-items-center">
-                    <h2 className="topslide">Latest at Squash Global</h2>
-                    <h1 className="discover-text">Discover the Unique Profiles of Indian Festive Gifters</h1>
-                    <p className="topslide">
-                      An Exclusive Glimpse into the
-                      <br />{" "}
-                      <mark className="text-highlight">
-                        Profiles of Indian Gifters – Essential
-                        <br /> Insights for Brands and Marketers.
-                      </mark>
-                    </p>
-                  </div>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="outline_btn explorbtn mt-4 position-relative"
-                  >
-                    <i style={{ marginRight: "50px" }}>Explore</i>
-                    <span className="zoom-icon">
-                      <img src={arrowMore} alt="" className="zooming-image" />
-                    </span>
-                    <div className="zoom-overlay"></div>
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-7 col-sm-12">
-                <a target="_blank" rel="noopener noreferrer">
-                  <div className="imagereveal">
-                    <img
-                      style={{ height: "100%", width: "100%" }}
-                      src={gispiImage}
-                      alt="Gipsi Analytics Reports"
-                      className="slide-in"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
+
+      <div className="container-fluid">
+        <div className="row mt-lg-5 mt-xl-5 mt-xxl-5">
+          <div className="col-lg-5 mt-3 mt-lg-5 mt-xl-5 mt-xxl-5 pt-4">
+            <h2 className="topslide">What’s Brewing at Squash Global?</h2>
+            <h1 className="discover-text">Framing People Centric Experiences</h1>
+            <p className="brew-text">Our marketing strategies go beyond <span className="text-highlight">With deep understanding of human behavior, we forge connection that helps</span>  Brands to speak to their audience individually</p>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="outline_btn explorbtn mt-4 position-relative"
+            >
+              <i style={{ marginRight: "50px" }}>Explore</i>
+              <span className="zoom-icon">
+                <img src={arrowMore} alt="" className="zooming-image" />
+              </span>
+              <div className="zoom-overlay"></div>
+            </a>
+          </div>
+          <div className="col-lg-7 mt-lg-5 mt-xl-5 mt-xxl-5">
+            <img
+              style={{ width: "100%" }}
+              src={gispiImage}
+              alt="Career at Digital Marketing Agency"
+            />
           </div>
         </div>
-      </section>
+      </div>
       <section id="homeSectionThree" >
         <div className="container">
           <div className="row">
@@ -280,8 +259,8 @@ function Home() {
           Creating value, relevance and connections.<br></br>Some things that
           really matter to people and brands.
         </h3>
-        <br/>
-        <PartnerSlider/>
+        <br />
+        <PartnerSlider />
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
