@@ -68,14 +68,14 @@ function PopupModal(onClose) {
   const handleShow = () => setShow(true);
 
   useEffect(() => {
-    // Set a timer to show the modal after 10 seconds
+    // Set a timer to show the modal after 3 minutes
     const timer = setTimeout(() => {
       handleShow();
-    }, 20000); // 20 seconds in milliseconds
+    }, 180000); // 3 minute in milliseconds
 
     return () => {
-      // Clear the timer if the component is unmounted before the 10 seconds
-      clearTimeout(timer);
+    // Clear the timer if the component is unmounted before the 3 minutes
+    clearTimeout(timer);
     };
   }, []); // Run this effect only once on mount
 
