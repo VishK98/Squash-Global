@@ -13,9 +13,9 @@ h2.stroke {
   font-size: 110px;
 }
 .specialty-title {
-  font-size: 90px;
-  font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
+  font-size: 80px;
   font-display: swap;
+  font-weight: 600;
 }
 
 .bannertitle h1,
