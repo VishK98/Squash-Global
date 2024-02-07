@@ -172,6 +172,14 @@ function Home() {
           </div>
         </div>
       </section>
+      <div>
+<h3>What’s Brewing at Squash Global? </h3>
+<h4>Framing People-Centric Experiences </h4>
+<h5>Our marketing strategies go beyond driving campaigns for brands. 
+With deep understanding of human behavior, we forge connection 
+that helps Brands to speak to their audience individually.
+</h5>
+      </div>
       <section id="homeSectionThree" >
         <div className="container">
           <div className="row">
@@ -223,6 +231,10 @@ function Home() {
             </div>
           </div>
         </div>
+        <div>
+          <h3>Pixels to People</h3>
+<h5>Having Technology as an ally, we design digital experiences that move brands closer to their vision.</h5>
+</div>
         <div className="container mt-lg-5 mb-lg-4 mt-3">
           <div className="row">
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-none d-md-block" style={{ marginTop: "150px" }}>
@@ -282,6 +294,10 @@ function Home() {
         </h3>
         <br/>
         <PartnerSlider/>
+        <div>
+          <h3>Weaving Narratives, Experiences and Connection.</h3>
+<h5>In a world saturated with information, we understand that your brand isn't just a product or service—it's a story waiting to be told.</h5>
+</div>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -296,18 +312,9 @@ function Home() {
               <div className="section_para p-lg-5 pl-0">
                 <div className="topslide">
                   <p>
-                    Squash Global is a{" "}
-                    <mark className="text-highlight">multi-award</mark> winning{" "}
-                    <mark className="text-highlight">
-                      digital, creative, content
-                    </mark>{" "}
-                    and performance marketing partner to some of the{" "}
-                    <mark className="text-highlight">leading brands</mark> of
-                    the region.
-                  </p>
-                  <p>
-                    Bringing together creative,{" "}
-                    <mark className="text-highlight">data and technology.</mark>
+                  <h3>We’re Squash</h3> 
+<h5>Squash Global is more than just a marketing agency. We are the architects of brand experiences, designing stories that resonate with the brand’s audience. At Squash, we provide customize solutions and expertise to unique business needs making us the right choice for start-ups and small to medium companies. With us, you can build future ready brand, through an integration of content, technology and media, using data backed tools and practices.</h5>
+
                   </p>
                 </div>
               </div>
