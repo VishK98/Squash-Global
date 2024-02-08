@@ -2,48 +2,55 @@
 import React, { useState } from "react";
 import ScrollToTopButton from '../TopButton/TopButton';
 import contact from "../../assets/images/contact-img-2.webp";
-import india from "../../assets/images/tonic-india-hq.webp";
-import mapIcon from "../../assets/images/viewmap-icon.webp";
-import message from "../../assets/images/message-icon.png";
-import email from "../../assets/images/email-icon1.png";
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import AnimatedText from '../Animations/TextAnimation';
 import AnimatedUnfoldImage from '../Animations/ImageAnimationUnfold';
 import "./Contact.css";
+import axios from 'axios';
+import ImageAnimationFade from "../Animations/ImageAnimationFade";
 
 function Contact() {
-
-
-  const formik = useFormik({
-    initialValues: {
-      name: '',
-      email: '',
-      state: '',
-      contactNumber: '',
-      selectedService: 'selected',
-      additionalInfo: '',
-    },
-    validationSchema: Yup.object({
-      name: Yup.string().required('Name is required'),
-      email: Yup.string().required('Invalid email format').required('Email is required'),
-      state: Yup.string().required('Invalid state format').required('State is required'),
-      contactNumber: Yup.string().required('Invalid contactNumber format').required('Contact is required'),
-      service: Yup.string().required('Invalid contactNumber format').required('Service is required'),
-      // additionalInfo: Yup.string().required('Invalid additionalInfo format').required('Additional info is required'),
-      // Add more validation for other fields
-    }),
-    onSubmit: (values) => {
-      // Handle form submission logic here
-      console.log('Form submitted:', values);
-    },
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    state: "",
+    contactNumber: "",
+    about: ""
   });
+
+  const handleSubmit = async event => {
+    event.preventDefault();
+    console.log('First', formData);
+    try {
+      const response = await axios.post('http://localhost:8000/api/contactUs', formData);
+      console.log('Response from server:', response.data);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
+  };
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+
+
   // Create a state to manage the selected value
   const [selectedService, setSelectedService] = useState("selected");
 
   // Handle changes to the selected value
   const handleServiceChange = (event) => {
     setSelectedService(event.target.value);
+  };
+  const mapUrl = `https://www.google.com/maps/search/?api=1&query=${28.498540},${77.088620}`;
+
+  const handleMapClick = () => {
+    window.open(mapUrl, '_blank');
   };
 
   return (
@@ -69,147 +76,172 @@ function Contact() {
           </div>
           <div className="inner_title hidden">
             <AnimatedText text={<h1 className="contact-page-title">Let’s connect us</h1>
+            
             } animation="slide-left" />
           </div>
         </div>
       </div>
 
       <div className="container mt-3 mb-5">
-        <AnimatedUnfoldImage src={contact} alt="Image not found" />
+        <ImageAnimationFade src={contact} alt="Image not found" />
         <div className="row">
           <div className="col-lg-5 pt-lg-5">
             <div className="mt-4 mt-lg-0 address-info topslide">
-              <div className="hidden">
-                <img src={india} className="head-icon" alt="india" />
-                <h2 className="india-text"> India</h2>
+              <div style={{ display: "flex", alignItems: "flex-start" }}>
+                <div style={{ position: "relative", height: "48px", width: "48px" }}>
+                  <img
+                    style={{ position: "absolute", top: 0, left: 0 }}
+                    width="48"
+                    height="48"
+                    src="https://img.icons8.com/color-glass/48/red-fort.png"
+                    alt="red-fort"
+                  />
+                </div>
+                <div style={{ marginLeft: "12px", }}>
+                  <AnimatedText text={<h2 className="india-text"> India</h2>} animation="slide-up" />
+                  <div className="address">
+                    <AnimatedText text={<h5 className="address">
+                      791/5, Udyog Vihar, Phase-V, Sector-19,<br /> Gurgaon, Haryana, 122016
+                    </h5>} animation="slide-up" />
+                  </div>
+                </div>
               </div>
-              <div className="address">
-                <h6>
-                  791/5, Udyog Vihar, Phase-V, Sector-19,<br /> Gurgaon, Haryana, 122016
-                </h6>
-              </div>
+
               <a
                 href="#"
                 target="_blank"
+                onClick={handleMapClick}
                 rel="noopener noreferrer"
                 className="view-map-text mt-3"
               >
-                <img src={mapIcon} alt="map pin" />
-                <span style={{ marginLeft: "15px" }}>View map</span>
-              </a>{" "}
-              <p className="phone mt-3">
-                <img src={message} alt="message icon" />
-                <span style={{ marginLeft: "15px" }}>
-                  <a
-                    style={{ textDecoration: "none", color: "#000" }}
-                    href="tel:+91 7827058243"
-                  >
-                    Mobile: +91 7827058243
-                  </a>
-                </span>
+                {/* <img src={mapIcon} alt="map pin" /> */}
+                <img width="48px" height="48px" src="https://img.icons8.com/arcade/64/marker.png" alt="marker" />
+                <AnimatedText text={<span style={{ marginLeft: "12px", fontFamily: "Times New Roman, Times, serif" }}>Find us on the map</span>
+                } animation="slide-up" />
+              </a>
+              <p className="phone mt-3" style={{ display: "flex", alignItems: "center" }}>
+                <img
+                  width="48"
+                  height="48"
+                  src="https://img.icons8.com/stickers/100/clr_incoming_call_on_iphone.png"
+                  alt="clr_incoming_call_on_iphone"
+                />
+                <AnimatedText
+                  text={
+                    <span style={{ marginLeft: "15px" }}>
+                      {/* +91 7827058243 */}
+                      <a className="contact-text" href="tel:+91 7827058243">
+                        +91 7827058243
+                      </a>
+                    </span>
+                  }
+                  animation="slide-up"
+                />
               </p>
-              <p className="email mt-3">
-                <img src={email} alt="email icon" />
-                <span style={{ marginLeft: "10px" }}>
-                  <a
-                    style={{ textDecoration: "none", color: "#000" }}
-                    href="mailto:contact@squashglobal.com"
-                  >
-                    contact@squashglobal.com
-                  </a>
-                </span>
+              <p className="phone mt-3" style={{ display: "flex", alignItems: "center" }}>
+                <img
+                  width="48"
+                  height="48"
+                  src="https://img.icons8.com/stickers/100/gmail-new.png"
+                  alt="clr_incoming_call_on_iphone"
+                />
+                <AnimatedText
+                  text={
+                    <span style={{ marginLeft: "10px" }}>
+                      <a className="contact-text"
+                        style={{ textDecoration: "none", color: "#000" }}
+                        href="mailto:contact@squashglobal.com"
+                      >
+                        contact@squashglobal.com
+                      </a>
+                    </span>
+                  }
+                  animation="slide-up"
+                />
               </p>
+
             </div>
-            {/* ... (other code) */}
           </div>
           <div className="col-lg-6 offset-lg-1 pt-5">
             <div
               className="formcol main-contact-form topslide"
             >
-              <h1 style={{ fontWeight: "bold" }} ml-5>
+              <AnimatedText text={<h1 style={{ fontWeight: "bold" }} ml-5>
                 Catch up with us
               </h1>
+              } animation="slide-up" />
+              <form onSubmit={handleSubmit}>
+                <div id="contactForm">
+                  <AnimatedText text={<label>
+                    Full Name
+                    <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
+                  </label>} animation='slide-up' />
+                  <AnimatedText text={<input
+                    type="text"
+                    name="fullName"
+                    value={formData.fullName}
+                    onChange={handleChange}
+                    placeholder="Type here"
+                    autoComplete="off"
+                    className="form-field mb-2"
+                    required
+                  />} animation='slide-up' />
+                  <AnimatedText text={<label>
+                    Email
+                    <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
+                  </label>} animation='slide-up' />
+                  <AnimatedText text={<input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder="Type here"
+                    autoComplete="off"
+                    className="form-field"
+                    required
+                  />
+                  } animation='slide-up' />
+                  <div className="mt-3">
+                    <AnimatedText text={<label>
+                      Adress
+                      <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
+                    </label>} animation='slide-up' />
 
-              <form className="mt-5" onSubmit={formik.handleSubmit}>
-                <label>Full Name<sup style={{ color: "red", marginLeft: "5px", fontSize: "12px" }}>*</sup></label> <br></br>
-                <input
-                  type="text"
-                  name="name"
-                  value={formik.values.name}
-                  onChange={formik.handleChange}
-                  placeholder="Type here"
-                  autoComplete="off"
-                  className="form-field mb-3"
-                />
-                {formik.errors.name && (
-                  <div className="error-container position-relative">
-                    <div className="error-tooltip">
-                      {formik.errors.name}
-                      <div className="arrow"></div>
-                    </div>
+                    <AnimatedText text={<input
+                      type="text"
+                      name="state"
+                      value={formData.state}
+                      onChange={handleChange}
+                      placeholder="Type here"
+                      autoComplete="off"
+                      className="form-field"
+                      required
+                    />} animation='slide-up' />
                   </div>
-                )}
-                <label>Email<sup style={{ color: "red", marginLeft: "5px", fontSize: "12px" }}>*</sup></label> <br></br>
-                <input
-                  type="text"
-                  name="email"
-                  value={formik.values.email}
-                  onChange={formik.handleChange}
-                  placeholder="Type here"
-                  autoComplete="off"
-                  className="form-field mb-3"
-                />
-                {formik.errors.email && (
-                  <div className="error-container position-relative">
-                    <div className="error-tooltip">
-                      {formik.errors.email}
-                      <div className="arrow"></div>
-                    </div>
-                  </div>
-                )}
-                <label>State<sup style={{ color: "red", marginLeft: "5px", fontSize: "12px" }}>*</sup></label> <br></br>
-                <input
-                  type="text"
-                  name="state"
-                  value={formik.values.state}
-                  onChange={formik.handleChange}
-                  placeholder="Type here"
-                  autoComplete="off"
-                  className="form-field mb-3"
-                />
-                {formik.errors.state && (
-                  <div className="error-container position-relative">
-                    <div className="error-tooltip">
-                      {formik.errors.state}
-                      <div className="arrow"></div>
-                    </div>
-                  </div>
-                )}
-                <label>Contact Number<sup style={{ color: "red", marginLeft: "5px", fontSize: "12px" }}>*</sup></label> <br></br>
-                <input
-                  type="text"
-                  name="contactNumber"
-                  value={formik.values.contactNumber}
-                  onChange={formik.handleChange}
-                  placeholder="Type here"
-                  autoComplete="off"
-                  className="form-field mb-3"
-                />
-                {formik.errors.contactNumber && (
-                  <div className="error-container position-relative">
-                    <div className="error-tooltip">
-                      {formik.errors.contactNumber}
-                      <div className="arrow"></div>
-                    </div>
-                  </div>
-                )}
-                <div>
-                  <label htmlFor="service">Choose a service <sup style={{ color: "red", marginLeft: "5px", fontSize: "12px" }}>*</sup></label>
-                  <select
+                  <AnimatedText text={<label className="mt-3">
+                    Contact number
+                    <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
+                  </label>} animation='slide-up' />
+
+                  <AnimatedText text={<input
+                    type="tel"
+                    name="contactNumber"
+                    value={formData.contactNumber}
+                    onChange={handleChange}
+                    placeholder="+91 9900000088"
+                    autoComplete="off"
+                    className="form-field mb-2"
+                    pattern="[0-9]{10}"
+                    required
+                  />} animation='slide-up' />
+                  <AnimatedText text={<label htmlFor="service">Choose a service <sup style={{ color: "red", marginLeft: "5px", fontSize: "12px" }}>*</sup></label>
+                  } animation='slide-up' />
+
+                  <AnimatedText text={<select
                     type="text"
                     name="service"
-                    value={formik.values.service}
-                    onChange={formik.service}
+                    // value={formik.values.service}
+                    // onChange={formik.service}
                     placeholder="Type here"
                     autoComplete="off"
                     className="form-field mb-3"
@@ -234,39 +266,37 @@ function Contact() {
                       Organic and Paid Marketing
                     </option>
                     <option value="Other">Other</option>
-                  </select>
+                  </select>} animation='slide-up' />
+                  <AnimatedText text={<label>Write something about yourself</label>
+                  } animation='slide-up' />
+
+                  <AnimatedText text={<input
+                    type="text"
+                    name="about"
+                    value={formData.about}
+                    onChange={handleChange}
+                    placeholder="Type here"
+                    autoComplete="off"
+                    className="form-field"
+                    required
+                  />} animation='slide-up' />
                 </div>
-                {formik.errors.service && (
-                  <div className="error-container position-relative">
-                    <div className="error-tooltip">
-                      {formik.errors.service}
-                      <div className="arrow"></div>
-                    </div>
-                  </div>
-                )}
-                <label>Write here something to add</label> <br></br>
-                <input
-                  type="text"
-                  name="additionalInfo"
-                  value={formik.values.additionalInfo}
-                  onChange={formik.handleChange}
-                  placeholder="Type here"
-                  autoComplete="off"
-                  className="form-field mb-4"
-                />
                 <div className="d-flex justify-content-center text-center"
                 >
-                  <input style={{ fontSize: "20px", fontWeight: "bold" }}
+                <AnimatedText text={  <input style={{ fontSize: "20px", fontWeight: "bold", marginTop: "25px" }}
                     type="submit"
                     name="submit"
                     value="Send it"
-                    class="submit"
-                  />
+                    class="submit submit-depth"
+                  />} animation='fade-in'/>
                 </div>
+
               </form>
             </div>
+
           </div>
         </div>
+
 
       </div>
       <ScrollToTopButton />
