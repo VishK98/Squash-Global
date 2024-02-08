@@ -4,9 +4,20 @@
     color: #000;
     font-weight: bold;
 }
+.contact-text{
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  font-family: "Manrope Regular";
+}
+.contact-text:hover {
+  text-decoration: underline;
+  color: #555;
+}
 .address{
     font-family: "Manrope Regular";
-    font-size: 20px;
+    font-size: 18px;
 }
 .view-map-text{
     font-size: 25px;

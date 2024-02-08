@@ -30,7 +30,7 @@ function Philosophy() {
                 </li>
               </ol>
             </div>
-            <AnimatedText text="WE KNOW YOU, YOU KNOW US" animation="slide-left" className="aboutUs-heading" />
+            <AnimatedText text="We know you ! You know us !!" animation="slide-left" className="aboutUs-heading" />
           </div>
         </div>
       </div>

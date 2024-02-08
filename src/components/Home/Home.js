@@ -88,35 +88,35 @@ function Home() {
       </video>
 
       <div className="video-content d-none d-md-block" >
-          <div className="bannertitle">
-            <h1 className="text-lg-center not_an stroke">Not an</h1>
-          </div>
-          <div className="bannertitle">
-            <h2 className="agency-text">Agency.</h2>
-          </div>
-          <div class="mobile_down_arrow new-big-down-arrow1">
-            <AnimatedFadeImage src={bigCircle} alt="Image not found" />
-          </div>
-          <div className="row ">
-            <div className="col-lg-5"></div>
-            <div className="col-lg-7">
-              <div className="section_para pl-lg-5 pl-0">
-                <div className="bannertopslide">
-                  <h2 className="but-text">
-                    <span>But your extended</span> <span>marketing team</span>
-                  </h2>
-                </div>
-                <div className="bannertopslide">
-                  <p style={{ fontSize: "20px" }}>
-                    One that is <mark className="text-highlight">nimble</mark>{" "}
-                    and ready for a{" "}
-                    <mark className="text-highlight">digitally</mark> connected
-                    world
-                  </p>
-                </div>
+        <div className="bannertitle">
+          <h1 className="text-lg-center not_an stroke">Not an</h1>
+        </div>
+        <div className="bannertitle">
+          <h2 className="agency-text">Agency.</h2>
+        </div>
+        <div class="mobile_down_arrow new-big-down-arrow1">
+          <AnimatedFadeImage src={bigCircle} alt="Image not found" />
+        </div>
+        <div className="row ">
+          <div className="col-lg-5"></div>
+          <div className="col-lg-7">
+            <div className="section_para pl-lg-5 pl-0">
+              <div className="bannertopslide">
+                <h2 className="but-text">
+                  <span>But your extended</span> <span>marketing team</span>
+                </h2>
+              </div>
+              <div className="bannertopslide">
+                <p style={{ fontSize: "20px" }}>
+                  One that is <mark className="text-highlight">nimble</mark>{" "}
+                  and ready for a{" "}
+                  <mark className="text-highlight">digitally</mark> connected
+                  world
+                </p>
               </div>
             </div>
           </div>
+        </div>
       </div>
       <div className="d-none d-md-block" style={{ marginTop: `${marginTop - (marginTop * 0.1)}px` }}></div>
       <div className="container-fluid p-5">
@@ -664,11 +664,11 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="container mt-4" id="contactForm">
+      <div className="container mt-4">
         <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
-              <label>
+              <AnimatedText text={<label>
                 Full Name
                 <sup
                   style={{
@@ -679,9 +679,8 @@ function Home() {
                 >
                   *
                 </sup>
-              </label>{" "}
-              <br />
-              <input
+              </label>} animation='slide-up' />
+              <AnimatedText text={<input
                 type="text"
                 name="name"
                 value={formData.name}
@@ -690,8 +689,8 @@ function Home() {
                 autoComplete="off"
                 className="form-field mb-lg-5"
                 required
-              />
-              <label>
+              />} animation='slide-up' />
+              <AnimatedText text={<label>
                 State
                 <sup
                   style={{
@@ -702,9 +701,8 @@ function Home() {
                 >
                   *
                 </sup>
-              </label>{" "}
-              <br />
-              <input
+              </label>} animation='slide-up' />
+              <AnimatedText text={<input
                 type="text"
                 name="state"
                 value={formData.state}
@@ -713,42 +711,41 @@ function Home() {
                 autoComplete="off"
                 className="form-field mb-lg-5"
                 required
-              />
-              <div>
-                <label htmlFor="service">Choose a service:</label>
-                <select
-                  type="dropdown"
-                  name="service"
-                  value={formData.service}
-                  onChange={handleChange}
-                  placeholder="Type here"
-                  autoComplete="off"
-                  className="form-field"
-                  required
-                >
-                  <option value="selected">Select</option>
-                  <option value="Brand Discovery and Strategy">
-                    Brand Discovery and Strategy
-                  </option>
-                  <option value="Social Media Strategy">
-                    Social Media Strategy
-                  </option>
-                  <option value="Data and Insights">Data and Insights</option>
-                  <option value="Creative and Content">
-                    Creative and Content
-                  </option>
-                  <option value="Design and Development">
-                    Design and Development
-                  </option>
-                  <option value="Organic and Paid Marketing">
-                    Organic and Paid Marketing
-                  </option>
-                  <option value="Other">Other</option>
-                </select>
-              </div>
+              />} animation='slide-up' />
+              <AnimatedText text={<label htmlFor="service">Choose a service:</label>
+              } animation='slide-up' />
+              <AnimatedText text={<select
+                type="dropdown"
+                name="service"
+                value={formData.service}
+                onChange={handleChange}
+                placeholder="Type here"
+                autoComplete="off"
+                className="form-field"
+                required
+              >
+                <option value="selected">Select</option>
+                <option value="Brand Discovery and Strategy">
+                  Brand Discovery and Strategy
+                </option>
+                <option value="Social Media Strategy">
+                  Social Media Strategy
+                </option>
+                <option value="Data and Insights">Data and Insights</option>
+                <option value="Creative and Content">
+                  Creative and Content
+                </option>
+                <option value="Design and Development">
+                  Design and Development
+                </option>
+                <option value="Organic and Paid Marketing">
+                  Organic and Paid Marketing
+                </option>
+                <option value="Other">Other</option>
+              </select>} animation='slide-up' />
             </div>
             <div className="col-lg-6 col-md-6 col-12">
-              <label>
+              <AnimatedText text={<label>
                 Email
                 <sup
                   style={{
@@ -759,9 +756,8 @@ function Home() {
                 >
                   *
                 </sup>
-              </label>{" "}
-              <br />
-              <input
+              </label>} animation='slide-up' />
+              <AnimatedText text={<input
                 type="email"
                 name="email"
                 value={formData.email}
@@ -770,8 +766,8 @@ function Home() {
                 autoComplete="off"
                 className="form-field mb-lg-5"
                 required
-              />
-              <label>
+              />} animation='slide-up' />
+              <AnimatedText text={<label>
                 Contact number
                 <sup
                   style={{
@@ -782,9 +778,8 @@ function Home() {
                 >
                   *
                 </sup>
-              </label>{" "}
-              <br />
-              <input
+              </label>} animation='slide-up' />
+              <AnimatedText text={<input
                 type="tel"
                 name="contactNumber"
                 value={formData.contactNumber}
@@ -794,21 +789,11 @@ function Home() {
                 className="form-field mb-5"
                 pattern="[0-9]{10}"
                 required
-              />
-              <label>
-                Here's something more to add{" "}
-                <sup
-                  style={{
-                    color: "red",
-                    marginLeft: "5px",
-                    fontWeight: "bold",
-                  }}
-                >
-                  *
-                </sup>
-              </label>{" "}
-              <br></br>
-              <input
+              />} animation='slide-up' />
+              <AnimatedText text={<label>
+                Here's something more to add
+              </label>} animation='slide-up' />
+              <AnimatedText text={<input
                 type="text"
                 name="about"
                 value={formData.about}
@@ -817,14 +802,15 @@ function Home() {
                 autoComplete="off"
                 className="form-field"
                 required
-              />
+              />} animation='slide-up' />
             </div>
           </div>
           <div
             id="contactSubmitBtn"
             className="d-flex justify-content-center mt-lg-5"
           >
-            <input type="submit" name="submit" value="Send it" class="submit" />
+            <AnimatedText text={<input type="submit" name="submit" value="Send it" class="submit" />
+            } animation='fade-in' />
           </div>
         </form>
       </div>
