@@ -64,7 +64,7 @@ function Careers() {
         "Highly organized with strong attention to detail",
       ],
     },
-   
+
   ];
   // Create a state to manage the selected value
   const [selectedService, setSelectedService] = useState("selected");
@@ -261,7 +261,7 @@ function Careers() {
       <div className="container">
         <div style={{ display: "flex" }}>
           <h1 style={{ fontWeight: "bold" }}>Life at Squash Global</h1>
-          <img
+          {/* <img
             className="animated-coffee-text"
             style={{
               height: "45px",
@@ -270,7 +270,13 @@ function Careers() {
               marginTop: "4px",
             }}
             src={coffee}
-          ></img>
+          ></img> */}
+          <img className="animated-coffee-text" style={{
+            height: "45px",
+            width: "45px",
+            marginLeft: "19px",
+            marginTop: "4px",
+          }} src="https://img.icons8.com/clouds/100/food-bar.png" alt="iced-coffee" />
         </div>
       </div>
       <img className="mt-4" style={{ width: "100%" }} src={teamBreak}></img>

@@ -76,6 +76,7 @@ function Contact() {
           </div>
           <div className="inner_title hidden">
             <AnimatedText text={<h1 className="contact-page-title">Let’s connect us</h1>
+            
             } animation="slide-left" />
           </div>
         </div>
