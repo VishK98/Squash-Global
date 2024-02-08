@@ -161,36 +161,10 @@ h2.stroke {
 }
 
 /* Animation ends  here */
-
-.video-display {
-  height: 560px;
-}
-
-/* For screen sizes up to 625px (mobile devices) */
-@media only screen and (max-width: 625px) {
-  .video-display {
-    height: 560px;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  .video-display {
-    height: 610px;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-  .video-display {
-    height: 660px;
-  }
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {
-  .video-display {
-    height: 710px;
-  }
-}
+ .video-content{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  left: 2%;
+  padding: 30px;
+ }

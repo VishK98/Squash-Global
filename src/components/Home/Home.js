@@ -3,7 +3,7 @@ import "../Animations/Animation.css";
 import AnimatedFadeImage from '../Animations/ImageAnimationFade';
 import AnimatedUnfoldImage from '../Animations/ImageAnimationUnfold';
 import AnimatedText from '../Animations/TextAnimation';
-import React, { useState } from "react";
+import React, { useRef, useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import ScrollToTopButton from "../TopButton/TopButton";
 import bigCircle from "../../assets/images/big-circle-down-arrow.png";
@@ -23,6 +23,8 @@ import brandIcon from "../../assets/images/brand-icon.png";
 import "./BlogSlider";
 import BlogSlider from "./BlogSlider";
 import PartnerSlider from "./PartnerSlider";
+import squashVideo from "../../assets/squash.mp4";
+
 
 function Home() {
 
@@ -61,26 +63,41 @@ function Home() {
       formData.service.trim() !== ""
     );
   };
+  const videoRef = useRef(null);
+  const [marginTop, setMarginTop] = useState(0);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      const videoHeight = videoRef.current.clientHeight;
+      setMarginTop(videoHeight);
+    }
+  }, []);
 
 
   return (
+
     <>
-          <div style={{marginTop: "530px"}}></div>
-{/* 
-      <section id="homeSectionOne" className="position-relative section">
-        <div className="container video-display">
-          <div className="row">
-            <div className="col-12">
-              <div className="bannertitle">
-                <h1 className="text-lg-center not_an stroke">Not an</h1>
-              </div>
-              <div className="bannertitle">
-                <h2 className="agency-text">Agency.</h2>
-              </div>
-              <div class="mobile_down_arrow new-big-down-arrow1">
-              <AnimatedFadeImage src={bigCircle} alt="Image not found" />
-              </div>
-            </div>
+      <video
+        ref={videoRef}
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{ height: '100%' }}
+      >
+        <source src={squashVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div className="video-content">
+          <div className="bannertitle">
+            <h1 className="text-lg-center not_an stroke">Not an</h1>
+          </div>
+          <div className="bannertitle">
+            <h2 className="agency-text">Agency.</h2>
+          </div>
+          <div class="mobile_down_arrow new-big-down-arrow1">
+            <AnimatedFadeImage src={bigCircle} alt="Image not found" />
           </div>
           <div className="row ">
             <div className="col-lg-5"></div>
@@ -102,9 +119,8 @@ function Home() {
               </div>
             </div>
           </div>
-        </div>
-      </section> */}
-
+      </div>
+      <div style={{ marginTop: `${marginTop - (marginTop * 0.1)}px` }}></div>
       <div className="container-fluid p-4">
         <div className="row">
           <div className="col-lg-5">

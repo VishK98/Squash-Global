@@ -40,7 +40,7 @@ export default function NavBar() {
   };
 
   const updateVideoHeight = () => {
-    setVideoHeight(location.pathname === "/" ? "600px" : "0%");
+    setVideoHeight(location.pathname === "/" ? "100%" : "0%");
   };
 
   useEffect(() => {
@@ -111,26 +111,15 @@ export default function NavBar() {
     };
   }, [isMobileNavOpen]);
 
-  const [videoHeight, setVideoHeight] = useState("600px");
-
+  const [videoHeight, setVideoHeight] = useState("100%");
   useEffect(() => {
     updateVideoHeight();
     console.log(videoHeight);
   }, [location.pathname]);
 
-  // Conditionally render the video only when screen width is greater than 768 pixels
-  const shouldRenderVideo = window.innerWidth > 768;
 
   return (
     <>
-      {shouldRenderVideo && (
-        <div >
-          <video autoPlay loop muted playsInline style={{ height: videoHeight }}>
-            <source src={squashVideo} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      )}
        <div className={`header ${scrolled ? 'scrolled' : ''}`}>
        <header className="header nav-wrapper">
         <nav className="navbar navbar-expand-lg" aria-label="Main navigation">
