@@ -64,60 +64,7 @@ function Careers() {
         "Highly organized with strong attention to detail",
       ],
     },
-    {
-      url: jobPost,
-      title: "Jr. Project Manager",
-      location: "Mumbai",
-      experience: "4-6 years",
-      responsibilities: [
-        "Project Coordination: Assist in planning, executing, and closing projects while ensuring they are delivered on time and within scope.",
-        "Task Management: Oversee tasks, schedules, and resources to meet project goals. Track progress and identify potential issues.",
-        "Team Support: Collaborate with project teams, providing administrative support, facilitating communication, and fostering a collaborative environment.",
-      ],
-      requirements: [
-        "Bachelor's degree in a relevant field",
-        "Strong organizational and communication skills",
-        "Proficiency in project management tools and software",
-        "Ability to work effectively in a team and support project goals",
-        "Highly organized with strong attention to detail",
-      ],
-    },
-    {
-      url: jobPost,
-      title: "Sr. Project Manager",
-      location: "Kolkata",
-      experience: "4-6 years",
-      responsibilities: [
-        "Project Coordination: Assist in planning, executing, and closing projects while ensuring they are delivered on time and within scope.",
-        "Task Management: Oversee tasks, schedules, and resources to meet project goals. Track progress and identify potential issues.",
-        "Team Support: Collaborate with project teams, providing administrative support, facilitating communication, and fostering a collaborative environment.",
-      ],
-      requirements: [
-        "Bachelor's degree in a relevant field",
-        "Strong organizational and communication skills",
-        "Proficiency in project management tools and software",
-        "Ability to work effectively in a team and support project goals",
-        "Highly organized with strong attention to detail",
-      ],
-    },
-    {
-      url: jobPost,
-      title: "Jr. Project Manager",
-      location: "Mumbai",
-      experience: "4-6 years",
-      responsibilities: [
-        "Project Coordination: Assist in planning, executing, and closing projects while ensuring they are delivered on time and within scope.",
-        "Task Management: Oversee tasks, schedules, and resources to meet project goals. Track progress and identify potential issues.",
-        "Team Support: Collaborate with project teams, providing administrative support, facilitating communication, and fostering a collaborative environment.",
-      ],
-      requirements: [
-        "Bachelor's degree in a relevant field",
-        "Strong organizational and communication skills",
-        "Proficiency in project management tools and software",
-        "Ability to work effectively in a team and support project goals",
-        "Highly organized with strong attention to detail",
-      ],
-    },
+   
   ];
   // Create a state to manage the selected value
   const [selectedService, setSelectedService] = useState("selected");
@@ -175,7 +122,7 @@ function Careers() {
       formData.state.trim() !== "" &&
       formData.contactNumber.trim() !== "" &&
       formData.about.trim() !== "" &&
-      formData.service.trim() !== ""  &&
+      formData.service.trim() !== "" &&
       formData.resume !== null
 
     );
@@ -241,21 +188,21 @@ function Careers() {
               </ol>
             </div>
             <h1 style={{ fontSize: "50px", fontWeight: "bold" }}>
-            Start your journey in Squash
+              Start your journey in Squash
             </h1>
           </div>
         </div>
       </div>
       <div className="container ">
         <div className="row pt-md-3">
-          <div className="col-lg-8">
+          <div className="col-lg-12 col-md-12 col-12">
             <img
               style={{ width: "100%" }}
               src={image}
               alt="Career at Digital Marketing Agency"
             />
           </div>
-          <div className="col-lg-4 mt-2">
+          <div className="col-lg-12 col-md-12 col-12">
             <h2 style={{ fontSize: "50px", fontWeight: "bold" }}>Work with a dynamic team and creative minded people.</h2>
             <a href="#latestOpeningSection" className="explorbtn mt-lg-4">
               <i className="joinUs">Join Us</i>
@@ -275,17 +222,17 @@ function Careers() {
         <h1 style={{ fontWeight: "bold" }}>What to expect at Squash?</h1>
         <p className="mt-4" style={{ fontSize: "20px" }}>
           <span style={{ fontWeight: "600" }}>
-          At Squash, we believe in growing together. 
+            At Squash, we believe in growing together.
           </span>
           <br />
-          <br /> A place we offer our talents to bloom in an atmosphere where they can have professional and personal growth. Squash celebrates achievements together, offer diverse opportunities and development programs. 
+          <br /> A place we offer our talents to bloom in an atmosphere where they can have professional and personal growth. Squash celebrates achievements together, offer diverse opportunities and development programs.
         </p>
       </div>
       <div className="container">
         <div className="row">
           <div className="col-lg-5 col-md-5 col-12 col-sm-12 mt-5">
             <h3 style={{ fontWeight: "bold" }}>
-            Where ideas thrive and turn that idea into reality
+              Where ideas thrive and turn that idea into reality
             </h3>
             <p className="mt-4" style={{ fontSize: "20px" }}>
               "At{" "}
@@ -295,9 +242,9 @@ function Careers() {
               >
                 Squash Global
               </span>
-              , we foster collaboration, innovation and creative minds to explore limitless possibilities. If you are someone who wants to be a part of the next big thing in the marketing and advertising industry, 
-             " <br /> <br />
-             Write to us at hr@squashglobal.com.
+              , we foster collaboration, innovation and creative minds to explore limitless possibilities. If you are someone who wants to be a part of the next big thing in the marketing and advertising industry,
+              " <br /> <br />
+              Write to us at <a className="mail-text" href='mailto:hr@squashglobal.com'>hr@squashglobal.com</a>
             </p>
           </div>
           <div className="col-lg-7 col-md-7 col-12 col-sm-12 mt-4 ">
@@ -451,8 +398,7 @@ function Careers() {
           </div>
 
           <div
-            className="col-lg-7 col-md-8 col-sm-12 col-12 form-mobile"
-            style={{ marginLeft: "20px" }}
+            className="col-lg-8 col-md-8 col-sm-12 col-12 form-mobile mt-3"
           >
             <div id="contactForm" >
               <form onSubmit={handleSubmit}>
@@ -476,57 +422,45 @@ function Careers() {
                   onChange={handleChange}
                   placeholder="Type here"
                   autoComplete="off"
-                  className="form-field mb-lg-3"
+                  className="form-field mb-3"
                   required
                 />
-                <div
-                  id={`applyNowButton`}
-                  style={{
-                    display: "flex",
-                    marginBottom: "1rem",
-                  }}
-                >
-                  <div style={{ flex: 1, marginRight: "1rem" }}>
-                    <label>
-                      Email
-                      <sup
-                        style={{
-                          color: "red",
-                          marginLeft: "5px",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        *
-                      </sup>
-                    </label>{" "}
-                    <br />
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="Type here"
-                      autoComplete="off"
-                      className="form-field mb-lg-3"
-                      required
-                    />
-                  </div>
-                  <div style={{ flex: 1 }}>
-                    <label>
-
-                      <sup
-                        style={{
-                          color: "red",
-                          marginLeft: "5px",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        
-                      </sup>
-                    </label>{" "}
-                    <br />
-                    
-                  </div>
+                <div style={{ flex: 1, }}>
+                  <label>
+                    Email
+                    <sup
+                      style={{
+                        color: "red",
+                        marginLeft: "5px",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      *
+                    </sup>
+                  </label>{" "}
+                  <br />
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder="Type here"
+                    autoComplete="off"
+                    className="form-field "
+                    required
+                  />
+                </div>
+                <div >
+                  <label>
+                    <sup
+                      style={{
+                        color: "red",
+                        marginLeft: "5px",
+                        fontWeight: "bold",
+                      }}
+                    >
+                    </sup>
+                  </label>{" "}
                 </div>
                 <label>
                   Contact number
@@ -548,7 +482,7 @@ function Careers() {
                   onChange={handleChange}
                   placeholder="+91 9900000088"
                   autoComplete="off"
-                  className="form-field mb-lg-3"
+                  className="form-field mb-3"
                   pattern="[0-9]{10}"
                   required
                 />
@@ -573,7 +507,7 @@ function Careers() {
                     onChange={handleChange}
                     placeholder="Type here"
                     autoComplete="off"
-                    className="form-field mb-lg-3"
+                    className="form-field mb-3"
                     required
                   >
                     <option value="selected">Select role</option>
@@ -603,7 +537,7 @@ function Careers() {
                   onChange={handleChange}
                   placeholder="Type here"
                   autoComplete="off"
-                  className="form-field mb-lg-3"
+                  className="form-field mb-3"
                   required
                 />
                 <label>

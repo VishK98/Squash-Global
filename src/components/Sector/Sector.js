@@ -69,6 +69,56 @@ function Sector() {
       url: Fashion
     },
   ];
+  const services = [
+    {
+      title: "MEDIA PLANNING AND BUYING",
+      url: 'https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-media-planning-marketing-agency-flaticons-lineal-color-flat-icons-3.png'
+    },
+    {
+      title: "DIGITAL PR AND ORM",
+      url: FMCG
+    },
+    {
+      title: "SEO & SEM",
+      url: Consumer
+    },
+    {
+      title: "BFSI",
+      url: BFSI
+    },
+    {
+      title: "Automotive",
+      url: Automotive
+    },
+    {
+      title: "Retails",
+      url: Retails
+    },
+    {
+      title: "Food and Beverages",
+      url: foods
+    },
+    {
+      title: "Tourism and Hospitality",
+      url: Hospitality
+    },
+    {
+      title: "Media and Entertainment",
+      url: Media
+    },
+    {
+      title: "Pharmaceutical",
+      url: Pharmaceutical
+    },
+    {
+      title: "Telecom",
+      url: Telecom
+    },
+    {
+      title: "Fashion And Lifestyle",
+      url: Fashion
+    },
+  ];
   return (
     <>
       <div class="container">
@@ -131,6 +181,29 @@ function Sector() {
       </div>
       <div className="container">
         <h2 className="box-title">
+          Some of our services
+        </h2>
+        <div
+          className="row"
+          style={{ justifyContent: "space-between", marginRight: "5px" }}
+        >
+          {services.map((image, index) => (
+            // console.log('data', image)
+            <div className="col-lg-2 col-md-6 col-6 mt-3">
+              <div className="boxes">
+                <div className="col">
+                  <div className="industries-four-boxes h-100">
+                    <img className="box-img" src={image.url} alt="FMGC" />
+                    <p className="mt-2 box-text">{image.title}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="container">
+        <h2 className="box-title">
           Some of the industry sectors we partner with
         </h2>
         <div
@@ -149,6 +222,7 @@ function Sector() {
                 </div>
               </div>
             </div>
+           
           ))}
         </div>
       </div>
@@ -169,9 +243,9 @@ function Sector() {
               start a conversation!
             </p>
             <Link to="/contact" class="btn-flip mt-4" >
-          <button class="req-btn"><i class="animation"></i>Request a call back<i class="animation"></i>
-          </button>
-        </Link>
+              <button class="req-btn"><i class="animation"></i>Request a call back<i class="animation"></i>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

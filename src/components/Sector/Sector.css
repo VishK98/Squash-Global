@@ -5,7 +5,7 @@
 
 .boxes {
   height: 180px;
-  width: 100%;
+  /* width: 100%; */
   background-color: #fff;
   border-radius: 10px;
   border: 1px solid rgb(222, 221, 221);
@@ -19,6 +19,7 @@
 .boxes:hover {
   background-color: #fe504f;
 }
+
 
 .box-img {
   height: 70px;

@@ -43,8 +43,8 @@
   border-radius: 8px;
 }
 .content-box {
-  height: 450px;
-  width: 400px;
+  height: 400px;
+  /* width: 400px; */
   border-radius: 15px;
   background-color: #fe504f;
   text-align: center;
@@ -75,9 +75,6 @@
     font-size: 25px;
     text-align: center;
     margin-top: 0px;
-  }
-  .form-mobile {
-    margin-top: 15px;
   }
 }
 
@@ -129,4 +126,14 @@
 
 .animated-coffee-text {
   animation: textAnimation2 3s infinite;
+}
+.mail-text {
+  text-decoration: none;
+  color: #fe504f;
+  transition: color 0.3s; /* Transition the color change over 0.3 seconds */
+}
+
+.mail-text:hover,
+.mail-text:focus {
+  color: #000;
 }
