@@ -3,7 +3,6 @@ import logo from "../../assets/images/logo.png";
 //import logo from "../../assets/images/logo-squash.png";
 import "./NavBar.css";
 import { Link, useLocation } from "react-router-dom";
-import squashVideo from "../../assets/squash.mp4";
 
 
 export default function NavBar() {

@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import ScrollToTopButton from '../TopButton/TopButton';
 import contact from "../../assets/images/contact-img-2.webp";
 import india from "../../assets/images/tonic-india-hq.webp";
@@ -8,31 +8,13 @@ import message from "../../assets/images/message-icon.png";
 import email from "../../assets/images/email-icon1.png";
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-
-
+import AnimatedText from '../Animations/TextAnimation';
+import AnimatedUnfoldImage from '../Animations/ImageAnimationUnfold';
 import "./Contact.css";
 
 function Contact() {
-  useEffect(() => {
-    function handleScroll() {
-      const image = document.querySelector(".slide-in");
-      const imagePosition = image.getBoundingClientRect().top;
-      const screenHeight = window.innerHeight;
 
-      if (imagePosition < screenHeight / 2) {
-        image.classList.add("slide-in-animation");
-      } else {
-        image.classList.remove("slide-in-animation");
-      }
-    }
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-  
   const formik = useFormik({
     initialValues: {
       name: '',
@@ -70,50 +52,30 @@ function Contact() {
         <div className="row">
           <div className="col-lg-12">
             <div class="route-text">
-              <ol class="breadcrumb bg-transparent px-0 route-text mt-4">
+              <ol class="breadcrumb route-text mt-3">
                 <li>
                   <a
                     href="/"
                     style={{ color: "grey", textDecoration: "none" }}
                   >
-                    Home /
+                    <AnimatedText text="Home /" animation="slide-left" />
                   </a>
                 </li>
-                <li
-                  class="breadcrumb-item active"
-                  aria-current="page"
-                  style={{ marginLeft: "8px", color: "grey" }}
-                >
-                  Contact
+                <li>
+                  <AnimatedText text="&nbsp;Contact" animation="slide-right" />
                 </li>
               </ol>
             </div>
-            <div className="inner_title hidden">
-              <h1 className="contact-page-title">Let’s connect :)</h1>
-            </div>
+          </div>
+          <div className="inner_title hidden">
+            <AnimatedText text={<h1 className="contact-page-title">Let’s connect us</h1>
+            } animation="slide-left" />
           </div>
         </div>
       </div>
+
       <div className="container mt-3 mb-5">
-        <div className="row align-items-center">
-          <div className="col-lg-12">
-            {/* <div className="inner_section_img position-relative hidden">
-              <img
-                src={contact}
-                alt="Contact Digital Marketing Agency"
-                className="w-100 "
-              />
-            </div> */}
-            {/* <div className="imagereveal"> */}
-              <img
-                // style={{ height: "100%", width: "100%" }}
-                src={contact}
-                alt="Gipsi Analytics Reports"
-                className="slide-in w-100"
-              />
-            {/* </div> */}
-          </div>
-        </div>
+        <AnimatedUnfoldImage src={contact} alt="Image not found" />
         <div className="row">
           <div className="col-lg-5 pt-lg-5">
             <div className="mt-4 mt-lg-0 address-info topslide">

@@ -25,8 +25,7 @@ function Philosophy() {
                     <AnimatedText text="Home /" animation="slide-left" />
                   </a>
                 </li>
-                <li
-                >
+                <li>
                   <AnimatedText text="&nbsp;About us" animation="slide-right" />
                 </li>
               </ol>

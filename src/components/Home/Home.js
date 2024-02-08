@@ -75,21 +75,19 @@ function Home() {
 
 
   return (
-
     <>
-      <video
+      <video className="video-display"
         ref={videoRef}
         autoPlay
         loop
         muted
         playsInline
-        style={{ height: '100%' }}
       >
         <source src={squashVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
-      <div className="video-content">
+      <div className="video-content d-none d-md-block" >
           <div className="bannertitle">
             <h1 className="text-lg-center not_an stroke">Not an</h1>
           </div>
@@ -120,8 +118,8 @@ function Home() {
             </div>
           </div>
       </div>
-      <div style={{ marginTop: `${marginTop - (marginTop * 0.1)}px` }}></div>
-      <div className="container-fluid p-4">
+      <div className="d-none d-md-block" style={{ marginTop: `${marginTop - (marginTop * 0.1)}px` }}></div>
+      <div className="container-fluid p-5">
         <div className="row">
           <div className="col-lg-5">
             <AnimatedText text={<h2 >
@@ -151,7 +149,7 @@ function Home() {
               <div className="zoom-overlay"></div>
             </a>
           </div>
-          <div className="col-lg-7">
+          <div className="col-lg-7 mt-4 mt-lg-0">
             <AnimatedFadeImage src={gispiImage} alt="Image not found" />
           </div>
         </div>
@@ -281,7 +279,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div id="contactSubmitBtn" className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center">
           <input
             style={{
               fontSize: "25px",

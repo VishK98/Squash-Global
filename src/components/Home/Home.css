@@ -44,7 +44,9 @@ h2.stroke {
   .mobile_down_arrow {
     display: none;
   }
-
+  .video-display{
+    display: none;
+   }
   .h1.stroke,
   h2.stroke,
   .bannertitle h1,
@@ -167,4 +169,7 @@ h2.stroke {
   right: 10%;
   left: 2%;
   padding: 30px;
+ }
+ .video-display{
+  height: 100%;
  }
