@@ -79,11 +79,10 @@ function Philosophy() {
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-<<<<<<< HEAD
-=======
+            
             <AnimatedText text={<h3>In this age of automated conversations, we noticed that the ‘<span className="text-highlight">human touch </span>’ had
               sneaked out while no one was looking.</h3>} animation="slide-left" />
->>>>>>> fb6de00c69dd2ca04c82f22534bcfd72c45aed04
+
             <AnimatedText text={<p className=" mt-lg-4">
             We offer 360-degree digital marketing solutions to help you build your brand from the scratch. In this complex digital landscape, our team of creative and passionate young people build brands, digital experiences, and products for the companies of tomorrow.
             </p>} animation="slide-up" />
