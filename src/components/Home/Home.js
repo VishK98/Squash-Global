@@ -96,9 +96,9 @@ function Home() {
         <div className="bannertitle">
           <h2 className="agency-text">Agency.</h2>
         </div>
-        <div class="mobile_down_arrow new-big-down-arrow1">
+        {/* <div class="mobile_down_arrow new-big-down-arrow1">
           <AnimatedFadeImage src={bigCircle} alt="Image not found" />
-        </div>
+        </div> */}
         <div className="row ">
           <div className="col-lg-5"></div>
           <div className="col-lg-7">
