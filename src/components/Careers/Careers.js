@@ -241,7 +241,7 @@ function Careers() {
               </ol>
             </div>
             <h1 style={{ fontSize: "50px", fontWeight: "bold" }}>
-              Your Story Starts here
+            Start your journey in Squash
             </h1>
           </div>
         </div>
@@ -256,7 +256,7 @@ function Careers() {
             />
           </div>
           <div className="col-lg-4 mt-2">
-            <h2 style={{ fontSize: "50px", fontWeight: "bold" }}>Work with the biggest brand & brightest minds</h2>
+            <h2 style={{ fontSize: "50px", fontWeight: "bold" }}>Work with a dynamic team and creative minded people.</h2>
             <a href="#latestOpeningSection" className="explorbtn mt-lg-4">
               <i className="joinUs">Join Us</i>
               <span>
@@ -272,22 +272,20 @@ function Careers() {
         </div>
       </div>
       <div className="container mt-3">
-        <h1 style={{ fontWeight: "bold" }}>Why Join Squash Global?</h1>
+        <h1 style={{ fontWeight: "bold" }}>What to expect at Squash?</h1>
         <p className="mt-4" style={{ fontSize: "20px" }}>
           <span style={{ fontWeight: "600" }}>
-            We believe in growing together, with you.
+          At Squash, we believe in growing together. 
           </span>
           <br />
-          <br /> A great place to work also offers tangible achievements,
-          diverse opportunities and development programs. The next big thing in
-          digital advertising is you. Join us as we are here to grow with you.
+          <br /> A place we offer our talents to bloom in an atmosphere where they can have professional and personal growth. Squash celebrates achievements together, offer diverse opportunities and development programs. 
         </p>
       </div>
       <div className="container">
         <div className="row">
           <div className="col-lg-5 col-md-5 col-12 col-sm-12 mt-5">
             <h3 style={{ fontWeight: "bold" }}>
-              We love people with ideas and the thirst to see that idea through
+            Where ideas thrive and turn that idea into reality
             </h3>
             <p className="mt-4" style={{ fontSize: "20px" }}>
               "At{" "}
@@ -297,10 +295,9 @@ function Careers() {
               >
                 Squash Global
               </span>
-              , we foster a culture of innovation and collaboration, where your
-              ideas are valued and your potential is limitless. Join our team
-              and be part of the future of digital advertising." <br /> <br />
-              If you think you can match up to our challenge, write to us.
+              , we foster collaboration, innovation and creative minds to explore limitless possibilities. If you are someone who wants to be a part of the next big thing in the marketing and advertising industry, 
+             " <br /> <br />
+             Write to us at hr@squashglobal.com.
             </p>
           </div>
           <div className="col-lg-7 col-md-7 col-12 col-sm-12 mt-4 ">

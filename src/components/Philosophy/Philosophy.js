@@ -31,7 +31,7 @@ function Philosophy() {
                 </li>
               </ol>
             </div>
-            <AnimatedText text="Built on what we all are  made of! True human potential" animation="slide-left" className="aboutUs-heading" />
+            <AnimatedText text="WE KNOW YOU, YOU KNOW US" animation="slide-left" className="aboutUs-heading" />
           </div>
         </div>
       </div>
@@ -80,25 +80,11 @@ function Philosophy() {
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            <AnimatedText text={<h3>In this age of automated conversations, we noticed that the ‘<span className="text-highlight">human touch </span>’ had
-              sneaked out while no one was looking.</h3>} animation="slide-down" />
             <AnimatedText text={<p className=" mt-lg-4">
-              Everyone has the Siris, Bots and the AI. What they don’t have
-              is a naturally intuitive and personal connection with their
-              customers; a coupling that could turn technology & creatives
-              on their head.
+            We offer 360-degree digital marketing solutions to help you build your brand from the scratch. In this complex digital landscape, our team of creative and passionate young people build brands, digital experiences, and products for the companies of tomorrow.
             </p>} animation="slide-up" />
             <AnimatedText text={<p className=" mt-lg-4">
-              We've taken the leap of faith and of distances to build a
-              highly personalized & nuanced approach to the brands we work
-              with, renewed with a global perspective.
-            </p>} animation="slide-up" />
-            <AnimatedText text={<p className=" mt-lg-4">
-              Opening global offices isn't just about crossing geographical
-              boundaries for us. It brings with it a cross pollination of
-              cultures, ideas and perspectives. Our endeavour is to bring a
-              mix of trend spotting and cultural insights unique to your
-              brand and audience.
+            Our guidance and bold imagination help the brands to challenge the industry and shape the future, every day. Squash is a perfect amalgamation of Creativity & Strategy and everything in between. With our vast experience and understanding, we can proudly say that we are not just International but multicultural too. 
             </p>} animation="slide-up" />
           </div>
           <div className="col-lg-6 col-12">
@@ -110,23 +96,28 @@ function Philosophy() {
         <div className="row">
           <div className="col-12 philosophy-details mt-5">
             <AnimatedText text={<p className=" mt-lg-4">
-              That’s exactly why we are committing our imaginations to ‘a
-              humans before boundaries’ approach. We believe that if you look
-              carefully enough, you’ll find a great idea in just about
-              everything.
+              <h3>WHY SQUASH?</h3>
+              Squash believes in solving your problems rather than just answering them.
+              <section>We never back down from taking any challenges, after all working hard is our best-defined nature. </section>
+              <section>We pour our heart and soul to each and every project no matter the size is. </section>   
+              <section>At Squash, there are no half measure. 'IFs' and 'BUTs" are not in our dictionary. </section>        
+              <section>We first Assess, then Strategize and then Come up with the plan best suited for your Brand. </section>  
+              <section>Squash breathe life into your Brand with meaningful innovation and creative communication.</section>
             </p>} animation="slide-down" />
             <AnimatedText text={<p className=" mt-lg-4">
               This is Squash Global - Where, like a shot of yellow in a ray of
               light, we see things a new.
             </p>} animation="slide-down" />
             <AnimatedText text={<h3 className=" mt-lg-4">
-              People make us what we are.
+            WE ARE NOT JUST A TYPICAL AGENCY; WE ARE MORE THAN THAT
             </h3>} animation="slide-left" />
             <AnimatedText text={<p className=" mt-lg-4">
-              It is about delivering satisfaction, and not business results. A
-              thought that turns technology & creatives on their head. Making
-              people experience what you set out to achieve – enhancement and
-              elevation of the human spirit.
+            Think of Squash as an Extension of your Team, sharing the same Dreams and same Goals.
+            <section>We offer multi-dimensional marketing services to drive the attention and visibility your Brand needs</section>
+            <section>Squash turns your ideas into reality so you can also build your business like a pro. </section>
+            <section>With the vast and ever-evolving marketing trends, it is a challenge for Brands to keep up with the new technology and crazes. This is where our team comes into play. </section>
+            <section>Our team of Creative and Passionate people will help you create the most effective marketing strategy to supply ideal number of consumer touch points to drive lead and sales.</section>
+            <p1>Be it Media Planning or Buying, PR or Crisis Management, Creative, Content, Social Media, Search Engine Optimization and Management, Influencer Marketing, Video Production, Programmatic Advertising or more, we are here to cater to your needs and requirements in the most effective and long term way possible.</p1>
             </p>} animation="slide-down" />
           </div>
         </div>
