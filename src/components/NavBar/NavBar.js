@@ -3,7 +3,6 @@ import logo from "../../assets/images/logo.png";
 //import logo from "../../assets/images/logo-squash.png";
 import "./NavBar.css";
 import { Link, useLocation } from "react-router-dom";
-import squashVideo from "../../assets/squash.mp4";
 
 
 export default function NavBar() {
@@ -112,29 +111,18 @@ export default function NavBar() {
   }, [isMobileNavOpen]);
 
   const [videoHeight, setVideoHeight] = useState("100%");
-
   useEffect(() => {
     updateVideoHeight();
     console.log(videoHeight);
   }, [location.pathname]);
 
-  // Conditionally render the video only when screen width is greater than 768 pixels
-  const shouldRenderVideo = window.innerWidth > 768;
 
   return (
     <>
-      {shouldRenderVideo && (
-        <div >
-          <video autoPlay loop muted playsInline style={{ height: videoHeight }}>
-            <source src={squashVideo} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      )}
        <div className={`header ${scrolled ? 'scrolled' : ''}`}>
        <header className="header nav-wrapper">
         <nav className="navbar navbar-expand-lg" aria-label="Main navigation">
-          <div className="container-fluid" style={{ marginLeft: "25px" }}>
+          <div className="container-fluid" style={{ marginLeft: "25px" }} >
             <Link to="/" onClick={handleToggleClick} className="mt-2">
               <img src={logo} alt="BigCo Inc. logo" className="logo-img" />
             </Link>

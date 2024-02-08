@@ -4,6 +4,10 @@ import instagram from "../../assets/images/socialMedia/instagram.png";
 import facebook from "../../assets/images/socialMedia/facebook.png";
 import linkdin from "../../assets/images/socialMedia/linkedin.png";
 import twitter from "../../assets/images/socialMedia/twitter.png";
+import AnimatedText from '../Animations/TextAnimation';
+import AnimatedFadeImage from '../Animations/ImageAnimationFade';
+
+
 
 function Footer() {
   return (
@@ -23,9 +27,9 @@ function Footer() {
             <img className="socialMedia social-media-icon" src={linkdin} alt="Linkdin"></img>
           </a>
         </div>
-        <div className="text-center text-dark p-3">
+        <AnimatedText text={<div className="text-center text-dark p-3">
           © 2024 Squash Global. All Rights Reserved.
-        </div>
+        </div>} animation='slide-left' />
       </footer>
     </>
   );

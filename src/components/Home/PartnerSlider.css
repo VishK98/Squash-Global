@@ -1,3 +1,8 @@
+
+.partner-slider-container {
+    max-width: 100%; 
+    overflow: hidden;
+}
 .slide-image {
     height: 120px;
     width: 200px;

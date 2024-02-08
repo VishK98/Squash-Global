@@ -1,7 +1,11 @@
 import "./Home.css";
-import React, { useEffect, useState } from "react";
+import "../Animations/Animation.css";
+import AnimatedFadeImage from '../Animations/ImageAnimationFade';
+import AnimatedUnfoldImage from '../Animations/ImageAnimationUnfold';
+import AnimatedText from '../Animations/TextAnimation';
+import React, { useRef, useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
-import ScrollToTopButton from '../TopButton/TopButton';
+import ScrollToTopButton from "../TopButton/TopButton";
 import bigCircle from "../../assets/images/big-circle-down-arrow.png";
 import gispiImage from "../../assets/images/gipsi-report.png";
 import arrowMore from "../../assets/images/arrow-more.png";
@@ -15,17 +19,15 @@ import grid2Logo from "../../assets/images/twip-logo.png";
 import grid3 from "../../assets/images/grid-3.png";
 import grid3Logo from "../../assets/images/tonic-amplifiy.svg";
 import circularText from "../../assets/images/circular-text.png";
-import IndiaClients from "../../assets/images/IndiaClients-bw-new.jpg";
 import brandIcon from "../../assets/images/brand-icon.png";
 import "./BlogSlider";
 import BlogSlider from "./BlogSlider";
 import PartnerSlider from "./PartnerSlider";
+import squashVideo from "../../assets/squash.mp4";
+
 
 function Home() {
-  const [selectedService, setSelectedService] = useState("selected");
-  const handleServiceChange = (event) => {
-    setSelectedService(event.target.value);
-  };
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -47,7 +49,7 @@ function Home() {
     const { name, value } = event.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -61,44 +63,39 @@ function Home() {
       formData.service.trim() !== ""
     );
   };
+  const videoRef = useRef(null);
+  const [marginTop, setMarginTop] = useState(0);
+
   useEffect(() => {
-    function handleScroll() {
-      const image = document.querySelector(".slide-in");
-      const imagePosition = image.getBoundingClientRect().top;
-      const screenHeight = window.innerHeight;
-
-      if (imagePosition < screenHeight / 2) {
-        image.classList.add("slide-in-animation");
-        window.removeEventListener("scroll", handleScroll); // Remove the event listener after the animation has been triggered
-        setTimeout(() => {
-          window.addEventListener("scroll", handleScroll); // Reapply the event listener after a short delay to allow for further scrolling
-        }, 1000); // Adjust the delay as needed
-      }
+    if (videoRef.current) {
+      const videoHeight = videoRef.current.clientHeight;
+      setMarginTop(videoHeight);
     }
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
   }, []);
+
 
   return (
     <>
-      <section id="homeSectionOne" className="position-relative section">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <div className="bannertitle">
-                <h1 className="text-lg-center not_an stroke">Not an</h1>
-              </div>
-              <div className="bannertitle">
-                <h2 className="agency-text">Agency.</h2>
-              </div>
-              <div class="mobile_down_arrow new-big-down-arrow1">
-                <img src={bigCircle} alt="Big Circle Down Arrow" />
-              </div>
-            </div>
+      <video className="video-display"
+        ref={videoRef}
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src={squashVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div className="video-content d-none d-md-block" >
+          <div className="bannertitle">
+            <h1 className="text-lg-center not_an stroke">Not an</h1>
+          </div>
+          <div className="bannertitle">
+            <h2 className="agency-text">Agency.</h2>
+          </div>
+          <div class="mobile_down_arrow new-big-down-arrow1">
+            <AnimatedFadeImage src={bigCircle} alt="Image not found" />
           </div>
           <div className="row ">
             <div className="col-lg-5"></div>
@@ -120,89 +117,67 @@ function Home() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section
-        id="homeSectionTwo"
-        className="mt-lg-5 pt-lg-4 position-relative section"
-      >
-        <div>
-          <div className="container-fluid mt-5">
-            <div className="row">
-              <div className="col-lg-5">
-                <div className="container">
-                  <div className="row align-items-center">
-                    <h2 className="topslide">Latest at Squash Global</h2>
-                    <h1 className="discover-text">Discover the Unique Profiles of Indian Festive Gifters</h1>
-                    <p className="topslide">
-                      An Exclusive Glimpse into the
-                      <br />{" "}
-                      <mark className="text-highlight">
-                        Profiles of Indian Gifters – Essential
-                        <br /> Insights for Brands and Marketers.
-                      </mark>
-                    </p>
-                  </div>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="outline_btn explorbtn mt-4 position-relative"
-                  >
-                    <i style={{ marginRight: "50px" }}>Explore</i>
-                    <span className="zoom-icon">
-                      <img src={arrowMore} alt="" className="zooming-image" />
-                    </span>
-                    <div className="zoom-overlay"></div>
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-7 col-sm-12">
-                <a target="_blank" rel="noopener noreferrer">
-                  <div className="imagereveal">
-                    <img
-                      style={{ height: "100%", width: "100%" }}
-                      src={gispiImage}
-                      alt="Gipsi Analytics Reports"
-                      className="slide-in"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
+      </div>
+      <div className="d-none d-md-block" style={{ marginTop: `${marginTop - (marginTop * 0.1)}px` }}></div>
+      <div className="container-fluid p-5">
+        <div className="row">
+          <div className="col-lg-5">
+            <AnimatedText text={<h2 >
+              What’s Brewing at Squash Global?
+            </h2>} animation="slide-left" />
+            <AnimatedText text={<h1 >
+              Framing People Centric Experiences
+            </h1>} animation="slide-left" />
+            <AnimatedText text={<p className="brew-text">
+              Our marketing strategies go beyond{" "}
+              <span className="text-highlight">
+                With deep understanding of human behavior, we forge connection
+                that helps
+              </span>{" "}
+              Brands to speak to their audience individually.
+            </p>} animation="slide-left" />
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="outline_btn explorbtn position-relative"
+              style={{ marginTop: "30px" }}
+            >
+              <i style={{ marginRight: "50px" }}>Explore</i>
+              <span className="zoom-icon">
+                <img src={arrowMore} alt="" className="zooming-image" />
+              </span>
+              <div className="zoom-overlay"></div>
+            </a>
+          </div>
+          <div className="col-lg-7 mt-4 mt-lg-0">
+            <AnimatedFadeImage src={gispiImage} alt="Image not found" />
           </div>
         </div>
-      </section>
-      <div>
-<h3>What’s Brewing at Squash Global? </h3>
-<h4>Framing People-Centric Experiences </h4>
-Our marketing strategies go beyond driving campaigns for brands. 
-With deep understanding of human behavior, we forge connection 
-that helps Brands to speak to their audience individually.
-
       </div>
-      <section id="homeSectionThree" >
+
+      <section id="homeSectionThree ">
         <div className="container">
           <div className="row">
-            <div className="col-12 d-flex align-items-center ">
+            <div className="col-12 d-flex align-items-center">
               <div>
                 <div className="title">
-                  <h2 className="stroke">Human centric</h2>
+                  <AnimatedText text={<h2 className="stroke">Pixels to </h2>} animation="slide-up" />
                 </div>
                 <div className="title bannertitle">
-                  <h2 style={{ fontWeight: "bold" }}>experiences</h2>
+                  <AnimatedText text={<h2 style={{ fontWeight: "bold" }}>People</h2>} animation="slide-up" />
                 </div>
-                <p>
-                  that move {" "}
-                  <mark className="text-highlight">brands closer to</mark>{" "}
-                  their vision.
-                </p>
+                <AnimatedText text={<p className="brew-text">
+                  Having Technology as an ally,{" "}
+                  <mark className="text-highlight">
+                    we design digital experiences that
+                  </mark>{" "}
+                  move brands closer to their vision.
+                </p>} animation="slide-up" />
               </div>
               <div className="mobile_down_arrow new-big-down-arrow2">
-                <img
-                  style={{ marginLeft: "900px", marginTop: "50px" }}
-                  src={bigCircle}
-                  alt=""
-                />
+                <div style={{ marginLeft: "900px" }}>
+                  <AnimatedFadeImage src={bigCircle} alt="Image not found" />
+                </div>
               </div>
             </div>
           </div>
@@ -210,20 +185,28 @@ that helps Brands to speak to their audience individually.
         <div className="container">
           <div className="row">
             <div className="work_list_img round_img col-lg-7 col-md-7 col-sm-12 col-12">
-              <img
-                style={{ height: "100%", width: "100%" }}
-                src={onHerLip}
-                alt="What’s on her Lip"
-              />
+              <AnimatedFadeImage src={onHerLip} alt="Image not found" />
             </div>
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex flex-column align-items-center responsive-text">
               <h3 style={{ fontWeight: "bold" }}>What's on the Lips</h3>
               <div className="row">
                 <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex align-items-center">
-                  <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>Explore </h2>
+                  <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>
+                    Explore{" "}
+                  </h2>
                   <Link to="/blogDetails" style={{ textDecoration: "none" }}>
-                    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "60px", width: "60px", borderRadius: "50px", backgroundColor: "#fe504f" }}>
-                      <h4 className='read-more' >➟</h4>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        height: "60px",
+                        width: "60px",
+                        borderRadius: "50px",
+                        backgroundColor: "#fe504f",
+                      }}
+                    >
+                      <h4 className="read-more">➟</h4>
                     </div>
                   </Link>
                 </div>
@@ -231,21 +214,35 @@ that helps Brands to speak to their audience individually.
             </div>
           </div>
         </div>
-        <div>
-          <h3>Pixels to People</h3>
-Having Technology as an ally, we design digital experiences that move brands closer to their vision.
-</div>
         <div className="container mt-lg-5 mb-lg-4 mt-3">
           <div className="row">
-            <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-none d-md-block" style={{ marginTop: "150px" }}>
+            <div
+              className="col-lg-5 col-md-5 col-sm-12 col-12 d-none d-md-block"
+              style={{ marginTop: "150px" }}
+            >
               <h3 style={{ fontWeight: "bold" }}>What's on the TASC</h3>
-              <div className="row" style={{ display: "flex", alignItems: "center" }}>
+              <div
+                className="row"
+                style={{ display: "flex", alignItems: "center" }}
+              >
                 <div className="row">
                   <div className="col-lg-5 col-md-5 col-sm-12 col-12  d-flex align-items-center">
-                    <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>Explore </h2>
+                    <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>
+                      Explore{" "}
+                    </h2>
                     <Link to="/blogDetails" style={{ textDecoration: "none" }}>
-                      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "60px", width: "60px", borderRadius: "50px", backgroundColor: "#fe504f" }}>
-                        <h4 className='read-more' >➟</h4>
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          height: "60px",
+                          width: "60px",
+                          borderRadius: "50px",
+                          backgroundColor: "#fe504f",
+                        }}
+                      >
+                        <h4 className="read-more">➟</h4>
                       </div>
                     </Link>
                   </div>
@@ -253,20 +250,28 @@ Having Technology as an ally, we design digital experiences that move brands clo
               </div>
             </div>
             <div className="work_list_img round_img col-lg-7 col-md-7 col-sm-12 col-12">
-              <img
-                style={{ height: "100%", width: "100%" }}
-                src={tasc}
-                alt="What’s on the TASC"
-              />
+              <AnimatedFadeImage src={tasc} alt="Image not found" />
             </div>
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 mt-3 d-flex flex-column align-items-center d-md-none">
               <h3 style={{ fontWeight: "bold" }}>What's on the TASC</h3>
               <div className="row">
                 <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex align-items-center">
-                  <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>Explore </h2>
+                  <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>
+                    Explore{" "}
+                  </h2>
                   <Link to="/blogDetails" style={{ textDecoration: "none" }}>
-                    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "60px", width: "60px", borderRadius: "50px", backgroundColor: "#fe504f" }}>
-                      <h4 className='read-more' >➟</h4>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        height: "60px",
+                        width: "60px",
+                        borderRadius: "50px",
+                        backgroundColor: "#fe504f",
+                      }}
+                    >
+                      <h4 className="read-more">➟</h4>
                     </div>
                   </Link>
                 </div>
@@ -274,7 +279,7 @@ Having Technology as an ally, we design digital experiences that move brands clo
             </div>
           </div>
         </div>
-        <div id="contactSubmitBtn" className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center">
           <input
             style={{
               fontSize: "25px",
@@ -288,120 +293,114 @@ Having Technology as an ally, we design digital experiences that move brands clo
             class="submit"
           />
         </div>
-        <h3 className="creating-text">
-          Creating value, relevance and connections.<br></br>Some things that
-          really matter to people and brands.
-        </h3>
-        <br/>
-        <PartnerSlider/>
-        <div>
-          <h3>Weaving Narratives, Experiences and Connection.</h3>
-In a world saturated with information, we understand that your brand isn't just a product or service—it's a story waiting to be told.
-</div>
+        <AnimatedText text={<h3 className="creating-text">
+          Weaving Narratives, Experiences and Connection.
+        </h3>} animation="slide-down" />
+        <AnimatedText text={<h4 className="text-center">
+          In a world saturated with information, we understand that your brand
+          isn't just a product or service—it's a story waiting to be told.
+        </h4>} animation="slide-up" />
+
+        <br />
+        <PartnerSlider rtl={true} />
+        <div className="mt-3 mt-lg-5">
+          <PartnerSlider rtl={false} />
+        </div>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="section_title">
-                <h2 className="mb-lg-4 stroke title">We're</h2>
+                <AnimatedText text={<h2 className="mb-lg-4 stroke title">We're</h2>} animation="slide-right" />
                 <div className="second_line_title bannertitle">
-                  <h2 className="title bannertitle">Squash</h2>
+                  <AnimatedText text={<h2 className="title bannertitle">Squash</h2>} animation="slide-left" />
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
               <div className="section_para p-lg-5 pl-0">
                 <div className="topslide">
-                  <p>
-                  <h3>We’re Squash</h3> 
-Squash Global is more than just a marketing agency. We are the architects of brand experiences, designing stories that resonate with the brand’s audience. At Squash, we provide customize solutions and expertise to unique business needs making us the right choice for start-ups and small to medium companies. With us, you can build future ready brand, through an integration of content, technology and media, using data backed tools and practices.
-                  </p>
+                  <AnimatedText text={<p className="brew-text">
+                    Squash Global is more than{" "}
+                    <span className="text-highlight">
+                      just a marketing agency.
+                    </span>{" "}
+                    We are the architects of brand experiences, designing
+                    stories that resonate with the brand’s audience. At Squash,
+                    we provide customize solutions and{" "}
+                    <span className="text-highlight">
+                      expertise to unique business needs making us the right
+                      choice for start-ups and small to medium companies.
+                    </span>{" "}
+                    With us, you can build future ready brand, through an
+                    integration of content, technology and media, using data
+                    backed tools and practices.
+                  </p>} animation='fade-in' />
+
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <img
-          src={worldwideOffice}
-          class="img-fluid d-none d-md-block slide-in"
-          alt="Tonic Worldwide Office"
-          style={{ width: "100%" }}
-        ></img>
+        <AnimatedUnfoldImage src={worldwideOffice} alt="Image not found" />
       </section>
-      <section
-        id="homeSectionFour"
-        className="mt-lg-5 mt-3 "
-      >
+      <section id="homeSectionFour" className="mt-lg-5 mt-3 ">
         <div className="container">
           <div className="row">
             <div className="col-12">
               <div className="position-relative">
                 <div>
-                  <div
-                    className="topslide"
-                  >
-                    <h3 className="mb-0" style={{ fontSize: "50px" }}>
-                      Reimagining stories for the connected world!
-                    </h3>
+                  <div className="topslide">
+                    <AnimatedText text={<h3 style={{ fontSize: "45px", textAlign: "center" }}>
+                      Redefining Communication for Brands to Create More
+                      Approachable Framework{" "}
+                    </h3>} animation='slide-down' />
                   </div>
                 </div>
                 <div className=" mt-lg-4 mt-2">
-                  <div className="topslide">
-                    <p style={{ fontSize: "20px" }}>
-                      In this age of automated conversations, we noticed that
-                      the <mark className="text-highlight">'human touch'</mark>{" "}
-                      had sneaked out while no one was looking. We believe that
-                      life unfolds every day. So should{" "}
-                      <mark className="text-highlight">communication</mark>. It
-                      should be designed for{" "}
-                      <mark className="text-highlight">people</mark>. Not
-                      consumers,{" "}
-                      <mark className="text-highlight">leads or data sets</mark>
-                      . It should enhance{" "}
-                      <mark className="text-highlight">
-                        people's experiences and interactions
-                      </mark>
-                      , in turn,{" "}
-                      <mark className="text-highlight">
-                        the human condition.
-                      </mark>
-                      <section>
-                        <h3>Redefining Communication for Brands to Create More Approachable Framework</h3>
-                        We believe every brand carries a story and looking for the optimum communication strategy to interact with their audience. In the era of technology and artificial intelligence, we design campaigns with human touch that leaves a lasting impression. With Squash, you can amplify your brand’s communication making it more interactive and people centric. This will not only generate leads but also make your brand more relatable and problem solving to your consumers. Join us on a journey where marketing transcends the ordinary and becomes a catalyst for connection, creativity, and growth.
-                      </section>
-                    </p>
-                  </div>
+                  <AnimatedText text={<div className="brew-text">
+                    We believe every brand carries a story and looking for the
+                    optimum communication strategy to interact with their
+                    audience. <span className="text-highlight">In the era of technology and artificial
+                      intelligence, we design campaigns with human touch that
+                      leaves a lasting impression.</span> With Squash, you can amplify
+                    your brand’s communication making it more interactive and
+                    people centric. This will not only generate leads but also
+                    make your brand more relatable and problem solving to your
+                    consumers. <span className="text-highlight">
+                      Join us on a journey where marketing transcends
+                      the ordinary and becomes a catalyst for connection,
+                      creativity, and growth.
+                    </span>
+                  </div>} animation='slide-up' />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h2
-              className="text-lg-center stroke title"
-            >
-              Specialist
-            </h2>
+            <AnimatedText text={<h2 className="text-lg-center stroke title">Specialist</h2>
+            } animation='slide-left' />
             <div className="second_line_title bannertitle">
-              <h2 className="title">Divisions</h2>
+              <AnimatedText text={<h2 className="title">Divisions</h2>
+              } animation='slide-right' />
             </div>
-
           </div>
         </div>
-        <p>
-          A new age{" "}
-          <mark className="text-highlight">marketing suite</mark>{" "}
-          for modern-day experiences.
-        </p>
+        <AnimatedText text={<p>
+          A new age <mark className="text-highlight">marketing suite</mark> for
+          modern-day experiences.
+        </p>} animation='slide-left' />
         <div className="row">
           <div className="col-12">
             <div id="specialistDivisionsSlider" className="row">
               <div className="col-md-4">
                 <div className="grid-view mt-4">
                   <a style={{ textDecoration: "none" }} title="">
-                    <h3
+                    <AnimatedText text={<h3
                       className="dot text-center"
                       style={{
                         position: "relative",
@@ -422,8 +421,8 @@ Squash Global is more than just a marketing agency. We are the architects of bra
                         •
                       </span>
                       Gipsi
-                    </h3>
-                    <p
+                    </h3>} animation='slide-up' />
+                    <AnimatedText text={<p
                       className="text"
                       style={{
                         padding: "13px",
@@ -431,19 +430,14 @@ Squash Global is more than just a marketing agency. We are the architects of bra
                         fontWeight: "400",
                       }}
                     >
-                      Unique insight mining practice that uses a
-                      combination of AI + HI to understand consumers
-                      better
-                    </p>
+                      Unique insight mining practice that uses a combination of
+                      AI + HI to understand consumers better
+                    </p>} animation='slide-up' />
                     <div className="d-flex align-items-center justify-content-center">
                       <img src={grid1Logo} alt="Gipsi Logo" />
                     </div>
                     <div className="SD_slider_img">
-                      <img
-                        src={grid1}
-                        alt="Gipsi AI For Consumers Analysis"
-                        className="w-100"
-                      />
+                      <AnimatedFadeImage src={grid1} alt="Image not found" />
                     </div>
                   </a>
                 </div>
@@ -451,7 +445,7 @@ Squash Global is more than just a marketing agency. We are the architects of bra
               <div className="col-md-4">
                 <div className="grid-view mt-4">
                   <a style={{ textDecoration: "none" }} title="">
-                    <h3
+                    <AnimatedText text={<h3
                       className="dot text-center"
                       style={{
                         position: "relative",
@@ -472,8 +466,8 @@ Squash Global is more than just a marketing agency. We are the architects of bra
                         •
                       </span>
                       Twip
-                    </h3>
-                    <p
+                    </h3>} animation='slide-up' />
+                    <AnimatedText text={<p
                       className="text"
                       style={{
                         padding: "13px",
@@ -481,19 +475,14 @@ Squash Global is more than just a marketing agency. We are the architects of bra
                         fontWeight: "400",
                       }}
                     >
-                      Narrate impactful brand stories with
-                      hyper-personalised, data driven videos for
-                      engagement at scale.
-                    </p>
+                      Narrate impactful brand stories with hyper-personalised,
+                      data driven videos for engagement at scale.
+                    </p>} animation='slide-up' />
                     <div className="d-flex align-items-center justify-content-center mt-4">
                       <img src={grid2Logo} alt="Gipsi Logo" />
                     </div>
                     <div className="SD_slider_img">
-                      <img
-                        src={grid2}
-                        alt="Gipsi AI For Consumers Analysis"
-                        className="w-100"
-                      />
+                      <AnimatedFadeImage src={grid2} alt="Image not found" />
                     </div>
                   </a>
                 </div>
@@ -501,7 +490,7 @@ Squash Global is more than just a marketing agency. We are the architects of bra
               <div className="col-md-4">
                 <div className="grid-view mt-4">
                   <a style={{ textDecoration: "none" }} title="">
-                    <h3
+                    <AnimatedText text={<h3
                       className="dot text-center"
                       style={{
                         position: "relative",
@@ -522,29 +511,23 @@ Squash Global is more than just a marketing agency. We are the architects of bra
                         •
                       </span>
                       Amplify
-                    </h3>
-                    <p
+                    </h3>} animation='slide-up' />
+                    <AnimatedText text={<p
                       style={{
                         padding: "13px",
                         fontSize: "17px",
                         fontWeight: "400",
                       }}
                     >
-                      In partnership with <strong>SEW</strong>, the
-                      specialised practice empowers utilities for enhanced
-                      outreach and stronger customer connections.
-                    </p>
-                    <div
-                      className="d-flex align-items-center justify-content-center"
-                    >
+                      In partnership with <strong>SEW</strong>, the specialised
+                      practice empowers utilities for enhanced outreach and
+                      stronger customer connections.
+                    </p>} animation='slide-up' />
+                    <div className="d-flex align-items-center justify-content-center">
                       <img src={grid3Logo} alt="Gipsi Logo" />
                     </div>
                     <div className="SD_slider_img">
-                      <img
-                        src={grid3}
-                        alt="Gipsi AI For Consumers Analysis"
-                        className="w-100"
-                      />
+                      <AnimatedFadeImage src={grid3} alt="Image not found" />
                     </div>
                   </a>
                 </div>
@@ -553,123 +536,149 @@ Squash Global is more than just a marketing agency. We are the architects of bra
           </div>
         </div>
       </div>
+
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-10 col-md-12">
             <div>
-              <h2 className="stroke title">What We</h2>
-              <div className="second_line_title bannertitle">
-                <h2 className="text-lg-center title m-lg-auto">Specialize In</h2>
-              </div>
+              <AnimatedText text={<h2 className="specialty-text text-lg-center">Where Our</h2>} animation='slide-left' />
+              <AnimatedText text={<h2 className="specialty-text">Specialty Lies</h2>
+              } animation='slide-right' />
             </div>
           </div>
           <div className="col-lg-2 col-md-12">
             <div className="rotating-image text-center">
-              <img src={circularText} alt="Digital Marketing Agency" />
+              <AnimatedFadeImage src={circularText} alt="Image not found" />
             </div>
           </div>
         </div>
       </div>
-      <div>Where Our Specialty Lies / Our Cup of Tea</div>
-      <div className="container" >
+
+      <div className="container">
         <div className="row mt-5 ">
           <div className="col-lg-6 col-md-12 col-12">
             <div>
               <img src={brandIcon} alt="Brand Discovery and Strategy" />
-              <a >
-                <h3>Brand Discovery <br />and Strategy</h3>
+              <a>
+                <AnimatedText text={<h3>
+                  Brand Discovery <br />
+                  and Strategy
+                </h3>} animation='slide-left' />
               </a>
               <div>
-                <ul className="custom-arrow-bullet-point">
+                <AnimatedText text={<ul className="custom-arrow-bullet-point">
                   <li>Strategy and Positioning</li>
                   <li>Brand Identity and Collaterals</li>
                   <li>Brand Architecture</li>
                   <li>Trends and Insights</li>
-                </ul>
+                </ul>} animation='slide-left' />
               </div>
             </div>
             <div style={{ paddingLeft: "80px", paddingTop: "20px" }}>
               <img src={brandIcon} alt="Brand Discovery and Strategy" />
-              <a >
-                <h3>Brand Discovery <br />and Strategy</h3>
+              <a>
+                <AnimatedText text={<h3>
+                  Brand Discovery <br />
+                  and Strategy
+                </h3>} animation='slide-left' />
               </a>
               <div>
-                <ul className="custom-arrow-bullet-point">
+                <AnimatedText text={<ul className="custom-arrow-bullet-point">
                   <li>Strategy and Positioning</li>
                   <li>Brand Identity and Collaterals</li>
                   <li>Brand Architecture</li>
                   <li>Trends and Insights</li>
-                </ul>
+                </ul>} animation='slide-left' />
               </div>
             </div>
           </div>
-          <div className="col-lg-6 col-md-12 col-12 ">
-            <div >
-              <img src={brandIcon} alt="Brand Discovery and Strategy" />
-              <a >
-                <h3 >Brand Discovery <br />and Strategy</h3>
-              </a>
-            </div>
+          <div className="col-lg-6 col-md-12 col-12">
             <div>
-              <ul className="custom-arrow-bullet-point  ">
-                <li>Strategy and Positioning</li>
-                <li>Brand Identity and Collaterals</li>
-                <li>Brand Architecture</li>
-                <li>Trends and Insights</li>
-              </ul>
+              <img src={brandIcon} alt="Brand Discovery and Strategy" />
+              <a>
+                <AnimatedText text={<h3>
+                  Brand Discovery <br />
+                  and Strategy
+                </h3>} animation='slide-right' />
+              </a>
+              <div>
+                <AnimatedText text={<ul className="custom-arrow-bullet-point">
+                  <li>Strategy and Positioning</li>
+                  <li>Brand Identity and Collaterals</li>
+                  <li>Brand Architecture</li>
+                  <li>Trends and Insights</li>
+                </ul>} animation='slide-right' />
+              </div>
             </div>
             <div style={{ paddingLeft: "100px", paddingTop: "20px" }}>
               <img src={brandIcon} alt="Brand Discovery and Strategy" />
-              <a >
-                <h3>Brand Discovery <br />and Strategy</h3>
+              <a>
+                <AnimatedText text={<h3>
+                  Brand Discovery <br />
+                  and Strategy
+                </h3>} animation='slide-right' />
               </a>
               <div>
-                <ul className="custom-arrow-bullet-point">
+                <AnimatedText text={<ul className="custom-arrow-bullet-point">
                   <li>Strategy and Positioning</li>
                   <li>Brand Identity and Collaterals</li>
                   <li>Brand Architecture</li>
                   <li>Trends and Insights</li>
-                </ul>
+                </ul>} animation='slide-right' />
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <div className="container">
         <div className="col-12">
           <div className="title">
-            <h2 className="stroke">Fresh From</h2>
+            <AnimatedText text={<h2 className="stroke">What’s the </h2>
+            } animation='slide-left' />
           </div>
           <div className="second_line_title bannertitle">
-            <h2 className="title">Our Blogs</h2>
+            <AnimatedText text={<h2 className="title">Buzz?</h2>
+            } animation='slide-right' />
           </div>
         </div>
       </div>
+
       <BlogSlider></BlogSlider>
       <div className="container mt-4">
         <div className="row">
           <div className="col-lg-10 col-md-12">
             <div>
-              <h2 className="stroke">Narrate your story the way</h2>
+              <AnimatedText text={<h2 className="stroke">Ready to redefine your </h2>
+              } animation='slide-left' />
               <div className="second_line_title bannertitle">
-                <h2 className="text-lg-center title m-lg-auto">you want to!</h2>
+                <AnimatedText text={<h2 className="text-lg-center title ">brand experience?</h2>
+                } animation='slide-right' />
               </div>
             </div>
           </div>
           <div className="col-lg-2 col-md-12">
             <div className="rotating-image text-center">
-              <img src={circularText} alt="Digital Marketing Agency" />
+              <AnimatedFadeImage src={circularText} alt="Image not found" />
             </div>
           </div>
         </div>
       </div>
       <div className="container mt-4" id="contactForm">
         <form onSubmit={handleSubmit}>
-          <div className="row" >
+          <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
               <label>
                 Full Name
-                <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
+                <sup
+                  style={{
+                    color: "red",
+                    marginLeft: "5px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  *
+                </sup>
               </label>{" "}
               <br />
               <input
@@ -684,7 +693,15 @@ Squash Global is more than just a marketing agency. We are the architects of bra
               />
               <label>
                 State
-                <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
+                <sup
+                  style={{
+                    color: "red",
+                    marginLeft: "5px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  *
+                </sup>
               </label>{" "}
               <br />
               <input
@@ -716,9 +733,7 @@ Squash Global is more than just a marketing agency. We are the architects of bra
                   <option value="Social Media Strategy">
                     Social Media Strategy
                   </option>
-                  <option value="Data and Insights">
-                    Data and Insights
-                  </option>
+                  <option value="Data and Insights">Data and Insights</option>
                   <option value="Creative and Content">
                     Creative and Content
                   </option>
@@ -735,7 +750,15 @@ Squash Global is more than just a marketing agency. We are the architects of bra
             <div className="col-lg-6 col-md-6 col-12">
               <label>
                 Email
-                <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
+                <sup
+                  style={{
+                    color: "red",
+                    marginLeft: "5px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  *
+                </sup>
               </label>{" "}
               <br />
               <input
@@ -750,7 +773,15 @@ Squash Global is more than just a marketing agency. We are the architects of bra
               />
               <label>
                 Contact number
-                <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
+                <sup
+                  style={{
+                    color: "red",
+                    marginLeft: "5px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  *
+                </sup>
               </label>{" "}
               <br />
               <input
@@ -764,8 +795,19 @@ Squash Global is more than just a marketing agency. We are the architects of bra
                 pattern="[0-9]{10}"
                 required
               />
-              <label>Here's something more to add <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
-              </label> <br></br>
+              <label>
+                Here's something more to add{" "}
+                <sup
+                  style={{
+                    color: "red",
+                    marginLeft: "5px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  *
+                </sup>
+              </label>{" "}
+              <br></br>
               <input
                 type="text"
                 name="about"
@@ -782,12 +824,7 @@ Squash Global is more than just a marketing agency. We are the architects of bra
             id="contactSubmitBtn"
             className="d-flex justify-content-center mt-lg-5"
           >
-            <input
-              type="submit"
-              name="submit"
-              value="Send it"
-              class="submit"
-            />
+            <input type="submit" name="submit" value="Send it" class="submit" />
           </div>
         </form>
       </div>

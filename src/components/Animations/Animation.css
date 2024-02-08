@@ -102,6 +102,33 @@
 
 /* Text animation ends (Bottom to Top) */
 
+/* Fade-in text starts */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+
+/* .fade-in-animation {
+  animation: fadeIn 1.5s ease-in-out;
+} */
+.text-animation.fade-in {
+  animation-name: slideUp;
+  animation-duration: 3s; 
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+/* Fade-in text starts */
+
+
 /* Text animation starts (Top to Bottom) */
 
 @keyframes slideDown {
@@ -124,3 +151,70 @@
 
 /* Text animation ends (Top to Bottom) */
 
+/* rotating-image starts */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-image {
+  animation: rotate 5s linear infinite;
+}
+/* rotating-image ends */
+
+/* Fade-in animation starts */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.5); /* Initial position with scale */
+    filter: blur(10px); /* Optional: Add a blur effect */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1); /* Final position with original scale */
+    filter: blur(0); /* Remove the blur effect */
+  }
+}
+
+.fade-in-animation {
+  animation: fadeIn 2.5s ease-in-out; /* Adjust the duration and easing as needed */
+}
+/* Fade-in animation ends */
+
+
+/* unfold image animation starts */
+
+@keyframes unfoldMat {
+  0% {
+    transform: scaleX(0);
+    transform-origin: right;
+    opacity: 0;
+  }
+  25% {
+    transform: scaleX(0.75);
+    opacity: 0.25;
+  }
+  50% {
+    transform: scaleX(1.25);
+    opacity: 0.5;
+  }
+  75% {
+    transform: scaleX(1.1);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.unfold-animation {
+  animation: unfoldMat 3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* unfold image animation starts */
