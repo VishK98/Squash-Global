@@ -83,35 +83,35 @@ function Sector() {
       url: Consumer
     },
     {
-      title: "BFSI",
+      title: "SOCIAL MEDIA MANAGEMENT",
       url: BFSI
     },
     {
-      title: "Automotive",
+      title: "CREATIVE",
       url: Automotive
     },
     {
-      title: "Retails",
+      title: "CONTENT",
       url: Retails
     },
     {
-      title: "Food and Beverages",
+      title: "PRODUCTION",
       url: foods
     },
     {
-      title: "Tourism and Hospitality",
+      title: "WEBSITE DESIGN AND DEVLOPMENT",
       url: Hospitality
     },
     {
-      title: "Media and Entertainment",
+      title: "AWESOME THINGS THAT SQUASH DOES THAT WILL MAKE YOU GO WOW! ",
       url: Media
     },
     {
-      title: "Pharmaceutical",
+      title: "PROGRAMMATIC ADVERTISING",
       url: Pharmaceutical
     },
     {
-      title: "Telecom",
+      title: "INFLUENCER MARKETING",
       url: Telecom
     },
     {
