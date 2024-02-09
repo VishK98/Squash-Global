@@ -190,8 +190,8 @@ function Home() {
               <AnimatedFadeImage src={onHerLip} alt="Image not found" />
             </div>
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex flex-column align-items-center responsive-text">
-              <h3 style={{ fontWeight: "bold" }}>What's on the Lips</h3>
-              <div className="row">
+              <AnimatedText className="brewText-stroke" text={<h3 style={{ fontWeight: "bold" }}>What's on the Lips</h3>
+              } animation='slide-up' />              <div className="row">
                 <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex align-items-center">
                   <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>
                     Explore{" "}
@@ -222,8 +222,8 @@ function Home() {
               className="col-lg-5 col-md-5 col-sm-12 col-12 d-none d-md-block"
               style={{ marginTop: "150px" }}
             >
-              <h3 style={{ fontWeight: "bold" }}>What's on the TASC</h3>
-              <div
+              <AnimatedText className="brewText-stroke" text={<h3 style={{ fontWeight: "bold" }}>What's on the TASC</h3>
+              } animation='slide-up' />              <div
                 className="row"
                 style={{ display: "flex", alignItems: "center" }}
               >
@@ -255,7 +255,8 @@ function Home() {
               <AnimatedFadeImage src={tasc} alt="Image not found" />
             </div>
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 mt-3 d-flex flex-column align-items-center d-md-none">
-              <h3 style={{ fontWeight: "bold" }}>What's on the TASC</h3>
+              <AnimatedText text={<h3 style={{ fontWeight: "bold" }}>What's on the TASC</h3>
+              } animation='slide-up' />
               <div className="row">
                 <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex align-items-center">
                   <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>
