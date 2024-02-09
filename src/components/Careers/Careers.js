@@ -2,11 +2,16 @@ import React, { useState, useEffect, useRef } from "react";
 import "./Careers.css";
 import ScrollToTopButton from '../TopButton/TopButton';
 import image from "../../assets/images/career-in-tonic.jpg";
-import downArrow from "../../assets/images/small-circle-down-arrow.png";
+// import downArrow from "../../assets/images/small-circle-down-arrow.png";
+import downArrow from "../../assets/images/-down-arrow.png";
 import team from "../../assets/images/team-image.webp";
-import coffee from "../../assets/images/coffee.png";
 import teamBreak from "../../assets/images/team-break-time.webp";
 import jobPost from "../../assets/images/hiring.png";
+import AnimatedText from '../Animations/TextAnimation';
+import ImageAnimationFade from "../Animations/ImageAnimationFade";
+import AnimatedImage from "../Animations/ImageAnimation";
+import AnimatedUnfoldImage from '../Animations/ImageAnimationUnfold';
+
 
 function Careers() {
   const jobData = [
@@ -169,75 +174,65 @@ function Careers() {
         <div className="row">
           <div className="col-lg-12">
             <div class="route-text">
-              <ol class="breadcrumb bg-transparent px-0 route-text mt-4">
+              <ol class="breadcrumb route-text mt-3">
                 <li>
                   <a
                     href="/"
                     style={{ color: "grey", textDecoration: "none" }}
                   >
-                    Home /
+                    <AnimatedText text="Home /" animation="slide-left" />
                   </a>
                 </li>
-                <li
-                  class="breadcrumb-item active"
-                  aria-current="page"
-                  style={{ marginLeft: "8px", color: "grey" }}
-                >
-                  Careers
+                <li>
+                  <AnimatedText text="&nbsp;Careers" animation="slide-right" />
                 </li>
               </ol>
             </div>
-            <h1 style={{ fontSize: "50px", fontWeight: "bold" }}>
+            <AnimatedText text={<h1 style={{ fontSize: "50px", fontWeight: "bold" }}>
               Start your journey in Squash
-            </h1>
+            </h1>} animation='slide-left' />
           </div>
         </div>
       </div>
       <div className="container ">
-        <div className="row pt-md-3">
+        <div className="row ">
           <div className="col-lg-12 col-md-12 col-12">
-            <img
-              style={{ width: "100%" }}
-              src={image}
-              alt="Career at Digital Marketing Agency"
-            />
+            <ImageAnimationFade src={image} alt="Image not found" />
           </div>
           <div className="col-lg-12 col-md-12 col-12">
-            <h2 style={{ fontSize: "50px", fontWeight: "bold" }}>Work with a dynamic team and creative minded people.</h2>
+            <AnimatedText text={<h2 style={{ fontSize: "45px", fontWeight: "bold", marginTop: "10px" }}>Work with a dynamic team and creative minded people.</h2>
+            } animation='slide-up' />
             <a href="#latestOpeningSection" className="explorbtn mt-lg-4">
-              <i className="joinUs">Join Us</i>
-              <span>
-                <img
-                  className="animated-arrow-btn"
-                  style={{ marginLeft: "15px" }}
-                  src={downArrow}
-                  alt="join us"
-                />
-              </span>
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <AnimatedText text={<i>Join Us</i>} animation='slide-left' />
+                <div className="animated-arrow-btn" style={{ marginLeft: "10px", height: "50px", width: "50px" }}>
+                  <AnimatedUnfoldImage src={downArrow} alt="Image not found" />
+                </div>
+              </div>
             </a>
           </div>
         </div>
       </div>
-      <div className="container mt-3">
-        <h1 style={{ fontWeight: "bold" }}>What to expect at Squash?</h1>
-        <p className="mt-4" style={{ fontSize: "20px" }}>
+      <div className="container">
+        <AnimatedText text={<h1 style={{ fontWeight: "bold" }}>What to expect at Squash?</h1>
+        } animation='slide-up' />
+        <AnimatedText text={<p className="mt-2" style={{ fontSize: "20px" }}>
           <span style={{ fontWeight: "600" }}>
             At Squash, we believe in growing together.
           </span>
           <br />
           <br /> A place we offer our talents to bloom in an atmosphere where they can have professional and personal growth. Squash celebrates achievements together, offer diverse opportunities and development programs.
-        </p>
+        </p>} animation='slide-up' />
       </div>
       <div className="container">
         <div className="row">
           <div className="col-lg-5 col-md-5 col-12 col-sm-12 mt-5">
-            <h3 style={{ fontWeight: "bold" }}>
+            <AnimatedText text={<h3 style={{ fontWeight: "bold" }}>
               Where ideas thrive and turn that idea into reality
-            </h3>
-            <p className="mt-4" style={{ fontSize: "20px" }}>
+            </h3>} animation='slide-left' />
+            <AnimatedText text={<p className="mt-4" style={{ fontSize: "20px" }}>
               "At{" "}
               <span
-                className="animated-text"
                 style={{ fontWeight: "bold", color: "#fe504f" }}
               >
                 Squash Global
@@ -245,44 +240,33 @@ function Careers() {
               , we foster collaboration, innovation and creative minds to explore limitless possibilities. If you are someone who wants to be a part of the next big thing in the marketing and advertising industry,
               " <br /> <br />
               Write to us at <a className="mail-text" href='mailto:hr@squashglobal.com'>hr@squashglobal.com</a>
-            </p>
+            </p>} animation='fade-in' />
           </div>
           <div className="col-lg-7 col-md-7 col-12 col-sm-12 mt-4 ">
             <div>
-              <img
-                style={{ width: "100%" }}
-                src={team}
-                alt="Career at Digital Marketing Agency"
-              />
+              <AnimatedImage src={team} alt="Image not found" />
             </div>
           </div>
         </div>
       </div>
       <div className="container">
         <div style={{ display: "flex" }}>
-          <h1 style={{ fontWeight: "bold" }}>Life at Squash Global</h1>
-          {/* <img
-            className="animated-coffee-text"
-            style={{
-              height: "45px",
-              width: "45px",
-              marginLeft: "19px",
-              marginTop: "4px",
-            }}
-            src={coffee}
-          ></img> */}
-          <img className="animated-coffee-text" style={{
-            height: "45px",
-            width: "45px",
-            marginLeft: "19px",
+          <AnimatedText text={<h1 style={{ fontWeight: "bold" }}>Life at Squash Global</h1>
+          } animation='slide-left' />
+          <div className="animated-arrow-btn"  style={{
+            height: "50px",
+            width: "50px",
+            marginLeft: "10px",
             marginTop: "4px",
-          }} src="https://img.icons8.com/clouds/100/food-bar.png" alt="iced-coffee" />
+            marginBottom: "10px"
+          }} >
+            <AnimatedUnfoldImage src='https://img.icons8.com/clouds/100/food-bar.png' alt="Image not found" />
+          </div>
         </div>
       </div>
-      <img className="mt-4" style={{ width: "100%" }} src={teamBreak}></img>
+      <AnimatedUnfoldImage src={teamBreak} alt="Image not found" />
       <div className="container">
         <h1 className="mt-3">Latest Openings</h1>
-
         <div className="row" ref={closeRef}>
           {jobData.map((job, index) => (
             <div className="col-xs-12 col-sm-6 col-md-4 mt-4 col-lg-4" key={index}>
@@ -394,13 +378,13 @@ function Careers() {
             style={{ padding: "20px" }}
             ref={formRef}
           >
-            <h4 className="content-box-text">
+            <AnimatedText text={<h4 className="content-box-text">
               We love people with ideas & the thirst to see that idea through.
-            </h4>
-            <h4 className="content-box-text">
+            </h4>} animation='slide-up' />
+            <AnimatedText text={<h4 className="content-box-text">
               If you think you can match up to our challenge, give us a shout &
               we will make it work.
-            </h4>
+            </h4>} animation='slide-up' />
           </div>
 
           <div
@@ -408,7 +392,7 @@ function Careers() {
           >
             <div id="contactForm" >
               <form onSubmit={handleSubmit}>
-                <label>
+                <AnimatedText text={<label>
                   Full Name
                   <sup
                     style={{
@@ -419,9 +403,8 @@ function Careers() {
                   >
                     *
                   </sup>
-                </label>{" "}
-                <br />
-                <input
+                </label>} animation='slide-up' />
+                <AnimatedText text={<input
                   type="text"
                   name="name"
                   value={formData.name}
@@ -430,45 +413,31 @@ function Careers() {
                   autoComplete="off"
                   className="form-field mb-3"
                   required
-                />
-                <div style={{ flex: 1, }}>
-                  <label>
-                    Email
-                    <sup
-                      style={{
-                        color: "red",
-                        marginLeft: "5px",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      *
-                    </sup>
-                  </label>{" "}
-                  <br />
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="Type here"
-                    autoComplete="off"
-                    className="form-field "
-                    required
-                  />
-                </div>
-                <div >
-                  <label>
-                    <sup
-                      style={{
-                        color: "red",
-                        marginLeft: "5px",
-                        fontWeight: "bold",
-                      }}
-                    >
-                    </sup>
-                  </label>{" "}
-                </div>
-                <label>
+                />} animation='slide-up' />
+
+                <AnimatedText text={<label>
+                  Email
+                  <sup
+                    style={{
+                      color: "red",
+                      marginLeft: "5px",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    *
+                  </sup>
+                </label>} animation='slide-up' />
+                <AnimatedText text={<input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Type here"
+                  autoComplete="off"
+                  className="form-field "
+                  required
+                />} animation='slide-up' />
+                <AnimatedText className='mt-2' text={<label>
                   Contact number
                   <sup
                     style={{
@@ -479,9 +448,8 @@ function Careers() {
                   >
                     *
                   </sup>
-                </label>{" "}
-                <br />
-                <input
+                </label>} animation='slide-up' />
+                <AnimatedText text={<input
                   type="tel"
                   name="contactNumber"
                   value={formData.contactNumber}
@@ -491,52 +459,51 @@ function Careers() {
                   className="form-field mb-3"
                   pattern="[0-9]{10}"
                   required
-                />
-                <div>
-                  <label>
-                    Role applying for
-                    <sup
-                      style={{
-                        color: "red",
-                        marginLeft: "5px",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      *
-                    </sup>
-                  </label>{" "}
-                  <br />
-                  <select
-                    type="dropdown"
-                    name="service"
-                    value={formData.service}
-                    onChange={handleChange}
-                    placeholder="Type here"
-                    autoComplete="off"
-                    className="form-field mb-3"
-                    required
+                />} animation='slide-up' />
+                <AnimatedText text={<label>
+                  Role applying for
+                  <sup
+                    style={{
+                      color: "red",
+                      marginLeft: "5px",
+                      fontWeight: "bold",
+                    }}
                   >
-                    <option value="selected">Select role</option>
-                    <option value="Jr. Project Manager">
-                      Jr. Project Manager
-                    </option>
-                    <option value="Account Management">
-                      Account Management
-                    </option>
-                    <option value="Associate Creative Director">
-                      Associate Creative Director
-                    </option>
-                    <option value="Creative Supervisor">
-                      Creative Supervisor
-                    </option>
-                    <option value="Scriptwriter">Scriptwriter</option>
-                    <option value="SEO Technical Lead">
-                      SEO Technical Lead
-                    </option>
-                  </select>
-                </div>
-                <label>Write something about yourself<sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup></label> <br />
-                <input
+                    *
+                  </sup>
+                </label>} animation='slide-up' />
+                <AnimatedText text={<select
+                  type="dropdown"
+                  name="service"
+                  value={formData.service}
+                  onChange={handleChange}
+                  placeholder="Type here"
+                  autoComplete="off"
+                  className="form-field mb-3"
+                  required
+                >
+                  <option value="selected">Select role</option>
+                  <option value="Jr. Project Manager">
+                    Jr. Project Manager
+                  </option>
+                  <option value="Account Management">
+                    Account Management
+                  </option>
+                  <option value="Associate Creative Director">
+                    Associate Creative Director
+                  </option>
+                  <option value="Creative Supervisor">
+                    Creative Supervisor
+                  </option>
+                  <option value="Scriptwriter">Scriptwriter</option>
+                  <option value="SEO Technical Lead">
+                    SEO Technical Lead
+                  </option>
+                </select>} animation='slide-up' />
+                <AnimatedText text={<label>Write something about yourself<sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup></label>
+                } animation='slide-up' />
+
+                <AnimatedText text={<input
                   type="text"
                   name="about"
                   value={formData.about}
@@ -545,8 +512,8 @@ function Careers() {
                   autoComplete="off"
                   className="form-field mb-3"
                   required
-                />
-                <label>
+                />} animation='slide-up' />
+                <AnimatedText text={<label>
                   Attach your resume here
                   <sup
                     style={{
@@ -557,9 +524,8 @@ function Careers() {
                   >
                     *
                   </sup>
-                </label>{" "}
-                <br />
-                <input
+                </label>} animation='sldie-up' />
+                <AnimatedText text={<input
                   id="file-upload"
                   type="file"
                   name="resume"
@@ -567,40 +533,38 @@ function Careers() {
                   accept=".pdf,.doc,.docx"
                   style={{ display: "none" }}
                   className="form-field"
-                />
-                <div style={{ display: "flex" }}>
-                  <label
-                    htmlFor="file-upload"
-                    className="custom-file-upload"
-                    style={{ color: "grey", marginRight: "5px" }} // Add margin for spacing
-                    id="file-upload-label"
-                  >
-                    No file chosen
-                  </label>
-                  <span
-                    id="file-upload-close"
-                    onClick={() => {
-                      document.getElementById("file-upload").value = ""; // Reset the file input
-                      document.getElementById(
-                        "file-upload-label"
-                      ).textContent = "No file chosen"; // Reset the label text
-                      document.getElementById(
-                        "file-upload-close"
-                      ).style.display = "none"; // Hide the close icon
-                    }}
-                    style={{ display: "none", cursor: "pointer" }}
-                  >
-                    &#x2715; {/* Close icon (×) */}
-                  </span>
-                </div>
-                <div className="d-flex justify-content-center mt-4 mb-3">
+                />} animation='slide-up' />
+                <AnimatedText text={<label
+                  htmlFor="file-upload"
+                  className="custom-file-upload"
+                  style={{ color: "grey", marginRight: "5px" }} // Add margin for spacing
+                  id="file-upload-label"
+                >
+                  No file chosen
+                </label>} animation='slide-up' />
+                <span
+                  id="file-upload-close"
+                  onClick={() => {
+                    document.getElementById("file-upload").value = ""; // Reset the file input
+                    document.getElementById(
+                      "file-upload-label"
+                    ).textContent = "No file chosen"; // Reset the label text
+                    document.getElementById(
+                      "file-upload-close"
+                    ).style.display = "none"; // Hide the close icon
+                  }}
+                  style={{ display: "none", cursor: "pointer" }}
+                >
+                  &#x2715; {/* Close icon (×) */}
+                </span>
+                <AnimatedText text={<div className="d-flex justify-content-center mt-4 mb-3">
                   <input
                     type="submit"
                     name="submit"
                     value="Send it"
                     className="submit"
                   />
-                </div>
+                </div>} animation='fade-in' />
               </form>
             </div>
           </div>

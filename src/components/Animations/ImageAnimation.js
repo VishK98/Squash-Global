@@ -32,7 +32,7 @@ const AnimatedImage = ({ src, alt }) => {
     <img
       src={src}
       alt={alt}
-      className="slide-in w-100"
+      className="slide-in w-100 img-fluid"
       ref={imageRef}
     />
   );

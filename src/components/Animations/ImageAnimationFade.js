@@ -32,7 +32,7 @@ const ImageAnimationFade = ({ src, alt }) => {
     <img
       src={src}
       alt={alt}
-      className="fade-in w-100"
+      className="fade-in w-100 img-fluid"
       ref={imageRef}
     />
   );

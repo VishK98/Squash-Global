@@ -2,10 +2,7 @@
 import React, { useState } from "react";
 import ScrollToTopButton from '../TopButton/TopButton';
 import contact from "../../assets/images/contact-img-2.webp";
-import { useFormik } from 'formik';
-import * as Yup from 'yup';
 import AnimatedText from '../Animations/TextAnimation';
-import AnimatedUnfoldImage from '../Animations/ImageAnimationUnfold';
 import "./Contact.css";
 import axios from 'axios';
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
@@ -76,7 +73,7 @@ function Contact() {
           </div>
           <div className="inner_title hidden">
             <AnimatedText text={<h1 className="contact-page-title">Let’s connect us</h1>
-            
+
             } animation="slide-left" />
           </div>
         </div>
@@ -283,12 +280,12 @@ function Contact() {
                 </div>
                 <div className="d-flex justify-content-center text-center"
                 >
-                <AnimatedText text={  <input style={{ fontSize: "20px", fontWeight: "bold", marginTop: "25px" }}
+                  <AnimatedText text={<input style={{ fontSize: "20px", fontWeight: "bold", marginTop: "25px" }}
                     type="submit"
                     name="submit"
                     value="Send it"
                     class="submit submit-depth"
-                  />} animation='fade-in'/>
+                  />} animation='fade-in' />
                 </div>
 
               </form>
@@ -296,8 +293,6 @@ function Contact() {
 
           </div>
         </div>
-
-
       </div>
       <ScrollToTopButton />
     </>

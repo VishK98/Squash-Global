@@ -102,10 +102,7 @@ function Sector() {
       title: "WEBSITE DESIGN AND DEVLOPMENT",
       url: Hospitality
     },
-    {
-      title: "AWESOME THINGS THAT SQUASH DOES THAT WILL MAKE YOU GO WOW! ",
-      url: Media
-    },
+   
     {
       title: "PROGRAMMATIC ADVERTISING",
       url: Pharmaceutical
@@ -114,10 +111,7 @@ function Sector() {
       title: "INFLUENCER MARKETING",
       url: Telecom
     },
-    {
-      title: "Fashion And Lifestyle",
-      url: Fashion
-    },
+    
   ];
   return (
     <>
@@ -187,19 +181,29 @@ function Sector() {
           className="row"
           style={{ justifyContent: "space-between", marginRight: "5px" }}
         >
-          {services.map((image, index) => (
-            // console.log('data', image)
-            <div className="col-lg-2 col-md-6 col-6 mt-3">
-              <div className="boxes">
-                <div className="col">
-                  <div className="industries-four-boxes h-100">
-                    <img className="box-img" src={image.url} alt="FMGC" />
-                    <p className="mt-2 box-text">{image.title}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
+         <div className="row">
+         <div className="row">
+         <div className="row">
+         <div className="row">
+  {services.map((image, index) => (
+    <div key={index} className={`col-lg-2 col-md-2 col-sm-4 col-6 mt-3 ${index % 5 === 2 ? 'special-col' : ''}`}>
+      <div className="boxes">
+        <div className="col">
+          <div className="industries-four-boxes h-100">
+            <img className="box-img" src={image.url} alt={image.title} />
+            <p className="mt-2 box-text">{image.title}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+</div>
+
+</div>
+
+</div>
+
         </div>
       </div>
       <div className="container">

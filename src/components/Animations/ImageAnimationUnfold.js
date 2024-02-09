@@ -32,7 +32,7 @@ const ImageAnimationFade = ({ src, alt }) => {
     <img
       src={src}
       alt={alt}
-      className="unfold-animation w-100"
+      className="unfold-animation w-100 img-fluid"
       ref={imageRef}
     />
   );
