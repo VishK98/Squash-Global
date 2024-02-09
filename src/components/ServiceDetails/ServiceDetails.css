@@ -1,0 +1,5 @@
+.service-title {
+    -webkit-text-stroke: 1px #000;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+}
