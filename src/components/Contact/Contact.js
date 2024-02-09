@@ -6,6 +6,8 @@ import AnimatedText from '../Animations/TextAnimation';
 import "./Contact.css";
 import axios from 'axios';
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
+import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
+
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -73,7 +75,6 @@ function Contact() {
           </div>
           <div className="inner_title hidden">
             <AnimatedText text={<h1 className="contact-page-title">Let’s connect us</h1>
-
             } animation="slide-left" />
           </div>
         </div>
@@ -85,14 +86,9 @@ function Contact() {
           <div className="col-lg-5 pt-lg-5">
             <div className="mt-4 mt-lg-0 address-info topslide">
               <div style={{ display: "flex", alignItems: "flex-start" }}>
+
                 <div style={{ position: "relative", height: "48px", width: "48px" }}>
-                  <img
-                    style={{ position: "absolute", top: 0, left: 0 }}
-                    width="48"
-                    height="48"
-                    src="https://img.icons8.com/color-glass/48/red-fort.png"
-                    alt="red-fort"
-                  />
+                  <ImageAnimationUnfold src='https://img.icons8.com/color-glass/48/red-fort.png' alt="Image not found" />
                 </div>
                 <div style={{ marginLeft: "12px", }}>
                   <AnimatedText text={<h2 className="india-text"> India</h2>} animation="slide-up" />
@@ -111,18 +107,16 @@ function Contact() {
                 rel="noopener noreferrer"
                 className="view-map-text mt-3"
               >
-                {/* <img src={mapIcon} alt="map pin" /> */}
-                <img width="48px" height="48px" src="https://img.icons8.com/arcade/64/marker.png" alt="marker" />
+                <div style={{ height: "48px", width: "48px" }}>
+                  <ImageAnimationUnfold src='https://img.icons8.com/arcade/64/marker.png' alt="Image not found" />
+                </div>
                 <AnimatedText text={<span style={{ marginLeft: "12px", fontFamily: "Times New Roman, Times, serif" }}>Find us on the map</span>
                 } animation="slide-up" />
               </a>
               <p className="phone mt-3" style={{ display: "flex", alignItems: "center" }}>
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/stickers/100/clr_incoming_call_on_iphone.png"
-                  alt="clr_incoming_call_on_iphone"
-                />
+                <div style={{ position: "relative", height: "48px", width: "48px" }}>
+                  <ImageAnimationUnfold src='https://img.icons8.com/stickers/100/clr_incoming_call_on_iphone.png' alt="Image not found" />
+                </div>
                 <AnimatedText
                   text={
                     <span style={{ marginLeft: "15px" }}>
@@ -136,12 +130,9 @@ function Contact() {
                 />
               </p>
               <p className="phone mt-3" style={{ display: "flex", alignItems: "center" }}>
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/stickers/100/gmail-new.png"
-                  alt="clr_incoming_call_on_iphone"
-                />
+                <div style={{ position: "relative", height: "48px", width: "48px" }}>
+                  <ImageAnimationUnfold src='https://img.icons8.com/stickers/100/gmail-new.png' alt="Image not found" />
+                </div>
                 <AnimatedText
                   text={
                     <span style={{ marginLeft: "10px" }}>

@@ -40,7 +40,6 @@
     background: linear-gradient(90deg, #000, #fe504f, #fe504f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 @media only screen and (max-width: 600px) {

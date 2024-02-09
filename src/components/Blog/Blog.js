@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Blog.css";
 import ScrollToTopButton from '../TopButton/TopButton';
 import blogImage1 from "../../assets/images/blog-image (1).jpg";
+import SmileGIF from "../../assets/images/Icons/icons8-smile.gif";
 import blogImage2 from "../../assets/images/blog-image (2).jpg";
 import blogImage3 from "../../assets/images/blog-image (3).jpg";
 import blogImage4 from "../../assets/images/blog-image (4).jpg";
@@ -12,7 +13,8 @@ import blogImage7 from "../../assets/images/blog-image (7).jpg";
 import blogImage8 from "../../assets/images/blog-image (8).jpg";
 import blogImage9 from "../../assets/images/blog-image (9).jpg";
 import blogImage10 from "../../assets/images/blog-image (10).jpg";
-
+import ImageAnimationFade from "../Animations/ImageAnimationFade";
+import AnimatedText from '../Animations/TextAnimation';
 
 function Blog() {
   const imagesData = [
@@ -83,27 +85,23 @@ function Blog() {
     <>
       <div className="container mt-4">
         <div class="route-text">
-          <ol class="breadcrumb bg-transparent px-0 route-text mt-4">
+          <ol class="breadcrumb route-text mt-3">
             <li>
               <a
                 href="/"
                 style={{ color: "grey", textDecoration: "none" }}
               >
-                Home /
+                <AnimatedText text="Home /" animation="slide-left" />
               </a>
             </li>
-            <li
-              class="breadcrumb-item active"
-              aria-current="page"
-              style={{ marginLeft: "8px", color: "grey" }}
-            >
-              Blog
+            <li>
+              <AnimatedText text="&nbsp;Blog" animation="slide-right" />
             </li>
           </ol>
         </div>
-        <h1
+        <AnimatedText text={<h1
           style={{
-            fontSize: "50px",
+            fontSize: "40px",
             fontWeight: "bold",
             "@media (max-width: 767px)": {
               fontSize: "25px",
@@ -114,7 +112,8 @@ function Blog() {
           Get the latest transformative insights, trends and growth hacks
           straight out of a Digital agency's playbook.
         </h1>
-        <p className="mt-4">
+        } animation='slide-up' />
+        <AnimatedText text={<p className="mt-4">
           <span
             style={{
               color: "var(--secondary-color)",
@@ -125,22 +124,24 @@ function Blog() {
             We bring you the latest industry trends and best practices to
             overcome all your digital marketing challenges.
           </span>
-        </p>
+        </p>} animation='slide-up' />
       </div>
       <div className="container">
         <div className="row">
           {imagesData.map((image, index) => (
             <div key={index} className="col-md-6 mb-4">
               <div className="box">
-                  <img src={image.url} alt={image.title} />
+                <ImageAnimationFade src={image.url} alt="Image not found" />
                 <div className="box-content">
                   <div className="inner-content">
-                    <h6 className="title d-none d-md-block">{image.title}</h6>
-                    <Link to="/blogDetails"  class="btn-flip mt-4" data-back="😊" data-front="Read more"></Link>
+                    <AnimatedText text={<h6 className="title d-none d-md-block">{image.title}</h6>
+                    } animation="slide-up" />
+                    <Link to="/blogDetails" class="btn-flip mt-4" data-back="😊 😊" data-front="Read more"></Link>
                   </div>
                 </div>
               </div>
-              <h6 style={{textAlign: "center", padding: "10px"}}>{image.description}</h6>
+              <AnimatedText text={<h6 style={{ textAlign: "center", padding: "10px" }}>{image.description}</h6>
+              } animation='slide-up' />
             </div>
           ))}
         </div>

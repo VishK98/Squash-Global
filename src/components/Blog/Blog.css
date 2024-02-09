@@ -11,7 +11,8 @@
 .box .box-content:before,
 .box .box-content:after {
   content: "";
-  background: #080808;
+  /* background: #080808; */
+  background: #220101;
   width: 50%;
   height: 50%;
   transform: translateX(-100%);
@@ -31,11 +32,13 @@
 
 .box .box-content:before,
 .box .box-content:after {
-  background: #000;
+  /* background: #000; */
+  background: #220101;
   transform: translateX(0) translateY(-100%);
   left: auto;
   right: 0;
   transition: all 0.4s ease;
+  opacity: 3;
 }
 
 .box .box-content:after {
@@ -50,13 +53,13 @@
 .box:hover .box-content:before,
 .box:hover .box-content:after {
   transform: translate(0, 0);
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .box img {
   width: 100%;
   height: 100%;
-  transition: all 0.25s;
+  transition: all 0.250s;
 }
 
 .box .box-content {
@@ -87,10 +90,10 @@
 .box .title {
   font-size: 15px;
   font-weight: 700;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
   text-transform: uppercase;
-  text-shadow: 0 0 4px #000;
-  margin: 0 0 3px 0;
+  text-shadow: 3px 5px 12px #220101;
+  /* margin: 0 0 3px 0; */
 }
 
 .box .post {
@@ -180,7 +183,8 @@
     transition: 0.5s;
     ;
     position: absolute;
-    background: #fdb5a5;
+    background: #ffa995;
+    border-radius: 10px;
     content: attr(data-back);
     transform: translateY(-50%) rotateX(90deg);
   }
@@ -197,6 +201,7 @@
     ;
     position: relative;
     background: #eb2f06;
+    border-radius: 10px;
     content: attr(data-front);
     transform: translateY(0) rotateX(0);
   }
