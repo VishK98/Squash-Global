@@ -124,7 +124,7 @@ function Home() {
       <div className="container-fluid p-5">
         <div className="row">
           <div className="col-lg-5">
-            <AnimatedText text={<h2 >
+            <AnimatedText text={<h2 className="brewText-stroke">
               What’s Brewing at Squash Global?
             </h2>} animation="slide-left" />
             <AnimatedText text={<h1 >
@@ -305,9 +305,6 @@ function Home() {
 
         <br />
         <PartnerSlider rtl={true} />
-        <div className="mt-3 mt-lg-5">
-          <PartnerSlider rtl={false} />
-        </div>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">

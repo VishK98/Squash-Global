@@ -28,6 +28,11 @@ h2.stroke {
 .agency-text {
   font-weight: bold;
 }
+.brewText-stroke {
+  -webkit-text-stroke: 1px #000;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
 
 .responsive-text {
   margin-top: 150px;
