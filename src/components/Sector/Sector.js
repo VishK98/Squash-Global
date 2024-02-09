@@ -20,8 +20,6 @@ import AnimatedText from '../Animations/TextAnimation';
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
 
 
-
-
 function Sector() {
   const box = [
     {
@@ -149,12 +147,6 @@ function Sector() {
             </h1>} animation='slide-up' />
             <div className="col-lg-12">
               <picture>
-                {/* <img
-                  src={industriesBanner}
-                  className="img-fluid"
-                  width="100%"
-                  alt="Helping businesses run the World Better"
-                /> */}
                 <ImageAnimationFade src={industriesBanner} alt="Image not found" />
               </picture>
               <AnimatedText text={<p style={{ fontSize: "20px" }}>
@@ -181,35 +173,26 @@ function Sector() {
         <div
           className="row"
           style={{ justifyContent: "space-between", marginRight: "5px" }}
-        >
-          <div className="row">
+        ><Link style={{textDecoration: "none"}} to="/serviceDetails">
             <div className="row">
-              <div className="row">
-                <div className="row">
-                  {services.map((image, index) => (
-                    <div key={index} className={`col-lg-2 col-md-2 col-sm-4 col-6 mt-3 ${index % 5 === 2 ? 'special-col' : ''}`}>
-                      <div className="boxes">
-                        <div className="col">
-                          <div className="industries-four-boxes h-100">
-                            {/* <ImageAnimationFade  src={image.url} alt="Image not found" /> */}
-                            {/* <img className="box-img" src={image.url} alt={image.title} /> */}
-                            <div className="box-img">
-                              <ImageAnimationFade src={image.url} alt="Image not found" />
-                            </div>
-                            <AnimatedText text={<p className="mt-2 box-text">{image.title}</p>
-                            } animation='slide-up' />
-                          </div>
+              {services.map((image, index) => (
+                <div key={index} className={`col-lg-2 col-md-2 col-sm-4 col-6 mt-3 ${index % 5 === 2 ? 'special-col' : ''}`}
+                onClick={() => console.log(`Box ${index} clicked`)}
+                >
+                  <div className="boxes">
+                    <div className="col">
+                      <div className="industries-four-boxes h-100">
+                        <div className="box-img">
+                          <ImageAnimationFade src={image.url} alt="Image not found" />
                         </div>
+                        <AnimatedText text={<p className="mt-2 box-text">{image.title}</p>} animation='slide-up' />
                       </div>
                     </div>
-                  ))}
+                  </div>
                 </div>
-              </div>
-
+              ))}
             </div>
-
-          </div>
-
+          </Link>
         </div>
       </div>
       <div className="container">
