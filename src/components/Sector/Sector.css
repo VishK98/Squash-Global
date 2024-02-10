@@ -5,7 +5,7 @@
 
 .boxes {
   height: 180px;
-  /* width: 100%; */
+  width: 180px;
   background-color: #fff;
   border-radius: 10px;
   border: 1px solid rgb(222, 221, 221);
@@ -70,10 +70,6 @@
 @media only screen and (max-width: 625px) {
   .industries-page-title {
     font-size: 35px;
-  }
-
-  .boxes {
-    width: 105%;
   }
 
   .box-title {
