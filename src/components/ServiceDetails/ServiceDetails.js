@@ -1,9 +1,14 @@
 import React from 'react'
 import "./ServiceDetails.css"
+import img from "../../assets/images/mplanning.png";
+
 
 function ServiceDetails() {
   return (
-    <div> <h1 className="text-lg-center service-title">MEDIA PLANNING AND BUYING</h1>
+   <div className='container'>
+     <h1 className="text-lg-center service-title">MEDIA PLANNING AND BUYING</h1>
+     <div className='row mt-lg-5'>
+      <div className='col-lg-7 col-md-7 col-12'>
       <h3>FROM TRADITIONAL TO DIGITAL</h3>
       <h4>We Cover It ALL!</h4>
       <p>The medium is the power and to harness that power you need Media Planning experts by your side who knows how and when to deliver that message to the right people.</p>
@@ -15,7 +20,14 @@ function ServiceDetails() {
     <p>All these three are interconnected and our media planning team consider each and every aspect during the early stage of plan formation. </p>
     <p>Want the same for your Business?</p>
     <p>How about catching up for a Coffee!</p>
+
+      </div>
+      <div className='col-lg-5 col-md-5 col-12'>
+      <img src={img} className='tittle-img' alt=''/> 
+      </div>
     </div>
+   </div>
+  
   )
 }
 
