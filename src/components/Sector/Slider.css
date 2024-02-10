@@ -23,10 +23,11 @@
     padding: 30px;
     justify-content: center;
     text-align: center;
-    transition: background-color 0.3s ease,
+    transition: background-color  2s ease,
 } 
 .slider-box:hover{
     background-color: #fe504f;
+
 
 }
 .slider-img {
