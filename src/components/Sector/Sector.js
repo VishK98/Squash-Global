@@ -18,6 +18,8 @@ import Expert from "../../assets/images/connect-with-our-experts.png";
 import { Link } from "react-router-dom";
 import AnimatedText from '../Animations/TextAnimation';
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
+// import Slider from "react-slick";
+import Slider from './Slider';
 
 
 function Sector() {
@@ -173,11 +175,11 @@ function Sector() {
         <div
           className="row"
           style={{ justifyContent: "space-between", marginRight: "5px" }}
-        ><Link style={{textDecoration: "none"}} to="/serviceDetails">
+        ><Link style={{ textDecoration: "none" }} to="/serviceDetails">
             <div className="row">
               {services.map((image, index) => (
                 <div key={index} className={`col-lg-2 col-md-2 col-sm-4 col-6 mt-3 ${index % 5 === 2 ? 'special-col' : ''}`}
-                onClick={() => console.log(`Box ${index} clicked`)}
+                  onClick={() => console.log(`Box ${index} clicked`)}
                 >
                   <div className="boxes">
                     <div className="col">
@@ -199,27 +201,8 @@ function Sector() {
         <AnimatedText text={<h2 className="box-title">
           Some of the industry sectors we partner with
         </h2>} animation='slide-right' />
-        <div
-          className="row"
-          style={{ justifyContent: "space-between", marginRight: "5px" }}
-        >
-          {box.map((image, index) => (
-            <div key={index} className={`col-lg-2 col-md-2 col-sm-4 col-6 mt-3 ${index % 5 === 2 ? 'special-col' : ''}`}>
-              <div className="boxes">
-                <div className="col">
-                  <div className="industries-four-boxes h-100">
-                    <div className="box-img">
-                      <ImageAnimationFade src={image.url} alt="Image not found" />
-                    </div>
-                    <AnimatedText text={<p className="mt-2 box-text">{image.title}</p>
-                    } animation='slide-up' />
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
+        <Slider box={box} />
       <div className="position-relative">
         <img
           src={Expert}
