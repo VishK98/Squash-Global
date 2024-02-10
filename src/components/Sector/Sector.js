@@ -197,13 +197,13 @@ function Sector() {
           </Link>
         </div>
       </div>
-      <div className="container">
+      <div className="container-fluid  p-3">
         <AnimatedText text={<h2 className="box-title">
           Some of the industry sectors we partner with
         </h2>} animation='slide-right' />
       </div>
         <Slider box={box} />
-      <div className="position-relative">
+      <div className="position-relative mt-2">
         <img
           src={Expert}
           className="img-fluid mt-lg-4 mt-3"

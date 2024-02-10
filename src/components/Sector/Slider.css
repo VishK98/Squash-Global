@@ -1,6 +1,8 @@
 .slider-container {
     display: flex;
     overflow-x: hidden;
+    max-width: 100%; 
+    /* overflow: hidden; */
 }
 
 .slider {
@@ -23,6 +25,10 @@
     text-align: center;
     transition: background-color 0.3s ease,
 } 
+.slider-box:hover{
+    background-color: #fe504f;
+
+}
 .slider-img {
     height: 50px;
     width: 50px;

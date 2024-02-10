@@ -9,7 +9,6 @@ import ScrollToTopButton from "../TopButton/TopButton";
 import bigCircle from "../../assets/images/big-circle-down-arrow.png";
 // import gispiImage from "../../assets/images/gipsi-report.png";
 import gispiImage from "../../assets/images/demo-image.png";
-
 import arrowMore from "../../assets/images/arrow-more.png";
 import tasc from "../../assets/images/TASC.png";
 import onHerLip from "../../assets/images/Whats-on-her-lip.jpg";
