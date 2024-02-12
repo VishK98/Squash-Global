@@ -4,7 +4,7 @@ import img from "../../assets/images/Seo.png";
 import AnimatedText from '../Animations/TextAnimation';
 
 
-function DigitalPR() {
+function SEO() {
   return (
    <div className='container'>
       <div class="route-text">
@@ -59,4 +59,4 @@ function DigitalPR() {
   )
 }
 
-export default DigitalPR
+export default SEO
