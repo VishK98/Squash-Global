@@ -11,13 +11,6 @@ h2.stroke {
   font-size: 110px;
 }
 
-.specialty-title {
-  font-size: 80px;
-  font-display: swap;
-  font-weight: 600;
-  margin-left: 160px;
-}
-
 .bannertitle h1,
 .bannertitle h2 {
   font-size: 110px;
@@ -52,9 +45,22 @@ h2.stroke {
 }
 
 @media (max-width: 625px) {
+  .specialty-text {
+    -webkit-text-stroke: 1px #000;
+    -webkit-text-fill-color: transparent;
+    font-size: 45px;
+  }
+
+  .creating-text {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: start;
+  }
+
   .redefine-text {
     font-size: 25px;
     text-align: start;
+    font-weight: bold;
   }
 
   .mobile_down_arrow {
