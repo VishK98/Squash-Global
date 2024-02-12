@@ -90,10 +90,12 @@ function Home() {
 
       <div className="video-content d-none d-md-block">
         <div className="bannertitle">
-          <h1 className="text-lg-center not_an stroke">Not an</h1>
+          <AnimatedText text={<h1 className="text-lg-center not_an stroke">Not an</h1>
+          } animation='fade-in' />
         </div>
         <div className="bannertitle">
-          <h2 className="agency-text">Agency.</h2>
+          <AnimatedText text={<h2 className="agency-text">Agency.</h2>
+          } animation='fade-in' />
         </div>
         {/* <div class="mobile_down_arrow new-big-down-arrow1">
           <AnimatedFadeImage src={bigCircle} alt="Image not found" />
@@ -103,16 +105,16 @@ function Home() {
           <div className="col-lg-7">
             <div className="section_para pl-lg-5 pl-0">
               <div className="bannertopslide">
-                <h2 className="but-text">
+                <AnimatedText text={<h2 className="but-text">
                   <span>But your extended</span> <span>marketing team</span>
-                </h2>
+                </h2>} animation='slide-up' />
               </div>
               <div className="bannertopslide">
-                <p style={{ fontSize: "20px" }}>
+                <AnimatedText text={<p style={{ fontSize: "20px" }}>
                   One that is <mark className="text-highlight">nimble</mark> and
                   ready for a <mark className="text-highlight">digitally</mark>{" "}
                   connected world
-                </p>
+                </p>} animation='slide-up' />
               </div>
             </div>
           </div>
