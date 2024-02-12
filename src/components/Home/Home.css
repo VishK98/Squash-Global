@@ -28,6 +28,7 @@ h2.stroke {
 .agency-text {
   font-weight: bold;
 }
+
 .brewText-stroke {
   -webkit-text-stroke: 1px #000;
   -webkit-text-fill-color: transparent;
@@ -45,13 +46,25 @@ h2.stroke {
   font-weight: bold;
 }
 
+.redefine-text {
+  font-size: 45px;
+  text-align: center;
+}
+
 @media (max-width: 625px) {
+  .redefine-text {
+    font-size: 25px;
+    text-align: start;
+  }
+
   .mobile_down_arrow {
     display: none;
   }
-  .video-display{
+
+  .video-display {
     display: none;
-   }
+  }
+
   .h1.stroke,
   h2.stroke,
   .bannertitle h1,
@@ -168,15 +181,14 @@ h2.stroke {
 }
 
 /* Animation ends  here */
- .video-content{
+.video-content {
   position: absolute;
   top: 10%;
   right: 10%;
   left: 2%;
   padding: 30px;
- }
- .video-display{
-  height: 100%;
- }
+}
 
- 
+.video-display {
+  height: 100%;
+}

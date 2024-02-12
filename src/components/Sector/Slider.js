@@ -7,7 +7,7 @@ import ImageAnimationFade from "../Animations/ImageAnimationFade";
 const Slider = ({ box }) => {
   const sliderRef = useRef(null);
   // const clonedBox = [...box, ...box, ...box, ...box, ...box, ...box, ...box, ...box, ...box, ...box, ...box, ...box, ...box, ...box, ...box, ...box,]; // Clone the box array to create a seamless loop
-  const clonedBox = Array.from({ length: 20 }, () => box).flat();
+  const clonedBox = Array.from({ length: 100 }, () => box).flat();
 
   useEffect(() => {
     const slider = sliderRef.current;
