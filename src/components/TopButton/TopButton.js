@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './TopButton.css';
-import topButton from "../../assets/images/arrow (1).png";
+// import topButton from "../../assets/images/arrow (1).png";
+import topButton from "../../assets/images/Icons/-up-arrow.png";
+
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);

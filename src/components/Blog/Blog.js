@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./Blog.css";
 import ScrollToTopButton from '../TopButton/TopButton';
 import blogImage1 from "../../assets/images/blog-image (1).jpg";
-import SmileGIF from "../../assets/images/Icons/icons8-smile.gif";
 import blogImage2 from "../../assets/images/blog-image (2).jpg";
 import blogImage3 from "../../assets/images/blog-image (3).jpg";
 import blogImage4 from "../../assets/images/blog-image (4).jpg";
@@ -15,6 +14,7 @@ import blogImage9 from "../../assets/images/blog-image (9).jpg";
 import blogImage10 from "../../assets/images/blog-image (10).jpg";
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
 import AnimatedText from '../Animations/TextAnimation';
+
 
 function Blog() {
   const imagesData = [

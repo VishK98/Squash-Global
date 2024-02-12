@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './BlogSlider.css';
-import blogImage9 from "../../assets/images/blog-image (9).jpg";
-import blogImage10 from "../../assets/images/blog-image (5).jpg";
 import blogImage4 from "../../assets/images/blog-image (4).jpg";
 import AnimatedFadeImage from '../Animations/ImageAnimationFade';
 import AnimatedText from '../Animations/TextAnimation';
+import rigthArrow from "../../assets/images/Icons/-right-arrow.png";
+import ImageAnimationFade from "../Animations/ImageAnimationFade";
 
 const BlogSlider = () => {
   const sliderSettings = {
@@ -41,9 +41,8 @@ const BlogSlider = () => {
                   <AnimatedText text={<p>In today's bustling market where every digital marketing agency is trying to stand out, having consumable content is like the basic rule of the game.                                             ...
                   </p>} animation='slide-up' />
                   <Link to="/blogDetails" style={{ textDecoration: "none" }}>
-                    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "60px", width: "60px", borderRadius: "50px", backgroundColor: "#fe504f" }}>
-                      <AnimatedText text={<h4 className='read-more' >➟</h4>
-                      } animation='fade-in' />
+                    <div className="animated-arrow-btn" style={{ marginLeft: "10px", height: "50px", width: "50px" }}>
+                      <ImageAnimationFade src={rigthArrow} alt="Image not found" />
                     </div>
                   </Link>
                 </div>
@@ -64,9 +63,8 @@ const BlogSlider = () => {
                     You would have often come across the popular phrase “A picture is worth a thousand words.” However, contrary to this statement is the power of videos that now allows you to dictate your story just in 30 seconds.
                   </p>} animation='slide-up' />
                   <Link to="/blogDetails" style={{ textDecoration: "none" }}>
-                    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "60px", width: "60px", borderRadius: "50px", backgroundColor: "#fe504f" }}>
-                      <AnimatedText text={<h4 className='read-more' >➟</h4>
-                      } animation='fade-in' />
+                    <div className="animated-arrow-btn" style={{ marginLeft: "10px", height: "50px", width: "50px" }}>
+                      <ImageAnimationFade src={rigthArrow} alt="Image not found" />
                     </div>
                   </Link>
                 </div>
@@ -87,9 +85,8 @@ const BlogSlider = () => {
                     You would have often come across the popular phrase “A picture is worth a thousand words.” However, contrary to this statement is the power of videos that now allows you to dictate your story just in 30 seconds.                                             ...
                   </p>} animation='slide-up' />
                   <Link to="/blogDetails" style={{ textDecoration: "none" }}>
-                    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "60px", width: "60px", borderRadius: "50px", backgroundColor: "#fe504f" }}>
-                      <AnimatedText text={<h4 className='read-more' >➟</h4>
-                      } animation='fade-in' />
+                    <div className="animated-arrow-btn" style={{ marginLeft: "10px", height: "50px", width: "50px" }}>
+                      <ImageAnimationFade src={rigthArrow} alt="Image not found" />
                     </div>
                   </Link>
                 </div>
