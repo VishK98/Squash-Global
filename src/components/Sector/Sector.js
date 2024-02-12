@@ -175,11 +175,11 @@ function Sector() {
         </h2>} animation='slide-right' />
         <div
           className="row"
-          style={{ justifyContent: "space-between", marginRight: "5px" }}
+          style={{ justifyContent: "space-between",}}
         >
           <div className="row">
             {services.map((image, index) => (
-              <div key={index} className="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+              <div key={index} className="col-lg-2 col-md-2 col-sm-4 col-6 mt-3" style={{marginRight: "35px"}}>
                 <Link style={{ textDecoration: "none" }} to={`/${routes[index]}`}>
                   <div className="boxes" onClick={() => console.log(`Box ${index} clicked`)}>
                     <div className="col">
