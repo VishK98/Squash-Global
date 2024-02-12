@@ -191,7 +191,7 @@ function Contact() {
                   } animation='slide-up' />
                   <div className="mt-3">
                     <AnimatedText text={<label>
-                      Adress
+                      Address
                       <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
                     </label>} animation='slide-up' />
 
