@@ -855,7 +855,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="container mt-4">
+      <div className="container">
         <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
@@ -936,7 +936,7 @@ function Home() {
                     onChange={handleChange}
                     placeholder="Type here"
                     autoComplete="off"
-                    className="form-field"
+                    className="form-field mb-3"
                     required
                   >
                     <option value="selected">Select</option>
@@ -962,7 +962,7 @@ function Home() {
                 animation="slide-up"
               />
             </div>
-            <div className="col-lg-6 col-md-6 col-12 mt-3">
+            <div className="col-lg-6 col-md-6 col-12">
               <AnimatedText
                 text={
                   <label>
@@ -1021,7 +1021,7 @@ function Home() {
                     onChange={handleChange}
                     placeholder="+91 9900000088"
                     autoComplete="off"
-                    className="form-field mb-3"
+                    className="form-field mb-lg-5 mb-3"
                     pattern="[0-9]{10}"
                     required
                   />
@@ -1051,7 +1051,7 @@ function Home() {
           </div>
           <div
             id="contactSubmitBtn"
-            className="d-flex justify-content-center mt-lg-5 mt-3"
+            className="d-flex justify-content-center mt-lg-5 mb-3 mt-3"
           >
             <AnimatedText
               text={
