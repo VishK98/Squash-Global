@@ -69,7 +69,15 @@
   width: 100%;
 }
 
+.service-responsive {
+  margin-right: 35px;
+}
+
 @media only screen and (max-width: 625px) {
+  .service-responsive {
+    margin-right: 0px;
+  }
+
   .industries-page-title {
     font-size: 35px;
   }

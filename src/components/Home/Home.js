@@ -960,7 +960,7 @@ function Home() {
                 animation="slide-up"
               />
             </div>
-            <div className="col-lg-6 col-md-6 col-12">
+            <div className="col-lg-6 col-md-6 col-12 mt-3">
               <AnimatedText
                 text={
                   <label>

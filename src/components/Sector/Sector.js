@@ -179,7 +179,7 @@ function Sector() {
         >
           <div className="row">
             {services.map((image, index) => (
-              <div key={index} className="col-lg-2 col-md-2 col-sm-4 col-6 mt-3" style={{marginRight: "35px"}}>
+              <div key={index} className="col-lg-2 col-md-2 col-sm-4 col-6 service-responsive">
                 <Link style={{ textDecoration: "none" }} to={`/${routes[index]}`}>
                   <div className="boxes" onClick={() => console.log(`Box ${index} clicked`)}>
                     <div className="col">
