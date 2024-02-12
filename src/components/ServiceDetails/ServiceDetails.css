@@ -1,10 +1,84 @@
 .service-title {
-    -webkit-text-stroke: 1px #000;
+    -webkit-text-stroke: 1.5px #fe504f;
     -webkit-text-fill-color: transparent;
-    font-size: 60px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.service-title-1 {
+    -webkit-text-stroke: 1.5px #000;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .tittle-img {
-    max-width: auto ;
+    max-width: auto;
     height: auto
+}
+
+.underline-custom {
+    padding: 30px 0 8px;
+    position: relative;
+}
+
+.underline-custom::before {
+    content: "";
+    position: absolute;
+    left: 72%;
+    bottom: 16px;
+    width: 378px;
+    height: 16px;
+    transform: skew(-12deg) translateX(-50%);
+    background: #000;
+    z-index: -1;
+}
+
+.underline-custom-1 {
+    padding: 30px 0 8px;
+    position: relative;
+}
+
+.underline-custom-1::before {
+    content: "";
+    position: absolute;
+    left: 76%;
+    bottom: 10px;
+    width: 380px;
+    height: 16px;
+    transform: skew(-12deg) translateX(-50%);
+    background: #fe504f;
+    z-index: -1;
+}
+
+.service-heading {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Times New Roman, Times, serif;
+}
+
+
+.service-description {
+    font-size: 27px;
+    font-weight: bold;
+    font-family: Times New Roman, Times, serif;
+    filter: drop-shadow(-15px 6px 1.5px #fe504f)
+}
+
+.service-description-1 {
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: Times New Roman, Times, serif;
+    filter: drop-shadow(-15px 6px 1.5px #fe504f)
+}
+.service-description-2 {
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: Times New Roman, Times, serif;
+    filter: drop-shadow(-15px 6px 1.5px #fe504f)
+}
+.service-description-3 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Times New Roman, Times, serif;
 }
