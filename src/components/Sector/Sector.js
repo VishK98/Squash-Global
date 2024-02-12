@@ -18,11 +18,12 @@ import Expert from "../../assets/images/connect-with-our-experts.png";
 import { Link } from "react-router-dom";
 import AnimatedText from '../Animations/TextAnimation';
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
-// import Slider from "react-slick";
 import Slider from './Slider';
 
 
 function Sector() {
+  const routes = ["mediaPlanning", "digitalPR", "seo", "socialMedia", "creative", "content", "production", "websiteDesign", "programmatics", "influencer"];
+
   const box = [
     {
       title: "Energy and Utilities",
@@ -175,13 +176,12 @@ function Sector() {
         <div
           className="row"
           style={{ justifyContent: "space-between", marginRight: "5px" }}
-        ><Link style={{ textDecoration: "none" }} to="/serviceDetails">
-            <div className="row">
-              {services.map((image, index) => (
-                <div key={index} className={`col-lg-2 col-md-2 col-sm-4 col-6 mt-3 ${index % 5 === 2 ? 'special-col' : ''}`}
-                  onClick={() => console.log(`Box ${index} clicked`)}
-                >
-                  <div className="boxes">
+        >
+          <div className="row">
+            {services.map((image, index) => (
+              <div key={index} className="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                <Link style={{ textDecoration: "none" }} to={`/${routes[index]}`}>
+                  <div className="boxes" onClick={() => console.log(`Box ${index} clicked`)}>
                     <div className="col">
                       <div className="industries-four-boxes h-100">
                         <div className="box-img">
@@ -191,18 +191,18 @@ function Sector() {
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          </Link>
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-      <div className="container-fluid  p-3">
+      <div className="container mt-lg-2">
         <AnimatedText text={<h2 className="box-title">
           Some of the industry sectors we partner with
         </h2>} animation='slide-right' />
       </div>
-        <Slider box={box} />
+      <Slider box={box} />
       <div className="position-relative mt-2">
         <img
           src={Expert}

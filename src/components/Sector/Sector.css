@@ -4,13 +4,15 @@
 }
 
 .boxes {
+  flex: 0 0 auto;
   height: 180px;
   width: 180px;
   background-color: #fff;
   border-radius: 10px;
   border: 1px solid rgb(222, 221, 221);
-  display: flex;
+  margin-right: 10px;
   align-items: center;
+  padding: 30px;
   justify-content: center;
   text-align: center;
   transition: background-color 2s ease,
@@ -27,7 +29,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 50px;
+  margin-left: 35px;
 }
 
 .box-text {
