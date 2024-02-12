@@ -410,7 +410,7 @@ function Home() {
                   <div className="topslide">
                     <AnimatedText
                       text={
-                        <h3 style={{ fontSize: "45px", textAlign: "center" }}>
+                        <h3 className="redefine-text">
                           Redefining Communication for Brands to Create More
                           Approachable Framework{" "}
                         </h3>
