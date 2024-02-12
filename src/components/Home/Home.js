@@ -174,10 +174,10 @@ function Home() {
           <div className="row">
             <div className="col-12 d-flex align-items-center">
               <div>
-                  <AnimatedText
-                    text={<h2 className="stroke">Pixels to </h2>}
-                    animation="slide-up"
-                  />
+                <AnimatedText
+                  text={<h2 className="stroke">Pixels to </h2>}
+                  animation="slide-up"
+                />
                 <div className="bannertitle">
                   <AnimatedText
                     text={<h2 style={{ fontWeight: "bold" }}>People</h2>}
@@ -665,7 +665,7 @@ function Home() {
               />
             </div>
           </div>
-          <div className="col-lg-2 col-md-12">
+          <div className="col-lg-2 col-md-12 d-none d-md-block">
             <div className="rotating-image text-center">
               <AnimatedFadeImage src={circularText} alt="Image not found" />
             </div>
@@ -846,7 +846,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="col-lg-2 col-md-12">
+          <div className="col-lg-2 col-md-12 d-none d-md-block">
             <div className="rotating-image text-center">
               <AnimatedFadeImage src={circularText} alt="Image not found" />
             </div>
@@ -883,7 +883,7 @@ function Home() {
                     onChange={handleChange}
                     placeholder="Type here"
                     autoComplete="off"
-                    className="form-field mb-lg-5"
+                    className="form-field mb-lg-5 mb-3"
                     required
                   />
                 }
@@ -915,7 +915,7 @@ function Home() {
                     onChange={handleChange}
                     placeholder="Type here"
                     autoComplete="off"
-                    className="form-field mb-lg-5"
+                    className="form-field mb-lg-5 mb-3"
                     required
                   />
                 }
@@ -987,7 +987,7 @@ function Home() {
                     onChange={handleChange}
                     placeholder="Type here"
                     autoComplete="off"
-                    className="form-field mb-lg-5"
+                    className="form-field mb-lg-5 mb-3"
                     required
                   />
                 }
@@ -1019,7 +1019,7 @@ function Home() {
                     onChange={handleChange}
                     placeholder="+91 9900000088"
                     autoComplete="off"
-                    className="form-field mb-5"
+                    className="form-field mb-3"
                     pattern="[0-9]{10}"
                     required
                   />
@@ -1049,7 +1049,7 @@ function Home() {
           </div>
           <div
             id="contactSubmitBtn"
-            className="d-flex justify-content-center mt-lg-5"
+            className="d-flex justify-content-center mt-lg-5 mt-3"
           >
             <AnimatedText
               text={
