@@ -1,7 +1,7 @@
 
    .socialMedia {
-    height: 40px;
-    width: 40px;
+    height: 35x;
+    width: 35px;
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -19,9 +19,10 @@
   }
   .social-media-icon {
     padding: 5px;
-    margin-left: 10px;
+    margin-left: 20px;
     filter: grayscale(100%);
     transition: filter 0.3s, transform 0.5s; 
+    margin: revert;
   }
   
   .social-media-icon:hover {

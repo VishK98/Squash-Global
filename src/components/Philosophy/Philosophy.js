@@ -7,13 +7,14 @@ import philosophy from "../../assets/images/Banner About us.jpg";
 import quotation from "../../assets/images/quotation-marks-svgrepo.png";
 import yellowCircle from "../../assets/images/empty-yellow-circle.png";
 import partyScene from "../../assets/images/party-scene.png";
+import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 
 
 function Philosophy() {
   return (
     <>
     <div className="col-12">
-            <AnimatedImage src={philosophy} alt="Image not found" />
+            <ImageAnimationUnfold src={philosophy} alt="Image not found" />
           </div>
       <div class="container">
         <div class="row">

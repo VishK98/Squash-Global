@@ -27,6 +27,7 @@ import PartnerSlider from "./PartnerSlider";
 import squashVideo from "../../assets/squash.mp4";
 import rigthArrow from "../../assets/images/Icons/-right-arrow.png";
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
+import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 
 function Home() {
   const [formData, setFormData] = useState({
@@ -166,7 +167,7 @@ function Home() {
             </a>
           </div>
           <div className="col-lg-7 mt-4 mt-lg-0 col-12">
-            <AnimatedFadeImage src={gispiImage} alt="Image not found" />
+            <ImageAnimationUnfold src={gispiImage} alt="Image not found" />
           </div>
         </div>
       </div>
