@@ -22,7 +22,7 @@
     margin-left: 20px;
     filter: grayscale(100%);
     transition: filter 0.3s, transform 0.5s; 
-    margin: revert;
+    margin: revert; 
   }
   
   .social-media-icon:hover {

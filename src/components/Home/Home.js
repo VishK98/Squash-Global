@@ -202,7 +202,7 @@ function Home() {
               </div>
               <div className="mobile_down_arrow new-big-down-arrow2">
                 <div style={{ marginLeft: "900px" }}>
-                  <AnimatedFadeImage src={bigCircle} alt="Image not found" />
+                  <ImageAnimationUnfold src={bigCircle} alt="Image not found" />
                 </div>
               </div>
             </div>
@@ -211,7 +211,7 @@ function Home() {
         <div className="container">
           <div className="row">
             <div className="work_list_img round_img col-lg-7 col-md-7 col-sm-12 col-12">
-              <AnimatedFadeImage src={onHerLip} alt="Image not found" />
+              <ImageAnimationUnfold src={onHerLip} alt="Image not found" />
             </div>
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex flex-column align-items-center responsive-text">
               <AnimatedText
@@ -235,7 +235,7 @@ function Home() {
                         width: "50px",
                       }}
                     >
-                      <ImageAnimationFade
+                      <ImageAnimationUnfold
                         src={rigthArrow}
                         alt="Image not found"
                       />
@@ -277,7 +277,7 @@ function Home() {
                           width: "50px",
                         }}
                       >
-                        <ImageAnimationFade
+                        <ImageAnimationUnfold
                           src={rigthArrow}
                           alt="Image not found"
                         />
@@ -288,7 +288,7 @@ function Home() {
               </div>
             </div>
             <div className="work_list_img round_img col-lg-7 col-md-7 col-sm-12 col-12">
-              <AnimatedFadeImage src={tasc} alt="Image not found" />
+              <ImageAnimationUnfold src={tasc} alt="Image not found" />
             </div>
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 mt-3 d-flex flex-column align-items-center d-md-none">
               <AnimatedText
@@ -311,7 +311,7 @@ function Home() {
                         width: "50px",
                       }}
                     >
-                      <ImageAnimationFade
+                      <ImageAnimationUnfold
                         src={rigthArrow}
                         alt="Image not found"
                       />
@@ -402,7 +402,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <AnimatedUnfoldImage src={worldwideOffice} alt="Image not found" />
+        <ImageAnimationUnfold src={worldwideOffice} alt="Image not found" />
       </section>
       <section id="homeSectionFour" className="mt-lg-5 mt-3 ">
         <div className="container">
@@ -531,7 +531,7 @@ function Home() {
                       <img src={grid1Logo} alt="Gipsi Logo" />
                     </div>
                     <div className="SD_slider_img">
-                      <AnimatedFadeImage src={grid1} alt="Image not found" />
+                      <ImageAnimationUnfold src={grid1} alt="Image not found" />
                     </div>
                   </a>
                 </div>
@@ -587,7 +587,7 @@ function Home() {
                       <img src={grid2Logo} alt="Gipsi Logo" />
                     </div>
                     <div className="SD_slider_img">
-                      <AnimatedFadeImage src={grid2} alt="Image not found" />
+                      <ImageAnimationUnfold src={grid2} alt="Image not found" />
                     </div>
                   </a>
                 </div>
@@ -642,7 +642,7 @@ function Home() {
                       <img src={grid3Logo} alt="Gipsi Logo" />
                     </div>
                     <div className="SD_slider_img">
-                      <AnimatedFadeImage src={grid3} alt="Image not found" />
+                      <ImageAnimationUnfold src={grid3} alt="Image not found" />
                     </div>
                   </a>
                 </div>
@@ -670,7 +670,7 @@ function Home() {
           </div>
           <div className="col-lg-2 col-md-12 d-none d-md-block">
             <div className="rotating-image text-center">
-              <AnimatedFadeImage src={circularText} alt="Image not found" />
+              <ImageAnimationUnfold src={circularText} alt="Image not found" />
             </div>
           </div>
         </div>
@@ -684,7 +684,7 @@ function Home() {
                 className="animated-arrow-btn"
                 style={{ marginLeft: "10px", height: "50px", width: "50px" }}
               >
-                <ImageAnimationFade src={brandIcon} alt="Image not found" />
+                <ImageAnimationUnfold src={brandIcon} alt="Image not found" />
               </div>
               <a>
                 <AnimatedText
@@ -716,7 +716,7 @@ function Home() {
                 className="animated-arrow-btn"
                 style={{ marginLeft: "10px", height: "50px", width: "50px" }}
               >
-                <ImageAnimationFade src={brandIcon} alt="Image not found" />
+                <ImageAnimationUnfold src={brandIcon} alt="Image not found" />
               </div>{" "}
               <a>
                 <AnimatedText
@@ -750,7 +750,7 @@ function Home() {
                 className="animated-arrow-btn"
                 style={{ marginLeft: "10px", height: "50px", width: "50px" }}
               >
-                <ImageAnimationFade src={brandIcon} alt="Image not found" />
+                <ImageAnimationUnfold src={brandIcon} alt="Image not found" />
               </div>{" "}
               <a>
                 <AnimatedText
@@ -782,7 +782,7 @@ function Home() {
                 className="animated-arrow-btn"
                 style={{ marginLeft: "10px", height: "50px", width: "50px" }}
               >
-                <ImageAnimationFade src={brandIcon} alt="Image not found" />
+                <ImageAnimationUnfold src={brandIcon} alt="Image not found" />
               </div>{" "}
               <a>
                 <AnimatedText
@@ -851,7 +851,7 @@ function Home() {
           </div>
           <div className="col-lg-2 col-md-12 d-none d-md-block">
             <div className="rotating-image text-center">
-              <AnimatedFadeImage src={circularText} alt="Image not found" />
+              <ImageAnimationUnfold src={circularText} alt="Image not found" />
             </div>
           </div>
         </div>
