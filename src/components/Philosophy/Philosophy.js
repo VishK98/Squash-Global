@@ -3,7 +3,7 @@ import "./Philosophy.css";
 import AnimatedImage from '../Animations/ImageAnimation';
 import AnimatedText from '../Animations/TextAnimation';
 import ScrollToTopButton from '../TopButton/TopButton';
-import philosophy from "../../assets/images/tonic-worldwide-philosophy.jpg";
+import philosophy from "../../assets/images/Banner About us.jpg";
 import quotation from "../../assets/images/quotation-marks-svgrepo.png";
 import yellowCircle from "../../assets/images/empty-yellow-circle.png";
 import partyScene from "../../assets/images/party-scene.png";
@@ -38,41 +38,6 @@ function Philosophy() {
         <div className="row">
           <div className="col-12">
             <AnimatedImage src={philosophy} alt="Image not found" />
-          </div>
-          <div
-            className="col-lg-9 mt-4"
-            style={{ margin: "auto" }}
-          >
-            <div className="mt-md-4 ">
-              <span className="explorbtn  mt-4">
-                <img
-                  src={quotation}
-                  alt="Quotation Mark"
-                  className="quote-apos"
-                  style={{ float: "left" }}
-                />
-                <AnimatedText text={<h2
-                  className="ml-4 quote pt-4"
-                  style={{ opacity: 1, fontWeight: "bold" }}
-                >
-                  Some
-                  <mark className="text-highlight">
-                    {" "}
-                    painters transform{" "}
-                  </mark>{" "}
-                  the sun into a yellow spot, others
-                  <mark className="text-highlight">
-                    {" "}
-                    transform a yellow <br />
-                    spot into the sun.
-                  </mark>
-                </h2>} animation="slide-down" />
-                <span className="quote-writer-name-icon">
-                  <img src={yellowCircle} alt="yellow circle" />
-                </span>
-                <i className="quote-writer-name">Kumar Vishesh & Vishal Upadhyay 😃</i>
-              </span>
-            </div>
           </div>
         </div>
       </div>
