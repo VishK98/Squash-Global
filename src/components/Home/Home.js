@@ -12,7 +12,7 @@ import gispiImage from "../../assets/images/demo-image.png";
 import arrowMore from "../../assets/images/arrow-more.png";
 import tasc from "../../assets/images/TASC.png";
 import onHerLip from "../../assets/images/Whats-on-her-lip.jpg";
-import worldwideOffice from "../../assets/images/tonic-worldwide-office.jpg";
+import worldwideOffice from "../../assets/images/We Are Squash.png";
 import grid1 from "../../assets/images/grid-1.png";
 import grid1Logo from "../../assets/images/gipsi-logo.png";
 import grid2 from "../../assets/images/grid-2.png";
