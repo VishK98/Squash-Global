@@ -19,6 +19,7 @@ import { Link } from "react-router-dom";
 import AnimatedText from '../Animations/TextAnimation';
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
 import Slider from './Slider';
+import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 
 
 function Sector() {
@@ -150,7 +151,7 @@ function Sector() {
             </h1>} animation='slide-up' />
             <div className="col-lg-12">
               <picture>
-                <ImageAnimationFade src={industriesBanner} alt="Image not found" />
+                <ImageAnimationUnfold src={industriesBanner} alt="Image not found" />
               </picture>
               <AnimatedText text={<p style={{ fontSize: "20px" }}>
                 We understand businesses and aid them in solving problems for
@@ -185,7 +186,7 @@ function Sector() {
                     <div className="col">
                       <div className="industries-four-boxes h-100">
                         <div className="box-img">
-                          <ImageAnimationFade src={image.url} alt="Image not found" />
+                          <ImageAnimationUnfold src={image.url} alt="Image not found" />
                         </div>
                         <AnimatedText text={<p className="mt-2 box-text">{image.title}</p>} animation='slide-up' />
                       </div>
