@@ -12,33 +12,18 @@ import partyScene from "../../assets/images/party-scene.png";
 function Philosophy() {
   return (
     <>
+    <div className="col-12">
+            <AnimatedImage src={philosophy} alt="Image not found" />
+          </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="route-text">
-              <ol class="breadcrumb route-text mt-3">
-                <li>
-                  <a
-                    href="/"
-                    style={{ color: "grey", textDecoration: "none" }}
-                  >
-                    <AnimatedText text="Home /" animation="slide-left" />
-                  </a>
-                </li>
-                <li>
-                  <AnimatedText text="&nbsp;About us" animation="slide-right" />
-                </li>
-              </ol>
-            </div>
             <AnimatedText text="We know you ! You know us !!" animation="slide-left" className="aboutUs-heading" />
           </div>
         </div>
       </div>
       <div className="container pt-3">
         <div className="row">
-          <div className="col-12">
-            <AnimatedImage src={philosophy} alt="Image not found" />
-          </div>
         </div>
       </div>
       <div className="container">
