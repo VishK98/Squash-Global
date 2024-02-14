@@ -81,7 +81,7 @@ function Contact() {
       </div>
 
       <div className="container mt-3 mb-5">
-        <ImageAnimationFade src={contact} alt="Image not found" />
+        <ImageAnimationUnfold src={contact} alt="Image not found" />
         <div className="row">
           <div className="col-lg-5 pt-lg-5">
             <div className="mt-4 mt-lg-0 address-info topslide">

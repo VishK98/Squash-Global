@@ -8,6 +8,7 @@ import blogImage9 from "../../assets/images/blog-image (9).jpg";
 import blogImage10 from "../../assets/images/blog-image (5).jpg";
 import blogImage4 from "../../assets/images/blog-image (4).jpg";
 import { Button } from "bootstrap";
+import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 
 
 function BlogDetails() {

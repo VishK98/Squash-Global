@@ -11,6 +11,7 @@ import AnimatedText from '../Animations/TextAnimation';
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
 import AnimatedImage from "../Animations/ImageAnimation";
 import AnimatedUnfoldImage from '../Animations/ImageAnimationUnfold';
+import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 
 
 function Careers() {
@@ -197,7 +198,7 @@ function Careers() {
       <div className="container ">
         <div className="row ">
           <div className="col-lg-12 col-md-12 col-12">
-            <ImageAnimationFade src={image} alt="Image not found" />
+            <ImageAnimationUnfold src={image} alt="Image not found" />
           </div>
           <div className="col-lg-12 col-md-12 col-12">
             <AnimatedText text={<h2 style={{ fontSize: "45px", fontWeight: "bold", marginTop: "10px" }}>Work with a dynamic team and creative minded people.</h2>
@@ -206,7 +207,7 @@ function Careers() {
               <div style={{ display: 'flex', alignItems: 'center' }}>
                 <AnimatedText text={<i>Join Us</i>} animation='slide-left' />
                 <div className="animated-arrow-btn" style={{ marginLeft: "10px", height: "50px", width: "50px" }}>
-                  <AnimatedUnfoldImage src={downArrow} alt="Image not found" />
+                  <ImageAnimationUnfold src={downArrow} alt="Image not found" />
                 </div>
               </div>
             </a>
@@ -244,7 +245,7 @@ function Careers() {
           </div>
           <div className="col-lg-7 col-md-7 col-12 col-sm-12 mt-4 ">
             <div>
-              <AnimatedImage src={team} alt="Image not found" />
+              <ImageAnimationUnfold src={team} alt="Image not found" />
             </div>
           </div>
         </div>
@@ -260,11 +261,11 @@ function Careers() {
             marginTop: "4px",
             marginBottom: "10px"
           }} >
-            <AnimatedUnfoldImage src='https://img.icons8.com/clouds/100/food-bar.png' alt="Image not found" />
+            <ImageAnimationUnfold src='https://img.icons8.com/clouds/100/food-bar.png' alt="Image not found" />
           </div>
         </div>
       </div>
-      <AnimatedUnfoldImage src={teamBreak} alt="Image not found" />
+      <ImageAnimationUnfold src={teamBreak} alt="Image not found" />
       <div className="container">
         <h1 className="mt-3">Latest Openings</h1>
         <div className="row" ref={closeRef}>
