@@ -121,23 +121,15 @@ function Sector() {
   ];
   return (
     <>
+    <div>
+    <picture>
+                <ImageAnimationUnfold src={industriesBanner} alt="Image not found" />
+              </picture>
+    </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="route-text">
-              <ol class="breadcrumb route-text mt-3">
-                <li>
-                  <a
-                    href="/"
-                    style={{ color: "grey", textDecoration: "none" }}
-                  >
-                    <AnimatedText text="Home /" animation="slide-left" />
-                  </a>
-                </li>
-                <li>
-                  <AnimatedText text="&nbsp;Services" animation="slide-right" />
-                </li>
-              </ol>
             </div>
           </div>
         </div>
@@ -150,9 +142,6 @@ function Sector() {
               the World Better
             </h1>} animation='slide-up' />
             <div className="col-lg-12">
-              <picture>
-                <ImageAnimationUnfold src={industriesBanner} alt="Image not found" />
-              </picture>
               <AnimatedText text={<p style={{ fontSize: "20px" }}>
                 We understand businesses and aid them in solving problems for
                 the world– a pivotal trait in the ever-evolving digital
