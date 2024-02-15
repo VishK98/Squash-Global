@@ -57,7 +57,6 @@ function Contact() {
     <div> <ImageAnimationUnfold src={contact} alt="Image not found" /></div>
       <div className="container">
         <div className="row">
-         
           <div className="inner_title hidden">
             <AnimatedText text={<h1 className="contact-page-title">Let’s connect us</h1>
             } animation="slide-left" />
