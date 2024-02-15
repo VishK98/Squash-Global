@@ -175,20 +175,8 @@ function Careers() {
         <div className="row">
           <div className="col-lg-12">
             <div class="route-text">
-              <ol class="breadcrumb route-text mt-3">
-                <li>
-                  <a
-                    href="/"
-                    style={{ color: "grey", textDecoration: "none" }}
-                  >
-                    <AnimatedText text="Home /" animation="slide-left" />
-                  </a>
-                </li>
-                <li>
-                  <AnimatedText text="&nbsp;Careers" animation="slide-right" />
-                </li>
-              </ol>
             </div>
+            <div><ImageAnimationUnfold src={image} alt="Image not found" /></div>
             <AnimatedText text={<h1 style={{ fontSize: "50px", fontWeight: "bold" }}>
               Start your journey in Squash
             </h1>} animation='slide-left' />
@@ -198,7 +186,7 @@ function Careers() {
       <div className="container ">
         <div className="row ">
           <div className="col-lg-12 col-md-12 col-12">
-            <ImageAnimationUnfold src={image} alt="Image not found" />
+      
           </div>
           <div className="col-lg-12 col-md-12 col-12">
             <AnimatedText text={<h2 style={{ fontSize: "45px", fontWeight: "bold", marginTop: "10px" }}>Work with a dynamic team and creative minded people.</h2>
