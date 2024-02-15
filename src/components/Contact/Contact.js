@@ -54,25 +54,10 @@ function Contact() {
 
   return (
     <>
+    <div> <ImageAnimationUnfold src={contact} alt="Image not found" /></div>
       <div className="container">
         <div className="row">
-          <div className="col-lg-12">
-            <div class="route-text">
-              <ol class="breadcrumb route-text mt-3">
-                <li>
-                  <a
-                    href="/"
-                    style={{ color: "grey", textDecoration: "none" }}
-                  >
-                    <AnimatedText text="Home /" animation="slide-left" />
-                  </a>
-                </li>
-                <li>
-                  <AnimatedText text="&nbsp;Contact" animation="slide-right" />
-                </li>
-              </ol>
-            </div>
-          </div>
+         
           <div className="inner_title hidden">
             <AnimatedText text={<h1 className="contact-page-title">Let’s connect us</h1>
             } animation="slide-left" />
@@ -81,7 +66,7 @@ function Contact() {
       </div>
 
       <div className="container mt-3 mb-5">
-        <ImageAnimationUnfold src={contact} alt="Image not found" />
+       
         <div className="row">
           <div className="col-lg-5 pt-lg-5">
             <div className="mt-4 mt-lg-0 address-info topslide">
