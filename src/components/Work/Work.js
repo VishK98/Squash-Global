@@ -22,23 +22,13 @@ function Work() {
 
   return (
     <>
+    <div>
+          <ImageAnimationUnfold src={ourClients} alt="Image not found" />
+        </div>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
             <div class="route-text">
-              <ol class="breadcrumb route-text mt-3">
-                <li>
-                  <a
-                    href="/"
-                    style={{ color: "grey", textDecoration: "none" }}
-                  >
-                    <AnimatedText text="Home /" animation="slide-left" />
-                  </a>
-                </li>
-                <li>
-                  <AnimatedText text="&nbsp;Clients " animation="slide-right" />
-                </li>
-              </ol>
             </div>
           </div>
         </div>
@@ -47,9 +37,6 @@ function Work() {
         <AnimatedText text={<h4 className="guest-text mb-4">
           Guests are always welcome at our establishment, and we aim to provide them with a memorable experience.
         </h4>} animation='fade-in' />
-        <div className="col-lg-12">
-          <ImageAnimationUnfold src={ourClients} alt="Image not found" />
-        </div>
         <AnimatedText text={<h1 className="text-center partnership-text mt-3 mt-lg-4">Building Strong Relationships with Our Valued Clients</h1>
         } animation='slide-up' />
         <div
