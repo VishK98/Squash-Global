@@ -8,7 +8,7 @@
 /* Style all input fields inside the modal */
 .modal-body input.form-field {
     background-color: #605f5f;
-    color: #fe504f; 
+    color: #4c029e; 
     border: none; 
     border-bottom: 1px solid #424242;
     transition: border-color 0.3s; 
@@ -17,15 +17,15 @@
  
   .modal-body input.form-field:focus {
     outline: none;
-    border-color: #fe504f; 
+    border-color: #4c029e; 
   }
   
 /* Add animation to the modal title */
 .modal-title {
     margin-left: 30px;
     font-size: 1.5rem;
-    color: #fe504f;
-    background: linear-gradient(45deg, #fe504f, #7e7e7e);
+    color: #4c029e;
+    background: linear-gradient(45deg, #4c029e, #7e7e7e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: transform 0.3s ease;

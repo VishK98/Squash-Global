@@ -74,7 +74,7 @@ function BlogDetails() {
             </div>
             <div className="container mt-5 col-lg-8">
                 <p>
-                    In today's bustling market where every <span style={{ color: "#fe504f" }}>digital marketing</span> agency is trying to stand out, having consumable content is like the basic rule of the game.
+                    In today's bustling market where every <span style={{ color: "#4c029e" }}>digital marketing</span> agency is trying to stand out, having consumable content is like the basic rule of the game.
                 </p>
                 <p >
                     But if we talk about real success. That's like becoming the master of promotion and marketing wizardry. It's like turning over every stone, leaving no table unturned – just so you can reach every nook and cranny of this world and cover all your bases.
@@ -188,7 +188,7 @@ function BlogDetails() {
                     </div>
 
                 </div>
-                <h6 className="mt-4" style={{ fontWeight: "400", color: "#fe504f" }}>Author | Kumar Vishesh</h6>
+                <h6 className="mt-4" style={{ fontWeight: "400", color: "#4c029e" }}>Author | Kumar Vishesh</h6>
             </div>
             <ScrollToTopButton />
 

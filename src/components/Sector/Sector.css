@@ -19,7 +19,7 @@
 }
 
 .boxes:hover {
-  background-color: #fe504f
+  background-color: #4c029e
 }
 
 
@@ -51,8 +51,8 @@
 }
 
 .button:hover {
-  background-color: #fe504f;
-  border: #fe504f;
+  background-color: #4c029e;
+  border: #4c029e;
 }
 
 .overlap-text {
@@ -140,7 +140,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  background: #fe504f;
+  background: #4c029e;
   border: 0;
   border-radius: 4px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
