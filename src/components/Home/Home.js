@@ -11,7 +11,9 @@ import bigCircle from "../../assets/images/big-circle-down-arrow.png";
 import gispiImage from "../../assets/images/demo-image.png";
 import arrowMore from "../../assets/images/arrow-more.png";
 import tasc from "../../assets/images/TASC.png";
-import onHerLip from "../../assets/images/Whats-on-her-lip.jpg";
+// import onHerLip from "../../assets/images/Whats-on-her-lip.jpg";
+import onHerLip from "../../assets/images/home-banner-new.png";
+
 import worldwideOffice from "../../assets/images/We Are Squash.png";
 import grid1 from "../../assets/images/grid-1.png";
 import grid1Logo from "../../assets/images/gipsi-logo.png";
