@@ -84,21 +84,6 @@ function Blog() {
   return (
     <>
       <div className="container mt-4">
-        <div class="route-text">
-          <ol class="breadcrumb route-text mt-3">
-            <li>
-              <a
-                href="/"
-                style={{ color: "grey", textDecoration: "none" }}
-              >
-                <AnimatedText text="Home /" animation="slide-left" />
-              </a>
-            </li>
-            <li>
-              <AnimatedText text="&nbsp;Blog" animation="slide-right" />
-            </li>
-          </ol>
-        </div>
         <AnimatedText text={<h1
           style={{
             fontSize: "40px",

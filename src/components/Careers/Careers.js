@@ -171,23 +171,13 @@ function Careers() {
 
   return (
     <>
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-12">
-            <div class="route-text">
-            </div>
-            <div><ImageAnimationUnfold src={image} alt="Image not found" /></div>
-            <AnimatedText text={<h1 style={{ fontSize: "50px", fontWeight: "bold" }}>
-              Start your journey in Squash
-            </h1>} animation='slide-left' />
-          </div>
-        </div>
-      </div>
+      <div><ImageAnimationUnfold src={image} alt="Image not found" /></div>
+
       <div className="container ">
+        <AnimatedText text={<h1 style={{ fontSize: "50px", fontWeight: "bold" }}>
+          Start your journey in Squash
+        </h1>} animation='slide-left' />
         <div className="row ">
-          <div className="col-lg-12 col-md-12 col-12">
-      
-          </div>
           <div className="col-lg-12 col-md-12 col-12">
             <AnimatedText text={<h2 style={{ fontSize: "45px", fontWeight: "bold", marginTop: "10px" }}>Work with a dynamic team and creative minded people.</h2>
             } animation='slide-up' />
@@ -242,7 +232,7 @@ function Careers() {
         <div style={{ display: "flex" }}>
           <AnimatedText text={<h1 style={{ fontWeight: "bold" }}>Life at Squash Global</h1>
           } animation='slide-left' />
-          <div className="animated-arrow-btn"  style={{
+          <div className="animated-arrow-btn" style={{
             height: "50px",
             width: "50px",
             marginLeft: "10px",
