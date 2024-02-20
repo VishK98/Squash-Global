@@ -7,13 +7,10 @@ import React, { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ScrollToTopButton from "../TopButton/TopButton";
 import bigCircle from "../../assets/images/big-circle-down-arrow.png";
-// import gispiImage from "../../assets/images/gipsi-report.png";
 import gispiImage from "../../assets/images/demo-image.png";
 import arrowMore from "../../assets/images/arrow-more.png";
 import tasc from "../../assets/images/TASC.png";
-// import onHerLip from "../../assets/images/Whats-on-her-lip.jpg";
 import onHerLip from "../../assets/images/home-banner-new.png";
-
 import worldwideOffice from "../../assets/images/We Are Squash.png";
 import grid1 from "../../assets/images/grid-1.png";
 import grid1Logo from "../../assets/images/gipsi-logo.png";
@@ -100,9 +97,6 @@ function Home() {
           <AnimatedText text={<h2 className="agency-text">Agency.</h2>
           } animation='fade-in' />
         </div>
-        {/* <div class="mobile_down_arrow new-big-down-arrow1">
-          <AnimatedFadeImage src={bigCircle} alt="Image not found" />
-        </div> */}
         <div className="row ">
           <div className="col-lg-5"></div>
           <div className="col-lg-7">
@@ -114,8 +108,8 @@ function Home() {
               </div>
               <div className="bannertopslide">
                 <AnimatedText text={<p style={{ fontSize: "20px" }}>
-                  One that is <mark className="text-highlight">nimble</mark> and
-                  ready for a <mark className="text-highlight">digitally</mark>{" "}
+                  One that is nimble and
+                  ready for a digitally
                   connected world
                 </p>} animation='slide-up' />
               </div>
@@ -155,18 +149,28 @@ function Home() {
               }
               animation="slide-left"
             />
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="outline_btn explorbtn position-relative"
-              style={{ marginTop: "30px" }}
-            >
-              <i style={{ marginRight: "50px" }}>Explore</i>
-              <span className="zoom-icon">
-                <img src={arrowMore} alt="" className="zooming-image" />
-              </span>
-              <div className="zoom-overlay"></div>
-            </a>
+          
+            <div className="row">
+              <div className="col">
+                <p className="outline_btn explorbtn position-relative">Explore</p>
+              </div>
+              <div className="col">
+                <Link to="#" style={{ textDecoration: "none" }}>
+                  <div
+                    className="animated-arrow-btn"
+                    style={{
+                      height: "50px",
+                      width: "50px",
+                    }}
+                  >
+                    <ImageAnimationUnfold
+                      src={rigthArrow}
+                      alt="Image not found"
+                    />
+                  </div>
+                </Link>
+              </div>
+            </div>
           </div>
           <div className="col-lg-7 mt-4 mt-lg-0 col-12">
             <ImageAnimationUnfold src={gispiImage} alt="Image not found" />
@@ -204,7 +208,7 @@ function Home() {
               </div>
               <div className="mobile_down_arrow new-big-down-arrow2">
                 <div style={{ marginLeft: "900px" }}>
-                  <ImageAnimationUnfold src={bigCircle} alt="Image not found" />
+                  <img src={bigCircle} alt="image not found" />
                 </div>
               </div>
             </div>
@@ -672,7 +676,7 @@ function Home() {
           </div>
           <div className="col-lg-2 col-md-12 d-none d-md-block">
             <div className="rotating-image text-center">
-              <ImageAnimationUnfold src={circularText} alt="Image not found" />
+              <img src={circularText} alt="image not found" />
             </div>
           </div>
         </div>
@@ -853,7 +857,7 @@ function Home() {
           </div>
           <div className="col-lg-2 col-md-12 d-none d-md-block">
             <div className="rotating-image text-center">
-              <ImageAnimationUnfold src={circularText} alt="Image not found" />
+              <img src={circularText} alt="image not found" />
             </div>
           </div>
         </div>

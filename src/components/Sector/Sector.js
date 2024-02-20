@@ -1,7 +1,8 @@
 import React from "react";
 import "./Sector.css";
 import ScrollToTopButton from '../TopButton/TopButton';
-import industriesBanner from "../../assets/images/industries-banner.webp";
+// import industriesBanner from "../../assets/images/industries-banner.webp";
+import industriesBanner from "../../assets/images/our Services.png";
 import energy from "../../assets/images/energy-and-utilities.svg";
 import FMCG from "../../assets/images/sector-img (8).svg";
 import Consumer from "../../assets/images/sector-img (7).svg";
@@ -171,7 +172,7 @@ function Sector() {
             {services.map((image, index) => (
               <div key={index} className="col-lg-2 col-md-2 col-sm-4 col-6 service-responsive">
                 <Link style={{ textDecoration: "none" }} to={`/${routes[index]}`}>
-                  <div className="boxes" onClick={() => console.log(`Box ${index} clicked`)}>
+                  <div className="boxes mb-3" onClick={() => console.log(`Box ${index} clicked`)}>
                     <div className="col">
                       <div className="industries-four-boxes h-100">
                         <div className="box-img">

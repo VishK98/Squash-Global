@@ -173,6 +173,7 @@ h2.stroke {
 }
 
 .grid-view:hover {
+  color: #fff;
   background-color: #4c029e;
 }
 

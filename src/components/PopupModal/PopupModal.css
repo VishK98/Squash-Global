@@ -74,7 +74,7 @@ button.depth {
 
 button.depth:hover,
 button.depth:focus {
-    color: #fa0606;
+    color: #4c029e;
     text-shadow: 0 0 20px hsla(240, 75%, 75%, .5),
         0 1px 1px hsla(0, 0%, 100%, .25),
         0 -1px 1px hsla(0, 0%, 0%, .75);
@@ -97,7 +97,7 @@ button.submit-depth {
 
 button.submit-depth:hover,
 button.submit-depth:focus {
-    color: #fa0606;
+    color: #4c029e;
     text-shadow: 0 0 20px hsla(240, 75%, 75%, .5),
         0 1px 1px hsla(0, 0%, 100%, .25),
         0 -1px 1px hsla(0, 0%, 0%, .75);
