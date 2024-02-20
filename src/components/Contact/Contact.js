@@ -54,7 +54,7 @@ function Contact() {
 
   return (
     <>
-    <div> <ImageAnimationUnfold src={contact} alt="Image not found" /></div>
+      <div> <ImageAnimationUnfold src={contact} alt="Image not found" /></div>
       <div className="container">
         <div className="row">
           <div className="inner_title hidden">
@@ -65,14 +65,14 @@ function Contact() {
       </div>
 
       <div className="container mt-3 mb-5">
-       
+
         <div className="row">
           <div className="col-lg-5 pt-lg-5">
             <div className="mt-4 mt-lg-0 address-info topslide">
               <div style={{ display: "flex", alignItems: "flex-start" }}>
 
-                <div style={{ position: "relative", height: "48px", width: "48px" }}>
-                  <ImageAnimationUnfold src='https://img.icons8.com/color-glass/48/red-fort.png' alt="Image not found" />
+                <div style={{ position: "relative", height: "35px", width: "35px" }}>
+                  <ImageAnimationUnfold src='https://img.icons8.com/ios-filled/50/4c029e/red-fort.png' alt="Image not found" />
                 </div>
                 <div style={{ marginLeft: "12px", }}>
                   <AnimatedText text={<h2 className="india-text"> India</h2>} animation="slide-up" />
@@ -91,15 +91,15 @@ function Contact() {
                 rel="noopener noreferrer"
                 className="view-map-text mt-3"
               >
-                <div style={{ height: "48px", width: "48px" }}>
-                  <ImageAnimationUnfold src='https://img.icons8.com/arcade/64/marker.png' alt="Image not found" />
+                <div style={{ height: "45px", width: "40px" }}>
+                  <ImageAnimationUnfold src='https://img.icons8.com/external-flatart-icons-solid-flatarticons/64/4c029e/external-location-contact-us-flatart-icons-solid-flatarticons.png' alt="Image not found" />
                 </div>
                 <AnimatedText text={<span style={{ marginLeft: "12px", fontFamily: "Times New Roman, Times, serif" }}>Find us on the map</span>
                 } animation="slide-up" />
               </a>
               <p className="phone mt-3" style={{ display: "flex", alignItems: "center" }}>
-                <div style={{ position: "relative", height: "48px", width: "48px" }}>
-                  <ImageAnimationUnfold src='https://img.icons8.com/stickers/100/clr_incoming_call_on_iphone.png' alt="Image not found" />
+                <div style={{ position: "relative", height: "35px", width: "35px" }}>
+                  <ImageAnimationUnfold src='https://img.icons8.com/ios-filled/50/4c029e/ringer-volume.png' alt="Image not found" />
                 </div>
                 <AnimatedText
                   text={
@@ -114,8 +114,8 @@ function Contact() {
                 />
               </p>
               <p className="phone mt-3" style={{ display: "flex", alignItems: "center" }}>
-                <div style={{ position: "relative", height: "48px", width: "48px" }}>
-                  <ImageAnimationUnfold src='https://img.icons8.com/stickers/100/gmail-new.png' alt="Image not found" />
+                <div style={{ position: "relative", height: "33px", width: "35px" }}>
+                  <ImageAnimationUnfold src='https://img.icons8.com/ios-filled/50/4c029e/composing-mail.png' alt="Image not found" />
                 </div>
                 <AnimatedText
                   text={

@@ -537,7 +537,7 @@ function Home() {
                       <img src={grid1Logo} alt="Gipsi Logo" />
                     </div>
                     <div className="SD_slider_img">
-                      <ImageAnimationUnfold src={grid1} alt="Image not found" />
+                      <AnimatedFadeImage src={grid1} alt="Image not found" />
                     </div>
                   </a>
                 </div>
@@ -593,7 +593,7 @@ function Home() {
                       <img src={grid2Logo} alt="Gipsi Logo" />
                     </div>
                     <div className="SD_slider_img">
-                      <ImageAnimationUnfold src={grid2} alt="Image not found" />
+                      <AnimatedFadeImage src={grid2} alt="Image not found" />
                     </div>
                   </a>
                 </div>
@@ -648,7 +648,7 @@ function Home() {
                       <img src={grid3Logo} alt="Gipsi Logo" />
                     </div>
                     <div className="SD_slider_img">
-                      <ImageAnimationUnfold src={grid3} alt="Image not found" />
+                      <AnimatedFadeImage src={grid3} alt="Image not found" />
                     </div>
                   </a>
                 </div>
