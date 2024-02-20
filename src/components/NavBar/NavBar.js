@@ -1,10 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 // import logo from "../../assets/images/logo.png";
 import logo from "../../assets/logo22.png";
-
-//import logo from "../../assets/images/logo-squash.png";
 import "./NavBar.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 export default function NavBar() {
@@ -28,7 +26,7 @@ export default function NavBar() {
   }, []);
 
   const cursorRef = useRef(null);
-  const location = useLocation();
+  // const location = useLocation();
 
   const toggleMobileNav = () => {
     setIsMobileNavOpen((prevState) => !prevState);
@@ -40,9 +38,6 @@ export default function NavBar() {
     }
   };
 
-  const updateVideoHeight = () => {
-    setVideoHeight(location.pathname === "/" ? "100%" : "0%");
-  };
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -112,11 +107,6 @@ export default function NavBar() {
     };
   }, [isMobileNavOpen]);
 
-  const [videoHeight, setVideoHeight] = useState("100%");
-  useEffect(() => {
-    updateVideoHeight();
-    console.log(videoHeight);
-  }, [location.pathname]);
 
 
   return (

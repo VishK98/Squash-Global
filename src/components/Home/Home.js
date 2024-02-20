@@ -79,14 +79,14 @@ function Home() {
   return (
     <>
       <video
-        className="video-display"
+        className="video-display video-main"
         ref={videoRef}
         autoPlay
         loop
         muted
         playsInline
       >
-        <source src={squashVideo} type="video/mp4" />
+        <source  src={squashVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -295,15 +295,17 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="work_list_img round_img col-lg-7 col-md-7 col-sm-12 col-12">
-              <ImageAnimationUnfold src={tasc} alt="Image not found" />
-            </div>
             {/* <div className="work_list_img round_img col-lg-7 col-md-7 col-sm-12 col-12">
-              <video width="100%" height="auto" controls>
-                <source src={bannerVideo} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <ImageAnimationUnfold src={tasc} alt="Image not found" />
             </div> */}
+            <div className=" col-lg-7 col-md-7 col-sm-12 col-12 mt-md-5">
+              <video className="video-banner" autoPlay loop muted>
+                <source src={bannerVideo} type="video/mp4" />
+              </video>
+            </div>
+
+
+
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 mt-3 d-flex flex-column align-items-center d-md-none">
               <AnimatedText
                 text={
