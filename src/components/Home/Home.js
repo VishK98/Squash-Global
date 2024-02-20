@@ -23,7 +23,9 @@ import brandIcon from "../../assets/images/Icons/icons8-bulb.gif";
 import "./BlogSlider";
 import BlogSlider from "./BlogSlider";
 import PartnerSlider from "./PartnerSlider";
-import squashVideo from "../../assets/squash.mp4";
+// import squashVideo from "../../assets/squash.mp4";
+import squashVideo from "../../assets/new-video.mp4";
+import bannerVideo from "../../assets/Banner Video.mp4";
 import rigthArrow from "../../assets/images/Icons/-right-arrow.png";
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
@@ -149,7 +151,7 @@ function Home() {
               }
               animation="slide-left"
             />
-          
+
             <div className="row">
               <div className="col">
                 <p className="outline_btn explorbtn position-relative">Explore</p>
@@ -296,6 +298,12 @@ function Home() {
             <div className="work_list_img round_img col-lg-7 col-md-7 col-sm-12 col-12">
               <ImageAnimationUnfold src={tasc} alt="Image not found" />
             </div>
+            {/* <div className="work_list_img round_img col-lg-7 col-md-7 col-sm-12 col-12">
+              <video width="100%" height="auto" controls>
+                <source src={bannerVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div> */}
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 mt-3 d-flex flex-column align-items-center d-md-none">
               <AnimatedText
                 text={
