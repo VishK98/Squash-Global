@@ -185,7 +185,7 @@ function Sector() {
         <div className="row-service">
           {services.map((image, index) => (
             <div className="service-newBox">
-              <Link style={{ textDecoration: "none" }} to={`/${routes['']}`}>
+              <Link style={{ textDecoration: "none" }} to={`/${routes[index]}`}>
                 <div className="service-space">
                   <img width="100%" height="180px" className="service-image" src={mediaPlanning} />
                   <p className="service-text">{image.title}</p>
