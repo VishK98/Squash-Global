@@ -161,24 +161,8 @@ function Sector() {
           </div>
         </div>
       </div>
-      {/* <div className="container">
-        <AnimatedText text={<h2 className="box-title">
-          Some of our services
-        </h2>} animation='slide-right' />
-        <div className="row">
-          {services.map((image, index) => (
-            <div key={index} className="col-lg-2 col-md-2 col-12">
-              <Link style={{ textDecoration: "none" }} to={`/${routes[index]}`}>
-                <div className="service-items mb-3" style={{ marginBottom: "0" }}>
-                  <img className="service-image" src={mediaPlanning} />
-                </div>
-              </Link>
-            </div>
-          ))}
-        </div>
-      </div> */}
 
-      <div className="container">
+      {/* <div className="container">
         <AnimatedText text={<h2 className="box-title text-center">
           Some of our services
         </h2>} animation='slide-up' />
@@ -194,7 +178,32 @@ function Sector() {
             </div>
           ))}
         </div>
+      </div> */}
+
+      <div className="container-fluid">
+        {/* first row of service list start */}
+        <div className="row-service">
+          {services.map((image, index) => (
+            <div className="service-newBox">
+              <Link style={{ textDecoration: "none" }} to={`/${routes['']}`}>
+                <div className="service-space">
+                  <img width="100%" height="180px" className="service-image" src={mediaPlanning} />
+                  <p className="service-text">{image.title}</p>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
+        {/* first row of service list ends */}
+
+
       </div>
+
+
+
+
+
+
 
       <div className="container mt-lg-2">
         <AnimatedText text={<h2 className="box-title">
