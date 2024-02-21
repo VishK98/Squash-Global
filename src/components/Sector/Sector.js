@@ -181,6 +181,9 @@ function Sector() {
       </div> */}
 
       <div className="container-fluid">
+      <AnimatedText text={<h2 className="box-title text-center">
+          Some of our services
+        </h2>} animation='slide-up' />
         {/* first row of service list start */}
         <div className="row-service">
           {services.map((image, index) => (
