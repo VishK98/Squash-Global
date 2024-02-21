@@ -21,6 +21,7 @@ import AnimatedText from '../Animations/TextAnimation';
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
 import Slider from './Slider';
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
+import mediaPlanning from "../../assets/images/media-planning.jpg";
 
 
 function Sector() {
@@ -122,11 +123,11 @@ function Sector() {
   ];
   return (
     <>
-    <div>
-    <picture>
-                <ImageAnimationUnfold src={industriesBanner} alt="Image not found" />
-              </picture>
-    </div>
+      <div>
+        <picture>
+          <ImageAnimationUnfold src={industriesBanner} alt="Image not found" />
+        </picture>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -160,34 +161,41 @@ function Sector() {
           </div>
         </div>
       </div>
-      <div className="container">
+      {/* <div className="container">
         <AnimatedText text={<h2 className="box-title">
           Some of our services
         </h2>} animation='slide-right' />
-        <div
-          className="row"
-          style={{ justifyContent: "space-between",}}
-        >
-          <div className="row">
-            {services.map((image, index) => (
-              <div key={index} className="col-lg-2 col-md-2 col-sm-4 col-6 service-responsive">
-                <Link style={{ textDecoration: "none" }} to={`/${routes[index]}`}>
-                  <div className="boxes mb-3" onClick={() => console.log(`Box ${index} clicked`)}>
-                    <div className="col">
-                      <div className="industries-four-boxes h-100">
-                        <div className="box-img">
-                          <ImageAnimationUnfold src={image.url} alt="Image not found" />
-                        </div>
-                        <AnimatedText text={<p className="mt-2 box-text">{image.title}</p>} animation='slide-up' />
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            ))}
-          </div>
+        <div className="row">
+          {services.map((image, index) => (
+            <div key={index} className="col-lg-2 col-md-2 col-12">
+              <Link style={{ textDecoration: "none" }} to={`/${routes[index]}`}>
+                <div className="service-items mb-3" style={{ marginBottom: "0" }}>
+                  <img className="service-image" src={mediaPlanning} />
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
+      </div> */}
+
+      <div className="container">
+        <AnimatedText text={<h2 className="box-title text-center">
+          Some of our services
+        </h2>} animation='slide-up' />
+        <div className="row">
+          {services.map((image, index) => (
+            <div className="col-lg-3 col-md-3 col-12 mb-4">
+              <Link style={{ textDecoration: "none" }} to={`/${routes[index]}`}>
+                <div className="service-space">
+                  <img width="100%" height="180px" className="service-image" src={mediaPlanning} />
+                  <p className="service-text">{image.title}</p>
+                </div>
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
+
       <div className="container mt-lg-2">
         <AnimatedText text={<h2 className="box-title">
           Some of the industry sectors we partner with
