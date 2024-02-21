@@ -32,12 +32,12 @@ function DigitalPR() {
           <p>Public Relation is one of the evergreen modes of Mass communication. 
             It breathes life into your Brand bridging the gap between the business and its potential customers.
              But Implementing a PR Strategy is like walking on a tight rope between Strategy, Persuasion, Creativity and Technology.
-            And Squash is known for doing exactly the same in the best possible way. .</p>
+            And TAW is known for doing exactly the same in the best possible way. .</p>
             <p>We build up a regular rhythm of PR activities towards the creation of goodwill and Brand Image. 
               We know exactly how to develop a cordial relationship between the Brand and its targeted audience. 
-              By using multimedia channels, Squash promotes your products or services to cultivate a positive public perception.</p>
+              By using multimedia channels, TAW promotes your products or services to cultivate a positive public perception.</p>
           <h3>IMPACTFUL DIGITAL PR & ORM OFFERINGS:</h3>
-          <p>Squash Global offers the following Digital PR & ORM Services:</p>
+          <p>TAW-the agency ways offers the following Digital PR & ORM Services:</p>
           <ul>
           <li>Brand Launch & Recognition Strategy</li>
           <li>Reputation Management </li>

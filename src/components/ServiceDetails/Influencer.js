@@ -28,8 +28,8 @@ function Influencer() {
      <div className='col-lg-7 col-md-7 col-12'>
        <h1 className="big-title page-head">INFLUENCER MARKETING</h1>
        <h3 className='mt-lg-3'>STEP INTO THE NEW NORMAL OF DIGITAL SPHERE  </h3>
-       <p>Influencers are like modern marketing currency. With incredible cultural and consumer sway, their involvement can practically guarantee thousands of watchers or listeners. To attract customers, your business should let these social media stars light the way. Curious about how to harness the marketing power of influencers? Squash is here to help you guide through the path. </p>
-         <p>Our influencer outreach services will help you reach new audiences and create effective amplification of your Brand communication. At Squash, we incorporate influencer marketing into your social media strategy to reach a niche, more engaged audience segment and expand your brand's presence.</p>
+       <p>Influencers are like modern marketing currency. With incredible cultural and consumer sway, their involvement can practically guarantee thousands of watchers or listeners. To attract customers, your business should let these social media stars light the way. Curious about how to harness the marketing power of influencers? TAW is here to help you guide through the path. </p>
+         <p>Our influencer outreach services will help you reach new audiences and create effective amplification of your Brand communication. At TAW, we incorporate influencer marketing into your social media strategy to reach a niche, more engaged audience segment and expand your brand's presence.</p>
        <h3>WHY CHOOSE US?</h3>
        <ul>
        <li>Collaboration with popular and relevant influencers in your niche to promote your Brand and increase your revenue.</li>

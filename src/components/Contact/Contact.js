@@ -122,9 +122,9 @@ function Contact() {
                     <span style={{ marginLeft: "10px" }}>
                       <a className="contact-text"
                         style={{ textDecoration: "none", color: "#000" }}
-                        href="mailto:contact@squashglobal.com"
+                        href="mailto:contact@TAWglobal.com"
                       >
-                        contact@squashglobal.com
+                        contact@TAWglobal.com
                       </a>
                     </span>
                   }

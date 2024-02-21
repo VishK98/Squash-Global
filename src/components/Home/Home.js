@@ -23,8 +23,8 @@ import brandIcon from "../../assets/images/Icons/icons8-bulb.gif";
 import "./BlogSlider";
 import BlogSlider from "./BlogSlider";
 import PartnerSlider from "./PartnerSlider";
-// import squashVideo from "../../assets/squash.mp4";
-import squashVideo from "../../assets/new-video.mp4";
+// import TAWVideo from "../../assets/TAW.mp4";
+import TAWVideo from "../../assets/new-video.mp4";
 import bannerVideo from "../../assets/Banner Video.mp4";
 import rigthArrow from "../../assets/images/Icons/-right-arrow.png";
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
@@ -86,7 +86,7 @@ function Home() {
         muted
         playsInline
       >
-        <source  src={squashVideo} type="video/mp4" />
+        <source  src={TAWVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -129,7 +129,7 @@ function Home() {
             <AnimatedText
               text={
                 <h2 className="brewText-stroke">
-                  What’s Brewing at Squash Global?
+                  What’s Brewing at TAW-the agency ways?
                 </h2>
               }
               animation="slide-left"
@@ -383,7 +383,7 @@ function Home() {
                 />
                 <div className="second_line_title bannertitle">
                   <AnimatedText
-                    text={<h2 className="title bannertitle">Squash</h2>}
+                    text={<h2 className="title bannertitle">TAW</h2>}
                     animation="slide-left"
                   />
                 </div>
@@ -395,13 +395,13 @@ function Home() {
                   <AnimatedText
                     text={
                       <p className="brew-text">
-                        Squash Global is more than{" "}
+                        TAW-the agency ways is more than{" "}
                         <span className="text-highlight">
                           just a marketing agency.
                         </span>{" "}
                         We are the architects of brand experiences, designing
                         stories that resonate with the brand’s audience. At
-                        Squash, we provide customize solutions and{" "}
+                        TAW, we provide customize solutions and{" "}
                         <span className="text-highlight">
                           expertise to unique business needs making us the right
                           choice for start-ups and small to medium companies.
@@ -450,7 +450,7 @@ function Home() {
                           we design campaigns with human touch that leaves a
                           lasting impression.
                         </span>{" "}
-                        With Squash, you can amplify your brand’s communication
+                        With TAW, you can amplify your brand’s communication
                         making it more interactive and people centric. This will
                         not only generate leads but also make your brand more
                         relatable and problem solving to your consumers.{" "}

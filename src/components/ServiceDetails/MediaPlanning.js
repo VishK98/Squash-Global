@@ -35,7 +35,7 @@ function MediaPlanning() {
           {/* <h4 className=''>We Cover It ALL!</h4> */}
           <AnimatedText text={<h3>We Cover It ALL !!!</h3>} animation="slide-left" className="service-heading" />
           <p>The medium is the power and to harness that power you need Media Planning experts by your side who knows how and when to deliver that message to the right people.</p>
-          <p> Squash ensures your billions of advertising dollars are not wasted by guiding you through proper media planning strategies. We assign a combination of people with skilled knowledge of media, budgeting, content creation, and other areas of expertise related to marketing. Our Media Planning Strategies will certainly help you drive the desired results that you are dreaming of.</p>
+          <p> TAW ensures your billions of advertising dollars are not wasted by guiding you through proper media planning strategies. We assign a combination of people with skilled knowledge of media, budgeting, content creation, and other areas of expertise related to marketing. Our Media Planning Strategies will certainly help you drive the desired results that you are dreaming of.</p>
           <h3 style={{ fontSize: "35px" }}><span style={{ color: "#4c029e", fontSize: "35px"}}>3 PILLARS  OF  </span> MEDIA<br /> PLANNING</h3>
           <div className='row mt-lg-3'>
             <diV className="col-lg-2 col-12">

@@ -12,7 +12,7 @@ import client8 from "../../assets/images/clients/client-8.png";
 // import ourClients from "../../assets/images/our-clients.png";
 import ourClients from "../../assets/images/client.png";
 
-import squashVideo from "../../assets/squash-video.mp4";
+import TAWVideo from "../../assets/squash-video.mp4";
 import AnimatedText from '../Animations/TextAnimation';
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
@@ -58,7 +58,7 @@ function Work() {
       </div>
       {/* <div className="video-box">
         <video autoPlay loop muted playsInline >
-          <source src={squashVideo} type="video/mp4" />
+          <source src={TAWVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div> */}

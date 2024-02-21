@@ -35,10 +35,10 @@ function Philosophy() {
               sneaked out while no one was looking.</h3>} animation="slide-left" />
 
             <AnimatedText text={<p className=" mt-lg-4">
-              Squash Global represents the gap between what the Brands produce and what the Consumers actually want. We offer 360-degree digital marketing solutions to help you build your brand from the scratch. In this complex digital landscape, our team of creative and passionate young people build brands, digital experiences, and products for the companies of tomorrow.
+              TAW-the agency ways represents the gap between what the Brands produce and what the Consumers actually want. We offer 360-degree digital marketing solutions to help you build your brand from the scratch. In this complex digital landscape, our team of creative and passionate young people build brands, digital experiences, and products for the companies of tomorrow.
             </p>} animation="slide-up" />
             <AnimatedText text={<p className=" mt-lg-4">
-              Our guidance and bold imagination help the brands to challenge the industry and shape the future, every day. Squash is a perfect amalgamation of Creativity & Strategy and everything in between. With our vast experience and understanding, we can proudly say that we are not just International but multicultural too.
+              Our guidance and bold imagination help the brands to challenge the industry and shape the future, every day. TAW is a perfect amalgamation of Creativity & Strategy and everything in between. With our vast experience and understanding, we can proudly say that we are not just International but multicultural too.
             </p>} animation="slide-up" />
           </div>
           <div className="col-lg-6 col-12">
@@ -50,13 +50,13 @@ function Philosophy() {
         <div className="row">
           <div className="col-12 philosophy-details mt-5">
             <AnimatedText text={<p className=" mt-lg-4">
-              <h3>WHY SQUASH?</h3>
-              <p>Squash believes in solving your problems rather than just answering them.
+              <h3>WHY TAW?</h3>
+              <p>TAW believes in solving your problems rather than just answering them.
                 We never back down from taking any challenges, after all working hard is our best-defined nature.
                 We pour our heart and soul to each and every project no matter the size is.
-                At Squash, there are no half measure. 'IFs' and 'BUTs" are not in our dictionary.
+                At TAW, there are no half measure. 'IFs' and 'BUTs" are not in our dictionary.
                 We first Assess, then Strategize and then Come up with the plan best suited for your Brand.
-                Squash breathe life into your Brand with meaningful innovation and creative communication.
+                TAW breathe life into your Brand with meaningful innovation and creative communication.
               </p>
             </p>} animation="slide-down" />
        
@@ -64,9 +64,9 @@ function Philosophy() {
               WE ARE NOT JUST A TYPICAL AGENCY : WE ARE MORE THAN THAT
             </h3>} animation="slide-down" />
             <AnimatedText text={<p className=" mt-lg-4">
-              Think of Squash as an Extension of your Team, sharing the same Dreams and same Goals.
+              Think of TAW as an Extension of your Team, sharing the same Dreams and same Goals.
               We offer multi-dimensional marketing services to drive the attention and visibility your Brand needs.
-              Squash turns your ideas into reality so you can also build your business like a pro.
+              TAW turns your ideas into reality so you can also build your business like a pro.
               With the vast and ever-evolving marketing trends, it is a challenge for Brands to keep up with the new technology and crazes. This is where our team comes into play.
             </p>} animation="slide-down" />
             <AnimatedText text={<p className=" mt-lg-4 mt-3">
@@ -86,7 +86,7 @@ function Philosophy() {
                 <AnimatedText text={<h2 className=" mt-lg-4 text-white">
                   Welcome to
                   <br />
-                  Squash Global 2.0
+                  TAW-the agency ways 2.0
                 </h2>} animation="slide-right" />
               </div>
             </div>

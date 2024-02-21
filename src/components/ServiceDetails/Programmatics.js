@@ -28,11 +28,11 @@ function Programmatics() {
      <div className='col-lg-7 col-md-7 col-12'>
        <h1 className="big-title page-head">PROGRAMMATIC ADVERTISING</h1>
        <h3 className='mt-lg-3'>DATA DRIVEN DIGITAL STRATEGIES </h3>
-       <p>In digital marketing sphere, things keep on changing its course with the media consuming habits of the audiences. Sometimes, brands must deploy targeted approach across the digital spectrum to hit the bullseye. That is where programmatic advertising and Squash comes into play. </p>
-         <p>Programmatic advertising refers to the buying and selling digital advert space through automated platforms. Whereas Squash empowers the advertisers with advanced targeting capabilities within the scope of programmatic advertising. Our strategic media planning helps to display ads to the right audience at the right time with our plenty of targeting options like geolocation targeting, audience targeting, IP targeting, contextual targeting, retargeting and many more.</p>
-         <p>Squash has in-house capabilities to drive programmatic advertising for Brands, devise digital strategies driven by data and optimized ad campaign directed to the niched audiences. </p>
+       <p>In digital marketing sphere, things keep on changing its course with the media consuming habits of the audiences. Sometimes, brands must deploy targeted approach across the digital spectrum to hit the bullseye. That is where programmatic advertising and TAW comes into play. </p>
+         <p>Programmatic advertising refers to the buying and selling digital advert space through automated platforms. Whereas TAW empowers the advertisers with advanced targeting capabilities within the scope of programmatic advertising. Our strategic media planning helps to display ads to the right audience at the right time with our plenty of targeting options like geolocation targeting, audience targeting, IP targeting, contextual targeting, retargeting and many more.</p>
+         <p>TAW has in-house capabilities to drive programmatic advertising for Brands, devise digital strategies driven by data and optimized ad campaign directed to the niched audiences. </p>
        <h3>OUR PROGRAMMATIC ADVERTISING OFFERINGS:</h3>
-       <p>With Squash, you can leverage the following benefits of programmatic advertising that will provide an edge to your brand over generic: </p>
+       <p>With TAW, you can leverage the following benefits of programmatic advertising that will provide an edge to your brand over generic: </p>
        <ul>
        <li>Scalable and Flexible Spending</li>
        <li>Large Reach</li>
