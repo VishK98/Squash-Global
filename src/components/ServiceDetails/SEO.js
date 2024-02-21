@@ -42,7 +42,7 @@ function SEO() {
           </ul>
          <h3>SEARCH ENGINE MARKETING</h3>
          <p>Google Ads make sure your Brand's message is being properly propagated to the targeted segments and serving its purpose. 
-          With vast amount of knowledge, Squash curates the perfect strategy to give you the best online presence with Google AdWords.</p>
+          With vast amount of knowledge, TAW curates the perfect strategy to give you the best online presence with Google AdWords.</p>
         <h3>Our Search Engine Marketing Services Comprise: </h3>
         <ul>
           <li>Google Search Campaigns</li>

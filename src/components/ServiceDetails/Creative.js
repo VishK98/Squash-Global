@@ -33,9 +33,9 @@ function Creative() {
             From the time immemorial, Creative ads, posters, graphics are being imprinted on the mind of the consumers. 
             Creative messages are so strong that consumers end up remembering a Brand with the creatives. 
             But all are a fantasy dream and nothing else, if you lack the ability to use the power of Creative marketing to its fullest form.</p>
-            <p>At Squash, our creative advertising team collaborate on the creative concept for an advertising campaign and calculate its effectiveness. 
+            <p>At TAW, our creative advertising team collaborate on the creative concept for an advertising campaign and calculate its effectiveness. 
               Our bold and persuasive approach give meaning to your Brand in many ways. 
-              If you struggling to put your Brand in the consumers' eye in a meaningful and long-lasting way, Squash is the perfect destination for you. </p>
+              If you struggling to put your Brand in the consumers' eye in a meaningful and long-lasting way, TAW is the perfect destination for you. </p>
           <h3>PROFESSIONAL DESIGN SERVICES FOR YOUR BUSINESS</h3>
           <ul>
           <li>Emailer Design</li>

@@ -33,9 +33,9 @@ function SocialMedia() {
             That's being said, if you are not leveraging the boon of social media within your Digital Marketing Strategy, you are missing out on a fast, 
             inexpensive and effective way to reach almost half of the world's population.</p>
             <p>Social Media is the most important and effective link between your Brand and your consumer base. 
-              Squash helps you to harness the power of social media and forge out the most comprehensive social media marketing strategy. 
+              TAW helps you to harness the power of social media and forge out the most comprehensive social media marketing strategy. 
               Our ultimate guidance helps brands gain maximum reach, boost conversions and increase brand awareness. 
-              Squash's professional content specialists curate social media message for your product or services that dig deep into the audience's consciousness and make your Brand more noticeable.</p>
+              TAW's professional content specialists curate social media message for your product or services that dig deep into the audience's consciousness and make your Brand more noticeable.</p>
           <h3>OUR OFFERINGS FOR SOCIAL MEDIA MARKETING SERVICES:</h3>
           <p>We assist you with wide range of different Social Media Marketing services by bringing an arsenal of different skills and capabilities to the table.</p>
           <ul>

@@ -39,7 +39,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <NavBar />
-      <div className="Squash">
+      <div className="TAW">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/philosophy" element={<Philosophy />} />

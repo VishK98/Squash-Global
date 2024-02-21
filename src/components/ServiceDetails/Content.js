@@ -28,9 +28,9 @@ function Content() {
         <div className='col-lg-7 col-md-7 col-12'>
           <h1 className="big-title page-head">CONTENT </h1>
           <h3 className='mt-lg-3'>CREATE CONTENT AT SCALE</h3>
-          <p>Content is the pillar of trust for any business. Squash is known for not only creating the trust but nurturing it actively. Our adaptable, engaging and easy to consume contents helps next-gen marketers to convey their Brand's message better than before. Businesses trust us to design content marketing strategy in such an appealing way that even the laziest potential customer will have access to the products and services. </p>
+          <p>Content is the pillar of trust for any business. TAW is known for not only creating the trust but nurturing it actively. Our adaptable, engaging and easy to consume contents helps next-gen marketers to convey their Brand's message better than before. Businesses trust us to design content marketing strategy in such an appealing way that even the laziest potential customer will have access to the products and services. </p>
           <h3>WHY BRANDS TRUSTS US WITH THEIR CONTENT NEEDS?</h3>
-            <p>Squash was born to solve major content marketing problems faced by businesses while scaling up their contents.</p>
+            <p>TAW was born to solve major content marketing problems faced by businesses while scaling up their contents.</p>
           <ul>
           <li>Managing Freelancer and In-House Writers'</li>
           <li>Meeting Deadlines</li>

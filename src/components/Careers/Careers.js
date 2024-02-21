@@ -175,7 +175,7 @@ function Careers() {
 
       <div className="container ">
         <AnimatedText text={<h1 style={{ fontSize: "50px", fontWeight: "bold" }}>
-          Start your journey in Squash
+          Start your journey in TAW
         </h1>} animation='slide-left' />
         <div className="row ">
           <div className="col-lg-12 col-md-12 col-12">
@@ -193,14 +193,14 @@ function Careers() {
         </div>
       </div>
       <div className="container">
-        <AnimatedText text={<h1 style={{ fontWeight: "bold" }}>What to expect at Squash?</h1>
+        <AnimatedText text={<h1 style={{ fontWeight: "bold" }}>What to expect at TAW?</h1>
         } animation='slide-up' />
         <AnimatedText text={<p className="mt-2" style={{ fontSize: "20px" }}>
           <span style={{ fontWeight: "600" }}>
-            At Squash, we believe in growing together.
+            At TAW, we believe in growing together.
           </span>
           <br />
-          <br /> A place we offer our talents to bloom in an atmosphere where they can have professional and personal growth. Squash celebrates achievements together, offer diverse opportunities and development programs.
+          <br /> A place we offer our talents to bloom in an atmosphere where they can have professional and personal growth. TAW celebrates achievements together, offer diverse opportunities and development programs.
         </p>} animation='slide-up' />
       </div>
       <div className="container">
@@ -214,11 +214,11 @@ function Careers() {
               <span
                 style={{ fontWeight: "bold", color: "#4c029e" }}
               >
-                Squash Global
+                TAW-the agency ways
               </span>
               , we foster collaboration, innovation and creative minds to explore limitless possibilities. If you are someone who wants to be a part of the next big thing in the marketing and advertising industry,
               " <br /> <br />
-              Write to us at <a className="mail-text" href='mailto:hr@squashglobal.com'>hr@squashglobal.com</a>
+              Write to us at <a className="mail-text" href='mailto:hr@TAWglobal.com'>hr@TAWglobal.com</a>
             </p>} animation='fade-in' />
           </div>
           <div className="col-lg-7 col-md-7 col-12 col-sm-12 mt-4 ">
@@ -230,7 +230,7 @@ function Careers() {
       </div>
       <div className="container">
         <div style={{ display: "flex" }}>
-          <AnimatedText text={<h1 style={{ fontWeight: "bold" }}>Life at Squash Global</h1>
+          <AnimatedText text={<h1 style={{ fontWeight: "bold" }}>Life at TAW-the agency ways</h1>
           } animation='slide-left' />
           <div className="animated-arrow-btn" style={{
             height: "50px",
