@@ -2,29 +2,81 @@
     display: flex;
     overflow-x: hidden;
     overflow: hidden;
-  }
-  
-  .platforms-list-item {
+    position: relative;
+}
+
+.platforms-list-item {
     flex-shrink: 0;
-    margin-right: 20px;
-  }
-  
+    margin-right: 15px;
+    transition: transform 0.5s;
+}
+
 .slide-image {
     height: 120px;
     width: 200px;
     border-radius: 10px;
     filter: grayscale(100%);
-    transition: filter 1s, transform 1s; 
+    transition: filter 0.5s, transform 0.5s;
     cursor: pointer;
 }
 
 .slide-image:hover {
     filter: grayscale(0%);
-    transform: scale(0.9);
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 625px) {
     .slide-image {
         filter: grayscale(0%);
     }
+}
+
+
+/* new css */
+.card {
+    width: 180px;
+    height: 120px;
+    border-radius: 15px;
+    /* background-color: #7219d8b8; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    filter: grayscale(90%) brightness(100%);
+    transition: background-color 1s filter 1s;
+
+}
+
+.card:hover {
+    /* background-color: #7219d8; */
+    filter: grayscale(0%) brightness(100%);
+
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card::before {
+    content: "";
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -40%;
+    left: -20%;
+    border-radius: 50%;
+    border: 35px solid rgba(255, 255, 255, 0.102);
+    transition: all .8s ease;
+    filter: blur(.5rem);
+}
+
+.card:hover::before {
+    width: 140px;
+    height: 140px;
+    top: -30%;
+    left: 50%;
+    filter: blur(0rem);
 }
