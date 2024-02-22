@@ -14,8 +14,8 @@ h2.stroke {
 .bannertitle h1,
 .bannertitle h2 {
   font-size: 110px;
-  font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
-  font-display: swap;
+  font-family: RedHatDisplayBold, RedHatDisplayBold, Helvetica, Arial, sans-serif;
+  /* font-display: swap; */
 }
 
 .agency-text {
@@ -23,9 +23,10 @@ h2.stroke {
 }
 
 .brewText-stroke {
-  -webkit-text-stroke: 1px #000;
-  -webkit-text-fill-color: transparent;
-  font-size: 40px;
+  /* -webkit-text-stroke: 1px #000;
+  -webkit-text-fill-color: transparent; */
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .responsive-text {

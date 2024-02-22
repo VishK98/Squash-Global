@@ -1,58 +1,76 @@
-import React, { useEffect, useRef } from "react";
-import "./Slider.css";
-import "./Sector.css";
-import AnimatedText from "../Animations/TextAnimation";
-import ImageAnimationFade from "../Animations/ImageAnimationFade";
+import React, { useEffect, useRef, useState } from 'react';
+import './Slider.css'; // Assuming you have a CSS file for styling
+import GAP from "../../assets/images/Partners/GAP.png";
+import Asianpaint from "../../assets/images/Partners/asianpaint.jpg";
+import CEAT from "../../assets/images/Partners/ceat.jpg";
+import Dolby from "../../assets/images/Partners/dolby-atmos.webp";
+import Hira from "../../assets/images/Partners/hira.png";
+import Kotak from "../../assets/images/Partners/kotak.png";
+import Loreal from "../../assets/images/Partners/loreal.png";
+import Yes from "../../assets/images/Partners/yes.png";
+import Panasonic from "../../assets/images/Partners/panasonic.webp";
+import DHL from "../../assets/images/Partners/DHL.webp";
+import Square from "../../assets/images/Partners/square.png";
+import Square1 from "../../assets/images/Partners/square1.png";
+import Cencora from "../../assets/images/Partners/cencora.png";
 
-const Slider = ({ box }) => {
+const Slider = () => {
+  const imageSources = [
+    { url: GAP, alt: "GAP Logo", link: "https://example.com" },
+    { url: Asianpaint, alt: "Asian Paint Logo", link: "https://example.com" },
+    { url: CEAT, alt: "CEAT Logo", link: "https://example.com" },
+    { url: Dolby, alt: "Dolby Logo", link: "https://example.com" },
+    { url: Hira, alt: "Hira Logo", link: "https://example.com" },
+    { url: Kotak, alt: "Kotak Logo", link: "https://example.com" },
+    { url: Loreal, alt: "Loreal Logo", link: "https://example.com" },
+    { url: Yes, alt: "Yes Logo", link: "https://example.com" },
+    { url: Panasonic, alt: "Panasonic Logo", link: "https://example.com" },
+    { url: DHL, alt: "DHL Logo", link: "https://example.com" },
+    { url: Square, alt: "Square Logo", link: "https://example.com" },
+    { url: Square1, alt: "Square1 Logo", link: "https://example.com" },
+    { url: Cencora, alt: "Cencora Logo", link: "https://example.com" }
+  ];
+
   const sliderRef = useRef(null);
-  // const clonedBox = [...box, ...box, ...box, ...box, ...box, ...box, ...box, ...box, ...box, ...box, ...box, ...box, ...box, ...box, ...box, ...box,]; // Clone the box array to create a seamless loop
-  const clonedBox = Array.from({ length: 100 }, () => box).flat();
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const slider = sliderRef.current;
-    let currentOffset = 0;
-    let intervalId;
+    let animationId;
 
-    const startInterval = () => {
-      intervalId = setInterval(() => {
-        currentOffset -= 220; // Adjust the width of each box here
-        slider.style.transition = "transform 0.5s ease-in-out";
-        slider.style.transform = `translateX(${currentOffset}px)`;
-
-        if (currentOffset <= -220 * (clonedBox.length - 1)) {
-          currentOffset = 0;
-          slider.style.transition = "none"; // Disable transition for instant reset
-          slider.style.transform = `translateX(${currentOffset}px)`;
+    const slide = () => {
+      animationId = requestAnimationFrame(() => {
+        if (slider) {
+          slider.scrollLeft += 1;
+          if (slider.scrollLeft >= slider.scrollWidth / 2) {
+            slider.scrollLeft = 0;
+          }
+          setCurrentIndex(prevIndex => (prevIndex + 1) % (imageSources.length / 2));
         }
-      }, 1500); // Adjust the interval as needed
+        slide();
+      });
     };
 
-    startInterval();
+    slide();
 
     return () => {
-      clearInterval(intervalId);
+      cancelAnimationFrame(animationId);
     };
-  }, [clonedBox]);
+  }, [imageSources.length]);
 
   return (
-    <div
-      className="slider-container"
-      style={{ width: `${clonedBox.length * 220}px` }}
-    >
-      <div className="slider" ref={sliderRef}>
-        {clonedBox.map((image, index) => (
-          <div key={index} className="slider-box ">
-            <div className="slider-img">
-              <ImageAnimationFade src={image.url} alt="Image not found" />
-            </div>
-            <AnimatedText
-              text={<p className="mt-2 box-text">{image.title}</p>}
-              animation="slide-up"
+    <div className="platforms-list mt-4" ref={sliderRef}>
+      {imageSources.concat(imageSources).map((image, index) => (
+        <div className="platforms-list-item" key={index}>
+          <a href={image.link}>
+            <img
+              className="slide-image"
+              alt={image.alt}
+              src={image.url}
             />
-          </div>
-        ))}
-      </div>
+          </a>
+        </div>
+      ))}
     </div>
   );
 };

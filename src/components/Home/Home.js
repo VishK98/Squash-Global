@@ -92,7 +92,7 @@ function Home() {
 
       <div className="video-content d-none d-md-block">
         <div className="bannertitle">
-          <AnimatedText text={<h1 className="text-lg-center not_an stroke">Not an</h1>
+          <AnimatedText text={<h1 className="text-lg-center ">Not an</h1>
           } animation='fade-in' />
         </div>
         <div className="bannertitle">
@@ -129,8 +129,11 @@ function Home() {
             <AnimatedText
               text={
                 <h2 className="brewText-stroke">
-                  What’s Brewing at TAW-the agency ways?
+                  What’s Brewing at TAW?
                 </h2>
+                // <h2 style={{fontWeight: 'bold'}}>
+                //   What’s Brewing at TAW?
+                // </h2>
               }
               animation="slide-left"
             />
@@ -191,7 +194,8 @@ function Home() {
                 />
                 <div className="bannertitle">
                   <AnimatedText
-                    text={<h2 style={{ fontWeight: "bold" }}>People</h2>}
+                    // text={<h2 style={{ fontWeight: "bold" }}>People</h2>}
+                    text={<h2 style={{ fontWeight: "bold" }}>experiences</h2>}
                     animation="slide-up"
                   />
                 </div>

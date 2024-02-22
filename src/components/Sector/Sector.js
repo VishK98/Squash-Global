@@ -1,4 +1,6 @@
-import React from "react";
+// import React from "react";
+import React, { useState, useEffect } from 'react';
+
 import "./Sector.css";
 import ScrollToTopButton from '../TopButton/TopButton';
 // import industriesBanner from "../../assets/images/industries-banner.webp";
@@ -22,6 +24,7 @@ import ImageAnimationFade from "../Animations/ImageAnimationFade";
 import Slider from './Slider';
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 import mediaPlanning from "../../assets/images/media-planning.jpg";
+
 
 
 function Sector() {
@@ -121,6 +124,8 @@ function Sector() {
     },
 
   ];
+
+
   return (
     <>
       <div>
@@ -181,7 +186,7 @@ function Sector() {
       </div> */}
 
       <div className="container-fluid">
-      <AnimatedText text={<h2 className="box-title text-center">
+        <AnimatedText text={<h2 className="box-title text-center">
           Some of our services
         </h2>} animation='slide-up' />
         {/* first row of service list start */}
@@ -202,18 +207,14 @@ function Sector() {
 
       </div>
 
-
-
-
-
-
-
       <div className="container mt-lg-2">
         <AnimatedText text={<h2 className="box-title">
           Some of the industry sectors we partner with
-        </h2>} animation='slide-right' />
+        </h2>} animation='slide-up' />
       </div>
-      <Slider box={box} />
+      {/* <Slider box={box} /> */}
+      <Slider />
+
       <div className="position-relative mt-2">
         <img
           src={Expert}

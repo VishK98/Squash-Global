@@ -1,19 +1,21 @@
-
-.partner-slider-container {
-    max-width: 100%; 
+.platforms-list {
+    display: flex;
+    overflow-x: hidden;
     overflow: hidden;
-}
+  }
+  
+  .platforms-list-item {
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+  
 .slide-image {
     height: 120px;
     width: 200px;
     border-radius: 10px;
-    filter: grayscale(80%);
-    transition: filter 0.3s;
+    filter: grayscale(100%);
+    transition: filter 1s, transform 1s; 
     cursor: pointer;
-    transition: all .3s;
-    /* mix-blend-mode: multiply; */
-    mix-blend-mode: color-burn;
-
 }
 
 .slide-image:hover {
