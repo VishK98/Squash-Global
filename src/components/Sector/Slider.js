@@ -60,7 +60,7 @@ const Slider = () => {
               <div class="card-image">
                 <img src={image.url} />
               </div>
-              <div class="cover">
+              <div class="cover" >
                 <p class="card-title">{image.title}</p>
               </div>
             </div>

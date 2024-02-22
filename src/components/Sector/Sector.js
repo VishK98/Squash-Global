@@ -182,7 +182,7 @@ function Sector() {
         <AnimatedText text={<h2 className="box-title text-center">
           Some of our services
         </h2>} animation='slide-up' />
-        {/* first row of service list start */}
+        {/*  first row of service list start */}
         <div className="row-service">
           {services.map((image, index) => (
             <div className="service-newBox">
@@ -196,8 +196,6 @@ function Sector() {
           ))}
         </div>
         {/* first row of service list ends */}
-
-
       </div>
 
       <div className="container mt-lg-2">
@@ -205,9 +203,7 @@ function Sector() {
           Some of the industry sectors we partner with
         </h2>} animation='slide-up' />
       </div>
-      {/* <Slider box={box} /> */}
       <Slider />
-
       <div className="position-relative mt-2">
         <img
           src={Expert}
