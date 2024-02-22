@@ -128,18 +128,11 @@ function Sector() {
 
   return (
     <>
-      <div>
-        <picture>
-          <ImageAnimationUnfold src={industriesBanner} alt="Image not found" />
-        </picture>
+      {/*  */}
+      <div >
+        <ImageAnimationUnfold src={industriesBanner} alt="Image not found" />
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="route-text">
-            </div>
-          </div>
-        </div>
       </div>
       <div className="p-lg-0 mb-3">
         <div className="container">
