@@ -13,7 +13,7 @@
 }
 
 .work-box:hover {
-    border-color: #4c029e;
+    border-color: #30256d;
     border-width: 1.5px;
 }
 
@@ -37,7 +37,7 @@
 .partnership-text {
     font-weight: bold;
     font-size: 2em;
-    background: linear-gradient(90deg, #000, #4c029e, #4c029e);
+    background: linear-gradient(90deg, #000, #30256d, #30256d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

@@ -29,7 +29,7 @@
   height: 40px;
   width: 115px;
   background-color: #fff;
-  border-color: #4c029e;
+  border-color: #30256d;
   text-align: center;
   line-height: 30px;
   border-radius: 8px;
@@ -37,8 +37,8 @@
 }
 .apply-now-btn:hover {
   color: #fff;
-  border-color: #4c029e;
-  background-color: #4c029e;
+  border-color: #30256d;
+  background-color: #30256d;
   box-shadow: 5px 5px 10px #f48c8c;
   border-radius: 8px;
 }
@@ -46,7 +46,7 @@
   height: 400px;
   /* width: 400px; */
   border-radius: 15px;
-  background-color: #4c029e;
+  background-color: #30256d;
   text-align: center;
 }
 .content-box-text {
@@ -129,7 +129,7 @@
 }
 .mail-text {
   text-decoration: none;
-  color: #4c029e;
+  color: #30256d;
   transition: color 0.3s; /* Transition the color change over 0.3 seconds */
 }
 

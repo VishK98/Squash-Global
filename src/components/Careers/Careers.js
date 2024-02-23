@@ -212,7 +212,7 @@ function Careers() {
             <AnimatedText text={<p className="mt-4" style={{ fontSize: "20px" }}>
               "At{" "}
               <span
-                style={{ fontWeight: "bold", color: "#4c029e" }}
+                style={{ fontWeight: "bold", color: "#30256d" }}
               >
                 TAW-the agency ways
               </span>
