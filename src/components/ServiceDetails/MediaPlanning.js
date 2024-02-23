@@ -30,13 +30,13 @@ function MediaPlanning() {
           <img style={{height: "91%", width: "100%"}} src={img} className='tittle-img' alt='' />
         </div>
         <div className='col-lg-7 col-md-7 col-12'>
-          <div style={{height: "2px", width: "100%",background: "#4c029e",marginTop: "18px",marginTop:"30px"}}></div>
+          <div style={{height: "2px", width: "100%",background: "#30256d",marginTop: "18px",marginTop:"30px"}}></div>
           <h6 className='underline-custom-1 service-title-1'>FROM TRADITIONAL TO DIGITAL</h6>
           {/* <h4 className=''>We Cover It ALL!</h4> */}
           <AnimatedText text={<h3>We Cover It ALL !!!</h3>} animation="slide-left" className="service-heading" />
           <p>The medium is the power and to harness that power you need Media Planning experts by your side who knows how and when to deliver that message to the right people.</p>
           <p> TAW ensures your billions of advertising dollars are not wasted by guiding you through proper media planning strategies. We assign a combination of people with skilled knowledge of media, budgeting, content creation, and other areas of expertise related to marketing. Our Media Planning Strategies will certainly help you drive the desired results that you are dreaming of.</p>
-          <h3 style={{ fontSize: "35px" }}><span style={{ color: "#4c029e", fontSize: "35px"}}>3 PILLARS  OF  </span> MEDIA<br /> PLANNING</h3>
+          <h3 style={{ fontSize: "35px" }}><span style={{ color: "#30256d", fontSize: "35px"}}>3 PILLARS  OF  </span> MEDIA<br /> PLANNING</h3>
           <div className='row mt-lg-3'>
             <diV className="col-lg-2 col-12">
               <p className='service-description' >Purpose</p>
@@ -63,8 +63,8 @@ function MediaPlanning() {
           {/* <p>Reach: What would be volume? How many people are we targeting? What would be the frequency? Not everyone consumes the media at the same time. So, it is utmost important to decide the reach and frequency of a campaign. </p> */}
           <h6 className='service-description-3'>All these three are interconnected and our media planning team consider each and every aspect during the early stage of plan formation. </h6>
           <p className='service-description-3'>Want the same for your Business?</p>
-          <p className='service-description-3'>How about catching up for a <span style={{ color: "#4c029e" }}>Coffee!</span></p>
-          <div style={{height: "2px", width: "100%",background: "#4c029e",marginTop: "18px"}}></div>
+          <p className='service-description-3'>How about catching up for a <span style={{ color: "#30256d" }}>Coffee!</span></p>
+          <div style={{height: "2px", width: "100%",background: "#30256d",marginTop: "18px"}}></div>
 
         </div>
       </div>

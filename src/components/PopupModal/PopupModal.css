@@ -8,7 +8,7 @@
 /* Style all input fields inside the modal */
 .modal-body input.form-field {
     background-color: #605f5f;
-    color: #4c029e; 
+    color: #30256d; 
     border: none; 
     border-bottom: 1px solid #424242;
     transition: border-color 0.3s; 
@@ -17,15 +17,15 @@
  
   .modal-body input.form-field:focus {
     outline: none;
-    border-color: #4c029e; 
+    border-color: #30256d; 
   }
   
 /* Add animation to the modal title */
 .modal-title {
     margin-left: 30px;
     font-size: 1.5rem;
-    color: #4c029e;
-    background: linear-gradient(45deg, #4c029e, #7e7e7e);
+    color: #30256d;
+    background: linear-gradient(45deg, #30256d, #7e7e7e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: transform 0.3s ease;
@@ -74,7 +74,7 @@ button.depth {
 
 button.depth:hover,
 button.depth:focus {
-    color: #4c029e;
+    color: #30256d;
     text-shadow: 0 0 20px hsla(240, 75%, 75%, .5),
         0 1px 1px hsla(0, 0%, 100%, .25),
         0 -1px 1px hsla(0, 0%, 0%, .75);
@@ -97,7 +97,7 @@ button.submit-depth {
 
 button.submit-depth:hover,
 button.submit-depth:focus {
-    color: #4c029e;
+    color: #30256d;
     text-shadow: 0 0 20px hsla(240, 75%, 75%, .5),
         0 1px 1px hsla(0, 0%, 100%, .25),
         0 -1px 1px hsla(0, 0%, 0%, .75);

@@ -35,12 +35,12 @@
 /* Remove default black dot */
 .slick-dots li button {
   background-color: transparent;
-  border: 1px solid #4c029e; 
+  border: 1px solid #30256d; 
 }
 
 /* Change the color of active dot */
 .slick-dots li.slick-active button {
-  background-color: #4c029e;
+  background-color: #30256d;
 }
 
 /* Add more style to inactive dots */
@@ -58,5 +58,5 @@
   height: 15px; 
   margin:  1px 2px;
   border-radius: 50%;
-  border: 1px solid #4c029e; 
+  border: 1px solid #30256d; 
 }

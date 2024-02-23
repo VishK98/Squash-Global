@@ -95,7 +95,7 @@
   
 
   .submit:hover {
-    background-color: #4c029e;
+    background-color: #30256d;
     transform: scale(1.1); 
     border: 0.5px;
   }
@@ -110,7 +110,7 @@
     right: -10%;
     transform: translateX(-50%);
     padding: 3px;
-    background-color: #4c029e; /* Orange color */
+    background-color: #30256d; /* Orange color */
     color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -125,7 +125,7 @@
     left: 50%;
     border: solid transparent;
     content: '';
-    border-bottom-color: #4c029e; 
+    border-bottom-color: #30256d; 
     border-width: 8px;
     margin-left: -8px;
   }
