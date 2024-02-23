@@ -97,14 +97,7 @@ function Sector() {
       title: "SOCIAL MEDIA MANAGEMENT",
       url: BFSI
     },
-    {
-      title: "CREATIVE",
-      url: Automotive
-    },
-    {
-      title: "CONTENT",
-      url: Retails
-    },
+
     {
       title: "PRODUCTION",
       url: foods
@@ -189,7 +182,10 @@ function Sector() {
               <Link style={{ textDecoration: "none" }} to={`/${routes[index]}`}>
                 <div className="service-space">
                   <img width="100%" height="180px" className="service-image" src={mediaPlanning} />
+                  <div className='row'>
                   <p className="service-text">{image.title}</p>
+                  {/* <div className='circle'></div> */}
+                  </div>
                 </div>
               </Link>
             </div>
