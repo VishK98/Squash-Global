@@ -53,13 +53,11 @@ h2.stroke {
   }
 
   .creating-text {
-    font-size: 35px;
     font-weight: bold;
-    text-align: start;
+    text-align: center;
   }
 
   .redefine-text {
-    font-size: 25px;
     text-align: start;
     font-weight: bold;
   }

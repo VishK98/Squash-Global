@@ -131,14 +131,11 @@ function Home() {
                 <h2 className="brewText-stroke">
                   What’s Brewing at TAW?
                 </h2>
-                // <h2 style={{fontWeight: 'bold'}}>
-                //   What’s Brewing at TAW?
-                // </h2>
               }
               animation="slide-left"
             />
             <AnimatedText
-              text={<h1>Framing People Centric Experiences</h1>}
+              text={<h1 className="agency-text mt-3">Framing People Centric Experiences</h1>}
               animation="slide-left"
             />
             <AnimatedText
@@ -194,8 +191,7 @@ function Home() {
                 />
                 <div className="bannertitle">
                   <AnimatedText
-                    // text={<h2 style={{ fontWeight: "bold" }}>People</h2>}
-                    text={<h2 style={{ fontWeight: "bold" }}>experiences</h2>}
+                    text={<h2 style={{ fontWeight: "bold" }}>People</h2>}
                     animation="slide-up"
                   />
                 </div>
