@@ -354,14 +354,14 @@ function Home() {
         </div> */}
         <div>
         <div className="d-flex justify-content-center  mb-3 mt-3">
-            <button className="submit-button">
+            <button className="SeeAll-button">
               <div class="svg-wrapper-1">
                 <div class="svg-wrapper">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
-                    width="35"
-                    height="35"
+                    width="30"
+                    height="30"
                   >
                     <path fill="none" d="M0 0h24v24H0z"></path>
                     <path
