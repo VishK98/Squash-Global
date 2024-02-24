@@ -90,7 +90,7 @@ function Home() {
         Your browser does not support the video tag.
       </video>
 
-      <div className="video-content d-none d-md-block">
+      {/* <div className="video-content d-none d-md-block">
         <div className="bannertitle">
           <AnimatedText text={<h1 className="text-lg-center ">Not an</h1>
           } animation='fade-in' />
@@ -118,7 +118,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div
         className="d-none d-md-block"
         style={{ marginTop: `${marginTop - marginTop * 0.1}px` }}
