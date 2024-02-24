@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import ScrollToTopButton from '../TopButton/TopButton';
-import contact from "../../assets/images/contact-img-2.webp";
+import contact from "../../assets/images/Contact Us banner.jpg";
 import AnimatedText from '../Animations/TextAnimation';
 import "./Contact.css";
 import axios from 'axios';
