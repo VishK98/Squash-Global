@@ -700,8 +700,7 @@ function Home() {
                 <AnimatedText
                   text={
                     <h3>
-                      Brand Discovery <br />
-                      and Strategy
+                      Social Communication
                     </h3>
                   }
                   animation="slide-left"
@@ -711,10 +710,10 @@ function Home() {
                 <AnimatedText
                   text={
                     <ul className="custom-arrow-bullet-point">
-                      <li>Strategy and Positioning</li>
-                      <li>Brand Identity and Collaterals</li>
-                      <li>Brand Architecture</li>
-                      <li>Trends and Insights</li>
+                      <li>Social Media Management</li>
+                      <li>Social Strategy</li>
+                      <li>ORM</li>
+                      <li>Influencer Marketing</li>
                     </ul>
                   }
                   animation="slide-left"
@@ -732,8 +731,7 @@ function Home() {
                 <AnimatedText
                   text={
                     <h3>
-                      Brand Discovery <br />
-                      and Strategy
+                      Creative & Content
                     </h3>
                   }
                   animation="slide-left"
@@ -743,10 +741,10 @@ function Home() {
                 <AnimatedText
                   text={
                     <ul className="custom-arrow-bullet-point">
-                      <li>Strategy and Positioning</li>
-                      <li>Brand Identity and Collaterals</li>
-                      <li>Brand Architecture</li>
-                      <li>Trends and Insights</li>
+                      <li>Creative assets management</li>
+                      <li>Identity and collaterals</li>
+                      <li>Content Strategy</li>
+                      <li>Production & Photography</li>
                     </ul>
                   }
                   animation="slide-left"
@@ -766,8 +764,7 @@ function Home() {
                 <AnimatedText
                   text={
                     <h3>
-                      Brand Discovery <br />
-                      and Strategy
+                     Organic & Paid Marketing
                     </h3>
                   }
                   animation="slide-right"
@@ -777,10 +774,10 @@ function Home() {
                 <AnimatedText
                   text={
                     <ul className="custom-arrow-bullet-point">
-                      <li>Strategy and Positioning</li>
-                      <li>Brand Identity and Collaterals</li>
-                      <li>Brand Architecture</li>
-                      <li>Trends and Insights</li>
+                      <li>Search Engine Optimisation</li>
+                      <li>Search Engine Managemen</li>
+                      <li>Media Planning and Buying</li>
+                      <li>Programmatic Buying</li>
                     </ul>
                   }
                   animation="slide-right"
@@ -798,8 +795,7 @@ function Home() {
                 <AnimatedText
                   text={
                     <h3>
-                      Brand Discovery <br />
-                      and Strategy
+                     Technology
                     </h3>
                   }
                   animation="slide-right"
@@ -809,10 +805,10 @@ function Home() {
                 <AnimatedText
                   text={
                     <ul className="custom-arrow-bullet-point">
-                      <li>Strategy and Positioning</li>
-                      <li>Brand Identity and Collaterals</li>
-                      <li>Brand Architecture</li>
-                      <li>Trends and Insights</li>
+                      <li> Website design and Development</li>
+                      <li> E-commerce Website Development</li>
+                      <li> AR Filter</li>
+                      <li> Mobile Application</li>
                     </ul>
                   }
                   animation="slide-right"
