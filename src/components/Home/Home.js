@@ -11,7 +11,7 @@ import gispiImage from "../../assets/images/demo-image.png";
 import arrowMore from "../../assets/images/arrow-more.png";
 import tasc from "../../assets/images/TASC.png";
 import onHerLip from "../../assets/images/home-banner-new.png";
-import worldwideOffice from "../../assets/images/We Are Squash.png";
+import worldwideOffice from "../../assets/images/Home Page Bottom banner.png";
 import grid1 from "../../assets/images/grid-1.png";
 import grid1Logo from "../../assets/images/gipsi-logo.png";
 import grid2 from "../../assets/images/grid-2.png";
@@ -89,36 +89,6 @@ function Home() {
         <source src={TAWVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-
-      {/* <div className="video-content d-none d-md-block">
-        <div className="bannertitle">
-          <AnimatedText text={<h1 className="text-lg-center ">Not an</h1>
-          } animation='fade-in' />
-        </div>
-        <div className="bannertitle">
-          <AnimatedText text={<h2 className="agency-text">Agency.</h2>
-          } animation='fade-in' />
-        </div>
-        <div className="row ">
-          <div className="col-lg-5"></div>
-          <div className="col-lg-7">
-            <div className="section_para pl-lg-5 pl-0">
-              <div className="bannertopslide">
-                <AnimatedText text={<h2 className="but-text">
-                  <span>But your extended</span> <span>marketing team</span>
-                </h2>} animation='slide-up' />
-              </div>
-              <div className="bannertopslide">
-                <AnimatedText text={<p style={{ fontSize: "20px" }}>
-                  One that is nimble and
-                  ready for a digitally
-                  connected world
-                </p>} animation='slide-up' />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div
         className="d-none d-md-block"
         style={{ marginTop: `${marginTop - marginTop * 0.1}px` }}
