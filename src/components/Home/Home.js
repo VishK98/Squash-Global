@@ -12,12 +12,12 @@ import arrowMore from "../../assets/images/arrow-more.png";
 import tasc from "../../assets/images/TASC.png";
 import onHerLip from "../../assets/images/home-banner-new.png";
 import worldwideOffice from "../../assets/images/We Are Squash.png";
-import grid1 from "../../assets/images/demo-image.png";
-import grid1Logo from "../../assets/images/gipsi-logo.png";
-import grid2 from "../../assets/images/grid-2.png";
-import grid2Logo from "../../assets/images/twip-logo.png";
-import grid3 from "../../assets/images/grid-3.png";
-import grid3Logo from "../../assets/images/tonic-amplifiy.svg";
+import grid1 from "../../assets/images/specialist-division/Strategy Image.png";
+// import grid1Logo from "../../assets/images/gipsi-logo.png";
+import grid2 from "../../assets/images/specialist-division/Design Image.png";
+// import grid2Logo from "../../assets/images/twip-logo.png";
+import grid3 from "../../assets/images/specialist-division/Technology Image.png";
+// import grid3Logo from "../../assets/images/tonic-amplifiy.svg";
 import circularText from "../../assets/images/circular-text.png";
 import brandIcon from "../../assets/images/Icons/icons8-bulb.gif";
 import "./BlogSlider";
@@ -92,30 +92,30 @@ function Home() {
       </video>
 
       <div className="video-content d-none d-md-block">
-        <div className="bannertitle">
+        {/* <div className="bannertitle">
           <AnimatedText text={<h1 className="text-lg-center ">Not an</h1>
           } animation='fade-in' />
-        </div>
-        <div className="bannertitle">
+        </div> */}
+        {/* <div className="bannertitle">
           <AnimatedText text={<h2 className="agency-text">Agency.</h2>
           } animation='fade-in' />
-        </div>
+        </div> */}
         <div className="row ">
           <div className="col-lg-5"></div>
           <div className="col-lg-7">
             <div className="section_para pl-lg-5 pl-0">
-              <div className="bannertopslide">
+              {/* <div className="bannertopslide">
                 <AnimatedText text={<h2 className="but-text">
                   <span>But your extended</span> <span>marketing team</span>
                 </h2>} animation='slide-up' />
-              </div>
-              <div className="bannertopslide">
+              </div> */}
+              {/* <div className="bannertopslide">
                 <AnimatedText text={<p style={{ fontSize: "20px" }}>
                   One that is nimble and
                   ready for a digitally
                   connected world
                 </p>} animation='slide-up' />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -569,9 +569,9 @@ function Home() {
                       }
                       animation="slide-up"
                     />
-                    <div className="d-flex align-items-center justify-content-center">
+                    {/* <div className="d-flex align-items-center justify-content-center">
                       <img src={grid1Logo} alt="Gipsi Logo" />
-                    </div>
+                    </div> */}
                     <div className="SD_slider_img">
                       <AnimatedFadeImage src={grid1} alt="Image not found" />
                     </div>
@@ -623,9 +623,9 @@ function Home() {
                       }
                       animation="slide-up"
                     />
-                    <div className="d-flex align-items-center justify-content-center mt-4">
+                    {/* <div className="d-flex align-items-center justify-content-center mt-4">
                       <img src={grid2Logo} alt="Gipsi Logo" />
-                    </div>
+                    </div> */}
                     <div className="SD_slider_img">
                       <AnimatedFadeImage src={grid2} alt="Image not found" />
                     </div>
@@ -676,9 +676,9 @@ function Home() {
                       }
                       animation="slide-up"
                     />
-                    <div className="d-flex align-items-center justify-content-center">
+                    {/* <div className="d-flex align-items-center justify-content-center">
                       <img src={grid3Logo} alt="Gipsi Logo" />
-                    </div>
+                    </div> */}
                     <div className="SD_slider_img">
                       <AnimatedFadeImage src={grid3} alt="Image not found" />
                     </div>
