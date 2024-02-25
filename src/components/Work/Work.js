@@ -16,7 +16,7 @@ import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
 import newClient from "../../assets/images/client logos/6.png";
 import newClient1 from "../../assets/images/client logos/10.png";
-import newClient2 from "../../assets/images/client logos/11.png";
+import newClient2 from "../../assets/images/client logos/1.png";
 import newClient3 from "../../assets/images/client logos/12.png";
 import newClient4 from "../../assets/images/client logos/13.png";
 import newClient5 from "../../assets/images/client logos/14.png";
