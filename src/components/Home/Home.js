@@ -129,7 +129,7 @@ function Home() {
           <div className="col-lg-5 col-12">
             <AnimatedText
               text={
-                <h2 className="brewText-stroke">
+                <h2 className="partnership-text">
                   What’s Brewing at TAW?
                 </h2>
               }
