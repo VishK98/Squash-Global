@@ -1,15 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 // import './PartnerClientSlider.css';
-import newPartner from "../../assets/images/home-clients/1.png";
-import newPartne1 from "../../assets/images/home-clients/10.png";
-import newPartne2 from "../../assets/images/home-clients/11.png";
-import newPartne3 from "../../assets/images/home-clients/12.png";
-import newPartne4 from "../../assets/images/home-clients/13.png";
-import newPartne5 from "../../assets/images/home-clients/15.png";
-import newPartne6 from "../../assets/images/home-clients/16.png";
-import newPartne7 from "../../assets/images/home-clients/17.png";
-import newPartne8 from "../../assets/images/home-clients/18.png";
-import newPartne9 from "../../assets/images/home-clients/19.png";
+import newPartner from "../../assets/images/home-clients/8.png";
+import newPartne1 from "../../assets/images/home-clients/9.png";
+import newPartne2 from "../../assets/images/home-clients/10.png";
+import newPartne3 from "../../assets/images/home-clients/11.png";
+import newPartne4 from "../../assets/images/home-clients/12.png";
+import newPartne5 from "../../assets/images/home-clients/13.png";
+import newPartne6 from "../../assets/images/home-clients/14.png";
+import newPartne7 from "../../assets/images/home-clients/15.png";
 
 const ClientSlider = () => {
     const imageSources = [
@@ -21,9 +19,7 @@ const ClientSlider = () => {
         { url: newPartne5, alt: "Cencora Logo", backgroundColor: "#22d85fb8" },
         { url: newPartne6, alt: "Cencora Logo", backgroundColor: "#7219d8b8" },
         { url: newPartne7, alt: "Cencora Logo", backgroundColor: "#d82222b8" },
-        { url: newPartne8, alt: "Cencora Logo", backgroundColor: "#22d85fb8" },
-        { url: newPartne9, alt: "Cencora Logo", backgroundColor: "#22d85fb8" },
-    ];
+            ];
 
     const ClientSliderRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);

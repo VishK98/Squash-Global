@@ -12,7 +12,7 @@ import arrowMore from "../../assets/images/arrow-more.png";
 import tasc from "../../assets/images/TASC.png";
 import onHerLip from "../../assets/images/home-banner-new.png";
 import worldwideOffice from "../../assets/images/We Are Squash.png";
-import grid1 from "../../assets/images/grid-1.png";
+import grid1 from "../../assets/images/demo-image.png";
 import grid1Logo from "../../assets/images/gipsi-logo.png";
 import grid2 from "../../assets/images/grid-2.png";
 import grid2Logo from "../../assets/images/twip-logo.png";
@@ -536,7 +536,7 @@ function Home() {
                             marginBottom: "10px",
                           }}
                         >
-                          <span
+                          {/* <span
                             style={{
                               position: "absolute",
                               left: "40%",
@@ -547,8 +547,8 @@ function Home() {
                             className="dot"
                           >
                             •
-                          </span>
-                          Gipsi
+                          </span> */}
+                           Strategy
                         </h3>
                       }
                       animation="slide-up"
@@ -563,8 +563,8 @@ function Home() {
                             fontWeight: "400",
                           }}
                         >
-                          Unique insight mining practice that uses a combination
-                          of AI + HI to understand consumers better
+                          A plan is like a puzzle. 
+                          Placing the right piece at the right place at the right time, makes it complete- this is what makes TAW different.
                         </p>
                       }
                       animation="slide-up"
@@ -591,7 +591,7 @@ function Home() {
                             marginBottom: "10px",
                           }}
                         >
-                          <span
+                          {/* <span
                             style={{
                               position: "absolute",
                               left: "40%",
@@ -602,8 +602,8 @@ function Home() {
                             className="dot"
                           >
                             •
-                          </span>
-                          Twip
+                          </span> */}
+                          Design
                         </h3>
                       }
                       animation="slide-up"
@@ -618,9 +618,7 @@ function Home() {
                             fontWeight: "400",
                           }}
                         >
-                          Narrate impactful brand stories with
-                          hyper-personalised, data driven videos for engagement
-                          at scale.
+                         Design is more than a holistic approach to achieve aesthetics. For TAW, design is crucial art of storytelling for your Brand.
                         </p>
                       }
                       animation="slide-up"
@@ -647,7 +645,7 @@ function Home() {
                             marginBottom: "10px",
                           }}
                         >
-                          <span
+                          {/* <span
                             style={{
                               position: "absolute",
                               left: "35%",
@@ -658,8 +656,8 @@ function Home() {
                             className="dot"
                           >
                             •
-                          </span>
-                          Amplify
+                          </span> */}
+                          Technology
                         </h3>
                       }
                       animation="slide-up"
@@ -673,9 +671,7 @@ function Home() {
                             fontWeight: "400",
                           }}
                         >
-                          In partnership with <strong>SEW</strong>, the
-                          specialised practice empowers utilities for enhanced
-                          outreach and stronger customer connections.
+                           In today’s digitally evolved world, Technology is the backbone of every dream and vision. Our tech-savvy professionals offer high-quality experience from web development to app design.
                         </p>
                       }
                       animation="slide-up"

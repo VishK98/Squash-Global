@@ -4,15 +4,13 @@ import newAsianpaint from "../../assets/images/Partners/asianpaint-removebg-prev
 import newSquare from "../../assets/images/Partners/square1-removebg-preview.png";
 import newCEAT from "../../assets/images/Partners/remove - CEAT.png";
 import newPartner from "../../assets/images/home-clients/1.png";
-import newPartne1 from "../../assets/images/home-clients/10.png";
-import newPartne2 from "../../assets/images/home-clients/11.png";
-import newPartne3 from "../../assets/images/home-clients/12.png";
-import newPartne4 from "../../assets/images/home-clients/13.png";
-import newPartne5 from "../../assets/images/home-clients/15.png";
-import newPartne6 from "../../assets/images/home-clients/16.png";
-import newPartne7 from "../../assets/images/home-clients/17.png";
-import newPartne8 from "../../assets/images/home-clients/18.png";
-import newPartne9 from "../../assets/images/home-clients/19.png";
+import newPartne1 from "../../assets/images/home-clients/2.png";
+import newPartne2 from "../../assets/images/home-clients/3.png";
+import newPartne3 from "../../assets/images/home-clients/4.png";
+import newPartne4 from "../../assets/images/home-clients/5.png";
+import newPartne5 from "../../assets/images/home-clients/6.png";
+import newPartne6 from "../../assets/images/home-clients/7.png";
+
 
 const Slider = () => {
     const imageSources = [
@@ -23,9 +21,7 @@ const Slider = () => {
         { url: newPartne4, alt: "Cencora Logo", backgroundColor: "#d82222b8" },
         { url: newPartne5, alt: "Cencora Logo", backgroundColor: "#22d85fb8" },
         { url: newPartne6, alt: "Cencora Logo", backgroundColor: "#7219d8b8" },
-        { url: newPartne7, alt: "Cencora Logo", backgroundColor: "#d82222b8" },
-        { url: newPartne8, alt: "Cencora Logo", backgroundColor: "#22d85fb8" },
-        { url: newPartne9, alt: "Cencora Logo", backgroundColor: "#22d85fb8" },
+        
     ];
 
     const sliderRef = useRef(null);
