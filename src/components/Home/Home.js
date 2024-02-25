@@ -11,7 +11,7 @@ import gispiImage from "../../assets/images/demo-image.png";
 import arrowMore from "../../assets/images/arrow-more.png";
 import tasc from "../../assets/images/TASC.png";
 import onHerLip from "../../assets/images/home-banner-new.png";
-import worldwideOffice from "../../assets/images/We Are Squash.png";
+import worldwideOffice from "../../assets/images/Home Page Bottom Banner.png";
 import grid1 from "../../assets/images/specialist-division/Strategy Image.png";
 // import grid1Logo from "../../assets/images/gipsi-logo.png";
 import grid2 from "../../assets/images/specialist-division/Design Image.png";

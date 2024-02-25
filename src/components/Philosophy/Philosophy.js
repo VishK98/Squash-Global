@@ -6,7 +6,7 @@ import ScrollToTopButton from '../TopButton/TopButton';
 import philosophy from "../../assets/images/Banner About us.jpg";
 import quotation from "../../assets/images/quotation-marks-svgrepo.png";
 import yellowCircle from "../../assets/images/empty-yellow-circle.png";
-import partyScene from "../../assets/images/party-scene.png";
+import partyScene from "../../assets/images/about us middle image.png";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 
 
