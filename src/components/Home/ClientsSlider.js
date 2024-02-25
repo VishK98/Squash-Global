@@ -1,8 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './PartnerSlider.css'; // Assuming you have a CSS file for styling
-import newAsianpaint from "../../assets/images/Partners/asianpaint-removebg-preview.png";
-import newSquare from "../../assets/images/Partners/square1-removebg-preview.png";
-import newCEAT from "../../assets/images/Partners/remove - CEAT.png";
+// import './PartnerClientSlider.css';
 import newPartner from "../../assets/images/home-clients/1.png";
 import newPartne1 from "../../assets/images/home-clients/10.png";
 import newPartne2 from "../../assets/images/home-clients/11.png";
@@ -14,7 +11,7 @@ import newPartne7 from "../../assets/images/home-clients/17.png";
 import newPartne8 from "../../assets/images/home-clients/18.png";
 import newPartne9 from "../../assets/images/home-clients/19.png";
 
-const Slider = () => {
+const ClientSlider = () => {
     const imageSources = [
         { url: newPartner, alt: "Cencora Logo", backgroundColor: "#7219d8b8" },
         { url: newPartne1, alt: "Cencora Logo", backgroundColor: "#d82222b8" },
@@ -28,20 +25,20 @@ const Slider = () => {
         { url: newPartne9, alt: "Cencora Logo", backgroundColor: "#22d85fb8" },
     ];
 
-    const sliderRef = useRef(null);
+    const ClientSliderRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
     let animationId;
 
     useEffect(() => {
-        const slider = sliderRef.current;
+        const ClientSlider = ClientSliderRef.current;
 
         const slide = () => {
             animationId = requestAnimationFrame(() => {
-                if (!isHovered && slider) {
-                    slider.scrollLeft += 1;
-                    if (slider.scrollLeft >= slider.scrollWidth / 2) {
-                        slider.scrollLeft = 0;
+                if (!isHovered && ClientSlider) {
+                    ClientSlider.scrollLeft += 1;
+                    if (ClientSlider.scrollLeft >= ClientSlider.scrollWidth / 2) {
+                        ClientSlider.scrollLeft = 0;
                     }
                     setCurrentIndex(prevIndex => (prevIndex + 1) % (imageSources.length / 2));
                 }
@@ -62,7 +59,7 @@ const Slider = () => {
     };
 
     return (
-        <div className="platforms-list mt-4" ref={sliderRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className="platforms-list mt-5" ref={ClientSliderRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             {imageSources.concat(imageSources).map((image, index) => (
                 <div className="platforms-list-item" key={index}>
                     <div className="card" style={{ backgroundColor: image.backgroundColor }}>
@@ -74,4 +71,4 @@ const Slider = () => {
     );
 };
 
-export default Slider;
+export default ClientSlider;

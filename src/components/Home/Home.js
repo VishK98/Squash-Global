@@ -11,7 +11,7 @@ import gispiImage from "../../assets/images/demo-image.png";
 import arrowMore from "../../assets/images/arrow-more.png";
 import tasc from "../../assets/images/TASC.png";
 import onHerLip from "../../assets/images/home-banner-new.png";
-import worldwideOffice from "../../assets/images/Home Page Bottom banner.png";
+import worldwideOffice from "../../assets/images/We Are Squash.png";
 import grid1 from "../../assets/images/grid-1.png";
 import grid1Logo from "../../assets/images/gipsi-logo.png";
 import grid2 from "../../assets/images/grid-2.png";
@@ -23,6 +23,7 @@ import brandIcon from "../../assets/images/Icons/icons8-bulb.gif";
 import "./BlogSlider";
 import BlogSlider from "./BlogSlider";
 import PartnerSlider from "./PartnerSlider";
+import ClientSlider from "./ClientsSlider";
 // import TAWVideo from "../../assets/TAW.mp4";
 import TAWVideo from "../../assets/new-video.mp4";
 import bannerVideo from "../../assets/Banner Video.mp4";
@@ -89,6 +90,36 @@ function Home() {
         <source src={TAWVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+
+      <div className="video-content d-none d-md-block">
+        <div className="bannertitle">
+          <AnimatedText text={<h1 className="text-lg-center ">Not an</h1>
+          } animation='fade-in' />
+        </div>
+        <div className="bannertitle">
+          <AnimatedText text={<h2 className="agency-text">Agency.</h2>
+          } animation='fade-in' />
+        </div>
+        <div className="row ">
+          <div className="col-lg-5"></div>
+          <div className="col-lg-7">
+            <div className="section_para pl-lg-5 pl-0">
+              <div className="bannertopslide">
+                <AnimatedText text={<h2 className="but-text">
+                  <span>But your extended</span> <span>marketing team</span>
+                </h2>} animation='slide-up' />
+              </div>
+              <div className="bannertopslide">
+                <AnimatedText text={<p style={{ fontSize: "20px" }}>
+                  One that is nimble and
+                  ready for a digitally
+                  connected world
+                </p>} animation='slide-up' />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div
         className="d-none d-md-block"
         style={{ marginTop: `${marginTop - marginTop * 0.1}px` }}
@@ -366,7 +397,8 @@ function Home() {
         />
 
         <br />
-        <PartnerSlider rtl={true} />
+        <PartnerSlider />
+        <ClientSlider />
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -700,7 +732,8 @@ function Home() {
                 <AnimatedText
                   text={
                     <h3>
-                      Social Communication
+                      Brand Discovery <br />
+                      and Strategy
                     </h3>
                   }
                   animation="slide-left"
@@ -710,10 +743,10 @@ function Home() {
                 <AnimatedText
                   text={
                     <ul className="custom-arrow-bullet-point">
-                      <li>Social Media Management</li>
-                      <li>Social Strategy</li>
-                      <li>ORM</li>
-                      <li>Influencer Marketing</li>
+                      <li>Strategy and Positioning</li>
+                      <li>Brand Identity and Collaterals</li>
+                      <li>Brand Architecture</li>
+                      <li>Trends and Insights</li>
                     </ul>
                   }
                   animation="slide-left"
@@ -731,7 +764,8 @@ function Home() {
                 <AnimatedText
                   text={
                     <h3>
-                      Creative & Content
+                      Brand Discovery <br />
+                      and Strategy
                     </h3>
                   }
                   animation="slide-left"
@@ -741,10 +775,10 @@ function Home() {
                 <AnimatedText
                   text={
                     <ul className="custom-arrow-bullet-point">
-                      <li>Creative assets management</li>
-                      <li>Identity and collaterals</li>
-                      <li>Content Strategy</li>
-                      <li>Production & Photography</li>
+                      <li>Strategy and Positioning</li>
+                      <li>Brand Identity and Collaterals</li>
+                      <li>Brand Architecture</li>
+                      <li>Trends and Insights</li>
                     </ul>
                   }
                   animation="slide-left"
@@ -764,7 +798,8 @@ function Home() {
                 <AnimatedText
                   text={
                     <h3>
-                     Organic & Paid Marketing
+                      Brand Discovery <br />
+                      and Strategy
                     </h3>
                   }
                   animation="slide-right"
@@ -774,10 +809,10 @@ function Home() {
                 <AnimatedText
                   text={
                     <ul className="custom-arrow-bullet-point">
-                      <li>Search Engine Optimisation</li>
-                      <li>Search Engine Managemen</li>
-                      <li>Media Planning and Buying</li>
-                      <li>Programmatic Buying</li>
+                      <li>Strategy and Positioning</li>
+                      <li>Brand Identity and Collaterals</li>
+                      <li>Brand Architecture</li>
+                      <li>Trends and Insights</li>
                     </ul>
                   }
                   animation="slide-right"
@@ -795,7 +830,8 @@ function Home() {
                 <AnimatedText
                   text={
                     <h3>
-                     Technology
+                      Brand Discovery <br />
+                      and Strategy
                     </h3>
                   }
                   animation="slide-right"
@@ -805,10 +841,10 @@ function Home() {
                 <AnimatedText
                   text={
                     <ul className="custom-arrow-bullet-point">
-                      <li> Website design and Development</li>
-                      <li> E-commerce Website Development</li>
-                      <li> AR Filter</li>
-                      <li> Mobile Application</li>
+                      <li>Strategy and Positioning</li>
+                      <li>Brand Identity and Collaterals</li>
+                      <li>Brand Architecture</li>
+                      <li>Trends and Insights</li>
                     </ul>
                   }
                   animation="slide-right"
