@@ -8,7 +8,7 @@ import ScrollToTopButton from "../TopButton/TopButton";
 import bigCircle from "../../assets/images/big-circle-down-arrow.png";
 import gispiImage from "../../assets/images/demo-image.png";
 import onHerLip from "../../assets/images/home-banner-new.png";
-import worldwideOffice from "../../assets/images/Home Page Bottom Banner.png";
+import worldwideOffice from "../../assets/images/Home Page Bottom banner.png";
 import grid1 from "../../assets/images/specialist-division/Strategy Image.png";
 import grid2 from "../../assets/images/specialist-division/Design Image.png";
 import grid3 from "../../assets/images/specialist-division/Technology Image.png";
