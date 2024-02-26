@@ -5,7 +5,7 @@ import image from "../../assets/images/Banner Careers.png";
 // import downArrow from "../../assets/images/small-circle-down-arrow.png";
 import downArrow from "../../assets/images/-down-arrow.png";
 import team from "../../assets/images/Career Section Middle Banner.png";
-import teamBreak from "../../assets/images/team-break-time.webp";
+import teamBreak from "../../assets/images/Career Section Bottom Banner.png";
 import jobPost from "../../assets/images/hiring.png";
 import AnimatedText from '../Animations/TextAnimation';
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
