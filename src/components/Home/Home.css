@@ -323,3 +323,19 @@ h2.stroke {
     transform: translateY(-0.1em);
   }
 }
+
+.Newstyle-text {
+  font-family: "Manrope", sans-serif; /* Use the correct font-family name */
+  font-weight: 400; /* Use the appropriate numerical value for font weight */
+  font-size: 2em;
+  margin-top: 50px;
+  margin-bottom: 4%;
+  background: linear-gradient(90deg, #000, #30256d, #30256d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Framing-text {
+  font-weight: bold;
+  margin-top: 200%;
+}

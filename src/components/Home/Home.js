@@ -121,14 +121,14 @@ function Home() {
           <div className="col-lg-5 col-12">
             <AnimatedText
               text={
-                <h2 className="partnership-text">
+                <h2 className="Newstyle-text">
                   What’s Brewing at TAW?
                 </h2>
               }
               animation="slide-left"
             />
             <AnimatedText
-              text={<h1 className="agency-text mt-3">Framing People Centric Experiences</h1>}
+              text={<h1 className="Framing-text mt-3">Framing People Centric Experiences</h1>}
               animation="slide-left"
             />
             <AnimatedText
