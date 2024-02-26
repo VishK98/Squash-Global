@@ -68,8 +68,13 @@ h2.stroke {
   }
 
   .creating-text {
+    font-size: 45px;
+    font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
     font-weight: bold;
     text-align: center;
+    background: linear-gradient(90deg, #000, #30256d, #30256d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .redefine-text {

@@ -23,7 +23,8 @@ import AnimatedText from '../Animations/TextAnimation';
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
 import Slider from './Slider';
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
-import mediaPlanning from "../../assets/images/media-planning.jpg";
+// import mediaPlanning from "../../assets/images/media-planning.jpg";
+import mediaPlanning from "../../assets/images/Media Planning and Buying.png";
 
 
 

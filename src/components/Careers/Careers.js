@@ -214,11 +214,11 @@ function Careers() {
               <span
                 style={{ fontWeight: "bold", color: "#30256d" }}
               >
-                TAW-the agency ways
+              TAW
               </span>
               , we foster collaboration, innovation and creative minds to explore limitless possibilities. If you are someone who wants to be a part of the next big thing in the marketing and advertising industry,
               " <br /> <br />
-              Write to us at <a className="mail-text" href='mailto:hr@TAWglobal.com'>hr@TAWglobal.com</a>
+              Write to us at <a className="mail-text" href='mailto:hr@taw.agency'>hr@taw.agency</a>
             </p>} animation='fade-in' />
           </div>
           <div className="col-lg-7 col-md-7 col-12 col-sm-12 mt-4 ">
@@ -228,23 +228,15 @@ function Careers() {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container-fluid mt-4 mb-3">
         <div style={{ display: "flex" }}>
-          <AnimatedText text={<h1 style={{ fontWeight: "bold" }}>Life at TAW-the agency ways</h1>
+          <AnimatedText text={<h1 className="Color-Text" style={{ fontWeight: "bold" }}>Life at The Agency Way</h1>
           } animation='slide-left' />
-          <div className="animated-arrow-btn" style={{
-            height: "50px",
-            width: "50px",
-            marginLeft: "10px",
-            marginTop: "4px",
-            marginBottom: "10px"
-          }} >
-            <ImageAnimationUnfold src='https://img.icons8.com/clouds/100/food-bar.png' alt="Image not found" />
-          </div>
+        
         </div>
       </div>
       <ImageAnimationUnfold src={teamBreak} alt="Image not found" />
-      <div className="container">
+      <div className="container-fluid">
         <h1 className="mt-3">Latest Openings</h1>
         <div className="row" ref={closeRef}>
           {jobData.map((job, index) => (

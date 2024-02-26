@@ -43,11 +43,7 @@
     position: absolute;
 }
 
-.text-highlight {
-    /* background: url(../../assets/images/text-underline.png) left bottom repeat-x; */
-        background: url(../../assets/images/text-underline2.png) left bottom repeat-x;
-    padding: 0 0 4px;
-}
+
 
 .philosophy-details {
     font-size: 20px !important;

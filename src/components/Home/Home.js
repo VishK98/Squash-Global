@@ -150,22 +150,20 @@ function Home() {
             <div className="col-12 d-flex align-items-center">
               <div>
                 <AnimatedText
-                  text={<h2 className="stroke">Pixels to </h2>}
+                  text={<h2 className="stroke" style={{marginBottom: "-30px"}}>Pixels to </h2> }
                   animation="slide-up"
                 />
-                <div className="bannertitle">
-                  <AnimatedText
-                    text={<h2 style={{ fontWeight: "bold" }}>People</h2>}
+                <AnimatedText
+                    text={<h2 className="Division-title" style={{ fontWeight: "bold" }}>People</h2>}
                     animation="slide-up"
                   />
-                </div>
                 <AnimatedText
                   text={
                     <p className="brew-text">
                       Having Technology as an ally,{" "}
                       <mark className="text-highlight">
                         we design digital experiences that
-                      </mark>{" "}
+                      </mark>
                       move brands closer to their vision.
                     </p>
                   }
@@ -180,7 +178,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className="work_list_img round_img col-lg-7 col-md-7 col-sm-12 col-12">
               <ImageAnimationUnfold src={onHerLip} alt="Image not found" />
@@ -221,7 +219,7 @@ function Home() {
         <div className="container mb-lg-4 ">
           <div className="row">
             <div
-              className="col-lg-5 col-md-5 col-sm-12 col-12 d-none d-md-block"
+              className="col-lg-4 col-md-4 col-sm-12 col-12 d-none d-md-block"
               style={{ marginTop: "150px" }}
             >
               {/* <AnimatedText
@@ -262,7 +260,7 @@ function Home() {
             {/* <div className="work_list_img round_img col-lg-7 col-md-7 col-sm-12 col-12">
               <ImageAnimationUnfold src={tasc} alt="Image not found" />
             </div> */}
-            <div className=" col-lg-7 col-md-7 col-sm-12 col-12 mt-md-3">
+            <div className=" col-lg-8 col-md-8 col-sm-12 col-12 mt-md-3" >
               <video className="video-banner" autoPlay loop muted>
                 <source src={bannerVideo} type="video/mp4" />
               </video>
