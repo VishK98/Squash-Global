@@ -967,23 +967,27 @@ function Home() {
                     required
                   >
                     <option value="selected">Select</option>
-                    <option value="Brand Discovery and Strategy">
-                      Brand Discovery and Strategy
+                    <option value="Media Planning And Buying">
+                    Media Planning And Buying
                     </option>
-                    <option value="Social Media Strategy">
-                      Social Media Strategy
+                    <option value="Digital PR And ORM">
+                    Digital PR And ORM
                     </option>
-                    <option value="Data and Insights">Data and Insights</option>
-                    <option value="Creative and Content">
-                      Creative and Content
+                    <option value="SEO & SEM">
+                      SEO & SEM</option>
+                    <option value="Creative">
+                    Creative
                     </option>
                     <option value="Design and Development">
                       Design and Development
                     </option>
-                    <option value="Organic and Paid Marketing">
-                      Organic and Paid Marketing
+                    <option value="Content">
+                      Content
                     </option>
-                    <option value="Other">Other</option>
+                    <option value="Production">Production</option>
+                    <option value="Website Design And Devlopment">
+                      Website Design And Devlopment</option>
+                    <option value="Influencer Marketing">Influencer Marketing</option>
                   </select>
                 }
                 animation="slide-up"
