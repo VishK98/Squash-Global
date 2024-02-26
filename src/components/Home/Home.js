@@ -892,7 +892,7 @@ function Home() {
               <AnimatedText
                 text={
                   <label>
-                    State
+                    Company Name
                     <sup
                       style={{
                         color: "red",
