@@ -23,8 +23,9 @@ h2.stroke {
   line-height: 195px;
   font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
   font-weight: bold;
-
-
+  background: linear-gradient(90deg, #000, #30256d, #30256d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .agency-text {
@@ -51,7 +52,12 @@ h2.stroke {
 
 .redefine-text {
   font-size: 45px;
+  font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
+  font-weight: bold;
   text-align: center;
+  background: linear-gradient(90deg, #000, #30256d, #30256d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 625px) {
@@ -356,6 +362,33 @@ h2.stroke {
   font-weight: bold;
   font-family: "Manrope", sans-serif;
   font-size: 65px;
+  background: linear-gradient(90deg, #000, #30256d, #30256d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Division-title {
+  font-size: 150px;
+  /* line-height: 150px; */
+  font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  background: linear-gradient(90deg, #000, #30256d, #30256d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Lies-title {
+  font-size: 110px;
+  font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  background: linear-gradient(90deg, #000, #30256d, #30256d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Color-Text {
+  font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
+  font-weight: bold;
   background: linear-gradient(90deg, #000, #30256d, #30256d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

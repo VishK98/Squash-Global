@@ -464,20 +464,18 @@ function Home() {
               text={<h2 className="text-lg-center stroke title">Specialist</h2>}
               animation="slide-left"
             />
-            <div className="second_line_title bannertitle">
-              <AnimatedText
-                text={<h2 className="title">Divisions</h2>}
+           <AnimatedText
+                text={<h2 className="Division-title">Divisions</h2>}
                 animation="slide-right"
               />
-            </div>
           </div>
         </div>
         <AnimatedText
           text={
-            <p>
+            <h5>
               A new age <mark className="text-highlight">marketing suite</mark>{" "}
               for modern-day experiences.
-            </p>
+            </h5>
           }
           animation="slide-left"
         />
@@ -662,7 +660,7 @@ function Home() {
                 animation="slide-left"
               />
               <AnimatedText
-                text={<h2 className="specialty-text">Specialty Lies</h2>}
+                text={<h2 className="Lies-title">Specialty Lies</h2>}
                 animation="slide-right"
               />
             </div>
@@ -688,7 +686,7 @@ function Home() {
               <a>
                 <AnimatedText
                   text={
-                    <h3>
+                    <h3 className="Color-Text">
                       Social Communication
                     </h3>
                   }
@@ -719,7 +717,7 @@ function Home() {
               <a>
                 <AnimatedText
                   text={
-                    <h3>
+                    <h3 className="Color-Text">
                       Creative & Content
                     </h3>
                   }
@@ -752,7 +750,7 @@ function Home() {
               <a>
                 <AnimatedText
                   text={
-                    <h3>
+                    <h3 className="Color-Text">
                       Organic & Paid Marketing
                     </h3>
                   }
@@ -783,7 +781,7 @@ function Home() {
               <a>
                 <AnimatedText
                   text={
-                    <h3>
+                    <h3 className="Color-Text">
                       Technology
                     </h3>
                   }
@@ -812,16 +810,14 @@ function Home() {
         <div className="col-12">
           <div className="title">
             <AnimatedText
-              text={<h2 className="stroke">What’s the </h2>}
+              text={<h2 className="stroke" style={{marginBottom : "-30px"}}>What’s the </h2>}
               animation="slide-left"
             />
           </div>
-          <div className="second_line_title bannertitle">
-            <AnimatedText
-              text={<h2 className="title">Buzz?</h2>}
+          <AnimatedText
+              text={<h2 className="taw-title">Buzz?</h2>}
               animation="slide-right"
             />
-          </div>
         </div>
       </div>
 
@@ -837,7 +833,7 @@ function Home() {
               <div className="second_line_title bannertitle">
                 <AnimatedText
                   text={
-                    <h2 className="text-lg-center title ">brand experience?</h2>
+                    <h2 className="taw-tittle text-lg-center title ">brand experience?</h2>
                   }
                   animation="slide-right"
                 />
