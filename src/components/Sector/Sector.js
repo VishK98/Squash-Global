@@ -17,7 +17,7 @@ import Media from "../../assets/images/sector-img (1).svg";
 import Pharmaceutical from "../../assets/images/sector-img (12).svg";
 import Telecom from "../../assets/images/sector-img (11).svg";
 import Fashion from "../../assets/images/sector-img (10).png";
-import Expert from "../../assets/images/connect-with-our-experts.png";
+import Expert from "../../assets/images/Services Bottom Section.png";
 import { Link } from "react-router-dom";
 import AnimatedText from '../Animations/TextAnimation';
 import ImageAnimationFade from "../Animations/ImageAnimationFade";

@@ -6,7 +6,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ScrollToTopButton from "../TopButton/TopButton";
 import bigCircle from "../../assets/images/big-circle-down-arrow.png";
-import gispiImage from "../../assets/images/demo-image.png";
+import gispiImage from "../../assets/images/Banner Homepage.png";
 import onHerLip from "../../assets/images/home-banner-new.png";
 import worldwideOffice from "../../assets/images/Home Page Bottom Banner.png";
 import grid1 from "../../assets/images/specialist-division/Strategy Image.png";
