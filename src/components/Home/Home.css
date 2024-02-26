@@ -329,6 +329,7 @@ h2.stroke {
   font-weight: 400; /* Use the appropriate numerical value for font weight */
   font-size: 2em;
   margin-top: 50px;
+  margin-bottom: 4%;
   background: linear-gradient(90deg, #000, #30256d, #30256d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
