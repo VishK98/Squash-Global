@@ -34,7 +34,7 @@
 }
 
 /* Cursor Animation */
-#cursor {
+/* #cursor {
   position: absolute;
   border-radius: 50%;
   background-color: #000;
@@ -43,7 +43,7 @@
   transition: width 0.3s, height 0.3s, background-color 0.3s;
   transform: translate(-50%, -50%);
   left: 0;
-}
+} */
 
 .navbar-toggler {
   background-color: #fff;
