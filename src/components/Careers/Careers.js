@@ -5,7 +5,7 @@ import image from "../../assets/images/Banner Careers.png";
 // import downArrow from "../../assets/images/small-circle-down-arrow.png";
 import downArrow from "../../assets/images/-down-arrow.png";
 import team from "../../assets/images/Career Section Middle Banner.png";
-// import teamBreak from "../../assets/images/team-break-time.webp";
+import teamBreak from "../../assets/images/team-break-time.webp";
 import jobPost from "../../assets/images/hiring.png";
 import AnimatedText from '../Animations/TextAnimation';
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
@@ -228,7 +228,7 @@ function Careers() {
           </div>
         </div>
       </div>
-      {/* <div className="container">
+      <div className="container">
         <div style={{ display: "flex" }}>
           <AnimatedText text={<h1 style={{ fontWeight: "bold" }}>Life at TAW-the agency ways</h1>
           } animation='slide-left' />
@@ -242,8 +242,8 @@ function Careers() {
             <ImageAnimationUnfold src='https://img.icons8.com/clouds/100/food-bar.png' alt="Image not found" />
           </div>
         </div>
-      </div> */}
-      {/* <ImageAnimationUnfold src={teamBreak} alt="Image not found" />
+      </div>
+      <ImageAnimationUnfold src={teamBreak} alt="Image not found" />
       <div className="container">
         <h1 className="mt-3">Latest Openings</h1>
         <div className="row" ref={closeRef}>
@@ -349,7 +349,7 @@ function Careers() {
             </div>
           ))}
         </div>
-      </div> */}
+      </div>
       <div className="container mt-5" ref={formRef}>
         <div className="row">
           <div
