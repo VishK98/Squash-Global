@@ -1,34 +1,26 @@
 import "./Home.css";
 import "../Animations/Animation.css";
 import AnimatedFadeImage from "../Animations/ImageAnimationFade";
-import AnimatedUnfoldImage from "../Animations/ImageAnimationUnfold";
 import AnimatedText from "../Animations/TextAnimation";
 import React, { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ScrollToTopButton from "../TopButton/TopButton";
 import bigCircle from "../../assets/images/big-circle-down-arrow.png";
 import gispiImage from "../../assets/images/demo-image.png";
-import arrowMore from "../../assets/images/arrow-more.png";
-import tasc from "../../assets/images/TASC.png";
 import onHerLip from "../../assets/images/home-banner-new.png";
-import worldwideOffice from "../../assets/images/Home Page Bottom Banner.png";
+import worldwideOffice from "../../assets/images/Home Page Bottom banner.png";
 import grid1 from "../../assets/images/specialist-division/Strategy Image.png";
-// import grid1Logo from "../../assets/images/gipsi-logo.png";
 import grid2 from "../../assets/images/specialist-division/Design Image.png";
-// import grid2Logo from "../../assets/images/twip-logo.png";
 import grid3 from "../../assets/images/specialist-division/Technology Image.png";
-// import grid3Logo from "../../assets/images/tonic-amplifiy.svg";
 import circularText from "../../assets/images/circular-text.png";
 import brandIcon from "../../assets/images/Icons/icons8-bulb.gif";
 import "./BlogSlider";
 import BlogSlider from "./BlogSlider";
 import PartnerSlider from "./PartnerSlider";
 import ClientSlider from "./ClientsSlider";
-// import TAWVideo from "../../assets/TAW.mp4";
 import TAWVideo from "../../assets/new-video.mp4";
 import bannerVideo from "../../assets/Banner Video.mp4";
 import rigthArrow from "../../assets/images/Icons/-right-arrow.png";
-import ImageAnimationFade from "../Animations/ImageAnimationFade";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 
 function Home() {

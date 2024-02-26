@@ -1,27 +1,24 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './PartnerSlider.css'; // Assuming you have a CSS file for styling
-import newAsianpaint from "../../assets/images/Partners/asianpaint-removebg-preview.png";
-import newSquare from "../../assets/images/Partners/square1-removebg-preview.png";
-import newCEAT from "../../assets/images/Partners/remove - CEAT.png";
-import newPartner from "../../assets/images/home-clients/1.png";
-import newPartne1 from "../../assets/images/home-clients/2.png";
-import newPartne2 from "../../assets/images/home-clients/3.png";
-import newPartne3 from "../../assets/images/home-clients/4.png";
-import newPartne4 from "../../assets/images/home-clients/5.png";
-import newPartne5 from "../../assets/images/home-clients/6.png";
-import newPartne6 from "../../assets/images/home-clients/7.png";
-
+import './PartnerSlider.css';
+import Jagur from "../../assets/images/home-clients/jagur.png";
+import Leverage from "../../assets/images/home-clients/leverage.png";
+import Manipal from "../../assets/images/home-clients/manipal.png";
+import Myntra from "../../assets/images/home-clients/myntra.png";
+import Super from "../../assets/images/home-clients/super.png";
+import TradeX from "../../assets/images/home-clients/tradeX.png";
+import Unacademy from "../../assets/images/home-clients/unacademy.png";
+import YesBank from "../../assets/images/home-clients/yesBank.png";
 
 const Slider = () => {
     const imageSources = [
-        { url: newPartner, alt: "Cencora Logo", backgroundColor: "#7219d8b8" },
-        { url: newPartne1, alt: "Cencora Logo", backgroundColor: "#d82222b8" },
-        { url: newPartne2, alt: "Cencora Logo", backgroundColor: "#22d85fb8" },
-        { url: newPartne3, alt: "Cencora Logo", backgroundColor: "#7219d8b8" },
-        { url: newPartne4, alt: "Cencora Logo", backgroundColor: "#d82222b8" },
-        { url: newPartne5, alt: "Cencora Logo", backgroundColor: "#22d85fb8" },
-        { url: newPartne6, alt: "Cencora Logo", backgroundColor: "#7219d8b8" },
-        
+        { url: Jagur, alt: "Jagur Logo" },
+        { url: Leverage, alt: "Leverage Logo" },
+        { url: Manipal, alt: "Manipal Logo" },
+        { url: Myntra, alt: "Myntra Logo" },
+        { url: Super, alt: "Super Logo" },
+        { url: TradeX, alt: "TradeX Logo" },
+        { url: Unacademy, alt: "Unacademy Logo" },
+        { url: YesBank, alt: "YesBank Logo" },
     ];
 
     const sliderRef = useRef(null);
@@ -35,11 +32,11 @@ const Slider = () => {
         const slide = () => {
             animationId = requestAnimationFrame(() => {
                 if (!isHovered && slider) {
-                    slider.scrollLeft += 1;
-                    if (slider.scrollLeft >= slider.scrollWidth / 2) {
-                        slider.scrollLeft = 0;
+                    slider.scrollLeft -= 2; // Decrementing scrollLeft to slide from right to left
+                    if (slider.scrollLeft <= 0) {
+                        slider.scrollLeft = slider.scrollWidth / 2;
                     }
-                    setCurrentIndex(prevIndex => (prevIndex + 1) % (imageSources.length / 2));
+                    setCurrentIndex(prevIndex => (prevIndex - 1 + imageSources.length / 2) % (imageSources.length / 2));
                 }
                 slide();
             });
@@ -60,10 +57,8 @@ const Slider = () => {
     return (
         <div className="platforms-list mt-4" ref={sliderRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             {imageSources.concat(imageSources).map((image, index) => (
-                <div className="platforms-list-item" key={index}>
-                    <div className="card" style={{ backgroundColor: image.backgroundColor }}>
-                        <img src={image.url} />
-                    </div>
+                <div className="slider-list-item" key={index}>
+                    <img className='service-card' src={image.url} alt={image.alt} />
                 </div>
             ))}
         </div>
