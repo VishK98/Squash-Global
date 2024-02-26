@@ -35,6 +35,7 @@ const ImageAnimationFade = ({ src, alt }) => {
         alt={alt}
         className="unfold-animation w-100 img-fluid"
         ref={imageRef}
+        style={{height: '100%'}}
       />
     </div>
   );

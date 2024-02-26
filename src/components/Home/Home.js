@@ -87,7 +87,7 @@ function Home() {
         className=""
         style={{
           marginTop: `${marginTop - marginTop * 0.1}px`,
-           '@media (max-width: 767px)': {
+          '@media (max-width: 767px)': {
             // marginTop: "100vh"
             marginTop: `${marginTop - marginTop * 1}px`,
           },
@@ -186,19 +186,19 @@ function Home() {
               <ImageAnimationUnfold src={onHerLip} alt="Image not found" />
             </div>
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex flex-column align-items-center responsive-text">
-              <AnimatedText
+              {/* <AnimatedText
                 className="brewText-stroke"
                 text={
                   <h3 style={{ fontWeight: "bold" }}>What's on the Lips</h3>
                 }
                 animation="slide-up"
-              />{" "}
+              />{" "} */}
               <div className="row">
                 <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex align-items-center">
                   <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>
                     Explore{" "}
                   </h2>
-                  <Link to="/blogDetails" style={{ textDecoration: "none" }}>
+                  <Link to="/sector" style={{ textDecoration: "none" }}>
                     <div
                       className="animated-arrow-btn"
                       style={{
@@ -218,19 +218,19 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="container mt-lg-5 mb-lg-4 mt-3">
+        <div className="container mb-lg-4 ">
           <div className="row">
             <div
               className="col-lg-5 col-md-5 col-sm-12 col-12 d-none d-md-block"
               style={{ marginTop: "150px" }}
             >
-              <AnimatedText
+              {/* <AnimatedText
                 className="brewText-stroke"
                 text={
                   <h3 style={{ fontWeight: "bold" }}>What's on the TASC</h3>
                 }
                 animation="slide-up"
-              />{" "}
+              />{" "} */}
               <div
                 className="row"
                 style={{ display: "flex", alignItems: "center" }}
@@ -240,7 +240,7 @@ function Home() {
                     <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>
                       Explore{" "}
                     </h2>
-                    <Link to="/blogDetails" style={{ textDecoration: "none" }}>
+                    <Link to="/sector" style={{ textDecoration: "none" }}>
                       <div
                         className="animated-arrow-btn"
                         style={{
@@ -262,7 +262,7 @@ function Home() {
             {/* <div className="work_list_img round_img col-lg-7 col-md-7 col-sm-12 col-12">
               <ImageAnimationUnfold src={tasc} alt="Image not found" />
             </div> */}
-            <div className=" col-lg-7 col-md-7 col-sm-12 col-12 mt-md-5">
+            <div className=" col-lg-7 col-md-7 col-sm-12 col-12 mt-md-3">
               <video className="video-banner" autoPlay loop muted>
                 <source src={bannerVideo} type="video/mp4" />
               </video>
@@ -271,18 +271,18 @@ function Home() {
 
 
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 mt-3 d-flex flex-column align-items-center d-md-none">
-              <AnimatedText
+              {/* <AnimatedText
                 text={
                   <h3 style={{ fontWeight: "bold" }}>What's on the TASC</h3>
                 }
                 animation="slide-up"
-              />
+              /> */}
               <div className="row">
                 <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex align-items-center">
                   <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>
                     Explore{" "}
                   </h2>
-                  <Link to="/blogDetails" style={{ textDecoration: "none" }}>
+                  <Link to="/sector" style={{ textDecoration: "none" }}>
                     <div
                       className="animated-arrow-btn"
                       style={{
@@ -342,15 +342,15 @@ function Home() {
         </div>
         <AnimatedText
           text={
-            <h3 className="creating-text">
+            <h1 className="creating-text mt-5">
               Weaving Narratives, Experiences and Connection.
-            </h3>
+            </h1>
           }
           animation="slide-down"
         />
         <AnimatedText
           text={
-            <h4 className="text-center">
+            <h4 className="text-center mt-4">
               In a world saturated with information, we understand that your
               brand isn't just a product or service—it's a story waiting to be
               told.
@@ -367,15 +367,13 @@ function Home() {
             <div className="col-lg-6">
               <div className="section_title">
                 <AnimatedText
-                  text={<h2 className="mb-lg-4 stroke title">We're</h2>}
+                  text={<h2 className="stroke title" style={{marginBottom: "-30px"}}>We're</h2>}
                   animation="slide-right"
                 />
-                <div className="second_line_title bannertitle">
-                  <AnimatedText
-                    text={<h2 className="title bannertitle">TAW</h2>}
-                    animation="slide-left"
-                  />
-                </div>
+                <AnimatedText
+                  text={<h2 className="taw-title">TAW</h2>}
+                  animation="slide-up"
+                />
               </div>
             </div>
             <div className="col-lg-6">
@@ -939,15 +937,15 @@ function Home() {
                   >
                     <option value="selected">Select</option>
                     <option value="Media Planning And Buying">
-                    Media Planning And Buying
+                      Media Planning And Buying
                     </option>
                     <option value="Digital PR And ORM">
-                    Digital PR And ORM
+                      Digital PR And ORM
                     </option>
                     <option value="SEO & SEM">
                       SEO & SEM</option>
                     <option value="Creative">
-                    Creative
+                      Creative
                     </option>
                     <option value="Design and Development">
                       Design and Development

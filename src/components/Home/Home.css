@@ -18,6 +18,15 @@ h2.stroke {
   /* font-display: swap; */
 }
 
+.taw-title {
+  font-size: 150px;
+  line-height: 195px;
+  font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+
+
+}
+
 .agency-text {
   font-weight: bold;
 }
@@ -109,7 +118,7 @@ h2.stroke {
 }
 
 .creating-text {
-  font-size: 35px;
+  font-size: 45px;
   font-weight: bold;
   text-align: center;
 }
@@ -325,8 +334,10 @@ h2.stroke {
 }
 
 .Newstyle-text {
-  font-family: "Manrope", sans-serif; /* Use the correct font-family name */
-  font-weight: 400; /* Use the appropriate numerical value for font weight */
+  font-family: "Manrope", sans-serif;
+  /* Use the correct font-family name */
+  font-weight: 400;
+  /* Use the appropriate numerical value for font weight */
   font-size: 400%;
   font-weight: bold;
   margin-top: 50px;
@@ -339,4 +350,13 @@ h2.stroke {
 .Framing-text {
   font-weight: bold;
   margin-top: 200%;
+}
+
+.the-agency {
+  font-weight: bold;
+  font-family: "Manrope", sans-serif;
+  font-size: 65px;
+  background: linear-gradient(90deg, #000, #30256d, #30256d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
