@@ -83,38 +83,16 @@ function Home() {
         Your browser does not support the video tag.
       </video>
 
-      <div className="video-content d-none d-md-block">
-        {/* <div className="bannertitle">
-          <AnimatedText text={<h1 className="text-lg-center ">Not an</h1>
-          } animation='fade-in' />
-        </div> */}
-        {/* <div className="bannertitle">
-          <AnimatedText text={<h2 className="agency-text">Agency.</h2>
-          } animation='fade-in' />
-        </div> */}
-        <div className="row ">
-          <div className="col-lg-5"></div>
-          <div className="col-lg-7">
-            <div className="section_para pl-lg-5 pl-0">
-              {/* <div className="bannertopslide">
-                <AnimatedText text={<h2 className="but-text">
-                  <span>But your extended</span> <span>marketing team</span>
-                </h2>} animation='slide-up' />
-              </div> */}
-              {/* <div className="bannertopslide">
-                <AnimatedText text={<p style={{ fontSize: "20px" }}>
-                  One that is nimble and
-                  ready for a digitally
-                  connected world
-                </p>} animation='slide-up' />
-              </div> */}
-            </div>
-          </div>
-        </div>
-      </div>
       <div
-        className="d-none d-md-block"
-        style={{ marginTop: `${marginTop - marginTop * 0.1}px` }}
+        className=""
+        style={{
+          marginTop: `${marginTop - marginTop * 0.1}px`,
+           '@media (max-width: 767px)': {
+            // marginTop: "100vh"
+            marginTop: `${marginTop - marginTop * 1}px`,
+          },
+        }}
+
       ></div>
       <div className="container-fluid p-lg-3">
         <div className="row">
@@ -145,27 +123,20 @@ function Home() {
               animation="slide-left"
             />
 
-            <div className="row">
-              <div className="col">
-                <p className="outline_btn explorbtn position-relative">Explore</p>
-              </div>
-              <div className="col">
-                <Link to="#" style={{ textDecoration: "none" }}>
-                  <div
-                    className="animated-arrow-btn"
-                    style={{
-                      height: "50px",
-                      width: "50px",
-                    }}
-                  >
-                    <ImageAnimationUnfold
-                      src={rigthArrow}
-                      alt="Image not found"
-                    />
-                  </div>
-                </Link>
-              </div>
+            <p className="explorbtn" style={{ marginBottom: "2px" }}>Explore</p>
+            <div
+              className="animated-arrow-btn"
+              style={{
+                height: "40px",
+                width: "40px",
+              }}
+            >
+              <ImageAnimationUnfold
+                src={rigthArrow}
+                alt="Image not found"
+              />
             </div>
+
           </div>
           <div className="col-lg-7 mt-4 mt-lg-0 col-12">
             <ImageAnimationUnfold src={gispiImage} alt="Image not found" />
@@ -346,7 +317,7 @@ function Home() {
           />
         </div> */}
         <div>
-        <div className="d-flex justify-content-center  mb-3 mt-3">
+          <div className="d-flex justify-content-center  mb-3 mt-3">
             <button className="SeeAll-button">
               <div class="svg-wrapper-1">
                 <div class="svg-wrapper">
@@ -540,7 +511,7 @@ function Home() {
                           >
                             •
                           </span> */}
-                           Strategy
+                          Strategy
                         </h3>
                       }
                       animation="slide-up"
@@ -555,7 +526,7 @@ function Home() {
                             fontWeight: "400",
                           }}
                         >
-                          A plan is like a puzzle. 
+                          A plan is like a puzzle.
                           Placing the right piece at the right place at the right time, makes it complete- this is what makes TAW different.
                         </p>
                       }
@@ -610,7 +581,7 @@ function Home() {
                             fontWeight: "400",
                           }}
                         >
-                         Design is more than a holistic approach to achieve aesthetics. For TAW, design is crucial art of storytelling for your Brand.
+                          Design is more than a holistic approach to achieve aesthetics. For TAW, design is crucial art of storytelling for your Brand.
                         </p>
                       }
                       animation="slide-up"
@@ -663,7 +634,7 @@ function Home() {
                             fontWeight: "400",
                           }}
                         >
-                           In today’s digitally evolved world, Technology is the backbone of every dream and vision. Our tech-savvy professionals offer high-quality experience from web development to app design.
+                          In today’s digitally evolved world, Technology is the backbone of every dream and vision. Our tech-savvy professionals offer high-quality experience from web development to app design.
                         </p>
                       }
                       animation="slide-up"
@@ -751,7 +722,7 @@ function Home() {
                 <AnimatedText
                   text={
                     <h3>
-                       Creative & Content
+                      Creative & Content
                     </h3>
                   }
                   animation="slide-left"
@@ -825,7 +796,7 @@ function Home() {
                 <AnimatedText
                   text={
                     <ul className="custom-arrow-bullet-point">
-                       <li> Website design and Development</li>
+                      <li> Website design and Development</li>
                       <li> E-commerce Website Development</li>
                       <li> AR Filter</li>
                       <li> Mobile Application</li>
