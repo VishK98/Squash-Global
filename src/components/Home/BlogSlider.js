@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './BlogSlider.css';
-import blogImage4 from "../../assets/images/blog-image (4).jpg";
+import blogImage4 from "../../assets/images/Blog1.png";
 import AnimatedFadeImage from '../Animations/ImageAnimationFade';
 import AnimatedText from '../Animations/TextAnimation';
 import rigthArrow from "../../assets/images/Icons/-right-arrow.png";
@@ -36,7 +36,7 @@ const BlogSlider = () => {
                   </div>
                 </div>
                 <div className='col-lg-5 col-md-5 col-12'>
-                  <AnimatedText text={<h3>How to Leverage Podcasts for Your Brand in 2023</h3>
+                  <AnimatedText text={<h3>How Changes in Social Media Algorithms Are Influencing Content Strategy and What Marketers Need to Know to Stay Ahead</h3>
                   } animation='slide-up' />
                   <AnimatedText text={<p>In today's bustling market where every digital marketing agency is trying to stand out, having consumable content is like the basic rule of the game.                                             ...
                   </p>} animation='slide-up' />

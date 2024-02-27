@@ -2,11 +2,11 @@
 import React, { useState, useEffect } from 'react';
 import "./BlogDetails.css";
 import ScrollToTopButton from '../TopButton/TopButton';
-import industriesBanner from "../../assets/images/sq-banner.jpeg";
+import industriesBanner from "../../assets/images/Blog1.png";
 // import banner from "../../assets/images/sq-banner.jpeg";
-import blogImage9 from "../../assets/images/blog-image (9).jpg";
-import blogImage10 from "../../assets/images/blog-image (5).jpg";
-import blogImage4 from "../../assets/images/blog-image (4).jpg";
+import blogImage9 from "../../assets/images/Blog1.png";
+import blogImage10 from "../../assets/images/Blog1.png";
+import blogImage4 from "../../assets/images/Blog1.png";
 import { Button } from "bootstrap";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 
@@ -38,33 +38,9 @@ function BlogDetails() {
     }, []);
     return (
         <>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="route-text">
-                            <ol class="breadcrumb bg-transparent px-0 route-text mt-4">
-                                <li>
-                                    <a
-                                        href="/"
-                                        style={{ color: "grey", textDecoration: "none" }}
-                                    >
-                                        Blog /
-                                    </a>
-                                </li>
-                                <li
-                                    class="breadcrumb-item active"
-                                    aria-current="page"
-                                    style={{ marginLeft: "8px", color: "grey" }}
-                                >
-                                    How to Leverage Podcasts for Your Brand in 2023
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <div className="container col-lg-10 mt-3">
-                <h1 className="text-center">How to Leverage Podcasts for Your Brand in 2023</h1>
+                <h1 className="text-center">How Changes in Social Media Algorithms Are Influencing Content Strategy and What Marketers Need to Know to Stay Ahead</h1>
                 <img
                     src={industriesBanner}
                     className="img-fluid mt-3"
@@ -74,20 +50,9 @@ function BlogDetails() {
             </div>
             <div className="container mt-5 col-lg-8">
                 <p>
-                    In today's bustling market where every <span style={{ color: "#30256d" }}>digital marketing</span> agency is trying to stand out, having consumable content is like the basic rule of the game.
+                    Changes in social media algorithms have a profound impact on how content is distributed and seen on platforms. To stay ahead in the dynamic landscape of social media, marketers need to understand these changes and adapt their content strategies accordingly. Here's a comprehensive overview:
                 </p>
-                <p >
-                    But if we talk about real success. That's like becoming the master of promotion and marketing wizardry. It's like turning over every stone, leaving no table unturned – just so you can reach every nook and cranny of this world and cover all your bases.
-                </p>
-                <p >
-                    You know the drill: social media, billboards, videos – you've totally rocked those. Now is the time to bring back the old classics in a new and shiny way. Nowhere is this more true than with radio and podcasts.
-                </p>
-                <p>
-                    Radio, the trendsetter of the early 20th century that created some major "waves" has come back in style, all thanks to its modern makeover called podcasts. You know, those audio shows you can listen to anywhere anytime from your smartphone? Podcasts are totally stealing the spotlight right now.
-                </p>
-                <p>
-                    This is the ultimate guide for setting your podcast on fire! We've got insider strategies and tricks that will spark curiosity, engage your listeners, and send your podcast's popularity soaring high. So, get your headphones ready, gear up with your stats, and prepare to ride the sound waves like a total pro.
-                </p>
+           <h1>1. Shift from Chronological to Algorithmic Feeds:</h1>
             </div>
             <div className="container mt-2 col-lg-8">
                 <img
