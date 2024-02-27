@@ -369,7 +369,7 @@ function Home() {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="section_para p-lg-5 pl-0">
+              <div className="section_para p-lg-5">
                 <div className="topslide">
                   <AnimatedText
                     text={
@@ -399,24 +399,20 @@ function Home() {
         </div>
         <ImageAnimationUnfold src={worldwideOffice} alt="Image not found" />
       </section>
-      <section id="homeSectionFour" className="mt-lg-5 mt-3 ">
+      <section id="homeSectionFour" className="mt-lg-5">
         <div className="container">
           <div className="row">
             <div className="col-12">
               <div className="position-relative">
-                <div>
-                  <div className="topslide">
-                    <AnimatedText
-                      text={
-                        <h3 className="redefine-text">
-                          Redefining Communication for Brands to Create More
-                          Approachable Framework{" "}
-                        </h3>
-                      }
-                      animation="slide-down"
-                    />
-                  </div>
-                </div>
+                <AnimatedText
+                  text={
+                    <h3 className="redefine-text">
+                      Redefining Communication for Brands to Create More
+                      Approachable Framework
+                    </h3>
+                  }
+                  animation="slide-down"
+                />
                 <div className=" mt-lg-4 mt-2">
                   <AnimatedText
                     text={
@@ -456,8 +452,12 @@ function Home() {
               text={<h2 className="text-lg-center stroke title">Specialist</h2>}
               animation="slide-left"
             />
+            {/* <AnimatedText
+              text={<p className="Division-title">Divisions</p>}
+              animation="slide-right"
+            /> */}
             <AnimatedText
-              text={<h2 className="Division-title">Divisions</h2>}
+              text={<p className="image-text-effect">Divisions</p>}
               animation="slide-right"
             />
           </div>
