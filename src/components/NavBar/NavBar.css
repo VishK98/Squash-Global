@@ -1,16 +1,27 @@
+/* NavBar.css */
 .header {
   width: 100%;
   position: sticky;
   top: 0;
   background-color: transparent;
   z-index: 10000;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .header.scrolled {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 30px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.header.scrolled .nav-link {
+  color: black;
 }
 
 .logo-img {
@@ -19,35 +30,16 @@
   border-radius: 5%;
 }
 
-
-.nav-link {
-  text-decoration: none;
-  color: #b3b2b2;
-  font-weight: bold;
-  transition: color 0.3s;
-  margin-left: 30px;
-  font-size: 20px;
+.other-page {
+  color: black;
 }
 
 .nav-link:hover {
-  color: #737272;
+  color: #30256d;
 }
-
-/* Cursor Animation */
-/* #cursor {
-  position: absolute;
-  border-radius: 50%;
-  background-color: #000;
-  mix-blend-mode: difference;
-  pointer-events: none;
-  transition: width 0.3s, height 0.3s, background-color 0.3s;
-  transform: translate(-50%, -50%);
-  left: 0;
-} */
 
 .navbar-toggler {
   background-color: #fff;
-
 }
 
 @media only screen and (max-width: 525px) {

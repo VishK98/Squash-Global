@@ -92,7 +92,7 @@ function Home() {
       ></div>
       <div className="container-fluid p-lg-4">
         <div className="row">
-          <div className="col-lg-5 col-12">
+          <div className="col-lg-4 col-12">
             <AnimatedText
               text={
                 <h1 className="Newstyle-text">
@@ -115,7 +115,7 @@ function Home() {
               animation="slide-left"
             />
 
-            <p className="explorbtn" style={{ marginBottom: "2px" }}>
+            <p className="explorbtn" style={{ marginTop: "40px" }}>
               Explore
             </p>
             <div
@@ -128,7 +128,7 @@ function Home() {
               <ImageAnimationUnfold src={rigthArrow} alt="Image not found" />
             </div>
           </div>
-          <div className="col-lg-7 mt-4 mt-lg-0 col-12">
+          <div className="col-lg-8 mt-4 mt-lg-0 col-12">
             <ImageAnimationUnfold src={gispiImage} alt="Image not found" />
           </div>
         </div>
@@ -450,7 +450,7 @@ function Home() {
           <div className="col-12">
             <AnimatedText
               text={<h2 className="text-lg-center stroke title">Specialist</h2>}
-              animation="slide-left"
+              animation="slide-up"
             />
             {/* <AnimatedText
               text={<p className="Division-title">Divisions</p>}
@@ -458,7 +458,7 @@ function Home() {
             /> */}
             <AnimatedText
               text={<p className="image-text-effect">Divisions</p>}
-              animation="slide-right"
+              animation="slide-up"
             />
           </div>
         </div>
