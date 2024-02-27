@@ -89,12 +89,14 @@
     width: 100%;
     margin-top: 73px;
     filter: grayscale(100%);
+    transition: all 0.8s ease-out;
 }
 
 .grid-card-image-design {
     width: 100%;
     margin-top: 97px;
     filter: grayscale(100%);
+    transition: all 0.8s ease-out;
 
 }
 
@@ -102,11 +104,8 @@
     width: 100%;
     margin-top: 50px;
     filter: grayscale(100%);
+    transition: all 0.8s ease-out;
 }
-
-/* .grid-card-image-stat:hover{
-    filter: grayscale(0%);
-  } */
 
 .card:hover .grid-card-image-stat,
 .card:hover .grid-card-image-design,

@@ -61,16 +61,6 @@ h2.stroke {
 }
 
 @media (max-width: 625px) {
-  .Division-title {
-    font-size: 75px;
-    margin-top: 25px;
-    font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    background: linear-gradient(90deg, #000, #30256d, #30256d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-stretch: unset;
-  }
 
   .specialty-text {
     -webkit-text-stroke: 1px #000;
@@ -398,6 +388,7 @@ h2.stroke {
   background: linear-gradient(90deg, #000, #30256d, #30256d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-stretch: unset;
 }
 
 .Color-Text {
@@ -406,4 +397,40 @@ h2.stroke {
   background: linear-gradient(90deg, #000, #30256d, #30256d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+  .Division-title {
+    font-size: 75px;
+    margin-top: 25px;
+    font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(90deg, #000, #30256d, #30256d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-stretch: unset;
+  }
+
+  .taw-title {
+    font-size: 75px;
+    line-height: 195px;
+    font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(90deg, #000, #30256d, #30256d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-stretch: unset;
+  }
+}
+
+.image-text-effect {
+  background-image: url('../../assets/giphy.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 150px;
+  font-weight: bold;
+  margin-top: -30px;
+  /* transform: scaleX(1.3); */
 }
