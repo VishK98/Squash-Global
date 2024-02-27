@@ -61,6 +61,17 @@ h2.stroke {
 }
 
 @media (max-width: 625px) {
+  .Division-title {
+    font-size: 75px;
+    margin-top: 25px;
+    font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(90deg, #000, #30256d, #30256d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-stretch: unset;
+  }
+
   .specialty-text {
     -webkit-text-stroke: 1px #000;
     -webkit-text-fill-color: transparent;
@@ -85,10 +96,6 @@ h2.stroke {
   .mobile_down_arrow {
     display: none;
   }
-
-  /* .video-display {
-    display: none;
-  } */
 
   .h1.stroke,
   h2.stroke,
@@ -184,11 +191,17 @@ h2.stroke {
 }
 
 .grid-view {
+  height: 500px;
   background-color: #e3e0e0;
   border-radius: 10px;
-  font-size: 15px;
+  padding: 10px;
   transition: background-color 0.3s ease;
-  /* Add transition for smooth effect */
+}
+
+.grid-text {
+  font-size: 17px;
+  color: #000;
+  font-weight: 400;
 }
 
 .grid-view:hover {
@@ -346,12 +359,9 @@ h2.stroke {
 
 .Newstyle-text {
   font-family: "Manrope", sans-serif;
-  /* Use the correct font-family name */
   font-weight: 400;
-  /* Use the appropriate numerical value for font weight */
-  font-size: 400%;
+  font-size: 50px;
   font-weight: bold;
-  margin-top: 50px;
   margin-bottom: 4%;
   background: linear-gradient(90deg, #000, #30256d, #30256d);
   -webkit-background-clip: text;
@@ -374,7 +384,6 @@ h2.stroke {
 
 .Division-title {
   font-size: 150px;
-  /* line-height: 150px; */
   font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
   font-weight: bold;
   background: linear-gradient(90deg, #000, #30256d, #30256d);

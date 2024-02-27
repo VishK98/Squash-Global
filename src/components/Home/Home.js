@@ -1,6 +1,5 @@
 import "./Home.css";
 import "../Animations/Animation.css";
-import AnimatedFadeImage from "../Animations/ImageAnimationFade";
 import AnimatedText from "../Animations/TextAnimation";
 import React, { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -9,12 +8,10 @@ import bigCircle from "../../assets/images/big-circle-down-arrow.png";
 import gispiImage from "../../assets/images/Banner Homepage.png";
 import onHerLip from "../../assets/images/home-banner-new.png";
 import worldwideOffice from "../../assets/images/Home Page Bottom Banner.png";
-import grid1 from "../../assets/images/specialist-division/Strategy Image.png";
-import grid2 from "../../assets/images/specialist-division/Design Image.png";
-import grid3 from "../../assets/images/specialist-division/Technology Image.png";
 import circularText from "../../assets/images/circular-text.png";
 import brandIcon from "../../assets/images/Icons/icons8-bulb.gif";
 import "./BlogSlider";
+import Card from "./GridCard";
 import BlogSlider from "./BlogSlider";
 import PartnerSlider from "./PartnerSlider";
 import ClientSlider from "./ClientsSlider";
@@ -87,26 +84,21 @@ function Home() {
         className=""
         style={{
           marginTop: `${marginTop - marginTop * 0.1}px`,
-          '@media (max-width: 767px)': {
+          "@media (max-width: 767px)": {
             // marginTop: "100vh"
             marginTop: `${marginTop - marginTop * 1}px`,
           },
         }}
-
       ></div>
       <div className="container-fluid p-lg-3">
         <div className="row">
           <div className="col-lg-5 col-12">
-            {/* <AnimatedText
-              text={
-                <h2 className="Newstyle-text">
-                  What’s Brewing at TAW?
-                </h2>
-              }
-              animation="slide-left"
-            /> */}
             <AnimatedText
-              text={<h1 className="Newstyle-text mt-3">Framing People Centric Experiences</h1>}
+              text={
+                <h1 className="Newstyle-text">
+                  Framing People Centric Experiences
+                </h1>
+              }
               animation="slide-left"
             />
             <AnimatedText
@@ -123,7 +115,9 @@ function Home() {
               animation="slide-left"
             />
 
-            <p className="explorbtn" style={{ marginBottom: "2px" }}>Explore</p>
+            <p className="explorbtn" style={{ marginBottom: "2px" }}>
+              Explore
+            </p>
             <div
               className="animated-arrow-btn"
               style={{
@@ -131,12 +125,8 @@ function Home() {
                 width: "40px",
               }}
             >
-              <ImageAnimationUnfold
-                src={rigthArrow}
-                alt="Image not found"
-              />
+              <ImageAnimationUnfold src={rigthArrow} alt="Image not found" />
             </div>
-
           </div>
           <div className="col-lg-7 mt-4 mt-lg-0 col-12">
             <ImageAnimationUnfold src={gispiImage} alt="Image not found" />
@@ -150,21 +140,29 @@ function Home() {
             <div className="col-12 d-flex align-items-center">
               <div>
                 <AnimatedText
-                  text={<h2 className="stroke" style={{marginBottom: "-30px"}}>Pixels to </h2> }
+                  text={
+                    <h2 className="stroke" style={{ marginBottom: "-30px" }}>
+                      Pixels to
+                    </h2>
+                  }
                   animation="slide-up"
                 />
                 <AnimatedText
-                    text={<h2 className="Division-title" style={{ fontWeight: "bold" }}>People</h2>}
-                    animation="slide-up"
-                  />
+                  text={
+                    <p
+                      className="Division-title"
+                      style={{ fontWeight: "bold" }}
+                    >
+                      People
+                    </p>
+                  }
+                  animation="slide-up"
+                />
                 <AnimatedText
                   text={
                     <p className="brew-text">
-                      Having Technology as an ally,{" "}
-                      <mark className="text-highlight">
-                        we design digital experiences that
-                      </mark>
-                      move brands closer to their vision.
+                      Having Technology as an ally, we design digital
+                      experiences that move brands closer to their vision.
                     </p>
                   }
                   animation="slide-up"
@@ -172,7 +170,7 @@ function Home() {
               </div>
               <div className="mobile_down_arrow new-big-down-arrow2">
                 <div style={{ marginLeft: "900px" }}>
-                  <img src={bigCircle} alt="image not found" />
+                  <img height='200px' width='200px' src={bigCircle} alt="image not found" />
                 </div>
               </div>
             </div>
@@ -184,25 +182,17 @@ function Home() {
               <ImageAnimationUnfold src={onHerLip} alt="Image not found" />
             </div>
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex flex-column align-items-center responsive-text">
-              {/* <AnimatedText
-                className="brewText-stroke"
-                text={
-                  <h3 style={{ fontWeight: "bold" }}>What's on the Lips</h3>
-                }
-                animation="slide-up"
-              />{" "} */}
               <div className="row">
-                <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex align-items-center">
-                  <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>
-                    Explore{" "}
-                  </h2>
+                <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex">
+                  <p className="explorbtn" style={{ marginBottom: "2px" }}>
+                    Explore
+                  </p>
                   <Link to="/sector" style={{ textDecoration: "none" }}>
                     <div
                       className="animated-arrow-btn"
                       style={{
-                        marginLeft: "10px",
-                        height: "50px",
-                        width: "50px",
+                        height: "40px",
+                        width: "40px",
                       }}
                     >
                       <ImageAnimationUnfold
@@ -235,16 +225,15 @@ function Home() {
               >
                 <div className="row">
                   <div className="col-lg-5 col-md-5 col-sm-12 col-12  d-flex align-items-center">
-                    <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>
-                      Explore{" "}
-                    </h2>
+                    <p className="explorbtn" style={{ marginBottom: "2px" }}>
+                      Explore
+                    </p>
                     <Link to="/sector" style={{ textDecoration: "none" }}>
                       <div
                         className="animated-arrow-btn"
                         style={{
-                          marginLeft: "10px",
-                          height: "50px",
-                          width: "50px",
+                          height: "40px",
+                          width: "40px",
                         }}
                       >
                         <ImageAnimationUnfold
@@ -260,12 +249,11 @@ function Home() {
             {/* <div className="work_list_img round_img col-lg-7 col-md-7 col-sm-12 col-12">
               <ImageAnimationUnfold src={tasc} alt="Image not found" />
             </div> */}
-            <div className=" col-lg-8 col-md-8 col-sm-12 col-12 mt-md-3" >
+            <div className="col-lg-8 col-md-8 col-sm-12 col-12 mt-md-3 d-flex justify-content-end">
               <video className="video-banner" autoPlay loop muted>
                 <source src={bannerVideo} type="video/mp4" />
               </video>
             </div>
-
 
 
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 mt-3 d-flex flex-column align-items-center d-md-none">
@@ -336,11 +324,10 @@ function Home() {
               <span>See All</span>
             </button>
           </div>
-
         </div>
         <AnimatedText
           text={
-            <h1 className="creating-text mt-5">
+            <h1 className="redefine-text mt-5">
               Weaving Narratives, Experiences and Connection.
             </h1>
           }
@@ -365,7 +352,14 @@ function Home() {
             <div className="col-lg-6">
               <div className="section_title">
                 <AnimatedText
-                  text={<h2 className="stroke title" style={{marginBottom: "-30px"}}>We're</h2>}
+                  text={
+                    <h2
+                      className="stroke title"
+                      style={{ marginBottom: "-30px" }}
+                    >
+                      We're
+                    </h2>
+                  }
                   animation="slide-right"
                 />
                 <AnimatedText
@@ -385,8 +379,8 @@ function Home() {
                           just a marketing agency.
                         </span>{" "}
                         We are the architects of brand experiences, designing
-                        stories that resonate with the brand’s audience. At
-                        TAW, we provide customize solutions and{" "}
+                        stories that resonate with the brand’s audience. At TAW,
+                        we provide customize solutions and{" "}
                         <span className="text-highlight">
                           expertise to unique business needs making us the right
                           choice for start-ups and small to medium companies.
@@ -462,191 +456,18 @@ function Home() {
               text={<h2 className="text-lg-center stroke title">Specialist</h2>}
               animation="slide-left"
             />
-           <AnimatedText
-                text={<h2 className="Division-title">Divisions</h2>}
-                animation="slide-right"
-              />
+            <AnimatedText
+              text={<h2 className="Division-title">Divisions</h2>}
+              animation="slide-right"
+            />
           </div>
         </div>
         <AnimatedText
-          text={
-            <h5>
-              A new age <mark className="text-highlight">marketing suite</mark>{" "}
-              for modern-day experiences.
-            </h5>
-          }
-          animation="slide-left"
+          text={<h4>A new age marketing suite for modern-day experiences.</h4>}
+          animation="slide-up"
         />
-        <div className="row">
-          <div className="col-12">
-            <div id="specialistDivisionsSlider" className="row">
-              <div className="col-md-4">
-                <div className="grid-view mt-4">
-                  <a style={{ textDecoration: "none" }} title="">
-                    <AnimatedText
-                      text={
-                        <h3
-                          className="dot text-center"
-                          style={{
-                            position: "relative",
-                            paddingLeft: "20px",
-                            marginBottom: "10px",
-                          }}
-                        >
-                          {/* <span
-                            style={{
-                              position: "absolute",
-                              left: "40%",
-                              top: "50%",
-                              transform: "translateY(-50%)",
-                              color: "black",
-                            }}
-                            className="dot"
-                          >
-                            •
-                          </span> */}
-                          Strategy
-                        </h3>
-                      }
-                      animation="slide-up"
-                    />
-                    <AnimatedText
-                      text={
-                        <p
-                          className="text"
-                          style={{
-                            padding: "13px",
-                            fontSize: "17px",
-                            fontWeight: "400",
-                          }}
-                        >
-                          A plan is like a puzzle.
-                          Placing the right piece at the right place at the right time, makes it complete- this is what makes TAW different.
-                        </p>
-                      }
-                      animation="slide-up"
-                    />
-                    {/* <div className="d-flex align-items-center justify-content-center">
-                      <img src={grid1Logo} alt="Gipsi Logo" />
-                    </div> */}
-                    <div className="SD_slider_img">
-                      <AnimatedFadeImage src={grid1} alt="Image not found" />
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div className="grid-view mt-4">
-                  <a style={{ textDecoration: "none" }} title="">
-                    <AnimatedText
-                      text={
-                        <h3
-                          className="dot text-center"
-                          style={{
-                            position: "relative",
-                            paddingLeft: "20px",
-                            marginBottom: "10px",
-                          }}
-                        >
-                          {/* <span
-                            style={{
-                              position: "absolute",
-                              left: "40%",
-                              top: "50%",
-                              transform: "translateY(-50%)",
-                              color: "black",
-                            }}
-                            className="dot"
-                          >
-                            •
-                          </span> */}
-                          Design
-                        </h3>
-                      }
-                      animation="slide-up"
-                    />
-                    <AnimatedText
-                      text={
-                        <p
-                          className="text"
-                          style={{
-                            padding: "13px",
-                            fontSize: "17px",
-                            fontWeight: "400",
-                          }}
-                        >
-                          Design is more than a holistic approach to achieve aesthetics. For TAW, design is crucial art of storytelling for your Brand.
-                        </p>
-                      }
-                      animation="slide-up"
-                    />
-                    {/* <div className="d-flex align-items-center justify-content-center mt-4">
-                      <img src={grid2Logo} alt="Gipsi Logo" />
-                    </div> */}
-                    <div className="SD_slider_img">
-                      <AnimatedFadeImage src={grid2} alt="Image not found" />
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div className="grid-view mt-4">
-                  <a style={{ textDecoration: "none" }} title="">
-                    <AnimatedText
-                      text={
-                        <h3
-                          className="dot text-center"
-                          style={{
-                            position: "relative",
-                            paddingLeft: "20px",
-                            marginBottom: "10px",
-                          }}
-                        >
-                          {/* <span
-                            style={{
-                              position: "absolute",
-                              left: "35%",
-                              top: "50%",
-                              transform: "translateY(-50%)",
-                              color: "black",
-                            }}
-                            className="dot"
-                          >
-                            •
-                          </span> */}
-                          Technology
-                        </h3>
-                      }
-                      animation="slide-up"
-                    />
-                    <AnimatedText
-                      text={
-                        <p
-                          style={{
-                            padding: "13px",
-                            fontSize: "17px",
-                            fontWeight: "400",
-                          }}
-                        >
-                          In today’s digitally evolved world, Technology is the backbone of every dream and vision. Our tech-savvy professionals offer high-quality experience from web development to app design.
-                        </p>
-                      }
-                      animation="slide-up"
-                    />
-                    {/* <div className="d-flex align-items-center justify-content-center">
-                      <img src={grid3Logo} alt="Gipsi Logo" />
-                    </div> */}
-                    <div className="SD_slider_img">
-                      <AnimatedFadeImage src={grid3} alt="Image not found" />
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Card />
       </div>
-
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-10 col-md-12">
@@ -683,11 +504,7 @@ function Home() {
               </div>
               <a>
                 <AnimatedText
-                  text={
-                    <h3 className="Color-Text">
-                      Social Communication
-                    </h3>
-                  }
+                  text={<h3 className="Color-Text">Social Communication</h3>}
                   animation="slide-left"
                 />
               </a>
@@ -714,11 +531,7 @@ function Home() {
               </div>{" "}
               <a>
                 <AnimatedText
-                  text={
-                    <h3 className="Color-Text">
-                      Creative & Content
-                    </h3>
-                  }
+                  text={<h3 className="Color-Text">Creative & Content</h3>}
                   animation="slide-left"
                 />
               </a>
@@ -748,9 +561,7 @@ function Home() {
               <a>
                 <AnimatedText
                   text={
-                    <h3 className="Color-Text">
-                      Organic & Paid Marketing
-                    </h3>
+                    <h3 className="Color-Text">Organic & Paid Marketing</h3>
                   }
                   animation="slide-right"
                 />
@@ -778,11 +589,7 @@ function Home() {
               </div>{" "}
               <a>
                 <AnimatedText
-                  text={
-                    <h3 className="Color-Text">
-                      Technology
-                    </h3>
-                  }
+                  text={<h3 className="Color-Text">Technology</h3>}
                   animation="slide-right"
                 />
               </a>
@@ -808,14 +615,18 @@ function Home() {
         <div className="col-12">
           <div className="title">
             <AnimatedText
-              text={<h2 className="stroke" style={{marginBottom : "-30px"}}>What’s the </h2>}
+              text={
+                <h2 className="stroke" style={{ marginBottom: "-30px" }}>
+                  What’s the{" "}
+                </h2>
+              }
               animation="slide-left"
             />
           </div>
           <AnimatedText
-              text={<h2 className="taw-title">Buzz?</h2>}
-              animation="slide-right"
-            />
+            text={<h2 className="taw-title">Buzz?</h2>}
+            animation="slide-right"
+          />
         </div>
       </div>
 
@@ -831,7 +642,9 @@ function Home() {
               <div className="second_line_title bannertitle">
                 <AnimatedText
                   text={
-                    <h2 className="taw-tittle text-lg-center title ">brand experience?</h2>
+                    <h2 className="taw-tittle text-lg-center title ">
+                      brand experience?
+                    </h2>
                   }
                   animation="slide-right"
                 />
@@ -936,21 +749,19 @@ function Home() {
                     <option value="Digital PR And ORM">
                       Digital PR And ORM
                     </option>
-                    <option value="SEO & SEM">
-                      SEO & SEM</option>
-                    <option value="Creative">
-                      Creative
-                    </option>
+                    <option value="SEO & SEM">SEO & SEM</option>
+                    <option value="Creative">Creative</option>
                     <option value="Design and Development">
                       Design and Development
                     </option>
-                    <option value="Content">
-                      Content
-                    </option>
+                    <option value="Content">Content</option>
                     <option value="Production">Production</option>
                     <option value="Website Design And Devlopment">
-                      Website Design And Devlopment</option>
-                    <option value="Influencer Marketing">Influencer Marketing</option>
+                      Website Design And Devlopment
+                    </option>
+                    <option value="Influencer Marketing">
+                      Influencer Marketing
+                    </option>
                   </select>
                 }
                 animation="slide-up"
@@ -1043,22 +854,6 @@ function Home() {
               />
             </div>
           </div>
-          {/* <div
-            id="contactSubmitBtn"
-            className="d-flex justify-content-center mt-lg-5 mb-3 mt-3"
-          >
-            <AnimatedText
-              text={
-                <input
-                  type="submit"
-                  name="submit"
-                  value="Send it"
-                  class="submit"
-                />
-              }
-              animation="fade-in"
-            />
-          </div> */}
           <div className="d-flex justify-content-center  mb-3 mt-3">
             <button className="submit-button">
               <div class="svg-wrapper-1">
@@ -1080,7 +875,6 @@ function Home() {
               <span>Submit</span>
             </button>
           </div>
-
         </form>
       </div>
       <ScrollToTopButton />
