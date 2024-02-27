@@ -462,10 +462,6 @@ function Home() {
             />
           </div>
         </div>
-        <AnimatedText
-          text={<h4>A new age marketing suite for modern-day experiences.</h4>}
-          animation="slide-up"
-        />
         <Card />
       </div>
       <div className="container">
@@ -570,8 +566,8 @@ function Home() {
                 <AnimatedText
                   text={
                     <ul className="custom-arrow-bullet-point">
-                      <li>Search Engine Optimisation</li>
-                      <li>Search Engine Managemen</li>
+                      <li>Search Engine Optimization</li>
+                      <li>Search Engine Management</li>
                       <li>Media Planning and Buying</li>
                       <li>Programmatic Buying</li>
                     </ul>
