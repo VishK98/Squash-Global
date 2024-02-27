@@ -16,20 +16,16 @@ function Philosophy() {
     <div className="col-12">
             <ImageAnimationUnfold src={philosophy} alt="Image not found" />
           </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <AnimatedText text="We know you ! You know us !!" animation="slide-left" className="aboutUs-heading" />
-          </div>
-        </div>
-      </div>
-      <div className="container pt-3">
+    
+      <div className="container-fluid pt-3">
         <div className="row">
         </div>
       </div>
-      <div className="container">
+      <div className="container-fluid">
+ 
         <div className="row">
           <div className="col-lg-6">
+          <AnimatedText text="We know you ! You know us !!" animation="slide-left" className="aboutUs-heading" />
 
             <AnimatedText text={<h3>In this age of automated conversations, we noticed that the ‘<span className="text-highlight">human touch </span>’ had
               sneaked out while no one was looking.</h3>} animation="slide-left" />
@@ -46,7 +42,7 @@ function Philosophy() {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col-12 philosophy-details mt-5">
             <AnimatedText text={<p className=" mt-lg-4">
@@ -78,7 +74,7 @@ function Philosophy() {
       </div>
 
       <section id="" className="mt-lg-3 mt-3">
-        <div className="container">
+        <div className="container-fluid">
           <div className="position-relative phi-bottom-banner ">
             <div className="row p-5">
               <div className="col-md-7"></div>

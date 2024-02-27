@@ -90,7 +90,7 @@ function Home() {
           },
         }}
       ></div>
-      <div className="container-fluid p-lg-3">
+      <div className="container-fluid p-lg-4">
         <div className="row">
           <div className="col-lg-5 col-12">
             <AnimatedText
