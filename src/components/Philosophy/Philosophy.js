@@ -31,7 +31,7 @@ function Philosophy() {
             </p>} animation="slide-up" />
           </div>
           <div className="col-lg-6 col-12">
-            {/* <ImageAnimationUnfold src={partyScene} alt="Image not found" /> */}
+            <ImageAnimationUnfold src={partyScene} alt="Image not found" />
           </div>
         </div>
       </div>
