@@ -54,20 +54,19 @@ function Contact() {
 
   return (
     <>
-      <div> <ImageAnimationUnfold src={contact} alt="Image not found" /></div>
+      {/* <div className="full-screen-image" > <ImageAnimationUnfold src={contact} alt="Image not found" /></div> */}
+      <div className="full-screen-image">
+        <img src={contact} alt="Image not found" style={{ width: "100%", height: "100%", objectFit: "fill" }} />
+      </div>
       <div className="container">
-        <div className="row">
-          <div className="inner_title hidden">
-            <AnimatedText text={<h1 className="contact-page-title">Let’s connect us</h1>
+      <AnimatedText text={<h1 className="contact-page-title mt-lg-4">Let’s connect us</h1>
             } animation="slide-left" />
-          </div>
-        </div>
       </div>
 
       <div className="container mt-3 mb-5">
 
         <div className="row">
-          <div className="col-lg-5 pt-lg-5">
+          <div className="col-lg-5 pt-lg-4">
             <div className="mt-4 mt-lg-0 address-info topslide">
               <div style={{ display: "flex", alignItems: "flex-start" }}>
 
@@ -134,7 +133,7 @@ function Contact() {
 
             </div>
           </div>
-          <div className="col-lg-6 offset-lg-1 pt-5">
+          <div className="col-lg-6 offset-lg-1 pt-lg-4">
             <div
               className="formcol main-contact-form topslide"
             >
@@ -175,7 +174,7 @@ function Contact() {
                   } animation='slide-up' />
                   <div className="mt-3">
                     <AnimatedText text={<label>
-                     Company Name
+                      Company Name
                       <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
                     </label>} animation='slide-up' />
 
@@ -220,15 +219,15 @@ function Contact() {
                   >
                     <option value="selected">Select</option>
                     <option value="Media Planning And Buying">
-                    Media Planning And Buying
+                      Media Planning And Buying
                     </option>
                     <option value="Digital PR And ORM">
-                    Digital PR And ORM
+                      Digital PR And ORM
                     </option>
                     <option value="SEO & SEM">
                       SEO & SEM</option>
                     <option value="Creative">
-                    Creative
+                      Creative
                     </option>
                     <option value="Design and Development">
                       Design and Development
@@ -265,27 +264,27 @@ function Contact() {
                   />} animation='fade-in' />
                 </div> */}
                 <div><div className="d-flex justify-content-center  mb-3 mt-3">
-            <button className="submit-button">
-              <div class="svg-wrapper-1">
-                <div class="svg-wrapper">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="35"
-                    height="35"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                    <path
-                      fill="currentColor"
-                      d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                    ></path>
-                  </svg>
+                  <button className="submit-button">
+                    <div class="svg-wrapper-1">
+                      <div class="svg-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="35"
+                          height="35"
+                        >
+                          <path fill="none" d="M0 0h24v24H0z"></path>
+                          <path
+                            fill="currentColor"
+                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <span>Submit</span>
+                  </button>
                 </div>
-              </div>
-              <span>Submit</span>
-            </button>
-          </div>
-</div>
+                </div>
               </form>
             </div>
 

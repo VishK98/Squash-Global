@@ -171,7 +171,7 @@ function Careers() {
 
   return (
     <>
-      <div><ImageAnimationUnfold src={image} alt="Image not found" /></div>
+      <div className="full-screen-image"><ImageAnimationUnfold src={image} alt="Image not found" style={{ width: "100%", height: "100%", objectFit: "fill" }} /></div>
 
       <div className="container ">
         <AnimatedText text={<h1 style={{ fontSize: "50px", fontWeight: "bold" }}>
@@ -214,7 +214,7 @@ function Careers() {
               <span
                 style={{ fontWeight: "bold", color: "#30256d" }}
               >
-              TAW
+                TAW
               </span>
               , we foster collaboration, innovation and creative minds to explore limitless possibilities. If you are someone who wants to be a part of the next big thing in the marketing and advertising industry,
               " <br /> <br />
@@ -232,7 +232,7 @@ function Careers() {
         <div style={{ display: "flex" }}>
           <AnimatedText text={<h1 className="Color-Text" style={{ fontWeight: "bold" }}>Life at The Agency Way</h1>
           } animation='slide-left' />
-        
+
         </div>
       </div>
       <ImageAnimationUnfold src={teamBreak} alt="Image not found" />
