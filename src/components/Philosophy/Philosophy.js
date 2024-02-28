@@ -1,11 +1,8 @@
 import React from "react";
 import "./Philosophy.css";
-import AnimatedImage from '../Animations/ImageAnimation';
 import AnimatedText from '../Animations/TextAnimation';
 import ScrollToTopButton from '../TopButton/TopButton';
-import philosophy from "../../assets/images/Banner About us.jpg";
-import quotation from "../../assets/images/quotation-marks-svgrepo.png";
-import yellowCircle from "../../assets/images/empty-yellow-circle.png";
+import AboutUs from "../../assets/images/Banner About us.jpg";
 import partyScene from "../../assets/images/about us middle image.png";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 
@@ -14,13 +11,9 @@ function Philosophy() {
   return (
     <>
     <div className="col-12">
-            <ImageAnimationUnfold src={philosophy} alt="Image not found" />
+            <ImageAnimationUnfold src={AboutUs} alt="Image not found" />
           </div>
-    
-      <div className="container-fluid pt-3">
-        <div className="row">
-        </div>
-      </div>
+
       <div className="container-fluid">
  
         <div className="row">
@@ -38,7 +31,7 @@ function Philosophy() {
             </p>} animation="slide-up" />
           </div>
           <div className="col-lg-6 col-12">
-            <ImageAnimationUnfold src={partyScene} alt="Image not found" />
+            {/* <ImageAnimationUnfold src={partyScene} alt="Image not found" /> */}
           </div>
         </div>
       </div>
