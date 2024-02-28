@@ -14,7 +14,7 @@ function Philosophy() {
             <ImageAnimationUnfold src={AboutUs} alt="Image not found" />
           </div>
 
-      <div className="container-fluid">
+      <div className="container-fluid mt-lg-4 mt-3">
  
         <div className="row">
           <div className="col-lg-6">
