@@ -78,7 +78,7 @@ function Contact() {
                   <AnimatedText text={<h2 className="india-text"> India</h2>} animation="slide-up" />
                   <div className="address">
                     <AnimatedText text={<h5 className="address">
-                      791/5, Udyog Vihar, Phase-V, Sector-19,<br /> Gurgaon, Haryana, 122016
+                      D-65, Udyog Vihar, Phase-V, Sector-19,<br /> Gurgaon, Haryana, 122016
                     </h5>} animation="slide-up" />
                   </div>
                 </div>
@@ -122,9 +122,9 @@ function Contact() {
                     <span style={{ marginLeft: "10px" }}>
                       <a className="contact-text"
                         style={{ textDecoration: "none", color: "#000" }}
-                        href="mailto:contact@TAWglobal.com"
+                        href="mailto:contact@theagencyway.co.in"
                       >
-                        contact@TAWglobal.com
+                        contact@theagencyway.co.in
                       </a>
                     </span>
                   }
