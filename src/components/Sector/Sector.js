@@ -183,10 +183,7 @@ function Sector() {
               <Link style={{ textDecoration: "none" }} to={`/${routes[index]}`}>
                 <div className="service-space">
                   <img  className="service-image" src={mediaPlanning} />
-                  <div className='row'>
                   <p className="service-text">{image.title}</p>
-                  {/* <div className='circle'></div> */}
-                  </div>
                 </div>
               </Link>
             </div>

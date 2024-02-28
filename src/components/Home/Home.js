@@ -135,7 +135,7 @@ function Home() {
       </div>
 
       <section id="homeSectionThree ">
-        <div className="container">
+        <div className="container-fluid p-5" >
           <div className="row">
             <div className="col-12 d-flex align-items-center">
               <div>
@@ -178,10 +178,10 @@ function Home() {
         </div>
         <div className="container-fluid">
           <div className="row">
-            <div className="work_list_img round_img col-lg-7 col-md-7 col-sm-12 col-12">
+            <div className="work_list_img round_img col-lg-8 col-md-8 col-sm-12 col-12">
               <ImageAnimationUnfold src={onHerLip} alt="Image not found" />
             </div>
-            <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex flex-column align-items-center responsive-text">
+            <div className="col-lg-4 col-md-4 col-sm-12 col-12 d-flex flex-column align-items-center responsive-text">
               <div className="row">
                 <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex">
                   <p className="explorbtn" style={{ marginBottom: "2px" }}>
@@ -209,7 +209,7 @@ function Home() {
         <div className="container mb-lg-4 ">
           <div className="row">
             <div
-              className="col-lg-4 col-md-4 col-sm-12 col-12 d-none d-md-block"
+              className="col-lg-5 col-md-5 col-sm-12 col-12 d-none d-md-block"
               style={{ marginTop: "150px" }}
             >
               {/* <AnimatedText
@@ -249,7 +249,7 @@ function Home() {
             {/* <div className="work_list_img round_img col-lg-7 col-md-7 col-sm-12 col-12">
               <ImageAnimationUnfold src={tasc} alt="Image not found" />
             </div> */}
-            <div className="col-lg-8 col-md-8 col-sm-12 col-12 mt-md-3 d-flex justify-content-end">
+            <div className="col-lg-7 col-md-7 col-sm-12 col-12 mt-md-4  ">
               <video className="video-banner" autoPlay loop muted>
                 <source src={bannerVideo} type="video/mp4" />
               </video>
@@ -635,21 +635,14 @@ function Home() {
                 text={<h2 className="stroke">Ready to redefine your </h2>}
                 animation="slide-left"
               />
-              <div className="second_line_title bannertitle">
-                <AnimatedText
+               <AnimatedText
                   text={
-                    <h2 className="taw-tittle text-lg-center title ">
+                    <h2 className="brand-title  title ">
                       brand experience?
                     </h2>
                   }
                   animation="slide-right"
                 />
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-2 col-md-12 d-none d-md-block">
-            <div className="rotating-image text-center">
-              <img src={circularText} alt="image not found" />
             </div>
           </div>
         </div>
