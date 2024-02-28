@@ -123,8 +123,8 @@ function Sector() {
   return (
     <>
       {/*  */}
-      <div >
-        <ImageAnimationUnfold src={industriesBanner} alt="Image not found" />
+      <div className="full-screen-image" >
+        <ImageAnimationUnfold src={industriesBanner} alt="Image not found" style={{ width: "100%", height: "100%", objectFit: "fill" }}  />
       </div>
       <div class="container">
       </div>

@@ -39,9 +39,9 @@ function Work() {
 
   return (
     <>
-    <div>
-          <ImageAnimationUnfold src={ourClients} alt="Image not found" />
-        </div>
+      <div className="full-screen-image">
+        <ImageAnimationUnfold src={ourClients} alt="Image not found" style={{ width: "100%", height: "100%", objectFit: "fill" }} />
+      </div>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

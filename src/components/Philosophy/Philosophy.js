@@ -10,7 +10,7 @@ import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 function Philosophy() {
   return (
     <>
-    <div className="col-12">
+    <div className="full-screen-image">
             <ImageAnimationUnfold src={AboutUs} alt="Image not found" />
           </div>
 
