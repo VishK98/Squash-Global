@@ -163,7 +163,7 @@
 }
 
 .rotating-image {
-  animation: rotate 0.1s linear infinite;
+  animation: rotate 15s linear infinite;
 }
 /* rotating-image ends */
 
