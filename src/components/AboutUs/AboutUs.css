@@ -68,6 +68,14 @@
 
 .about-text {
     font-family: 'Manrope ExtraBold';
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #000, #30256d, #30256d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.know-text {
+    font-family: 'Manrope ExtraBold';
     font-size: 90px;
     font-weight: bold;
     background: linear-gradient(90deg, #000, #30256d, #30256d);

@@ -1,10 +1,11 @@
 .industries-page-title {
   font-weight: bold;
-  font-size: 75px;
+  font-size: 55px;
   font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
   background: linear-gradient(90deg, #000, #30256d, #30256d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: 15px;
 }
 
 .boxes {

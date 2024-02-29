@@ -154,26 +154,8 @@ function Sector() {
         </div>
       </div>
 
-      {/* <div className="container">
-        <AnimatedText text={<h2 className="box-title text-center">
-          Some of our services
-        </h2>} animation='slide-up' />
-        <div className="row">
-          {services.map((image, index) => (
-            <div className="col-lg-3 col-md-3 col-12 mb-4">
-              <Link style={{ textDecoration: "none" }} to={`/${routes[index]}`}>
-                <div className="service-space">
-                  <img width="100%" height="180px" className="service-image" src={mediaPlanning} />
-                  <p className="service-text">{image.title}</p>
-                </div>
-              </Link>
-            </div>
-          ))}
-        </div>
-      </div> */}
-
       <div className="container-fluid">
-        <AnimatedText text={<h2 className="box-title text-center">
+        <AnimatedText text={<h2 className="box-title text-center mb-lg-4">
           Some of our services
         </h2>} animation='slide-up' />
         {/*  first row of service list start */}
