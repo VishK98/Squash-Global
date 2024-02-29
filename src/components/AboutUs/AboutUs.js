@@ -1,5 +1,5 @@
 import React from "react";
-import "./Philosophy.css";
+import "./AboutUs.css";
 import AnimatedText from '../Animations/TextAnimation';
 import ScrollToTopButton from '../TopButton/TopButton';
 import AboutUs from "../../assets/images/Banner About us.jpg";

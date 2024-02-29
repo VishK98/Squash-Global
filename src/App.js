@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
-import Philosophy from "./components/Philosophy/Philosophy";
+import AboutUs from "./components/AboutUs/AboutUs";
 import Home from "./components/Home/Home";
-import Work from "./components/Work/Work";
-import Sector from "./components/Sector/Sector";
+import Clients from "./components/Clients/Clients";
+import Services from "./components/Services/Services";
 import Blog from "./components/Blog/Blog";
 import Careers from "./components/Careers/Careers";
 import Contact from "./components/Contact/Contact";
@@ -44,9 +44,9 @@ function App() {
       <div className="TAW">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/philosophy" element={<Philosophy />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/sector" element={<Sector />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Work.css";
+import "./Clients.css";
 import ScrollToTopButton from '../TopButton/TopButton';
 import client1 from "../../assets/images/clients/client-1.png";
 import client2 from "../../assets/images/clients/client-2.png";

@@ -67,7 +67,7 @@ export default function NavBar() {
                 <li className="nav-item">
                   <Link
                     className="nav-link"
-                    to="/philosophy"
+                    to="/about-us"
                     style={{ color: location.pathname === "/" ? "white" : "black" }}
                   >
                     About Us
@@ -76,7 +76,7 @@ export default function NavBar() {
                 <li className="nav-item">
                   <Link
                     className="nav-link"
-                    to="/work"
+                    to="/clients"
                     style={{ color: location.pathname === "/" ? "white" : "black" }}
                   >
                     Clients
@@ -85,7 +85,7 @@ export default function NavBar() {
                 <li className="nav-item">
                   <Link
                     className="nav-link"
-                    to="/sector"
+                    to="/services"
                     style={{ color: location.pathname === "/" ? "white" : "black" }}
                   >
                     Services

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './Animation.css';
-import '../Philosophy/Philosophy.css';
+import '../AboutUs/AboutUs.css';
 
 const TextAnimation = ({ text, animation, className }) => {
   const textRef = useRef(null);

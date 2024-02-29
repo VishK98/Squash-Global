@@ -1,7 +1,7 @@
 // import React from "react";
 import React, { useState, useEffect } from 'react';
 
-import "./Sector.css";
+import "./Services.css";
 import ScrollToTopButton from '../TopButton/TopButton';
 // import industriesBanner from "../../assets/images/industries-banner.webp";
 import industriesBanner from "../../assets/images/our Services.png";
