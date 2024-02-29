@@ -18,10 +18,10 @@ function Philosophy() {
 
         <div className="row">
           <div className="col-lg-6">
-            <div style={{marginBottom: "-50px"}}>
+            <div style={{marginBottom: "-30px"}}>
             <AnimatedText text="We Know You !" animation="slide-up" className="know-text" />
             </div>
-            <AnimatedText text="We Know You !" animation="slide-up" className="know-text" />
+            <AnimatedText text="You Know Us !" animation="slide-up" className="know-text" />
             <AnimatedText text={<h3 className="age-text">In this age of automated conversations, we noticed that the ‘human touch’ had
               sneaked out while no one was looking.</h3>} animation="slide-left" />
             <AnimatedText text={<p className="paragraph-text mt-lg-4">
@@ -70,10 +70,10 @@ function Philosophy() {
             <div className="row p-5">
               <div className="col-md-7"></div>
               <div className="col-md-5 ">
-                <AnimatedText text={<h2 className=" mt-lg-4 text-white">
+                <AnimatedText text={<h2 className=" Welcome-Text mt-lg-4">
                   Welcome to
                   <br />
-                  TAW-the agency way 2.0
+                  TAW-the agency way
                 </h2>} animation="slide-right" />
               </div>
             </div>
