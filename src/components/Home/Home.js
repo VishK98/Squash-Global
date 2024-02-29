@@ -590,7 +590,7 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* <div className="container">
+      <div className="container">
         <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
@@ -808,7 +808,7 @@ function Home() {
             </button>
           </div>
         </form>
-      </div> */}
+      </div>
       <div>
         {" "}
         <form>
