@@ -91,8 +91,24 @@ function Home() {
           <div className="col-lg-4 col-12">
             <AnimatedText
               text={
+                <h1 className="framing-text">
+                  Framing People
+                </h1>
+              }
+              animation="slide-left"
+            />
+            <AnimatedText
+              text={
+                <h1 className="framing-text">
+                  Centric
+                </h1>
+              }
+              animation="slide-left"
+            />
+            <AnimatedText
+              text={
                 <h1 className="Newstyle-text">
-                  Framing People Centric Experiences
+                  Experiences
                 </h1>
               }
               animation="slide-left"
@@ -100,18 +116,16 @@ function Home() {
             <AnimatedText
               text={
                 <p className="brew-text">
-                  Our marketing strategies go beyond{" "}
-                  <span className="text-highlight">
-                    With deep understanding of human behavior, we forge
-                    connection that helps
-                  </span>{" "}
-                  Brands to speak to their audience individually.
+                  In this age of automated conversations, we noticed that the 'human touch' had sneaked out while no one was looking. We believe that life unfolds every day. So should communication.
                 </p>
+                // <p className="brew-text">
+                //   Our marketing strategies go beyond With deep understanding of human behavior, we forge connection that helps Brands to speak to their audience individually.
+                // </p>
               }
               animation="slide-left"
             />
 
-            <p className="explorbtn" style={{ marginTop: "40px" }}>
+            <p className="explorbtn" style={{ marginTop: "35px" }}>
               Explore
             </p>
             <div
