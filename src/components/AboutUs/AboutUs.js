@@ -18,7 +18,7 @@ function Philosophy() {
  
         <div className="row">
           <div className="col-lg-6">
-          <AnimatedText text="We Know You ! You Know Us !!" animation="slide-left" className="about-text" />
+          <AnimatedText text="We Know You ! You Know Us !" animation="slide-left" className="about-text" />
 
             <AnimatedText text={<h3 className="age-text">In this age of automated conversations, we noticed that the ‘<span className="text-highlight">human touch </span>’ had
               sneaked out while no one was looking.</h3>} animation="slide-left" />
