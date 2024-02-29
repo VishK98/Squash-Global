@@ -106,9 +106,7 @@ function Home() {
             <AnimatedText
               text={
                 <p className="paragraph-text">
-                  In this age of automated conversations, we noticed that the
-                  'human touch' had sneaked out while no one was looking. We
-                  believe that life unfolds every day. So should communication.
+                  Our marketing strategies go beyond driving campaigns for brands. With deep understanding of human behavior, we forge connection that helps Brands to speak to their audience individually. We breathe life into your Brand with meaningful innovation and creative communication.
                 </p>
                 // <p className="paragraph-text">
                 //   Our marketing strategies go beyond With deep understanding of human behavior, we forge connection that helps Brands to speak to their audience individually.
