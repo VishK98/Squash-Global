@@ -174,7 +174,7 @@ function Sector() {
 
       <div className="container-fluid">
         <AnimatedText text={<h2 className="box-title text-center">
-          Some of our services
+          Our Services
         </h2>} animation='slide-up' />
         {/*  first row of service list start */}
         <div className="row-service">
