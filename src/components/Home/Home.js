@@ -331,21 +331,10 @@ function Home() {
                 <div className="topslide">
                   <AnimatedText
                     text={
-                      <p className="brew-text">
-                        TAW-the agency way is more than{" "}
-                        <span className="text-highlight">
-                          just a marketing agency.
-                        </span>{" "}
-                        We are the architects of brand experiences, designing
-                        stories that resonate with the brand’s audience. At TAW,
-                        we provide customize solutions and{" "}
-                        <span className="text-highlight">
-                          expertise to unique business needs making us the right
-                          choice for start-ups and small to medium companies.
-                        </span>{" "}
-                        With us, you can build future ready brand, through an
-                        integration of content, technology and media, using data
-                        backed tools and practices.
+                      <p className="paragraph-text">
+                        TAW-the agency way is more than  just a marketing agency. just a marketing agency. We are the architects of brand experiences, designing stories that resonate with the brand’s audience. At TAW,
+                        we provide customize solutions and expertise to unique business needs making us the right choice for start-ups and small to medium companies. With us, you can build future ready brand, through an
+                        With us, you can build future ready brand, through an integration of content, technology and media, using data backed tools and practices.
                       </p>
                     }
                     animation="fade-in"
@@ -376,24 +365,20 @@ function Home() {
                 <div className=" mt-lg-4 mt-2">
                   <AnimatedText
                     text={
-                      <div className="brew-text">
+                      <div className="paragraph-text">
                         We believe every brand carries a story and looking for
                         the optimum communication strategy to interact with
-                        their audience.{" "}
-                        <span className="text-highlight">
+                        their audience.
                           In the era of technology and artificial intelligence,
                           we design campaigns with human touch that leaves a
                           lasting impression.
-                        </span>{" "}
                         With TAW, you can amplify your brand’s communication
                         making it more interactive and people centric. This will
                         not only generate leads but also make your brand more
-                        relatable and problem solving to your consumers.{" "}
-                        <span className="text-highlight">
+                        relatable and problem solving to your consumers.
                           Join us on a journey where marketing transcends the
                           ordinary and becomes a catalyst for connection,
                           creativity, and growth.
-                        </span>
                       </div>
                     }
                     animation="slide-up"
