@@ -3,13 +3,8 @@ import React, { useState, useEffect } from 'react';
 import "./BlogDetails.css";
 import ScrollToTopButton from '../TopButton/TopButton';
 import industriesBanner from "../../assets/images/Blog1.png";
-// import banner from "../../assets/images/sq-banner.jpeg";
-import blogImage9 from "../../assets/images/Blog1.png";
 import blogImage10 from "../../assets/images/Blog1.png";
 import blogImage4 from "../../assets/images/Blog1.png";
-import { Button } from "bootstrap";
-import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
-
 
 function BlogDetails() {
     const [isVisible, setIsVisible] = useState(false);
@@ -75,22 +70,6 @@ function BlogDetails() {
                 <h3>5. Stories Gain Prominence:</h3>
                 <p>Algorithms prioritize ephemeral content, such as Stories, due to its popularity.</p>
                 <p>Integrate Stories into your content mix. Use features like polls, quizzes, and countdowns for interactive engagement.</p>
-                {/* <h5 className="mt-3"> ➟ Start by Getting to Know Your Audience:</h5>
-                <div style={{ marginLeft: "25px" }}>
-                    <p>Identify your ideal listener – their demographics, interests, and behaviors. Suppose you run a gym then your ideal audience would be fitness enthusiasts. Tailor your content and promotion for them.</p>
-                </div>
-                <h5 className="mt-3"> ➟ Identify Demographics, Interests, and Behaviors:</h5>
-                <div style={{ marginLeft: "25px" }}>
-                    <p>Delve into details like age, gender, location, and occupation. Know their passions, challenges, and preferences. This shapes content, guest choices, and platform selection.</p>
-                </div>
-                <h5 className="mt-3"> ➟ Understand Their Habits:</h5>
-                <div style={{ marginLeft: "25px" }}>
-                    <p>Learn when and how they listen. Is it during commutes or workouts? Adapt episode length and formats to suit their preferences.</p>
-                </div>
-                <h5 className="mt-3"> ➟ Craft Targeted Messaging:</h5>
-                <div style={{ marginLeft: "25px" }}>
-                    <p>Speak to their desires, challenges, and aspirations. Showcase your podcast's unique value and how it addresses their needs. Consistent messaging builds trust.</p>
-                </div> */}
                 <h3>6. Community Building Matters:</h3>
                 <p>Algorithms prioritize content that fosters community engagement.</p>
                 <p>Build a community around your brand. Encourage user-generated content, respond to comments, and create content that resonates with your audience.</p>
@@ -114,52 +93,6 @@ function BlogDetails() {
                 <p>Stay updated with platform announcements. Be ready to tweak your strategy based on algorithm changes.</p>
                 <p>In summary, the key to staying ahead in the ever-evolving landscape of social media is a dynamic and adaptable content strategy. Monitor analytics, stay informed about algorithm changes, and consistently create content that resonates with your audience. The ability to adapt swiftly is the cornerstone of a successful social media marketing strategy.</p>
             </div>
-            {/* <hr className="m-5" />
-            <div className="container" >
-                <div className="our-blogs pt-2">
-                    <h6>OUR BLOGS</h6>
-                </div>
-                <h2 className="mt-4" style={{ fontWeight: "bold" }}>
-                    <mark className="text-highlight">Check our other</mark>{" "}
-                    top quality <br />content posts on the blog.
-                </h2>
-                <div className="row mt-4">
-                    <div className="col-lg-4 col-md-4 col-12">
-                        <div className="box">
-                            <img src={blogImage9} alt={blogImage9} />
-                            <div className="box-content">
-                                <div className="inner-content">
-                                    <div onClick={scrollToTop} style={{ textDecoration: "none" }} class="btn-flip mt-4" data-back="😊" data-front="Read more"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <h5 className="title p-2">Better your browser; Top 5 best SEO extensions</h5>
-                    </div>
-                    <div className="col-lg-4 col-md-4 col-12">
-                        <div className="box">
-                            <img src={blogImage10} alt={blogImage10} />
-                            <div className="box-content">
-                                <div className="inner-content">
-                                    <div onClick={scrollToTop} style={{ textDecoration: "none" }} class="btn-flip mt-4" data-back="😊" data-front="Read more"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <h5 className="title p-2">Better your browser; Top 5 best SEO extensions</h5>
-                    </div>
-                    <div className="col-lg-4 col-md-4 col-12">
-                        <div className="box">
-                            <img src={blogImage4} alt={blogImage4} />
-                            <div className="box-content">
-                                <div className="inner-content">
-                                    <div onClick={scrollToTop} style={{ textDecoration: "none" }} class="btn-flip mt-4" data-back="😊" data-front="Read more"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <h5 className="title p-2">Better your browser; Top 5 best SEO extensions</h5>
-                    </div>
-                </div>
-                <h6 className="mt-4" style={{ fontWeight: "400", color: "#30256d" }}>Author | Kumar Vishesh</h6>
-            </div> */}
             <ScrollToTopButton />
 
 

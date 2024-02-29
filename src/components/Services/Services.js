@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 
 import "./Services.css";
 import ScrollToTopButton from '../TopButton/TopButton';
-// import industriesBanner from "../../assets/images/industries-banner.webp";
 import industriesBanner from "../../assets/images/our Services.png";
 import energy from "../../assets/images/energy-and-utilities.svg";
 import FMCG from "../../assets/images/sector-img (8).svg";
@@ -20,10 +19,8 @@ import Fashion from "../../assets/images/sector-img (10).png";
 import Expert from "../../assets/images/Services Bottom Section.png";
 import { Link } from "react-router-dom";
 import AnimatedText from '../Animations/TextAnimation';
-import ImageAnimationFade from "../Animations/ImageAnimationFade";
 import Slider from './Slider';
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
-// import mediaPlanning from "../../assets/images/media-planning.jpg";
 import mediaPlanning from "../../assets/images/Media Planning and Buying.png";
 
 
@@ -153,30 +150,10 @@ function Sector() {
           </div>
         </div>
       </div>
-
-      {/* <div className="container">
-        <AnimatedText text={<h2 className="box-title text-center">
-          Some of our services
-        </h2>} animation='slide-up' />
-        <div className="row">
-          {services.map((image, index) => (
-            <div className="col-lg-3 col-md-3 col-12 mb-4">
-              <Link style={{ textDecoration: "none" }} to={`/${routes[index]}`}>
-                <div className="service-space">
-                  <img width="100%" height="180px" className="service-image" src={mediaPlanning} />
-                  <p className="service-text">{image.title}</p>
-                </div>
-              </Link>
-            </div>
-          ))}
-        </div>
-      </div> */}
-
       <div className="container-fluid">
         <AnimatedText text={<h2 className="box-title text-center">
           Our Services
         </h2>} animation='slide-up' />
-        {/*  first row of service list start */}
         <div className="row-service">
           {services.map((image, index) => (
             <div className="service-newBox">
@@ -189,7 +166,6 @@ function Sector() {
             </div>
           ))}
         </div>
-        {/* first row of service list ends */}
       </div>
 
       <div className="container mt-lg-2">

@@ -56,7 +56,7 @@
     background-position: center;
 }
 
-/* Media query for mobile view */
+
 
 @media only screen and (max-width: 625px) {
     .aboutUs-heading {
