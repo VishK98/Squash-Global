@@ -232,8 +232,7 @@ function Home() {
                 <source src={bannerVideo} type="video/mp4" />
               </video>
             </div>
-
-
+            {/* for mobile view starts */}
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 mt-3 d-flex flex-column align-items-center d-md-none">
               <div className="row">
                 <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex align-items-center">
@@ -257,11 +256,13 @@ function Home() {
                   </Link>
                 </div>
               </div>
-            </div>
+            </div>            {/* for mobile view starts */}
+
+
           </div>
         </div>
 
-        <div className="d-flex justify-content-center  mb-3 mt-3">
+        <div className="d-flex justify-content-center mb-3 mt-3">
           <button className="SeeAll-button">
             <div class="svg-wrapper-1">
               <div class="svg-wrapper">
@@ -282,7 +283,6 @@ function Home() {
             <span>See All</span>
           </button>
         </div>
-
         <AnimatedText
           text={
             <h1 className="redefine-text mt-5">
