@@ -80,17 +80,13 @@ function Home() {
         Your browser does not support the video tag.
       </video>
 
-      <div
-        className=""
-        style={{
-          marginTop: `${marginTop - marginTop * 0.1}px`,
-          "@media (max-width: 767px)": {
-            // marginTop: "100vh"
-            marginTop: `${marginTop - marginTop * 1}px`,
-          },
-        }}
-      ></div>
-      <div className="container-fluid p-lg-4">
+
+      <div className="container-fluid p-lg-4" style={{
+        marginTop: `${marginTop - marginTop * 0.09}px`,
+        "@media (max-width: 767px)": {
+          marginTop: `${marginTop - marginTop * 1}px`,
+        },
+      }}>
         <div className="row">
           <div className="col-lg-4 col-12">
             <AnimatedText
@@ -635,14 +631,14 @@ function Home() {
                 text={<h2 className="stroke">Ready to redefine your </h2>}
                 animation="slide-left"
               />
-               <AnimatedText
-                  text={
-                    <h2 className="brand-title  title ">
-                      brand experience?
-                    </h2>
-                  }
-                  animation="slide-right"
-                />
+              <AnimatedText
+                text={
+                  <h2 className="brand-title  title ">
+                    brand experience?
+                  </h2>
+                }
+                animation="slide-right"
+              />
             </div>
           </div>
         </div>
