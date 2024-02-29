@@ -100,7 +100,7 @@ function Blog() {
         </h1>
         } animation='slide-up' />
         <AnimatedText text={<p className="mt-4">
-          <span className="brew-text"
+          <span className="paragraph-text"
             style={{
               color: "var(--secondary-color)",
               fontSize: "18px",

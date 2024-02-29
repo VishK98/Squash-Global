@@ -115,10 +115,10 @@ function Home() {
             />
             <AnimatedText
               text={
-                <p className="brew-text">
+                <p className="paragraph-text">
                   In this age of automated conversations, we noticed that the 'human touch' had sneaked out while no one was looking. We believe that life unfolds every day. So should communication.
                 </p>
-                // <p className="brew-text">
+                // <p className="paragraph-text">
                 //   Our marketing strategies go beyond With deep understanding of human behavior, we forge connection that helps Brands to speak to their audience individually.
                 // </p>
               }
@@ -170,7 +170,7 @@ function Home() {
                 />
                 <AnimatedText
                   text={
-                    <p className="brew-text">
+                    <p className="paragraph-text">
                       Having Technology as an ally, we design digital
                       experiences that move brands closer to their vision.
                     </p>
@@ -383,7 +383,7 @@ function Home() {
                 <div className="topslide">
                   <AnimatedText
                     text={
-                      <p className="brew-text">
+                      <p className="paragraph-text">
                         TAW-the agency ways is more than{" "}
                         <span className="text-highlight">
                           just a marketing agency.
@@ -426,7 +426,7 @@ function Home() {
                 <div className=" mt-lg-4 mt-2">
                   <AnimatedText
                     text={
-                      <div className="brew-text">
+                      <div className="paragraph-text">
                         We believe every brand carries a story and looking for
                         the optimum communication strategy to interact with
                         their audience.{" "}

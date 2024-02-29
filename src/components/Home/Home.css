@@ -110,8 +110,9 @@ h2.stroke {
   }
 }
 
-.brew-text {
+.paragraph-text {
   font-family: 'Manrope', sans-serif;
+  font-size: 18px;
   color: #000;
   text-align: justify;
 }
