@@ -25,7 +25,7 @@ function Philosophy() {
             <AnimatedText text={<h3 className="age-text">In this age of automated conversations, we noticed that the ‘human touch’ had
               sneaked out while no one was looking.</h3>} animation="slide-left" />
             <AnimatedText text={<p className="paragraph-text mt-lg-4">
-              TAW-the agency ways represents the gap between what the Brands produce and what the Consumers actually want. We offer 360-degree digital marketing solutions to help you build your brand from the scratch. In this complex digital landscape, our team of creative and passionate young people build brands, digital experiences, and products for the companies of tomorrow.
+              TAW-the agency way represents the gap between what the Brands produce and what the Consumers actually want. We offer 360-degree digital marketing solutions to help you build your brand from the scratch. In this complex digital landscape, our team of creative and passionate young people build brands, digital experiences, and products for the companies of tomorrow.
             </p>} animation="slide-up" />
           </div>
           <div className="col-lg-6 col-12">
@@ -73,7 +73,7 @@ function Philosophy() {
                 <AnimatedText text={<h2 className=" mt-lg-4 text-white">
                   Welcome to
                   <br />
-                  TAW-the agency ways 2.0
+                  TAW-the agency way 2.0
                 </h2>} animation="slide-right" />
               </div>
             </div>

@@ -332,7 +332,7 @@ function Home() {
                   <AnimatedText
                     text={
                       <p className="brew-text">
-                        TAW-the agency ways is more than{" "}
+                        TAW-the agency way is more than{" "}
                         <span className="text-highlight">
                           just a marketing agency.
                         </span>{" "}

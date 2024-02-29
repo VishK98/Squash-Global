@@ -37,7 +37,7 @@ function DigitalPR() {
               We know exactly how to develop a cordial relationship between the Brand and its targeted audience. 
               By using multimedia channels, TAW promotes your products or services to cultivate a positive public perception.</p>
           <h3>IMPACTFUL DIGITAL PR & ORM OFFERINGS:</h3>
-          <p>TAW-the agency ways offers the following Digital PR & ORM Services:</p>
+          <p>TAW-the agency way offers the following Digital PR & ORM Services:</p>
           <ul>
           <li>Brand Launch & Recognition Strategy</li>
           <li>Reputation Management </li>

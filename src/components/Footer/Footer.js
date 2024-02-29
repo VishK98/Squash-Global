@@ -28,7 +28,7 @@ function Footer() {
           </a>
         </div>
         <AnimatedText text={<div className="text-center text-dark p-3">
-          © 2024 TAW-the agency ways. All Rights Reserved.
+          © 2024 TAW-the agency way. All Rights Reserved.
         </div>} animation='slide-left' />
       </footer>
     </>
