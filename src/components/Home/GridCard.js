@@ -11,7 +11,7 @@ const Card = () => {
             <div className='col-lg-4 col-md-4 col-12'>
                 <div class="card">
                     <p class="card-title">Strategy</p>
-                    <p class="small-desc">
+                    <p className='grid-text' class="small-desc">
                         A plan is like a puzzle.
                         Placing the right piece at the right place at the right time, makes it complete- this is what makes TAW different.
                     </p>
