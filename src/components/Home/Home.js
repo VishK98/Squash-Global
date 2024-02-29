@@ -105,12 +105,17 @@ function Home() {
             />
             <AnimatedText
               text={
+<<<<<<< HEAD
                 <p className="brew-text">
                   In this age of automated conversations, we noticed that the
                   'human touch' had sneaked out while no one was looking. We
                   believe that life unfolds every day. So should communication.
+=======
+                <p className="paragraph-text">
+                  In this age of automated conversations, we noticed that the 'human touch' had sneaked out while no one was looking. We believe that life unfolds every day. So should communication.
+>>>>>>> 30e0927cdcb4a3b1564d5211893ff1efe6b3aa72
                 </p>
-                // <p className="brew-text">
+                // <p className="paragraph-text">
                 //   Our marketing strategies go beyond With deep understanding of human behavior, we forge connection that helps Brands to speak to their audience individually.
                 // </p>
               }
@@ -135,6 +140,7 @@ function Home() {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       <div className="container-fluid">
         <div className="row" >
           <div className="col-lg-9 col-md-9 col-12" style={{ paddingLeft: "50px" }}>
@@ -159,6 +165,48 @@ function Home() {
                 src={bigCircle}
                 alt="image not found"
               />
+=======
+
+      <section id="homeSectionThree ">
+        <div className="container-fluid p-5" >
+          <div className="row">
+            <div className="col-12 d-flex align-items-center">
+              <div>
+                <AnimatedText
+                  text={
+                    <h2 className="stroke" style={{ marginBottom: "-30px" }}>
+                      Pixels to
+                    </h2>
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  text={
+                    <p
+                      className="Division-title"
+                      style={{ fontWeight: "bold" }}
+                    >
+                      People
+                    </p>
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  text={
+                    <p className="paragraph-text">
+                      Having Technology as an ally, we design digital
+                      experiences that move brands closer to their vision.
+                    </p>
+                  }
+                  animation="slide-up"
+                />
+              </div>
+              <div className="mobile_down_arrow new-big-down-arrow2">
+                <div style={{ marginLeft: "900px" }}>
+                  <img height='200px' width='200px' src={bigCircle} alt="image not found" />
+                </div>
+              </div>
+>>>>>>> 30e0927cdcb4a3b1564d5211893ff1efe6b3aa72
             </div>
           </div>
         </div>
@@ -333,7 +381,7 @@ function Home() {
                 <div className="topslide">
                   <AnimatedText
                     text={
-                      <p className="brew-text">
+                      <p className="paragraph-text">
                         TAW-the agency ways is more than{" "}
                         <span className="text-highlight">
                           just a marketing agency.
@@ -378,7 +426,7 @@ function Home() {
                 <div className=" mt-lg-4 mt-2">
                   <AnimatedText
                     text={
-                      <div className="brew-text">
+                      <div className="paragraph-text">
                         We believe every brand carries a story and looking for
                         the optimum communication strategy to interact with
                         their audience.{" "}
