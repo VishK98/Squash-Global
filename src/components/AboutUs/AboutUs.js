@@ -10,24 +10,22 @@ import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 function Philosophy() {
   return (
     <>
-    <div className="full-screen-image">
-            <ImageAnimationUnfold src={AboutUs} alt="Image not found" />
-          </div>
+      <div className="full-screen-image">
+        <ImageAnimationUnfold src={AboutUs} alt="Image not found" />
+      </div>
 
       <div className="container-fluid mt-lg-4 mt-3">
- 
+
         <div className="row">
           <div className="col-lg-6">
-          <AnimatedText text="We Know You ! You Know Us !" animation="slide-left" className="about-text" />
-
-            <AnimatedText text={<h3 className="age-text">In this age of automated conversations, we noticed that the ‘<span className="text-highlight">human touch </span>’ had
+            <div style={{marginBottom: "-50px"}}>
+            <AnimatedText text="We Know You !" animation="slide-up" className="know-text" />
+            </div>
+            <AnimatedText text="We Know You !" animation="slide-up" className="know-text" />
+            <AnimatedText text={<h3 className="age-text">In this age of automated conversations, we noticed that the ‘human touch’ had
               sneaked out while no one was looking.</h3>} animation="slide-left" />
-
             <AnimatedText text={<p className="paragraph-text mt-lg-4">
               TAW-the agency ways represents the gap between what the Brands produce and what the Consumers actually want. We offer 360-degree digital marketing solutions to help you build your brand from the scratch. In this complex digital landscape, our team of creative and passionate young people build brands, digital experiences, and products for the companies of tomorrow.
-            </p>} animation="slide-up" />
-            <AnimatedText text={<p className="paragraph-text mt-lg-4">
-              Our guidance and bold imagination help the brands to challenge the industry and shape the future, every day. TAW is a perfect amalgamation of Creativity & Strategy and everything in between. With our vast experience and understanding, we can proudly say that we are not just International but multicultural too.
             </p>} animation="slide-up" />
           </div>
           <div className="col-lg-6 col-12">
@@ -48,7 +46,7 @@ function Philosophy() {
                 TAW breathe life into your Brand with meaningful innovation and creative communication.
               </p>
             </p>} animation="slide-down" />
-       
+
             <AnimatedText text={<h3 className="about-text mt-lg-4">
               WE ARE NOT JUST A TYPICAL AGENCY : WE ARE MORE THAN THAT
             </h3>} animation="slide-down" />
