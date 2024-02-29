@@ -80,43 +80,35 @@ function Home() {
         Your browser does not support the video tag.
       </video>
 
-
-      <div className="container-fluid p-lg-4" style={{
-        marginTop: `${marginTop - marginTop * 0.09}px`,
-        "@media (max-width: 767px)": {
-          marginTop: `${marginTop - marginTop * 1}px`,
-        },
-      }}>
+      <div
+        className="container-fluid p-lg-4"
+        style={{
+          marginTop: `${marginTop - marginTop * 0.09}px`,
+          "@media (max-width: 767px)": {
+            marginTop: `${marginTop - marginTop * 1}px`,
+          },
+        }}
+      >
         <div className="row">
           <div className="col-lg-4 col-12">
             <AnimatedText
-              text={
-                <h1 className="framing-text">
-                  Framing People
-                </h1>
-              }
+              text={<h1 className="framing-text">Framing People</h1>}
               animation="slide-left"
             />
             <AnimatedText
-              text={
-                <h1 className="framing-text">
-                  Centric
-                </h1>
-              }
+              text={<h1 className="framing-text">Centric</h1>}
               animation="slide-left"
             />
             <AnimatedText
-              text={
-                <h1 className="Newstyle-text">
-                  Experiences
-                </h1>
-              }
+              text={<h1 className="Newstyle-text">Experiences</h1>}
               animation="slide-left"
             />
             <AnimatedText
               text={
                 <p className="brew-text">
-                  In this age of automated conversations, we noticed that the 'human touch' had sneaked out while no one was looking. We believe that life unfolds every day. So should communication.
+                  In this age of automated conversations, we noticed that the
+                  'human touch' had sneaked out while no one was looking. We
+                  believe that life unfolds every day. So should communication.
                 </p>
                 // <p className="brew-text">
                 //   Our marketing strategies go beyond With deep understanding of human behavior, we forge connection that helps Brands to speak to their audience individually.
@@ -143,52 +135,39 @@ function Home() {
           </div>
         </div>
       </div>
-
-      <section id="homeSectionThree ">
-        <div className="container-fluid p-5" >
-          <div className="row">
-            <div className="col-12 d-flex align-items-center">
-              <div>
-                <AnimatedText
-                  text={
-                    <h2 className="stroke" style={{ marginBottom: "-30px" }}>
-                      Pixels to
-                    </h2>
-                  }
-                  animation="slide-up"
-                />
-                <AnimatedText
-                  text={
-                    <p
-                      className="Division-title"
-                      style={{ fontWeight: "bold" }}
-                    >
-                      People
-                    </p>
-                  }
-                  animation="slide-up"
-                />
-                <AnimatedText
-                  text={
-                    <p className="brew-text">
-                      Having Technology as an ally, we design digital
-                      experiences that move brands closer to their vision.
-                    </p>
-                  }
-                  animation="slide-up"
-                />
-              </div>
-              <div className="mobile_down_arrow new-big-down-arrow2">
-                <div style={{ marginLeft: "900px" }}>
-                  <img height='200px' width='200px' src={bigCircle} alt="image not found" />
-                </div>
-              </div>
+      <div className="container-fluid">
+        <div className="row" >
+          <div className="col-lg-9 col-md-9 col-12" style={{ paddingLeft: "50px" }}>
+            <AnimatedText
+              text={
+                <h2 className="stroke" style={{ marginBottom: "-30px" }}>
+                  Pixels to
+                </h2>
+              }
+              animation="slide-up"
+            />
+            <AnimatedText
+              text={<p className="Division-title">People</p>}
+              animation="slide-up"
+            />
+          </div>
+          <div className="col-lg-3 col-md-3 col-12">
+            <div className="mobile_down_arrow new-big-down-arrow2">
+              <img
+                height="200px"
+                width="200px"
+                src={bigCircle}
+                alt="image not found"
+              />
             </div>
           </div>
         </div>
+      </div>
+      {/* below-pixel-to-people starts*/}
+      <section id="below-pixel-to-people">
         <div className="container-fluid">
           <div className="row">
-            <div className="work_list_img round_img col-lg-8 col-md-8 col-sm-12 col-12">
+            <div className="col-lg-8 col-md-8 col-sm-12 col-12">
               <ImageAnimationUnfold src={onHerLip} alt="Image not found" />
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12 col-12 d-flex flex-column align-items-center responsive-text">
@@ -197,7 +176,7 @@ function Home() {
                   <p className="explorbtn" style={{ marginBottom: "2px" }}>
                     Explore
                   </p>
-                  <Link to="/sector" style={{ textDecoration: "none" }}>
+                  <Link to="/services" style={{ textDecoration: "none" }}>
                     <div
                       className="animated-arrow-btn"
                       style={{
@@ -216,19 +195,12 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="container mb-lg-4 ">
+        <div className="container-fluid mb-lg-4 ">
           <div className="row">
             <div
               className="col-lg-5 col-md-5 col-sm-12 col-12 d-none d-md-block"
               style={{ marginTop: "150px" }}
             >
-              {/* <AnimatedText
-                className="brewText-stroke"
-                text={
-                  <h3 style={{ fontWeight: "bold" }}>What's on the TASC</h3>
-                }
-                animation="slide-up"
-              />{" "} */}
               <div
                 className="row"
                 style={{ display: "flex", alignItems: "center" }}
@@ -238,7 +210,7 @@ function Home() {
                     <p className="explorbtn" style={{ marginBottom: "2px" }}>
                       Explore
                     </p>
-                    <Link to="/sector" style={{ textDecoration: "none" }}>
+                    <Link to="/services" style={{ textDecoration: "none" }}>
                       <div
                         className="animated-arrow-btn"
                         style={{
@@ -256,9 +228,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            {/* <div className="work_list_img round_img col-lg-7 col-md-7 col-sm-12 col-12">
-              <ImageAnimationUnfold src={tasc} alt="Image not found" />
-            </div> */}
+
             <div className="col-lg-7 col-md-7 col-sm-12 col-12 mt-md-4  ">
               <video className="video-banner" autoPlay loop muted>
                 <source src={bannerVideo} type="video/mp4" />
@@ -267,18 +237,12 @@ function Home() {
 
 
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 mt-3 d-flex flex-column align-items-center d-md-none">
-              {/* <AnimatedText
-                text={
-                  <h3 style={{ fontWeight: "bold" }}>What's on the TASC</h3>
-                }
-                animation="slide-up"
-              /> */}
               <div className="row">
                 <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex align-items-center">
                   <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>
                     Explore{" "}
                   </h2>
-                  <Link to="/sector" style={{ textDecoration: "none" }}>
+                  <Link to="/services" style={{ textDecoration: "none" }}>
                     <div
                       className="animated-arrow-btn"
                       style={{
@@ -298,43 +262,29 @@ function Home() {
             </div>
           </div>
         </div>
-        {/* <div className="d-flex justify-content-center">
-          <input
-            style={{
-              fontSize: "25px",
-              fontWeight: "600",
-              marginTop: "15px",
-              marginBottom: "15px",
-            }}
-            type="submit"
-            name="submit"
-            value="See All"
-            class="submit"
-          />
-        </div> */}
-        <div>
-          <div className="d-flex justify-content-center  mb-3 mt-3">
-            <button className="SeeAll-button">
-              <div class="svg-wrapper-1">
-                <div class="svg-wrapper">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="30"
-                    height="30"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                    <path
-                      fill="currentColor"
-                      d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                    ></path>
-                  </svg>
-                </div>
+
+        <div className="d-flex justify-content-center  mb-3 mt-3">
+          <button className="SeeAll-button">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="30"
+                  height="30"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    fill="currentColor"
+                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                  ></path>
+                </svg>
               </div>
-              <span>See All</span>
-            </button>
-          </div>
+            </div>
+            <span>See All</span>
+          </button>
         </div>
+
         <AnimatedText
           text={
             <h1 className="redefine-text mt-5">
@@ -409,6 +359,8 @@ function Home() {
         </div>
         <ImageAnimationUnfold src={worldwideOffice} alt="Image not found" />
       </section>
+      {/* below-pixel-to-people ends*/}
+
       <section id="homeSectionFour" className="mt-lg-5">
         <div className="container">
           <div className="row">
@@ -647,9 +599,7 @@ function Home() {
               />
               <AnimatedText
                 text={
-                  <h2 className="brand-title  title ">
-                    brand experience?
-                  </h2>
+                  <h2 className="brand-title  title ">brand experience?</h2>
                 }
                 animation="slide-right"
               />
@@ -876,7 +826,22 @@ function Home() {
           </div>
         </form>
       </div> */}
-      <div> <form> <div class="visme_d" data-title="Untitled Project" data-url="ojewgd87-untitled-project?fullPage=true" data-domain="forms" data-full-page="true" data-min-height="100vh" data-form-id="28772"></div><script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script> </form> </div>
+      <div>
+        {" "}
+        <form>
+          {" "}
+          <div
+            class="visme_d"
+            data-title="Untitled Project"
+            data-url="ojewgd87-untitled-project?fullPage=true"
+            data-domain="forms"
+            data-full-page="true"
+            data-min-height="100vh"
+            data-form-id="28772"
+          ></div>
+          <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>{" "}
+        </form>{" "}
+      </div>
       <ScrollToTopButton />
     </>
   );
