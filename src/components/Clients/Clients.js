@@ -9,7 +9,7 @@ import client5 from "../../assets/images/clients/client-5.png";
 import client6 from "../../assets/images/clients/client-6.png";
 import client7 from "../../assets/images/clients/client-7.png";
 import client8 from "../../assets/images/clients/client-8.png";
-import ourClients from "../../assets/images/Client Banner.jpg";
+import ourClients from "../../assets/images/Client 1024x587-01.png";
 import TAWVideo from "../../assets/squash-video.mp4";
 import AnimatedText from '../Animations/TextAnimation';
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";

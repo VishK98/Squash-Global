@@ -445,7 +445,7 @@ function Home() {
               </div>
               <a>
                 <AnimatedText
-                  text={<h3 className="Color-Text">Social Communication</h3>}
+                  text={<h3 className=" Color-Text">Social Communication</h3>}
                   animation="slide-left"
                 />
               </a>
@@ -453,10 +453,10 @@ function Home() {
                 <AnimatedText
                   text={
                     <ul className="custom-arrow-bullet-point">
-                      <li>Social Media Management</li>
-                      <li>Social Strategy</li>
-                      <li>ORM</li>
-                      <li>Influencer Marketing</li>
+                      <li className="paragraph-text">Social Media Management</li>
+                      <li className="paragraph-text">Social Strategy</li>
+                      <li className="paragraph-text">ORM</li>
+                      <li className="paragraph-text">Influencer Marketing</li>
                     </ul>
                   }
                   animation="slide-left"
@@ -480,10 +480,10 @@ function Home() {
                 <AnimatedText
                   text={
                     <ul className="custom-arrow-bullet-point">
-                      <li>Creative assets management</li>
-                      <li>Identity and collaterals</li>
-                      <li>Content Strategy</li>
-                      <li>Production & Photography</li>
+                      <li className="paragraph-text">Creative assets management</li>
+                      <li className="paragraph-text"> className="paragraph-text"Identity and collaterals</li>
+                      <li className="paragraph-text">Content Strategy</li>
+                      <li className="paragraph-text">Production & Photography</li>
                     </ul>
                   }
                   animation="slide-left"
@@ -511,10 +511,10 @@ function Home() {
                 <AnimatedText
                   text={
                     <ul className="custom-arrow-bullet-point">
-                      <li>Search Engine Optimization</li>
-                      <li>Search Engine Management</li>
-                      <li>Media Planning and Buying</li>
-                      <li>Programmatic Buying</li>
+                      <li className="paragraph-text">Search Engine Optimization</li>
+                      <li className="paragraph-text">Search Engine Management</li>
+                      <li className="paragraph-text">Media Planning and Buying</li>
+                      <li className="paragraph-text">Programmatic Buying</li>
                     </ul>
                   }
                   animation="slide-right"
@@ -538,10 +538,10 @@ function Home() {
                 <AnimatedText
                   text={
                     <ul className="custom-arrow-bullet-point">
-                      <li> Website design and Development</li>
-                      <li> E-commerce Website Development</li>
-                      <li> AR Filter</li>
-                      <li> Mobile Application</li>
+                      <li className="paragraph-text"> Website design and Development</li>
+                      <li className="paragraph-text"> E-commerce Website Development</li>
+                      <li className="paragraph-text">AR Filter</li>
+                      <li className="paragraph-text"> Mobile Application</li>
                     </ul>
                   }
                   animation="slide-right"
