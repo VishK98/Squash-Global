@@ -70,7 +70,7 @@ export default function NavBar() {
                     to="/about-us"
                     style={{ color: location.pathname === "/" ? "white" : "black" }}
                   >
-                    About Us
+                    About
                   </Link>
                 </li>
                 <li className="nav-item">
