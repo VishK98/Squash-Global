@@ -44,7 +44,6 @@
 }
 .content-box {
   height: 400px;
-  /* width: 400px; */
   border-radius: 15px;
   background-color: #30256d;
   text-align: center;
@@ -81,7 +80,7 @@
 .animated-image {
   width: 100%;
   opacity: 0;
-  animation: fadeInOut 5s infinite alternate; /* Adjust the animation duration and other properties as needed */
+  animation: fadeInOut 5s infinite alternate;
 }
 
 @keyframes fadeInOut {
@@ -130,7 +129,7 @@
 .mail-text {
   text-decoration: none;
   color: #30256d;
-  transition: color 0.3s; /* Transition the color change over 0.3 seconds */
+  transition: color 0.3s;
 }
 
 .mail-text:hover,

@@ -77,9 +77,6 @@
   width: 100%;
 }
 
-/* .service-responsive {
-  margin-right: 35px;
-} */
 
 @media only screen and (max-width: 625px) {
   .service-responsive {
@@ -142,7 +139,6 @@
 }
 
 
-/* request button */
 .req-btn {
   outline: 0;
   display: inline-flex;
@@ -184,7 +180,6 @@
   margin-left: 20px;
 }
 
-/* Hide the div with class "container-fluid" on screens wider than 768px */
 @media (min-width: 768px) {
   .hide-web {
     display: none;
@@ -271,7 +266,6 @@
     width: 100%;
     background-color: #30256d;
     margin-bottom: 10px;
-    /* Full width for mobile */
   }
 }
 
@@ -280,13 +274,11 @@
     width: 25%;
     background-color: #30256d;
     margin-bottom: 10px;
-    /* Four boxes per row for laptops */
   }
 }
 
 @media only screen and (min-width: 1025px) {
   .service-newBox {
     width: 25%;
-    /* Five boxes per row for large screens */
   }
 }

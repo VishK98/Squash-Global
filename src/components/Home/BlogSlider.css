@@ -1,4 +1,4 @@
-/* Add your custom styles here */
+
 
 .slide-item {
     position: relative;
@@ -26,24 +26,23 @@
   }
   
   .image-container img {
-    max-width: 100%; /* Ensure the image does not exceed its container */
+    max-width: 100%;
     height: 400px;
     margin-right: 150px;
 
   }
   
-/* Remove default black dot */
+
 .slick-dots li button {
   background-color: transparent;
   border: 1px solid #30256d; 
 }
 
-/* Change the color of active dot */
+
 .slick-dots li.slick-active button {
   background-color: #30256d;
 }
 
-/* Add more style to inactive dots */
 .slick-dots li button {
   width: 15px; 
   height: 15px; 
@@ -51,7 +50,6 @@
   border-radius: 50%;
 }
 
-/* Adjust the size of the active dot if needed */
 .slick-dots li.slick-active button {
   color: white;
   width: 15px; 

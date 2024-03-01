@@ -1,4 +1,4 @@
-/* NavBar.css */
+
 .header {
   width: 100%;
   position: sticky;
@@ -56,7 +56,7 @@
   color: white;
 }
 
-/* Styles for mobile view */
+
 @media (max-width: 767px) {
   .navbar-nav {
     margin-left: 0;

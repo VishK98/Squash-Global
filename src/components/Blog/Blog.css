@@ -11,7 +11,7 @@
 .box .box-content:before,
 .box .box-content:after {
   content: "";
-  /* background: #080808; */
+
   background: #220101;
   width: 50%;
   height: 50%;
@@ -32,7 +32,7 @@
 
 .box .box-content:before,
 .box .box-content:after {
-  /* background: #000; */
+
   background: #220101;
   transform: translateX(0) translateY(-100%);
   left: auto;
@@ -90,10 +90,9 @@
 .box .title {
   font-size: 15px;
   font-weight: 700;
-  /* letter-spacing: 2px; */
   text-transform: uppercase;
   text-shadow: 3px 5px 12px #220101;
-  /* margin: 0 0 3px 0; */
+
 }
 
 .box .post {

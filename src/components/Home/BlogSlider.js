@@ -27,7 +27,6 @@ const BlogSlider = () => {
       <div className="row">
         <div className="col-lg-12">
           <Slider {...sliderSettings}>
-            {/* Slide 1 */}
             <div className="slide-item ">
               <div className="slide-content ">
                 <div className="col-lg-6 col-md-6 col-12">
@@ -48,7 +47,6 @@ const BlogSlider = () => {
                 </div>
               </div>
             </div>
-            {/* Slide 2 */}
             <div className="slide-item ">
               <div className="slide-content ">
                 <div className="col-lg-6 col-md-6 col-12">
@@ -70,7 +68,6 @@ const BlogSlider = () => {
                 </div>
               </div>
             </div>
-            {/* Slide 3 */}
             <div className="slide-item ">
               <div className="slide-content ">
                 <div className="col-lg-6 col-md-6 col-12">
@@ -92,7 +89,6 @@ const BlogSlider = () => {
                 </div>
               </div>
             </div>
-            {/* Add more slides as needed */}
           </Slider>
         </div>
       </div>

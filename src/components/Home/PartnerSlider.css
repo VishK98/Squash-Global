@@ -1,4 +1,4 @@
-/* slider css */
+
 .slider-list {
     display: flex;
     overflow-x: hidden;
@@ -22,7 +22,6 @@
     filter: grayscale(0%);
 }
 
-/* mobile view */
 @media only screen and (max-width: 625px) {
     .service-card {
         filter: grayscale(0%); 

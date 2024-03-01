@@ -161,7 +161,6 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* below-pixel-to-people starts*/}
       <section id="below-pixel-to-people">
         <div className="container-fluid">
           <div className="row">
@@ -232,7 +231,6 @@ function Home() {
                 <source src={bannerVideo} type="video/mp4" />
               </video>
             </div>
-            {/* for mobile view starts */}
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 mt-3 d-flex flex-column align-items-center d-md-none">
               <div className="row">
                 <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex align-items-center">
@@ -256,7 +254,7 @@ function Home() {
                   </Link>
                 </div>
               </div>
-            </div>            {/* for mobile view starts */}
+            </div> 
 
 
           </div>
@@ -346,8 +344,6 @@ function Home() {
         </div>
         <ImageAnimationUnfold src={worldwideOffice} alt="Image not found" />
       </section>
-      {/* below-pixel-to-people ends*/}
-
       <section id="homeSectionFour" className="mt-lg-5">
         <div className="container">
           <div className="row">
@@ -397,10 +393,7 @@ function Home() {
               text={<h2 className="text-lg-center stroke title">Specialist</h2>}
               animation="slide-up"
             />
-            {/* <AnimatedText
-              text={<p className="Division-title">Divisions</p>}
-              animation="slide-right"
-            /> */}
+        
             <AnimatedText
               text={<p className="image-text-effect">Divisions</p>}
               animation="slide-up"

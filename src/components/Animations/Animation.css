@@ -1,4 +1,4 @@
-/* Image animation from left to right */
+
 
 @keyframes slideLeftToRight {
   from {
@@ -18,24 +18,22 @@
   animation-timing-function: ease;
 }
 
-/* Image animation from right to left */
 
 .slide-in-animation {
-  animation: slideIn 2s forwards; /* Apply the slide-in animation */
+  animation: slideIn 2s forwards;
 }
 
 @keyframes slideIn {
   from {
-    transform: translateX(100%); /* Start off-screen to the right */
-    opacity: 0; /* Initially hidden */
+    transform: translateX(100%); 
+    opacity: 0; 
   }
   to {
-    transform: translateX(0); /* Slide in to the left */
-    opacity: 1; /* Fully visible */
+    transform: translateX(0); 
+    opacity: 1; 
   }
 }
 
-/* Text animation starts (Right to Left)*/
 
 @keyframes slideRight {
   from {
@@ -55,9 +53,7 @@
   animation-timing-function: ease;
 }
 
-/* Text animation ends (Right to Left) */
 
-/* Text animation ends (Left to Right) */
 
 @keyframes slideLeft {
   from {
@@ -78,9 +74,6 @@
 }
 
 
-/* Text animation ends (Left to Right) */
-
-/* Text animation starts (Bottom to Top) */
 
 @keyframes slideUp {
   from {
@@ -100,9 +93,6 @@
   animation-timing-function: ease; 
 }
 
-/* Text animation ends (Bottom to Top) */
-
-/* Fade-in text starts */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -117,19 +107,13 @@
 }
 
 
-/* .fade-in-animation {
-  animation: fadeIn 1.5s ease-in-out;
-} */
+
 .text-animation.fade-in {
   animation-name: slideUp;
   animation-duration: 2s; 
   animation: fadeIn 2.5s ease-in-out;
 }
 
-/* Fade-in text starts */
-
-
-/* Text animation starts (Top to Bottom) */
 
 @keyframes slideDown {
   from {
@@ -149,9 +133,6 @@
   animation-timing-function: ease; 
 }
 
-/* Text animation ends (Top to Bottom) */
-
-/* rotating-image starts */
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -165,29 +146,24 @@
 .rotating-image {
   animation: rotate 20s linear infinite;
 }
-/* rotating-image ends */
 
-/* Fade-in animation starts */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-50px) scale(0.5); /* Initial position with scale */
-    filter: blur(10px); /* Optional: Add a blur effect */
+    transform: translateY(-50px) scale(0.5); 
+    filter: blur(10px); 
   }
   to {
     opacity: 1;
-    transform: translateY(0) scale(1); /* Final position with original scale */
-    filter: blur(0); /* Remove the blur effect */
+    transform: translateY(0) scale(1); 
+    filter: blur(0); 
   }
 }
 
 .fade-in-animation {
-  animation: fadeIn 1.5s ease-in-out; /* Adjust the duration and easing as needed */
+  animation: fadeIn 1.5s ease-in-out; 
 }
-/* Fade-in animation ends */
 
-
-/* unfold image animation starts */
 
 @keyframes unfoldMat {
   0% {
@@ -217,4 +193,4 @@
   animation: unfoldMat 3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* unfold image animation starts */
+

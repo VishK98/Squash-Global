@@ -1,11 +1,11 @@
-/* PopupModal.css */
+
 .modal-content {
-    background-color: #605f5f; /* Set the background color */
-    border-radius: 10px; /* Add some border-radius for rounded corners */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow for depth */
+    background-color: #605f5f;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   }
 
-/* Style all input fields inside the modal */
+
 .modal-body input.form-field {
     background-color: #605f5f;
     color: #30256d; 
@@ -20,7 +20,7 @@
     border-color: #30256d; 
   }
   
-/* Add animation to the modal title */
+
 .modal-title {
     margin-left: 30px;
     font-size: 1.5rem;
@@ -31,12 +31,12 @@
     transition: transform 0.3s ease;
   }
   
-  /* Add hover effect to the modal title */
+ 
   .modal-title:hover {
-    transform: scale(1.1); /* Scale the title on hover */
+    transform: scale(1.1); 
   }
   
-  /* Add animation keyframes for the modal title */
+  
   @keyframes pulse {
     0% {
       transform: scale(1);
@@ -49,12 +49,12 @@
     }
   }
   
-  /* Apply animation to the modal title */
+
   .animated-title {
     animation-name: pulse;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite; /* Make the animation repeat infinitely */
+    animation-iteration-count: infinite; 
   }
   
 
@@ -80,7 +80,7 @@ button.depth:focus {
         0 -1px 1px hsla(0, 0%, 0%, .75);
 }
 
-/* Submit-Button */
+
 button.submit-depth {
     background: #444;
     border: none;

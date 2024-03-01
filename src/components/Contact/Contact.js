@@ -54,10 +54,7 @@ function Contact() {
 
   return (
     <>
-      {/* <div className="full-screen-image" > <ImageAnimationUnfold src={contact} alt="Image not found" /></div> */}
-      <div className="full-screen-image">
-        <img src={contact} alt="Image not found" style={{ width: "100%", height: "100%", objectFit: "fill" }} />
-      </div>
+      <div className="full-screen-image" > <ImageAnimationUnfold src={contact} alt="Image not found" style={{ width: "100%", height: "100%", objectFit: "fill" }}/></div>
       <div className="container">
       <AnimatedText text={<h1 className="contact-page-title mt-lg-4">Let’s connect us</h1>
             } animation="slide-left" />
@@ -103,7 +100,6 @@ function Contact() {
                 <AnimatedText
                   text={
                     <span style={{ marginLeft: "15px" }}>
-                      {/* +91 7827058243 */}
                       <a className="contact-text" href="tel:+91 7827058243">
                         +91 7827058243
                       </a>
@@ -211,8 +207,6 @@ function Contact() {
                   <AnimatedText text={<select
                     type="text"
                     name="service"
-                    // value={formik.values.service}
-                    // onChange={formik.service}
                     placeholder="Type here"
                     autoComplete="off"
                     className="form-field mb-3"
@@ -254,15 +248,6 @@ function Contact() {
                     required
                   />} animation='slide-up' />
                 </div>
-                {/* <div className="d-flex justify-content-center text-center"
-                >
-                  <AnimatedText text={<input style={{ fontSize: "20px", fontWeight: "bold", marginTop: "25px" }}
-                    type="submit"
-                    name="submit"
-                    value="Send it"
-                    class="submit submit-depth"
-                  />} animation='fade-in' />
-                </div> */}
                 <div><div className="d-flex justify-content-center  mb-3 mt-3">
                   <button className="submit-button">
                     <div class="svg-wrapper-1">

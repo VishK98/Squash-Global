@@ -2,15 +2,11 @@ import React, { useState, useEffect, useRef } from "react";
 import "./Careers.css";
 import ScrollToTopButton from '../TopButton/TopButton';
 import image from "../../assets/images/Banner Careers.png";
-// import downArrow from "../../assets/images/small-circle-down-arrow.png";
 import downArrow from "../../assets/images/-down-arrow.png";
 import team from "../../assets/images/Career Section Middle Banner.png";
 import teamBreak from "../../assets/images/Career Section Bottom Banner.png";
 import jobPost from "../../assets/images/hiring.png";
 import AnimatedText from '../Animations/TextAnimation';
-import ImageAnimationFade from "../Animations/ImageAnimationFade";
-import AnimatedImage from "../Animations/ImageAnimation";
-import AnimatedUnfoldImage from '../Animations/ImageAnimationUnfold';
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 
 
@@ -72,10 +68,10 @@ function Careers() {
     },
 
   ];
-  // Create a state to manage the selected value
+  
   const [selectedService, setSelectedService] = useState("selected");
 
-  // Handle changes to the selected value
+
   const handleServiceChange = (event) => {
     setSelectedService(event.target.value);
   };
@@ -83,7 +79,7 @@ function Careers() {
     const fileName = e.target.files[0].name;
     document.getElementById("file-upload-label").textContent = fileName;
     document.getElementById("file-upload-close").style.display = "inline";
-    handleChange(e); // Call the handleChange function to update the state
+    handleChange(e); 
   };
 
   const [formData, setFormData] = useState({
@@ -108,13 +104,12 @@ function Careers() {
 
   const handleChange = (e) => {
     if (e.target.name === "resume") {
-      // If the change is for the resume field
       setFormData({
         ...formData,
-        [e.target.name]: e.target.files[0], // Update resume with the selected file
+        [e.target.name]: e.target.files[0],
       });
     } else {
-      // For other fields, update as usual
+
       setFormData({
         ...formData,
         [e.target.name]: e.target.value,
@@ -508,7 +503,7 @@ function Careers() {
                 <AnimatedText text={<label
                   htmlFor="file-upload"
                   className="custom-file-upload"
-                  style={{ color: "grey", marginRight: "5px" }} // Add margin for spacing
+                  style={{ color: "grey", marginRight: "5px" }} 
                   id="file-upload-label"
                 >
                   No file chosen
@@ -516,17 +511,17 @@ function Careers() {
                 <span
                   id="file-upload-close"
                   onClick={() => {
-                    document.getElementById("file-upload").value = ""; // Reset the file input
+                    document.getElementById("file-upload").value = "";
                     document.getElementById(
                       "file-upload-label"
-                    ).textContent = "No file chosen"; // Reset the label text
+                    ).textContent = "No file chosen"; 
                     document.getElementById(
                       "file-upload-close"
-                    ).style.display = "none"; // Hide the close icon
+                    ).style.display = "none"; 
                   }}
                   style={{ display: "none", cursor: "pointer" }}
                 >
-                  &#x2715; {/* Close icon (×) */}
+                  &#x2715;
                 </span>
                 <AnimatedText text={<div className="d-flex justify-content-center mt-4 mb-3">
                   <input

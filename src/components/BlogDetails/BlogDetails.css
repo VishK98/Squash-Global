@@ -28,7 +28,6 @@ h3{
   
   .other-blogs:hover {
     transform: scale(0.9);
-    /* transform-origin: bottom;  */
     transition: transform 0.3s ease; 
   }
 
