@@ -118,14 +118,14 @@ svg text {
     text-transform: uppercase;
     animation: stroke 5s infinite alternate;
     stroke-width: 2;
-    stroke: #365fa0;
+    stroke: #30256d;
     font-size: 140px;
 }
 
 @keyframes stroke {
     0% {
         fill: rgba(72, 138, 20, 0);
-        stroke: rgba(54, 95, 160, 1);
+        stroke: #30256d;
         stroke-dashoffset: 25%;
         stroke-dasharray: 0 50%;
         stroke-width: 2;
@@ -133,17 +133,17 @@ svg text {
 
     70% {
         fill: rgba(72, 138, 20, 0);
-        stroke: rgba(54, 95, 160, 1);
+        stroke: #30256d;
     }
 
     80% {
         fill: rgba(72, 138, 20, 0);
-        stroke: rgba(54, 95, 160, 1);
+        stroke: #30256d;
         stroke-width: 3;
     }
 
     100% {
-        fill: rgba(72, 138, 204, 1);
+        fill: #30256d;
         stroke: rgba(54, 95, 160, 0);
         stroke-dashoffset: -25%;
         stroke-dasharray: 50% 0;
