@@ -97,24 +97,15 @@
     font-family: 'Manrope ExtraBold';
 }
 
-.Welcome-Text {
-    font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    background: linear-gradient(90deg, #000, #30256d, #30256d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
 /* animated text starts */
-svg {
+.taw-animated-text {
     font-family: 'Russo One', sans-serif;
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-svg text {
+.taw-animated-text text {
     font-family: 'Russo One', sans-serif;
     text-transform: uppercase;
     animation: stroke 5s infinite alternate;

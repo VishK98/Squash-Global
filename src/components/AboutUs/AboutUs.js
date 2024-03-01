@@ -66,32 +66,14 @@ function Philosophy() {
         </div>
       </div>
 
-      {/* <section id="" className="mt-lg-3 mt-3">
-          <div className="position-relative phi-bottom-banner ">
-            <div className="row p-5">
-              <div className="col-md-7"></div>
-              <div className="col-md-5 ">
-                <AnimatedText text={<h2 className=" Welcome-Text mt-lg-4">
-                  Welcome to
-                  <br />
-                  TAW-the agency way
-                </h2>} animation="slide-right" />
-              </div>
-            </div>
-          </div>
-      </section> */}
-
       <section className="mt-5 mb-3 position-relative">
-      <svg viewBox="0 0 1320 300">
-            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-              The Agency Way
-            </text>
-          </svg>
+        <svg className="taw-animated-text" viewBox="0 0 1320 300">
+          <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+            The Agency Way
+          </text>
+        </svg>
         <img className="img-fluid" src={bottomBanner} alt="Bottom Banner" />
       </section>
-
-
-
       <ScrollToTopButton />
     </>
   );
