@@ -23,7 +23,7 @@ function Footer() {
           <a href="https://twitter.com/_theagencyway" target="_blank">
             <img className="socialMedia social-media-icon" src={twitter} alt="Twitter"></img>
           </a>
-          <a href="https://www.linkedin.com/company/TAW-global/" target="_blank">
+          <a href="https://www.linkedin.com/company/theagencyway/" target="_blank">
             <img className="socialMedia social-media-icon" src={linkdin} alt="Linkdin"></img>
           </a>
         </div>
