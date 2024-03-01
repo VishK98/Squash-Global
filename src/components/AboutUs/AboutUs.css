@@ -108,7 +108,7 @@
 .taw-animated-text text {
     font-family: 'Russo One', sans-serif;
     text-transform: uppercase;
-    animation: stroke 5s infinite alternate;
+    animation: stroke 2s infinite alternate;
     stroke-width: 2;
     stroke: #30256d;
     font-size: 140px;
