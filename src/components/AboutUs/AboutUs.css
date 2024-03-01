@@ -115,11 +115,13 @@ svg {
 }
 
 svg text {
+    font-family: 'Russo One', sans-serif;
     text-transform: uppercase;
     animation: stroke 5s infinite alternate;
     stroke-width: 2;
     stroke: #30256d;
     font-size: 140px;
+    font-weight: bold;
 }
 
 @keyframes stroke {
@@ -143,8 +145,8 @@ svg text {
     }
 
     100% {
-        fill: #30256d;
-        stroke: rgba(54, 95, 160, 0);
+        fill: #d3d3de;
+        stroke: #30256d;
         stroke-dashoffset: -25%;
         stroke-dasharray: 50% 0;
         stroke-width: 0;
