@@ -1,14 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Careers.css";
-import ScrollToTopButton from '../TopButton/TopButton';
+import ScrollToTopButton from "../TopButton/TopButton";
 import image from "../../assets/images/Banner Careers.png";
-import downArrow from "../../assets/images/-down-arrow.png";
+import downArrow from "../../assets/images/Icons/-down-arrow.png";
 import team from "../../assets/images/Career Section Middle Banner.png";
 import teamBreak from "../../assets/images/Career Section Bottom Banner.png";
 import jobPost from "../../assets/images/hiring.png";
-import AnimatedText from '../Animations/TextAnimation';
+import AnimatedText from "../Animations/TextAnimation";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
-
 
 function Careers() {
   const jobData = [
@@ -66,11 +65,9 @@ function Careers() {
         "Highly organized with strong attention to detail",
       ],
     },
-
   ];
-  
-  const [selectedService, setSelectedService] = useState("selected");
 
+  const [selectedService, setSelectedService] = useState("selected");
 
   const handleServiceChange = (event) => {
     setSelectedService(event.target.value);
@@ -79,7 +76,7 @@ function Careers() {
     const fileName = e.target.files[0].name;
     document.getElementById("file-upload-label").textContent = fileName;
     document.getElementById("file-upload-close").style.display = "inline";
-    handleChange(e); 
+    handleChange(e);
   };
 
   const [formData, setFormData] = useState({
@@ -101,7 +98,6 @@ function Careers() {
     }
   };
 
-
   const handleChange = (e) => {
     if (e.target.name === "resume") {
       setFormData({
@@ -109,7 +105,6 @@ function Careers() {
         [e.target.name]: e.target.files[0],
       });
     } else {
-
       setFormData({
         ...formData,
         [e.target.name]: e.target.value,
@@ -125,7 +120,6 @@ function Careers() {
       formData.about.trim() !== "" &&
       formData.service.trim() !== "" &&
       formData.resume !== null
-
     );
   };
 
@@ -166,20 +160,34 @@ function Careers() {
 
   return (
     <>
-      <div className="full-screen-image"><ImageAnimationUnfold src={image} alt="Image not found" style={{ width: "100%", height: "100%", objectFit: "fill" }} /></div>
-
-      <div className="container ">
-        <AnimatedText text={<h1 className="Color-Text" style={{ fontSize: "50px", }}>
-          Start your journey in TAW
-        </h1>} animation='slide-left' />
+      <div className="full-screen-image">
+        <ImageAnimationUnfold
+          src={image}
+          alt="Image not found"
+          style={{ width: "100%", height: "100%", objectFit: "fill" }}
+        />
+      </div>
+      <div className="container mt-lg-4 mt-3">
+        <div class="career-heading">
+          <AnimatedText
+            text={<h1>Start your journey in TAW</h1>}
+            animation="slide-up"
+          />
+        </div>
         <div className="row ">
           <div className="col-lg-12 col-md-12 col-12">
-            <AnimatedText text={<h2 className="Color-Text" style={{ fontSize: "45px", marginTop: "10px" }}>Work with a dynamic team and creative minded people.</h2>
-            } animation='slide-up' />
-            <a href="#latestOpeningSection" className="explorbtn mt-lg-4">
-              <div style={{ display: 'flex', alignItems: 'center' }}>
-                <AnimatedText text={<i>Join Us</i>} animation='slide-left' />
-                <div className="animated-arrow-btn" style={{ marginLeft: "10px", height: "50px", width: "50px" }}>
+            <div class="career-sub-heading">
+              <h1>Work with a dynamic team and creative minded people.</h1>
+            </div>
+            <a href="#latestOpeningSection" className="explorbtn">
+              <div style={{ display: "flex", alignItems: "center" }}>
+                <div class="career-sub-heading">
+                  <h1 style={{fontSize: '30px',fontWeight: "bold"}}>Join us</h1>
+                </div>
+                <div
+                  className="animated-arrow-btn"
+                  style={{ marginLeft: "10px", height: "50px", width: "50px" }}
+                >
                   <ImageAnimationUnfold src={downArrow} alt="Image not found" />
                 </div>
               </div>
@@ -188,33 +196,58 @@ function Careers() {
         </div>
       </div>
       <div className="container">
-        <AnimatedText text={<h1 className="Color-Text" style={{ fontWeight: "bold" }}>What to expect at TAW?</h1>
-        } animation='slide-up' />
-        <AnimatedText text={<p className="paragraph-text mt-2" style={{ fontSize: "20px" }}>
-          <span style={{ fontWeight: "600" }}>
-            At TAW, we believe in growing together.
-          </span>
-          <br />
-          <br /> A place we offer our talents to bloom in an atmosphere where they can have professional and personal growth. TAW celebrates achievements together, offer diverse opportunities and development programs.
-        </p>} animation='slide-up' />
+        <AnimatedText
+          text={<h1 className="Color-Text">What to expect at TAW?</h1>}
+          animation="slide-up"
+        />
+        <AnimatedText
+          text={
+            <h1 className="paragraph-text">
+              At TAW, we believe in growing together.
+            </h1>
+          }
+          animation="slide-up"
+        />
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-lg-5 col-md-5 col-12 col-sm-12 mt-5">
-            <AnimatedText text={<h3 className="color-text" style={{ fontWeight: "bold" }}>
-              Where ideas thrive and turn that idea into reality
-            </h3>} animation='slide-left' />
-            <AnimatedText text={<p className="mt-4" style={{ fontSize: "20px" }}>
-              "At{" "}
-              <span
-                style={{ fontWeight: "bold", color: "#30256d" }}
-              >
-                TAW
-              </span>
-              , we foster collaboration, innovation and creative minds to explore limitless possibilities. If you are someone who wants to be a part of the next big thing in the marketing and advertising industry,
-              " <br /> <br />
-              Write to us at <a className="mail-text" href='mailto:hr@taw.agency'>hr@taw.agency</a>
-            </p>} animation='fade-in' />
+          <div className="col-lg-5 col-md-5 col-12 col-sm-12 mt-3">
+            <AnimatedText
+              text={
+                <h3 className="color-text">
+                  Where ideas thrive and turn that idea into reality
+                </h3>
+              }
+              animation="slide-left"
+            />
+            <AnimatedText
+              text={
+                <p className="paragraph-text mt-3">
+                  At <span class="career-sub-heading">TAW</span> we foster
+                  collaboration, innovation and creative minds to explore
+                  limitless possibilities. If you are someone who wants to be a
+                  part of the next big thing in the marketing and advertising
+                  industry,
+                </p>
+              }
+              animation="slide-left"
+            />
+            <AnimatedText
+              text={
+                <p
+                  className="paragraph-text mt-3"
+                  style={{ fontWeight: "bold" }}
+                >
+                  Write to us at{" "}
+                  <span>
+                    <a className="mail-text" href="mailto:hr@taw.agency">
+                      hr@taw.agency
+                    </a>
+                  </span>
+                </p>
+              }
+              animation="slide-left"
+            />
           </div>
           <div className="col-lg-7 col-md-7 col-12 col-sm-12 mt-4 ">
             <div>
@@ -225,9 +258,14 @@ function Careers() {
       </div>
       <div className="container-fluid mt-4 mb-3">
         <div style={{ display: "flex" }}>
-          <AnimatedText text={<h1 className="Color-Text" style={{ fontWeight: "bold" }}>Life at The Agency Way</h1>
-          } animation='slide-left' />
-
+          <AnimatedText
+            text={
+              <h1 className="Color-Text" style={{ fontWeight: "bold" }}>
+                Life at The Agency Way
+              </h1>
+            }
+            animation="slide-left"
+          />
         </div>
       </div>
       <ImageAnimationUnfold src={teamBreak} alt="Image not found" />
@@ -235,12 +273,15 @@ function Careers() {
         <h1 className="mt-3">Latest Openings</h1>
         <div className="row" ref={closeRef}>
           {jobData.map((job, index) => (
-            <div className="col-xs-12 col-sm-6 col-md-4 mt-4 col-lg-4" key={index}>
+            <div
+              className="col-xs-12 col-sm-6 col-md-4 mt-4 col-lg-4"
+              key={index}
+            >
               <div
                 className={`card ${selectedJobIndex === index ? "flipped" : ""
                   }`}
               >
-                <div className="text-center mb-2" >
+                <div className="text-center mb-2">
                   <img
                     className="img-fluid animated-image"
                     src={job.url}
@@ -271,9 +312,7 @@ function Careers() {
                       </p>
                     </div>
                     <div className="col">
-                      <p style={{ fontWeight: "500" }}>
-                        Posted on: 10-01-2024
-                      </p>
+                      <p style={{ fontWeight: "500" }}>Posted on: 10-01-2024</p>
                     </div>
                   </div>
 
@@ -344,193 +383,281 @@ function Careers() {
             style={{ padding: "20px" }}
             ref={formRef}
           >
-            <AnimatedText text={<h4 className="content-box-text">
-              We love people with ideas & the thirst to see that idea through.
-            </h4>} animation='slide-up' />
-            <AnimatedText text={<h4 className="content-box-text">
-              If you think you can match up to our challenge, give us a shout &
-              we will make it work.
-            </h4>} animation='slide-up' />
+            <AnimatedText
+              text={
+                <h4 className="content-box-text">
+                  We love people with ideas & the thirst to see that idea
+                  through.
+                </h4>
+              }
+              animation="slide-up"
+            />
+            <AnimatedText
+              text={
+                <h4 className="content-box-text">
+                  If you think you can match up to our challenge, give us a
+                  shout & we will make it work.
+                </h4>
+              }
+              animation="slide-up"
+            />
           </div>
 
-          <div
-            className="col-lg-8 col-md-8 col-sm-12 col-12 form-mobile mt-3"
-          >
-            <div id="contactForm" >
+          <div className="col-lg-8 col-md-8 col-sm-12 col-12 form-mobile mt-3">
+            <div id="contactForm">
               <form onSubmit={handleSubmit}>
-                <AnimatedText text={<label>
-                  Full Name
-                  <sup
-                    style={{
-                      color: "red",
-                      marginLeft: "5px",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    *
-                  </sup>
-                </label>} animation='slide-up' />
-                <AnimatedText text={<input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  placeholder="Type here"
-                  autoComplete="off"
-                  className="form-field mb-3"
-                  required
-                />} animation='slide-up' />
+                <AnimatedText
+                  text={
+                    <label>
+                      Full Name
+                      <sup
+                        style={{
+                          color: "red",
+                          marginLeft: "5px",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        *
+                      </sup>
+                    </label>
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  text={
+                    <input
+                      type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      placeholder="Type here"
+                      autoComplete="off"
+                      className="form-field mb-3"
+                      required
+                    />
+                  }
+                  animation="slide-up"
+                />
 
-                <AnimatedText text={<label>
-                  Email
-                  <sup
-                    style={{
-                      color: "red",
-                      marginLeft: "5px",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    *
-                  </sup>
-                </label>} animation='slide-up' />
-                <AnimatedText text={<input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="Type here"
-                  autoComplete="off"
-                  className="form-field "
-                  required
-                />} animation='slide-up' />
-                <AnimatedText className='mt-2' text={<label>
-                  Contact number
-                  <sup
-                    style={{
-                      color: "red",
-                      marginLeft: "5px",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    *
-                  </sup>
-                </label>} animation='slide-up' />
-                <AnimatedText text={<input
-                  type="tel"
-                  name="contactNumber"
-                  value={formData.contactNumber}
-                  onChange={handleChange}
-                  placeholder="+91 9900000088"
-                  autoComplete="off"
-                  className="form-field mb-3"
-                  pattern="[0-9]{10}"
-                  required
-                />} animation='slide-up' />
-                <AnimatedText text={<label>
-                  Role applying for
-                  <sup
-                    style={{
-                      color: "red",
-                      marginLeft: "5px",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    *
-                  </sup>
-                </label>} animation='slide-up' />
-                <AnimatedText text={<select
-                  type="dropdown"
-                  name="service"
-                  value={formData.service}
-                  onChange={handleChange}
-                  placeholder="Type here"
-                  autoComplete="off"
-                  className="form-field mb-3"
-                  required
-                >
-                  <option value="selected">Select role</option>
-                  <option value="Jr. Project Manager">
-                    Jr. Project Manager
-                  </option>
-                  <option value="Account Management">
-                    Account Management
-                  </option>
-                  <option value="Associate Creative Director">
-                    Associate Creative Director
-                  </option>
-                  <option value="Creative Supervisor">
-                    Creative Supervisor
-                  </option>
-                  <option value="Scriptwriter">Scriptwriter</option>
-                  <option value="SEO Technical Lead">
-                    SEO Technical Lead
-                  </option>
-                </select>} animation='slide-up' />
-                <AnimatedText text={<label>Write something about yourself<sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup></label>
-                } animation='slide-up' />
+                <AnimatedText
+                  text={
+                    <label>
+                      Email
+                      <sup
+                        style={{
+                          color: "red",
+                          marginLeft: "5px",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        *
+                      </sup>
+                    </label>
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  text={
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="Type here"
+                      autoComplete="off"
+                      className="form-field "
+                      required
+                    />
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  className="mt-2"
+                  text={
+                    <label>
+                      Contact number
+                      <sup
+                        style={{
+                          color: "red",
+                          marginLeft: "5px",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        *
+                      </sup>
+                    </label>
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  text={
+                    <input
+                      type="tel"
+                      name="contactNumber"
+                      value={formData.contactNumber}
+                      onChange={handleChange}
+                      placeholder="+91 9900000088"
+                      autoComplete="off"
+                      className="form-field mb-3"
+                      pattern="[0-9]{10}"
+                      required
+                    />
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  text={
+                    <label>
+                      Role applying for
+                      <sup
+                        style={{
+                          color: "red",
+                          marginLeft: "5px",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        *
+                      </sup>
+                    </label>
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  text={
+                    <select
+                      type="dropdown"
+                      name="service"
+                      value={formData.service}
+                      onChange={handleChange}
+                      placeholder="Type here"
+                      autoComplete="off"
+                      className="form-field mb-3"
+                      required
+                    >
+                      <option value="selected">Select role</option>
+                      <option value="Jr. Project Manager">
+                        Jr. Project Manager
+                      </option>
+                      <option value="Account Management">
+                        Account Management
+                      </option>
+                      <option value="Associate Creative Director">
+                        Associate Creative Director
+                      </option>
+                      <option value="Creative Supervisor">
+                        Creative Supervisor
+                      </option>
+                      <option value="Scriptwriter">Scriptwriter</option>
+                      <option value="SEO Technical Lead">
+                        SEO Technical Lead
+                      </option>
+                    </select>
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  text={
+                    <label>
+                      Write something about yourself
+                      <sup
+                        style={{
+                          color: "red",
+                          marginLeft: "5px",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        *
+                      </sup>
+                    </label>
+                  }
+                  animation="slide-up"
+                />
 
-                <AnimatedText text={<input
-                  type="text"
-                  name="about"
-                  value={formData.about}
-                  onChange={handleChange}
-                  placeholder="Type here"
-                  autoComplete="off"
-                  className="form-field mb-3"
-                  required
-                />} animation='slide-up' />
-                <AnimatedText text={<label>
-                  Attach your resume here
-                  <sup
-                    style={{
-                      color: "red",
-                      marginLeft: "5px",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    *
-                  </sup>
-                </label>} animation='sldie-up' />
-                <AnimatedText text={<input
-                  id="file-upload"
-                  type="file"
-                  name="resume"
-                  onChange={handleFileChange}
-                  accept=".pdf,.doc,.docx"
-                  style={{ display: "none" }}
-                  className="form-field"
-                />} animation='slide-up' />
-                <AnimatedText text={<label
-                  htmlFor="file-upload"
-                  className="custom-file-upload"
-                  style={{ color: "grey", marginRight: "5px" }} 
-                  id="file-upload-label"
-                >
-                  No file chosen
-                </label>} animation='slide-up' />
+                <AnimatedText
+                  text={
+                    <input
+                      type="text"
+                      name="about"
+                      value={formData.about}
+                      onChange={handleChange}
+                      placeholder="Type here"
+                      autoComplete="off"
+                      className="form-field mb-3"
+                      required
+                    />
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  text={
+                    <label>
+                      Attach your resume here
+                      <sup
+                        style={{
+                          color: "red",
+                          marginLeft: "5px",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        *
+                      </sup>
+                    </label>
+                  }
+                  animation="sldie-up"
+                />
+                <AnimatedText
+                  text={
+                    <input
+                      id="file-upload"
+                      type="file"
+                      name="resume"
+                      onChange={handleFileChange}
+                      accept=".pdf,.doc,.docx"
+                      style={{ display: "none" }}
+                      className="form-field"
+                    />
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  text={
+                    <label
+                      htmlFor="file-upload"
+                      className="custom-file-upload"
+                      style={{ color: "grey", marginRight: "5px" }}
+                      id="file-upload-label"
+                    >
+                      No file chosen
+                    </label>
+                  }
+                  animation="slide-up"
+                />
                 <span
                   id="file-upload-close"
                   onClick={() => {
                     document.getElementById("file-upload").value = "";
-                    document.getElementById(
-                      "file-upload-label"
-                    ).textContent = "No file chosen"; 
-                    document.getElementById(
-                      "file-upload-close"
-                    ).style.display = "none"; 
+                    document.getElementById("file-upload-label").textContent =
+                      "No file chosen";
+                    document.getElementById("file-upload-close").style.display =
+                      "none";
                   }}
                   style={{ display: "none", cursor: "pointer" }}
                 >
                   &#x2715;
                 </span>
-                <AnimatedText text={<div className="d-flex justify-content-center mt-4 mb-3">
-                  <input
-                    type="submit"
-                    name="submit"
-                    value="Send it"
-                    className="submit"
-                  />
-                </div>} animation='fade-in' />
+                <AnimatedText
+                  text={
+                    <div className="d-flex justify-content-center mt-4 mb-3">
+                      <input
+                        type="submit"
+                        name="submit"
+                        value="Send it"
+                        className="submit"
+                      />
+                    </div>
+                  }
+                  animation="fade-in"
+                />
               </form>
             </div>
           </div>

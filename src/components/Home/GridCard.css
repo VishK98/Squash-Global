@@ -1,4 +1,4 @@
-.card-title {
+.grid-title {
     color: #262626;
     font-size: 1.5em;
     line-height: normal;
@@ -43,7 +43,7 @@
     font-family: courier, sans;
 }
 
-.card {
+.grid {
     display: block;
     position: relative;
     height: 450px;
@@ -56,7 +56,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.card:before {
+.grid:before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -71,28 +71,28 @@
     transition: transform 0.35s ease-out;
 }
 
-.card:hover:before {
+.grid:hover:before {
     transform: scale(35);
 }
 
-.card:hover .small-desc {
+.grid:hover .small-desc {
     transition: all 0.5s ease-out;
     color: rgba(255, 255, 255, 0.8);
 }
 
-.card:hover .card-title {
+.grid:hover .grid-title {
     transition: all 0.5s ease-out;
     color: #ffffff;
 }
 
-.grid-card-image-stat {
+.grid-grid-image-stat {
     width: 100%;
     margin-top: 73px;
     filter: grayscale(100%);
     transition: all 0.8s ease-out;
 }
 
-.grid-card-image-design {
+.grid-grid-image-design {
     width: 100%;
     margin-top: 97px;
     filter: grayscale(100%);
@@ -100,24 +100,24 @@
 
 }
 
-.grid-card-image-tech {
+.grid-grid-image-tech {
     width: 100%;
     margin-top: 50px;
     filter: grayscale(100%);
     transition: all 0.8s ease-out;
 }
 
-.card:hover .grid-card-image-stat,
-.card:hover .grid-card-image-design,
-.card:hover .grid-card-image-tech {
+.grid:hover .grid-grid-image-stat,
+.grid:hover .grid-grid-image-design,
+.grid:hover .grid-grid-image-tech {
     filter: grayscale(0%);
 }
 
 @media only screen and (max-width: 625px) {
 
-    .grid-card-image-stat,
-    .grid-card-image-design,
-    .grid-card-image-tech {
+    .grid-grid-image-stat,
+    .grid-grid-image-design,
+    .grid-grid-image-tech {
         filter: grayscale(0%);
     }
 }

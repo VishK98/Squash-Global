@@ -106,11 +106,12 @@ function Home() {
             <AnimatedText
               text={
                 <p className="paragraph-text">
-                  Our marketing strategies go beyond driving campaigns for brands. With deep understanding of human behavior, we forge connection that helps Brands to speak to their audience individually. We breathe life into your Brand with meaningful innovation and creative communication.
+                  Our marketing strategies go beyond driving campaigns for
+                  brands. With deep understanding of human behavior, we forge
+                  connection that helps Brands to speak to their audience
+                  individually. We breathe life into your Brand with meaningful
+                  innovation and creative communication.
                 </p>
-                // <p className="paragraph-text">
-                //   Our marketing strategies go beyond With deep understanding of human behavior, we forge connection that helps Brands to speak to their audience individually.
-                // </p>
               }
               animation="slide-left"
             />
@@ -134,8 +135,11 @@ function Home() {
         </div>
       </div>
       <div className="container-fluid">
-        <div className="row" >
-          <div className="col-lg-9 col-md-9 col-12" style={{ paddingLeft: "50px" }}>
+        <div className="row">
+          <div
+            className="col-lg-9 col-md-9 col-12"
+            style={{ paddingLeft: "50px" }}
+          >
             <AnimatedText
               text={
                 <h2 className="stroke" style={{ marginBottom: "-30px" }}>
@@ -232,7 +236,7 @@ function Home() {
               </video>
             </div>
             {/* for mobile view starts*/}
-            
+
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 mt-3 d-flex flex-column align-items-center d-md-none">
               <div className="row">
                 <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex align-items-center">
@@ -258,7 +262,6 @@ function Home() {
               </div>
             </div>
             {/* for mobile view starts*/}
-
           </div>
         </div>
 
@@ -332,9 +335,16 @@ function Home() {
                   <AnimatedText
                     text={
                       <p className="paragraph-text">
-                        TAW-the agency way is more than  just a marketing agency. just a marketing agency. We are the architects of brand experiences, designing stories that resonate with the brand’s audience. At TAW,
-                        we provide customize solutions and expertise to unique business needs making us the right choice for start-ups and small to medium companies. With us, you can build future ready brand, through an
-                        With us, you can build future ready brand, through an integration of content, technology and media, using data backed tools and practices.
+                        TAW-the agency way is more than just a marketing agency.
+                        just a marketing agency. We are the architects of brand
+                        experiences, designing stories that resonate with the
+                        brand’s audience. At TAW, we provide customize solutions
+                        and expertise to unique business needs making us the
+                        right choice for start-ups and small to medium
+                        companies. With us, you can build future ready brand,
+                        through an With us, you can build future ready brand,
+                        through an integration of content, technology and media,
+                        using data backed tools and practices.
                       </p>
                     }
                     animation="fade-in"
@@ -366,17 +376,15 @@ function Home() {
                       <div className="paragraph-text">
                         We believe every brand carries a story and looking for
                         the optimum communication strategy to interact with
-                        their audience.
-                        In the era of technology and artificial intelligence,
-                        we design campaigns with human touch that leaves a
-                        lasting impression.
-                        With TAW, you can amplify your brand’s communication
-                        making it more interactive and people centric. This will
-                        not only generate leads but also make your brand more
-                        relatable and problem solving to your consumers.
-                        Join us on a journey where marketing transcends the
-                        ordinary and becomes a catalyst for connection,
-                        creativity, and growth.
+                        their audience. In the era of technology and artificial
+                        intelligence, we design campaigns with human touch that
+                        leaves a lasting impression. With TAW, you can amplify
+                        your brand’s communication making it more interactive
+                        and people centric. This will not only generate leads
+                        but also make your brand more relatable and problem
+                        solving to your consumers. Join us on a journey where
+                        marketing transcends the ordinary and becomes a catalyst
+                        for connection, creativity, and growth.
                       </div>
                     }
                     animation="slide-up"
@@ -448,7 +456,9 @@ function Home() {
                 <AnimatedText
                   text={
                     <ul className="custom-arrow-bullet-point">
-                      <li className="paragraph-text">Social Media Management</li>
+                      <li className="paragraph-text">
+                        Social Media Management
+                      </li>
                       <li className="paragraph-text">Social Strategy</li>
                       <li className="paragraph-text">ORM</li>
                       <li className="paragraph-text">Influencer Marketing</li>
@@ -475,10 +485,17 @@ function Home() {
                 <AnimatedText
                   text={
                     <ul className="custom-arrow-bullet-point">
-                      <li className="paragraph-text">Creative assets management</li>
-                      <li className="paragraph-text"> Identity and collaterals</li>
+                      <li className="paragraph-text">
+                        Creative assets management
+                      </li>
+                      <li className="paragraph-text">
+                        {" "}
+                        Identity and collaterals
+                      </li>
                       <li className="paragraph-text">Content Strategy</li>
-                      <li className="paragraph-text">Production & Photography</li>
+                      <li className="paragraph-text">
+                        Production & Photography
+                      </li>
                     </ul>
                   }
                   animation="slide-left"
@@ -506,9 +523,15 @@ function Home() {
                 <AnimatedText
                   text={
                     <ul className="custom-arrow-bullet-point">
-                      <li className="paragraph-text">Search Engine Optimization</li>
-                      <li className="paragraph-text">Search Engine Management</li>
-                      <li className="paragraph-text">Media Planning and Buying</li>
+                      <li className="paragraph-text">
+                        Search Engine Optimization
+                      </li>
+                      <li className="paragraph-text">
+                        Search Engine Management
+                      </li>
+                      <li className="paragraph-text">
+                        Media Planning and Buying
+                      </li>
                       <li className="paragraph-text">Programmatic Buying</li>
                     </ul>
                   }
@@ -533,8 +556,14 @@ function Home() {
                 <AnimatedText
                   text={
                     <ul className="custom-arrow-bullet-point">
-                      <li className="paragraph-text"> Website design and Development</li>
-                      <li className="paragraph-text"> E-commerce Website Development</li>
+                      <li className="paragraph-text">
+                        {" "}
+                        Website design and Development
+                      </li>
+                      <li className="paragraph-text">
+                        {" "}
+                        E-commerce Website Development
+                      </li>
                       <li className="paragraph-text">AR Filter</li>
                       <li className="paragraph-text"> Mobile Application</li>
                     </ul>
@@ -572,7 +601,11 @@ function Home() {
           <div className="col-lg-10 col-md-12">
             <div>
               <AnimatedText
-                text={<h2 className="stroke" style={{ marginBottom: "-20px" }}>Ready to redefine your </h2>}
+                text={
+                  <h2 className="stroke" style={{ marginBottom: "-20px" }}>
+                    Ready to redefine your{" "}
+                  </h2>
+                }
                 animation="slide-left"
               />
               <AnimatedText
