@@ -474,7 +474,7 @@ function Home() {
                   text={
                     <ul className="custom-arrow-bullet-point">
                       <li className="paragraph-text">Creative assets management</li>
-                      <li className="paragraph-text"> className="paragraph-text"Identity and collaterals</li>
+                      <li className="paragraph-text"> Identity and collaterals</li>
                       <li className="paragraph-text">Content Strategy</li>
                       <li className="paragraph-text">Production & Photography</li>
                     </ul>
