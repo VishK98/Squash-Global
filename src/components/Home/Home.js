@@ -336,7 +336,7 @@ function Home() {
                     text={
                       <p className="paragraph-text">
                         TAW-the agency way is more than just a marketing agency.
-                        just a marketing agency. We are the architects of brand
+                         We are the architects of brand
                         experiences, designing stories that resonate with the
                         brand’s audience. At TAW, we provide customize solutions
                         and expertise to unique business needs making us the
