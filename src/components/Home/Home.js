@@ -195,7 +195,7 @@ function Home() {
         <div className="container-fluid mb-lg-4 ">
           <div className="row">
             <div
-              className="col-lg-6 col-md-6 d-none d-md-block"
+              className="col-lg-5 col-md-5 d-none d-md-block"
               style={{ paddingTop: "200px", paddingLeft: "100px" }}
             >
               <div
@@ -226,7 +226,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="col-lg-6 col-md-6 mt-md-4 ">
+            <div className="col-lg-7 col-md-7 mt-md-4 ">
               <video className="video-banner" autoPlay loop muted>
                 <source src={bannerVideo} type="video/mp4" />
               </video>

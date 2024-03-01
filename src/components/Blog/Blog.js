@@ -27,33 +27,23 @@ function Blog() {
   return (
     <>
       <div className="container mt-4">
-        <AnimatedText text={<h1 className="color-text"
-          style={{
-            fontFamily: "RedHatDisplayBold, Helvetica, Arial, sans-serif",
-            fontSize: "40px",
-            fontWeight: "bold",
-            "@media (max-width: 767px)": {
-              fontSize: "25px",
-              fontWeight: 200,
-            },
-          }}
-        >
-          Get the latest transformative insights, trends and growth hacks
-          straight out of a Digital agency's playbook.
-        </h1>
-        } animation='slide-up' />
-        <AnimatedText text={<p className="mt-4">
-          <span className="paragraph-text"
-            style={{
-              color: "var(--secondary-color)",
-              fontSize: "18px",
-              letterSpacing: "1px",
-            }}
-          >
+        <AnimatedText
+          text={
+            <h1 className="blog-heading">
+              Get the latest transformative insights, trends and growth hacks
+              straight out of a Digital agency's playbook.
+            </h1>
+          }
+          animation="slide-down"
+        />
+
+        <AnimatedText text={
+          <p className="blog-sub-heading mt-lg-4 mb-lg-4">
             We bring you the latest industry trends and best practices to
             overcome all your digital marketing challenges.
-          </span>
-        </p>} animation='slide-up' />
+          </p>
+        } animation='slide-up' />
+
       </div>
       <div className="container">
         <div className="row">
@@ -63,13 +53,13 @@ function Blog() {
                 <ImageAnimationFade src={image.url} alt="Image not found" />
                 <div className="box-content">
                   <div className="inner-content">
-                    <AnimatedText text={<h6 className="title d-none d-md-block">{image.title}</h6>
-                    } animation="slide-up" />
-                    <Link to="/blogDetails" class="btn-flip mt-4" data-back="READ MORE" data-front="Read more"></Link>
+                    <AnimatedText text={<h6 className="blogs-title mt-4">{image.title}</h6>
+                    } animation='slide-up' />
+                    <Link to="/blogDetails" class="btn-flip mt-4" data-back="Read more" data-front="Read more"></Link>
                   </div>
                 </div>
               </div>
-              <AnimatedText text={<h6 style={{ textAlign: "center", padding: "10px" }}>{image.description}</h6>
+              <AnimatedText text={<h6 className="paragraph-text mt-4">{image.description}</h6>
               } animation='slide-up' />
             </div>
           ))}

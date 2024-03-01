@@ -1,6 +1,5 @@
 .box {
   color: #fff;
-  font-family: 'Cabin', sans-serif;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease 0s;
@@ -11,8 +10,7 @@
 .box .box-content:before,
 .box .box-content:after {
   content: "";
-
-  background: #220101;
+  background: #4b3ba3;
   width: 50%;
   height: 50%;
   transform: translateX(-100%);
@@ -33,7 +31,7 @@
 .box .box-content:before,
 .box .box-content:after {
 
-  background: #220101;
+  background: #4b3ba3;
   transform: translateX(0) translateY(-100%);
   left: auto;
   right: 0;
@@ -73,7 +71,7 @@
 }
 
 .box .inner-content {
-  text-align: center;
+  /* text-align: center; */
   opacity: 0;
   transform: translateX(-50%) translateY(-50%);
   position: absolute;
@@ -91,8 +89,7 @@
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
-  text-shadow: 3px 5px 12px #220101;
-
+  text-shadow: 3px 5px 12px #4b3ba3;
 }
 
 .box .post {
@@ -129,7 +126,7 @@
 
 .box .icon li a:hover {
   color: #fff;
-  background: #eb2f06;
+  background: #30256d;
   text-shadow: 0 0 2px #fff;
 }
 
@@ -177,7 +174,7 @@
     left: 0;
     opacity: 0;
     width: 100%;
-    font-size: 25px;
+    font-size: 16px;
     color: #fff;
     display: block;
     transition: 0.5s;
@@ -204,5 +201,37 @@
     border-radius: 10px;
     content: attr(data-front);
     transform: translateY(0) rotateX(0);
+  }
+}
+
+.blog-heading {
+  font-size: 40px;
+  margin-top: 30px;
+  font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  background: linear-gradient(90deg, #000, #30256d, #30256d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blog-sub-heading {
+  font-family: 'Manrope', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #000;
+  text-align: justify;
+}
+.blogs-title {
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  font-weight:300;
+  color: #fff;
+  text-align: start;
+}
+
+@media only screen and (max-width: 625px) {
+  .blog-title {
+    font-size: 25px;
+    text-align: justify;
   }
 }
