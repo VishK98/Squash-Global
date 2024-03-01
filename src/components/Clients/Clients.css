@@ -33,6 +33,9 @@
 .guest-text {
     font-size: 45px;
     font-weight: bold;
+    background: linear-gradient(90deg, #000, #30256d, #30256d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .partnership-text {

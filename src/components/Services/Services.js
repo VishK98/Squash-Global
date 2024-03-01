@@ -151,9 +151,9 @@ function Sector() {
         </div>
       </div>
       <div className="container-fluid">
-        <AnimatedText text={<h2 className="box-title text-center">
-          Our Services
-        </h2>} animation='slide-up' />
+      <AnimatedText text={<h2 className="box-title text-center" style={{ marginBottom: '20px' }}>
+         Our Services
+      </h2>} animation='slide-up' />
         <div className="row-service">
           {services.map((image, index) => (
             <div className="service-newBox">
@@ -169,7 +169,7 @@ function Sector() {
       </div>
 
       <div className="container mt-lg-2">
-        <AnimatedText text={<h2 className="box-title">
+      <AnimatedText text={<h2 className="box-title" style={{ marginTop: '15px', marginBottom: '15px' }}>
           Some of the industry sectors we partner with
         </h2>} animation='slide-up' />
       </div>
