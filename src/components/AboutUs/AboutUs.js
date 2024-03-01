@@ -5,6 +5,8 @@ import ScrollToTopButton from '../TopButton/TopButton';
 import AboutUs from "../../assets/images/Banner About us.jpg";
 import partyScene from "../../assets/images/about us middle image.png";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
+import bottomBanner from "../../assets/images/About Us Page Bottom Banner.png";
+
 
 
 function Philosophy() {
@@ -18,8 +20,8 @@ function Philosophy() {
 
         <div className="row">
           <div className="col-lg-6">
-            <div style={{marginBottom: "-30px"}}>
-            <AnimatedText text="We Know You !" animation="slide-up" className="know-text" />
+            <div style={{ marginBottom: "-30px" }}>
+              <AnimatedText text="We Know You !" animation="slide-up" className="know-text" />
             </div>
             <AnimatedText text="You Know Us !" animation="slide-up" className="know-text" />
             <AnimatedText text={<h3 className="age-text">In this age of automated conversations, we noticed that the ‘human touch’ had
@@ -64,8 +66,7 @@ function Philosophy() {
         </div>
       </div>
 
-      <section id="" className="mt-lg-3 mt-3">
-        <div className="container-fluid">
+      {/* <section id="" className="mt-lg-3 mt-3">
           <div className="position-relative phi-bottom-banner ">
             <div className="row p-5">
               <div className="col-md-7"></div>
@@ -78,8 +79,25 @@ function Philosophy() {
               </div>
             </div>
           </div>
+      </section> */}
+
+      <section className="mt-5 mb-3 position-relative">
+        <img className="img-fluid" src={bottomBanner} alt="Bottom Banner" />
+        <div className="position-absolute top-50 start-0 translate-middle-y p-2" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', marginRight: "50px" }}>
+          {/* <div className="Welcome-Text text-end">
+            <h2>Your Text Here</h2>
+            <p>Additional text or description can go here</p>
+          </div> */}
+          <svg viewBox="0 0 1320 300">
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+              webstoryboy
+            </text>
+          </svg>
         </div>
       </section>
+
+
+
       <ScrollToTopButton />
     </>
   );

@@ -570,7 +570,7 @@ function Home() {
           <div className="col-lg-10 col-md-12">
             <div>
               <AnimatedText
-                text={<h2 className="stroke">Ready to redefine your </h2>}
+                text={<h2 className="stroke" style={{marginBottom:"-20px"}}>Ready to redefine your </h2>}
                 animation="slide-left"
               />
               <AnimatedText
