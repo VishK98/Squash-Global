@@ -195,8 +195,8 @@ function Home() {
         <div className="container-fluid mb-lg-4 ">
           <div className="row">
             <div
-              className="col-lg-5 col-md-5 col-sm-12 col-12 d-none d-md-block"
-              style={{ marginTop: "150px" }}
+              className="col-lg-6 col-md-6 d-none d-md-block"
+              style={{ paddingTop: "200px", paddingLeft: "100px" }}
             >
               <div
                 className="row"
@@ -205,7 +205,7 @@ function Home() {
                 <div className="row">
                   <div className="col-lg-5 col-md-5 col-sm-12 col-12  d-flex align-items-center">
                     <p className="explorbtn" style={{ marginBottom: "2px" }}>
-                      Explore
+                      Explore1
                     </p>
                     <Link to="/services" style={{ textDecoration: "none" }}>
                       <div
@@ -226,16 +226,18 @@ function Home() {
               </div>
             </div>
 
-            <div className="col-lg-7 col-md-7 col-sm-12 col-12 mt-md-4  ">
+            <div className="col-lg-6 col-md-6 mt-md-4 ">
               <video className="video-banner" autoPlay loop muted>
                 <source src={bannerVideo} type="video/mp4" />
               </video>
             </div>
+            {/* for mobile view starts*/}
+            
             <div className="col-lg-5 col-md-5 col-sm-12 col-12 mt-3 d-flex flex-column align-items-center d-md-none">
               <div className="row">
                 <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex align-items-center">
                   <h2 style={{ fontWeight: "bold", marginRight: "10px" }}>
-                    Explore{" "}
+                    Explore
                   </h2>
                   <Link to="/services" style={{ textDecoration: "none" }}>
                     <div
@@ -254,8 +256,8 @@ function Home() {
                   </Link>
                 </div>
               </div>
-            </div> 
-
+            </div>
+            {/* for mobile view starts*/}
 
           </div>
         </div>
@@ -365,16 +367,16 @@ function Home() {
                         We believe every brand carries a story and looking for
                         the optimum communication strategy to interact with
                         their audience.
-                          In the era of technology and artificial intelligence,
-                          we design campaigns with human touch that leaves a
-                          lasting impression.
+                        In the era of technology and artificial intelligence,
+                        we design campaigns with human touch that leaves a
+                        lasting impression.
                         With TAW, you can amplify your brand’s communication
                         making it more interactive and people centric. This will
                         not only generate leads but also make your brand more
                         relatable and problem solving to your consumers.
-                          Join us on a journey where marketing transcends the
-                          ordinary and becomes a catalyst for connection,
-                          creativity, and growth.
+                        Join us on a journey where marketing transcends the
+                        ordinary and becomes a catalyst for connection,
+                        creativity, and growth.
                       </div>
                     }
                     animation="slide-up"
@@ -393,7 +395,7 @@ function Home() {
               text={<h2 className="text-lg-center stroke title">Specialist</h2>}
               animation="slide-up"
             />
-        
+
             <AnimatedText
               text={<p className="image-text-effect">Divisions</p>}
               animation="slide-up"
@@ -570,7 +572,7 @@ function Home() {
           <div className="col-lg-10 col-md-12">
             <div>
               <AnimatedText
-                text={<h2 className="stroke" style={{marginBottom:"-20px"}}>Ready to redefine your </h2>}
+                text={<h2 className="stroke" style={{ marginBottom: "-20px" }}>Ready to redefine your </h2>}
                 animation="slide-left"
               />
               <AnimatedText
