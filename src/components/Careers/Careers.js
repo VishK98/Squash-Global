@@ -169,12 +169,12 @@ function Careers() {
       <div className="full-screen-image"><ImageAnimationUnfold src={image} alt="Image not found" style={{ width: "100%", height: "100%", objectFit: "fill" }} /></div>
 
       <div className="container ">
-        <AnimatedText text={<h1 style={{ fontSize: "50px", fontWeight: "bold" }}>
+        <AnimatedText text={<h1 className="Color-Text" style={{ fontSize: "50px", }}>
           Start your journey in TAW
         </h1>} animation='slide-left' />
         <div className="row ">
           <div className="col-lg-12 col-md-12 col-12">
-            <AnimatedText text={<h2 style={{ fontSize: "45px", fontWeight: "bold", marginTop: "10px" }}>Work with a dynamic team and creative minded people.</h2>
+            <AnimatedText text={<h2 className="Color-Text" style={{ fontSize: "45px", marginTop: "10px" }}>Work with a dynamic team and creative minded people.</h2>
             } animation='slide-up' />
             <a href="#latestOpeningSection" className="explorbtn mt-lg-4">
               <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -188,9 +188,9 @@ function Careers() {
         </div>
       </div>
       <div className="container">
-        <AnimatedText text={<h1 style={{ fontWeight: "bold" }}>What to expect at TAW?</h1>
+        <AnimatedText text={<h1 className="Color-Text" style={{ fontWeight: "bold" }}>What to expect at TAW?</h1>
         } animation='slide-up' />
-        <AnimatedText text={<p className="mt-2" style={{ fontSize: "20px" }}>
+        <AnimatedText text={<p className="paragraph-text mt-2" style={{ fontSize: "20px" }}>
           <span style={{ fontWeight: "600" }}>
             At TAW, we believe in growing together.
           </span>
@@ -201,7 +201,7 @@ function Careers() {
       <div className="container">
         <div className="row">
           <div className="col-lg-5 col-md-5 col-12 col-sm-12 mt-5">
-            <AnimatedText text={<h3 style={{ fontWeight: "bold" }}>
+            <AnimatedText text={<h3 className="color-text" style={{ fontWeight: "bold" }}>
               Where ideas thrive and turn that idea into reality
             </h3>} animation='slide-left' />
             <AnimatedText text={<p className="mt-4" style={{ fontSize: "20px" }}>

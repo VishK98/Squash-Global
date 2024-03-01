@@ -27,7 +27,7 @@ function Blog() {
   return (
     <>
       <div className="container mt-4">
-        <AnimatedText text={<h1
+        <AnimatedText text={<h1 className="color-text"
           style={{
             fontFamily: "RedHatDisplayBold, Helvetica, Arial, sans-serif",
             fontSize: "40px",
