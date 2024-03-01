@@ -4,8 +4,14 @@ import React, { useState, useEffect } from 'react';
 import "./Services.css";
 import ScrollToTopButton from '../TopButton/TopButton';
 import industriesBanner from "../../assets/images/our Services.png";
-import socialMedia from "../../assets/images/Services/Social Media.png";
 import mediaPlanning from "../../assets/images/Services/Media Planning & Buying.png";
+import DigitalPR from "../../assets/images/Services/Social Media.png";
+import SEO from "../../assets/images/Services/Social Media.png";
+import socialMedia from "../../assets/images/Services/Social Media.png";
+import Production from "../../assets/images/Services/Social Media.png";
+import websiteDesign from "../../assets/images/Services/Social Media.png";
+import Programmatic from "../../assets/images/Services/Social Media.png";
+import Influencer from "../../assets/images/Services/Social Media.png";
 import Expert from "../../assets/images/Services Bottom Section.png";
 import { Link } from "react-router-dom";
 import AnimatedText from '../Animations/TextAnimation';
@@ -24,11 +30,11 @@ function Sector() {
     },
     {
       title: "DIGITAL PR AND ORM",
-      url: mediaPlanning
+      url: DigitalPR
     },
     {
       title: "SEO & SEM",
-      url: mediaPlanning
+      url: SEO
     },
     {
       title: "SOCIAL MEDIA MANAGEMENT",
@@ -37,20 +43,20 @@ function Sector() {
 
     {
       title: "PRODUCTION",
-      url: mediaPlanning
+      url: Production
     },
     {
       title: "WEBSITE DESIGN AND DEVLOPMENT",
-      url: mediaPlanning
+      url: websiteDesign
     },
 
     {
       title: "PROGRAMMATIC ADVERTISING",
-      url: mediaPlanning
+      url: Programmatic
     },
     {
       title: "INFLUENCER MARKETING",
-      url: mediaPlanning
+      url: Influencer
     },
 
   ];
