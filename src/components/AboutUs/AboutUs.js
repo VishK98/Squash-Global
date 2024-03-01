@@ -82,18 +82,12 @@ function Philosophy() {
       </section> */}
 
       <section className="mt-5 mb-3 position-relative">
-        <img className="img-fluid" src={bottomBanner} alt="Bottom Banner" />
-        <div className="position-absolute top-50 start-0 translate-middle-y p-2" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', marginRight: "50px" }}>
-          {/* <div className="Welcome-Text text-end">
-            <h2>Your Text Here</h2>
-            <p>Additional text or description can go here</p>
-          </div> */}
-          <svg viewBox="0 0 1320 300">
+      <svg viewBox="0 0 1320 300">
             <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-              webstoryboy
+              The Agency Way
             </text>
           </svg>
-        </div>
+        <img className="img-fluid" src={bottomBanner} alt="Bottom Banner" />
       </section>
 
 
