@@ -51,9 +51,8 @@
 
 .phi-bottom-banner {
     background-image: url(../../assets/images/About\ Us\ Page\ Bottom\ Banner.png);
-    background-size: 78%;
-    padding: 15px 30px;
-    background-position-x: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 768px) {
