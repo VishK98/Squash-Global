@@ -56,7 +56,7 @@ function Contact() {
     <>
       <div className="full-screen-image" > <ImageAnimationUnfold src={contact} alt="Image not found" style={{ width: "100%", height: "100%", objectFit: "fill" }}/></div>
       <div className="container">
-      <AnimatedText text={<h1 className="contact-page-title mt-lg-4">Let’s connect us</h1>
+      <AnimatedText text={<h1 className="Color-Text mt-3">Let’s connect us</h1>
             } animation="slide-left" />
       </div>
 
@@ -68,7 +68,7 @@ function Contact() {
               <div style={{ display: "flex", alignItems: "flex-start" }}>
 
                 <div style={{ position: "relative", height: "35px", width: "35px" }}>
-                  <ImageAnimationUnfold src='https://img.icons8.com/ios-filled/50/4c029e/red-fort.png' alt="Image not found" />
+                  <ImageAnimationUnfold src='https://img.icons8.com/ios-filled/50/000000/red-fort.png' alt="Image not found" />
                 </div>
                 <div style={{ marginLeft: "12px", }}>
                   <AnimatedText text={<h2 className="india-text"> India</h2>} animation="slide-up" />
@@ -88,14 +88,14 @@ function Contact() {
                 className="view-map-text mt-3"
               >
                 <div style={{ height: "45px", width: "40px" }}>
-                  <ImageAnimationUnfold src='https://img.icons8.com/external-flatart-icons-solid-flatarticons/64/4c029e/external-location-contact-us-flatart-icons-solid-flatarticons.png' alt="Image not found" />
+                  <ImageAnimationUnfold src='https://img.icons8.com/pastel-glyph/64/marker--v1.png' alt="Image not found" />
                 </div>
-                <AnimatedText text={<span style={{ marginLeft: "12px", fontFamily: "Times New Roman, Times, serif" }}>Find us on the map</span>
+                <AnimatedText text={<h2 className="india-text"style={{marginLeft: "5px"}}>Find us on the map</h2>
                 } animation="slide-up" />
               </a>
               <p className="phone mt-3" style={{ display: "flex", alignItems: "center" }}>
                 <div style={{ position: "relative", height: "35px", width: "35px" }}>
-                  <ImageAnimationUnfold src='https://img.icons8.com/ios-filled/50/4c029e/ringer-volume.png' alt="Image not found" />
+                  <ImageAnimationUnfold src='https://img.icons8.com/ios-filled/50/man-on-phone.png' alt="Image not found" />
                 </div>
                 <AnimatedText
                   text={
@@ -110,7 +110,7 @@ function Contact() {
               </p>
               <p className="phone mt-3" style={{ display: "flex", alignItems: "center" }}>
                 <div style={{ position: "relative", height: "33px", width: "35px" }}>
-                  <ImageAnimationUnfold src='https://img.icons8.com/ios-filled/50/4c029e/composing-mail.png' alt="Image not found" />
+                  <ImageAnimationUnfold src='https://img.icons8.com/ios-filled/50/email-sign.png' alt="Image not found" />
                 </div>
                 <AnimatedText
                   text={
@@ -133,7 +133,7 @@ function Contact() {
             <div
               className="formcol main-contact-form topslide"
             >
-              <AnimatedText text={<h1 style={{ fontWeight: "bold" }} ml-5>
+              <AnimatedText text={<h1 className="Color-Text">
                 Catch up with us
               </h1>
               } animation="slide-up" />

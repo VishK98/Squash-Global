@@ -43,7 +43,7 @@ function App() {
       <NavBar />
       <div className="TAW">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/clients" element={<Clients />} />
           <Route path="/services" element={<Services />} />

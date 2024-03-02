@@ -167,7 +167,7 @@ function Careers() {
           style={{ width: "100%", height: "100%", objectFit: "fill" }}
         />
       </div>
-      <div className="container mt-lg-4 mt-3">
+      <div className="container-fluid mt-lg-4 mt-3 p-4">
         <div class="career-heading">
           <AnimatedText
             text={<h1>Start your journey in TAW</h1>}
@@ -182,7 +182,7 @@ function Careers() {
             <a href="#latestOpeningSection" className="explorbtn">
               <div style={{ display: "flex", alignItems: "center" }}>
                 <div class="career-sub-heading">
-                  <h1 style={{fontSize: '30px',fontWeight: "bold"}}>Join us</h1>
+                  <h1 style={{ fontSize: '30px', fontWeight: "bold" }}>Join us</h1>
                 </div>
                 <div
                   className="animated-arrow-btn"
@@ -195,7 +195,7 @@ function Careers() {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container-fluid p-4">
         <AnimatedText
           text={<h1 className="Color-Text">What to expect at TAW?</h1>}
           animation="slide-up"
@@ -209,7 +209,7 @@ function Careers() {
           animation="slide-up"
         />
       </div>
-      <div className="container">
+      <div className="container-fluid p-4">
         <div className="row">
           <div className="col-lg-5 col-md-5 col-12 col-sm-12 mt-3">
             <AnimatedText
@@ -256,21 +256,20 @@ function Careers() {
           </div>
         </div>
       </div>
-      <div className="container-fluid mt-4 mb-3">
-        <div style={{ display: "flex" }}>
-          <AnimatedText
-            text={
-              <h1 className="Color-Text" style={{ fontWeight: "bold" }}>
-                Life at The Agency Way
-              </h1>
-            }
-            animation="slide-left"
-          />
-        </div>
+      <div className="container-fluid mt-4 mb-3 p-4">
+        <AnimatedText
+          text={
+            <h1 className="Color-Text" style={{ fontWeight: "bold" }}>
+              Life at The Agency Way
+            </h1>
+          }
+          animation="slide-left"
+        />
+
       </div>
       <ImageAnimationUnfold src={teamBreak} alt="Image not found" />
-      <div className="container-fluid">
-        <h1 className="mt-3">Latest Openings</h1>
+      <div className="container-fluid p-4">
+        <h1 className="Color-Text">Latest Openings</h1>
         <div className="row" ref={closeRef}>
           {jobData.map((job, index) => (
             <div
