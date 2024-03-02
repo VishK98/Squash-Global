@@ -2,7 +2,7 @@ import React from "react";
 import "./AboutUs.css";
 import AnimatedText from '../Animations/TextAnimation';
 import ScrollToTopButton from '../TopButton/TopButton';
-import AboutUs from "../../assets/images/Banner About us.jpg";
+import AboutUs from "../../assets/images/Banner About us.png";
 import partyScene from "../../assets/images/about us middle image.png";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 import bottomBanner from "../../assets/images/About Us Page Bottom Banner.png";
