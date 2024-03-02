@@ -163,11 +163,11 @@
   text-align: start;
   h1 {
     color: #fff;
-    font-size: 50px;
+    font-size: 45px;
     text-transform: uppercase;
     font-weight: 900;
     font-family: "Josefin Sans", sans-serif;
-    background: linear-gradient(to right, #30256d 10%, #5807b5 50%, #7717e3 60%);
+    background: linear-gradient(to right, #270054 10%, #8688c2 50%, #30256d 60%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -193,7 +193,7 @@
     font-weight: bold;
     font-weight: 700;
     font-family: "Josefin Sans", sans-serif;
-    background: linear-gradient(to right, #30256d 10%, #5807b5 50%, #7717e3 60%);
+    background: linear-gradient(to right, #270054 10%, #8688c2 50%, #30256d 60%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
