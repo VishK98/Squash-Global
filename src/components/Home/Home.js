@@ -209,7 +209,7 @@ function Home() {
                 <div className="row">
                   <div className="col-lg-5 col-md-5 col-sm-12 col-12  d-flex align-items-center">
                     <p className="explorbtn" style={{ marginBottom: "2px" }}>
-                      Explore1
+                      Explore
                     </p>
                     <Link to="/services" style={{ textDecoration: "none" }}>
                       <div
