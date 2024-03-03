@@ -10,9 +10,9 @@ import onHerLip from "../../assets/images/home-banner-new.png";
 import worldwideOffice from "../../assets/images/Home Page Bottom Banner.png";
 import circularText from "../../assets/images/circular-text.png";
 import brandIcon from "../../assets/images/Icons/icons8-bulb.gif";
-import "./BlogSlider";
+// import "./BlogSlider";
 import Card from "./GridCard";
-import BlogSlider from "./BlogSlider";
+// import BlogSlider from "./BlogSlider";
 import PartnerSlider from "./PartnerSlider";
 import ClientSlider from "./ClientsSlider";
 import TAWVideo from "../../assets/new-video.mp4";
@@ -595,7 +595,7 @@ function Home() {
         </div>
       </div>
 
-      <BlogSlider></BlogSlider>
+      {/* <BlogSlider></BlogSlider> */}
       <div className="container mt-4">
         <div className="row">
           <div className="col-lg-10 col-md-12">
