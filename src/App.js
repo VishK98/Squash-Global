@@ -52,16 +52,16 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/blogDetails" element={<BlogDetails />} />
           <Route path="/popup" element={<PopupModal />} />
-          <Route path="/mediaPlanning" element={<MediaPlanning />} />
-          <Route path="/digitalPR" element={<DigitalPR />} />
-          <Route path="/seo" element={<SEO />} />
-          <Route path="/socialMedia" element={<SocialMedia />} />
-          <Route path="/creative" element={<Creative />} />
-          <Route path="/content" element={<Content />} />
-          <Route path="/production" element={<Production />} />
-          <Route path="/websiteDesign" element={<WebsiteDesign />} />
-          <Route path="/programmatics" element={<Programmatics />} />
-          <Route path="/influencer" element={<Influencer />} />
+          <Route path="/services/mediaPlanning" element={<MediaPlanning />} />
+          <Route path="/services/digitalPR" element={<DigitalPR />} />
+          <Route path="/services/seo" element={<SEO />} />
+          <Route path="/services/socialMedia" element={<SocialMedia />} />
+          <Route path="/services/creative" element={<Creative />} />
+          <Route path="/services/content" element={<Content />} />
+          <Route path="/services/production" element={<Production />} />
+          <Route path="/services/websiteDesign" element={<WebsiteDesign />} />
+          <Route path="/services/programmatics" element={<Programmatics />} />
+          <Route path="/services/influencer" element={<Influencer />} />
         </Routes>
         {modalVisible && <PopupModal />}
       </div>

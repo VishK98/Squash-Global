@@ -21,42 +21,42 @@ import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 
 
 function Sector() {
-  const routes = ["mediaPlanning", "digitalPR", "seo", "socialMedia","production", "websiteDesign", "programmatics", "influencer"];
+  const routes = ["services/mediaPlanning", "services/digitalPR", "services/seo", "services/socialMedia","services/production", "services/websiteDesign", "services/programmatics", "services/influencer"];
 
   const services = [
     {
       title: "MEDIA PLANNING AND BUYING",
-      url: mediaPlanning
+      imageUrl: mediaPlanning,
     },
     {
       title: "DIGITAL PR AND ORM",
-      url: DigitalPR
+      imageUrl: DigitalPR
     },
     {
       title: "SEO & SEM",
-      url: SEO
+      imageUrl: SEO
     },
     {
       title: "SOCIAL MEDIA MANAGEMENT",
-      url: socialMedia
+      imageUrl: socialMedia
     },
 
     {
       title: "PRODUCTION",
-      url: Production
+      imageUrl: Production
     },
     {
       title: "WEBSITE DESIGN AND DEVLOPMENT",
-      url: websiteDesign
+      imageUrl: websiteDesign
     },
 
     {
       title: "PROGRAMMATIC ADVERTISING",
-      url: Programmatic
+      imageUrl: Programmatic
     },
     {
       title: "INFLUENCER MARKETING",
-      url: Influencer
+      imageUrl: Influencer
     },
 
   ];
@@ -99,12 +99,12 @@ function Sector() {
          Our Services
       </h2>} animation='slide-up' />
         <div className="row-service">
-          {services.map((image, index) => (
+          {services.map((service, index) => (
             <div className="service-newBox">
               <Link style={{ textDecoration: "none" }} to={`/${routes[index]}`}>
                 <div className="service-space">
-                  <img  className="service-image" src={image.url} />
-                  <p className="service-text">{image.title}</p>
+                  <img  className="service-image" src={service.imageUrl} />
+                  <p className="service-text">{service.title}</p>
                 </div>
               </Link>
             </div>
