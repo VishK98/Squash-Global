@@ -21,6 +21,7 @@ import Production from './components/ServiceDetails/Production';
 import WebsiteDesign from './components/ServiceDetails/WebsiteDesign';
 import Programmatics from './components/ServiceDetails/Programmatics';
 import Influencer from './components/ServiceDetails/Influencer';
+import WhatsappLogo from './components/Whatsapp/Whatsapp';
 
 
 
@@ -64,6 +65,7 @@ function App() {
           <Route path="/services/influencer" element={<Influencer />} />
         </Routes>
         {modalVisible && <PopupModal />}
+        <WhatsappLogo/>
       </div>
       <Footer />
     </Router>

@@ -1,0 +1,14 @@
+.whatsapp-container {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    z-index: 1000;
+    visibility: hidden; /* Hide the icon by default */
+    opacity: 0; /* Make the icon transparent by default */
+    transition: visibility 0s, opacity 0.5s linear; /* Add a smooth transition effect */
+}
+
+.whatsapp-container.show {
+    visibility: visible; /* Show the icon when the "show" class is added */
+    opacity: 1; /* Make the icon fully visible */
+}

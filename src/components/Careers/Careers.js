@@ -16,6 +16,8 @@ function Careers() {
       title: "Jr. Project Manager",
       location: "Mumbai",
       experience: "4-6 years",
+      salary: "4-5 LPA",
+      postDate: "03/05/2024",
       responsibilities: [
         "Project Coordination: Assist in planning, executing, and closing projects while ensuring they are delivered on time and within scope.",
         "Task Management: Oversee tasks, schedules, and resources to meet project goals. Track progress and identify potential issues.",
@@ -34,6 +36,8 @@ function Careers() {
       title: "Sr. Project Manager",
       location: "Kolkata",
       experience: "4-6 years",
+      salary: "4-5 LPA",
+      postDate: "03/05/2024",
       responsibilities: [
         "Project Coordination: Assist in planning, executing, and closing projects while ensuring they are delivered on time and within scope.",
         "Task Management: Oversee tasks, schedules, and resources to meet project goals. Track progress and identify potential issues.",
@@ -52,6 +56,8 @@ function Careers() {
       title: "Jr. Project Manager",
       location: "Mumbai",
       experience: "4-6 years",
+      salary: "4-5 LPA",
+      postDate: "03/05/2024",
       responsibilities: [
         "Project Coordination: Assist in planning, executing, and closing projects while ensuring they are delivered on time and within scope.",
         "Task Management: Oversee tasks, schedules, and resources to meet project goals. Track progress and identify potential issues.",
@@ -265,7 +271,6 @@ function Careers() {
           }
           animation="slide-left"
         />
-
       </div>
       <ImageAnimationUnfold src={teamBreak} alt="Image not found" />
       <div className="container-fluid p-4">
@@ -287,43 +292,37 @@ function Careers() {
                     alt="card image"
                   />
                   <h4 className="card-title mt-3">{job.title}</h4>
-                  <div className="row mt-1">
-                    <div className="col">
+                  <div className="row" style={{ marginLeft: "0px" }}>
+                    <div className="col-6">
                       <p style={{ fontWeight: "500" }}>
-                        Location: {job.location}
+                        Location : {job.location}
                       </p>
                     </div>
-                    <div className="col">
+                    <div className="col-6">
                       <p style={{ fontWeight: "500" }}>
-                        Experience: {job.experience}
+                        Experience : {job.experience}
                       </p>
                     </div>
                   </div>
-                  <div className="row">
-                    <div className="col">
-                      <p
-                        style={{
-                          fontWeight: "500",
-                          marginRight: "30px",
-                        }}
-                      >
-                        Salary: 4-6 LPA{" "}
+                  <div className="row" style={{ marginLeft: "0px" }}>
+                    <div className="col-6">
+                      <p style={{ fontWeight: "500" }}>
+                        Salary : {job.salary}
                       </p>
                     </div>
-                    <div className="col">
-                      <p style={{ fontWeight: "500" }}>Posted on: 10-01-2024</p>
+                    <div className="col-6">
+                      <p style={{ fontWeight: "500" }}>
+                        Posted on : {job.postDate}
+                      </p>
                     </div>
                   </div>
-
-                  <div>
-                    <button
-                      ref={applyNowRef}
-                      className="apply-now-btn mt-3"
-                      onClick={() => handleDetailsClick(index)}
-                    >
-                      {selectedJobIndex === index ? "Close" : "Details"}
-                    </button>
-                  </div>
+                  <button
+                    ref={applyNowRef}
+                    className="apply-now-btn mt-3 mb-2"
+                    onClick={() => handleDetailsClick(index)}
+                  >
+                    {selectedJobIndex === index ? "Close" : "Details"}
+                  </button>
                 </div>
                 <div
                   className="back"
@@ -384,7 +383,10 @@ function Careers() {
           >
             <AnimatedText
               text={
-                <h4 className=" paragraph-text content-box-text mb-5" style={{marginTop: "100px"}}>
+                <h4
+                  className=" paragraph-text content-box-text mb-5"
+                  style={{ marginTop: "100px" }}
+                >
                   We love people with ideas & the thirst to see that idea
                   through.
                 </h4>
