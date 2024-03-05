@@ -595,7 +595,7 @@ function Home() {
         </div>
       </div>
 
-      {/* <BlogSlider></BlogSlider> */}
+      <BlogSlider></BlogSlider>
       <div className="container mt-4">
         <div className="row">
           <div className="col-lg-10 col-md-12">

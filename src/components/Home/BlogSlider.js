@@ -68,7 +68,7 @@ const BlogSlider = () => {
                 </div>
               </div>
             </div>
-            <div className="slide-item ">
+            {/* <div className="slide-item ">
               <div className="slide-content ">
                 <div className="col-lg-6 col-md-6 col-12">
                   <div className="box">
@@ -88,7 +88,7 @@ const BlogSlider = () => {
                   </Link>
                 </div>
               </div>
-            </div>
+            </div> */}
           </Slider>
         </div>
       </div>
