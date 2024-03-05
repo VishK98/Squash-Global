@@ -205,3 +205,14 @@
     background-position: 200% center;
   }
 }
+
+.At-Taw-text {
+  font-size: 55px;
+  font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin-top: -25px;
+  text-align: left;
+  background: linear-gradient(90deg, #000, #30256d, #30256d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

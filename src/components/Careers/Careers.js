@@ -179,7 +179,7 @@ function Careers() {
             <div class="career-sub-heading">
               <h1>Work with a dynamic team and creative minded people.</h1>
             </div>
-            <a href="#latestOpeningSection" className="explorbtn">
+            {/* <a href="#latestOpeningSection" className="explorbtn">
               <div style={{ display: "flex", alignItems: "center" }}>
                 <div class="career-sub-heading">
                   <h1 style={{ fontSize: '30px', fontWeight: "bold" }}>Join us</h1>
@@ -191,18 +191,18 @@ function Careers() {
                   <ImageAnimationUnfold src={downArrow} alt="Image not found" />
                 </div>
               </div>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
       <div className="container-fluid p-4">
-        <AnimatedText
+        {/* <AnimatedText
           text={<h1 className="Color-Text">What to expect at TAW?</h1>}
           animation="slide-up"
-        />
+        /> */}
         <AnimatedText
           text={
-            <h1 className="paragraph-text">
+            <h1 className="At-Taw-text">
               At TAW, we believe in growing together.
             </h1>
           }
@@ -249,7 +249,7 @@ function Careers() {
               animation="slide-left"
             />
           </div>
-          <div className="col-lg-7 col-md-7 col-12 col-sm-12 mt-4 ">
+          <div className="col-lg-7 col-md-7 col-12 col-sm-12 mt-3 mb-1 ">
             <div>
               <ImageAnimationUnfold src={team} alt="Image not found" />
             </div>
@@ -384,7 +384,7 @@ function Careers() {
           >
             <AnimatedText
               text={
-                <h4 className="content-box-text">
+                <h4 className=" paragraph-text content-box-text">
                   We love people with ideas & the thirst to see that idea
                   through.
                 </h4>
@@ -393,7 +393,7 @@ function Careers() {
             />
             <AnimatedText
               text={
-                <h4 className="content-box-text">
+                <h4 className="paragraph-text content-box-text">
                   If you think you can match up to our challenge, give us a
                   shout & we will make it work.
                 </h4>
