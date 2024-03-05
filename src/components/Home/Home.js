@@ -93,15 +93,15 @@ function Home() {
           <div className="col-lg-4 col-12">
             <AnimatedText
               text={<h1 className="framing-text">Framing People</h1>}
-              animation="slide-left"
+              animation="slide-up"
             />
             <AnimatedText
               text={<h1 className="framing-text">Centric</h1>}
-              animation="slide-left"
+              animation="slide-up"
             />
             <AnimatedText
               text={<h1 className="Newstyle-text">Experiences</h1>}
-              animation="slide-left"
+              animation="slide-up"
             />
             <AnimatedText
               text={
@@ -113,7 +113,7 @@ function Home() {
                   innovation and creative communication.
                 </p>
               }
-              animation="slide-left"
+              animation="slide-up"
             />
 
             <p className="explorbtn" style={{ marginTop: "35px" }}>
@@ -321,7 +321,7 @@ function Home() {
                       We're
                     </h2>
                   }
-                  animation="slide-right"
+                  animation="slide-up"
                 />
                 <AnimatedText
                   text={<h2 className="taw-title">TAW</h2>}
@@ -420,11 +420,11 @@ function Home() {
                 text={
                   <h2 className="specialty-text text-lg-center">Where Our</h2>
                 }
-                animation="slide-left"
+                animation="slide-up"
               />
               <AnimatedText
                 text={<h2 className="Lies-title">Specialty Lies</h2>}
-                animation="slide-right"
+                animation="slide-up"
               />
             </div>
           </div>
@@ -449,7 +449,7 @@ function Home() {
               <a>
                 <AnimatedText
                   text={<h3 className=" Color-Text">Social Communication</h3>}
-                  animation="slide-left"
+                  animation="slide-up"
                 />
               </a>
               <div>
@@ -464,7 +464,7 @@ function Home() {
                       <li className="paragraph-text">Influencer Marketing</li>
                     </ul>
                   }
-                  animation="slide-left"
+                  animation="slide-up"
                 />
               </div>
             </div>
@@ -478,7 +478,7 @@ function Home() {
               <a>
                 <AnimatedText
                   text={<h3 className="Color-Text">Creative & Content</h3>}
-                  animation="slide-left"
+                  animation="slide-up"
                 />
               </a>
               <div>
@@ -498,7 +498,7 @@ function Home() {
                       </li>
                     </ul>
                   }
-                  animation="slide-left"
+                  animation="slide-up"
                 />
               </div>
             </div>
@@ -516,7 +516,7 @@ function Home() {
                   text={
                     <h3 className="Color-Text">Organic & Paid Marketing</h3>
                   }
-                  animation="slide-right"
+                  animation="slide-up"
                 />
               </a>
               <div>
@@ -535,7 +535,7 @@ function Home() {
                       <li className="paragraph-text">Programmatic Buying</li>
                     </ul>
                   }
-                  animation="slide-right"
+                  animation="slide-up"
                 />
               </div>
             </div>
@@ -549,7 +549,7 @@ function Home() {
               <a>
                 <AnimatedText
                   text={<h3 className="Color-Text">Technology</h3>}
-                  animation="slide-right"
+                  animation="slide-up"
                 />
               </a>
               <div>
@@ -568,7 +568,7 @@ function Home() {
                       <li className="paragraph-text"> Mobile Application</li>
                     </ul>
                   }
-                  animation="slide-right"
+                  animation="slide-up"
                 />
               </div>
             </div>
@@ -585,12 +585,12 @@ function Home() {
                   What’s the{" "}
                 </h2>
               }
-              animation="slide-left"
+              animation="slide-up"
             />
           </div>
           <AnimatedText
             text={<h2 className="taw-title">Buzz?</h2>}
-            animation="slide-right"
+            animation="slide-up"
           />
         </div>
       </div>
@@ -606,13 +606,13 @@ function Home() {
                     Ready to redefine your{" "}
                   </h2>
                 }
-                animation="slide-left"
+                animation="slide-up"
               />
               <AnimatedText
                 text={
                   <h2 className="brand-title  title ">brand experience?</h2>
                 }
-                animation="slide-right"
+                animation="slide-up"
               />
             </div>
           </div>
