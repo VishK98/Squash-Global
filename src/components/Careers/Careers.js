@@ -384,7 +384,7 @@ function Careers() {
           >
             <AnimatedText
               text={
-                <h4 className=" paragraph-text content-box-text">
+                <h4 className=" paragraph-text content-box-text mb-5" style={{marginTop: "100px"}}>
                   We love people with ideas & the thirst to see that idea
                   through.
                 </h4>
