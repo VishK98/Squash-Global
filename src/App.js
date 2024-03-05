@@ -10,7 +10,6 @@ import Careers from "./components/Careers/Careers";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import BlogDetails from "./components/BlogDetails/BlogDetails";
-import PopupModal from "./components/PopupModal/PopupModal";
 import MediaPlanning from './components/ServiceDetails/MediaPlanning';
 import DigitalPR from './components/ServiceDetails/DigitalPR';
 import SEO from './components/ServiceDetails/SEO';
@@ -52,7 +51,6 @@ function App() {
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blogDetails" element={<BlogDetails />} />
-          <Route path="/popup" element={<PopupModal />} />
           <Route path="/services/mediaPlanning" element={<MediaPlanning />} />
           <Route path="/services/digitalPR" element={<DigitalPR />} />
           <Route path="/services/seo" element={<SEO />} />
@@ -64,7 +62,7 @@ function App() {
           <Route path="/services/programmatics" element={<Programmatics />} />
           <Route path="/services/influencer" element={<Influencer />} />
         </Routes>
-        {modalVisible && <PopupModal />}
+        {/* {modalVisible && <PopupModal />} */}
         <WhatsappLogo/>
       </div>
       <Footer />
