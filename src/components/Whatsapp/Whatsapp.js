@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import WhatsappLogo from '../../assets/images/Icons/372108180_WHATSAPP_ICON_1080.gif';
-import './Whatsapp.css'; 
+import splash from "../../assets/images/Icons/splash.png";
+
+import './Whatsapp.css';
 
 function Whatsapp() {
     const [isVisible, setIsVisible] = useState(false);
@@ -21,11 +23,18 @@ function Whatsapp() {
     };
 
     return (
-        <div className={`whatsapp-container ${isVisible ? 'show' : ''}`}>
-            <a href="https://api.whatsapp.com/send?phone=9952913618" target="_blank" rel="noopener noreferrer">
-                <img height='65px' width='65px' src={WhatsappLogo} alt="WhatsApp Logo" />
-            </a>
-        </div>
+        <>
+         <div className={`whatsapp-container1 ${isVisible ? 'show' : ''}`}>
+         <img width="60" height="60" src={splash} alt="t"/>                        
+            </div>
+            <div className={`whatsapp-container ${isVisible ? 'show' : ''}`}>
+                <a href="https://api.whatsapp.com/send?phone=9952913618" target="_blank" rel="noopener noreferrer">
+                    <img height='55px' width='55px' src={WhatsappLogo} alt="WhatsApp Logo" />
+                </a><br />
+            </div>
+           
+
+        </>
     );
 }
 
