@@ -38,7 +38,7 @@ function Work() {
         </div>
       </div>
       <div className="container mt-lg-5 mt-5">
-        <AnimatedText text={<h4 className="guest-text mb-4">
+        <AnimatedText text={<h4 className="guest-text mb-lg-4">
           Guests are always welcome at our establishment, and we aim to provide them with a memorable experience.
         </h4>} animation='fade-in' />
         <AnimatedText text={<h1 className="text-center partnership-text mt-3 mt-lg-5 mb-lg-5">Building Strong Relationships with Our Valued Clients</h1>

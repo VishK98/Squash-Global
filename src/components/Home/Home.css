@@ -59,53 +59,6 @@ h2.stroke {
   -webkit-text-fill-color: transparent;
 }
 
-@media (max-width: 625px) {
-
-  .specialty-text {
-    -webkit-text-stroke: 1px #000;
-    -webkit-text-fill-color: transparent;
-    font-size: 45px;
-  }
-
-  .creating-text {
-    font-size: 45px;
-    font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    background: linear-gradient(90deg, #000, #30256d, #30256d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .redefine-text {
-    text-align: start;
-    font-weight: bold;
-  }
-
-  .mobile_down_arrow {
-    display: none;
-  }
-
-  .h1.stroke,
-  h2.stroke,
-  .bannertitle h1,
-  .bannertitle h2 {
-    font-size: 50px;
-    line-height: 60px;
-  }
-
-  .but-text {
-    font-size: 35px;
-  }
-
-  .responsive-text {
-    margin-top: 5px;
-  }
-
-  .specialty-title {
-    margin-left: 0px;
-  }
-}
 
 .paragraph-text {
   font-family: 'Manrope', sans-serif;
@@ -435,4 +388,62 @@ h2.stroke {
   background: linear-gradient(90deg, #000, #30256d, #30256d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+
+
+/* mobile view */
+
+@media (max-width: 625px) {
+  .image-text-effect {
+    font-size: 75px;
+  }
+
+  .specialty-text {
+    -webkit-text-stroke: 1px #000;
+    -webkit-text-fill-color: transparent;
+    font-size: 45px;
+  }
+
+  .creating-text {
+    font-size: 45px;
+    font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(90deg, #000, #30256d, #30256d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .redefine-text {
+    text-align: start;
+    font-size: 2rem;
+    text-align: start;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .mobile_down_arrow {
+    display: none;
+  }
+
+  .h1.stroke,
+  h2.stroke,
+  .bannertitle h1,
+  .bannertitle h2 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .but-text {
+    font-size: 35px;
+  }
+
+  .responsive-text {
+    margin-top: 5px;
+  }
+
+  .specialty-title {
+    margin-left: 0px;
+  }
 }

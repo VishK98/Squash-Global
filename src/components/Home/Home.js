@@ -296,7 +296,7 @@ function Home() {
         />
         <AnimatedText
           text={
-            <h4 className="text-center mt-4">
+            <h4 className="text-lg-center mt-4 text-justify" style={{marginLeft: "10px"}}>
               In a world saturated with information, we understand that your
               brand isn't just a product or service—it's a story waiting to be
               told.
@@ -360,7 +360,7 @@ function Home() {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div className="position-relative">
+              <div>
                 <AnimatedText
                   text={
                     <h3 className="redefine-text">
