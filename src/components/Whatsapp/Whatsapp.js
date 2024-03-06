@@ -26,7 +26,7 @@ function Whatsapp() {
          <div className={`whatsapp-container1 ${isVisible ? 'show' : ''}`}>                       
             </div>
             <div className={`whatsapp-container ${isVisible ? 'show' : ''}`}>
-                <a href="https://api.whatsapp.com/send?phone=9952913618" target="_blank" rel="noopener noreferrer">
+                <a href="https://api.whatsapp.com/send?phone=7827058243" target="_blank" rel="noopener noreferrer">
                     <img height='55px' width='55px' src={WhatsappLogo} alt="WhatsApp Logo" />
                 </a><br />
             </div>
