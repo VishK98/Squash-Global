@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import WhatsappLogo from '../../assets/images/Icons/372108180_WHATSAPP_ICON_1080.gif';
-import splash from "../../assets/images/Icons/splash.png";
 
 import './Whatsapp.css';
 
@@ -24,8 +23,7 @@ function Whatsapp() {
 
     return (
         <>
-         <div className={`whatsapp-container1 ${isVisible ? 'show' : ''}`}>
-         <img width="60" height="60" src={splash} alt="t"/>                        
+         <div className={`whatsapp-container1 ${isVisible ? 'show' : ''}`}>                       
             </div>
             <div className={`whatsapp-container ${isVisible ? 'show' : ''}`}>
                 <a href="https://api.whatsapp.com/send?phone=9952913618" target="_blank" rel="noopener noreferrer">
