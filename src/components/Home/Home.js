@@ -468,7 +468,7 @@ function Home() {
                 />
               </div>
             </div>
-            <div style={{ paddingLeft: "80px", paddingTop: "20px" }}>
+            <div className="creative-box">
               <div
                 className="animated-arrow-btn"
                 style={{ marginLeft: "10px", height: "50px", width: "50px" }}
@@ -539,7 +539,7 @@ function Home() {
                 />
               </div>
             </div>
-            <div style={{ paddingLeft: "100px", paddingTop: "20px" }}>
+            <div className="creative-box">
               <div
                 className="animated-arrow-btn"
                 style={{ marginLeft: "10px", height: "50px", width: "50px" }}
@@ -610,7 +610,8 @@ function Home() {
               />
               <AnimatedText
                 text={
-                  <h2 className="brand-title  title ">brand experience?</h2>
+                  <><h2 className="brand-title">brand</h2>
+                  <h2 className="exp-title"> experience?</h2></>
                 }
                 animation="slide-up"
               />
