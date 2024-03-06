@@ -28,7 +28,7 @@ function Work() {
 
   return (
     <>
-    <ImageAnimationUnfold src={ourClients} />
+      <ImageAnimationUnfold src={ourClients} />
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
@@ -37,12 +37,14 @@ function Work() {
           </div>
         </div>
       </div>
-      <div className="container mt-lg-5 mt-3">
-        <AnimatedText text={<h4 className="guest-text mb-lg-4">
+      <div className="container-fluid p-lg-4">
+        <AnimatedText text={<h4 className="guest-text">
           Guests are always welcome at our establishment, and we aim to provide them with a memorable experience.
         </h4>} animation='fade-in' />
-        <AnimatedText text={<h1 className="text-center partnership-text mt-3 mt-lg-5 mb-lg-5">Building Strong Relationships with Our Valued Clients</h1>
-        } animation='slide-up' />
+        <div className="text-lg-center mt-lg-4">
+          <AnimatedText text={<h1 className="partnership-text">Building Strong Relationships with Our Valued Clients</h1>
+          } animation='slide-up' />
+        </div>
         <div
           className="row mt-3 mt-lg-4"
           style={{ justifyContent: "space-between", marginRight: "5px" }}

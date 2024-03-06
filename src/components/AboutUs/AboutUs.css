@@ -80,7 +80,7 @@
 /* mobile view */
 @media only screen and (max-width: 625px) {
     .know-text {
-        font-size: 60px;
+        font-size: 55px;
     }
 
     .about-text {
