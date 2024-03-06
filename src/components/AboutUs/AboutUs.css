@@ -1,80 +1,3 @@
-@media (max-width: 991.98px) {
-
-    .service-video-section h3,
-    .service-video-section h4 {
-        font-size: 24px !important;
-        line-height: 30px !important;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .quote {
-        text-align: left;
-        padding: 0 0 0 6em;
-        line-height: 42px !important;
-    }
-}
-
-.route-text {
-    font-size: 20px;
-    color: grey;
-    text-decoration: none
-}
-
-.aboutUs-heading {
-    font-size: 45px;
-    font-weight: bold;
-    font-family: Times New Roman, Times, serif;
-
-}
-
-.quote {
-    text-align: left;
-    padding: 0 0 0 6em;
-    line-height: 42px !important;
-}
-
-.quote-writer-name {
-    font-size: 25px;
-    font-family: "Manrope Regular";
-    margin-left: -45px;
-    padding-top: 13px;
-    z-index: 1;
-    position: absolute;
-}
-
-
-
-.philosophy-details {
-    font-size: 20px !important;
-}
-
-.phi-bottom-banner {
-    background-image: url(../../assets/images/About\ Us\ Page\ Bottom\ Banner.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-@media screen and (max-width: 768px) {
-    .phi-bottom-banner {
-        background-size: 100% !important;
-    }
-}
-
-
-
-@media only screen and (max-width: 625px) {
-    .aboutUs-heading {
-        font-size: 30px;
-        font-weight: bold;
-    }
-
-    .Whytaw-text{
-        margin-top: -40px;
-    }
-
-}
-
 .about-text {
     font-family: 'Manrope ExtraBold';
     font-size: 40px;
@@ -106,9 +29,6 @@
     font-family: 'Manrope ExtraBold';
 }
 
-.know-text {
-    font-family: 'Manrope ExtraBold';
-}
 
 /* animated text starts */
 .taw-animated-text {
@@ -154,5 +74,16 @@
         stroke-dashoffset: -25%;
         stroke-dasharray: 50% 0;
         stroke-width: 0;
+    }
+}
+
+/* mobile view */
+@media only screen and (max-width: 625px) {
+    .know-text {
+        font-size: 60px;
+    }
+
+    .about-text {
+        font-size: 35px;
     }
 }

@@ -21,9 +21,9 @@ function Philosophy() {
         <div className="row">
           <div className="col-lg-6">
             <div style={{ marginBottom: "-30px" }}>
-              <AnimatedText text="We Know You !" animation="slide-up" className="know-text" />
+              <AnimatedText className="know-text" text="We Know You !" animation="slide-up" />
             </div>
-            <AnimatedText text="You Know Us !" animation="slide-up" className="know-text" />
+            <AnimatedText className="know-text" text="You Know Us !" animation="slide-up"  />
             <AnimatedText text={<h3 className="age-text">In this age of automated conversations, we noticed that the ‘human touch’ had
               sneaked out while no one was looking.</h3>} animation="slide-left" />
             <AnimatedText text={<p className="paragraph-text mt-lg-4">
