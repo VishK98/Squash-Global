@@ -134,7 +134,7 @@ function Sector() {
               marketing strategies, our team is excited to engage with you. Let's
               start a conversation!
             </p>
-            <Link to="/contact" class="btn-flip mt-4" >
+            <Link to="/contact" class="btn-flip mt-lg-4 mt-2" >
               <button class="req-btn"><i class="animation"></i>Request a call back<i class="animation"></i>
               </button>
             </Link>
