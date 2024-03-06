@@ -429,6 +429,25 @@ h2.stroke {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.home-sub-heading {
+  text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    background: linear-gradient(to right, #270054 10%, #8688c2 50%, #30256d 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
+}
 
 
 /* mobile view */
