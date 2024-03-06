@@ -185,27 +185,10 @@ function Careers() {
             <div class="career-sub-heading">
               <h1>Work with a dynamic team and creative minded people.</h1>
             </div>
-            {/* <a href="#latestOpeningSection" className="explorbtn">
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div class="career-sub-heading">
-                  <h1 style={{ fontSize: '30px', fontWeight: "bold" }}>Join us</h1>
-                </div>
-                <div
-                  className="animated-arrow-btn"
-                  style={{ marginLeft: "10px", height: "50px", width: "50px" }}
-                >
-                  <ImageAnimationUnfold src={downArrow} alt="Image not found" />
-                </div>
-              </div>
-            </a> */}
           </div>
         </div>
       </div>
       <div className="container-fluid p-4">
-        {/* <AnimatedText
-          text={<h1 className="Color-Text">What to expect at TAW?</h1>}
-          animation="slide-up"
-        /> */}
         <AnimatedText
           text={
             <h1 className="At-Taw-text">
@@ -377,15 +360,12 @@ function Careers() {
       <div className="container mt-5" ref={formRef}>
         <div className="row">
           <div
-            className=" content-box col-lg-4 col-md-4 col-sm-12 col-12"
-            style={{ padding: "20px" }}
-            ref={formRef}
-          >
+            className="career-box col-lg-4 col-md-4 col-sm-12 col-12"
+            ref={formRef}>
             <AnimatedText
               text={
                 <h4
-                  className=" paragraph-text content-box-text mb-5"
-                  style={{ marginTop: "100px" }}
+                  className="welove-text content-box-text mb-5"
                 >
                   We love people with ideas & the thirst to see that idea
                   through.
@@ -395,7 +375,7 @@ function Careers() {
             />
             <AnimatedText
               text={
-                <h4 className="paragraph-text content-box-text">
+                <h4 className="welove-text content-box-text">
                   If you think you can match up to our challenge, give us a
                   shout & we will make it work.
                 </h4>

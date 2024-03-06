@@ -6,6 +6,13 @@
   color: #30256da2;
 }
 
+.welove-text {
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  color: #000;
+  text-align: justify;
+}
+
 .route-text {
   font-size: 20px;
   color: grey;
@@ -223,6 +230,14 @@
     display: inline-block;
 }
 
+ .career-box{
+  padding: 20px;
+  height: 550px;
+  border-radius: 15px;
+  background-color: #30256d;
+  text-align: center;
+ }
+
 @keyframes textclip {
   to {
     background-position: 200% center;
@@ -246,9 +261,25 @@
    margin-top: -15px;
   }
 
+  .welove-text {
+    margin-top: 40px;
+  
+  }
+
   .At-Taw-text {
   font-size: 38px;
   margin-top: -45px;
   margin-bottom: -55px;
   }
+
+  .career-box{
+    height: 300px;
+    border-radius: 15px;
+    background-color: #30256d;
+    color: #fff;
+    text-align: center;
+    margin-top: -40px;
+
+   }
+  
 }
