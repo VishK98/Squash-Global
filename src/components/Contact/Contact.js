@@ -117,9 +117,9 @@ function Contact() {
                     <span style={{ marginLeft: "10px" }}>
                       <a className="contact-text"
                         style={{ textDecoration: "none", color: "#000" }}
-                        href="mailto:contact@theagencyway.co.in"
+                        href="mailto:connect@theagencyway.co.in"
                       >
-                        contact@theagencyway.co.in
+                        connect@theagencyway.co.in
                       </a>
                     </span>
                   }
