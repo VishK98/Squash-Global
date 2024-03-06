@@ -295,11 +295,11 @@ function Home() {
         </div>
         <AnimatedText
           text={
-            <h4 className="text-lg-center mt-3 text-justify" style={{ marginLeft: "15px" }}>
+            <p className=" home-sub-heading">
               In a world saturated with information, we understand that your
               brand isn't just a product or service - it's a story waiting to be
               told.
-            </h4>
+            </p>
           }
           animation="slide-up"
         />
