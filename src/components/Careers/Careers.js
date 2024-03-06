@@ -265,7 +265,7 @@ function Careers() {
       <div className="container-fluid mt-4 mb-3 p-4">
         <AnimatedText
           text={
-            <h1 className="life-text" style={{ fontWeight: "bold" }}>
+            <h1 className="color-text" style={{ fontWeight: "bold" }}>
               Life at The Agency Way
             </h1>
           }
