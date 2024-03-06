@@ -205,7 +205,7 @@
 }
 
 .blog-heading {
-  font-size: 40px;
+  font-size: 2.5rem;
   margin-top: 30px;
   font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -233,5 +233,8 @@
   .blog-title {
     font-size: 25px;
     text-align: justify;
+  }
+  .blog-heading {
+    font-size: 1.8rem;
   }
 }
