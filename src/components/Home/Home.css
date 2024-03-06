@@ -120,6 +120,11 @@ h2.stroke {
   }
 }
 
+.creative-box {
+  padding-left: 80px;
+  padding-top: 20px;
+}
+
 .zoom-overlay {
   position: absolute;
   top: 10%;
@@ -352,6 +357,7 @@ h2.stroke {
   -webkit-text-fill-color: transparent;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 625px) {
   .stroke-margin {
     margin-left: 0px;
@@ -373,6 +379,14 @@ h2.stroke {
     font-stretch: unset;
   }
 
+=======
+.creative-box {
+  padding-left: 0px;
+  padding-top: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+>>>>>>> 75a318d088836d1d8337a9a30a8eb222e434fc8c
   .Division-title {
     font-size: 75px;
     margin-top: 25px;
@@ -420,6 +434,15 @@ h2.stroke {
   -webkit-text-fill-color: transparent;
 }
 
+.exp-title {
+  font-size: 100px;
+  line-height: 195px;
+  font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  background: linear-gradient(90deg, #000, #30256d, #30256d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 /* mobile view */
@@ -429,10 +452,20 @@ h2.stroke {
     font-size: 75px;
   }
 
+  .Lies-title {
+    font-size: 58px;
+    margin-top: -20px;
+  }
+ 
   .specialty-text {
     -webkit-text-stroke: 1px #000;
     -webkit-text-fill-color: transparent;
     font-size: 45px;
+  }
+
+  .taw-title {
+   margin-bottom: -30px;
+   margin-top: -45px;
   }
 
   .creating-text {
@@ -449,6 +482,18 @@ h2.stroke {
     text-align: start;
     font-size: 35px;
     margin-top: 10px;
+  }
+
+  .brand-title {
+    font-size: 55px;
+    margin-top: -64px;
+  }
+
+  .exp-title {
+    font-size: 55px;
+    margin-top: -150px;
+    margin-bottom: -40px;
+
   }
 
   .mobile_down_arrow {
@@ -474,4 +519,5 @@ h2.stroke {
   .specialty-title {
     margin-left: 0px;
   }
+
 }
