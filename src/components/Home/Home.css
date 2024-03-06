@@ -429,24 +429,24 @@ h2.stroke {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .home-sub-heading {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(to right, #270054 10%, #8688c2 50%, #30256d 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
   text-align: center;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    font-weight: 700;
-    font-family: "Josefin Sans", sans-serif;
-    background: linear-gradient(to right, #270054 10%, #8688c2 50%, #30256d 60%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 1.5s linear infinite;
-    display: inline-block;
+  margin-top: 20px;
 }
 
 
@@ -456,21 +456,21 @@ h2.stroke {
   .image-text-effect {
     font-size: 75px;
   }
-  
+
   .brand-title {
     font-size: 65px;
     margin-top: -62px;
   }
 
   .exp-title {
-  font-size: 65px;
-  margin-top: -150px ;
-  margin-bottom: -40px;
+    font-size: 65px;
+    margin-top: -150px;
+    margin-bottom: -40px;
   }
 
   .Lies-title {
-  margin-top: -10px;
-  margin-bottom: -25px;
+    margin-top: -10px;
+    margin-bottom: -25px;
 
   }
 
@@ -492,8 +492,8 @@ h2.stroke {
 
   .redefine-text {
     text-align: start;
-    font-size: 33px;
-    margin-top: 10px;
+    font-size: 2.5rem;
+    margin-top: 15px;
   }
 
   .mobile_down_arrow {
@@ -518,5 +518,12 @@ h2.stroke {
 
   .specialty-title {
     margin-left: 0px;
+  }
+
+  .home-sub-heading {
+    text-align: start;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: -15px;
   }
 }

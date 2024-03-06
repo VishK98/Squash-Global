@@ -262,7 +262,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="d-flex justify-content-center mb-3 mt-3">
+        <div className="d-flex justify-content-center mt-3">
           <button className="SeeAll-button">
             <div class="svg-wrapper-1">
               <div class="svg-wrapper">
@@ -286,23 +286,25 @@ function Home() {
         <div className="container">
           <AnimatedText
             text={
-              <h3 className="redefine-text mt-lg-5 mt-3">
+              <h3 className="redefine-text mt-lg-5 mt-5">
                 Weaving Narratives, Experiences and Connection.
               </h3>
             }
             animation="slide-down"
           />
         </div>
-        <AnimatedText
-          text={
-            <p className=" home-sub-heading">
-              In a world saturated with information, we understand that your
-              brand isn't just a product or service - it's a story waiting to be
-              told.
-            </p>
-          }
-          animation="slide-up"
-        />
+        <div className="container-fluid">
+          <AnimatedText
+            text={
+              <p className=" home-sub-heading">
+                In a world saturated with information, we understand that your
+                brand isn't just a product or service - it's a story waiting to be
+                told.
+              </p>
+            }
+            animation="slide-up"
+          />
+        </div>
 
         <br />
         <PartnerSlider />
@@ -610,7 +612,7 @@ function Home() {
               <AnimatedText
                 text={
                   <><h2 className="brand-title">brand</h2>
-                  <h2 className="exp-title"> experience?</h2></>
+                    <h2 className="exp-title"> experience?</h2></>
                 }
                 animation="slide-up"
               />
