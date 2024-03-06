@@ -420,6 +420,15 @@ h2.stroke {
   -webkit-text-fill-color: transparent;
 }
 
+.exp-title {
+  font-size: 100px;
+  line-height: 195px;
+  font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  background: linear-gradient(90deg, #000, #30256d, #30256d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 /* mobile view */
@@ -427,6 +436,23 @@ h2.stroke {
 @media (max-width: 625px) {
   .image-text-effect {
     font-size: 75px;
+  }
+  
+  .brand-title {
+    font-size: 65px;
+    margin-top: -62px;
+  }
+
+  .exp-title {
+  font-size: 65px;
+  margin-top: -150px ;
+  margin-bottom: -40px;
+  }
+
+  .Lies-title {
+  margin-top: -10px;
+  margin-bottom: -25px;
+
   }
 
   .specialty-text {
@@ -447,7 +473,7 @@ h2.stroke {
 
   .redefine-text {
     text-align: start;
-    font-size: 35px;
+    font-size: 33px;
     margin-top: 10px;
   }
 
