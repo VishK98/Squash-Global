@@ -248,7 +248,7 @@ function Contact() {
                     required
                   />} animation='slide-up' />
                 </div>
-                <div><div className="d-flex justify-content-center  mb-3 mt-3">
+                <div><div className="d-flex justify-content-center mt-3">
                   <button className="submit-button">
                     <div class="svg-wrapper-1">
                       <div class="svg-wrapper">

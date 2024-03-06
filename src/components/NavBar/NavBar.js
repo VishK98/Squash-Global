@@ -28,6 +28,10 @@ export default function NavBar() {
     setIsMobileNavOpen(false);
   };
 
+  const handleNavLinkClick = () => {
+    setIsMobileNavOpen(false);
+  };
+
   return (
     <div className={`header ${scrolled ? "scrolled" : ""}`}>
       <header className="header nav-wrapper">
@@ -60,6 +64,7 @@ export default function NavBar() {
                     aria-current="page"
                     to="/"
                     style={{ color: location.pathname === "/" ? "white" : "black" }}
+                    onClick={handleNavLinkClick}
                   >
                     Home
                   </Link>
@@ -69,6 +74,7 @@ export default function NavBar() {
                     className="nav-link"
                     to="/about-us"
                     style={{ color: location.pathname === "/" ? "white" : "black" }}
+                    onClick={handleNavLinkClick}
                   >
                     About
                   </Link>
@@ -78,6 +84,7 @@ export default function NavBar() {
                     className="nav-link"
                     to="/clients"
                     style={{ color: location.pathname === "/" ? "white" : "black" }}
+                    onClick={handleNavLinkClick}
                   >
                     Clients
                   </Link>
@@ -87,15 +94,17 @@ export default function NavBar() {
                     className="nav-link"
                     to="/services"
                     style={{ color: location.pathname === "/" ? "white" : "black" }}
+                    onClick={handleNavLinkClick}
                   >
                     Services
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link navcolor"
+                    className="nav-link"
                     to="/blog"
                     style={{ color: location.pathname === "/" ? "white" : "black" }}
+                    onClick={handleNavLinkClick}
                   >
                     Blog
                   </Link>
@@ -105,6 +114,7 @@ export default function NavBar() {
                     className="nav-link"
                     to="/careers"
                     style={{ color: location.pathname === "/" ? "white" : "black" }}
+                    onClick={handleNavLinkClick}
                   >
                     Careers
                   </Link>
@@ -114,6 +124,7 @@ export default function NavBar() {
                     className="nav-link"
                     to="/contact"
                     style={{ color: location.pathname === "/" ? "white" : "black" }}
+                    onClick={handleNavLinkClick}
                   >
                     Contact
                   </Link>
