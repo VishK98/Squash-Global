@@ -174,7 +174,7 @@ function Careers() {
         />
       </div>
       <div className="container-fluid mt-lg-4 mt-3 p-4">
-        <div class="career-heading">
+        <div class="start-heading">
           <AnimatedText
             text={<h1>Start your journey in TAW</h1>}
             animation="slide-up"
@@ -265,7 +265,7 @@ function Careers() {
       <div className="container-fluid mt-4 mb-3 p-4">
         <AnimatedText
           text={
-            <h1 className="Color-Text" style={{ fontWeight: "bold" }}>
+            <h1 className="life-text" style={{ fontWeight: "bold" }}>
               Life at The Agency Way
             </h1>
           }
