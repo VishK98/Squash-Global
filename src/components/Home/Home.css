@@ -7,6 +7,10 @@ h2.stroke {
   font-size: 150px;
 }
 
+.stroke-margin {
+  margin-left: 30px;
+}
+
 .specialty-text {
   -webkit-text-stroke: 1px #000;
   -webkit-text-fill-color: transparent;
@@ -166,14 +170,17 @@ h2.stroke {
   padding: 30px;
 }
 
-.video-display {
-  height: 100%;
+.video-main {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
 }
 
 .video-banner {
   width: 100%;
   height: 100%;
-
 }
 
 .submit-button {
@@ -345,7 +352,27 @@ h2.stroke {
   -webkit-text-fill-color: transparent;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 625px) {
+  .stroke-margin {
+    margin-left: 0px;
+  }
+
+  .video-main {
+    width: 100%;
+    height: 70vh;
+    object-fit: fill;
+  }
+
+  .Lies-title {
+    font-size: 50px;
+    font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(90deg, #000, #30256d, #30256d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-stretch: unset;
+  }
+
   .Division-title {
     font-size: 75px;
     margin-top: 25px;
@@ -357,6 +384,8 @@ h2.stroke {
     font-stretch: unset;
   }
 
+
+
   .taw-title {
     font-size: 75px;
     line-height: 195px;
@@ -366,6 +395,7 @@ h2.stroke {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-stretch: unset;
+    margin-bottom: -40px;
   }
 }
 
@@ -417,9 +447,7 @@ h2.stroke {
 
   .redefine-text {
     text-align: start;
-    font-size: 2rem;
-    text-align: start;
-    margin-left: 10px;
+    font-size: 35px;
     margin-top: 10px;
   }
 

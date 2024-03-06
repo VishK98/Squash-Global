@@ -69,7 +69,7 @@ function Home() {
   return (
     <>
       <video
-        className="video-display video-main"
+        className="video-main"
         ref={videoRef}
         autoPlay
         loop
@@ -84,9 +84,9 @@ function Home() {
         className="container-fluid p-lg-4"
         style={{
           marginTop: `${marginTop - marginTop * 0.09}px`,
-          "@media (max-width: 767px)": {
-            marginTop: `${marginTop - marginTop * 1}px`,
-          },
+          // "@media (max-width: 625px)": {
+          //   marginTop: "50px"
+          // },
         }}
       >
         <div className="row">
@@ -136,13 +136,10 @@ function Home() {
       </div>
       <div className="container-fluid">
         <div className="row">
-          <div
-            className="col-lg-9 col-md-9 col-12"
-            style={{ paddingLeft: "50px" }}
-          >
+          <div className="col-lg-8 col-md-8 col-12 stroke-margin">
             <AnimatedText
               text={
-                <h2 className="stroke" style={{ marginBottom: "-30px" }}>
+                <h2 className="stroke" style={{ marginBottom: "-35px" }}>
                   Pixels to
                 </h2>
               }
@@ -286,19 +283,21 @@ function Home() {
             <span>See All</span>
           </button>
         </div>
+        <div className="container">
+          <AnimatedText
+            text={
+              <h3 className="redefine-text mt-lg-5 mt-3">
+                Weaving Narratives, Experiences and Connection.
+              </h3>
+            }
+            animation="slide-down"
+          />
+        </div>
         <AnimatedText
           text={
-            <h1 className="redefine-text mt-5">
-              Weaving Narratives, Experiences and Connection.
-            </h1>
-          }
-          animation="slide-down"
-        />
-        <AnimatedText
-          text={
-            <h4 className="text-lg-center mt-4 text-justify" style={{marginLeft: "10px"}}>
+            <h4 className="text-lg-center mt-3 text-justify" style={{ marginLeft: "15px" }}>
               In a world saturated with information, we understand that your
-              brand isn't just a product or service—it's a story waiting to be
+              brand isn't just a product or service - it's a story waiting to be
               told.
             </h4>
           }
@@ -336,7 +335,7 @@ function Home() {
                     text={
                       <p className="paragraph-text">
                         TAW-the agency way is more than just a marketing agency.
-                         We are the architects of brand
+                        We are the architects of brand
                         experiences, designing stories that resonate with the
                         brand’s audience. At TAW, we provide customize solutions
                         and expertise to unique business needs making us the
