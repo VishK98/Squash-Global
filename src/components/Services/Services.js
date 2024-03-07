@@ -25,38 +25,41 @@ function Sector() {
 
   const services = [
     {
-      title: "MEDIA PLANNING AND BUYING",
-      imageUrl: mediaPlanning,
-    },
-    {
-      title: "DIGITAL PR AND ORM",
-      imageUrl: DigitalPR
-    },
-    {
-      title: "SEO & SEM",
-      imageUrl: SEO
-    },
-    {
-      title: "SOCIAL MEDIA MANAGEMENT",
-      imageUrl: socialMedia
-    },
-
-    {
-      title: "PRODUCTION",
-      imageUrl: Production
-    },
-    {
-      title: "WEBSITE DESIGN AND DEVLOPMENT",
+      title: "Technology ",
+      // imageUrl: mediaPlanning,
       imageUrl: websiteDesign
     },
+    {
+      title: "Design",
+      // imageUrl: DigitalPR
+      imageUrl: mediaPlanning
+    },
+    {
+      title: "Social Media",
+      imageUrl: socialMedia
+    },
+    {
+      title: "SEO ",
+      imageUrl: SEO
+    },
 
     {
-      title: "PROGRAMMATIC ADVERTISING",
+      title: "Paid Ads",
+      // imageUrl: Production
       imageUrl: Programmatic
     },
     {
-      title: "INFLUENCER MARKETING",
+      title: "PR & ORM",
+      imageUrl: DigitalPR
+    },
+
+    {
+      title: "Influencer Marketing",
       imageUrl: Influencer
+    },
+    {
+      title: "Film & Photography",
+      imageUrl: Production
     },
 
   ];
