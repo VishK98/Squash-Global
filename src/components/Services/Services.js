@@ -104,12 +104,12 @@ function Sector() {
         <div className="row-service">
           {services.map((service, index) => (
             <div className="service-newBox">
-              <Link style={{ textDecoration: "none" }} to={`/${routes[index]}`}>
+              {/* <Link style={{ textDecoration: "none" }} to={`/${routes[index]}`}> */}
                 <div className="service-space">
                   <img  className="service-image" src={service.imageUrl} />
                   <p className="service-text">{service.title}</p>
                 </div>
-              </Link>
+              {/* </Link> */}
             </div>
           ))}
         </div>

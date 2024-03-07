@@ -218,21 +218,25 @@ function Contact() {
                     <option value="Digital PR And ORM">
                       Digital PR And ORM
                     </option>
-                    <option value="SEO & SEM">
-                      SEO & SEM</option>
-                    <option value="Creative">
-                      Creative
-                    </option>
+                    <option value="SEO & SEM">SEO & SEM</option>
+                    <option value="Creative">Creative</option>
                     <option value="Design and Development">
-                      Design and Development
+                      Social Media Management
                     </option>
-                    <option value="Content">
-                      Content
-                    </option>
-                    <option value="Production">Production</option>
+                    <option value="Content">Content</option>
+                    <option value="Film & Photography">Film & Photography</option>
                     <option value="Website Design And Devlopment">
-                      Website Design And Devlopment</option>
-                    <option value="Influencer Marketing">Influencer Marketing</option>
+                      Website Design And Devlopment
+                    </option>
+                    <option value="Influencer Marketing">
+                      Influencer Marketing
+                    </option>
+                    <option value="Social Media Marketing">
+                      Social Media Marketing
+                    </option>
+                    <option value="Paid Ads">
+                      Paid Ads
+                    </option>
                   </select>} animation='slide-up' />
                   <AnimatedText text={<label>Write something about yourself</label>
                   } animation='slide-up' />
