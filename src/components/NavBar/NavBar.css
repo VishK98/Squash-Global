@@ -1,15 +1,7 @@
 
 .header {
-  /* width: 100%;
   position: sticky;
   top: 0;
-  background-color: transparent;
-  z-index: 10000;
-  transition: background-color 0.3s ease, color 0.3s ease; */
-  position: sticky;
-  top: 0;
-  /* left: 0; */
-  /* width: 100%; */
   z-index: 10000; 
   background-color: transparent;
   transition: background-color 0.3s ease, color 0.3s ease;
