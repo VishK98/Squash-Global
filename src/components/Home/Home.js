@@ -81,13 +81,10 @@ function Home() {
       </video>
 
       <div
-        className="container-fluid p-lg-4"
-        style={{
-          marginTop: `${marginTop - marginTop * 0.09}px`,
-          // "@media (max-width: 625px)": {
-          //   marginTop: "50px"
-          // },
-        }}
+        className="container-fluid p-lg-5"
+        // style={{
+        //   marginTop: `${marginTop - marginTop * 0.09}px`,
+        // }}
       >
         <div className="row">
           <div className="col-lg-4 col-12">
