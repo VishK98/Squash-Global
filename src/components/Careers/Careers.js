@@ -357,7 +357,7 @@ function Careers() {
           ))}
         </div>
       </div>
-      <div className="container mt-5" ref={formRef}>
+      <div className="container " ref={formRef}>
         <div className="row">
           <div
             className="career-box col-lg-4 col-md-4 col-sm-12 col-12"
