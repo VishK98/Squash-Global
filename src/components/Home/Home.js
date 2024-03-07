@@ -83,7 +83,7 @@ function Home() {
       <div
         className="container-fluid p-lg-5"
         style={{
-          marginTop: `${marginTop - marginTop * 0.09}px`,
+          marginTop: `${marginTop - marginTop * 0.10}px`,
         }}
       >
         <div className="row">
