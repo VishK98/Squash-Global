@@ -411,7 +411,7 @@ h2.stroke {
 }
 
 .brand-title {
-  font-size: 100px;
+  font-size: 115px;
   line-height: 195px;
   font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -421,8 +421,9 @@ h2.stroke {
 }
 
 .exp-title {
-  font-size: 100px;
+  font-size: 115px;
   line-height: 195px;
+  margin-top: -104px;
   font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
   font-weight: bold;
   background: linear-gradient(90deg, #000, #30256d, #30256d);
