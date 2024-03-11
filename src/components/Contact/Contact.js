@@ -1,31 +1,40 @@
-
 import React, { useState } from "react";
 import ScrollToTopButton from '../TopButton/TopButton';
 import contact from "../../assets/images/Contact Us banner.jpg";
 import AnimatedText from '../Animations/TextAnimation';
 import "./Contact.css";
 import axios from 'axios';
-import ImageAnimationFade from "../Animations/ImageAnimationFade";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
-
+import PopupModal from "../PopupModal/PopupModal";
+import BASE_URL from "../../utils/api"
 
 function Contact() {
+  const [modalShow, setModalShow] = useState(false);
+  const [apiResponse, setApiResponse] = useState(null);
   const [formData, setFormData] = useState({
-    fullName: "",
+    name: "",
     email: "",
-    state: "",
-    contactNumber: "",
-    about: ""
+    contact: "",
+    service: "",
+    message: "",
   });
 
   const handleSubmit = async event => {
     event.preventDefault();
-    console.log('First', formData);
-    try {
-      const response = await axios.post('http://localhost:8000/api/contactUs', formData);
-      console.log('Response from server:', response.data);
-    } catch (error) {
-      console.error('Error submitting form:', error);
+    // Perform your form validation here
+    if (formData.name && formData.email && formData.contact && formData.message && formData.service !== "selected") {
+      try {
+        setModalShow(true);
+        const response = await axios.post(`${BASE_URL}contactUs`, formData);
+        console.log('Response from server:', response.data);
+        // setModalShow(true);
+        setApiResponse(response.data); // Save API response
+        setModalShow(true); // Show modal
+      } catch (error) {
+        console.error('Error submitting form:', error);
+      }
+    } else {
+      alert("Please fill out all fields and select a service.");
     }
   };
 
@@ -37,15 +46,6 @@ function Contact() {
     }));
   };
 
-
-
-  // Create a state to manage the selected value
-  const [selectedService, setSelectedService] = useState("selected");
-
-  // Handle changes to the selected value
-  const handleServiceChange = (event) => {
-    setSelectedService(event.target.value);
-  };
   const mapUrl = `https://www.google.com/maps/search/?api=1&query=${28.498540},${77.088620}`;
 
   const handleMapClick = () => {
@@ -54,10 +54,11 @@ function Contact() {
 
   return (
     <>
-      <div className="full-screen-image" > <ImageAnimationUnfold src={contact} alt="Image not found" style={{ width: "100%", height: "100%", objectFit: "fill" }}/></div>
+      <div className="full-screen-image">
+        <ImageAnimationUnfold src={contact} alt="Image not found" style={{ width: "100%", height: "100%", objectFit: "fill" }} />
+      </div>
       <div className="container">
-      <AnimatedText text={<h1 className="Color-Text mt-3">Let’s connect us</h1>
-            } animation="slide-left" />
+        <AnimatedText text={<h1 className="Color-Text mt-3">Let’s connect us</h1>} animation="slide-left" />
       </div>
 
       <div className="container mt-3 mb-5">
@@ -90,7 +91,7 @@ function Contact() {
                 <div style={{ height: "45px", width: "40px" }}>
                   <ImageAnimationUnfold src='https://img.icons8.com/pastel-glyph/64/marker--v1.png' alt="Image not found" />
                 </div>
-                <AnimatedText text={<h2 className="india-text"style={{marginLeft: "5px"}}>Find us on the map</h2>
+                <AnimatedText text={<h2 className="india-text" style={{ marginLeft: "5px" }}>Find us on the map</h2>
                 } animation="slide-up" />
               </a>
               <p className="phone mt-3" style={{ display: "flex", alignItems: "center" }}>
@@ -130,14 +131,10 @@ function Contact() {
             </div>
           </div>
           <div className="col-lg-6 offset-lg-1 pt-lg-4">
-            <div
-              className="formcol main-contact-form topslide"
-            >
-              <AnimatedText text={<h1 className="Color-Text">
-                Catch up with us
-              </h1>
-              } animation="slide-up" />
+            <div className="formcol main-contact-form topslide">
+              {/* Contact form */}
               <form onSubmit={handleSubmit}>
+                {/* Form fields */}
                 <div id="contactForm">
                   <AnimatedText text={<label>
                     Full Name
@@ -145,8 +142,8 @@ function Contact() {
                   </label>} animation='slide-up' />
                   <AnimatedText text={<input
                     type="text"
-                    name="fullName"
-                    value={formData.fullName}
+                    name="name"
+                    value={formData.name}
                     onChange={handleChange}
                     placeholder="Type here"
                     autoComplete="off"
@@ -168,23 +165,6 @@ function Contact() {
                     required
                   />
                   } animation='slide-up' />
-                  <div className="mt-3">
-                    <AnimatedText text={<label>
-                      Company Name
-                      <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
-                    </label>} animation='slide-up' />
-
-                    <AnimatedText text={<input
-                      type="text"
-                      name="state"
-                      value={formData.state}
-                      onChange={handleChange}
-                      placeholder="Type here"
-                      autoComplete="off"
-                      className="form-field"
-                      required
-                    />} animation='slide-up' />
-                  </div>
                   <AnimatedText text={<label className="mt-3">
                     Contact number
                     <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
@@ -192,8 +172,8 @@ function Contact() {
 
                   <AnimatedText text={<input
                     type="tel"
-                    name="contactNumber"
-                    value={formData.contactNumber}
+                    name="contact"
+                    value={formData.contact}
                     onChange={handleChange}
                     placeholder="+91 9900000088"
                     autoComplete="off"
@@ -204,47 +184,38 @@ function Contact() {
                   <AnimatedText text={<label htmlFor="service">Choose a service <sup style={{ color: "red", marginLeft: "5px", fontSize: "12px" }}>*</sup></label>
                   } animation='slide-up' />
 
-                  <AnimatedText text={<select
-                    type="text"
-                    name="service"
-                    placeholder="Type here"
-                    autoComplete="off"
-                    className="form-field mb-3"
-                  >
-                    <option value="selected">Select</option>
-                    <option value="Media Planning And Buying">
-                      Media Planning And Buying
-                    </option>
-                    <option value="Digital PR And ORM">
-                      Digital PR And ORM
-                    </option>
-                    <option value="SEO & SEM">SEO & SEM</option>
-                    <option value="Creative">Creative</option>
-                    <option value="Design and Development">
-                      Social Media Management
-                    </option>
-                    <option value="Content">Content</option>
-                    <option value="Film & Photography">Film & Photography</option>
-                    <option value="Website Design And Devlopment">
-                      Website Design And Devlopment
-                    </option>
-                    <option value="Influencer Marketing">
-                      Influencer Marketing
-                    </option>
-                    <option value="Social Media Marketing">
-                      Social Media Marketing
-                    </option>
-                    <option value="Paid Ads">
-                      Paid Ads
-                    </option>
-                  </select>} animation='slide-up' />
-                  <AnimatedText text={<label>Write something about yourself</label>
+                  <AnimatedText text={
+                    <select
+                      type="text"
+                      name="service"
+                      placeholder="Type here"
+                      autoComplete="off"
+                      className="form-field mb-3"
+                      value={formData.service}
+                      onChange={handleChange}
+                    >
+                      <option value="selected">Select</option>
+                      <option value="Media Planning And Buying">Media Planning And Buying</option>
+                      <option value="Digital PR And ORM">Digital PR And ORM</option>
+                      <option value="SEO & SEM">SEO & SEM</option>
+                      <option value="Creative">Creative</option>
+                      <option value="Design and Development">Social Media Management</option>
+                      <option value="Content">Content</option>
+                      <option value="Film & Photography">Film & Photography</option>
+                      <option value="Website Design And Devlopment">Website Design And Devlopment</option>
+                      <option value="Influencer Marketing">Influencer Marketing</option>
+                      <option value="Social Media Marketing">Social Media Marketing</option>
+                      <option value="Paid Ads">Paid Ads</option>
+                    </select>
+
+                  } animation='slide-up' />
+                  <AnimatedText text={<label>Write something message yourself</label>
                   } animation='slide-up' />
 
                   <AnimatedText text={<input
                     type="text"
-                    name="about"
-                    value={formData.about}
+                    name="message"
+                    value={formData.message}
                     onChange={handleChange}
                     placeholder="Type here"
                     autoComplete="off"
@@ -252,31 +223,21 @@ function Contact() {
                     required
                   />} animation='slide-up' />
                 </div>
-                <div><div className="d-flex justify-content-center mt-3">
-                  <button className="submit-button">
-                    <div class="svg-wrapper-1">
-                      <div class="svg-wrapper">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          width="35"
-                          height="35"
-                        >
-                          <path fill="none" d="M0 0h24v24H0z"></path>
-                          <path
-                            fill="currentColor"
-                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                          ></path>
-                        </svg>
-                      </div>
+                <button className="submit-button mt-lg-5 mt-3" type="submit" style={{ marginLeft: "200px" }}>
+                  <div className="svg-wrapper-1">
+                    <div className="svg-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                      </svg>
                     </div>
-                    <span>Submit</span>
-                  </button>
-                </div>
-                </div>
+                  </div>
+                  <span>Submit</span>
+                </button>
+                <PopupModal show={modalShow} onHide={() => setModalShow(false)} apiResponse={apiResponse}
+                />
               </form>
             </div>
-
           </div>
         </div>
       </div>
