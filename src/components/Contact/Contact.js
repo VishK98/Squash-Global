@@ -21,15 +21,28 @@ function Contact() {
 
   const handleSubmit = async event => {
     event.preventDefault();
-    // Perform your form validation here
     if (formData.name && formData.email && formData.contact && formData.message && formData.service !== "selected") {
       try {
         setModalShow(true);
         const response = await axios.post(`${BASE_URL}contactUs`, formData);
-        console.log('Response from server:', response.data);
-        // setModalShow(true);
-        setApiResponse(response.data); // Save API response
-        setModalShow(true); // Show modal
+        // console.log('Response from server:', response.data);
+        setApiResponse(response.data); 
+        console.log(response.data.success);
+
+        if(response.data.success){
+          console.log(response.data.success);
+
+          const resetValue = {
+            name: "",
+            email: "",
+            contact: "",
+            service: "",
+            message: "",
+          };
+          setFormData(resetValue);
+        }
+        setModalShow(true);
+  
       } catch (error) {
         console.error('Error submitting form:', error);
       }
