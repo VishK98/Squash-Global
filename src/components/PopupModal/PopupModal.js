@@ -16,12 +16,6 @@ function PopupModal({ show, onHide, apiResponse }) {
             <div className="modal-body">
                 <div className="close-btn" onClick={onHide}></div>
                 <div>
-                    {/* <div className="loading">
-                        <svg width="64px" height="48px">
-                            <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="back"></polyline>
-                            <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="front"></polyline>
-                        </svg>
-                    </div> */}
                     <div class="flex">
                         <div className={`loader ${!loading ? "done" : ""}`}>
                             <div className="tick">&#10004;</div>
