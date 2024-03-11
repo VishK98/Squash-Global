@@ -25,13 +25,9 @@ function Contact() {
       try {
         setModalShow(true);
         const response = await axios.post(`${BASE_URL}contactUs`, formData);
-        // console.log('Response from server:', response.data);
-        setApiResponse(response.data); 
-        console.log(response.data.success);
-
+        // setApiResponse(response.data); 
         if(response.data.success){
-          console.log(response.data.success);
-
+          // console.log(response.data.success);
           const resetValue = {
             name: "",
             email: "",
