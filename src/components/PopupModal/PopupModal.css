@@ -1,4 +1,3 @@
-
 .modal-body {
     width: 100%;
     height: 350px;
@@ -135,17 +134,27 @@
     animation: loading 1s infinite;
 }
 
-.tick {
+.loader-done {
+    position: relative;
+    width: 50pt;
+    height: 50pt;
+    border-radius: 100%;
+    border: #6767fa 4pt solid;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+}
+
+.loader-done::after {
+    content: "🗸";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    color: #6767fa;
+    font-size: 32px;
+    font-weight: bolder;
+    transform-origin: bottom right;
+    animation: drawTick 0.5s forwards;
 }
 
-.loader.done .tick {
-    opacity: 1;
-    font-size: 30px;
-    color: #6767fa;
-}

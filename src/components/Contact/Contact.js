@@ -3,14 +3,14 @@ import ScrollToTopButton from '../TopButton/TopButton';
 import contact from "../../assets/images/Contact Us banner.jpg";
 import AnimatedText from '../Animations/TextAnimation';
 import "./Contact.css";
-import axios from 'axios';
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 import PopupModal from "../PopupModal/PopupModal";
-import BASE_URL from "../../utils/api"
+import contactUs from "../../utils/api";
 
 function Contact() {
   const [modalShow, setModalShow] = useState(false);
   const [apiResponse, setApiResponse] = useState(null);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -24,10 +24,11 @@ function Contact() {
     if (formData.name && formData.email && formData.contact && formData.message && formData.service !== "selected") {
       try {
         setModalShow(true);
-        const response = await axios.post(`${BASE_URL}contactUs`, formData);
-        // setApiResponse(response.data); 
-        if(response.data.success){
-          // console.log(response.data.success);
+        const response = await contactUs(formData);
+        // console.log("Response:", response.success);
+        if (response.success) {
+          setApiResponse(response);
+          setModalShow(true);
           const resetValue = {
             name: "",
             email: "",
@@ -37,8 +38,6 @@ function Contact() {
           };
           setFormData(resetValue);
         }
-        setModalShow(true);
-  
       } catch (error) {
         console.error('Error submitting form:', error);
       }
