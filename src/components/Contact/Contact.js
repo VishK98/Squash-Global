@@ -5,7 +5,8 @@ import AnimatedText from '../Animations/TextAnimation';
 import "./Contact.css";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 import PopupModal from "../PopupModal/PopupModal";
-import contactUs from "../../utils/api";
+import { contactUs } from "../../utils/api";
+import { contactUsMail } from "../../utils/api";
 
 function Contact() {
   const [modalShow, setModalShow] = useState(false);
@@ -19,14 +20,21 @@ function Contact() {
     message: "",
   });
 
-  const handleSubmit = async event => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    if (formData.name && formData.email && formData.contact && formData.message && formData.service !== "selected") {
+    if (
+      formData.name &&
+      formData.email &&
+      formData.contact &&
+      formData.message &&
+      formData.service !== "selected"
+    ) {
       try {
         setModalShow(true);
         const response = await contactUs(formData);
         // console.log("Response:", response.success);
         if (response.success) {
+          await sendMail(formData); // Wait for sendMail() to complete
           setApiResponse(response);
           setModalShow(true);
           const resetValue = {
@@ -39,12 +47,22 @@ function Contact() {
           setFormData(resetValue);
         }
       } catch (error) {
-        console.error('Error submitting form:', error);
+        console.error("Error submitting form for admin:", error);
       }
     } else {
       alert("Please fill out all fields and select a service.");
     }
   };
+
+  const sendMail = async (formData) => { // Pass formData as an argument
+    try {
+      const response = await contactUsMail(formData);
+      console.log(`Mail response ==> ${response.data}`);
+    } catch (error) {
+      console.error("Error submitting form for mail:", error);
+    }
+  };
+
 
   const handleChange = (event) => {
     const { name, value } = event.target;
