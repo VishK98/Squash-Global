@@ -21,6 +21,7 @@ import WebsiteDesign from './components/ServiceDetails/WebsiteDesign';
 import Programmatics from './components/ServiceDetails/Programmatics';
 import Influencer from './components/ServiceDetails/Influencer';
 import WhatsappLogo from './components/Whatsapp/Whatsapp';
+import BlogDetails2 from './components/BlogDetails/BlogDetails2';
 
 
 
@@ -51,6 +52,7 @@ function App() {
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blogDetails" element={<BlogDetails />} />
+          <Route path="/blogDetails2" element={<BlogDetails2 />} />
           <Route path="/services/mediaPlanning" element={<MediaPlanning />} />
           <Route path="/services/digitalPR" element={<DigitalPR />} />
           <Route path="/services/seo" element={<SEO />} />

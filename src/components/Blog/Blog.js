@@ -15,6 +15,7 @@ function Blog() {
       title: "How Changes in Social Media Algorithms Are Influencing Content Strategy and What Marketers Need to Know to Stay Ahead",
       description:
         "One of the building blocks of a business's success is copywriting. Even if you are not in the marketing field, you are surrounded by ad copies everywhere.",
+      route: '/blogDetails'
     },
     {
       url: blogImage2,
@@ -22,6 +23,8 @@ function Blog() {
         "The Role of Infographics in Marketing: How to Use Them to Boost Your Brand",
       description:
         "In simple terms, infographics are like “one picture worth a thousand words. The main purpose of infographics is to make the content easy to consume for readers.",
+      route: '/blogDetails2'
+
     },
   ];
   return (
@@ -55,7 +58,7 @@ function Blog() {
                   <div className="inner-content">
                     <AnimatedText text={<h6 className="blogs-title mt-4">{image.title}</h6>
                     } animation='slide-up' />
-                    <Link to="/blogDetails" class="btn-flip mt-4" data-back="Read more" data-front="Read more"></Link>
+                    <Link to={image.route} class="btn-flip mt-4" data-back="Read more" data-front="Read more"></Link>
                   </div>
                 </div>
               </div>
