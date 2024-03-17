@@ -16,7 +16,7 @@ import BlogSlider from "./BlogSlider";
 import PartnerSlider from "./PartnerSlider";
 import ClientSlider from "./ClientsSlider";
 import TAWVideo from "../../assets/new-video.mp4";
-import bannerVideo from "../../assets/Banner Video.mp4";
+import bannerVideo from "../../assets/Banner Video-1.mp4";
 import rigthArrow from "../../assets/images/Icons/-right-arrow.png";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 
