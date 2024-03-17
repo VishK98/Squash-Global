@@ -20,7 +20,7 @@ function Blog() {
     {
       url: blogImage2,
       title:
-        "The Role of Infographics in Marketing: How to Use Them to Boost Your Brand",
+        "How Artificial Intelligence is Revolutionizing Advertising, From Personalized Targeting to Predictive Analytics",
       description:
         "In simple terms, infographics are like “one picture worth a thousand words. The main purpose of infographics is to make the content easy to consume for readers.",
       route: '/blogDetails2'
