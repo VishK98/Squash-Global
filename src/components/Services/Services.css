@@ -272,13 +272,8 @@
   }
 
   .service-text {
-  display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-    
-   
+  display: inline-block;
+   color: #fff;
   }
 
   .service-image {
