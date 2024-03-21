@@ -51,8 +51,8 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/blogDetails" element={<BlogDetails />} />
-          <Route path="/blogDetails2" element={<BlogDetails2 />} />
+          <Route path="/How Changes in Social Media Algorithms" element={<BlogDetails />} />
+          <Route path="/How Artificial Intelligence is Revolutionizing Advertising" element={<BlogDetails2 />} />
           <Route path="/services/mediaPlanning" element={<MediaPlanning />} />
           <Route path="/services/digitalPR" element={<DigitalPR />} />
           <Route path="/services/seo" element={<SEO />} />
