@@ -360,7 +360,7 @@ h2.stroke {
   }
 
   .video-main {
-    width: 100%;
+    width: 0%;
     height: 70vh;
     object-fit: fill;
   }
