@@ -271,6 +271,12 @@
     margin-bottom: 10px;
   }
 
+  .service-text-parent{
+    display: flex;
+    align-items: center;
+    float: right;
+  }
+
   .service-text {
   display: inline-block;
    color: #fff;
