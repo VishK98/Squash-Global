@@ -107,7 +107,7 @@ function Sector() {
               {/* <Link style={{ textDecoration: "none" }} to={`/${routes[index]}`}> */}
                 <div className="service-space">
                   <img  className="service-image" src={service.imageUrl} />
-                  <p className="service-text">{service.title}</p>
+                  <div className='service-text-parent'><p className="service-text">{service.title}</p></div>
                 </div>
               {/* </Link> */}
             </div>
