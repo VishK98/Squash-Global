@@ -272,14 +272,12 @@
   }
 
   .service-text {
-  padding: 43px;
-        font-weight: bold;
-        font-size: 23px;
-        color: #fff;
-        display: flex;
-        margin: auto;
-        width: 50%;
-        float: right;
+  display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    
    
   }
 
