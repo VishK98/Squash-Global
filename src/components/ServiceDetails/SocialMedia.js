@@ -8,7 +8,6 @@ import AnimatedText from '../Animations/TextAnimation';
 function SocialMedia() {
   return (
     <div>
-      {/* Vishal Upadhyay */}
       <div className='container'>
 
         <div className='row'>
