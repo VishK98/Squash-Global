@@ -80,12 +80,31 @@ function WebsiteDesign() {
       </details>
       <details>
         <summary>
-          Why should you develop a website according to industry trends?
+        Can you work on a previously built website?
         </summary>
         <ul>
           <li>
-            Developing and maintaining your website according to ongoing trends
-            is the best way to remain competitive in your business niche.
+          Yes, we can work on an existing website developed previously.
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>
+        Why is it imperative to have a good website flow and design?
+        </summary>
+        <ul>
+          <li>
+          Layout plays a huge role in your website’s page. Without it, your website is a wall of text and links that few would care to read through. Layout is important because it influences many different things.
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>
+        Why UI/UX is important for the website?
+        </summary>
+        <ul>
+          <li>
+          Responsive design teams create a single site to support many devices, but need to consider content, design and performance across devices to ensure usability.
           </li>
         </ul>
       </details>
