@@ -46,8 +46,9 @@ function WebsiteDesign() {
           </div>
         </div>
       </div>
+      <div className="influ-reel">Our Clients </div>
       <PartnerSlider />
-      <div className="influ-reel">Related Work </div>
+      <div className="influ-reels">Case Study </div>
       <div className="slider" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <div className="slider-container" style={{ animationPlayState: isPaused ? "paused" : "running" }}>
           <img className="slide" src={netflix} alt="Netflix" />

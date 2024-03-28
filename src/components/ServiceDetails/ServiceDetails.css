@@ -144,10 +144,21 @@
     font-weight: 800;
     font-size: 80px;
     margin-left: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     color: rgba(25, 27, 29, .2);
     line-height: 95px;
 }
+
+.influ-reels {
+    font-weight: 800;
+    font-size: 80px;
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    color: grey;
+    line-height: 95px;
+}
+  
 
 .faq_hed {
     text-align: center;
