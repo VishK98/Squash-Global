@@ -320,7 +320,7 @@ details[open]>ul>li {
     -webkit-mask-size: 100%;
     cursor: pointer;
     background-color: transparent;
-    transform: translateY(8px)
+    transform: translateY(8px);
 }
 
 .get-in-touch-button:after {

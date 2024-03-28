@@ -1,6 +1,4 @@
-// import React from "react";
-import React, { useState, useEffect } from 'react';
-
+import React from "react";
 import "./Services.css";
 import ScrollToTopButton from '../TopButton/TopButton';
 import industriesBanner from "../../assets/images/our Services.png";
@@ -26,12 +24,10 @@ function Sector() {
   const services = [
     {
       title: "Technology ",
-      // imageUrl: mediaPlanning,
       imageUrl: websiteDesign
     },
     {
       title: "Design",
-      // imageUrl: DigitalPR
       imageUrl: mediaPlanning
     },
     {
@@ -45,7 +41,6 @@ function Sector() {
 
     {
       title: "Paid Ads",
-      // imageUrl: Production
       imageUrl: Programmatic
     },
     {
