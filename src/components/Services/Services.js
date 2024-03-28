@@ -21,7 +21,7 @@ import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 
 
 function Sector() {
-  const routes = ["services/mediaPlanning", "services/digitalPR", "services/seo", "services/socialMedia","services/production", "services/websiteDesign", "services/programmatics", "services/influencer"];
+  const routes = ["services/websiteDesign" , "services/mediaPlanning", "services/seo", "services/socialMedia","services/production", "services/digitalPR" , "services/programmatics", "services/influencer"];
 
   const services = [
     {
