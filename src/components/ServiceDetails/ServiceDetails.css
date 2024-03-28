@@ -159,10 +159,29 @@
     line-height: 95px;
 }
   
+.req-btn {
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #30256d;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    overflow: hidden;
+    cursor: pointer;
+  }
 
 .faq_hed {
     text-align: center;
     font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 40px;
     font-weight: 700;
     color: #393939;
     padding-bottom: 20px;
@@ -172,6 +191,24 @@
     margin-bottom: 20px;
 }
 
+.req-btn {
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #30256d;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
 /* accordion */
 :root {
     --accordion-min-height: 56px;
@@ -313,5 +350,21 @@ details[open]>ul>li {
 
     to {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+  
+    .influ-reel {
+        font-size: 40px;
+    }
+    
+    .influ-reels {
+        font-size: 40px;
+    }
+    .req-btn {
+        height: 70px;
+        width : 200px;
+
     }
 }
