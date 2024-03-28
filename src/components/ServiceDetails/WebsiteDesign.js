@@ -3,6 +3,7 @@ import "./ServiceDetails.css";
 import img from "../../assets/images/Web & Design Development.png";
 import PartnerSlider from "../Home/PartnerSlider";
 import netflix from "../../assets/images/netflix.png";
+import ScrollToTopButton from '../TopButton/TopButton';
 
 function WebsiteDesign() {
   const [isPaused, setIsPaused] = useState(false);
@@ -55,6 +56,11 @@ function WebsiteDesign() {
           <img className="slide" src={netflix} alt="Netflix" />
         </div>
       </div>
+      <div style={{ textAlign: "center", marginBottom: "20px" }}>
+        <button className="get-in-touch-button">
+          <span>GET IN TOUCH</span>
+        </button>
+      </div>
       <h2 className="faq_hed">Frequently Asked Questions (FAQs)</h2>
 
       <details>
@@ -79,6 +85,7 @@ function WebsiteDesign() {
           </li>
         </ul>
       </details>
+      <ScrollToTopButton />
     </div>
   );
 }
