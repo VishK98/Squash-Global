@@ -4,6 +4,8 @@ import img from "../../assets/images/Web & Design Development.png";
 import PartnerSlider from "../Home/PartnerSlider";
 import netflix from "../../assets/images/netflix.png";
 import ScrollToTopButton from '../TopButton/TopButton';
+import { Link } from "react-router-dom";
+
 
 function WebsiteDesign() {
   const [isPaused, setIsPaused] = useState(false);
@@ -57,9 +59,10 @@ function WebsiteDesign() {
         </div>
       </div>
       <div style={{ textAlign: "center", marginBottom: "20px" }}>
-        <button className="get-in-touch-button">
-          <span>GET IN TOUCH</span>
-        </button>
+      <Link to="/contact" class="btn-flip mt-4" >
+          <button class="req-btn"><i class="animation"></i>GET IN TOUCH<i class="animation"></i>
+          </button>
+        </Link>
       </div>
       <h2 className="faq_hed">Frequently Asked Questions (FAQs)</h2>
 
