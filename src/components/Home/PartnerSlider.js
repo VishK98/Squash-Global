@@ -32,7 +32,7 @@ const Slider = () => {
         const slide = () => {
             animationId = requestAnimationFrame(() => {
                 if (!isHovered && slider) {
-                    slider.scrollLeft -= 2; // Decrementing scrollLeft to slide from right to left
+                    slider.scrollLeft -= 0.5;
                     if (slider.scrollLeft <= 0) {
                         slider.scrollLeft = slider.scrollWidth / 2;
                     }
