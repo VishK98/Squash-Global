@@ -17,9 +17,9 @@ function DigitalPR() {
         <div className='col-lg-6 col-md-6 col-12 mt-lg-5'>
           <h1 className='service-details-title'>Digital PR And ORM
           </h1>
-          <p className='paragraph-text'>With an ever-growing family of social content specialists, we curate communication and start conversations that reward and resonate with your audience. With a decade worth of practice in staying on top of topical chatter, we know how to maximise reach, recall and impact across platforms that we identify as most appropriate for your brand.</p>
+          <p className='paragraph-text'>First impressions matter, make them count. Our designers and developers are led by a decade of experience, working in sync to deliver a digital identity that not only makes a fantastic first impression, but is future-proof for years to come.</p>
           <ul className='paragraph-text'>
-            <li >Strategic Campaign Planning</li>
+            <li>Website designing</li>
             <li>Strategic Campaign Planning</li>
             <li>Strategic Campaign Planning</li>
             <li>Strategic Campaign Planning</li>
