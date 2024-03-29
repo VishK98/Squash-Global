@@ -22,6 +22,7 @@ import Programmatics from './components/ServiceDetails/Programmatics';
 import Influencer from './components/ServiceDetails/Influencer';
 import WhatsappLogo from './components/Whatsapp/Whatsapp';
 import BlogDetails2 from './components/BlogDetails/BlogDetails2';
+import Thankyou from './components/Thankyou/Thankyou';
 
 
 
@@ -63,6 +64,7 @@ function App() {
           <Route path="/services/websiteDesign" element={<WebsiteDesign />} />
           <Route path="/services/programmatics" element={<Programmatics />} />
           <Route path="/services/influencer" element={<Influencer />} />
+          <Route path="/thankyou" element={<Thankyou />} />
         </Routes>
         {/* {modalVisible && <PopupModal />} */}
         <WhatsappLogo/>

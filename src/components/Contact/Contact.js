@@ -8,7 +8,9 @@ import PopupModal from "../PopupModal/PopupModal";
 import { contactUs } from "../../utils/api";
 import { contactUsMail } from "../../utils/api";
 
+
 function Contact() {
+
   const [modalShow, setModalShow] = useState(false);
   const [apiResponse, setApiResponse] = useState(null);
 
@@ -45,6 +47,7 @@ function Contact() {
             message: "",
           };
           setFormData(resetValue);
+          window.location.href = '/thankyou';        
         }
       } catch (error) {
         console.error("Error submitting form for admin:", error);
