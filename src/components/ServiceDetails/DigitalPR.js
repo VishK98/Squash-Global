@@ -28,20 +28,18 @@ function DigitalPR() {
           <div className="col-lg-8 col-md-8 col-12 mt-lg-5">
             <h1 className="service-details-title"> Digital PR & ORM </h1>
             <p className="paragraph-text">
-              First impressions matter, make them count. Our designers and
-              developers are led by a decade of experience, working in sync to
-              deliver a digital identity that not only makes a fantastic first
-              impression, but is future-proof for years to come.
+             
+Creating impactful digital PR and ORM content for a website involves a strategic approach aimed at enhancing online visibility, managing reputation, and fostering credibility. Firstly, it's imperative to define clear objectives tailored to the brand's goals, whether it's boosting brand awareness, improving search engine rankings, or mitigating reputation crises. Audience research is crucial to understanding the target demographic's preferences, online behavior, and interests. Keyword research aids in optimizing content for search engines, ensuring it aligns with user search intent. Diverse content types such as press releases, guest blog posts, infographics, and social media updates cater to different audience segments and platforms, maximizing reach and engagement. Adherence to content guidelines ensures accuracy, relevance, and consistency across all materials. Strategic distribution through newswires, social media channels, industry forums, and influencer partnerships amplifies content visibility and credibility. Regular measurement and analysis of key metrics enable ongoing optimization and refinement of content strategies, ensuring continued effectiveness in digital PR and ORM efforts.
             </p>
             <ul className="paragraph-text">
-              <li className="li-text">Website designing</li>
-              <li className="li-text">Website Development</li>
-              <li className="li-text">eComm Portal Development</li>
-              <li className="li-text">Content Management Systems (CMS)</li>
-              <li className="li-text">Web Maintenance & Support</li>
-              <li className="li-text">Micro-sites</li>
-              <li className="li-text">Web Applications</li>
-              <li className="li-text">UI Designing</li>
+              <li className="li-text">Brand Monitoring Tools</li>
+              <li className="li-text">Crisis Communication Plan</li>
+              <li className="li-text">Community Engagement</li>
+              <li className="li-text">Influencer Partnerships</li>
+              <li className="li-text">User-Generated Content Campaigns</li>
+              <li className="li-text">Localized Content</li>
+              <li className="li-text">Continuous Learning and Adaptation</li>
+              <li className="li-text">Ethical Practices</li>
             </ul>
           </div>
         </div>
@@ -69,43 +67,40 @@ function DigitalPR() {
 
       <details>
         <summary>
-          Why should you develop a website according to industry trends?
+        What is Digital PR and ORM?
         </summary>
         <ul>
           <li>
-            Developing and maintaining your website according to ongoing trends
-            is the best way to remain competitive in your business niche.
+          Digital PR (Public Relations) and ORM (Online Reputation Management) involve strategies to manage a brand's online presence, reputation, and credibility.
           </li>
         </ul>
       </details>
       <details>
         <summary>
-        Can you work on a previously built website?
+        Why are Digital PR and ORM important?
         </summary>
         <ul>
           <li>
-          Yes, we can work on an existing website developed previously.
+          They help businesses shape their online image, build trust with customers, and respond effectively to reputation challenges.
           </li>
         </ul>
       </details>
       <details>
         <summary>
-        Why is it imperative to have a good website flow and design?
+        What strategies work for Digital PR and ORM?
         </summary>
         <ul>
           <li>
-          Layout plays a huge role in your website’s page. Without it, your website is a wall of text and links that few would care to read through. Layout is important because it influences many different things.
-          </li>
+          Effective strategies include creating engaging content, building relationships with influencers, monitoring online conversations, and implementing SEO best practices.          </li>
         </ul>
       </details>
       <details>
         <summary>
-        Why UI/UX is important for the website?
+        How do I measure success in Digital PR and ORM?
         </summary>
         <ul>
           <li>
-          Responsive design teams create a single site to support many devices, but need to consider content, design and performance across devices to ensure usability.
-          </li>
+          Success can be measured through website traffic, search engine rankings, social media engagement, and online reviews and ratings.          </li>
         </ul>
       </details>
       <ScrollToTopButton />

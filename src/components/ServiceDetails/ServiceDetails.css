@@ -145,7 +145,7 @@
     font-size: 80px;
     margin-left: 30px;
     margin-bottom: 60px;
-    color: rgba(25, 27, 29, .2);
+    color: #000, #30256d, #30256d);
     line-height: 95px;
 }
 
@@ -155,7 +155,7 @@
     margin-top: 60px;
     margin-left: 30px;
     margin-bottom: 20px;
-    color: grey;
+    color:  #000, #30256d, #30256d);
     line-height: 95px;
 }
   
