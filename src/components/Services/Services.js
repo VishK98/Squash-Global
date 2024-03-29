@@ -19,7 +19,9 @@ import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 
 
 function Sector() {
-  const routes = ["services/websiteDesign" , "services/mediaPlanning", "services/socialMedia", "services/seo" ,"services/production", "services/digitalPR" , "services/programmatics", "services/influencer"];
+  // const routes = ["services/websiteDesign" , "services/mediaPlanning", "services/socialMedia", "services/seo" ,"services/production", "services/digitalPR" , "services/programmatics", "services/influencer"];
+
+  const routes = ["services/websiteDesign" , "#services/mediaPlanning", "services/socialMedia", "#services/seo" ,"#services/production", "services/digitalPR" , "#services/programmatics", "#services/influencer"];
 
   const services = [
     {
