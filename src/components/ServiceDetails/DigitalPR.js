@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./ServiceDetails.css";
-import img from "../../assets/images/Web & Design Development.png";
+import img from "../../assets/images/pr.png";
 import PartnerSlider from "../Home/PartnerSlider";
 import netflix from "../../assets/images/netflix.png";
 import ScrollToTopButton from '../TopButton/TopButton';
@@ -23,7 +23,7 @@ function DigitalPR() {
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-4 col-12 mt-lg-5">
-            <img height="350px" width="350px" src={img} alt="Web & Design Development" />
+            <img height="350px" width="350px" src={img} alt="DigitalPR" />
           </div>
           <div className="col-lg-8 col-md-8 col-12 mt-lg-5">
             <h1 className="service-details-title"> Digital PR & ORM </h1>
