@@ -13,7 +13,7 @@ function Thankyou() {
                         <p>Thanks for subscribing to our news letter.  </p>
                         <p>you should receive a confirmation email soon  </p>
                         <Link to="/" class="btn-flip mt-lg-4 mt-2" >
-              <button class="req-btn"><i class="animation"></i>Go To Home<i class="animation"></i>
+              <button class="req-btn"><i class="animation"></i>Go to home<i class="animation"></i>
               </button>
             </Link>
                     </div>
