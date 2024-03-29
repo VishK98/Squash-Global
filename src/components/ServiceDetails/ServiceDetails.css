@@ -256,7 +256,7 @@ details[open] {
 }
 
 summary {
-    padding: 1rem;
+    padding: 1.5rem;
     display: block;
     background: #ffffff;
     position: relative;
@@ -368,5 +368,8 @@ details[open]>ul>li {
         height: 70px;
         width : 200px;
 
+    }
+    .service-details-title {
+        margin-top: 50px;
     }
 }
