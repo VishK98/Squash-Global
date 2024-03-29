@@ -13,11 +13,11 @@
     padding :30px;
     text-align:center;
   }
-  h1{
+  .head {
       font-family: 'Kaushan Script', cursive;
     font-size:4em;
     letter-spacing:3px;
-    color:#5892FF ;
+    color:#30256d ;
     margin:0;
     margin-bottom:20px;
   }
@@ -30,7 +30,7 @@
   }
   .go-home{
     color:#fff;
-    background:#5892FF;
+    background:#30256D;
     border:none;
     padding:10px 50px;
     margin:30px 0;
@@ -47,18 +47,18 @@
   .footer-like p{
     margin:0;
     padding:4px;
-    color:#5892FF;
+    color:#30256D;
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing:1px;
   }
   .footer-like p a{
     text-decoration:none;
-    color:#5892FF;
+    color:#30256D;
     font-weight:600;
   }
   
   @media (min-width:360px){
-    h1{
+    .head{
       font-size:4.5em;
     }
     .go-home{

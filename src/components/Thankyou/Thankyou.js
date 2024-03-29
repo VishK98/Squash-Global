@@ -1,5 +1,7 @@
 import React from 'react';
 import "./Thankyou.css";
+import { Link } from "react-router-dom";
+
 
 function Thankyou() {
     return (
@@ -7,18 +9,15 @@ function Thankyou() {
             <div>
                 <div className="wrapper-1">
                     <div className="wrapper-2">
-                        <h1>Thank you !</h1>
+                        <h1 className='head'>Thank you !</h1>
                         <p>Thanks for subscribing to our news letter.  </p>
                         <p>you should receive a confirmation email soon  </p>
-                        <button className="go-home">
-                            go home
-                        </button>
+                        <Link to="/" class="btn-flip mt-lg-4 mt-2" >
+              <button class="req-btn"><i class="animation"></i>Go To Home<i class="animation"></i>
+              </button>
+            </Link>
                     </div>
-                    <div className="footer-like">
-                        <p>Email not received?
-                            <a href="#">Click here to send again</a>
-                        </p>
-                    </div>
+                   
                 </div>
             </div>
 
