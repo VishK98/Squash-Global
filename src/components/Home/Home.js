@@ -95,16 +95,16 @@ function Home() {
         <div className="row">
           <div className="col-lg-4 col-12">
             <AnimatedText
-              text={<h1 className="framing-text">Framing People Centric Experiences</h1>}
+              text={<h1 className="framing-text">Framing People</h1>}
               animation="slide-up"
             />
-            {/* <AnimatedText
+            <AnimatedText
               text={<h1 className="framing-text">Centric</h1>}
               animation="slide-up"
             />
             <AnimatedText
               text={<h1 className="Newstyle-text">Experiences</h1>}
-              animation="slide-up" */}
+              animation="slide-up"
             />
             <AnimatedText
               text={
