@@ -39,7 +39,7 @@ function Philosophy() {
         <div className="row">
           <div className="col-12  mt-5">
             <AnimatedText text={<p className=" mt-lg-4">
-              <h3 className="Whytaw-text">WHY TAW?</h3>
+              <h2 className="Whytaw-text">WHY TAW?</h2>
               <p className="paragraph-text">TAW believes in solving your problems rather than just answering them.
                 We never back down from taking any challenges, after all working hard is our best-defined nature.
                 We pour our heart and soul to each and every project no matter the size is.

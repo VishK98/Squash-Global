@@ -103,9 +103,9 @@ function Contact() {
                 <div style={{ marginLeft: "12px", }}>
                   <AnimatedText text={<h2 className="india-text"> India</h2>} animation="slide-up" />
                   <div className="address">
-                    <AnimatedText text={<h5 className="address">
+                    <AnimatedText text={<h3 className="address">
                       D-65, Udyog Vihar, Phase-V, Sector-19,<br /> Gurgaon, Haryana, 122016
-                    </h5>} animation="slide-up" />
+                    </h3>} animation="slide-up" />
                   </div>
                 </div>
               </div>

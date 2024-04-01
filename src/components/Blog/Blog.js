@@ -43,8 +43,8 @@ function Blog() {
 
         <AnimatedText text={
           <p className="blog-sub-heading mt-lg-4 mb-lg-4">
-            We bring you the latest industry trends and best practices to
-            overcome all your digital marketing challenges.
+           <h2>We bring you the latest industry trends and best practices to
+            overcome all your digital marketing challenges.</h2> 
           </p>
         } animation='slide-up' />
 

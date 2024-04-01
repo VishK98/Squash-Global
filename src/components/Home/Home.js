@@ -116,6 +116,9 @@ function Home() {
             <p className="explorbtn" style={{ marginTop: "35px" }}>
               Explore
             </p>
+           
+            <Link to="/about-us" style={{ textDecoration: "none" }}>
+            
             <div
               className="animated-arrow-btn"
               style={{
@@ -125,7 +128,8 @@ function Home() {
             >
               <ImageAnimationUnfold src={rigthArrow} alt="Image not found" />
             </div>
-          </div>
+           </Link>
+            </div>
           <div className="col-lg-8 mt-4 mt-lg-0 col-12">
             <ImageAnimationUnfold src={gispiImage} alt="Image not found" />
           </div>

@@ -245,16 +245,16 @@ function Careers() {
       <div className="container-fluid mt-4 mb-3 p-4">
         <AnimatedText
           text={
-            <h1 className="color-text" style={{ fontWeight: "bold" }}>
+            <h2 className="color-text" style={{ fontWeight: "bold" }}>
               Life at The Agency Way
-            </h1>
+            </h2>
           }
           animation="slide-left"
         />
       </div>
       <ImageAnimationUnfold src={teamBreak} alt="Image not found" />
       <div className="container-fluid p-4">
-        <h1 className="Color-Text">Latest Openings</h1>
+        <h3 className="Color-Text">Latest Openings</h3>
         <div className="row" ref={closeRef}>
           {jobData.map((job, index) => (
             <div
