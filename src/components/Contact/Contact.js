@@ -75,7 +75,7 @@ function Contact() {
     }));
   };
 
-  const mapUrl = `https://www.google.com/maps/search/?api=1&query=${28.498540},${77.088620}`;
+  const mapUrl = `https://www.google.com/maps/place/The+Agency+Way+(TAW)/@28.5004455,77.0823999,17z/data=!3m1!4b1!4m6!3m5!1s0x69456236f7adfc51:0x655d02ec3fd0c02f!8m2!3d28.5004408!4d77.0849748!16s%2Fg%2F11vq__2xt1?entry=ttu`;
 
   const handleMapClick = () => {
     window.open(mapUrl, '_blank');
