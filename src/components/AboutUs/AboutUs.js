@@ -6,12 +6,17 @@ import AboutUs from "../../assets/images/Banner About us.png";
 import partyScene from "../../assets/images/about us middle image.png";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 import bottomBanner from "../../assets/images/About Us Page Bottom Banner.png";
-
+import { Helmet } from 'react-helmet';
 
 
 function Philosophy() {
   return (
     <>
+    <Helmet>
+        <title>Know More About - The Agency Way (TAW)</title>
+        <meta name="description" content="Read the secrets of success with Know More About - The Agency Way (TAW). Dive into our innovative strategies and expert insights to propel your business forward." />
+        <link rel="canonical" href="https://taw.agency/about-us" />
+      </Helmet>
       <div className="full-screen-image">
         <ImageAnimationUnfold src={AboutUs} alt="Image not found" />
       </div>

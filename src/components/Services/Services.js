@@ -15,6 +15,8 @@ import { Link } from "react-router-dom";
 import AnimatedText from '../Animations/TextAnimation';
 import Slider from './Slider';
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
+import { Helmet } from 'react-helmet';
+
 
 
 
@@ -64,6 +66,11 @@ function Sector() {
 
   return (
     <>
+    <Helmet>
+        <title>Services - The Agency Way (TAW)`</title>
+        <meta name="description" content="Promote your brand with premier Services - The Agency Way (TAW). Discover tailored solutions in marketing, design, and strategy for unparalleled success." />
+        <link rel="canonical" href="https://taw.agency/services" />
+      </Helmet>
       <div className="full-screen-image" >
         <ImageAnimationUnfold src={industriesBanner} alt="Image not found" style={{ width: "100%", height: "100%", objectFit: "fill" }}  />
       </div>

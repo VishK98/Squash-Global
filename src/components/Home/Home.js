@@ -19,6 +19,7 @@ import TAWVideo from "../../assets/new-video.mp4";
 import bannerVideo from "../../assets/Banner Video-1.mp4";
 import rigthArrow from "../../assets/images/Icons/-right-arrow.png";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
+import { Helmet } from 'react-helmet';
 
 function Home() {
   const [formData, setFormData] = useState({
@@ -65,9 +66,14 @@ function Home() {
       setMarginTop(videoHeight);
     }
   }, []);
-
   return (
     <>
+        <Helmet>
+        <title>The Agency Way - Digital Marketing and Advertising Agency in Gurgaon</title>
+        <meta name="description" content="Boost your brand's digital presence with The Agency Way (TAW)  your trusted Digital Marketing and Advertising Agency in Gurgaon. Reach new heights online." />
+        <link rel="canonical" href="https://taw.agency/" />
+      </Helmet>
+
       <video
         className="video-main"
         ref={videoRef}
@@ -89,16 +95,16 @@ function Home() {
         <div className="row">
           <div className="col-lg-4 col-12">
             <AnimatedText
-              text={<h1 className="framing-text">Framing People</h1>}
+              text={<h1 className="framing-text">Framing People Centric Experiences</h1>}
               animation="slide-up"
             />
-            <AnimatedText
+            {/* <AnimatedText
               text={<h1 className="framing-text">Centric</h1>}
               animation="slide-up"
             />
             <AnimatedText
               text={<h1 className="Newstyle-text">Experiences</h1>}
-              animation="slide-up"
+              animation="slide-up" */}
             />
             <AnimatedText
               text={

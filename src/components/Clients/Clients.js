@@ -21,6 +21,8 @@ import newClient12 from "../../assets/images/client logos/20.png";
 import newClient13 from "../../assets/images/client logos/3.png";
 import newClient14 from "../../assets/images/client logos/4.png";
 import newClient15 from "../../assets/images/client logos/5.png";
+import { Helmet } from 'react-helmet';
+
 
 
 function Work() {
@@ -28,6 +30,11 @@ function Work() {
 
   return (
     <>
+         <Helmet>
+        <title>Our Happy Clients - The Agency Way (TAW)</title>
+        <meta name="description" content="Join our list of satisfied clients at The Agency Way (TAW). Dive into our innovative strategies and expert insights to propel your business forward." />
+        <link rel="canonical" href="https://taw.agency/clients" />
+      </Helmet>
       <ImageAnimationUnfold src={ourClients} />
       <div className="container">
         <div className="row">
@@ -38,11 +45,11 @@ function Work() {
         </div>
       </div>
       <div className="container-fluid p-lg-4">
-        <AnimatedText text={<h2 className="guest-text">
+        <AnimatedText text={<h1 className="guest-text">
           Guests are always welcome at our establishment, and we aim to provide them with a memorable experience.
-        </h2>} animation='fade-in' />
+        </h1>} animation='fade-in' />
         <div className="text-lg-center mt-lg-4">
-          <AnimatedText text={<h1 className="partnership-text">Building Strong Relationships with Our Valued Clients</h1>
+          <AnimatedText text={<h2 className="partnership-text">Building Strong Relationships with Our Valued Clients</h2>
           } animation='slide-up' />
         </div>
         <div

@@ -8,6 +8,8 @@ import teamBreak from "../../assets/images/Career Section Bottom Banner.png";
 import jobPost from "../../assets/images/hiring.png";
 import AnimatedText from "../Animations/TextAnimation";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
+import { Helmet } from 'react-helmet';
+
 
 function Careers() {
   const jobData = [
@@ -163,6 +165,11 @@ function Careers() {
 
   return (
     <>
+      <Helmet>
+        <title>Careers - The Agency Way (TAW)</title>
+        <meta name="description" content="Chart your path to success with Careers - The Agency Way (TAW). Explore exciting opportunities and join a team committed to innovation and excellence." />
+        <link rel="canonical" href="https://taw.agency/careers" />
+      </Helmet>
       <div className="full-screen-image">
         <ImageAnimationUnfold
           src={image}
@@ -180,7 +187,7 @@ function Careers() {
         <div className="row ">
           <div className="col-lg-12 col-md-12 col-12">
             <div class="career-sub-heading">
-              <h1>Work with a dynamic team and creative minded people.</h1>
+              <h2>Work with a dynamic team and creative minded people.</h2>
             </div>
           </div>
         </div>
@@ -188,9 +195,9 @@ function Careers() {
       <div className="container-fluid p-4">
         <AnimatedText
           text={
-            <h1 className="At-Taw-text">
+            <h3 className="At-Taw-text">
               At TAW, we believe in growing together.
-            </h1>
+            </h3>
           }
           animation="slide-up"
         />

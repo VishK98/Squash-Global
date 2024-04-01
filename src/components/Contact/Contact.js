@@ -7,6 +7,8 @@ import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 import PopupModal from "../PopupModal/PopupModal";
 import { contactUs } from "../../utils/api";
 import { contactUsMail } from "../../utils/api";
+import { Helmet } from 'react-helmet';
+
 
 
 function Contact() {
@@ -83,6 +85,11 @@ function Contact() {
 
   return (
     <>
+     <Helmet>
+        <title>Reach Out to Contact US - The Agency Way (TAW)</title>
+        <meta name="description" content="Connect with us the Agency Way (TAW)! Reach out to Contact Us for personalized solutions and exceptional service tailored to your needs." />
+        <link rel="canonical" href="https://taw.agency/contact" />
+      </Helmet>
       <div className="full-screen-image">
         <ImageAnimationUnfold src={contact} alt="Image not found" style={{ width: "100%", height: "100%", objectFit: "fill" }} />
       </div>

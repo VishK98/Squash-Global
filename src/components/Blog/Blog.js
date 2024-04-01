@@ -6,7 +6,7 @@ import blogImage1 from "../../assets/images/Blog1.png";
 import blogImage2 from "../../assets/images/Blog2.png";
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
 import AnimatedText from '../Animations/TextAnimation';
-
+import { Helmet } from 'react-helmet';
 
 function Blog() {
   const imagesData = [
@@ -30,6 +30,11 @@ function Blog() {
   ];
   return (
     <>
+    <Helmet>
+        <title>Get The Latest Blogs - The Agency Way (TAW)</title>
+        <meta name="description" content="Stay ahead with the latest insights! Get The Latest Blogs - The Agency Way (TAW) for expert tips, trends, and strategies to propel your business forward." />
+        <link rel="canonical" href="https://taw.agency/blog" />
+      </Helmet>
       <div className="container mt-4">
         <AnimatedText
           text={
