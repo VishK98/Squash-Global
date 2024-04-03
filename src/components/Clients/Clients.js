@@ -1,7 +1,7 @@
 import React from "react";
 import "./Clients.css";
 import ScrollToTopButton from '../TopButton/TopButton';
-import ourClients from "../../assets/images/Client-banner.png";
+import ourClients from "../../assets/images/taw-clients-banner.png";
 import AnimatedText from '../Animations/TextAnimation';
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 import ImageAnimationFade from "../Animations/ImageAnimationFade";

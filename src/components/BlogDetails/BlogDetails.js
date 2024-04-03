@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import "./BlogDetails.css";
 import ScrollToTopButton from '../TopButton/TopButton';
-import industriesBanner from "../../assets/images/Blog1.png";
-import blogImage10 from "../../assets/images/Blog1.png";
-import blogImage4 from "../../assets/images/Blog1.png";
+import industriesBanner from "../../assets/images/taw-blog-banner1.png";
+import blogImage10 from "../../assets/images/taw-blog-banner1.png";
+import blogImage4 from "../../assets/images/taw-blog-banner1.png";
 
 function BlogDetails() {
     const [isVisible, setIsVisible] = useState(false);

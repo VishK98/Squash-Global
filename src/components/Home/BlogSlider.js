@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './BlogSlider.css';
-import blogImage4 from "../../assets/images/Blog1.png";
+import blogImage4 from "../../assets/images/taw-blog-banner1.png";
 import AnimatedFadeImage from '../Animations/ImageAnimationFade';
 import AnimatedText from '../Animations/TextAnimation';
 import rigthArrow from "../../assets/images/Icons/-right-arrow.png";

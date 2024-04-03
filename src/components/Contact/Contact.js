@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ScrollToTopButton from '../TopButton/TopButton';
-import contact from "../../assets/images/Contact Us banner.jpg";
+import contact from "../../assets/images/taw-contact-banner1.jpg";
 import AnimatedText from '../Animations/TextAnimation';
 import "./Contact.css";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";

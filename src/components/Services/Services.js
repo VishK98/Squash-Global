@@ -1,7 +1,7 @@
 import React from "react";
 import "./Services.css";
 import ScrollToTopButton from '../TopButton/TopButton';
-import industriesBanner from "../../assets/images/our Services.png";
+import industriesBanner from "../../assets/images/taw-services-banner1.png";
 import mediaPlanning from "../../assets/images/New services/Media Planning & Buying.png";
 import DigitalPR from "../../assets/images/New services/Public Relation.png";
 import SEO from "../../assets/images/New services/SEO.png";
@@ -10,7 +10,7 @@ import Production from "../../assets/images/New services/Production.png";
 import websiteDesign from "../../assets/images/New services/Website Design.png";
 import Programmatic from "../../assets/images/New services/Programmatic Ads.png";
 import Influencer from "../../assets/images/New services/Influencer Marketing.png";
-import Expert from "../../assets/images/Services Bottom Section.png";
+import Expert from "../../assets/images/taw-services-banner2.png";
 import { Link } from "react-router-dom";
 import AnimatedText from '../Animations/TextAnimation';
 import Slider from './Slider';

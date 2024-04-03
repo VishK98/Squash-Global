@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Careers.css";
 import ScrollToTopButton from "../TopButton/TopButton";
-import image from "../../assets/images/Banner Careers.png";
-import downArrow from "../../assets/images/Icons/-down-arrow.png";
-import team from "../../assets/images/Career Section Middle Banner.png";
-import teamBreak from "../../assets/images/Career Section Bottom Banner.png";
-import jobPost from "../../assets/images/hiring.png";
+import image from "../../assets/images/taw-careers-banner1.png";
+import team from "../../assets/images/taw-careers-banner2.png";
+import teamBreak from "../../assets/images/taw-careers-banner3.png";
+import jobPost from "../../assets/images/taw-hiring.png";
 import AnimatedText from "../Animations/TextAnimation";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 import { Helmet } from 'react-helmet';
