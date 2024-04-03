@@ -21,6 +21,11 @@ function Production() {
 
   return (
     <div>
+       <Helmet>
+        <title>Film and Photography Production Agency in Gurgaon - The Agency Way (TAW)</title>
+        <meta name="description" content="Capture the essence of your brand with The Agency Way (TAW), your premier film and photography production agency in Gurgaon. Let your creativity captures the essence of your brand." />
+        <link rel="canonical" href="https://taw.agency/services/production" />
+      </Helmet>
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-4 col-12 mt-lg-5">

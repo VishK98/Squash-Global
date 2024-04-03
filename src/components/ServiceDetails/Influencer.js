@@ -1,58 +1,122 @@
-import React from 'react'
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
-import "./ServiceDetails.css"
-import img from "../../assets/images/Influencer.png";
-import AnimatedText from '../Animations/TextAnimation';
+import "./ServiceDetails.css";
+import img from "../../assets/images/Web & Design Development.png";
+import PartnerSlider from "../Home/PartnerSlider";
+import netflix from "../../assets/images/netflix.png";
+import ScrollToTopButton from '../TopButton/TopButton';
+import { Link } from "react-router-dom";
+
+
 function Influencer() {
+  const [isPaused, setIsPaused] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsPaused(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsPaused(false);
+  };
+
   return (
-<div>
-    <div className='container'>
-   <div class="route-text">
-     <ol class="breadcrumb route-text mt-3">
-       <li>
-         <a
-           href="/"
-           style={{ color: "grey", textDecoration: "none" }}
-         >
-           <AnimatedText text="Service /" animation="slide-left" />
-         </a>
-       </li>
-       <li>
-         <AnimatedText text="&nbsp; INFLUENCER MARKETING" animation="slide-right" />
-       </li>
-     </ol>
-   </div>
-   <div className='row mt-lg-4'>
-     <div className='col-lg-5 col-md-5 col-12'>
-       <img src={img} className='tittle-img' alt='' />
-     </div>
-     <div className='col-lg-7 col-md-7 col-12'>
-       <h1 className="big-title page-head">INFLUENCER MARKETING</h1>
-       <h3 className='mt-lg-3'>STEP INTO THE NEW NORMAL OF DIGITAL SPHERE  </h3>
-       <p>Influencers are like modern marketing currency. With incredible cultural and consumer sway, their involvement can practically guarantee thousands of watchers or listeners. To attract customers, your business should let these social media stars light the way. Curious about how to harness the marketing power of influencers? TAW is here to help you guide through the path. </p>
-         <p>Our influencer outreach services will help you reach new audiences and create effective amplification of your Brand communication. At TAW, we incorporate influencer marketing into your social media strategy to reach a niche, more engaged audience segment and expand your brand's presence.</p>
-       <h3>WHY CHOOSE US?</h3>
-       <ul>
-       <li>Collaboration with popular and relevant influencers in your niche to promote your Brand and increase your revenue.</li>
-       <li>Identification & targeting the right audience relevant to your niche and public personas align with your Brand's image.</li>
-       <li>Increasing visibility to your Brand and starting meaningful conversation about it.</li>
-       <li>Revamping your content strategy to hit the right cord with your audience.</li>
-       <li>Depending on the marketing objective, working with influencers to create engaging content, announce giveaways, host Q & A sessions, etc.</li>
-       </ul>
-       <h3>YOUR BRAND, OUR PRIORITY</h3>
-       <ul>
-        <li>Hyper-focusing on niche influencers</li>
-        <li>Creating waves across multiple platforms</li>
-        <li>Playing the long-term game with long-term partnership</li>
-        <li>Authenticity over perfection</li>
-       </ul>
-         <p>Want the same for your Business?</p>
-         <p>How about catching up for a Coffee!</p>
-     </div>
-   </div>
- </div>
- </div>
-  )
+    <div>
+       <Helmet>
+        <title>Influencer-marketing Agency in Gurgaon - The Agency Way (TAW)</title>
+        <meta name="description" content="Empower your brand's influence with The Agency Way (TAW), your premier influencer marketing agency in Gurgaon. Collaborate with top influencers and amplify your brand's reach today." />
+        <link rel="canonical" href="https://taw.agency/services/influencer-marketing" />
+      </Helmet>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-4 col-md-4 col-12 mt-lg-5">
+            <img height="350px" width="350px" src={img} alt="Web & Design Development" />
+          </div>
+          <div className="col-lg-8 col-md-8 col-12 mt-lg-5">
+            <h1 className="service-details-title"> Web & Design Development</h1>
+            <p className="paragraph-text">
+              First impressions matter, make them count. Our designers and
+              developers are led by a decade of experience, working in sync to
+              deliver a digital identity that not only makes a fantastic first
+              impression, but is future-proof for years to come.
+            </p>
+            <ul className="paragraph-text">
+              <li className="li-text">Website designing</li>
+              <li className="li-text">Website Development</li>
+              <li className="li-text">eComm Portal Development</li>
+              <li className="li-text">Content Management Systems (CMS)</li>
+              <li className="li-text">Web Maintenance & Support</li>
+              <li className="li-text">Micro-sites</li>
+              <li className="li-text">Web Applications</li>
+              <li className="li-text">UI Designing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="influ-reel">Our Clients </div>
+      <PartnerSlider />
+      <div className="influ-reels">Case Study </div>
+      <div className="slider" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className="slider-container" style={{ animationPlayState: isPaused ? "paused" : "running" }}>
+          <img className="slide" src={netflix} alt="Netflix" />
+          <img className="slide" src={netflix} alt="Netflix" />
+          <img className="slide" src={netflix} alt="Netflix" />
+          <img className="slide" src={netflix} alt="Netflix" />
+          <img className="slide" src={netflix} alt="Netflix" />
+          <img className="slide" src={netflix} alt="Netflix" />
+        </div>
+      </div>
+      <div style={{ textAlign: "center", marginBottom: "20px" }}>
+      <Link to="/contact" class="btn-flip mt-4" >
+          <button class="req-btn"><i class="animation"></i>GET IN TOUCH<i class="animation"></i>
+          </button>
+        </Link>
+      </div>
+      <h2 className="faq_hed">Frequently Asked Questions (FAQs)</h2>
+
+      <details>
+        <summary>
+          Why should you develop a website according to industry trends?
+        </summary>
+        <ul>
+          <li>
+            Developing and maintaining your website according to ongoing trends
+            is the best way to remain competitive in your business niche.
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>
+        Can you work on a previously built website?
+        </summary>
+        <ul>
+          <li>
+          Yes, we can work on an existing website developed previously.
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>
+        Why is it imperative to have a good website flow and design?
+        </summary>
+        <ul>
+          <li>
+          Layout plays a huge role in your website’s page. Without it, your website is a wall of text and links that few would care to read through. Layout is important because it influences many different things.
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>
+        Why UI/UX is important for the website?
+        </summary>
+        <ul>
+          <li>
+          Responsive design teams create a single site to support many devices, but need to consider content, design and performance across devices to ensure usability.
+          </li>
+        </ul>
+      </details>
+      <ScrollToTopButton />
+    </div>
+  );
 }
 
-export default Influencer
+export default Influencer;

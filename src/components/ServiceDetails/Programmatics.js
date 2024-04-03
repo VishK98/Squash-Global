@@ -21,6 +21,11 @@ function Programmatics() {
 
   return (
     <div>
+      <Helmet>
+        <title>Paid Advertising Agency in Gurgaon - The Agency Way (TAW)</title>
+        <meta name="description" content="Accelerate your brand's growth with The Agency Way (TAW), your premier paid advertising agency in Gurgaon. Reach your target audience with Maximize ROI." />
+        <link rel="canonical" href="https://taw.agency/services/paid-ads" />
+      </Helmet>
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-4 col-12 mt-lg-5">

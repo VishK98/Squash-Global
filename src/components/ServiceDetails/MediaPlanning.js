@@ -21,6 +21,12 @@ function MediaPlanning() {
 
   return (
     <div>
+      <Helmet>
+        <title>Creative Graphic Design Agency in Gurgaon - The Agency Way (TAW)</title>
+        <meta name="description" content="Transform your brand's visual identity with The Agency Way (TAW), your leading creative graphic design agency in Gurgaon. Boost your brand's aesthetics with our innovative solutions" />
+        <link rel="canonical" href="https://taw.agency/services/design"/>
+      </Helmet>
+
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-4 col-12 mt-lg-5">
