@@ -1,53 +1,116 @@
-import React from 'react'
-import "./ServiceDetails.css"
-import img from "../../assets/images/PROGRAMMATIC ADVERTISING.png";
-import AnimatedText from '../Animations/TextAnimation';
+import React, { useState } from "react";
+import "./ServiceDetails.css";
+import img from "../../assets/images/Web & Design Development.png";
+import PartnerSlider from "../Home/PartnerSlider";
+import netflix from "../../assets/images/netflix.png";
+import ScrollToTopButton from '../TopButton/TopButton';
+import { Link } from "react-router-dom";
+
+
 function Programmatics() {
+  const [isPaused, setIsPaused] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsPaused(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsPaused(false);
+  };
+
   return (
     <div>
-    <div className='container'>
-   <div class="route-text">
-     <ol class="breadcrumb route-text mt-3">
-       <li>
-         <a
-           href="/"
-           style={{ color: "grey", textDecoration: "none" }}
-         >
-           <AnimatedText text="Service /" animation="slide-left" />
-         </a>
-       </li>
-       <li>
-         <AnimatedText text="&nbsp; PROGRAMMATIC ADVERTISING" animation="slide-right" />
-       </li>
-     </ol>
-   </div>
-   <div className='row mt-lg-4'>
-     <div className='col-lg-5 col-md-5 col-12'>
-       <img src={img} className='tittle-img' alt='' />
-     </div>
-     <div className='col-lg-7 col-md-7 col-12'>
-       <h1 className="big-title page-head">PROGRAMMATIC ADVERTISING</h1>
-       <h3 className='mt-lg-3'>DATA DRIVEN DIGITAL STRATEGIES </h3>
-       <p>In digital marketing sphere, things keep on changing its course with the media consuming habits of the audiences. Sometimes, brands must deploy targeted approach across the digital spectrum to hit the bullseye. That is where programmatic advertising and TAW comes into play. </p>
-         <p>Programmatic advertising refers to the buying and selling digital advert space through automated platforms. Whereas TAW empowers the advertisers with advanced targeting capabilities within the scope of programmatic advertising. Our strategic media planning helps to display ads to the right audience at the right time with our plenty of targeting options like geolocation targeting, audience targeting, IP targeting, contextual targeting, retargeting and many more.</p>
-         <p>TAW has in-house capabilities to drive programmatic advertising for Brands, devise digital strategies driven by data and optimized ad campaign directed to the niched audiences. </p>
-       <h3>OUR PROGRAMMATIC ADVERTISING OFFERINGS:</h3>
-       <p>With TAW, you can leverage the following benefits of programmatic advertising that will provide an edge to your brand over generic: </p>
-       <ul>
-       <li>Scalable and Flexible Spending</li>
-       <li>Large Reach</li>
-       <li>Transparency</li>
-       <li>Efficiency</li>
-       <li>Targeting</li>
-       <li>Real-Time Data</li>
-       </ul>
-         <p>Want the same for your Business?</p>
-         <p>How about catching up for a Coffee!</p>
-     </div>
-   </div>
- </div>
- </div>
-  )
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-4 col-md-4 col-12 mt-lg-5">
+            <img height="350px" width="350px" src={img} alt="Web & Design Development" />
+          </div>
+          <div className="col-lg-8 col-md-8 col-12 mt-lg-5">
+            <h1 className="service-details-title"> Web & Design Development</h1>
+            <p className="paragraph-text">
+              First impressions matter, make them count. Our designers and
+              developers are led by a decade of experience, working in sync to
+              deliver a digital identity that not only makes a fantastic first
+              impression, but is future-proof for years to come.
+            </p>
+            <ul className="paragraph-text">
+              <li className="li-text">Website designing</li>
+              <li className="li-text">Website Development</li>
+              <li className="li-text">eComm Portal Development</li>
+              <li className="li-text">Content Management Systems (CMS)</li>
+              <li className="li-text">Web Maintenance & Support</li>
+              <li className="li-text">Micro-sites</li>
+              <li className="li-text">Web Applications</li>
+              <li className="li-text">UI Designing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="influ-reel">Our Clients </div>
+      <PartnerSlider />
+      <div className="influ-reels">Case Study </div>
+      <div className="slider" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className="slider-container" style={{ animationPlayState: isPaused ? "paused" : "running" }}>
+          <img className="slide" src={netflix} alt="Netflix" />
+          <img className="slide" src={netflix} alt="Netflix" />
+          <img className="slide" src={netflix} alt="Netflix" />
+          <img className="slide" src={netflix} alt="Netflix" />
+          <img className="slide" src={netflix} alt="Netflix" />
+          <img className="slide" src={netflix} alt="Netflix" />
+        </div>
+      </div>
+      <div style={{ textAlign: "center", marginBottom: "20px" }}>
+      <Link to="/contact" class="btn-flip mt-4" >
+          <button class="req-btn"><i class="animation"></i>GET IN TOUCH<i class="animation"></i>
+          </button>
+        </Link>
+      </div>
+      <h2 className="faq_hed">Frequently Asked Questions (FAQs)</h2>
+
+      <details>
+        <summary>
+          Why should you develop a website according to industry trends?
+        </summary>
+        <ul>
+          <li>
+            Developing and maintaining your website according to ongoing trends
+            is the best way to remain competitive in your business niche.
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>
+        Can you work on a previously built website?
+        </summary>
+        <ul>
+          <li>
+          Yes, we can work on an existing website developed previously.
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>
+        Why is it imperative to have a good website flow and design?
+        </summary>
+        <ul>
+          <li>
+          Layout plays a huge role in your website’s page. Without it, your website is a wall of text and links that few would care to read through. Layout is important because it influences many different things.
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>
+        Why UI/UX is important for the website?
+        </summary>
+        <ul>
+          <li>
+          Responsive design teams create a single site to support many devices, but need to consider content, design and performance across devices to ensure usability.
+          </li>
+        </ul>
+      </details>
+      <ScrollToTopButton />
+    </div>
+  );
 }
 
-export default Programmatics
+export default Programmatics;

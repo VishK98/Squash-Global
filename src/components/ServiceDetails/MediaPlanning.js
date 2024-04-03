@@ -1,71 +1,116 @@
-import React from 'react'
-import "./ServiceDetails.css"
-import img from "../../assets/images/mplanning.png";
-import AnimatedText from '../Animations/TextAnimation';
+import React, { useState } from "react";
+import "./ServiceDetails.css";
+import img from "../../assets/images/Web & Design Development.png";
+import PartnerSlider from "../Home/PartnerSlider";
+import netflix from "../../assets/images/netflix.png";
+import ScrollToTopButton from '../TopButton/TopButton';
+import { Link } from "react-router-dom";
 
 
 function MediaPlanning() {
+  const [isPaused, setIsPaused] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsPaused(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsPaused(false);
+  };
+
   return (
-    <div className='container'>
-      <div class="route-text">
-        <ol class="breadcrumb route-text mt-3">
-          <li>
-            <a
-              href="/"
-              style={{ color: "grey", textDecoration: "none" }}
-            >
-              <AnimatedText text="Service /" animation="slide-left" />
-            </a>
-          </li>
-          <li>
-            <AnimatedText text="&nbsp;Media planning and buying" animation="slide-right" />
-
-          </li>
-        </ol>
-      </div>
-      <div className='row mt-lg-4'>
-        <h1 className="big-title page-head" style={{ fontSize: '45px', fontWeight: "bold",textAlign: "center" }}>MEDIA PLA<span className='underline-custom service-title'>NNING AND</span> <span className='service-title'>BUYI</span>NG</h1>
-        <div className='col-lg-5 col-md-5 col-12 mt-lg-3'>
-          <img style={{height: "91%", width: "100%"}} src={img} className='tittle-img' alt='' />
-        </div>
-        <div className='col-lg-7 col-md-7 col-12'>
-          <div style={{height: "2px", width: "100%",background: "#30256d",marginTop: "18px",marginTop:"30px"}}></div>
-          <h6 className='underline-custom-1 service-title-1'>FROM TRADITIONAL TO DIGITAL</h6>
-          <AnimatedText text={<h3>We Cover It ALL !!!</h3>} animation="slide-left" className="service-heading" />
-          <p>The medium is the power and to harness that power you need Media Planning experts by your side who knows how and when to deliver that message to the right people.</p>
-          <p> TAW ensures your billions of advertising dollars are not wasted by guiding you through proper media planning strategies. We assign a combination of people with skilled knowledge of media, budgeting, content creation, and other areas of expertise related to marketing. Our Media Planning Strategies will certainly help you drive the desired results that you are dreaming of.</p>
-          <h3 style={{ fontSize: "35px" }}><span style={{ color: "#30256d", fontSize: "35px"}}>3 PILLARS  OF  </span> MEDIA<br /> PLANNING</h3>
-          <div className='row mt-lg-3'>
-            <diV className="col-lg-2 col-12">
-              <p className='service-description' >Purpose</p>
-            </diV>
-            <div className="col-lg-10 col-12"> <p>What are the goals and objectives of the Brand? Does it create awareness and visibility or encourage a viewer to fill out a form? We consider all the possible questions at the early stages of the planning process.</p>
-            </div>
+    <div>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-4 col-md-4 col-12 mt-lg-5">
+            <img height="350px" width="350px" src={img} alt="Web & Design Development" />
           </div>
-          <div className='row'>
-            <diV className="col-lg-2 col-12">
-              <p className='service-description service-description-1 ' >Audience</p>
-            </diV>
-            <div className="col-lg-10 col-12 "> <p>Whom are we targeting? Who will likely to be benefitted from the message we are amplifying? Will they be interested in the product? Will they buy it? Will it serve its purpose of developing a long-term relationship between Brand and Customer? The Purpose and the Audience are both sides of a same coin.</p>
-            </div>
+          <div className="col-lg-8 col-md-8 col-12 mt-lg-5">
+            <h1 className="service-details-title"> Web & Design Development</h1>
+            <p className="paragraph-text">
+              First impressions matter, make them count. Our designers and
+              developers are led by a decade of experience, working in sync to
+              deliver a digital identity that not only makes a fantastic first
+              impression, but is future-proof for years to come.
+            </p>
+            <ul className="paragraph-text">
+              <li className="li-text">Website designing</li>
+              <li className="li-text">Website Development</li>
+              <li className="li-text">eComm Portal Development</li>
+              <li className="li-text">Content Management Systems (CMS)</li>
+              <li className="li-text">Web Maintenance & Support</li>
+              <li className="li-text">Micro-sites</li>
+              <li className="li-text">Web Applications</li>
+              <li className="li-text">UI Designing</li>
+            </ul>
           </div>
-          <div className='row'>
-            <diV className="col-lg-2 col-12">
-              <p className='service-description-2 ' >Reach</p>
-            </diV>
-            <div className="col-lg-10 col-12 "> <p>What would be volume? How many people are we targeting? What would be the frequency? Not everyone consumes the media at the same time. So, it is utmost important to decide the reach and frequency of a campaign..</p>
-            </div>
-          </div>
-          <h6 className='service-description-3'>All these three are interconnected and our media planning team consider each and every aspect during the early stage of plan formation. </h6>
-          <p className='service-description-3'>Want the same for your Business?</p>
-          <p className='service-description-3'>How about catching up for a <span style={{ color: "#30256d" }}>Coffee!</span></p>
-          <div style={{height: "2px", width: "100%",background: "#30256d",marginTop: "18px"}}></div>
-
         </div>
       </div>
+      <div className="influ-reel">Our Clients </div>
+      <PartnerSlider />
+      <div className="influ-reels">Case Study </div>
+      <div className="slider" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className="slider-container" style={{ animationPlayState: isPaused ? "paused" : "running" }}>
+          <img className="slide" src={netflix} alt="Netflix" />
+          <img className="slide" src={netflix} alt="Netflix" />
+          <img className="slide" src={netflix} alt="Netflix" />
+          <img className="slide" src={netflix} alt="Netflix" />
+          <img className="slide" src={netflix} alt="Netflix" />
+          <img className="slide" src={netflix} alt="Netflix" />
+        </div>
+      </div>
+      <div style={{ textAlign: "center", marginBottom: "20px" }}>
+      <Link to="/contact" class="btn-flip mt-4" >
+          <button class="req-btn"><i class="animation"></i>GET IN TOUCH<i class="animation"></i>
+          </button>
+        </Link>
+      </div>
+      <h2 className="faq_hed">Frequently Asked Questions (FAQs)</h2>
+
+      <details>
+        <summary>
+          Why should you develop a website according to industry trends?
+        </summary>
+        <ul>
+          <li>
+            Developing and maintaining your website according to ongoing trends
+            is the best way to remain competitive in your business niche.
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>
+        Can you work on a previously built website?
+        </summary>
+        <ul>
+          <li>
+          Yes, we can work on an existing website developed previously.
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>
+        Why is it imperative to have a good website flow and design?
+        </summary>
+        <ul>
+          <li>
+          Layout plays a huge role in your website’s page. Without it, your website is a wall of text and links that few would care to read through. Layout is important because it influences many different things.
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>
+        Why UI/UX is important for the website?
+        </summary>
+        <ul>
+          <li>
+          Responsive design teams create a single site to support many devices, but need to consider content, design and performance across devices to ensure usability.
+          </li>
+        </ul>
+      </details>
+      <ScrollToTopButton />
     </div>
-
-  )
+  );
 }
 
-export default MediaPlanning
+export default MediaPlanning;
