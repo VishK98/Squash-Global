@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import "./ServiceDetails.css";
 import img from "../../assets/images/SocialMedia marketing.png";
 import PartnerSlider from "../Home/PartnerSlider";
@@ -20,6 +21,11 @@ function SocialMedia() {
 
   return (
     <div>
+      <Helmet>
+        <title>Best Social Media Marketing Agency in Gurgaon - The Agency Way (TAW)</title>
+        <meta name="description" content="Maximize your social media presence with The Agency Way (TAW), your top choice for social media marketing in Gurgaon. Engagement and growth your brand today." />
+        <link rel="canonical" href="https://taw.agency/services/socialmedia" />
+      </Helmet>
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-4 col-12 mt-lg-5">

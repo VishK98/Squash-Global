@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import "./ServiceDetails.css";
 import img from "../../assets/images/pr.png";
 import PartnerSlider from "../Home/PartnerSlider";
@@ -20,6 +21,11 @@ function DigitalPR() {
 
   return (
     <div>
+      <Helmet>
+        <title>Digital PR - India's Best PR Agency in Gurgaon - The Agency Way (TAW)</title>
+        <meta name="description" content="Experience unparalleled brand elevation with Digital PR by The Agency Way (TAW), recognized as India's Best PR Agency in Gurgaon." />
+        <link rel="canonical" href="https://taw.agency/services/digitalpr" />
+      </Helmet>
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-4 col-12 mt-lg-5">

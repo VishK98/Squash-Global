@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import "./ServiceDetails.css";
 import img from "../../assets/images/SEO.png";
 import PartnerSlider from "../Home/PartnerSlider";
@@ -20,6 +21,11 @@ function SEO() {
 
   return (
     <div>
+      <Helmet>
+        <title>Search Engine Optimization (SEO) Agency in Gurgaon - The Agency Way (TAW)</title>
+        <meta name="description" content="Boost your online visibility with The Agency Way (TAW), your trusted SEO agency in Gurgaon. Drive organic traffic and achieve long-term success with our proven strategies." />
+        <link rel="canonical" href="https://taw.agency/services/seo" />
+      </Helmet>
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-4 col-12 mt-lg-5">

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import "./ServiceDetails.css";
 import img from "../../assets/images/Web & Design Development.png";
 import PartnerSlider from "../Home/PartnerSlider";
@@ -19,7 +20,13 @@ function WebsiteDesign() {
   };
 
   return (
+    
     <div>
+      <Helmet>
+        <title>Website Design and Development Agency In Gurgaon - The Agency Way (TAW)</title>
+        <meta name="description" content="Enhance your online presence with The Agency Way (TAW), your premier website design and development agency in Gurgaon. Transform your digital footprint with our expert solutions." />
+        <link rel="canonical" href="https://taw.agency/services/website-design" />
+      </Helmet>
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-4 col-12 mt-lg-5">
