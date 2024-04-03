@@ -99,11 +99,11 @@ function Home() {
               animation="slide-up"
             />
             <AnimatedText
-              text={<h1 className="framing-text">Centric</h1>}
+              text={<p className="framing-text">Centric</p>}
               animation="slide-up"
             />
             <AnimatedText
-              text={<h1 className="Newstyle-text">Experiences</h1>}
+              text={<p className="Newstyle-text">Experiences</p>}
               animation="slide-up"
             />
             <AnimatedText

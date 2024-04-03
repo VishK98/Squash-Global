@@ -61,7 +61,7 @@ function App() {
           <Route path="/services/creative" element={<Creative />} />
           <Route path="/services/content" element={<Content />} />
           <Route path="/services/paid-ads" element={< Programmatics/>} />
-          <Route path="/services/technology" element={<WebsiteDesign />} />
+          <Route path="/services/website-design" element={<WebsiteDesign />} />
           <Route path="/services/influencer-marketing" element={<Influencer/>} />
           <Route path="/services/production" element={<Production />} />
           <Route path="/thankyou" element={<Thankyou />} />
