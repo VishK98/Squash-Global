@@ -22,7 +22,7 @@ const Slider = () => {
     ];
 
     const sliderRef = useRef(null);
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [, setCurrentIndex] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
     let animationId;
 
@@ -32,7 +32,7 @@ const Slider = () => {
         const slide = () => {
             animationId = requestAnimationFrame(() => {
                 if (!isHovered && slider) {
-                    slider.scrollLeft -= 0.5;
+                    slider.scrollLeft -= 1;
                     if (slider.scrollLeft <= 0) {
                         slider.scrollLeft = slider.scrollWidth / 2;
                     }

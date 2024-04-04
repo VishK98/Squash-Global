@@ -20,22 +20,65 @@ import bannerVideo from "../../assets/taw-ad-video.mp4";
 import rigthArrow from "../../assets/images/Icons/-right-arrow.png";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 import { Helmet } from 'react-helmet';
+import { contactUs } from "../../utils/api";
+import { contactUsMail } from "../../utils/api";
+import PopupModal from "../PopupModal/PopupModal";
+
 
 function Home() {
+  const [modalShow, setModalShow] = useState(false);
+  const [apiResponse, setApiResponse] = useState(null);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    state: "",
-    contactNumber: "",
-    about: "",
+    contact: "",
+    service: "",
+    company: "",
+    message: "",
   });
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    if (validateForm()) {
-      console.log("Form data:", formData);
+    if (
+      formData.name &&
+      formData.email &&
+      formData.contact &&
+      formData.message &&
+      formData.service !== "selected"
+    ) {
+      try {
+        setModalShow(true);
+        const response = await contactUs(formData);
+        // console.log("Response:", response.success);
+        if (response.success) {
+          await sendMail(formData); // Wait for sendMail() to complete
+          setApiResponse(response);
+          setModalShow(true);
+          const resetValue = {
+            name: "",
+            email: "",
+            contact: "",
+            service: "",
+            message: "",
+          };
+          setFormData(resetValue);
+          window.location.href = '/thankyou';
+        }
+      } catch (error) {
+        console.error("Error submitting form for admin:", error);
+      }
     } else {
-      console.log("Form is not valid");
+      alert("Please fill out all fields and select a service.");
+    }
+  };
+
+  const sendMail = async (formData) => { // Pass formData as an argument
+    try {
+      const response = await contactUsMail(formData);
+      console.log(`Mail response ==> ${response.data}`);
+    } catch (error) {
+      console.error("Error submitting form for mail:", error);
     }
   };
 
@@ -47,16 +90,6 @@ function Home() {
     }));
   };
 
-  const validateForm = () => {
-    return (
-      formData.name.trim() !== "" &&
-      formData.email.trim() !== "" &&
-      formData.state.trim() !== "" &&
-      formData.contactNumber.trim() !== "" &&
-      formData.about.trim() !== "" &&
-      formData.service.trim() !== ""
-    );
-  };
   const videoRef = useRef(null);
   const [marginTop, setMarginTop] = useState(0);
 
@@ -68,7 +101,7 @@ function Home() {
   }, []);
   return (
     <>
-        <Helmet>
+      <Helmet>
         <title>The Agency Way - Digital Marketing and Advertising Agency in Gurgaon</title>
         <meta name="description" content="Boost your brand's digital presence with The Agency Way (TAW)  your trusted Digital Marketing and Advertising Agency in Gurgaon. Reach new heights online." />
         <link rel="canonical" href="https://taw.agency/" />
@@ -122,20 +155,20 @@ function Home() {
             <p className="explorbtn" style={{ marginTop: "35px" }}>
               Explore
             </p>
-           
+
             <Link to="/about-us" style={{ textDecoration: "none" }}>
-            
-            <div
-              className="animated-arrow-btn"
-              style={{
-                height: "40px",
-                width: "40px",
-              }}
-            >
-              <ImageAnimationUnfold src={rigthArrow} alt="Image not found" />
-            </div>
-           </Link>
-            </div>
+
+              <div
+                className="animated-arrow-btn"
+                style={{
+                  height: "40px",
+                  width: "40px",
+                }}
+              >
+                <ImageAnimationUnfold src={rigthArrow} alt="Image not found" />
+              </div>
+            </Link>
+          </div>
           <div className="col-lg-8 mt-4 mt-lg-0 col-12">
             <ImageAnimationUnfold src={gispiImage} alt="Image not found" />
           </div>
@@ -684,8 +717,8 @@ function Home() {
                 text={
                   <input
                     type="text"
-                    name="state"
-                    value={formData.state}
+                    name="company"
+                    value={formData.company}
                     onChange={handleChange}
                     placeholder="Type here"
                     autoComplete="off"
@@ -796,8 +829,8 @@ function Home() {
                 text={
                   <input
                     type="tel"
-                    name="contactNumber"
-                    value={formData.contactNumber}
+                    name="contact"
+                    value={formData.contact}
                     onChange={handleChange}
                     placeholder="+91 9900000088"
                     autoComplete="off"
@@ -816,8 +849,8 @@ function Home() {
                 text={
                   <input
                     type="text"
-                    name="about"
-                    value={formData.about}
+                    name="message"
+                    value={formData.message}
                     onChange={handleChange}
                     placeholder="Type here"
                     autoComplete="off"
@@ -849,25 +882,12 @@ function Home() {
               </div>
               <span>Submit</span>
             </button>
+            <PopupModal show={modalShow} onHide={() => setModalShow(false)} apiResponse={apiResponse}
+            />
           </div>
         </form>
       </div>
-      <div>
-        {" "}
-        <form>
-          {" "}
-          <div
-            class="visme_d"
-            data-title="Untitled Project"
-            data-url="ojewgd87-untitled-project?fullPage=true"
-            data-domain="forms"
-            data-full-page="true"
-            data-min-height="100vh"
-            data-form-id="28772"
-          ></div>
-          <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>{" "}
-        </form>{" "}
-      </div>
+
       <ScrollToTopButton />
     </>
   );

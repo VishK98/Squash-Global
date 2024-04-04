@@ -8,7 +8,6 @@ function PopupModal({ show, onHide, apiResponse }) {
     "Please stand by as we work on sending your request to our administrator.";
 
   useEffect(() => {
-    // console.log(`Popup ==>${apiResponse}`);
     if (apiResponse) {
       setLoading(false);
       message = "";
