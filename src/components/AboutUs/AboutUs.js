@@ -65,7 +65,7 @@ function Philosophy() {
             </p>} animation="slide-down" />
             <AnimatedText text={<p className="paragraph-text mt-lg-4 mt-3">
               Our team of Creative and Passionate people will help you create the most effective marketing strategy to supply ideal number of consumer touch points to drive lead and sales.
-              Be it Media Planning or Buying, PR or Crisis Management, Creative, Content, Social Media, Search Engine Optimization and Management, Influencer Marketing, Video Production, Programmatic Advertising or more, we are here to cater to your needs and requirements in the most effective and long term way possible.
+              Be it Media Planning or Buying, PR or Crisis Management, Creative, Content, Social Media, Search Engine Optimization and Management, Influencer Marketing, Video Production, Programmatic Advertising or more, we are here to cater to your needs and requirements in the most effective and long term ways to possible.
             </p>} animation="slide-down" />
           </div>
         </div>
