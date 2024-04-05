@@ -33,17 +33,14 @@ function SocialMedia() {
           </div>
           <div className="col-lg-8 col-md-8 col-12 mt-lg-5">
             <h1 className="service-details-title">Social Media Marketing </h1>
-            <p className="paragraph-text">
-            With an ever-growing family of social content specialists, we curate communication and start conversations that reward and resonate with your audience. With a decade worth of practice in staying on top of topical chatter, we know how to maximise reach, recall and impact across platforms that we identify as most appropriate for your brand.
-            </p>
+            <p className="Create-Text" style={{ marginLeft: '3px' }}>HARNESS THE POWER OF SOCIAL MEDIA</p>
+            <p className="paragraph-text" style={{ marginLeft: '5px' }}>
+                The world connects through the internet, and social media is the ultimate weapon and effective link between your Brand and your consumer base. TAW helps you to harness the power of social media and forge out the most comprehensive social media marketing strategy. Our ultimate guidance helps brands gain maximum reach, boost conversions and increase brand awareness.            </p>
             <ul className="paragraph-text">
               <li className="li-text">Strategic Campaign Planning</li>
               <li className="li-text">Designing and Maintaining Social Media Platforms</li>
-              <li className="li-text">Integrated Social Media Marketing Campaigns</li>
+              <li className="li-text">Integrated Social Media Campaigns On Multiple Platforms</li>
               <li className="li-text">Social Media Advertising</li>
-              <li className="li-text">Digital Video Commercials</li>
-              <li className="li-text">Vox Pop Videos</li>
-              <li className="li-text">Social Lead Generation campaigns</li>
               <li className="li-text">Twitter Trending campaigns</li>
             </ul>
           </div>

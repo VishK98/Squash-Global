@@ -30,25 +30,22 @@ function MediaPlanning() {
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-4 col-12 mt-lg-5">
-            <img height="350px" width="350px" src={img} alt="Web & Design Development" />
+            <img height="350px" width="350px" src={img} alt="Design" />
           </div>
           <div className="col-lg-8 col-md-8 col-12 mt-lg-5">
-            <h1 className="service-details-title"> Web & Design Development</h1>
-            <p className="paragraph-text">
-              First impressions matter, make them count. Our designers and
-              developers are led by a decade of experience, working in sync to
-              deliver a digital identity that not only makes a fantastic first
-              impression, but is future-proof for years to come.
+            <h1 className="service-details-title"> Design</h1>
+            <p class="Create-Text">TURN IDEAS INTO REALITY</p>
+            <p className="paragraph-text" style={{ marginLeft: '5px' }}>
+            Illustration implies a thousand word. That being said, arguably, none can deny the fact that Creatives are the sole of all types of marketing and advertising. From the time immemorial, Creative ads, posters, graphics are being imprinted on the mind of the consumers. Creative messages are so strong that consumers end up remembering a Brand with the creatives. But all are a fantasy dream and nothing else, if you lack the ability to use the power of Creative marketing to its fullest form.
+            <p className="paragraph-text">At TAW, our creative advertising team collaborate on the creative concept for an advertising campaign and give meaning to your Brand in many ways.</p>
             </p>
             <ul className="paragraph-text">
-              <li className="li-text">Website designing</li>
-              <li className="li-text">Website Development</li>
-              <li className="li-text">eComm Portal Development</li>
-              <li className="li-text">Content Management Systems (CMS)</li>
-              <li className="li-text">Web Maintenance & Support</li>
-              <li className="li-text">Micro-sites</li>
-              <li className="li-text">Web Applications</li>
-              <li className="li-text">UI Designing</li>
+              <li className="li-text">Poster Design</li>
+              <li className="li-text">Infographic Design</li>
+              <li className="li-text">Website & App Banner Design</li>
+              <li className="li-text">Marketing Collaterals Design </li>
+              <li className="li-text">Social Media Creatives Design</li>
+              <li className="li-text">Brand Identity Design</li>
             </ul>
           </div>
         </div>
@@ -76,43 +73,41 @@ function MediaPlanning() {
 
       <details>
         <summary>
-          Why should you develop a website according to industry trends?
+        What role does Design play in creating brand's identity?
         </summary>
         <ul>
           <li>
-            Developing and maintaining your website according to ongoing trends
-            is the best way to remain competitive in your business niche.
+          Design helps your audience recognize your brand beyond your brand's name. Using colors, theme, font and typography language, you can imprint your brand on your audience.
           </li>
         </ul>
       </details>
       <details>
         <summary>
-        Can you work on a previously built website?
+        How to add creative & design to communicate Brand's message?
         </summary>
         <ul>
           <li>
-          Yes, we can work on an existing website developed previously.
+          Color, themes, fonts, illustration has a strong way of portraying your brand's image into the audience mind. Using designing techniques to communicate message can create lasting impression.
           </li>
         </ul>
       </details>
       <details>
         <summary>
-        Why is it imperative to have a good website flow and design?
+        What is the most used designing software?
         </summary>
         <ul>
           <li>
-          Layout plays a huge role in your website’s page. Without it, your website is a wall of text and links that few would care to read through. Layout is important because it influences many different things.
+          Photoshop is the most general software for designing used by billions of people. Apart from that, Adobe Suite offers all the designing software and elements to craft your Brand's design and identity. 
           </li>
         </ul>
       </details>
       <details>
         <summary>
-        Why UI/UX is important for the website?
+        How to build brand identity through design language?
         </summary>
         <ul>
           <li>
-          Responsive design teams create a single site to support many devices, but need to consider content, design and performance across devices to ensure usability.
-          </li>
+          A set of color, theme, font, mood board can help you build your brand identity through design language.          </li>
         </ul>
       </details>
       <ScrollToTopButton />

@@ -34,11 +34,9 @@ function WebsiteDesign() {
           </div>
           <div className="col-lg-8 col-md-8 col-12 mt-lg-5">
             <h1 className="service-details-title"> Web & Design Development</h1>
-            <p className="paragraph-text">
-              First impressions matter, make them count. Our designers and
-              developers are led by a decade of experience, working in sync to
-              deliver a digital identity that not only makes a fantastic first
-              impression, but is future-proof for years to come.
+            <p className="Create-Text" style={{ marginLeft: '10px' }}>WE CREATE YOUR BRAND'S IDENTITY</p>
+            <p className="paragraph-text" style={{ marginLeft: '10px' }}>
+              A website is the first point of contact with your customer. At TAW, we ensure that the first encounter is worth remembering for with an optimum user experience. Our team of developers and designers encode all necessary elements to make your website your Brand's Identity.
             </p>
             <ul className="paragraph-text">
               <li className="li-text">Website designing</li>
@@ -76,43 +74,40 @@ function WebsiteDesign() {
 
       <details>
         <summary>
-          Why should you develop a website according to industry trends?
+        Why website is important for businesses? 
         </summary>
         <ul>
           <li>
-            Developing and maintaining your website according to ongoing trends
-            is the best way to remain competitive in your business niche.
+          Website creates a first point of contact with your customers, helping them to understand your business better.
           </li>
         </ul>
       </details>
       <details>
         <summary>
-        Can you work on a previously built website?
+        What programming language is best for start-up?
         </summary>
         <ul>
           <li>
-          Yes, we can work on an existing website developed previously.
+          Choosing programming language depends on the services you are offering and the length and level of your website. Basically, Shopify, HTML, WordPress, PHP are the most used programming language for early-stage businesses.          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>
+        How long does it take to design & develop a website?
+        </summary>
+        <ul>
+          <li>
+          Designing & Developing a website can take anywhere between a week to a month depending on the size, requirements and complexity of the website. 
           </li>
         </ul>
       </details>
       <details>
         <summary>
-        Why is it imperative to have a good website flow and design?
+        How to build customized website to reflect brand identity?
         </summary>
         <ul>
           <li>
-          Layout plays a huge role in your website’s page. Without it, your website is a wall of text and links that few would care to read through. Layout is important because it influences many different things.
-          </li>
-        </ul>
-      </details>
-      <details>
-        <summary>
-        Why UI/UX is important for the website?
-        </summary>
-        <ul>
-          <li>
-          Responsive design teams create a single site to support many devices, but need to consider content, design and performance across devices to ensure usability.
-          </li>
+         Building a customized website is a perfect way to communicate your brand's values and offerings. You need to be consistent with the color palette, theme, messaging throughout the website.          </li>
         </ul>
       </details>
       <ScrollToTopButton />

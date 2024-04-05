@@ -12,6 +12,15 @@
     font-weight: bold;
 }
 
+.Create-Text {
+    font-size: 23px;
+    font-family: RedHatDisplayBold, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(70deg, #000, #30256d, #30256d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
 .tittle-img {
     max-width: auto;
     height: auto

@@ -23,7 +23,7 @@ import { Helmet } from 'react-helmet';
 function Sector() {
   // const routes = ["services/websiteDesign" , "services/mediaPlanning", "services/socialMedia", "services/seo" ,"services/production", "services/digitalPR" , "services/programmatics", "services/influencer"];
 
-  const routes = ["services/website-design" , "#services/design", "services/socialmedia","services/seo", "#services/paid-ads" , "services/digitalpr", "#services/influencer-marketing", "#services/production"];
+  const routes = ["services/website-design" , "services/design", "services/socialmedia","services/seo", "#services/paid-ads" , "services/digitalpr", "#services/influencer-marketing", "#services/production"];
 
   const services = [
     {
