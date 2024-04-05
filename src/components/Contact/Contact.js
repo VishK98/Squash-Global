@@ -241,17 +241,15 @@ function Contact() {
                       onChange={handleChange}
                     >
                       <option value="selected">Select</option>
-                      <option value="Media Planning And Buying">Media Planning And Buying</option>
-                      <option value="Digital PR And ORM">Digital PR And ORM</option>
-                      <option value="SEO & SEM">SEO & SEM</option>
-                      <option value="Creative">Creative</option>
-                      <option value="Design and Development">Social Media Management</option>
-                      <option value="Content">Content</option>
-                      <option value="Film & Photography">Film & Photography</option>
-                      <option value="Website Design And Devlopment">Website Design And Devlopment</option>
-                      <option value="Influencer Marketing">Influencer Marketing</option>
-                      <option value="Social Media Marketing">Social Media Marketing</option>
+                      <option value="Social Media Management (SMM)">Social Media Management (SMM)</option>
+                      <option value="Search Engine Optimisation (SEO)">Search Engine Optimisation (SEO)</option>
+                      <option value="Public Relation (PR)">Public Relation (PR)</option>
                       <option value="Paid Ads">Paid Ads</option>
+                      <option value="Website Design and Developments">Website Design and Developments</option>
+                      <option value="Creative Design">Creative Design</option>
+                      <option value="Content Solutions">Content Solutions</option>
+                      <option value="Influencer Marketing">Influencer Marketing</option>
+                      <option value="Film & Photography">Film & Photography</option>
                     </select>
 
                   } animation='slide-up' />
