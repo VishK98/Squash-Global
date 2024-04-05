@@ -4,9 +4,8 @@ import "./ServiceDetails.css";
 import img from "../../assets/images/Web & Design Development.png";
 import PartnerSlider from "../Home/PartnerSlider";
 import netflix from "../../assets/images/case study.png";
-import ScrollToTopButton from '../TopButton/TopButton';
+import ScrollToTopButton from "../TopButton/TopButton";
 import { Link } from "react-router-dom";
-
 
 function Influencer() {
   const [isPaused, setIsPaused] = useState(false);
@@ -21,33 +20,57 @@ function Influencer() {
 
   return (
     <div>
-       <Helmet>
-        <title>Influencer-marketing Agency in Gurgaon - The Agency Way (TAW)</title>
-        <meta name="description" content="Empower your brand's influence with The Agency Way (TAW), your premier influencer marketing agency in Gurgaon. Collaborate with top influencers and amplify your brand's reach today." />
-        <link rel="canonical" href="https://taw.agency/services/influencer-marketing" />
+      <Helmet>
+        <title>
+          Influencer-marketing Agency in Gurgaon - The Agency Way (TAW)
+        </title>
+        <meta
+          name="description"
+          content="Empower your brand's influence with The Agency Way (TAW), your premier influencer marketing agency in Gurgaon. Collaborate with top influencers and amplify your brand's reach today."
+        />
+        <link
+          rel="canonical"
+          href="https://taw.agency/services/influencer-marketing"
+        />
       </Helmet>
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-4 col-12 mt-lg-5">
-            <img height="350px" width="350px" src={img} alt="Web & Design Development" />
+            <img
+              height="350px"
+              width="350px"
+              src={img}
+              alt="Influencer Marketing"
+            />
           </div>
           <div className="col-lg-8 col-md-8 col-12 mt-lg-5">
-            <h1 className="service-details-title"> Web & Design Development</h1>
+            <h1 className="service-details-title"> Influencer Marketing </h1>
+            <p className="Create-Text" style={{ marginLeft: "3px" }}>
+              STEP INTO THE NEW NORMAL OF DIGITAL SPHERE
+            </p>
             <p className="paragraph-text">
-              First impressions matter, make them count. Our designers and
-              developers are led by a decade of experience, working in sync to
-              deliver a digital identity that not only makes a fantastic first
-              impression, but is future-proof for years to come.
+              Influencers are like modern marketing currency. With incredible
+              cultural and consumer sway, their involvement can practically
+              guarantee thousands of watchers or listeners. To attract
+              customers, your business should let these social media stars light
+              the way.
+            </p>
+            <p className="paragraph-text">
+              Our influencer outreach services will help you reach new audiences
+              and create effective amplification of your Brand communication. At
+              TAW, we incorporate influencer marketing into your social media
+              strategy to reach a niche, more engaged audience segment and
+              expand your brand's presence.
             </p>
             <ul className="paragraph-text">
-              <li className="li-text">Website designing</li>
-              <li className="li-text">Website Development</li>
-              <li className="li-text">eComm Portal Development</li>
-              <li className="li-text">Content Management Systems (CMS)</li>
-              <li className="li-text">Web Maintenance & Support</li>
-              <li className="li-text">Micro-sites</li>
-              <li className="li-text">Web Applications</li>
-              <li className="li-text">UI Designing</li>
+              <li className="li-text">Hyper-focusing on niche influencers</li>
+              <li className="li-text">
+                Creating waves across multiple platforms
+              </li>
+              <li className="li-text">
+                Playing the long-term game with long-term partnership
+              </li>
+              <li className="li-text">Authenticity over perfection</li>
             </ul>
           </div>
         </div>
@@ -55,8 +78,15 @@ function Influencer() {
       <div className="influ-reel">Our Clients </div>
       <PartnerSlider />
       <div className="influ-reels">Case Study </div>
-      <div className="slider" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <div className="slider-container" style={{ animationPlayState: isPaused ? "paused" : "running" }}>
+      <div
+        className="slider"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <div
+          className="slider-container"
+          style={{ animationPlayState: isPaused ? "paused" : "running" }}
+        >
           <img className="slide" src={netflix} alt="Netflix" />
           <img className="slide" src={netflix} alt="Netflix" />
           <img className="slide" src={netflix} alt="Netflix" />
@@ -66,8 +96,9 @@ function Influencer() {
         </div>
       </div>
       <div style={{ textAlign: "center", marginBottom: "20px" }}>
-      <Link to="/contact" class="btn-flip mt-4" >
-          <button class="req-btn"><i class="animation"></i>GET IN TOUCH<i class="animation"></i>
+        <Link to="/contact" class="btn-flip mt-4">
+          <button class="req-btn">
+            <i class="animation"></i>GET IN TOUCH<i class="animation"></i>
           </button>
         </Link>
       </div>
@@ -85,32 +116,31 @@ function Influencer() {
         </ul>
       </details>
       <details>
-        <summary>
-        Can you work on a previously built website?
-        </summary>
+        <summary>Can you work on a previously built website?</summary>
         <ul>
-          <li>
-          Yes, we can work on an existing website developed previously.
-          </li>
+          <li>Yes, we can work on an existing website developed previously.</li>
         </ul>
       </details>
       <details>
         <summary>
-        Why is it imperative to have a good website flow and design?
+          Why is it imperative to have a good website flow and design?
         </summary>
         <ul>
           <li>
-          Layout plays a huge role in your website’s page. Without it, your website is a wall of text and links that few would care to read through. Layout is important because it influences many different things.
+            Layout plays a huge role in your website’s page. Without it, your
+            website is a wall of text and links that few would care to read
+            through. Layout is important because it influences many different
+            things.
           </li>
         </ul>
       </details>
       <details>
-        <summary>
-        Why UI/UX is important for the website?
-        </summary>
+        <summary>Why UI/UX is important for the website?</summary>
         <ul>
           <li>
-          Responsive design teams create a single site to support many devices, but need to consider content, design and performance across devices to ensure usability.
+            Responsive design teams create a single site to support many
+            devices, but need to consider content, design and performance across
+            devices to ensure usability.
           </li>
         </ul>
       </details>

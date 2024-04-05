@@ -4,9 +4,8 @@ import "./ServiceDetails.css";
 import img from "../../assets/images/pr.png";
 import PartnerSlider from "../Home/PartnerSlider";
 import netflix from "../../assets/images/case study.png";
-import ScrollToTopButton from '../TopButton/TopButton';
+import ScrollToTopButton from "../TopButton/TopButton";
 import { Link } from "react-router-dom";
-
 
 function DigitalPR() {
   const [isPaused, setIsPaused] = useState(false);
@@ -22,8 +21,13 @@ function DigitalPR() {
   return (
     <div>
       <Helmet>
-        <title>Digital PR - India's Best PR Agency in Gurgaon - The Agency Way (TAW)</title>
-        <meta name="description" content="Experience unparalleled brand elevation with Digital PR by The Agency Way (TAW), recognized as India's Best PR Agency in Gurgaon." />
+        <title>
+          Digital PR - India's Best PR Agency in Gurgaon - The Agency Way (TAW)
+        </title>
+        <meta
+          name="description"
+          content="Experience unparalleled brand elevation with Digital PR by The Agency Way (TAW), recognized as India's Best PR Agency in Gurgaon."
+        />
         <link rel="canonical" href="https://taw.agency/services/digitalpr" />
       </Helmet>
       <div className="container">
@@ -33,19 +37,29 @@ function DigitalPR() {
           </div>
           <div className="col-lg-8 col-md-8 col-12 mt-lg-5">
             <h1 className="service-details-title"> Digital PR & ORM </h1>
+            <p className="Create-Text" style={{ marginLeft: "3px" }}>
+              BACKED BY STRONG STORYTELLING TECHNIQUES
+            </p>
             <p className="paragraph-text">
-             
-Creating impactful digital PR and ORM content for a website involves a strategic approach aimed at enhancing online visibility, managing reputation, and fostering credibility. Firstly, it's imperative to define clear objectives tailored to the brand's goals, whether it's boosting brand awareness, improving search engine rankings, or mitigating reputation crises. Audience research is crucial to understanding the target demographic's preferences, online behavior, and interests. Keyword research aids in optimizing content for search engines, ensuring it aligns with user search intent. Diverse content types such as press releases, guest blog posts, infographics, and social media updates cater to different audience segments and platforms, maximizing reach and engagement. Adherence to content guidelines ensures accuracy, relevance, and consistency across all materials. Strategic distribution through newswires, social media channels, industry forums, and influencer partnerships amplifies content visibility and credibility. Regular measurement and analysis of key metrics enable ongoing optimization and refinement of content strategies, ensuring continued effectiveness in digital PR and ORM efforts.
+              Public Relation is one of the evergreen modes of Mass
+              communication. It breathes life into your Brand bridging the gap
+              between the business and its potential customers. But Implementing
+              a PR Strategy is like walking on a tight rope between Strategy,
+              Persuasion, Creativity and Technology. And TAW is known for doing
+              exactly the same in the best possible way.
+            </p>
+            <p className="paragraph-text">
+              By using multimedia channels, TAW promotes your products or
+              services to cultivate a positive public perception.
             </p>
             <ul className="paragraph-text">
-              <li className="li-text">Brand Monitoring Tools</li>
-              <li className="li-text">Crisis Communication Plan</li>
-              <li className="li-text">Community Engagement</li>
-              <li className="li-text">Influencer Partnerships</li>
-              <li className="li-text">User-Generated Content Campaigns</li>
-              <li className="li-text">Localized Content</li>
-              <li className="li-text">Continuous Learning and Adaptation</li>
-              <li className="li-text">Ethical Practices</li>
+              <li className="li-text">Brand Launch & Recognition Strategy</li>
+              <li className="li-text">Reputation Management</li>
+              <li className="li-text">
+                Crisis Communication & Brand Positioning
+              </li>
+              <li className="li-text">Digital PR & Strategy</li>
+              <li className="li-text">Media Outreach & Progress Report</li>
             </ul>
           </div>
         </div>
@@ -53,8 +67,15 @@ Creating impactful digital PR and ORM content for a website involves a strategic
       <div className="influ-reel">Our Clients </div>
       <PartnerSlider />
       <div className="influ-reels">Case Study </div>
-      <div className="slider" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <div className="slider-container" style={{ animationPlayState: isPaused ? "paused" : "running" }}>
+      <div
+        className="slider"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <div
+          className="slider-container"
+          style={{ animationPlayState: isPaused ? "paused" : "running" }}
+        >
           <img className="slide" src={netflix} alt="Netflix" />
           <img className="slide" src={netflix} alt="Netflix" />
           <img className="slide" src={netflix} alt="Netflix" />
@@ -64,8 +85,9 @@ Creating impactful digital PR and ORM content for a website involves a strategic
         </div>
       </div>
       <div style={{ textAlign: "center", marginBottom: "20px" }}>
-      <Link to="/contact" class="btn-flip mt-4" >
-          <button class="req-btn"><i class="animation"></i>GET IN TOUCH<i class="animation"></i>
+        <Link to="/contact" class="btn-flip mt-4">
+          <button class="req-btn">
+            <i class="animation"></i>GET IN TOUCH<i class="animation"></i>
           </button>
         </Link>
       </div>
@@ -73,40 +95,41 @@ Creating impactful digital PR and ORM content for a website involves a strategic
 
       <details>
         <summary>
-        What is Digital PR and ORM?
+          What role public relation plays in building brand trust and loyalty?
         </summary>
         <ul>
           <li>
-          Digital PR (Public Relations) and ORM (Online Reputation Management) involve strategies to manage a brand's online presence, reputation, and credibility.
+            Using the power of media, public relation helps brand to communicate
+            with their audience in an authentic and credible way.
           </li>
         </ul>
       </details>
       <details>
-        <summary>
-        Why are Digital PR and ORM important?
-        </summary>
+        <summary>Why PR is important for a brand?</summary>
         <ul>
           <li>
-          They help businesses shape their online image, build trust with customers, and respond effectively to reputation challenges.
+            Public Relation builds credibility for your brand in the public's
+            eye using media as the main source of communication.
           </li>
         </ul>
       </details>
       <details>
-        <summary>
-        What strategies work for Digital PR and ORM?
-        </summary>
+        <summary>What is Online Reputation Management?</summary>
         <ul>
           <li>
-          Effective strategies include creating engaging content, building relationships with influencers, monitoring online conversations, and implementing SEO best practices.          </li>
+            Online Reputation Management is building and maintaining your
+            brand's reputation and image in the digital sphere.
+          </li>
         </ul>
       </details>
       <details>
-        <summary>
-        How do I measure success in Digital PR and ORM?
-        </summary>
+        <summary>How to add PR as a marketing strategy?</summary>
         <ul>
           <li>
-          Success can be measured through website traffic, search engine rankings, social media engagement, and online reviews and ratings.          </li>
+            By creating a thorough and effective media communication plan, you
+            can implement PR as your prime marketing strategy. You need to
+            consistent with PR to gain maximum benefits.
+          </li>
         </ul>
       </details>
       <ScrollToTopButton />
