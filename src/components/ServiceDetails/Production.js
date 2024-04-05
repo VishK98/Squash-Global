@@ -42,7 +42,7 @@ function Production() {
             />
           </div>
           <div className="col-lg-8 col-md-8 col-12 mt-lg-5">
-            <h1 className="service-details-title"> Web & Design Development</h1>
+            <h1 className="service-details-title"> Film & Photography</h1>
             <p className="Create-Text" style={{ marginLeft: "3px" }}>
               THOUSANDS OF EMOTIONS IN MOTION
             </p>
