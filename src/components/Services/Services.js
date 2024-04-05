@@ -25,7 +25,7 @@ function Sector() {
     "services/seo",
     "services/paid-ads",
     "services/digitalpr",
-    "#services/influencer-marketing",
+    "services/influencer-marketing",
     "services/production",
   ];
 
