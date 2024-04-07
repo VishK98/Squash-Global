@@ -486,10 +486,10 @@ function Home() {
                 <ImageAnimationUnfold src={brandIcon} alt="Image not found" />
               </div>
               {/* <a> */}
-                <AnimatedText
-                  text={<h3 className=" Color-Text">Social Communication</h3>}
-                  animation="slide-up"
-                />
+              <AnimatedText
+                text={<h3 className=" Color-Text">Social Communication</h3>}
+                animation="slide-up"
+              />
               {/* </a> */}
               <div>
                 <AnimatedText
@@ -515,10 +515,10 @@ function Home() {
                 <ImageAnimationUnfold src={brandIcon} alt="Image not found" />
               </div>{" "}
               {/* <a> */}
-                <AnimatedText
-                  text={<h3 className="Color-Text">Creative & Content</h3>}
-                  animation="slide-up"
-                />
+              <AnimatedText
+                text={<h3 className="Color-Text">Creative & Content</h3>}
+                animation="slide-up"
+              />
               {/* </a> */}
               <div>
                 <AnimatedText
@@ -551,12 +551,10 @@ function Home() {
                 <ImageAnimationUnfold src={brandIcon} alt="Image not found" />
               </div>{" "}
               {/* <a> */}
-                <AnimatedText
-                  text={
-                    <h3 className="Color-Text">Organic & Paid Marketing</h3>
-                  }
-                  animation="slide-up"
-                />
+              <AnimatedText
+                text={<h3 className="Color-Text">Organic & Paid Marketing</h3>}
+                animation="slide-up"
+              />
               {/* </a> */}
               <div>
                 <AnimatedText
@@ -586,10 +584,10 @@ function Home() {
                 <ImageAnimationUnfold src={brandIcon} alt="Image not found" />
               </div>{" "}
               {/* <a> */}
-                <AnimatedText
-                  text={<h3 className="Color-Text">Technology</h3>}
-                  animation="slide-up"
-                />
+              <AnimatedText
+                text={<h3 className="Color-Text">Technology</h3>}
+                animation="slide-up"
+              />
               {/* </a> */}
               <div>
                 <AnimatedText
@@ -732,44 +730,39 @@ function Home() {
                 text={<label htmlFor="service">Choose a service:</label>}
                 animation="slide-up"
               />
-              <AnimatedText
-                text={
-                  <select
-                    type="dropdown"
-                    name="service"
-                    value={formData.service}
-                    onChange={handleChange}
-                    placeholder="Type here"
-                    autoComplete="off"
-                    className="form-field mb-3"
-                    required
-                  >
-                    <option value="selected">Select</option>
-                    <option value="Social Media Management (SMM)">
-                      Social Media Management (SMM)
-                    </option>
-                    <option value="Search Engine Optimisation (SEO)">
-                      Search Engine Optimisation (SEO)
-                    </option>
-                    <option value="Public Relation (PR)">
-                      Public Relation (PR)
-                    </option>
-                    <option value="Paid Ads">Paid Ads</option>
-                    <option value="Website Design and Developments">
-                      Website Design and Developments
-                    </option>
-                    <option value="Creative Design">Creative Design</option>
-                    <option value="Content Solutions">Content Solutions</option>
-                    <option value="Influencer Marketing">
-                      Influencer Marketing
-                    </option>
-                    <option value="Film & Photography">
-                      Film & Photography
-                    </option>
-                  </select>
-                }
-                animation="slide-up"
-              />
+              <div className="form-group">
+                <label htmlFor="service">
+                </label>
+                <select
+                  id="service"
+                  name="service"
+                  value={formData.service}
+                  onChange={handleChange}
+                  className="form-field mb-3"
+                  required
+                >
+                  <option value="">Select</option>
+                  <option value="Social Media Management (SMM)">
+                    Social Media Management (SMM)
+                  </option>
+                  <option value="Search Engine Optimisation (SEO)">
+                    Search Engine Optimisation (SEO)
+                  </option>
+                  <option value="Public Relation (PR)">
+                    Public Relation (PR)
+                  </option>
+                  <option value="Paid Ads">Paid Ads</option>
+                  <option value="Website Design and Developments">
+                    Website Design and Developments
+                  </option>
+                  <option value="Creative Design">Creative Design</option>
+                  <option value="Content Solutions">Content Solutions</option>
+                  <option value="Influencer Marketing">
+                    Influencer Marketing
+                  </option>
+                  <option value="Film & Photography">Film & Photography</option>
+                </select>
+              </div>
             </div>
             <div className="col-lg-6 col-md-6 col-12">
               <AnimatedText
