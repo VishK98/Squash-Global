@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import WhatsappLogo from '../../assets/images/Icons/372108180_WHATSAPP_ICON_1080.gif';
+import WhatsappLogo from '../../assets/images/Icons/372108180_WHATSAPP_ICON_1080.webp';
 
 import './Whatsapp.css';
 

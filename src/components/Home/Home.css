@@ -411,7 +411,7 @@ h2.stroke {
 }
 
 .image-text-effect {
-  background-image: url('../../assets/giphy.gif');
+  background-image: url('../../assets/giphy.webp');
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-clip: text;
@@ -452,7 +452,6 @@ h2.stroke {
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 1.5s linear infinite;
