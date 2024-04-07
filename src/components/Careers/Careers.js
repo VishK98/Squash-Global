@@ -53,7 +53,7 @@ function Careers() {
     },
     {
       url: jobPost,
-      title: "Buisness Devlopment Manager",
+      title: "Business Development Manager",
       location: "Gurugram",
       experience: "2-5 years",
       salary: "2.5-6 LPA",
@@ -67,7 +67,8 @@ function Careers() {
         "Excellent with pitch presentation skills",
         "Experience in selling integrated digital marketing services (Websites, SEO, Social Media, Paid Media, Public Relation,ORM, Production, Content Marketing, Creative, etc.)",
         "Someone who can sneak into any conversation with mind-blowing industry insights.",
-        "Agency experience is preferred.",      ],
+        "Agency experience is preferred.",
+      ],
     },
   ];
 
@@ -138,7 +139,7 @@ function Careers() {
   };
   const handleCloseClick = () => {
     // Scroll to the form section
-    closeRef.current.scrollIntoView({ behavior: "smooth" });
+    formRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   const handleDetailsClick = (index) => {
@@ -177,7 +178,7 @@ function Careers() {
         />
       </div>
       <div className="container-fluid mt-lg-4 mt-3 p-4">
-        <div class="start-heading">
+        <div className="start-heading">
           <AnimatedText
             text={<h1>Start your journey in TAW</h1>}
             animation="slide-up"
@@ -185,7 +186,7 @@ function Careers() {
         </div>
         <div className="row ">
           <div className="col-lg-12 col-md-12 col-12">
-            <div class="career-sub-heading">
+            <div className="career-sub-heading">
               <h2>Work with a dynamic team and creative minded people.</h2>
             </div>
           </div>
@@ -215,7 +216,7 @@ function Careers() {
             <AnimatedText
               text={
                 <p className="paragraph-text mt-3">
-                  At <span class="career-sub-heading">TAW</span> we foster
+                  At <span className="career-sub-heading">TAW</span> we foster
                   collaboration, innovation and creative minds to explore
                   limitless possibilities. If you are someone who wants to be a
                   part of the next big thing in the marketing and advertising
@@ -364,7 +365,8 @@ function Careers() {
         <div className="row">
           <div
             className="career-box col-lg-4 col-md-4 col-sm-12 col-12"
-            ref={formRef}>
+            ref={formRef}
+          >
             <AnimatedText
               text={
                 <h4
@@ -624,23 +626,26 @@ function Careers() {
                       "No file chosen";
                     document.getElementById("file-upload-close").style.display =
                       "none";
+                    setFormData({ ...formData, resume: null });
                   }}
-                  style={{ display: "none", cursor: "pointer" }}
+                  style={{ display: "none" }}
+                  className="close-resume-btn"
                 >
-                  &#x2715;
+                  X
                 </span>
                 <AnimatedText
                   text={
-                    <div className="d-flex justify-content-center mt-4 mb-3">
-                      <input
-                        type="submit"
-                        name="submit"
-                        value="Send it"
-                        className="submit"
-                      />
-                    </div>
+                    <button
+                      type="submit"
+                      className={`apply-now-btn mt-3 mb-2 ${
+                        !validateForm() ? "disabled" : ""
+                        }`}
+                      disabled={!validateForm()}
+                    >
+                      Submit
+                    </button>
                   }
-                  animation="fade-in"
+                  animation="slide-up"
                 />
               </form>
             </div>
