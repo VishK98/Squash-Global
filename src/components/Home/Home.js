@@ -19,11 +19,10 @@ import TAWVideo from "../../assets/taw-main-video.mp4";
 import bannerVideo from "../../assets/taw-ad-video.mp4";
 import rigthArrow from "../../assets/images/Icons/-right-arrow.png";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 import { contactUs } from "../../utils/api";
 import { contactUsMail } from "../../utils/api";
 import PopupModal from "../PopupModal/PopupModal";
-
 
 function Home() {
   const [modalShow, setModalShow] = useState(false);
@@ -63,7 +62,7 @@ function Home() {
             message: "",
           };
           setFormData(resetValue);
-          window.location.href = '/thankyou';
+          window.location.href = "/thankyou";
         }
       } catch (error) {
         console.error("Error submitting form for admin:", error);
@@ -72,8 +71,8 @@ function Home() {
       alert("Please fill out all fields and select a service.");
     }
   };
-
-  const sendMail = async (formData) => { // Pass formData as an argument
+  const sendMail = async (formData) => {
+    // Pass formData as an argument
     try {
       const response = await contactUsMail(formData);
       console.log(`Mail response ==> ${response.data}`);
@@ -102,8 +101,13 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>The Agency Way - Digital Marketing and Advertising Agency in Gurgaon</title>
-        <meta name="description" content="Boost your brand's digital presence with The Agency Way (TAW)  your trusted Digital Marketing and Advertising Agency in Gurgaon. Reach new heights online." />
+        <title>
+          The Agency Way - Digital Marketing and Advertising Agency in Gurgaon
+        </title>
+        <meta
+          name="description"
+          content="Boost your brand's digital presence with The Agency Way (TAW)  your trusted Digital Marketing and Advertising Agency in Gurgaon. Reach new heights online."
+        />
         <link rel="canonical" href="https://taw.agency/" />
       </Helmet>
 
@@ -122,7 +126,7 @@ function Home() {
       <div
         className="container-fluid p-lg-5"
         style={{
-          marginTop: `${marginTop - marginTop * 0.10}px`,
+          marginTop: `${marginTop - marginTop * 0.1}px`,
         }}
       >
         <div className="row">
@@ -157,7 +161,6 @@ function Home() {
             </p>
 
             <Link to="/about-us" style={{ textDecoration: "none" }}>
-
               <div
                 className="animated-arrow-btn"
                 style={{
@@ -192,12 +195,7 @@ function Home() {
           </div>
           <div className="col-lg-3 col-md-3 col-12">
             <div className="mobile_down_arrow new-big-down-arrow2">
-              <img
-                height="200px"
-                width="200px"
-                src={bigCircle}
-                alt="image not found"
-              />
+              <img height="200px" width="200px" src={bigCircle} alt="" />
             </div>
           </div>
         </div>
@@ -338,8 +336,8 @@ function Home() {
             text={
               <p className=" home-sub-heading">
                 In a world saturated with information, we understand that your
-                brand isn't just a product or service - it's a story waiting to be
-                told.
+                brand isn't just a product or service - it's a story waiting to
+                be told.
               </p>
             }
             animation="slide-up"
@@ -377,15 +375,15 @@ function Home() {
                     text={
                       <p className="paragraph-text">
                         TAW-the agency way is more than just a marketing agency.
-                        We are the architects of brand
-                        experiences, designing stories that resonate with the
-                        brand’s audience. At TAW, we provide customize solutions
-                        and expertise to unique business needs making us the
-                        right choice for start-ups and small to medium
-                        companies. With us, you can build future ready brand,
-                        through an With us, you can build future ready brand,
-                        through an integration of content, technology and media,
-                        using data backed tools and practices.
+                        We are the architects of brand experiences, designing
+                        stories that resonate with the brand’s audience. At TAW,
+                        we provide customize solutions and expertise to unique
+                        business needs making us the right choice for start-ups
+                        and small to medium companies. With us, you can build
+                        future ready brand, through an With us, you can build
+                        future ready brand, through an integration of content,
+                        technology and media, using data backed tools and
+                        practices.
                       </p>
                     }
                     animation="fade-in"
@@ -471,7 +469,7 @@ function Home() {
           </div>
           <div className="col-lg-2 col-md-12 d-none d-md-block">
             <div className="rotating-image text-center">
-              <img src={circularText} alt="image not found" />
+              <img src={circularText} alt="" />
             </div>
           </div>
         </div>
@@ -651,8 +649,10 @@ function Home() {
               />
               <AnimatedText
                 text={
-                  <><h2 className="brand-title">brand</h2>
-                    <h2 className="exp-title"> experience?</h2></>
+                  <>
+                    <h2 className="brand-title">brand</h2>
+                    <h2 className="exp-title"> experience?</h2>
+                  </>
                 }
                 animation="slide-up"
               />
@@ -745,15 +745,27 @@ function Home() {
                     required
                   >
                     <option value="selected">Select</option>
-                      <option value="Social Media Management (SMM)">Social Media Management (SMM)</option>
-                      <option value="Search Engine Optimisation (SEO)">Search Engine Optimisation (SEO)</option>
-                      <option value="Public Relation (PR)">Public Relation (PR)</option>
-                      <option value="Paid Ads">Paid Ads</option>
-                      <option value="Website Design and Developments">Website Design and Developments</option>
-                      <option value="Creative Design">Creative Design</option>
-                      <option value="Content Solutions">Content Solutions</option>
-                      <option value="Influencer Marketing">Influencer Marketing</option>
-                      <option value="Film & Photography">Film & Photography</option>
+                    <option value="Social Media Management (SMM)">
+                      Social Media Management (SMM)
+                    </option>
+                    <option value="Search Engine Optimisation (SEO)">
+                      Search Engine Optimisation (SEO)
+                    </option>
+                    <option value="Public Relation (PR)">
+                      Public Relation (PR)
+                    </option>
+                    <option value="Paid Ads">Paid Ads</option>
+                    <option value="Website Design and Developments">
+                      Website Design and Developments
+                    </option>
+                    <option value="Creative Design">Creative Design</option>
+                    <option value="Content Solutions">Content Solutions</option>
+                    <option value="Influencer Marketing">
+                      Influencer Marketing
+                    </option>
+                    <option value="Film & Photography">
+                      Film & Photography
+                    </option>
                   </select>
                 }
                 animation="slide-up"
@@ -866,7 +878,10 @@ function Home() {
               </div>
               <span>Submit</span>
             </button>
-            <PopupModal show={modalShow} onHide={() => setModalShow(false)} apiResponse={apiResponse}
+            <PopupModal
+              show={modalShow}
+              onHide={() => setModalShow(false)}
+              apiResponse={apiResponse}
             />
           </div>
         </form>

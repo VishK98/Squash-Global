@@ -26,9 +26,11 @@ const TextAnimation = ({ text, animation, className }) => {
       observer.observe(textRef.current);
     }
 
+    const currentTextRef = textRef.current; // Copy textRef.current to a variable
+
     return () => {
-      if (textRef.current) {
-        observer.unobserve(textRef.current);
+      if (currentTextRef) {
+        observer.unobserve(currentTextRef); // Use the variable in the cleanup function
       }
     };
   }, [animation, hasAnimated]);
@@ -38,8 +40,11 @@ const TextAnimation = ({ text, animation, className }) => {
     if (!isInViewport && hasAnimated) {
       // Delay reapplying the animation to reduce blinking
       timeoutId = setTimeout(() => {
-        textRef.current.classList.remove(animation);
-        setHasAnimated(false);
+        const currentTextRef = textRef.current; // Copy textRef.current to a variable
+        if (currentTextRef) {
+          currentTextRef.classList.remove(animation);
+          setHasAnimated(false);
+        }
       }, 1000); // Adjust the delay as needed
     }
 

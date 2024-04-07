@@ -24,13 +24,13 @@ const Slider = () => {
     const sliderRef = useRef(null);
     const [, setCurrentIndex] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
-    let animationId;
+    const animationIdRef = useRef();
 
     useEffect(() => {
         const slider = sliderRef.current;
 
         const slide = () => {
-            animationId = requestAnimationFrame(() => {
+            animationIdRef.current = requestAnimationFrame(() => {
                 if (!isHovered && slider) {
                     slider.scrollLeft -= 1;
                     if (slider.scrollLeft <= 0) {
@@ -43,7 +43,7 @@ const Slider = () => {
         };
         slide();
         return () => {
-            cancelAnimationFrame(animationId);
+            cancelAnimationFrame(animationIdRef.current);
         };
     }, [imageSources.length, isHovered]);
 
