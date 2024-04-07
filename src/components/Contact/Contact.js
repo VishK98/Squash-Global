@@ -1,21 +1,16 @@
 import React, { useState } from "react";
+import { Helmet } from 'react-helmet';
 import ScrollToTopButton from '../TopButton/TopButton';
 import contact from "../../assets/images/taw-contact-banner1.jpg";
 import AnimatedText from '../Animations/TextAnimation';
 import "./Contact.css";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 import PopupModal from "../PopupModal/PopupModal";
-import { contactUs } from "../../utils/api";
-import { contactUsMail } from "../../utils/api";
-import { Helmet } from 'react-helmet';
-
-
+import { contactUs, contactUsMail } from "../../utils/api";
 
 function Contact() {
-
   const [modalShow, setModalShow] = useState(false);
   const [apiResponse, setApiResponse] = useState(null);
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -36,9 +31,8 @@ function Contact() {
       try {
         setModalShow(true);
         const response = await contactUs(formData);
-        // console.log("Response:", response.success);
         if (response.success) {
-          await sendMail(formData); // Wait for sendMail() to complete
+          await sendMail(formData);
           setApiResponse(response);
           setModalShow(true);
           const resetValue = {
@@ -59,7 +53,7 @@ function Contact() {
     }
   };
 
-  const sendMail = async (formData) => { // Pass formData as an argument
+  const sendMail = async (formData) => {
     try {
       const response = await contactUsMail(formData);
       console.log(`Mail response ==> ${response.data}`);
@@ -67,7 +61,6 @@ function Contact() {
       console.error("Error submitting form for mail:", error);
     }
   };
-
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -85,7 +78,7 @@ function Contact() {
 
   return (
     <>
-     <Helmet>
+      <Helmet>
         <title>Reach Out to Contact US - The Agency Way (TAW)</title>
         <meta name="description" content="Connect with us the Agency Way (TAW)! Reach out to Contact Us for personalized solutions and exceptional service tailored to your needs." />
         <link rel="canonical" href="https://taw.agency/contact" />
@@ -98,12 +91,10 @@ function Contact() {
       </div>
 
       <div className="container mt-3 mb-5">
-
         <div className="row">
           <div className="col-lg-5 pt-lg-4">
             <div className="mt-4 mt-lg-0 address-info topslide">
               <div style={{ display: "flex", alignItems: "flex-start" }}>
-
                 <div style={{ position: "relative", height: "35px", width: "35px" }}>
                   <ImageAnimationUnfold src='https://img.icons8.com/ios-filled/50/000000/red-fort.png' alt="Image not found" />
                 </div>
@@ -118,11 +109,12 @@ function Contact() {
               </div>
 
               <a
-                href="#"
+                href="javascript:void(0)"
                 target="_blank"
                 onClick={handleMapClick}
                 rel="noopener noreferrer"
                 className="view-map-text mt-3"
+                aria-label="View on Google Maps"
               >
                 <div style={{ height: "45px", width: "40px" }}>
                   <ImageAnimationUnfold src='https://img.icons8.com/pastel-glyph/64/marker--v1.png' alt="Image not found" />
@@ -173,7 +165,6 @@ function Contact() {
                   animation="slide-up"
                 />
               </p>
-
             </div>
           </div>
           <div className="col-lg-6 offset-lg-1 pt-lg-4">
@@ -278,8 +269,7 @@ function Contact() {
                   </div>
                   <span>Submit</span>
                 </button>
-                <PopupModal show={modalShow} onHide={() => setModalShow(false)} apiResponse={apiResponse}
-                />
+                <PopupModal show={modalShow} onHide={() => setModalShow(false)} apiResponse={apiResponse} />
               </form>
             </div>
           </div>
