@@ -485,12 +485,12 @@ function Home() {
               >
                 <ImageAnimationUnfold src={brandIcon} alt="Image not found" />
               </div>
-              <a>
+              {/* <a> */}
                 <AnimatedText
                   text={<h3 className=" Color-Text">Social Communication</h3>}
                   animation="slide-up"
                 />
-              </a>
+              {/* </a> */}
               <div>
                 <AnimatedText
                   text={
@@ -514,12 +514,12 @@ function Home() {
               >
                 <ImageAnimationUnfold src={brandIcon} alt="Image not found" />
               </div>{" "}
-              <a>
+              {/* <a> */}
                 <AnimatedText
                   text={<h3 className="Color-Text">Creative & Content</h3>}
                   animation="slide-up"
                 />
-              </a>
+              {/* </a> */}
               <div>
                 <AnimatedText
                   text={
@@ -550,14 +550,14 @@ function Home() {
               >
                 <ImageAnimationUnfold src={brandIcon} alt="Image not found" />
               </div>{" "}
-              <a>
+              {/* <a> */}
                 <AnimatedText
                   text={
                     <h3 className="Color-Text">Organic & Paid Marketing</h3>
                   }
                   animation="slide-up"
                 />
-              </a>
+              {/* </a> */}
               <div>
                 <AnimatedText
                   text={
@@ -585,12 +585,12 @@ function Home() {
               >
                 <ImageAnimationUnfold src={brandIcon} alt="Image not found" />
               </div>{" "}
-              <a>
+              {/* <a> */}
                 <AnimatedText
                   text={<h3 className="Color-Text">Technology</h3>}
                   animation="slide-up"
                 />
-              </a>
+              {/* </a> */}
               <div>
                 <AnimatedText
                   text={
