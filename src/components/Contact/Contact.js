@@ -55,6 +55,15 @@ function Contact() {
       alert("Please fill out all fields and select a service.");
     }
   };
+  const handleContactChange = (event) => {
+    const { value } = event.target;
+    // Ensure only numeric values are entered and limit to 10 digits
+    const numericValue = value.replace(/\D/g, '').slice(0, 10);
+    setFormData((prevData) => ({
+      ...prevData,
+      contact: numericValue
+    }));
+  };
 
   const sendMail = async (formData) => {
     try {
@@ -211,15 +220,15 @@ function Contact() {
                   </label>} animation='slide-up' />
 
                   <AnimatedText text={<input
-                    type="tel"
-                    name="contact"
-                    value={formData.contact}
-                    onChange={handleChange}
-                    placeholder="+91 9900000088"
-                    autoComplete="off"
-                    className="form-field mb-2"
-                    pattern="[0-9]{10}"
-                    required
+                   type="tel"
+                   name="contact"
+                   value={formData.contact}
+                   onChange={handleContactChange}
+                   placeholder="Type here"
+                   autoComplete="off"
+                   className="form-field mb-2"
+                   maxLength={10} // Ensure max length is set to 10
+                   required
                   />} animation='slide-up' />
                   <AnimatedText text={<label>
                     Company Name

@@ -73,6 +73,16 @@ function Home() {
       alert("Please fill out all fields and select a service.");
     }
   };
+  const handleContactChange = (event) => {
+    const { value } = event.target;
+    // Ensure only numeric values are entered and limit to 10 digits
+    const numericValue = value.replace(/\D/g, "").slice(0, 10);
+    setFormData((prevData) => ({
+      ...prevData,
+      contact: numericValue,
+    }));
+  };
+
   const sendMail = async (formData) => {
     // Pass formData as an argument
     try {
@@ -733,8 +743,7 @@ function Home() {
                 animation="slide-up"
               />
               <div className="form-group">
-                <label htmlFor="service">
-                </label>
+                <label htmlFor="service"></label>
                 <select
                   id="service"
                   name="service"
@@ -822,20 +831,25 @@ function Home() {
                     type="tel"
                     name="contact"
                     value={formData.contact}
-                    onChange={handleChange}
-                    placeholder="+91 9900000088"
+                    onChange={handleContactChange}
+                    placeholder="Type here"
                     autoComplete="off"
-                    className="form-field mb-lg-5 mb-3"
-                    pattern="[0-9]{10}"
+                    className="form-field mb-2"
+                    maxLength={10} // Ensure max length is set to 10
                     required
                   />
                 }
                 animation="slide-up"
               />
               <AnimatedText
-                text={<label>Here's something more to add</label>}
+                text={
+                  <label style={{ marginTop: "40px" }}>
+                    Here's something more to add
+                  </label>
+                }
                 animation="slide-up"
               />
+
               <AnimatedText
                 text={
                   <input
