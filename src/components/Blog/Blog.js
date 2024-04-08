@@ -15,7 +15,7 @@ function Blog() {
       title: "How Changes in Social Media Algorithms Are Influencing Content Strategy and What Marketers Need to Know to Stay Ahead",
       description:
         "One of the building blocks of a business's success is copywriting. Even if you are not in the marketing field, you are surrounded by ad copies everywhere.",
-      route: '/how-changes-in-social-media-algorithms'
+      route: '/blog/how-changes-in-social-media-algorithms'
     },
     {
       url: blogImage2,
@@ -23,10 +23,8 @@ function Blog() {
         "How Artificial Intelligence is Revolutionizing Advertising, From Personalized Targeting to Predictive Analytics",
       description:
         "In simple terms, infographics are like “one picture worth a thousand words. The main purpose of infographics is to make the content easy to consume for readers.",
-      route: '/how-artificial-intelligence-is-revolutionizing-advertising'
-
+      route: '/blog/how-artificial-intelligence-is-revoluationizing-advertising'
     },
-    
   ];
   return (
     <>
