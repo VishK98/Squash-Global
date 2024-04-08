@@ -56,11 +56,11 @@ function App() {
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
           <Route
-            path="/How Changes in Social Media Algorithms"
+            path="/how-changes-in-social-media-algorithms"
             element={<BlogDetails />}
           />
           <Route
-            path="/How Artificial Intelligence is Revolutionizing Advertising"
+            path="/how-artificial-intelligence-is-revoluationizing-advertising"
             element={<BlogDetails2 />}
           />
           <Route path="/services/design" element={<MediaPlanning />} />
