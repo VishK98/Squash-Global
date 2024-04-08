@@ -15,6 +15,7 @@ function Contact() {
     name: "",
     email: "",
     contact: "",
+    companyName: "",
     service: "",
     message: "",
   });
@@ -25,6 +26,7 @@ function Contact() {
       formData.name &&
       formData.email &&
       formData.contact &&
+      formData.companyName &&
       formData.message &&
       formData.service !== "selected"
     ) {
@@ -39,11 +41,12 @@ function Contact() {
             name: "",
             email: "",
             contact: "",
+            companyName: "",
             service: "",
             message: "",
           };
           setFormData(resetValue);
-          window.location.href = '/thankyou';        
+          window.location.href = '/thankyou';
         }
       } catch (error) {
         console.error("Error submitting form for admin:", error);
@@ -138,15 +141,15 @@ function Contact() {
                 />
               </p>
               <AnimatedText
-                  text={
-                    <span style={{ marginLeft: "50px" }}>
-                      <a className="contact-text" href="tel:+91 8368163883">
+                text={
+                  <span style={{ marginLeft: "50px" }}>
+                    <a className="contact-text" href="tel:+91 8368163883">
                       +91 8368163883
-                      </a>
-                    </span>
-                  }
-                  animation="slide-up"
-                />
+                    </a>
+                  </span>
+                }
+                animation="slide-up"
+              />
               <p className="phone mt-3" style={{ display: "flex", alignItems: "center" }}>
                 <div style={{ position: "relative", height: "33px", width: "35px" }}>
                   <ImageAnimationUnfold src='https://img.icons8.com/ios-filled/50/email-sign.png' alt="Image not found" />
@@ -216,6 +219,20 @@ function Contact() {
                     autoComplete="off"
                     className="form-field mb-2"
                     pattern="[0-9]{10}"
+                    required
+                  />} animation='slide-up' />
+                  <AnimatedText text={<label>
+                    Company Name
+                    <sup style={{ color: "red", marginLeft: "5px", fontWeight: "bold" }}>*</sup>
+                  </label>} animation='slide-up' />
+                  <AnimatedText text={<input
+                    type="text"
+                    name="companyName"
+                    value={formData.companyName}
+                    onChange={handleChange}
+                    placeholder="Type here"
+                    autoComplete="off"
+                    className="form-field mb-2"
                     required
                   />} animation='slide-up' />
                   <AnimatedText text={<label htmlFor="service">Choose a service <sup style={{ color: "red", marginLeft: "5px", fontSize: "12px" }}>*</sup></label>

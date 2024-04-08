@@ -32,8 +32,8 @@ function Home() {
     name: "",
     email: "",
     contact: "",
+    companyName: "",
     service: "",
-    company: "",
     message: "",
   });
 
@@ -43,6 +43,7 @@ function Home() {
       formData.name &&
       formData.email &&
       formData.contact &&
+      formData.companyName &&
       formData.message &&
       formData.service !== "selected"
     ) {
@@ -58,6 +59,7 @@ function Home() {
             name: "",
             email: "",
             contact: "",
+            companyName: "",
             service: "",
             message: "",
           };
@@ -715,8 +717,8 @@ function Home() {
                 text={
                   <input
                     type="text"
-                    name="company"
-                    value={formData.company}
+                    name="companyName"
+                    value={formData.companyName}
                     onChange={handleChange}
                     placeholder="Type here"
                     autoComplete="off"
