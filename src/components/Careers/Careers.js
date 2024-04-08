@@ -74,9 +74,6 @@ function Careers() {
 
   const [selectedService, setSelectedService] = useState("selected");
 
-  const handleServiceChange = (event) => {
-    setSelectedService(event.target.value);
-  };
   const handleFileChange = (e) => {
     const fileName = e.target.files[0].name;
     document.getElementById("file-upload-label").textContent = fileName;
@@ -87,11 +84,10 @@ function Careers() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    state: "",
     contactNumber: "",
+    role: "",
     about: "",
-    service: "",
-    resume: null,
+    cv: null,
   });
 
   const handleSubmit = (event) => {
@@ -104,7 +100,7 @@ function Careers() {
   };
 
   const handleChange = (e) => {
-    if (e.target.name === "resume") {
+    if (e.target.name === "cv") {
       setFormData({
         ...formData,
         [e.target.name]: e.target.files[0],
@@ -120,11 +116,10 @@ function Careers() {
     return (
       formData.name.trim() !== "" &&
       formData.email.trim() !== "" &&
-      formData.state.trim() !== "" &&
       formData.contactNumber.trim() !== "" &&
+      formData.role.trim() !== "" &&
       formData.about.trim() !== "" &&
-      formData.service.trim() !== "" &&
-      formData.resume !== null
+      formData.cv !== null
     );
   };
 
@@ -512,8 +507,8 @@ function Careers() {
                   text={
                     <select
                       type="dropdown"
-                      name="service"
-                      value={formData.service}
+                      name="role"
+                      value={formData.role}
                       onChange={handleChange}
                       placeholder="Type here"
                       autoComplete="off"
@@ -596,7 +591,7 @@ function Careers() {
                     <input
                       id="file-upload"
                       type="file"
-                      name="resume"
+                      name="cv"
                       onChange={handleFileChange}
                       accept=".pdf,.doc,.docx"
                       style={{ display: "none" }}
@@ -626,27 +621,24 @@ function Careers() {
                       "No file chosen";
                     document.getElementById("file-upload-close").style.display =
                       "none";
-                    setFormData({ ...formData, resume: null });
+                    setFormData({ ...formData, cv: null });
                   }}
                   style={{ display: "none" }}
                   className="close-resume-btn"
                 >
                   X
                 </span>
-                <AnimatedText
-                  text={
-                    <button
-                      type="submit"
-                      className={`apply-now-btn mt-3 mb-2 ${
-                        !validateForm() ? "disabled" : ""
-                        }`}
-                      disabled={!validateForm()}
-                    >
-                      Submit
-                    </button>
-                  }
-                  animation="slide-up"
-                />
+                <button className="submit-button mt-lg-5 mt-3" type="submit" style={{ marginLeft: "300px" }}>
+                  <div className="svg-wrapper-1">
+                    <div className="svg-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <span>Submit</span>
+                </button>
               </form>
             </div>
           </div>
