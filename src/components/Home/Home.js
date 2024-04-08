@@ -842,13 +842,13 @@ function Home() {
                 animation="slide-up"
               />
               <AnimatedText
-                text={
-                  <label style={{ marginTop: "40px" }}>
-                    Here's something more to add
-                  </label>
-                }
-                animation="slide-up"
-              />
+  text={
+    <label style={{ marginTop: "40px" }}>
+      Here's something more to add
+    </label>
+  }
+  animation="slide-up"
+/>
 
               <AnimatedText
                 text={
