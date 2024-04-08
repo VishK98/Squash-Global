@@ -46,6 +46,7 @@ function BlogDetails2() {
           href="https://taw.agency/blog/how-artificial-intelligence-is-revoluationizing-advertising"
         />
       </Helmet>
+
       <div className="container col-lg-10 mt-3">
         <h1 className="text-center">
           How Artificial Intelligence is Revolutionizing Advertising, From

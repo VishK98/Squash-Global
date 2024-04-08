@@ -33,19 +33,20 @@ function BlogDetails() {
   }, []);
   return (
     <>
-      <helmet>
-        <title>
-          How Changes in Social Media Algorithms - The Agency Way (TAW)
-        </title>
-        <meta
-          name="description"
-          content="Stay ahead with the latest insights! Get The Latest Blogs - The Agency Way (TAW) for expert tips, trends, and strategies to propel your business forward."
-        />
-        <link
-          rel="canonical"
-          href="https://taw.agency/blog/how-changes-in-social-media-algorithms"
-        />
-      </helmet>
+     <Helmet>
+  <title>
+    How Changes in Social Media Algorithms - The Agency Way (TAW)
+  </title>
+  <meta
+    name="description"
+    content="Stay ahead with the latest insights! Get The Latest Blogs - The Agency Way (TAW) for expert tips, trends, and strategies to propel your business forward."
+  />
+  <link
+    rel="canonical"
+    href="https://taw.agency/blog/how-changes-in-social-media-algorithms"
+  />
+</Helmet>
+
       <div className="container col-lg-10 mt-3">
         <h1 className="text-center">
           How Changes in Social Media Algorithms Are Influencing Content
