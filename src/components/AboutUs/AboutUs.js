@@ -44,29 +44,48 @@ function Philosophy() {
         <div className="row">
           <div className="col-12  mt-5">
             <AnimatedText text={<p className=" mt-lg-4">
-              <h2 className="Whytaw-text">WHY TAW?</h2>
-              <p className="paragraph-text">TAW believes in solving your problems rather than just answering them.
-                We never back down from taking any challenges, after all working hard is our best-defined nature.
-                We pour our heart and soul to each and every project no matter the size is.
-                At TAW, there are no half measure. 'IFs' and 'BUTs" are not in our dictionary.
-                We first Assess, then Strategize and then Come up with the plan best suited for your Brand.
-                TAW breathe life into your Brand with meaningful innovation and creative communication.
-              </p>
+            <h2 className="Whytaw-text" style={{marginLeft: '16px'}}>WHY TAW?</h2>
+
+            <p className="paragraph-text" style={{marginLeft: '20px', marginRight: '40px'}}>TAW believes in solving your problems rather than just answering them.
+    We never back down from taking any challenges, after all working hard is our best-defined nature.
+    We pour our heart and soul to each and every project no matter the size is.
+    At TAW, there are no half measure. 'IFs' and 'BUTs" are not in our dictionary.
+    We first Assess, then Strategize and then Come up with the plan best suited for your Brand.
+    TAW breathe life into your Brand with meaningful innovation and creative communication.
+</p>
+
             </p>} animation="slide-down" />
 
-            <AnimatedText text={<h3 className="about-text mt-lg-4">
-              WE ARE NOT JUST A TYPICAL AGENCY : WE ARE MORE THAN THAT
-            </h3>} animation="slide-down" />
-            <AnimatedText text={<p className="paragraph-text mt-lg-4">
-              Think of TAW as an Extension of your Team, sharing the same Dreams and same Goals.
-              We offer multi-dimensional marketing services to drive the attention and visibility your Brand needs.
-              TAW turns your ideas into reality so you can also build your business like a pro.
-              With the vast and ever-evolving marketing trends, it is a challenge for Brands to keep up with the new technology and crazes. This is where our team comes into play.
-            </p>} animation="slide-down" />
-            <AnimatedText text={<p className="paragraph-text mt-lg-4 mt-3">
-              Our team of Creative and Passionate people will help you create the most effective marketing strategy to supply ideal number of consumer touch points to drive lead and sales.
-              Be it Media Planning or Buying, PR or Crisis Management, Creative, Content, Social Media, Search Engine Optimization and Management, Influencer Marketing, Video Production, Programmatic Advertising or more, we are here to cater to your needs and requirements in the most effective and long term ways to possible.
-            </p>} animation="slide-down" />
+            <AnimatedText
+    text={
+        <h3 className="about-text mt-lg-4" style={{marginLeft: '16px'}}>
+            WE ARE NOT JUST A TYPICAL AGENCY: WE ARE MORE THAN THAT
+        </h3>
+    }
+    animation="slide-down"
+/>
+
+<AnimatedText
+    text={
+        <p className="paragraph-text mt-lg-4" style={{marginLeft: '20px', marginRight: '40px'}}>
+            Think of TAW as an Extension of your Team, sharing the same Dreams and same Goals.
+            We offer multi-dimensional marketing services to drive the attention and visibility your Brand needs.
+            TAW turns your ideas into reality so you can also build your business like a pro.
+            With the vast and ever-evolving marketing trends, it is a challenge for Brands to keep up with the new technology and crazes. This is where our team comes into play.
+        </p>
+    }
+    animation="slide-down"
+/>
+<AnimatedText
+    text={
+        <p className="paragraph-text mt-lg-4 mt-3" style={{marginLeft: '20px', marginRight: '40px'}}>
+            Our team of Creative and Passionate people will help you create the most effective marketing strategy to supply ideal number of consumer touch points to drive lead and sales.
+            Be it Media Planning or Buying, PR or Crisis Management, Creative, Content, Social Media, Search Engine Optimization and Management, Influencer Marketing, Video Production, Programmatic Advertising or more, we are here to cater to your needs and requirements in the most effective and long term ways to possible.
+        </p>
+    }
+    animation="slide-down"
+/>
+
           </div>
         </div>
       </div>
