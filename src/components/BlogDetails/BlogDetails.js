@@ -4,6 +4,7 @@ import ScrollToTopButton from '../TopButton/TopButton';
 import industriesBanner from "../../assets/images/taw-blog-banner1.png";
 import blogImage10 from "../../assets/images/taw-blog-banner1.png";
 import blogImage4 from "../../assets/images/taw-blog-banner1.png";
+import { Helmet } from 'react-helmet';
 
 function BlogDetails() {
     const [isVisible, setIsVisible] = useState(false);
@@ -32,6 +33,9 @@ function BlogDetails() {
     }, []);
     return (
         <>
+            <title>How Changes in Social Media Algorithms - The Agency Way (TAW)</title>
+        <meta name="description" content="Stay ahead with the latest insights! Get The Latest Blogs - The Agency Way (TAW) for expert tips, trends, and strategies to propel your business forward." />
+        <link rel="canonical" href="https://taw.agency/blog/how-changes-in-social-media-algorithms" />
 
             <div className="container col-lg-10 mt-3">
                 <h1 className="text-center">How Changes in Social Media Algorithms Are Influencing Content Strategy and What Marketers Need to Know to Stay Ahead</h1>
