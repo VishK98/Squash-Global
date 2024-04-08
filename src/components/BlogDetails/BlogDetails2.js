@@ -32,7 +32,9 @@ function BlogDetails2() {
     }, []);
     return (
         <>
-
+           <title>How Artificial Intelligence is Revolutionizing Advertising - The Agency Way (TAW)</title>
+        <meta name="description" content="How Artificial Intelligence is Revolutionizing Advertising - The Agency Way (TAW) for expert tips, trends, and strategies to propel your business forward." />
+        <link rel="canonical" href="https://taw.agency/blog/how-artificial-intelligence-is-revoluationizing-advertising" />
             <div className="container col-lg-10 mt-3">
                 <h1 className="text-center">How Artificial Intelligence is Revolutionizing Advertising, From Personalized Targeting to Predictive Analytics</h1>
                 <img
