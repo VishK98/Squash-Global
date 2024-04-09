@@ -279,7 +279,7 @@ function Careers() {
                   <img
                     className="img-fluid animated-image"
                     src={job.url}
-                    alt="card image"
+                    alt="card img"
                   />
                   <h4 className="card-title mt-3">{job.title}</h4>
                   <div className="row" style={{ marginLeft: "0px" }}>

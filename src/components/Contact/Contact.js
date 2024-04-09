@@ -120,7 +120,7 @@ function Contact() {
                 </div>
               </div>
               <button
-                href="javascript:void(0)"
+                href="#"
                 target="_blank"
                 onClick={handleMapClick}
                 rel="noopener noreferrer"
