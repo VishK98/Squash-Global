@@ -19,8 +19,6 @@ import MediaPlanning from "./components/ServiceDetails/MediaPlanning";
 import DigitalPR from "./components/ServiceDetails/DigitalPR";
 import SEO from "./components/ServiceDetails/SEO";
 import SocialMedia from "./components/ServiceDetails/SocialMedia";
-import Creative from "./components/ServiceDetails/Creative";
-import Content from "./components/ServiceDetails/Content";
 import Production from "./components/ServiceDetails/Production";
 import WebsiteDesign from "./components/ServiceDetails/WebsiteDesign";
 import Programmatics from "./components/ServiceDetails/Programmatics";
@@ -67,8 +65,6 @@ function App() {
           <Route path="/services/digitalpr" element={<DigitalPR />} />
           <Route path="/services/seo" element={<SEO />} />
           <Route path="/services/socialmedia" element={<SocialMedia />} />
-          <Route path="/services/creative" element={<Creative />} />
-          <Route path="/services/content" element={<Content />} />
           <Route path="/services/paid-ads" element={<Programmatics />} />
           <Route path="/services/website-design" element={<WebsiteDesign />} />
           <Route
