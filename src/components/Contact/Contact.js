@@ -119,8 +119,7 @@ function Contact() {
                   </div>
                 </div>
               </div>
-
-              <a
+              <button
                 href="javascript:void(0)"
                 target="_blank"
                 onClick={handleMapClick}
@@ -133,7 +132,7 @@ function Contact() {
                 </div>
                 <AnimatedText text={<h2 className="india-text" style={{ marginLeft: "5px" }}>Find us on the map</h2>
                 } animation="slide-up" />
-              </a>
+              </button>
               <p className="phone mt-3" style={{ display: "flex", alignItems: "center" }}>
                 <div style={{ position: "relative", height: "35px", width: "35px" }}>
                   <ImageAnimationUnfold src='https://img.icons8.com/ios-filled/50/man-on-phone.png' alt="Image not found" />

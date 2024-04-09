@@ -72,8 +72,7 @@ function Careers() {
     },
   ];
 
-  const [selectedService, setSelectedService] = useState("selected");
-
+  const [selected, setSelected] = useState("selected");
   const handleFileChange = (e) => {
     const fileName = e.target.files[0].name;
     document.getElementById("file-upload-label").textContent = fileName;

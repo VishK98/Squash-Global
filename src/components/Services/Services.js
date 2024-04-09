@@ -140,7 +140,7 @@ function Sector() {
             <div className="service-newBox">
               <Link style={{ textDecoration: "none" }} to={`/${routes[index]}`}>
                 <div className="service-space">
-                  <img className="service-image" src={service.imageUrl} />
+                 <img className="service-image" src={service.imageUrl} alt="Service Img" />
                   <div className="service-text-parent">
                     <p className="service-text">{service.title}</p>
                   </div>
