@@ -29,16 +29,6 @@ function Philosophy() {
             <div style={{ marginBottom: "-18px" }}>
               <h1 className="know-text">
                 <span
-                  style={{
-                    fontFamily: "Manrope ExtraBold",
-                    fontSize: "10vh",
-                    fontWeight: "bold",
-                    backgroundImage:
-                      "linear-gradient(90deg, #000, #30256d, #30256d)",
-                    WebkitBackgroundClip: "text",
-                    backgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}
                 >
                   We Know You !
                 </span>
