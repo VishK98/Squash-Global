@@ -28,17 +28,14 @@ function Philosophy() {
           <div className="col-lg-6">
             <div style={{ marginBottom: "-18px" }}>
               <h1 className="know-text">
-                <span
-                >
-                  We Know You !
+                <span>
+                  <AnimatedText text="We Know You !" animation="slide-up" />
+                </span>
+                <span className="animated-know-text">
+                  <AnimatedText text="You Know Us !" animation="slide-up" />
                 </span>
               </h1>
             </div>
-            <AnimatedText
-              className="know-text"
-              text="You Know Us !"
-              animation="slide-up"
-            />
             <AnimatedText
               text={
                 <h3 className="age-text">

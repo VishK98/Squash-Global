@@ -27,13 +27,14 @@
     background: linear-gradient(90deg, #000, #30256d, #30256d);
     -webkit-background-clip: text; /* For older WebKit browsers */
     background-clip: text; /* Standard property */
-    -webkit-text-fill-color: transparent;
-    color: transparent;
+    /* -webkit-text-fill-color: transparent;
+    color: transparent; */
 }
 
 
 .age-text {
     font-family: 'Manrope ExtraBold';
+    margin-top: 20px;
 }
 
 
@@ -86,11 +87,23 @@
 
 /* mobile view */
 @media only screen and (max-width: 625px) {
-    .know-text {
+    /* .know-text {
         font-size: 55px;
-    }
+    } */
 
     .about-text {
         font-size: 35px;
+    }
+}
+
+/* Responsive mobile view */
+@media only screen and (max-width: 768px) {
+    .know-text {
+        font-size: 10vw; /* Adjusted font size */
+    }
+
+    .age-text {
+        margin-top: 20px;
+        font-size: 2.5vh;
     }
 }
