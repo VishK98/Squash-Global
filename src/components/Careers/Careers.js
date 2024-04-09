@@ -7,9 +7,7 @@ import teamBreak from "../../assets/images/taw-careers-banner3.png";
 import jobPost from "../../assets/images/taw-hiring.png";
 import AnimatedText from "../Animations/TextAnimation";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
-import { Helmet } from 'react-helmet';
-
-
+import { Helmet } from "react-helmet";
 function Careers() {
   const jobData = [
     {
@@ -114,7 +112,7 @@ function Careers() {
   const handleContactChange = (event) => {
     // contact change logic here...
   };
-  
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -136,7 +134,10 @@ function Careers() {
     <>
       <Helmet>
         <title>Careers - The Agency Way (TAW)</title>
-        <meta name="description" content="Chart your path to success with Careers - The Agency Way (TAW). Explore exciting opportunities and join a team committed to innovation and excellence." />
+        <meta
+          name="description"
+          content="Chart your path to success with Careers - The Agency Way (TAW). Explore exciting opportunities and join a team committed to innovation and excellence."
+        />
         <link rel="canonical" href="https://taw.agency/careers" />
       </Helmet>
       <div className="full-screen-image">
@@ -202,8 +203,8 @@ function Careers() {
                 >
                   Write to us at{" "}
                   <span>
-                    <a className="mail-text" href="mailto:hr@taw.agency">
-                      hr@taw.agency
+                    <a className="mail-text" href="mailto:hr@theagencyway.co.in">
+                      hr@theagencyway.co.in
                     </a>
                   </span>
                 </p>
@@ -238,8 +239,9 @@ function Careers() {
               key={index}
             >
               <div
-                className={`card ${selectedJobIndex === index ? "flipped" : ""
-                  }`}
+                className={`card ${
+                  selectedJobIndex === index ? "flipped" : ""
+                }`}
               >
                 <div className="text-center mb-2">
                   <img
@@ -261,7 +263,9 @@ function Careers() {
                     </div>
                   </div>
                   <p style={{ fontWeight: "500" }}>Salary : {job.salary}</p>
-                  <p style={{ fontWeight: "500" }}>Posted On : {job.postDate}</p>
+                  <p style={{ fontWeight: "500" }}>
+                    Posted On : {job.postDate}
+                  </p>
                 </div>
                 <div className="job-description">
                   <ul>
