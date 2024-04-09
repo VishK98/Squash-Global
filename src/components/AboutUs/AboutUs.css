@@ -3,8 +3,10 @@
     font-size: 40px;
     font-weight: bold;
     background: linear-gradient(90deg, #000, #30256d, #30256d);
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; /* For older WebKit browsers */
+    background-clip: text; /* Standard property */
     -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .Whytaw-text {
@@ -12,18 +14,23 @@
     font-size: 40px;
     font-weight: bold;
     background: linear-gradient(90deg, #000, #30256d, #30256d);
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; /* For older WebKit browsers */
+    background-clip: text; /* Standard property */
     -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .know-text {
     font-family: 'Manrope ExtraBold';
-    font-size: 70px;
+    font-size: 10vh;
     font-weight: bold;
     background: linear-gradient(90deg, #000, #30256d, #30256d);
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; /* For older WebKit browsers */
+    background-clip: text; /* Standard property */
     -webkit-text-fill-color: transparent;
+    color: transparent;
 }
+
 
 .age-text {
     font-family: 'Manrope ExtraBold';
