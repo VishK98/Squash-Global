@@ -7,7 +7,9 @@ import teamBreak from "../../assets/images/taw-careers-banner3.png";
 import jobPost from "../../assets/images/taw-hiring.png";
 import AnimatedText from "../Animations/TextAnimation";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet';
+
+
 function Careers() {
   const jobData = [
     {
@@ -70,6 +72,65 @@ function Careers() {
     },
   ];
 
+  const [selected, setSelected] = useState("selected");
+  const handleFileChange = (e) => {
+    const fileName = e.target.files[0].name;
+    document.getElementById("file-upload-label").textContent = fileName;
+    document.getElementById("file-upload-close").style.display = "inline";
+    handleChange(e);
+  };
+  const handleContactChange = (event) => {
+    const { value } = event.target;
+    // Ensure only numeric values are entered and limit to 10 digits
+    const numericValue = value.replace(/\D/g, '').slice(0, 10);
+    setFormData((prevData) => ({
+      ...prevData,
+      contact: numericValue
+    }));
+  };
+  
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    contactNumber: "",
+    role: "",
+    about: "",
+    cv: null,
+  });
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (validateForm()) {
+      console.log("Form data:", formData);
+    } else {
+      console.log("Form is not valid");
+    }
+  };
+
+  const handleChange = (e) => {
+    if (e.target.name === "cv") {
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.files[0],
+      });
+    } else {
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value,
+      });
+    }
+  };
+  const validateForm = () => {
+    return (
+      formData.name.trim() !== "" &&
+      formData.email.trim() !== "" &&
+      formData.contactNumber.trim() !== "" &&
+      formData.role.trim() !== "" &&
+      formData.about.trim() !== "" &&
+      formData.cv !== null
+    );
+  };
+
   const [selectedJobIndex, setSelectedJobIndex] = useState(false);
   const applyNowRef = useRef(null);
   const formRef = useRef(null);
@@ -105,39 +166,11 @@ function Careers() {
     }
   }, [selectedJobIndex]);
 
-  const handleFileChange = (e) => {
-    // file change logic here...
-  };
-
-  const handleContactChange = (event) => {
-    // contact change logic here...
-  };
-
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    contactNumber: "",
-    role: "",
-    about: "",
-    cv: null,
-  });
-
-  const handleSubmit = (event) => {
-    // form submit logic here...
-  };
-
-  const handleChange = (e) => {
-    // form change logic here...
-  };
-
   return (
     <>
       <Helmet>
         <title>Careers - The Agency Way (TAW)</title>
-        <meta
-          name="description"
-          content="Chart your path to success with Careers - The Agency Way (TAW). Explore exciting opportunities and join a team committed to innovation and excellence."
-        />
+        <meta name="description" content="Chart your path to success with Careers - The Agency Way (TAW). Explore exciting opportunities and join a team committed to innovation and excellence." />
         <link rel="canonical" href="https://taw.agency/careers" />
       </Helmet>
       <div className="full-screen-image">
@@ -239,9 +272,8 @@ function Careers() {
               key={index}
             >
               <div
-                className={`card ${
-                  selectedJobIndex === index ? "flipped" : ""
-                }`}
+                className={`card ${selectedJobIndex === index ? "flipped" : ""
+                  }`}
               >
                 <div className="text-center mb-2">
                   <img
@@ -262,115 +294,363 @@ function Careers() {
                       </p>
                     </div>
                   </div>
-                  <p style={{ fontWeight: "500" }}>Salary : {job.salary}</p>
-                  <p style={{ fontWeight: "500" }}>
-                    Posted On : {job.postDate}
-                  </p>
-                </div>
-                <div className="job-description">
-                  <ul>
-                    {job.responsibilities.map((resp, i) => (
-                      <li key={i}>{resp}</li>
-                    ))}
-                  </ul>
-                  <h5>Requirements</h5>
-                  <ul>
-                    {job.requirements.map((req, i) => (
-                      <li key={i}>{req}</li>
-                    ))}
-                  </ul>
+                  <div className="row" style={{ marginLeft: "0px" }}>
+                    <div className="col-6">
+                      <p style={{ fontWeight: "500" }}>
+                        Salary : {job.salary}
+                      </p>
+                    </div>
+                    <div className="col-6">
+                      <p style={{ fontWeight: "500" }}>
+                        Posted on : {job.postDate}
+                      </p>
+                    </div>
+                  </div>
                   <button
-                    id={`applyNowButton-${index}`}
-                    className="btn btn-primary"
+                    ref={applyNowRef}
+                    className="apply-now-btn mt-3 mb-2"
                     onClick={() => handleDetailsClick(index)}
                   >
-                    Apply Now
+                    {selectedJobIndex === index ? "Close" : "Details"}
                   </button>
+                </div>
+                <div
+                  className="back"
+                  style={{
+                    display: selectedJobIndex === index ? "block" : "none",
+                  }}
+                >
+                  <div id={`applyNowButton-${index}`} className="card-body">
+                    <h4 className="card-title text-center">{job.title}</h4>
+                    <p style={{ fontWeight: "bold" }}>Responsibilities</p>
+                    <ul className="card-text" style={{ marginLeft: "15px" }}>
+                      {job.responsibilities.map((responsibility, index) => (
+                        <li key={index}>{responsibility}</li>
+                      ))}
+                    </ul>
+                    <p style={{ fontWeight: "bold" }}>Requirements</p>
+                    <ul className="card-text" style={{ marginLeft: "15px" }}>
+                      {job.requirements.map((requirement, index) => (
+                        <li key={index}>{requirement}</li>
+                      ))}
+                    </ul>
+                    <div
+                      className="row "
+                      style={{ justifyContent: "space-evenly" }}
+                    >
+                      <button
+                        className="apply-now-btn mt-3"
+                        onClick={() => {
+                          handleDetailsClick(index);
+                          handleApplyNowClick();
+                        }}
+                      >
+                        Apply Now
+                      </button>
+                      <button
+                        onClick={() => {
+                          handleCloseClick(index);
+                          handleDetailsClick(index);
+                        }}
+                        className="apply-now-btn mt-3"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
-        {selectedJobIndex !== null && (
-          <div className="container mt-4" ref={applyNowRef}>
-            <button
-              className="btn btn-primary mb-3"
-              onClick={() => handleDetailsClick(null)}
-            >
-              Close
-            </button>
-            <form ref={formRef} onSubmit={handleSubmit}>
-              <div className="form-group">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="email"
-                  className="form-control"
-                  placeholder="Email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="tel"
-                  className="form-control"
-                  placeholder="Contact Number"
-                  name="contactNumber"
-                  value={formData.contactNumber}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Role Applying For"
-                  name="role"
-                  value={formData.role}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <textarea
-                  className="form-control"
-                  rows="4"
-                  placeholder="Tell us about yourself..."
-                  name="about"
-                  value={formData.about}
-                  onChange={handleChange}
-                  required
-                ></textarea>
-              </div>
-              <div className="form-group">
-                <label htmlFor="cv">Upload CV:</label>
-                <input
-                  type="file"
-                  className="form-control-file"
-                  id="cv"
-                  onChange={handleFileChange}
-                  required
-                />
-              </div>
-              <button type="submit" className="btn btn-primary">
-                Submit
-              </button>
-            </form>
+      </div>
+      <div className="container " ref={formRef}>
+        <div className="row">
+          <div
+            className="career-box col-lg-4 col-md-4 col-sm-12 col-12"
+            ref={formRef}
+          >
+            <AnimatedText
+              text={
+                <h4
+                  className="welove-text content-box-text mb-5"
+                >
+                  We love people with ideas & the thirst to see that idea
+                  through.
+                </h4>
+              }
+              animation="slide-up"
+            />
+            <AnimatedText
+              text={
+                <h4 className="welove-text content-box-text">
+                  If you think you can match up to our challenge, give us a
+                  shout & we will make it work.
+                </h4>
+              }
+              animation="slide-up"
+            />
           </div>
-        )}
+
+          <div className="col-lg-8 col-md-8 col-sm-12 col-12 form-mobile mt-3">
+            <div id="contactForm">
+              <form onSubmit={handleSubmit}>
+                <AnimatedText
+                  text={
+                    <label>
+                      Full Name
+                      <sup
+                        style={{
+                          color: "red",
+                          marginLeft: "5px",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        *
+                      </sup>
+                    </label>
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  text={
+                    <input
+                      type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      placeholder="Type here"
+                      autoComplete="off"
+                      className="form-field mb-3"
+                      required
+                    />
+                  }
+                  animation="slide-up"
+                />
+
+                <AnimatedText
+                  text={
+                    <label>
+                      Email
+                      <sup
+                        style={{
+                          color: "red",
+                          marginLeft: "5px",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        *
+                      </sup>
+                    </label>
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  text={
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="Type here"
+                      autoComplete="off"
+                      className="form-field "
+                      required
+                    />
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  className="mt-2"
+                  text={
+                    <label>
+                      Contact number
+                      <sup
+                        style={{
+                          color: "red",
+                          marginLeft: "5px",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        *
+                      </sup>
+                    </label>
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  text={
+                    <input
+                    type="tel"
+                    name="contact"
+                    value={formData.contact}
+                    onChange={handleContactChange}
+                    placeholder="Type here"
+                    autoComplete="off"
+                    className="form-field mb-2"
+                    maxLength={10} // Ensure max length is set to 10
+                    required
+                    />
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  text={
+                    <label>
+                      Role applying for
+                      <sup
+                        style={{
+                          color: "red",
+                          marginLeft: "5px",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        *
+                      </sup>
+                    </label>
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  text={
+                    <select
+                      type="dropdown"
+                      name="role"
+                      value={formData.role}
+                      onChange={handleChange}
+                      placeholder="Type here"
+                      autoComplete="off"
+                      className="form-field mb-3"
+                      required
+                    >
+                      <option value="selected">Select role</option>
+                      <option value="Jr. Project Manager">
+                        Jr. Project Manager
+                      </option>
+                      <option value="Account Management">
+                        Account Management
+                      </option>
+                      <option value="Associate Creative Director">
+                        Associate Creative Director
+                      </option>
+                      <option value="Creative Supervisor">
+                        Creative Supervisor
+                      </option>
+                      <option value="Scriptwriter">Scriptwriter</option>
+                      <option value="SEO Technical Lead">
+                        SEO Technical Lead
+                      </option>
+                    </select>
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  text={
+                    <label>
+                      Write something about yourself
+                      <sup
+                        style={{
+                          color: "red",
+                          marginLeft: "5px",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        *
+                      </sup>
+                    </label>
+                  }
+                  animation="slide-up"
+                />
+
+                <AnimatedText
+                  text={
+                    <input
+                      type="text"
+                      name="about"
+                      value={formData.about}
+                      onChange={handleChange}
+                      placeholder="Type here"
+                      autoComplete="off"
+                      className="form-field mb-3"
+                      required
+                    />
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  text={
+                    <label>
+                      Attach your resume here
+                      <sup
+                        style={{
+                          color: "red",
+                          marginLeft: "5px",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        *
+                      </sup>
+                    </label>
+                  }
+                  animation="sldie-up"
+                />
+                <AnimatedText
+                  text={
+                    <input
+                      id="file-upload"
+                      type="file"
+                      name="cv"
+                      onChange={handleFileChange}
+                      accept=".pdf,.doc,.docx"
+                      style={{ display: "none" }}
+                      className="form-field"
+                    />
+                  }
+                  animation="slide-up"
+                />
+                <AnimatedText
+                  text={
+                    <label
+                      htmlFor="file-upload"
+                      className="custom-file-upload"
+                      style={{ color: "grey", marginRight: "5px" }}
+                      id="file-upload-label"
+                    >
+                      No file chosen
+                    </label>
+                  }
+                  animation="slide-up"
+                />
+                <span
+                  id="file-upload-close"
+                  onClick={() => {
+                    document.getElementById("file-upload").value = "";
+                    document.getElementById("file-upload-label").textContent =
+                      "No file chosen";
+                    document.getElementById("file-upload-close").style.display =
+                      "none";
+                    setFormData({ ...formData, cv: null });
+                  }}
+                  style={{ display: "none" }}
+                  className="close-resume-btn"
+                >
+                  X
+                </span>
+                <button className="submit-button mt-lg-5 mt-3" type="submit" style={{ marginLeft: "300px" }}>
+                  <div className="svg-wrapper-1">
+                    <div className="svg-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <span>Submit</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
       <ScrollToTopButton />
     </>
