@@ -49,11 +49,10 @@ function Influencer() {
               STEP INTO THE NEW NORMAL OF DIGITAL SPHERE
             </p>
             <p className="paragraph-text">
-              Influencers are like modern marketing currency. With incredible
-              cultural and consumer sway, their involvement can practically
-              guarantee thousands of watchers or listeners. To attract
-              customers, your business should let these social media stars light
-              the way.
+              Influencers are like your brand advocates that amplifies your
+              Brand's authenticity and reach by communicating with a larger
+              audience. To tap that unchartered area of audience,, your business
+              should let these social media stars light the way.
             </p>
             <p className="paragraph-text">
               Our influencer outreach services will help you reach new audiences
@@ -72,6 +71,11 @@ function Influencer() {
               </li>
               <li className="li-text">Authenticity over perfection</li>
             </ul>
+            <p className="paragraph-text">
+            Want the same for your Business?
+            </p>
+            <p className="paragraph-text">How about catching up for a Coffee!
+            </p>
           </div>
         </div>
       </div>
