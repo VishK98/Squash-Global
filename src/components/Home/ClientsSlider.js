@@ -28,7 +28,7 @@ const Slider = () => {
     ];
 
     const sliderRef = useRef(null);
-    const [setCurrentIndex] = useState(0);
+    const [, setCurrentIndex] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
     const animationIdRef = useRef(null);
 
