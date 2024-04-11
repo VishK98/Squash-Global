@@ -7,6 +7,10 @@ import Fujiyama from "../../assets/images/home-clients/fujiyama.png";
 import Godrej from "../../assets/images/home-clients/godrej.png";
 import Honda from "../../assets/images/home-clients/honda.png";
 import ICICI from "../../assets/images/home-clients/icici.png";
+import Frankfinn from "../../assets/images/home-clients/extras/frankfinn.png";
+import Nakhrewaali from "../../assets/images/home-clients/extras/nakhrewali.png";
+import Lotus from "../../assets/images/home-clients/extras/lotus.png";
+import Radission from "../../assets/images/home-clients/extras/radission.png";
 
 const Slider = () => {
     const imageSources = [
@@ -17,7 +21,10 @@ const Slider = () => {
         { url: Godrej, alt: "Godrej Logo" },
         { url: Honda, alt: "Honda Logo" },
         { url: ICICI, alt: "ICICI Logo" },
-        { url: Flipkart, alt: "Flipkart Logo" },
+        { url: Frankfinn, alt: "Frankfinn Logo" },
+        { url: Nakhrewaali, alt: "Nakhrewaali Logo" },
+        { url: Lotus, alt: "Lotus Logo" },
+        { url: Radission, alt: "Radission Logo" },
     ];
 
     const sliderRef = useRef(null);

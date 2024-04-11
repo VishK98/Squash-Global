@@ -21,6 +21,10 @@ import newClient12 from "../../assets/images/client logos/20.png";
 import newClient13 from "../../assets/images/client logos/3.png";
 import newClient14 from "../../assets/images/client logos/4.png";
 import newClient15 from "../../assets/images/client logos/5.png";
+import newClient16 from "../../assets/images/client logos/New folder/frankfinn.png";
+import newClient17 from "../../assets/images/client logos/New folder/lotus.png";
+import newClient18 from "../../assets/images/client logos/New folder/nakhrewali.png";
+import newClient19 from "../../assets/images/client logos/New folder/radission.png";
 import { Helmet } from 'react-helmet';
 
 function Work() {
@@ -52,7 +56,7 @@ function Work() {
           className="row mt-3 mt-lg-4"
           style={{ justifyContent: "space-between", marginRight: "5px" }}
         >
-          {[newClient, newClient1, newClient2, newClient3, newClient4, newClient5, newClient6, newClient7, newClient8, newClient9, newClient10, newClient11, newClient12, newClient13, newClient14, newClient15].map((image, index) => (
+          {[newClient, newClient1, newClient2, newClient3, newClient4, newClient5, newClient6, newClient7, newClient8, newClient9, newClient10, newClient11, newClient12, newClient13, newClient14, newClient15,newClient16,newClient17,newClient18,newClient19].map((image, index) => (
             <div className="col-lg-3 col-md-3 col-xl-3 col-6 mb-4" key={index}>
               <div className="work-box">
                 <div className="work-box-img" style={{ height: "150px", width: "150px" }}>
