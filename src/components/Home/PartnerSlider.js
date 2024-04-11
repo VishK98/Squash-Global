@@ -8,6 +8,10 @@ import Super from "../../assets/images/home-clients/super.png";
 import TradeX from "../../assets/images/home-clients/tradeX.png";
 import Unacademy from "../../assets/images/home-clients/unacademy.png";
 import YesBank from "../../assets/images/home-clients/yesBank.png";
+import Frankfinn from "../../assets/images/home-clients/extras/frankfinn.png";
+import Nakhrewaali from "../../assets/images/home-clients/extras/nakhrewali.png";
+import Lotus from "../../assets/images/home-clients/extras/lotus.png";
+import Radission from "../../assets/images/home-clients/extras/radission.png";
 
 const Slider = () => {
     const imageSources = [
@@ -19,6 +23,10 @@ const Slider = () => {
         { url: TradeX, alt: "TradeX Logo" },
         { url: Unacademy, alt: "Unacademy Logo" },
         { url: YesBank, alt: "YesBank Logo" },
+        { url: Frankfinn, alt: "Frankfinn Logo" },
+        { url: Nakhrewaali, alt: "Nakhrewaali Logo" },
+        { url: Lotus, alt: "Lotus Logo" },
+        { url: Radission, alt: "Radission Logo" },
     ];
 
     const sliderRef = useRef(null);
