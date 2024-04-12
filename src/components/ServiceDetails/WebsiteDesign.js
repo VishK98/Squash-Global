@@ -48,6 +48,10 @@ function WebsiteDesign() {
               <li className="li-text">Web Applications</li>
               <li className="li-text">UI Designing</li>
             </ul>
+            <p className="paragraph-text">Want the same for your Business?</p>
+            <p className="paragraph-text">
+              How about catching up for a Coffee!
+            </p>
           </div>
         </div>
       </div>

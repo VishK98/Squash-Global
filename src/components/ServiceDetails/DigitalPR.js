@@ -61,6 +61,10 @@ function DigitalPR() {
               <li className="li-text">Digital PR & Strategy</li>
               <li className="li-text">Media Outreach & Progress Report</li>
             </ul>
+            <p className="paragraph-text">Want the same for your Business?</p>
+            <p className="paragraph-text">
+              How about catching up for a Coffee!
+            </p>
           </div>
         </div>
       </div>

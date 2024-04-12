@@ -43,6 +43,10 @@ function SocialMedia() {
               <li className="li-text">Social Media Advertising</li>
               <li className="li-text">Twitter Trending campaigns</li>
             </ul>
+            <p className="paragraph-text">Want the same for your Business?</p>
+            <p className="paragraph-text">
+              How about catching up for a Coffee!
+            </p>
           </div>
         </div>
       </div>

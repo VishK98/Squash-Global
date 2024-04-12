@@ -62,6 +62,10 @@ function MediaPlanning() {
               <li className="li-text">Social Media Creatives Design</li>
               <li className="li-text">Brand Identity Design</li>
             </ul>
+            <p className="paragraph-text">Want the same for your Business?</p>
+            <p className="paragraph-text">
+              How about catching up for a Coffee!
+            </p>
           </div>
         </div>
       </div>
