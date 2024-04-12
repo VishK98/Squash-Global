@@ -4,6 +4,7 @@ import "./Blog.css";
 import ScrollToTopButton from '../TopButton/TopButton';
 import blogImage1 from "../../assets/images/taw-blog-banner1.png";
 import blogImage2 from "../../assets/images/taw-blog-banner2.png";
+import blogImage3 from "../../assets/images/taw-blog-banner3.png";
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
 import AnimatedText from '../Animations/TextAnimation';
 import { Helmet } from 'react-helmet';
@@ -24,6 +25,14 @@ function Blog() {
       description:
         "In simple terms, infographics are like “one picture worth a thousand words. The main purpose of infographics is to make the content easy to consume for readers.",
       route: '/blog/how-artificial-intelligence-is-revoluationizing-advertising'
+    },
+    {
+      url: blogImage3,
+      title:
+        "4 Red Flags to Watch Out in Your Next Content Marketing Strategy",
+      description:
+        "In simple terms, Discover the top 4 red flags that could be undermining your content marketing strategy. Learn how to identify and address these warning signs to ensure your next campaign is a resounding success.",
+      route: '/blog/4-red-flags-to-watch-out'
     },
   ];
   return (

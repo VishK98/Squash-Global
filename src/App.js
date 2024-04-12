@@ -1,10 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Home from "./components/Home/Home";
@@ -25,6 +20,7 @@ import Programmatics from "./components/ServiceDetails/Programmatics";
 import Influencer from "./components/ServiceDetails/Influencer";
 import WhatsappLogo from "./components/Whatsapp/Whatsapp";
 import BlogDetails2 from "./components/BlogDetails/BlogDetails2";
+import BlogDetails3 from "./components/BlogDetails/BlogDetails3";
 import Thankyou from "./components/Thankyou/Thankyou";
 
 function ScrollToTop() {
@@ -53,24 +49,16 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
-          <Route
-            path="/blog/how-changes-in-social-media-algorithms"
-            element={<BlogDetails />}
-          />
-          <Route
-            path="/blog/how-artificial-intelligence-is-revoluationizing-advertising"
-            element={<BlogDetails2 />}
-          />
+          <Route path="/blog/how-changes-in-social-media-algorithms" element={<BlogDetails />} />
+          <Route path="/blog/how-artificial-intelligence-is-revoluationizing-advertising" element={<BlogDetails2 />} />
+          <Route path="/blog/4-red-flags-to-watch-out" element={<BlogDetails3 />} />
           <Route path="/services/design" element={<MediaPlanning />} />
           <Route path="/services/digitalpr" element={<DigitalPR />} />
           <Route path="/services/seo" element={<SEO />} />
           <Route path="/services/socialmedia" element={<SocialMedia />} />
           <Route path="/services/paid-ads" element={<Programmatics />} />
           <Route path="/services/website-design" element={<WebsiteDesign />} />
-          <Route
-            path="/services/influencer-marketing"
-            element={<Influencer />}
-          />
+          <Route path="/services/influencer-marketing" element={<Influencer />} />
           <Route path="/services/production" element={<Production />} />
           <Route path="/thankyou" element={<Thankyou />} />
         </Routes>
