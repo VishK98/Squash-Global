@@ -57,11 +57,6 @@ function SEO() {
               implementing the data analytics and revamping the SEO strategy
               accordingly.
             </p>
-            <p>
-              That's not all! We also monitor your online performance by
-              implementing the data analytics and revamping the SEO strategy
-              accordingly.{" "}
-            </p>
             <ul className="paragraph-text">
               <li className="li-text">Search Engine Optimization on Page</li>
               <li className="li-text">SEM Strategy with Keyword Selection</li>
