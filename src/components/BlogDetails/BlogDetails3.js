@@ -75,7 +75,7 @@ function BlogDetails3() {
           that boosts growth, engagement, and conversion. Recognize the
           mentioned warning signs while planning your next content.
         </p>
-        <h3>Missing Content Strategy:</h3>
+        <h2>Missing Content Strategy:</h2>
         <p className="paragraph-text">
           Like any other marketing format, content marketing also needs a
           strategy or a blueprint to work on. Whether you are planning content
@@ -87,7 +87,7 @@ function BlogDetails3() {
           business goals. But without any content plan, you are throwing darts
           in the dark hoping to hit the bullseye.
         </p>
-        <h5>Know how to make a good content marketing plan effortlessly:</h5>
+        <h3 classname="">Know how to make a good content marketing plan effortlessly:</h3>
         <ul>
           <li className="paragraph-text">
             Clearly defining the goals whether it is to boost more views,
@@ -109,7 +109,7 @@ function BlogDetails3() {
           width="100%"
           alt="Helping businesses run the World Better"
         />
-        <h3>Inconsistency with Content:</h3>
+        <h2>Inconsistency with Content:</h2>
         <p className="paragraph-text">
           Having a content plan is good. But if you are not implementing it,
           you are missing out on one of the most prominent and cost-effective
@@ -120,7 +120,7 @@ function BlogDetails3() {
           is effective for brands as well who are planning to increase their
           online presence through social media marketing.
         </p>
-        <h5>Know how to be consistent with your Content:</h5>
+        <h3 classname="color-text">Know how to be consistent with your Content:</h3>
         <ul>
           <li className="paragraph-text">
             There are plenty of tools available online where you can upload and
@@ -134,7 +134,7 @@ function BlogDetails3() {
             Plan and create content in advance to avoid last-minute stress.
           </li>
         </ul>
-        <h3>Forgetting Marketing from Content Marketing:</h3>
+        <h2>Forgetting Marketing from Content Marketing:</h2>
         <p className="paragraph-text">
           Content Marketing not only means creating content with adding the
           marketing part to it. You need to market the content across all
@@ -142,7 +142,7 @@ function BlogDetails3() {
           content with your audience, it will only negatively impact your
           business.
         </p>
-        <h5>Here’s how to promote your content across all platforms:</h5>
+        <h3 classname="color-text">Here’s how to promote your content across all platforms:</h3>
         <ul>
           <li className="paragraph-text">
             Be consistent on all platforms. Post your content to Instagram,
@@ -156,7 +156,7 @@ function BlogDetails3() {
             amplify and promote your brand to a larger audience.
           </li>
         </ul>
-        <h3>Lack of Authenticity:</h3>
+        <h2>Lack of Authenticity:</h2>
         <p className="paragraph-text">
           Hard truth being told. Content Marketing is not only about producing
           content. It is crafting content that sounds relatable to your
