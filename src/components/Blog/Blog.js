@@ -39,9 +39,9 @@ function Blog() {
   return (
     <>
     <Helmet>
-        <title>How Artificial Intelligence is Revolutionizing Advertising - The Agency Way (TAW)</title>
+        <title>Get The Latest Blogs - The Agency Way (TAW)</title>
         <meta name="description" content="Stay ahead with the latest insights! Get The Latest Blogs - The Agency Way (TAW) for expert tips, trends, and strategies to propel your business forward." />
-        <link rel="canonical" href="https://taw.agency/blog/how-artificial-intelligence-is-revoluationizing-advertising" />
+        <link rel="canonical" href="https://taw.agency/blog" />
       </Helmet>
       <div className="container mt-4">
         <AnimatedText
