@@ -32,7 +32,7 @@ function Blog() {
         "4 Red Flags to Watch Out in Your Next Content Marketing Strategy",
       description:
         "In simple terms, Discover the top 4 red flags that could be undermining your content marketing strategy. Learn how to identify and address these warning signs to ensure your next campaign is a resounding success.",
-      route: '/blog/4-red-flags-to-watch-out'
+      route: '/blog/4-red-flags-to-watch-out-in-your-next-content-marketing-strategy'
     },
   ];
   return (

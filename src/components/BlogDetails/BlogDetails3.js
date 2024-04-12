@@ -36,7 +36,7 @@ function BlogDetails3() {
         />
         <link
           rel="canonical"
-          href="https://taw.agency/blog/4-red-flags-to-watch-out"
+          href="https://taw.agency/blog/4-red-flags-to-watch-out-in-your-next-content-marketing-strategy"
         />
       </Helmet>
 
@@ -69,7 +69,7 @@ function BlogDetails3() {
           digital growth.
         </p>
         <p className="paragraph-text">
-          Don’t Worry! As a seasoned advertising agency, The Agency Way has
+          Don’t Worry! As a seasoned advertising agency, <a href="https://taw.agency/services/seo" className="Color-text" style={{ fontWeight: 'bold' }}>The Agency Way</a> has
           cracked the code of creating the perfect content marketing plan. Here
           are a few red flags to look for to create an optimum content strategy
           that boosts growth, engagement, and conversion. Recognize the
@@ -79,7 +79,7 @@ function BlogDetails3() {
         <p className="paragraph-text">
           Like any other marketing format, content marketing also needs a
           strategy or a blueprint to work on. Whether you are planning content
-          for SEO, social media, podcasts, or video, having a clear content
+          for <a href="https://taw.agency/" className="Color-text" style={{ fontWeight: 'bold' }}>SEO</a>, social media, podcasts, or video, having a clear content
           plan covers half the path to success. You don’t have to think out of
           the box to plan your content. Having a blueprint helps you understand
           what is working well and what is not working well for you. You can

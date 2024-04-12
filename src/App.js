@@ -51,7 +51,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog/how-changes-in-social-media-algorithms" element={<BlogDetails />} />
           <Route path="/blog/how-artificial-intelligence-is-revoluationizing-advertising" element={<BlogDetails2 />} />
-          <Route path="/blog/4-red-flags-to-watch-out" element={<BlogDetails3 />} />
+          <Route path="/blog/4-red-flags-to-watch-out-in-your-next-content-marketing-strategy" element={<BlogDetails3 />} />
           <Route path="/services/design" element={<MediaPlanning />} />
           <Route path="/services/digitalpr" element={<DigitalPR />} />
           <Route path="/services/seo" element={<SEO />} />
