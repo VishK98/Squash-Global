@@ -12,6 +12,14 @@ import { Helmet } from 'react-helmet';
 function Blog() {
   const imagesData = [
     {
+      url: blogImage3,
+      title:
+        "4 Red Flags to Watch Out in Your Next Content Marketing Strategy",
+      description:
+        "In simple terms, Discover the top 4 red flags that could be undermining your content marketing strategy. Learn how to identify and address these warning signs to ensure your next campaign is a resounding success.",
+      route: '/blog/4-red-flags-to-watch-out-in-your-next-content-marketing-strategy'
+    },
+    {
       url: blogImage1,
       title: "How Changes in Social Media Algorithms Are Influencing Content Strategy and What Marketers Need to Know to Stay Ahead",
       description:
@@ -26,14 +34,7 @@ function Blog() {
         "In simple terms, infographics are like “one picture worth a thousand words. The main purpose of infographics is to make the content easy to consume for readers.",
       route: '/blog/how-artificial-intelligence-is-revoluationizing-advertising'
     },
-    {
-      url: blogImage3,
-      title:
-        "4 Red Flags to Watch Out in Your Next Content Marketing Strategy",
-      description:
-        "In simple terms, Discover the top 4 red flags that could be undermining your content marketing strategy. Learn how to identify and address these warning signs to ensure your next campaign is a resounding success.",
-      route: '/blog/4-red-flags-to-watch-out-in-your-next-content-marketing-strategy'
-    },
+    
   ];
   return (
     <>
