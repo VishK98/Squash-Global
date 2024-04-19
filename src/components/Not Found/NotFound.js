@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './NotFound.css';
 import error from "../../assets/images/error.jpeg";
 
@@ -13,6 +14,7 @@ const NotFound = () => {
           <h1 className='title-text'>AWWW...DON’T CRY.</h1>
           <p className='error-txt'>It's just a 404 Error!</p>
           <p className='next-txt'>What you’re looking for may have been misplaced in Long Term Memory.</p>
+          <Link to="/" className='home-button'>Go Back to Home</Link>
         </div>
       </div>
     </div>

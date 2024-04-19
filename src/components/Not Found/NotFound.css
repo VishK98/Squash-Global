@@ -16,3 +16,16 @@
   white-space: pre-wrap;
   margin-bottom: 10px;
 }
+
+.home-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff; /* You can change the color to fit your design */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.home-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
