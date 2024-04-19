@@ -140,24 +140,14 @@ function Contact() {
                 <AnimatedText
                   text={
                     <span style={{ marginLeft: "15px" }}>
-                      <a className="contact-text" href="tel:+91 7827058243">
-                        +91 7827058243
+                      <a className="contact-text" href="tel:+91 8368163883">
+                        +91 8368163883
                       </a>
                     </span>
                   }
                   animation="slide-up"
                 />
               </p>
-              <AnimatedText
-                text={
-                  <span style={{ marginLeft: "50px" }}>
-                    <a className="contact-text" href="tel:+91 8368163883">
-                      +91 8368163883
-                    </a>
-                  </span>
-                }
-                animation="slide-up"
-              />
               <p className="phone mt-3" style={{ display: "flex", alignItems: "center" }}>
                 <div style={{ position: "relative", height: "33px", width: "35px" }}>
                   <ImageAnimationUnfold src='https://img.icons8.com/ios-filled/50/email-sign.png' alt="Image not found" />
