@@ -22,6 +22,7 @@ import WhatsappLogo from "./components/Whatsapp/Whatsapp";
 import BlogDetails2 from "./components/BlogDetails/BlogDetails2";
 import BlogDetails3 from "./components/BlogDetails/BlogDetails3";
 import Thankyou from "./components/Thankyou/Thankyou";
+import NotFound from "./components/Not Found/NotFound";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -61,6 +62,7 @@ function App() {
           <Route path="/services/influencer-marketing" element={<Influencer />} />
           <Route path="/services/production" element={<Production />} />
           <Route path="/thankyou" element={<Thankyou />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         {/* {modalVisible && <PopupModal />} */}
         <WhatsappLogo />
