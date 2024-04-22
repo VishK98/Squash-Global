@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./BlogDetails.css";
 import ScrollToTopButton from "../TopButton/TopButton";
-import industriesBanner from "../../assets/images/taw-blog-banner1.png";
-import blogImage10 from "../../assets/images/taw-blog-banner1.png";
-import blogImage4 from "../../assets/images/taw-blog-banner1.png";
+import industriesBanner from "../../assets/images/taw-blog-banner1.webp";
+import blogImage10 from "../../assets/images/taw-blog-banner1.webp";
+import blogImage4 from "../../assets/images/taw-blog-banner1.webp";
 import { Helmet } from "react-helmet";
 function BlogDetails2() {
   const [isVisible, setIsVisible] = useState(false);

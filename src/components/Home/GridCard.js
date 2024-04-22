@@ -1,9 +1,9 @@
 import React from 'react';
 import './GridCard.css';
 import AnimatedFadeImage from "../Animations/ImageAnimationFade";
-import grid1 from "../../assets/images/specialist-division/Strategy Image.png";
-import grid2 from "../../assets/images/specialist-division/Design Image.png";
-import grid3 from "../../assets/images/specialist-division/Technology Image.png";
+import grid1 from "../../assets/images/specialist-division/Strategy Image.webp";
+import grid2 from "../../assets/images/specialist-division/Design Image.webp";
+import grid3 from "../../assets/images/specialist-division/Technology Image.webp";
 
 const Card = () => {
     return (

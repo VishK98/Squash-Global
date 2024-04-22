@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./BlogDetails.css";
 import ScrollToTopButton from "../TopButton/TopButton";
-import industriesBanner from "../../assets/images/taw-blog-banner3.png";
-import blogImage3 from "../../assets/images/taw-blog-banner3.png";
+import industriesBanner from "../../assets/images/taw-blog-banner3.webp";
+import blogImage3 from "../../assets/images/taw-blog-banner3.webp";
 import { Helmet } from "react-helmet";
 
 function BlogDetails3() {
