@@ -9,7 +9,7 @@ import blogImage2 from "../../assets/images/taw-blog-banner2.webp";
 import blogImage3 from "../../assets/images/taw-blog-banner3.webp";
 import AnimatedFadeImage from '../Animations/ImageAnimationFade';
 import AnimatedText from '../Animations/TextAnimation';
-import rigthArrow from "../../assets/images/Icons/-right-arrow.png";
+import rigthArrow from "../../assets/images/Icons/-right-arrow.webp";
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
 
 const BlogSlider = () => {

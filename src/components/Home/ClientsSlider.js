@@ -1,16 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './PartnerSlider.css';
-import BastonLevin from "../../assets/images/home-clients/baston-levin.png";
-import Bruxie from "../../assets/images/home-clients/bruxie.png";
-import Flipkart from "../../assets/images/home-clients/flipkart.png";
-import Fujiyama from "../../assets/images/home-clients/fujiyama.png";
-import Godrej from "../../assets/images/home-clients/godrej.png";
-import Honda from "../../assets/images/home-clients/honda.png";
-import ICICI from "../../assets/images/home-clients/icici.png";
-import Frankfinn from "../../assets/images/home-clients/extras/frankfinn.png";
-import Nakhrewaali from "../../assets/images/home-clients/extras/nakhrewali.png";
-import Lotus from "../../assets/images/home-clients/extras/lotus.png";
-import Radission from "../../assets/images/home-clients/extras/radission.png";
+import BastonLevin from "../../assets/images/home-clients/baston-levin.webp";
+import Bruxie from "../../assets/images/home-clients/bruxie.webp";
+import Flipkart from "../../assets/images/home-clients/flipkart.webp";
+import Fujiyama from "../../assets/images/home-clients/fujiyama.webp";
+import Godrej from "../../assets/images/home-clients/godrej.webp";
+import Honda from "../../assets/images/home-clients/honda.webp";
+import ICICI from "../../assets/images/home-clients/icici.webp";
+import Frankfinn from "../../assets/images/home-clients/extras/frankfinn.webp";
+import Nakhrewaali from "../../assets/images/home-clients/extras/nakhrewali.webp";
+import Lotus from "../../assets/images/home-clients/extras/lotus.webp";
+import Radission from "../../assets/images/home-clients/extras/radission.webp";
 
 const Slider = () => {
     const imageSources = [

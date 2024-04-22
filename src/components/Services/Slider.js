@@ -1,20 +1,20 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Slider.css';
-import Jagur from "../../assets/images/home-clients/jagur.png";
-import Leverage from "../../assets/images/home-clients/leverage.png";
-import Manipal from "../../assets/images/home-clients/manipal.png";
-import Myntra from "../../assets/images/home-clients/myntra.png";
-import Super from "../../assets/images/home-clients/super.png";
-import TradeX from "../../assets/images/home-clients/tradeX.png";
-import Unacademy from "../../assets/images/home-clients/unacademy.png";
-import YesBank from "../../assets/images/home-clients/yesBank.png";
-import BastonLevin from "../../assets/images/home-clients/baston-levin.png";
-import Bruxie from "../../assets/images/home-clients/bruxie.png";
-import Flipkart from "../../assets/images/home-clients/flipkart.png";
-import Fujiyama from "../../assets/images/home-clients/fujiyama.png";
-import Godrej from "../../assets/images/home-clients/godrej.png";
-import Honda from "../../assets/images/home-clients/honda.png";
-import ICICI from "../../assets/images/home-clients/icici.png";
+import Jagur from "../../assets/images/home-clients/jagur.webp";
+import Leverage from "../../assets/images/home-clients/leverage.webp";
+import Manipal from "../../assets/images/home-clients/manipal.webp";
+import Myntra from "../../assets/images/home-clients/myntra.webp";
+import Super from "../../assets/images/home-clients/super.webp";
+import TradeX from "../../assets/images/home-clients/tradeX.webp";
+import Unacademy from "../../assets/images/home-clients/unacademy.webp";
+import YesBank from "../../assets/images/home-clients/yesBank.webp";
+import BastonLevin from "../../assets/images/home-clients/baston-levin.webp";
+import Bruxie from "../../assets/images/home-clients/bruxie.webp";
+import Flipkart from "../../assets/images/home-clients/flipkart.webp";
+import Fujiyama from "../../assets/images/home-clients/fujiyama.webp";
+import Godrej from "../../assets/images/home-clients/godrej.webp";
+import Honda from "../../assets/images/home-clients/honda.webp";
+import ICICI from "../../assets/images/home-clients/icici.webp";
 
 const Slider = () => {
   const imageSources = [

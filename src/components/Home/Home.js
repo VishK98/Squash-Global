@@ -17,7 +17,7 @@ import PartnerSlider from "./PartnerSlider";
 import ClientSlider from "./ClientsSlider";
 import TAWVideo from "../../assets/taw-main-video.mp4";
 import bannerVideo from "../../assets/taw-ad-video.mp4";
-import rigthArrow from "../../assets/images/Icons/-right-arrow.png";
+import rigthArrow from "../../assets/images/Icons/-right-arrow.webp";
 import ImageAnimationUnfold from "../Animations/ImageAnimationUnfold";
 import { Helmet } from "react-helmet";
 import { contactUs } from "../../utils/api";

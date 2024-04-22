@@ -1,17 +1,17 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './PartnerSlider.css';
-import Jagur from "../../assets/images/home-clients/jagur.png";
-import Leverage from "../../assets/images/home-clients/leverage.png";
-import Manipal from "../../assets/images/home-clients/manipal.png";
-import Myntra from "../../assets/images/home-clients/myntra.png";
-import Super from "../../assets/images/home-clients/super.png";
-import TradeX from "../../assets/images/home-clients/tradeX.png";
-import Unacademy from "../../assets/images/home-clients/unacademy.png";
-import YesBank from "../../assets/images/home-clients/yesBank.png";
-import Frankfinn from "../../assets/images/home-clients/extras/frankfinn.png";
-import Nakhrewaali from "../../assets/images/home-clients/extras/nakhrewali.png";
-import Lotus from "../../assets/images/home-clients/extras/lotus.png";
-import Radission from "../../assets/images/home-clients/extras/radission.png";
+import Jagur from "../../assets/images/home-clients/jagur.webp";
+import Leverage from "../../assets/images/home-clients/leverage.webp";
+import Manipal from "../../assets/images/home-clients/manipal.webp";
+import Myntra from "../../assets/images/home-clients/myntra.webp";
+import Super from "../../assets/images/home-clients/super.webp";
+import TradeX from "../../assets/images/home-clients/tradeX.webp";
+import Unacademy from "../../assets/images/home-clients/unacademy.webp";
+import YesBank from "../../assets/images/home-clients/yesBank.webp";
+import Frankfinn from "../../assets/images/home-clients/extras/frankfinn.webp";
+import Nakhrewaali from "../../assets/images/home-clients/extras/nakhrewali.webp";
+import Lotus from "../../assets/images/home-clients/extras/lotus.webp";
+import Radission from "../../assets/images/home-clients/extras/radission.webp";
 
 const Slider = () => {
     const imageSources = [
