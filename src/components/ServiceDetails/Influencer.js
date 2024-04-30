@@ -71,10 +71,9 @@ function Influencer() {
               </li>
               <li className="li-text">Authenticity over perfection</li>
             </ul>
+            <p className="paragraph-text">Want the same for your Business?</p>
             <p className="paragraph-text">
-            Want the same for your Business?
-            </p>
-            <p className="paragraph-text">How about catching up for a Coffee!
+              How about catching up for a Coffee!
             </p>
           </div>
         </div>
