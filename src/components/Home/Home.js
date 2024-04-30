@@ -860,7 +860,6 @@ function Home() {
                     placeholder="Type here"
                     autoComplete="off"
                     className="form-field"
-                    required
                   />
                 }
                 animation="slide-up"
