@@ -1,4 +1,4 @@
-import React, {  useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import AboutUs from "./components/AboutUs/AboutUs";
@@ -23,9 +23,11 @@ import BlogDetails2 from "./components/BlogDetails/BlogDetails2";
 import BlogDetails3 from "./components/BlogDetails/BlogDetails3";
 import Thankyou from "./components/Thankyou/Thankyou";
 import NotFound from "./components/Not Found/NotFound";
+import Modal from "./components/FormPopUp/FormPopUp";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -35,7 +37,20 @@ function ScrollToTop() {
 }
 
 function App() {
-  // const [modalVisible, setModalVisible] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleSubmit = (formData) => {
+    console.log(formData);
+    setIsModalOpen(false);
+  };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsModalOpen(true); // Open the modal after 15 seconds
+    }, 15000); // 15 seconds delay before opening modal
+
+    return () => clearTimeout(timer); // Clean up the timer on component unmount
+  }, []); // Run this effect only once on component mount
 
   return (
     <Router>
@@ -67,6 +82,7 @@ function App() {
         {/* {modalVisible && <PopupModal />} */}
         <WhatsappLogo />
       </div>
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} onSubmit={handleSubmit} />
       <Footer />
     </Router>
   );
