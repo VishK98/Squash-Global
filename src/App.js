@@ -47,7 +47,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsModalOpen(true); // Open the modal after 15 seconds
-    }, 15000); // 15 seconds delay before opening modal
+    }, 5000); // 5 seconds delay before opening modal
 
     return () => clearTimeout(timer); // Clean up the timer on component unmount
   }, []); // Run this effect only once on component mount
