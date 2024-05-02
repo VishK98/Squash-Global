@@ -44,7 +44,6 @@ function Home() {
       formData.email &&
       formData.contact &&
       formData.companyName &&
-      formData.message &&
       formData.service !== "selected"
     ) {
       try {
