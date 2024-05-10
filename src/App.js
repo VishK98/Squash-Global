@@ -21,6 +21,7 @@ import Influencer from "./components/ServiceDetails/Influencer";
 import WhatsappLogo from "./components/Whatsapp/Whatsapp";
 import BlogDetails2 from "./components/BlogDetails/BlogDetails2";
 import BlogDetails3 from "./components/BlogDetails/BlogDetails3";
+import BlogDetails4 from "./components/BlogDetails/BlogDetails4";
 import Thankyou from "./components/Thankyou/Thankyou";
 import NotFound from "./components/Not Found/NotFound";
 import Modal from "./components/FormPopUp/FormPopUp";
@@ -68,6 +69,7 @@ function App() {
           <Route path="/blog/how-changes-in-social-media-algorithms" element={<BlogDetails />} />
           <Route path="/blog/how-artificial-intelligence-is-revoluationizing-advertising" element={<BlogDetails2 />} />
           <Route path="/blog/4-red-flags-to-watch-out-in-your-next-content-marketing-strategy" element={<BlogDetails3 />} />
+          <Route path="/blog/a-comprehensive-website-management-strategy" element={<BlogDetails4 />} />
           <Route path="/services/design" element={<MediaPlanning />} />
           <Route path="/services/digitalpr" element={<DigitalPR />} />
           <Route path="/services/seo" element={<SEO />} />
@@ -82,7 +84,7 @@ function App() {
         {/* {modalVisible && <PopupModal />} */}
         <WhatsappLogo />
       </div>
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} onSubmit={handleSubmit} />
+      {/* <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} onSubmit={handleSubmit} /> */}
       <Footer />
     </Router>
   );

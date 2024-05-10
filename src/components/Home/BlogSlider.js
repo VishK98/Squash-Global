@@ -7,6 +7,7 @@ import './BlogSlider.css';
 import blogImage1 from "../../assets/images/taw-blog-banner1.webp";
 import blogImage2 from "../../assets/images/taw-blog-banner2.webp";
 import blogImage3 from "../../assets/images/taw-blog-banner3.webp";
+import blogImage4 from "../../assets/images/Blog4 Banner1.webp";
 import AnimatedFadeImage from '../Animations/ImageAnimationFade';
 import AnimatedText from '../Animations/TextAnimation';
 import rigthArrow from "../../assets/images/Icons/-right-arrow.webp";
@@ -25,10 +26,31 @@ const BlogSlider = () => {
 
 
   return (
+    
     <div className="container mt-2">
       <div className="row">
         <div className="col-lg-12">
           <Slider {...sliderSettings}>
+          <div className="slide-item ">
+              <div className="slide-content ">
+                <div className="col-lg-6 col-md-6 col-12">
+                  <div className="box">
+                    <AnimatedFadeImage src={blogImage4} alt="Image not found" />
+                  </div>
+                </div>
+                <div className='col-lg-5 col-md-5 col-12'>
+                  <AnimatedText text={<h3>A Comprehensive Website Management Strategy Can Impact Your Online Business Success</h3>
+                  } animation='slide-up' />
+                  <AnimatedText text={<p>
+                    A comprehensive website management strategy is pivotal for online business success. From enhancing user experience to improving search engine visibility, each aspect plays a crucial role </p>} animation='slide-up' />
+                  <Link to="/Blog" style={{ textDecoration: "none" }}>
+                    <div className="animated-arrow-btn" style={{ marginLeft: "10px", height: "50px", width: "50px" }}>
+                      <ImageAnimationFade src={rigthArrow} alt="Image not found" />
+                    </div>
+                  </Link>
+                </div>
+              </div>
+            </div>
             <div className="slide-item ">
               <div className="slide-content ">
                 <div className="col-lg-6 col-md-6 col-12">

@@ -5,12 +5,21 @@ import ScrollToTopButton from '../TopButton/TopButton';
 import blogImage1 from "../../assets/images/taw-blog-banner1.webp";
 import blogImage2 from "../../assets/images/taw-blog-banner2.webp";
 import blogImage3 from "../../assets/images/taw-blog-banner3.webp";
+import blogImage4 from "../../assets/images/Blog4 Banner1.webp";
 import ImageAnimationFade from "../Animations/ImageAnimationFade";
 import AnimatedText from '../Animations/TextAnimation';
 import { Helmet } from 'react-helmet';
 
 function Blog() {
   const imagesData = [
+    {
+      url: blogImage4,
+      title:
+        "A Comprehensive Website Management Strategy Can Impact Your Online Business Success",
+      description:
+        "A comprehensive website management strategy is pivotal for online business success. From enhancing user experience to improving search engine visibility, each aspect plays a crucial role",
+      route: '/blog/a-comprehensive-website-management-strategy'
+    },
     {
       url: blogImage3,
       title:
@@ -20,19 +29,19 @@ function Blog() {
       route: '/blog/4-red-flags-to-watch-out-in-your-next-content-marketing-strategy'
     },
     {
-      url: blogImage1,
-      title: "How Changes in Social Media Algorithms Are Influencing Content Strategy and What Marketers Need to Know to Stay Ahead",
-      description:
-        "One of the building blocks of a business's success is copywriting. Even if you are not in the marketing field, you are surrounded by ad copies everywhere.",
-      route: '/blog/how-changes-in-social-media-algorithms'
-    },
-    {
       url: blogImage2,
       title:
         "How Artificial Intelligence is Revolutionizing Advertising, From Personalized Targeting to Predictive Analytics",
       description:
         "In simple terms, infographics are like “one picture worth a thousand words. The main purpose of infographics is to make the content easy to consume for readers.",
       route: '/blog/how-artificial-intelligence-is-revoluationizing-advertising'
+    },
+    {
+      url: blogImage1,
+      title: "How Changes in Social Media Algorithms Are Influencing Content Strategy and What Marketers Need to Know to Stay Ahead",
+      description:
+        "One of the building blocks of a business's success is copywriting. Even if you are not in the marketing field, you are surrounded by ad copies everywhere.",
+      route: '/blog/how-changes-in-social-media-algorithms'
     },
     
   ];
