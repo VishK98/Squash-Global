@@ -57,7 +57,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <NavBar />
-      <div className="TAW">
+      <div className="TAW" style={{overflow: "hidden"}}>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
