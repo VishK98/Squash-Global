@@ -80,7 +80,7 @@ function Influencer() {
       </div>
       <div className="influ-reel">Our Clients </div>
       <PartnerSlider />
-      <div className="influ-reels">Case Study </div>
+      {/* <div className="influ-reels">Case Study </div>
       <div
         className="slider"
         onMouseEnter={handleMouseEnter}
@@ -97,7 +97,7 @@ function Influencer() {
           <img className="slide" src={netflix} alt="Netflix" />
           <img className="slide" src={netflix} alt="Netflix" />
         </div>
-      </div>
+      </div> */}
       <div style={{ textAlign: "center", marginBottom: "20px" }}>
         <Link to="/contact" class="btn-flip mt-4">
           <button class="req-btn">
