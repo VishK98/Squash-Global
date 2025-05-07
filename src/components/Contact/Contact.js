@@ -33,7 +33,7 @@ function Contact() {
       try {
         setModalShow(true);
         const response = await contactUs(formData);
-        if (response.success) {
+        if (response.status) {
           await sendMail(formData);
           setApiResponse(response);
           setModalShow(true);
